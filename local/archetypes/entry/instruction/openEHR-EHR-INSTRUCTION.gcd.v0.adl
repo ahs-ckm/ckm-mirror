@@ -1,0 +1,163 @@
+﻿archetype (adl_version=1.4; uid=27c97a6f-2332-4a97-88d5-bc6b81caafbd)
+	openEHR-EHR-INSTRUCTION.gcd.v0
+
+concept
+	[at0000]	-- Goals of Care Designation
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Katrina Simpson-Pineda">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"katrina.simpson-pineda@ahs.ca">
+		["date"] = <"2017-02-24">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the Goals of Care Designation order and some specific directions within that focus of care, carried out by health professionals and/or the subject.
+">
+			use = <"Used to record the Goals of Care Designation order and some specific directions within that focus of care, carried out by health professionals.
+">
+			keywords = <"Resuscitation", "Advance Care Planning", "Goals of Care Designation", "ACP", "GCD", "DNR", "GOC", "Do Not Resuscitate", "Code Status">
+			misuse = <"This is not to be used for documenting discussions or details of ACP/GCD conversations. 
+">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Marlene Mann, BN, MCE, CPHIMS-CA, Prosci Certified, Clinical Documentation - Provincial CMIO, Alberta Health Services, Canada", "Ed Schwab,RD, CPHIMS-CA, Foundational Knowledge - Provincial CMIO, Alberta Health Services, Canada", "Colin Latter, B.Kin, CPHIMS-CA, Manager Foundational Knowledge - Provincial CMIO, Alberta Health Services, Canada", "Dr. Eric Wasylenko, Medical Director, Clinical Ethicis, Alberta Health Services, Canada", "Claire Chapman, Advanced Care Planning Lead, Alberta Health Services, Canada", "Lorelei Sawchuck, Nurse Practitioner, Palliative Institute, Covenant Health, Canada", "Terri Woytkiw, Manager, Senior's Health, Alberta Health Services, Canada", "LeAnne Esau, Manager, Home Care, Alberta Health Services, Canada", "Katrina Simpson-Pineda, RN, BN, Clinical Knowledge Topics - Provincial CMIO, Alberta Health Services, Canada", "Sarah Hall, Program Director, Integrated Quality Management, Alberta Health Services, Canada", "Victoria Seavilleklein, Clinical Ethicist, Alberta Health Services, Canada", "Sharon Iverson, Educator, Palliative and End of Life Care, Alberta Health Services, Canada", "Dr. Jessica Simon, Physician, Associate Professor Palliative Medicine, Alberta Health Services, Canada ">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"298C9156E9A186DB728B9355AFADBFA7">
+		["build_uid"] = <"7824ef30-113e-468f-a80a-1eccaacb4b86">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Goals of Care Designation
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Order
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {3..*; unordered} matches {
+							ELEMENT[at0018] occurrences matches {0..1} matches {	-- Goals of Care Designation
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] matches {	-- Designation Definition
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0008] matches {	-- Involvement of Patient or Alternate Decision Maker
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0022, 	-- This Goals of Care Designation has been ordered after the relevant conversations with the patient.
+											at0023, 	-- This Goals of Care Designation has been ordered after relevant conversations with the alternate decision-maker (ADM), or others.
+											at0024, 	-- This is an interim Goals of Care Designation Order prior to conversations with patient or alternate decision-maker (ADM).
+											at0025]	-- This is an interim Goals of Care Designation Order awaiting the outcome of the Dispute Resolution Process. See Advance Care Plan/Goals of Care Designation Tracking Record for further details.
+										}
+									}
+								}
+							}
+							ELEMENT[at0009] matches {	-- History / Current State of Goals of Care Designation
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0019, 	-- This is the first Goals of Care Designation Order I am aware of for this patient.
+											at0020, 	-- This Goals of Care Designation Order is a revision of the most recent Goals of Care Designation (See Advance Care Plan/Goals of Care Designation Tracking Record or Clinical Information System for details of previous Goals of Care Designation Order).
+											at0021]	-- This Goals of Care Designation Order is unchanged from the most recent prior Goals of Care Designation.
+										}
+									}
+								}
+							}
+							ELEMENT[at0010] occurrences matches {0..1} matches {	-- Clarification to the Goals of Care Designation Order
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Goals of Care Designation">
+					description = <"An order for Goals of Care Designation for an identified individual.">
+				>
+				["at0001"] = <
+					text = <"Order">
+					description = <"This is an order item archetype">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Designation Definition">
+					description = <"Narrative Description of the Goals of Care Designation requested.">
+				>
+				["at0008"] = <
+					text = <"Involvement of Patient or Alternate Decision Maker">
+					description = <"Description of involvement of patient or alternate decision maker in Goals of Care conversation.">
+				>
+				["at0009"] = <
+					text = <"History / Current State of Goals of Care Designation">
+					description = <"History of current order.">
+				>
+				["at0010"] = <
+					text = <"Clarification to the Goals of Care Designation Order">
+					description = <"Additional narrative about the Goals of Care Designation order not captured in other fields.">
+				>
+				["at0018"] = <
+					text = <"Goals of Care Designation">
+					description = <"Identification of the Goals of Care order by name.">
+				>
+				["at0019"] = <
+					text = <"This is the first Goals of Care Designation Order I am aware of for this patient.">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"This Goals of Care Designation Order is a revision of the most recent Goals of Care Designation (See Advance Care Plan/Goals of Care Designation Tracking Record or Clinical Information System for details of previous Goals of Care Designation Order).">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"This Goals of Care Designation Order is unchanged from the most recent prior Goals of Care Designation.">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"This Goals of Care Designation has been ordered after the relevant conversations with the patient.">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"This Goals of Care Designation has been ordered after relevant conversations with the alternate decision-maker (ADM), or others.">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"This is an interim Goals of Care Designation Order prior to conversations with patient or alternate decision-maker (ADM).">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"This is an interim Goals of Care Designation Order awaiting the outcome of the Dispute Resolution Process. See Advance Care Plan/Goals of Care Designation Tracking Record for further details.">
+					description = <"*">
+				>
+			>
+		>
+	>

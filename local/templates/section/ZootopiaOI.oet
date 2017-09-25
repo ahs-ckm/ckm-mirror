@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>6679aa60-8eae-43c0-a939-14bfd1d71be6</id>
+  <name>ZootopiaOI</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <keywords>
+        <item>OfficerClawhauser</item>
+      </keywords>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v0]/items[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0121]">
+    <items>
+      <item>
+        <key>Zootopia.MrOtterton</key>
+        <value>MrsOtterton</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Administration Instructions</key>
+        <value>NickWilde</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v0" concept_name="Ad hoc heading" max="1" name="Zootopia">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.dalmatians.v0" concept_name="Dalmatians" path="/items" />
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request" path="/items">
+      <Rule path="/activities[at0001]/description[at0009]/items[at0121]" name="LTJudyHopps" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0148]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>ChiefBogo</includedValues>
+        </constraint>
+      </Rule>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v0">
+    <digest id="MD5-CAM-1.0.1">A2CC91CBFA9177D333A7652C9C78E1F8</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.dalmatians.v0">
+    <digest id="MD5-CAM-1.0.1">B8DED6A019900D02920FE81D7BB3CA3D</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
+    <digest id="MD5-CAM-1.0.1">11C2E5B1F9F6AD452A2C256A1449234F</digest>
+  </integrity_checks>
+</template>

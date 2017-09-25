@@ -1,0 +1,479 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>88789661-d8d7-4064-a18b-abff8d1f5000</id>
+  <name>CKT Chronic Obstructive Pulmonary Disease Exacerbation, Adult fake</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>example</purpose>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>The recommendations contained in this knowledge topic have been provincially adjudicated and are based on best practice and available evidence. Clinicians applying these guidelines should, in consultation with the patient, use independent medical judgment in the context of individual clinical circumstances to direct care. This knowledge topic will be reviewed periodically and updated as best practice evidence and practice change. 
+The information in this topic strives to adhere to Institute for Safe Medication Practices (ISMP) safety standards and align with Quality and Safety initiatives and accreditation requirements. Some examples of these initiatives or groups are: Health Quality Council Alberta (HQCA), Choosing Wisely campaign, Safer Health Now campaign etc. 
+This knowledge topic has incorporated information or content from the following sources: 
+ SCM Order Sets 
+ Provincial Order Set 
+ CTAS Guidelines 
+
+Within this knowledge topic PICO-D questions or key clinical questions that have been used to guide research using the Population/Problem, Intervention, Comparison, Outcome, Design format. These questions are listed in Appendix A. 
+Links to PICO-D questions or Appendices are throughout the document (example: (PICO 1) or Appendix). Click on the link with your mouse to follow the link. Under the PICO-D question or Appendix heading you will find a link to return you to your initial place in the document. </value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>Chronic obstructive pulmonary disease (COPD) is a common chronic respiratory disease, especially in the patient population over 55 years of age. Cigarette smoking is the most common cause of COPD; however, environmental/work place exposures and genetic causes are also known causes. In 2009-2010 772,200 (4%) of Canadians aged 35 and older reported being diagnosed with COPD. 
+In Alberta, during the six years from 1999 - 2005, Emergency Department (ED) visits for COPD exacerbations among patients 55 years and older increased from 13,502 to 16,100 accounting for 3.2% and 3.9% of total visits for this age group.1 The proportion of admissions amongst these patients was 32.5%. 
+According to the Public Health Agency of Canada 2011 Survey on Living with Chronic Diseases in Canada (SLCDC) 79% of COPD patients reported one or more health care visits for respiratory problems, 20% reported one or more ED visits, and 8% reported one or more nights of hospital stay over the past 12 months. Additionally 75% reported taking prescribed medications for their COPD and 5% reported using home oxygen. Of interest, 21% reported the physician suggested visiting a respiratory educator and 22% reported having done so. Only 7% reported having had a supervised pulmonary rehabilitation program suggested and 6% reported participating. While many Canadians with COPD are actively engaged in managing their condition and receiving appropriate care, one in three still smokes and one in five are exposed to second hand smoke.2 
+While it has been reported that 50-60% of exacerbations are secondary to respiratory infections, 10% due to pollution and 30% of unknown cause, the heterogeneous nature of these episodes suggest complex interactions between the host, infectious agents, and environmental pollution.3 As the aging population continues to expand, COPD prevalence will remain high and while better community management of chronic diseases may serve to decrease the frequency of COPD exacerbations, it may lead to ED presentations being more severe and refractory requiring careful planning and a consistent management approach. </value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0003]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. Initiate bronchodilator therapy following ED presentation. 
+2. Initiate systemic corticosteroids early to decrease need for admission. 
+3. Consider high risk causes of exacerbations such as pneumonia, pneumothorax, pulmonary embolism and congestive heart failure (CHF). 
+4. Identify those patients who would benefit from antibiotics. 
+5. Consider the early use of non-invasive pressure ventilation for patients in respiratory distress. 
+6. Take steps to avoid intubation and ventilation for COPD patients. 
+7. Identify patients who are still smoking and offer interventions. 
+8. Clarify the goals of care for the current visit; and if not already done try to establish goals of care with the patient and family. 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0004]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Physician Assessment and Documentation']">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. History of Present Illness 
+ Anthonisen criteria: The presence or absence of the three criteria (increased dyspnea over baseline, increased sputum volume, increased sputum purulence) may help determine the value of antibiotics as part of patient therapy.5 
+ We suggest that risk factors for admission with an ED presentation (PICO 1): 
+o 2 or more COPD admissions in the past two years; 
+o Receiving corticosteroids for COPD at time of presentation; 
+o Canadian Triage and Acuity Scale (CTAS) 1 or 2 at presentation 
+o Receiving adjunct ED treatments (oxygen and intravenous magnesium) 
+2. Past History 
+ Smoking history 
+ Comorbidities such as previous acute coronary syndrome (ACS), congestive heart failure (CHF), venous thromboembolism (VTE) 
+3. Medications &amp; Allergies 
+ Recent systemic corticosteroids 
+  Antibiotic use within the past three months 
+4. Physical Examination 
+ As part of the respiratory system evaluation, document the Borg severity score as the patient baseline (can be recorded by nurse &amp;/or physician) 
+5. Scoring Tools / Risk Scores 
+ Modified Borg Scale (Appendix D) 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0004]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Nursing Assessment and Documentation']">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>This section contains specific considerations related to this topic. Standard assessment and documentation practices should still be followed. 
+1. Triage Assessment (ILI screening) 
+ Canadian Emergency Department Information Systems (CEDIS) complaint: Shortness of breath; Cough / congestion; Fever unspecified4 
+ Canadian Triage and Acuity Scale (CTAS) Modifiers: Respiratory distress modifiers most discriminatory4 
+2. Initial Assessment/Documentation 
+ Presenting History: Severity and timing of increasing shortness of breath, presence or absence of increased sputum production, presence or absence of increased sputum purulence 
+ Past History: Smoker, home oxygen (O2), bi-level positive airway pressure (BiPap)/continuous positive airway pressure (CPAP), previous intubations, orthopnea/paroxysmal nocturnal dyspnea (PND) 
+ Medications and Allergies: Inhaled chronic management and adherence, recent systemic corticosteroids, and antibiotic use within the last 3 months 
+ Systems Review: 
+o Vital Signs: elevated temperature 
+o Respiratory: Focused respiratory assessment; cough; sputum production; increased work of breathing; rate and depth; breath sounds; 
+o Cardiovascular: tachycardia; cyanosis; edema 
+o Neurological: confusion; irritability 
+3. Ongoing Assessment/Documentation 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. Is the patient in severe respiratory distress? 
+ If yes, do they have an updated goals of care indicating their wishes 
+o If C1 confirm with patient or family they only wish comfort measures 
+o If M1 confirm they do not want intubation and ICU care consideration, but a short trial of non-invasive mechanical ventilation (NIMV) could be considered 
+o If R1 consider trial of NIMV while confirming the appropriateness of the R1 designation and if concerned consider an ICU consultation to optimize care 
+ Rapidly initiate bronchodilators, systemic corticosteroids, and antibiotics 
+
+2. Is the patient moderately to severely dyspneic but not yet tiring out 
+ If yes initiate bronchodilator therapy and if available consider short course of NIMV to prevent fatique and support recovery 
+ If patient has a history of, is becoming drowsy or you are concerned about CO2 retention do ABG 
+ Unless recent CXR useful to order one looking for pneumonia, pneumothorax or signs of CHF 
+ If febrile or 2 or more Anthonisen criteria initiate antibiotics (PICO 4) 
+ Systemic corticosteroids should be given unless contraindicated 
+
+3. Is the patient mildly dyspneic 
+ If yes initiate bronchodilator therapy 
+ If patient has a history of or you are concerned about CO2 retention do ABG 
+ A CXR should be considered looking for a pneumonia or pneumothorax 
+ If febrile or 2 or more Anthonisen criteria initiate antibiotics (PICO 4) 
+ Systemic corticosteroids should be given unless contraindicated 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. Physician 
+ Non-invasive mechanical ventilation (NIMV). We recommend NIMV be considered early. (PICO 5). 
+o Indications: respiratory acidosis (arterial pH less than 7.35 and/or PaCO2 greater than or equal to 6.0 kPa, 45mm Hg), or severe dyspnea with clinical signs suggestive of respiratory muscle fatigue, increased work of breathing (respiratory rate greater than 25/min), or both, such as use of respiratory accessory muscles, paradoxical motion of the abdomen, or retraction of the intercostal spaces. 
+o Contraindications: too drowsy, inability to understand due to dementia or language barrier, unable to protect airway (impaired cough or swallowing) 
+ Intubation (consider if all other interventions fail) 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. Considerations for admission 
+ Recognizing that admission rates for COPD across the province are greater than 30% (greater than 50% in tertiary care sites and less than 15% in some rural sites), understanding that COPD is a chronic condition with limited reversibility and patients with chronic dyspnea have limited pulmonary functional reserves, patients who fail to respond to ED therapy, who have had previous admissions for the same condition, or who present on maximal outpatient therapy or outpatient corticosteroids should be considered for admission. 
+ All patients with chronic, ultimately terminal conditions should have had their ‘Goals of Care’ discussed and an advanced directive prepared. The patient always has the right to modify these instructions; however, understanding the ramifications of the various medical interventions also helps determine which patient may be considered for intensive care unit (ICU) admission, which patient for aggressive medical care, and which patient for comfort care. 
+2. Considerations for discharge 
+ Optimally COPD patients should have simple baseline measures recorded periodically (resting O2 saturation walk test recording how far they can go before halting due to dyspnea or O2 saturation dropping 2-3%) to aid treating physicians in deciding whether or not discharge is safe and appropriate. 
+ Discharged patients should be prescribed a 5-7 day course of prednisone (30 to 50 mg daily) to decrease relapses (We recommend a short course of systemic corticosteroids; click (PICO 6) (PICO 7) 
+ Patients with Type 1 or Type 2 exacerbations based on their Anthonisen criteria and initiated on antibiotics in the ED should be discharged and complete a five day course (We recommend those patients initiated on antibiotics based on their Anthonisen criteria be discharged on a short course of antibiotics) (PICO 8) 
+ Most COPD patients should be discharged on salbutamol 200mcg qid PRN (or other short acting beta agonist) plus ipratropium 40 mcg qid with long acting beta agonists and long acting alpha antagonists reserved for more severe COPD patients. 
+ Patients who are stable and improving but deemed high risk to relapse may be candidates for a “hospital at home” program assuming that is available (PICO 9) 
+3. Outpatient follow-up 
+ Generally COPD patients discharged from the ED should be ‘advised to return’ if symptoms return/worsen; and the majority should probably be reassessed by their primary care physician or pulmonary outpatient service provider within 48 hours. 
+4. Patient education / discharge instructions (Appendix C) 
+ Appendix C is a draft of patient discharge instructions for COPD patients. 
+ Smoking cessation information should be provided to COPD patients still smoking and all patients at risk for the disease; however, the logistics of that in an ED setting need to be determined. 
+ Patients should also be advised to receive pneumococcal and influenza vaccine if they have not already done so. 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. Reviews of current practice standards outside of urban centers have shown inconsistencies in the use of antibiotics and systemic corticosteroids in the ED management of COPD exacerbations. 
+2. Very few rural hospitals have access to non-invasive mechanical ventilation. The dissemination and implementation of this knowledge in the form of clinical content and future data capture should help identify the frequency of such ED visits by site and afford the opportunity to build a business case for access to such therapy. 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. Key Outcomes 
+Clinical 
+ Avoidance of need for intubation (early ED steroid use and early non-invasive mechanical ventilation [NIMV]) 
+ Decreased admission rate (early ED steroid use, aggressive bronchodilator therapy) 
+ Improved recovery rate at 30 days (short course steroids at ED discharge + short course antibiotics as indicated) 
+
+Process 
+ COPD treatment pathway utilized consistently 
+ Limited use of nebulizers and consistent deployment of metered dose inhalers (MDIs) and spacers in the ED 
+
+Patient Experience 
+ Received early treatment interventions to alleviate my shortness of breath 
+ Arranged for home O2 to be delivered as soon as I was discharged from the ED 
+2. Data Elements for Capture 
+Patient demographics 
+ Canadian Emergency Department Information Systems (CEDIS) presenting complaint and Canadian Triage and Acuity Scale (CTAS) score 
+ ED time markers (triage to physician, physician to consult and then to admission or physician to discharge) and outcome markers (identified as clinical decision unit patient, consulted for admission, admitted to ICU or ward, died) 
+ ED diagnoses 
+ Site and zone identifiers 
+ Steroid use (predniSONE, methylPREDNISisolone), dosage, duration 
+ Antibiotic use (by name), dosage, duration 
+ Non-invasive pressure ventilation use 
+ Discharge destination (home, home care, respiratory outreach, family physician) 
+3. Proposed Reports 
+ Number (%) of ED patients triaged as COPD and frequency this order set is applied 
+ Number (%) of ED patients (by site/zone/hospital type or location [e.g. inner city]) for whom this order set is applied and frequency of early steroid use 
+ Number (%) of ED patients (by site/zone/hospital type or location [e.g. inner city]) for whom Anthonisen criteria were recorded 
+ Number (%) of ED patients (by site/zone/hospital type or location [e.g. inner city]) who received antibiotics with or without Anthonisen criteria indicated 
+ Number (%) of ED COPD patients (by site/zone/hospital type or location [e.g. inner city]) treated with non-invasive positive pressure ventilation and/or were intubated 
+ Number (%) of ED COPD patients (by site/zone/hospital type or location [e.g. inner city]) admitted from the ED 
+ Length of stay for admitted and discharged patients with acute exacerbations of COPD (AECOPD) 
+ 72-hour ‘unplanned’ ED return visits for AECOPD 
+
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.See Also</key>
+        <value>
+1.Rosychuk RJ, Voaklander DC, Senthilselvan A, Klassen TP, Marrie TJ, Rowe BH. Presentations to emergency departments for chronic obstructive pulmonary disease in Alberta: a population-based study. Can J Emerg Med. 2010;12(6):500-8 
+2. Statistics Canada. Table 105-0501 - Health indicator profile, annual estimates, by age group and sex, Canada, provinces, territories, health regions (2013 boundaries) and peer groups, occasional. Statistics Canada CANSIM (database). http://www5.statcan.gc.ca/cansim/pick-choisir?lang=eng&amp;p2=33&amp;id=1050501. Updated June 17, 2015. Accessed July 14, 2015. 
+3. Sapey E, Stockley RA. COPD exacerbations. 2: Aetiology. Thorax. 2006;(61):250-258. 
+4. Murray M, Bullard M, Grafstein E for the CTAS and CEDIS National Working Groups. Revisions to the Canadian Emergency Department Triage and Acuity Scale Implementation Guidelines. Can J Emerg Med. 2004;6(6):421-7. 
+5. Anthonisen NR, Manfreda J, Warren CP, Hershfield ES, Harding GK, Nelson NA. Antibiotic therapy in exacerbations of chronic obstructive pulmonary disease. Ann Intern Med.1987;106:196-204 
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0013]">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>PICO 1: In COPD patients presenting to the ED with an acute exacerbation are there any risk factors that help predict a higher likelihood of needing admission? 
+Return to Table of Contents 
+Return to Physician Assessment and Documentation 
+Search Strategy: Searched the Cochrane Library. Searched PubMed using search terms “COPD” and “risk factors” and “admission” and then searched PubMed using the search terms “COPD” and “risk factors” and “admission.” 406 articles were identified. 
+The Rowe study was selected as it was emergency patient specific and enrolled Canadian study subjects providing greater generalizability. The systematic review study population was mixed and looked at community treated failures and hospital discharge patients in their study population. 
+Clinical Recommendation: We suggest that COPD patients at higher risk for needing admission are reportedly older, more often former smokers, and have had more admissions for COPD during the previous 2 years (odds ratio [OR] = 2.10; 95% CI = 1.24 to 3.56). The respiratory rate (RR) and degree of airflow obstruction were all higher in the hospitalized group. They also reported more days of activity limitation and higher use of inhaled beta2-agonists in the previous 24 hours. The median ED length of stay (LOS) of admitted patients was 13.1 hours (interquartile range [IQR] = 7.4-23.0) compared to 5.6 hours (IQR = 4.2-8.4) in discharged patients. Admission was associated with receiving oral corticosteroids for COPD (OR = 1.72; 95% CI = 1.08 to 2.74), having a CTAS score of 1-2 (OR = 2.04; 95% CI = 1.33 to 3.12), and receiving adjunct ED treatments (OR = 3.95; 95% CI = 2.45 to 6.35).1 
+Quality of Evidence: Low, GRADE C 
+Strength of Recommendation: Weak, GRADE 2 
+References: 
+1. Rowe BH, Villa-Roel C, Guttman A, Ross S, Mackey D, Sivilotti M LA, et al. Predictors of hospital admissions for chronic obstructive pulmonary disease exacerbations in to Canadian Emergency Departments. Acad Emerg Med. 2009;(16):316-324. 
+PICO 2: In adults assessed in the ED with COPD exacerbations, does the use of venous blood gases improve outcomes or aid in treatment decision making? 
+Return to Table of Contents 
+Return to Order Set Components - Laboratory Investigations 
+Search Strategy: Searched PubMed using the search terms “COPD” and “venous blood gas” 
+Clinical Recommendation: There is insufficient evidence to answer this question. A rapid search of PubMed identified one meta-analysis published in 2010 examining whether venous blood gas analysis is a viable alternative to arterial blood gas analysis.1 Six studies that compared venous vs. arterial blood gas analysis in COPD patients in the ED were included in the review. The results revealed agreement between venous and arterial analysis on pH and HCO3 levels, there was little agreement on pO2 or pCO2. Unfortunately, none of the included studies compared venous vs. arterial blood gases in regards to treatment decisions and clinical outcomes. 
+Quality of Evidence: Very Low, GRADE D 
+Strength of Recommendation: Insufficient evidence 
+References: 
+1. Lim BL, Kelly AM. A meta-analysis on the utility of peripheral venous blood gas analyses in exacerbations of chronic obstructive pulmonary disease in the emergency department. Eur J Emerg Med. 2010;(17):246-248. 
+PICO 3: In adults assessed in the ED with COPD exacerbations, does the use of systemic corticosteroids reduce admissions to hospital or reduce lengths of stay compared to standard care? 
+Return to Table of Contents 
+Return to Order Set Components - Medications 
+Search Strategy: Searched the Cochrane Library. Searched PubMed using search terms COPD and corticosteroids 
+Clinical Recommendation: We recommend that a short course of oral or parenteral corticosteroids significantly reduces treatment failures, the need for additional medical treatment, and shortens hospital stay in patients presenting with an acute COPD exacerbation. There are significant increase adverse drug events, primarily hyperglycemia and weight gain for patients being maintained on long term steroids1. Treatment with corticosteroids did not attenuate recurrent exacerbations or relapse. No outcomes of hospitalization rates or ED length of stay were reported. An additional systematic review comparing treatments for COPD exacerbations found systemic corticosteroids reduced treatment failure, length of hospitalization, and increased the risk of hyperglycemia.2 Quality of Evidence: High, GRADE A 
+Strength of Recommendation: Strong, GRADE 1 
+Additional Reading and General References: 
+1. Walters JAE, Gibson PG, Wood-Baker R, Hannay M, Walters EH. Systemic corticosteroids for acute exacerbations of chronic obstructive pulmonary disease. Cochrane Database Syst Rev. 2009, Issue 1. Art. No.: CD001288. doi: 10.1002/14651858.CD001288.pub3. 
+2. Quon BS, Gan WQ, Sin DD. Contemporary management of acute exacerbations of COPD: A systematic review and metaanalysis. Chest. 2008;(133):756-766. 
+PICO 4: In adults assessed in the ED with exacerbations of COPD, do systemic antibiotics improve the rate of recovery compared to standard care? Who benefit most? 
+Return to Table of Contents 
+Return to Order Set Components - Medications 
+Search Strategy: Searched Cochrane Library and PubMed using the search terms “antibiotics and COPD” and limiting the results to systematic reviews. 
+Clinical Recommendation: We suggest the use of antibiotics to be important for COPD exacerbations admitted to ICU where they showed large and consistent beneficial effects, however, for outpatients, emergency patients and inpatients the results were inconsistent.1 Consideration should be given to patients presenting with 2/3 or 3/3 of the Anthonisen criteria (increased dyspnea, increased sputum volume, and increased sputum purulence).2 
+Quality of Evidence: Moderate, GRADE B 
+Strength of Recommendation: Weak, GRADE 2 
+References: 
+1. Vollenweider DJ, Jarrett H, Steurer-Stey CA, Garcia-Aymerich 
+J, Puhan MA. Antibiotics for exacerbations of chronic obstructive pulmonary disease. Cochrane Database Syst Rev. 2012; 12:CD010257. doi: 10.1002/14651858.CD010257. 
+2. Anthonisen NR, Manfreda J, Warren CP, Hershfield ES, Harding GK, Nelson NA. Antibiotic therapy in exacerbations of chronic obstructive pulmonary disease. Ann Intern Med. 1987;(106):196-204. 
+PICO 5: In adults assessed in the ED with exacerbations of COPD, does the use of non-invasive ventilation in the ED reduce intubations and admissions compared to standard care? 
+Return to Table of Contents 
+Return to Order Set Components - Policies &amp; Procedures 
+Search Strategy: Searched “COPD” and “ventilation” on the Cochrane library and PubMed (limited to systematic reviews). 
+Clinical Recommendation: We recommend that non-invasive ventilation (NIV) be considered early as an adjunctive first line intervention to usual medical care for the management of respiratory failure secondary to an acute exacerbation of COPD. Data from fourteen good quality randomized controlled trials showed NIV resulted in decreased mortality (Relative Risk 0.52; 95%CI 0.35 to 0.76), decreased need for intubation (RR 0.41; 95%CI 0.33 to 0.53), reduction in treatment failure (RR 0.48; 95%CI 0.37 to 0.63), rapid improvement within the first hour in pH, PaCO2 and respiratory rate1. Complications associated with treatment and hospital length of stay (WMD -3.24 days; 95%CI -4.42 to -2.06) was also reduced. 
+An additional systematic review identified 15 randomized control trials found that NIV reduced the need for intubation (RR 0.28; 95% CI 0.15 to 0.40), length of hospital stay (AR 4.57 days; CI 2.30 to 6.83 days, and in hospital mortality (0.10; 95% CI, 0.05 to 0.15) in patients with severe acute exacerbations of COPD in an inpatient, ICU, or respiratory ward2. 
+Quality of Evidence: High, GRADE A 
+Strength of Recommendation: Strong, GRADE 1 
+References: 
+1. Ram FSF, Picot J, Lightowler J, Wedzicha JA. Non-invasive positive pressure ventilation for treatment of respiratory failure due to exacerbations of chronic obstructive pulmonary disease. Cochrane Database Syst Rev. 2004;3:CD004104. doi: 10.1002/14651858.CD004104.pub3. 
+2. Keenan SP, Sinuff T, Cook DJ, Hill NS. Which patients with acute exacerbation of chronic obstructive pulmonary disease benefit from noninvasive positive-pressure ventilation? A systematic review of the literature. Ann Intern Med. 2003;(138): 861-870. 
+PICO 6: In adult COPD patients discharged from the ED do systemic corticosteroids reduce relapse to additional care compared to standard care? 
+Search Strategy: Searched “COPD” and “corticosteroids” on Cochrane Library and PubMed (search limited to systematic reviews). 
+Clinical Recommendation: We recommend that patients with COPD exacerbations who respond to emergency department treatment and can be discharged, be prescribed a short course, 7-10 days, of systemic corticosteroids. Those patient receiving systemic corticosteroids had fewer relapses (27% vs 43%, P = 0.05) and significantly improved pulmonary function at ten days and quality of life at thirty days.1 
+Quality of Evidence: High, GRADE A 
+Strength of Recommendation: Strong, GRADE 1 
+References: 
+1. Walters JAE, Gibson PG, Wood-Baker R, Hannay M, Walters EH. Systemic corticosteroids for acute exacerbations of chronic obstructive pulmonary disease. Cochrane Database Syst Rev. 2009;(1):CD001288. doi: 10.1002/14651858.CD001288.pub3. 
+
+Additional Reading and General Resources: 
+1. Aaron SD, Vandemheen KL, Hebert P, Dales R, Stiell IG, Ahuja J, et al. Outpatient oral prednisone after emergency treatment of chronic obstructive pulmonary disease. N Eng J Med. 2003;348(26):2618-25. 
+PICO 7: In adults assessed in the ED with COPD exacerbations, is short-course (5-7 days) of systemic steroids as or more effective than long-course (10-14 days) systemic steroids? 
+Return to Table of Contents 
+Return to Disposition Planning 
+Search Strategy: Searched the Cochrane Library. Searched PubMed using search terms “COPD” and “corticosteroids” 
+Clinical Recommendation: We suggest that 5-7 days is as effective as 10-14 days. A Cochrane review published in 2011 was identified which compared short (seven days or less) vs long (more than seven days) course systemic corticosteroids to treat acute COPD. Seven studies were selected based on the reviews inclusion criteria; however, due to a lack of data, only four studies could in included in meta-analysis. No differences between short and long course corticosteroids in regards to treatment failure, FEV1, or frequency of side effects.1 
+Quality of Evidence: Moderate, GRADE B 
+Strength of Recommendation: Weak, GRADE 2 
+References: 
+1. Walters JAE, Wang W, Morley C, Soltani A, Wood-Baker R. Different durations of corticosteroid therapy for exacerbations of chronic obstructive pulmonary disease. Cochrane Database Syst Rev. 2011;(10):CD006897. doi: 10.1002/14651858.CD006897.pub2. 
+
+PICO 8: In adults assessed in the ED with COPD exacerbations, is a short-course (5-7 days) of systemic antibiotics as or more effective than long-course (10-14 days) systemic antibiotics? Search Strategy: Searched Cochrane Library and PubMed using the search terms “antibiotics and COPD” and limiting the results to systematic reviews. 
+Clinical Recommendation: We recommend that short course antibiotics in COPD exacerbations are as effective as long course. One systematic review examined randomized controlled trials which compared short course (five or fewer days) to long course (greater than 5 days) antibiotics in an inpatient or outpatient setting to treat patients with acute exacerbations of chronic COPD. Overall, 21 studies were included in the review. Clinical cure rates were similar after short and long course antibiotics at early follow-up (8-21 days; OR 0.99, 95% CI 0.90 to 1.08) and late follow-up (17 - 45 days; OR 1.0, 95 % CI 0.91 to 1.10). Bacteriological cure rates were not different after treatment with short or long course antibiotics (OR 1.05, 95% CI 
+0.87 to 1.26).1 The review concluded that a short course of antibiotics for five days or less were equally effective as a long-course antibiotic treatment. 
+Quality of Evidence: High, GRADE A 
+Strength of Recommendation: Strong, GRADE 1 
+References: 
+1. Moussaoui RE, Roede BM, Speelman P, Bresser P, Prins JM, Bossuyt PMM. Short-course antibiotic treatment in acute exacerbations of chronic bronchiti 
+
+
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0004]/items[openEHR-EHR-SECTION.adhoc.v0 and name/value='Nursing Assessment and Documentation']">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>This section contains specific considerations related to this topic. Standard assessment and documentation practices should still be followed. 
+1. Triage Assessment (ILI screening) 
+· Canadian Emergency Department Information Systems (CEDIS) complaint: Shortness of breath; Cough / congestion; Fever unspecified4 
+· Canadian Triage and Acuity Scale (CTAS) Modifiers: Respiratory distress modifiers most discriminatory4 
+2. Initial Assessment/Documentation 
+· Presenting History: Severity and timing of increasing shortness of breath, presence or absence of increased sputum production, presence or absence of increased sputum purulence 
+· Past History: Smoker, home oxygen (O2), bi-level positive airway pressure (BiPap)/continuous positive airway pressure (CPAP), previous intubations, orthopnea/paroxysmal nocturnal dyspnea (PND) 
+· Medications and Allergies: Inhaled chronic management and adherence, recent systemic corticosteroids, and antibiotic use within the last 3 months 
+· Systems Review: 
+o Vital Signs: elevated temperature 
+o Respiratory: Focused respiratory assessment; cough; sputum production; increased work of breathing; rate and depth; breath sounds; 
+o Cardiovascular: tachycardia; cyanosis; edema 
+o Neurological: confusion; irritability 
+3. Ongoing Assessment/Documentation </value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.ckt.v0]/items[at0004]/items[openEHR-EHR-SECTION.adhoc.v0 and name/value='Physician Assessment and Documentation']">
+    <items>
+      <item>
+        <key>Notes.Advice</key>
+        <value>
+1. History of Present Illness 
+· Anthonisen criteria: The presence or absence of the three criteria (increased dyspnea over baseline, increased sputum volume, increased sputum purulence) may help determine the value of antibiotics as part of patient therapy.5 
+· We suggest that risk factors for admission with an ED presentation (PICO 1): 
+o 2 or more COPD admissions in the past two years; 
+o Receiving corticosteroids for COPD at time of presentation; 
+o Canadian Triage and Acuity Scale (CTAS) 1 or 2 at presentation 
+o Receiving adjunct ED treatments (oxygen and intravenous magnesium) 
+2. Past History 
+· Smoking history 
+· Comorbidities such as previous acute coronary syndrome (ACS), congestive heart failure (CHF), venous thromboembolism (VTE) 
+3. Medications &amp; Allergies 
+· Recent systemic corticosteroids 
+·  Antibiotic use within the past three months 
+4. Physical Examination 
+· As part of the respiratory system evaluation, document the Borg severity score as the patient baseline (can be recorded by nurse &amp;/or physician) 
+5. Scoring Tools / Risk Scores 
+· Modified Borg Scale (Appendix D) </value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.ckt.v0" concept_name="Clinical Knowledge Topic">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clindocassessment.v0" concept_name="Clinical Documentation Assessment fake" path="/items[at0004]/items">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clindocassessment.v0" template_id="a4ab718d-74c4-4b2e-b757-4ba76c3c4f7c" concept_name="CDA Respiratory Assessment fake" max="1" path="/items" name="Respiratory Assessment" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v0" concept_name="Ad hoc heading" max="1" path="/items[at0004]/items" name="Nursing Assessment and Documentation" />
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v0" concept_name="Ad hoc heading" max="1" path="/items[at0004]/items" name="Physician Assessment and Documentation" />
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.borgscore.v0" concept_name="Modified Borg Score" path="/items[at0015]/items" />
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.large_order_set.v0" template_id="099924a3-95d7-4c9f-b603-736880357e51" concept_name="OSS COPD Order Set fake" max="1" path="/items[at0006]/items" name="COPD Order Set" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.ckt.v0">
+    <digest id="MD5-CAM-1.0.1">31C8A99A156260DF23CECB9CC00C0B1F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clindocassessment.v0">
+    <digest id="MD5-CAM-1.0.1">00D41B74E2AE181EC12EB3FFF6E1BE3E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.fakephysobs.v0">
+    <digest id="MD5-CAM-1.0.1">5557D90AE0F524FD86FECC67B5F5288F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.fakebodysegment.v0">
+    <digest id="MD5-CAM-1.0.1">CAC55BE077E76A7361C845FD6C209240</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.fakepulmfunctest.v0">
+    <digest id="MD5-CAM-1.0.1">F5D70E7A1765EB7917CE2DC557E184AB</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v0">
+    <digest id="MD5-CAM-1.0.1">A2CC91CBFA9177D333A7652C9C78E1F8</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.borgscore.v0">
+    <digest id="MD5-CAM-1.0.1">8999BB6EA43F3AC4DAACD294B40AE002</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.large_order_set.v0">
+    <digest id="MD5-CAM-1.0.1">C0861F4231F0A4FC957EBCAE4D00DFB9</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderset.v0">
+    <digest id="MD5-CAM-1.0.1">B28A5D7AD0F7CE5E5DEEEE7ABD5E2DAC</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.fakeadhoc.v0">
+    <digest id="MD5-CAM-1.0.1">AC4BAE33701D164B0C6CCD90A65DF418</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0">
+    <digest id="MD5-CAM-1.0.1">F7933C647ED5A43CCCAC855708480595</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.admission.v0">
+    <digest id="MD5-CAM-1.0.1">9F032C1AC0F4A111511DA7CB9E559EA2</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.fakelaborder.v0">
+    <digest id="MD5-CAM-1.0.1">D6AD42797CD2245E9403C4050D706196</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.fakedi.v0">
+    <digest id="MD5-CAM-1.0.1">176A69978878102730DA79E1D64F8494</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.fakemedication.v0">
+    <digest id="MD5-CAM-1.0.1">777D989B440950E32A4A6EC7CB121805</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.patient_care.v0">
+    <digest id="MD5-CAM-1.0.1">E303C8B8AD05CAC45FEDD26909E89B6C</digest>
+  </integrity_checks>
+</template>
