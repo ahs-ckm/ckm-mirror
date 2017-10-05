@@ -75,7 +75,13 @@
     <Rule path="/activities[at0001]/description[at0009]/items[at0062]" name="Indications" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0064]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
-    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" name="Date Requested for" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0068]" min="1" default="Routine">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Routine</includedValues>
+        <includedValues>Stat</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" default="Today" name="Date Requested for" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
@@ -83,6 +89,6 @@
     <Rule path="/activities[at0001]/description[at0009]/items[at0078]" name="Medications" />
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
-    <digest id="MD5-CAM-1.0.1">6B0526A78521F906FBDB397136735FF4</digest>
+    <digest id="MD5-CAM-1.0.1">11C2E5B1F9F6AD452A2C256A1449234F</digest>
   </integrity_checks>
 </template>
