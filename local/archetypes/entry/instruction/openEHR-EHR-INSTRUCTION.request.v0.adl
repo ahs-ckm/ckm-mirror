@@ -61,8 +61,8 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"11C2E5B1F9F6AD452A2C256A1449234F">
-		["build_uid"] = <"c5f1039d-e0f5-45a7-86b6-ebc9e231c2ed">
+		["MD5-CAM-1.0.1"] = <"9EDB3C04D44CE3C437C43D88F37ECF88">
+		["build_uid"] = <"9621d01c-7fe1-4e1e-b714-34703bc5ada4">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -118,8 +118,12 @@ definition
 							}
 							ELEMENT[at0153] occurrences matches {0..1} matches {	-- Pending Transition
 								value matches {
-									DV_BOOLEAN matches {
-										value matches {True, False}
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0156, 	-- Yes
+											at0157]	-- No
+										}
 									}
 								}
 							}
@@ -169,7 +173,7 @@ definition
 								include
 									archetype_id/value matches {/.*/}
 							}
-							ELEMENT[at0150] occurrences matches {0..1} matches {	-- Comment
+							ELEMENT[at0150] occurrences matches {0..100} matches {	-- Comment
 								value matches {
 									DV_TEXT matches {*}
 								}
@@ -373,6 +377,14 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					text = <"Multimedia">
 					description = <"*">
 				>
+				["at0156"] = <
+					text = <"Yes">
+					description = <"*">
+				>
+				["at0157"] = <
+					text = <"No">
+					description = <"*">
+				>
 			>
 		>
 		["nb"] = <
@@ -520,6 +532,14 @@ Status is used to denote whether this is the initial request, or a follow-up req
 				>
 				["at0155"] = <
 					text = <"*Multimedia(en)">
+					description = <"**(en)">
+				>
+				["at0156"] = <
+					text = <"*Yes(en)">
+					description = <"**(en)">
+				>
+				["at0157"] = <
+					text = <"*No(en)">
 					description = <"**(en)">
 				>
 			>
