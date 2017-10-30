@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>0f4f919b-f892-4aac-a083-ff4bcdd1f7b1</id>
+  <name>Neurophysiology EEG Order</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0062]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Allow Other</key>
+        <value>Yes</value>
+      </item>
+      <item>
+        <key>TransformAnnotation.IfOther</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.anticipated_cooperation.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Allow Other</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.transportation_requirements.v0]/items[at0002]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Clinician Instructions</key>
+        <value>Select no, only if on ventilator or medically unstable </value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0121]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Clinician Instructions</key>
+        <value>. If unable to move bed, please send on stretcher
+. For after hours STAT EEG's please call Neurologist or Epileptologist on call </value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request" max="1" name="EEG">
+    <Rule path="/activities[at0001]/description[at0009]/items[at0121]" name="EEG" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0148]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0135]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0062]" min="1" name="Indications ">
+      <constraint xsi:type="textConstraint" limitToList="false">
+        <includedValues>Decrease Level of Consciousness</includedValues>
+        <includedValues>Non Convulsive Seizures</includedValues>
+        <includedValues>Psychosis</includedValues>
+        <includedValues>Seizure Disorder</includedValues>
+        <includedValues>Transient Ischemic Attack (TIA)</includedValues>
+        <includedValues>Encephalopathy</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0064]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0068]" min="1" default="Routine">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Routine</includedValues>
+        <includedValues>Stat</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" default="Today" name="Date Requested for" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0078]" name="Medications" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0150]" max="1" name="Additional Information" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.neurophysiology_eeg_add_on.v0" concept_name="Neurophysiology eeg add on" path="/activities[at0001]/description[at0009]/items[at0132]">
+      <Rule path="/items[at0001]" max="0" />
+      <Rule path="/items[at0004]" min="1" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.anticipated_cooperation.v0" concept_name="Anticipated cooperation" path="/activities[at0001]/description[at0009]/items[at0116]" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0" concept_name="Transportation Requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
+      <Rule path="/items[at0002]" default="Yes" />
+      <Rule path="/items[at0001]" hide_on_form="true">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Ambulatory</includedValues>
+          <includedValues>Wheelchair</includedValues>
+          <includedValues>Stretcher</includedValues>
+          <includedValues>Bed</includedValues>
+          <includedValues>Portable testing - Other</includedValues>
+          <includedValues>Portable testing - Vented</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
+    <digest id="MD5-CAM-1.0.1">9EDB3C04D44CE3C437C43D88F37ECF88</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.neurophysiology_eeg_add_on.v0">
+    <digest id="MD5-CAM-1.0.1">4D5B47B0C128CE3406E58D376EB0C2B5</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.anticipated_cooperation.v0">
+    <digest id="MD5-CAM-1.0.1">8763B43A29B24F636A2E19985BA719A1</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0">
+    <digest id="MD5-CAM-1.0.1">C3283D30AB5DD089E09659076DDFBD87</digest>
+  </integrity_checks>
+</template>
