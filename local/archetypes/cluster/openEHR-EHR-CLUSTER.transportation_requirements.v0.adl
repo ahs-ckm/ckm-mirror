@@ -33,18 +33,23 @@ Not intended to capture interfacility facility transport.
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"0148F9173C08A902F20B976C1DCD1797">
-		["build_uid"] = <"cae6f15f-8f55-4c77-8bc3-743565ecf2ba">
+		["MD5-CAM-1.0.1"] = <"C3283D30AB5DD089E09659076DDFBD87">
+		["build_uid"] = <"b6eecdb3-7c80-4e2b-9c69-daa1a358a2c0">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
 	CLUSTER[at0000] matches {	-- Transportation Requirements
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Is Patient Portable
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Is Patient Portable?
 				value matches {
-					DV_BOOLEAN matches {
-						value matches {True, False}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003, 	-- Yes
+							at0004; 	-- No
+							at0004]	-- assumed value
+						}
 					}
 				}
 			}
@@ -70,7 +75,15 @@ ontology
 					description = <"How the patient is being transported to the test environment within an acute facility.">
 				>
 				["at0002"] = <
-					text = <"Is Patient Portable">
+					text = <"Is Patient Portable?">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Yes">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"No">
 					description = <"*">
 				>
 			>
