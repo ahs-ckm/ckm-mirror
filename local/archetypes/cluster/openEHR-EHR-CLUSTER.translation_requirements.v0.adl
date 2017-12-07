@@ -31,22 +31,15 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"B00E552A9BAD2632BA8A07DEF703D139">
-		["build_uid"] = <"5b2d83d6-97c3-4047-b8b0-691ff92a6293">
+		["MD5-CAM-1.0.1"] = <"89DDC61C71F85427DE7CBA97ED675985">
+		["build_uid"] = <"a0a17da3-2a82-427d-ab9f-9ad950891f31">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
 	CLUSTER[at0000] matches {	-- Translation requirements
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Interpreter Required
-				value matches {
-					DV_BOOLEAN matches {
-						value matches {True, False}
-					}
-				}
-			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Translation Requirements
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Interpreter Required
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -63,12 +56,8 @@ ontology
 					text = <"Translation requirements">
 					description = <"Description of the patient's need for an interpreter or translational services.">
 				>
-				["at0001"] = <
-					text = <"Interpreter Required">
-					description = <"Capturing whether or not an interpreter is required.">
-				>
 				["at0002"] = <
-					text = <"Translation Requirements">
+					text = <"Interpreter Required">
 					description = <"Description of translational services required.">
 				>
 			>
