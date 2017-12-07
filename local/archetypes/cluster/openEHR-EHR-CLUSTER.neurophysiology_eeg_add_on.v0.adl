@@ -16,9 +16,9 @@ description
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Additional neurophysiology order elements to facilitate pediatric electroencephalography orders.">
-			use = <"For use in pediatric patients only. ">
+			use = <"Additional order elements to complete specific neurophysiology order items.">
 			keywords = <"EEG", "Pediatric EEG">
-			misuse = <"Not intended to be used in adults.">
+			misuse = <"Not intended to be used outside of the neurophysiology orders.">
 			copyright = <"© Alberta Health Services (Canada)">
 		>
 	>
@@ -31,15 +31,15 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"4D5B47B0C128CE3406E58D376EB0C2B5">
-		["build_uid"] = <"cc9656ed-d500-4137-ad2b-e26c931e15fa">
+		["MD5-CAM-1.0.1"] = <"44BBE78641442BC189E23679F2CF2990">
+		["build_uid"] = <"a0923b22-65e0-4729-b872-14e3985b9395">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
 	CLUSTER[at0000] matches {	-- Neurophysiology eeg add on
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Longterm/Continuous Monitoring
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Longterm/continuous monitoring
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -50,11 +50,9 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {	-- Previous Routine EEG
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- Previous routine EEG
 				value matches {
-					DV_BOOLEAN matches {
-						value matches {True, False}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -70,7 +68,7 @@ ontology
 					description = <"Additional neurophysiology order elements to facilitate pediatric electroencephalography orders.">
 				>
 				["at0001"] = <
-					text = <"Longterm/Continuous Monitoring">
+					text = <"Longterm/continuous monitoring">
 					description = <"Indicating how long to continue running the test. For use in pediatric patients only. ">
 				>
 				["at0002"] = <
@@ -82,7 +80,7 @@ ontology
 					description = <"24 hours">
 				>
 				["at0004"] = <
-					text = <"Previous Routine EEG">
+					text = <"Previous routine EEG">
 					description = <"To indicate whether or not the patient has had a preivous routine EEG.">
 				>
 			>
