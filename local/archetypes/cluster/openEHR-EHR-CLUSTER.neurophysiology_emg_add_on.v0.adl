@@ -31,8 +31,8 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"B36E7A17235A235E30045C1BD34C669F">
-		["build_uid"] = <"52eb42c4-2646-4f00-9dac-a5aa2212a2a4">
+		["MD5-CAM-1.0.1"] = <"DEC113A5C369571CD3DB25559E9E4533">
+		["build_uid"] = <"7789003a-2228-43b3-a147-229c633e6437">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -48,16 +48,12 @@ definition
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Infection Concern
 				value matches {
-					DV_BOOLEAN matches {
-						value matches {True, False}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Anticoagulants or Bleeding Disorder
 				value matches {
-					DV_BOOLEAN matches {
-						value matches {True, False}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 		}
