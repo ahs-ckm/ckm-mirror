@@ -136,7 +136,12 @@
       <Rule path="/items[at0003]" min="1" />
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0" concept_name="Transportation Requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
-      <Rule path="/items[at0002]" min="1" default="Yes" />
+      <Rule path="/items[at0002]" min="1" default="Yes">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Yes</includedValues>
+          <includedValues>No</includedValues>
+        </constraint>
+      </Rule>
       <Rule path="/items[at0001]" max="0" />
     </Items>
   </definition>
@@ -147,6 +152,6 @@
     <digest id="MD5-CAM-1.0.1">DEC113A5C369571CD3DB25559E9E4533</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0">
-    <digest id="MD5-CAM-1.0.1">7FF3F4CCADB0A1C9E86041200315532B</digest>
+    <digest id="MD5-CAM-1.0.1">7D59051C75CB4E6441573D91A0EDCA91</digest>
   </integrity_checks>
 </template>
