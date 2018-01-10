@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
   <id>04ba2b7b-ff3a-4778-a093-6633de04d38a</id>
-  <name>Milestone testing template 1</name>
+  <name>Milestone testing template 1x</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
-      <purpose />
+      <purpose>Testing add text</purpose>
       <use />
       <misuse />
     </details>
@@ -60,7 +60,15 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.milestone_testing_1.v0" concept_name="Milestone testing 1" max="1" name="Milestone testing template 1" />
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.milestone_testing_1.v0" concept_name="Milestone testing 1" max="1" name="Milestone testing template 1 z">
+    <Rule path="/activities[at0001]/description[at0002]/items[at0003]" min="1" default="value 2">
+      <constraint xsi:type="textConstraint">
+        <includedValues>value 1</includedValues>
+        <includedValues>value 2</includedValues>
+        <includedValues>value 3</includedValues>
+      </constraint>
+    </Rule>
+  </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.milestone_testing_1.v0">
     <digest id="MD5-CAM-1.0.1">45D4323056073A87F04AD9D90A99C532</digest>
   </integrity_checks>
