@@ -61,8 +61,8 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"4D750D691727EABA784495FA43496045">
-		["build_uid"] = <"8b6703f3-8d3f-4600-827c-6e0acddc4f4d">
+		["MD5-CAM-1.0.1"] = <"A64F331996C9A4C2D057263D4C03EC50">
+		["build_uid"] = <"625d8d47-339e-4642-9eda-11ec14ec130e">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -116,7 +116,7 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0153] occurrences matches {0..1} matches {	-- Pending Transition
+							ELEMENT[at0153] occurrences matches {0..1} matches {	-- Pending transition
 								value matches {
 									DV_BOOLEAN matches {
 										value matches {True, False}
@@ -165,7 +165,7 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
-							allow_archetype CLUSTER[at0116] occurrences matches {0..*} matches {	-- Patient Factors
+							allow_archetype CLUSTER[at0116] occurrences matches {0..*} matches {	-- Patient factors
 								include
 									archetype_id/value matches {/.*/}
 							}
@@ -259,7 +259,7 @@ ontology
 				>
 				["at0062"] = <
 					text = <"Reason for request">
-					description = <"A short phrase describing the reason for the request.">
+					description = <"Describes the reason for the request.">
 					comment = <"Coding of the 'Reason for request' with a coding system is desirable, if available.">
 				>
 				["at0064"] = <
@@ -291,7 +291,7 @@ ontology
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 				["at0116"] = <
-					text = <"Patient Factors">
+					text = <"Patient factors">
 					description = <"Language, transport or other personal requirements to support the patient's attendance or participation in provision of the service.">
 				>
 				["at0121"] = <
@@ -366,7 +366,7 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					description = <"Additional narrative about the service request not captured in other fields.">
 				>
 				["at0153"] = <
-					text = <"Pending Transition">
+					text = <"Pending transition">
 					description = <"To indicate if patient transition is dependent on the completion of this order.">
 				>
 				["at0155"] = <
