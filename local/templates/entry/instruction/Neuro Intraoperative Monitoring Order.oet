@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>aa0f1e54-115d-4d7c-bdb1-2d0af3ca7295</id>
+  <name>Neuro Intraoperative Monitoring Order</name>
+  <description>
+    <original_author>
+      <item>
+        <key>Ed Schwab</key>
+      </item>
+    </original_author>
+    <other_contributors>
+      <item>Katrina Simpson-Pineda</item>
+      <item>Marlene Mann</item>
+      <item>Colin Latter</item>
+    </other_contributors>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>For ordering intraoperative monitoring</purpose>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0062]">
+    <items>
+      <item>
+        <key>TransformAnnotation.If Other</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0040]">
+    <items>
+      <item>
+        <key>TransformAnnotation.Default Instance Value Date Time</key>
+        <value>0</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request" max="1" name="Intraoperative Monitoring">
+    <Rule path="/activities[at0001]/description[at0009]/items[at0121]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Intraoperative Monitoring</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0148]" min="1" name="Monitoring Requested">
+      <constraint xsi:type="textConstraint">
+        <includedValues>SSEP-Arms</includedValues>
+        <includedValues>SSEP-Legs</includedValues>
+        <includedValues>MEP</includedValues>
+        <includedValues>EMG</includedValues>
+        <includedValues>Interoperative EEG</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0135]" name="Operative Procedure" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0062]" min="1" name="Indications" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0064]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0068]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0153]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" min="1" name="Date Requested for" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0078]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0150]" max="1" name="Additional Information" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
+    <digest id="MD5-CAM-1.0.1">A64F331996C9A4C2D057263D4C03EC50</digest>
+  </integrity_checks>
+</template>
