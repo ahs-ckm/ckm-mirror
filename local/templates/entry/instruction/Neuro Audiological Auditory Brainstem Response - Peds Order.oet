@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>05e85678-abaf-4201-8fe8-bdb1d01345d1</id>
+  <name>Neuro Audiological Auditory Brainstem Response - Peds Order</name>
+  <description>
+    <original_author>
+      <item>
+        <key>Ed Schwab</key>
+      </item>
+    </original_author>
+    <other_contributors>
+      <item>Katrina Simpson-Pineda</item>
+      <item>Marlene Mann</item>
+      <item>Colin Latter</item>
+    </other_contributors>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>For ordering an Audiological Auditory Brainstem Response (ABR) - peds</purpose>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0062]">
+    <items>
+      <item>
+        <key>TransformAnnotation.If Other</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.translation_requirements.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>TransformAnnotation.IfYes</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.translation_requirements.v0]/items[at0002]">
+    <items>
+      <item>
+        <key>TransformAnnotation.If Yes</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0150]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Ordering Clinician Instructions</key>
+        <value>Please provide specifics of the indication provided.</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0121]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>Audiological ABR - Peds</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0040]">
+    <items>
+      <item>
+        <key>TransformAnnotation.Default Instance Value Date Time</key>
+        <value>0</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request" max="1" name="Audiological Auditory Brainstem Response - Peds">
+    <Rule path="/activities[at0001]/description[at0009]/items[at0121]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Audiological Auditory Brainstem Response - Peds</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0148]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0135]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0062]" min="1" name="Indications">
+      <constraint xsi:type="textConstraint" limitToList="false">
+        <includedValues>Otoxicity</includedValues>
+        <includedValues>Syndromic</includedValues>
+        <includedValues>Family History of Hearing Loss</includedValues>
+        <includedValues>Meningitis</includedValues>
+        <includedValues>TORCH Infection</includedValues>
+        <includedValues>Head Injury</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0064]" name="Specifics of the stated indications" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0068]" min="1" default="Routine">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Routine</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0153]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" min="1" name="Date Requested for" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0078]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0150]" max="1" name="Additional Information" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0" concept_name="Transportation requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
+      <Rule path="/items[at0002]" min="1" />
+      <Rule path="/items[at0001]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.translation_requirements.v0" concept_name="Translation requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Yes</includedValues>
+          <includedValues>No</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
+    <digest id="MD5-CAM-1.0.1">A64F331996C9A4C2D057263D4C03EC50</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0">
+    <digest id="MD5-CAM-1.0.1">C6E535B6D4CFDE87FF68A97F65920BCF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.translation_requirements.v0">
+    <digest id="MD5-CAM-1.0.1">12EC02278AD5F87A48384EC8CBAD2C44</digest>
+  </integrity_checks>
+</template>
