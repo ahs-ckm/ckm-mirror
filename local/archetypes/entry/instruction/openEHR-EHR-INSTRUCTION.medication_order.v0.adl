@@ -80,7 +80,53 @@ Merk at disse bruksområdene innbefatter FHIR-ressursene for både \"Medication 
 Skal ikke brukes for å registrere ordinering av blodkomponenter, som omfatter en fundamentalt ulik klinisk prosess og sannsynligvis vil trenge ulik støtteinformasjon. Bruk arketypen INSTRUCTION.transfusion for dette formålet.
 
 Skal ikke brukes for å registrere ordinering av innlegging av implantater og medisinsk utstyr som pacemakere og defibrillatorer. Bruk arketypen INSTRUCTION.procedure for dette formålet.">
-			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
+		>
+		["pt-br"] = <
+			language = <[ISO_639-1::pt-br]>
+			purpose = <"Registrar todos os aspectos de uma prescrição de medicamento, vacina, produtos nutricionais ou outros itens terapêuticos para um indivíduo identificado.">
+			use = <"Utilizado para registrar todos os aspectos da prescrição de medicamentos, vacinas, produtos nutricionais ou outros itens terapêuticos, para um indivíduo identificado.
+
+Destina-se a ser usado para qualquer tipo de medicamento e prescrição relacionada, quer seja prescrito por um profissional de saúde ou disponível para compra \"no balcão\"da farmácia. O escopo deste arquétipo de medicamentos também inclui prescrições de vacinas, fluidos parenterais ou outros produtos terapêuticos, como bandagens, produtos nutricionais ou outros ítens que possuem um padrão comum para o seu registro e são aplicados ou administrados com vistas a um efeito terapêutico. 
+
+Este arquétipo é projetado para ser usado em vários contextos clínicos, incluindo, entre outros:
+- um registro em uma consulta clínica (COMPOSITION.encounter);
+- uma receita escrita por um médico, dentista, ou outro profissional de saúde autorizado para prescrever uma medicamento ou produto nutricional a ser dispensado e administrado (COMPOSITION.prescription);
+- um ítem em uma lista atual de medicamento, receita ou carta de medicamentos (dentro de COMPOSITION.medication_list); e
+- um ítem em um documento de resumo, como a transferência de cuidados (COMPOSITION.transfer_summary) ou um documento de contra-referência (COMPOSITION.request).
+
+Em muitos casos, uma prescrição de medicamento será simples - tipicamente para um único item de medicamento com instruções simples para a sua dispensação e administração. No entanto, este arquétipo foi também projetado para permitir prescrições mais complexas. Por exemplo:
+
+-	uma redução de dose de prednisolona durante um período de semanas;
+-	fracionamento de insulina, com dosagem dependente dos resultados do teste;
+-	medicamentos múltiplos prescritos simultaneamente como parte de um regime de fármaco único, como uma terapia tripla para úlcera péptica; e
+-	administração intravenosa de medicamentos ou suplementos nutricionais, incluindo nutrição parenteral.
+
+O arquétipo foi, portanto, projetado para atender prescrições de maior complexidade, como, por exemplo: 
+-	instruções narrativas simples tais como \"furosemida 40mg dois comprimidos pela manhã e um no almoço\" para assegurar a compatibilidade com os sistemas existentes; 
+-	a quantidade do medicamento geralmente é representada por um número e uma unidade de dose correspondente, no entanto, pode haver uma descrição em texto livre para garantir a compatibilidade com os sistemas existentes e a cobertura de todos os cenários clínicos; através de
+-	detalhes estruturados para a dose, via e duração para representar uma especificação totalmente computável.
+
+Este arquétipo foi também projetado para que uma única estrutura de prescrição de medicamento possa representar:
+
+-	Prescrições sequencias complexas de medicamento com a mesma concentração de preparação representados em uma única estrutura de prescrição; e
+-	múltiplas prescrições de medicamentos que podem ser encadeadas em circunstâncias em que diferentes medicamentos ou preparações precisem ser administrados sequencialmente.
+
+Este arquétipo é também adequado para prescrição de soluções parenterais, em cenários de atendimento onde é normal prescrever estes itens. Em outras cenários, uma prescrição separada de soluções parenterais poderá ser mais apropriada.
+
+SLOTs contendo arquétipos do tipo CLUSTER foram utilizados ​​para representar parte do conteúdo por três razões:
+-	Para garantir que um arquétipo básico possa ser utilizado em todos os casos de uso descritos acima, oferecendo flexibilidade onde for necessário, por exemplo, o SLOT de \"Detalhes da preparação\", permite que detalhes adicionais estruturados da preparação possam ser adicionados. Existe um arquétipo sugerido para medicamentos. É possível que outros arquétipos do tipo CLUSTER sejam necessários no futuro, para outros fins, como pedidos complexos de nutrição parenteral;
+-	apoiar a reutilização do arquétipo em situações em que o conteúdo foi identificado como sendo utilizado também em outros contextos clínicos, em particular o arquétipo ACTION.medication (para deste arquéitpo) para gravação de distribuição real, administração, etc. e
+-	remover o conteúdo de menor utilização do núcleo do arquétipo. 
+
+Várias prescrições podem ser representadas como atividades separadas nesta instância de arquétipo, para, por exemplo, representar prescrições de diferentes medicamentos, conectadas entre si, como ocorre na terapia de H. pylori, quando se opta por não prescrever como um único pacote.
+
+Observar que esses casos de usos acima descritos incluem os casos de uso da Prescrição de Medicamento e Medicamentos do FHIR. Isto é, este arquétipo é uma correspondência para ambos os recursos do FHIR, desde que utilizado no contexto apropriado.">
+			keywords = <"medicamento", "prescrição", "prescrever", "terapia", "substância", "droga", "terapêutico", "Otc", "produto terapêutico", "Farmacêutico", "produtos", "Posologia", "tratamento", "Solução", "nutrição", "Prescrição Eletrônica">
+			misuse = <"Não deve ser utilizado para registrar as atividades relacionadas à realização da prescrição de medicação, vacina, produto nutricional ou item terapêutico, como detalhes sobre a administração ou a dispensação. Use o arquétipo ACTION.medication para este propósito.
+
+Não deve ser utilizado para registrar o pedido de produtos sanguíneos, o que envolve um processo clínico fundamentalmente diferente e é provável que exija informações adicionais diferentes. Use o arquétipo INSTRUCTION.transfusion para este propósito.
+
+Não deve ser utilizado para registrar a ordem de inserção de implantes ou dispositivos médicos, como marcapassos e desfibriladores. Utilize o procedimento INSTRUCTION.Para este fim.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -129,54 +175,6 @@ Not to be used to record the ordering of blood products, which involves a fundam
 Not to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.">
 			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
 		>
-		["pt-br"] = <
-			language = <[ISO_639-1::pt-br]>
-			purpose = <"Registrar todos os aspectos de uma prescrição de medicamento, vacina, produtos nutricionais ou outros itens terapêuticos para um indivíduo identificado.">
-			use = <"Utilizado para registrar todos os aspectos da prescrição de medicamentos, vacinas, produtos nutricionais ou outros itens terapêuticos, para um indivíduo identificado.
-
-Destina-se a ser usado para qualquer tipo de medicamento e prescrição relacionada, quer seja prescrito por um profissional de saúde ou disponível para compra \"no balcão\"da farmácia. O escopo deste arquétipo de medicamentos também inclui prescrições de vacinas, fluidos parenterais ou outros produtos terapêuticos, como bandagens, produtos nutricionais ou outros ítens que possuem um padrão comum para o seu registro e são aplicados ou administrados com vistas a um efeito terapêutico. 
-
-Este arquétipo é projetado para ser usado em vários contextos clínicos, incluindo, entre outros:
-- um registro em uma consulta clínica (COMPOSITION.encounter);
-- uma receita escrita por um médico, dentista, ou outro profissional de saúde autorizado para prescrever uma medicamento ou produto nutricional a ser dispensado e administrado (COMPOSITION.prescription);
-- um ítem em uma lista atual de medicamento, receita ou carta de medicamentos (dentro de COMPOSITION.medication_list); e
-- um ítem em um documento de resumo, como a transferência de cuidados (COMPOSITION.transfer_summary) ou um documento de contra-referência (COMPOSITION.request).
-
-Em muitos casos, uma prescrição de medicamento será simples - tipicamente para um único item de medicamento com instruções simples para a sua dispensação e administração. No entanto, este arquétipo foi também projetado para permitir prescrições mais complexas. Por exemplo:
-
--	uma redução de dose de prednisolona durante um período de semanas;
--	fracionamento de insulina, com dosagem dependente dos resultados do teste;
--	medicamentos múltiplos prescritos simultaneamente como parte de um regime de fármaco único, como uma terapia tripla para úlcera péptica; e
--	administração intravenosa de medicamentos ou suplementos nutricionais, incluindo nutrição parenteral.
-
-O arquétipo foi, portanto, projetado para atender prescrições de maior complexidade, como, por exemplo: 
--	instruções narrativas simples tais como \"furosemida 40mg dois comprimidos pela manhã e um no almoço\" para assegurar a compatibilidade com os sistemas existentes; 
--	a quantidade do medicamento geralmente é representada por um número e uma unidade de dose correspondente, no entanto, pode haver uma descrição em texto livre para garantir a compatibilidade com os sistemas existentes e a cobertura de todos os cenários clínicos; através de
--	detalhes estruturados para a dose, via e duração para representar uma especificação totalmente computável.
-
-Este arquétipo foi também projetado para que uma única estrutura de prescrição de medicamento possa representar:
-
--	Prescrições sequencias complexas de medicamento com a mesma concentração de preparação representados em uma única estrutura de prescrição; e
--	múltiplas prescrições de medicamentos que podem ser encadeadas em circunstâncias em que diferentes medicamentos ou preparações precisem ser administrados sequencialmente.
-
-Este arquétipo é também adequado para prescrição de soluções parenterais, em cenários de atendimento onde é normal prescrever estes itens. Em outras cenários, uma prescrição separada de soluções parenterais poderá ser mais apropriada.
-
-SLOTs contendo arquétipos do tipo CLUSTER foram utilizados ​​para representar parte do conteúdo por três razões:
--	Para garantir que um arquétipo básico possa ser utilizado em todos os casos de uso descritos acima, oferecendo flexibilidade onde for necessário, por exemplo, o SLOT de \"Detalhes da preparação\", permite que detalhes adicionais estruturados da preparação possam ser adicionados. Existe um arquétipo sugerido para medicamentos. É possível que outros arquétipos do tipo CLUSTER sejam necessários no futuro, para outros fins, como pedidos complexos de nutrição parenteral;
--	apoiar a reutilização do arquétipo em situações em que o conteúdo foi identificado como sendo utilizado também em outros contextos clínicos, em particular o arquétipo ACTION.medication (para deste arquéitpo) para gravação de distribuição real, administração, etc. e
--	remover o conteúdo de menor utilização do núcleo do arquétipo. 
-
-Várias prescrições podem ser representadas como atividades separadas nesta instância de arquétipo, para, por exemplo, representar prescrições de diferentes medicamentos, conectadas entre si, como ocorre na terapia de H. pylori, quando se opta por não prescrever como um único pacote.
-
-Observar que esses casos de usos acima descritos incluem os casos de uso da Prescrição de Medicamento e Medicamentos do FHIR. Isto é, este arquétipo é uma correspondência para ambos os recursos do FHIR, desde que utilizado no contexto apropriado.">
-			keywords = <"medicamento", "prescrição", "prescrever", "terapia", "substância", "droga", "terapêutico", "Otc", "produto terapêutico", "Farmacêutico", "produtos", "Posologia", "tratamento", "Solução", "nutrição", "Prescrição Eletrônica">
-			misuse = <"Não deve ser utilizado para registrar as atividades relacionadas à realização da prescrição de medicação, vacina, produto nutricional ou item terapêutico, como detalhes sobre a administração ou a dispensação. Use o arquétipo ACTION.medication para este propósito.
-
-Não deve ser utilizado para registrar o pedido de produtos sanguíneos, o que envolve um processo clínico fundamentalmente diferente e é provável que exija informações adicionais diferentes. Use o arquétipo INSTRUCTION.transfusion para este propósito.
-
-Não deve ser utilizado para registrar a ordem de inserção de implantes ou dispositivos médicos, como marcapassos e desfibriladores. Utilize o procedimento INSTRUCTION.Para este fim.">
-			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
-		>
 	>
 	lifecycle_state = <"in_development">
 	other_contributors = <"Morten Aas, Oslo Universitetssykehus, Norway", "Tomas Alme, DIPS, Norway", "Ole Andreas Bjordal, Webmed, Norway", "Erling Are Hole, Helse Bergen, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Marcus Baw, openGPSoC / BawMedical Ltd, United Kingdom", "John Bennett, NEHTA, Australia", "Kristian Berg, Universitetssykehuset Nord Norge, Norway (Nasjonal IKT redaktør)", "SumanBhusan Bhattacharyya, Sudisa Consultancy Services, India", "Sharmila Biswas, Australia", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Laila Bruun, Oslo universitetssykehus HF, Norway", "Bjørn Christensen, Helse Bergen HF, Norway", "Stephen Chu, NEHTA, Australia (Editor)", "Matthew Cordell, NEHTA, Australia", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Inderjit Daphu, Helse Bergen, Norway", "Gail Easterbrook, Flinders Medical Centre, Australia", "Gunn Elin Blakkisrud, DIPS ASA, Norway", "Stig Erik Hegrestad, Helse Førde, Norway", "David Evans, Queensland Health, Australia", "Samuel Frade, Marand, Portugal", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Sarah Gaunt, NEHTA, Australia", "Heather Grain, Llewelyn Grain Informatics, Australia", "Cecilie Graver, Oslo universitetssykehus HF, Norway", "Trina Gregory, cpc, Australia", "Bjørn Grøva, Diretoratet for e-helse, Norway", "Robert Hausam, Hausam Consulting LLC, United States", "Sam Heard, Ocean Informatics, Australia (Editor)", "Kristian Heldal, Telemark Hospital Trust, Norway", "Annette Hole Sjøborg, DIPS ASA, Norway", "Hilde Hollås, DIPS ASA, Norway", "Roar Holm, Helse Vest IKT A/S, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Gunnar Jårvik, Nasjonal IKT HF, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Mary Kelaher, NEHTA, Australia", "Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway", "Ole Kristian Losvik, Losol AS, Norway", "Robert L'egan, NEHTA, Australia", "Russell Leftwich, Russell B Leftwich MD, United States", "Fest Legemiddelverket, Statens Legemiddelverk, Norway", "Øygunn Leite Kallevik, Helse Bergen, Norway", "Heather Leslie, Ocean Health Systems, Australia (openEHR Editor)", "Colin Macfarlane, Elsevier, United Kingdom", "Alan March, Hospital Universitario Austral, Argentina", "Siv Marie Lien, DIPS ASA, Norway", "Susan McIndoe, Royal District Nursing Service, Australia", "David McKillop, NEHTA, Australia", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Chris Mitchell, RACGP, Australia", "Stewart Morrison, NEHTA, Australia", "Bjørn Næss, DIPS ASA, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Martin Paulson, Sykehuset i Vestfold, Norway", "Chris Pearce, Melbourne East GP Network, Australia", "Kristian Pedersen, Nordlandssykehuset HF, Norway", "Rune Pedersen, Universitetssykehuset i Nord Norge, Norway", "Vladimir Pizzo, Hospital Sírio Libanês, Brazil", "Camilla Preeston, Royal Australian College of General Practitioners, Australia", "Margaret Prichard, NEHTA, Australia", "Cathy Richardson, NEHTA, Australia", "Robyn Richards, NEHTA - Clinical Terminology, Australia", "Tanja Riise, Nasjonal IKT HF, Norway", "Anoop Shah, University College London, United Kingdom", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Raymond Simkus, Brookswood Family Practice, Canada", "Iztok Stotl, UKCLJ, Slovenia", "John Taylor, NEHTA, Australia", "Nyree Taylor, Ocean Informatics, Australia", "Tesfay Teame, Folkehelseinstituttet, Norway", "Richard Townley-O'Neill, Australian Digital Health Agency, Australia", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Ines Vaz, UFN, Portugal", "Nils Widnes, Helse-Bergen, Norway", "Kylie Young, The Royal Australian College of General Practitioners, Australia">
@@ -193,12 +191,12 @@ Royal Australian College of General Practitioners. Fact Sheet: Medicines List. 2
 NHS HSCIC Messaging Implementation Manual (GP2GP messages) http://www.uktcregistration.nss.cfh.nhs.uk/trud3
 
 Standards for medication and medical device records – technical annex [Internet]. RCP London. [cited 2015 Dec 15]. Available from: https://www.rcplondon.ac.uk/projects/outputs/standards-medication-and-medical-device-records-technical-annex">
-		["current_contact"] = <"Ian McNicoll, freshEHR Clinical Informatics, UK <ian@freshehr.com>">
-		["original_namespace"] = <"ca.ahs">
-		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"Doug Pankowski, Alberta Health Services, Canada<doug.pankowski@ahs.ca>">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"ca.ahs">
 		["MD5-CAM-1.0.1"] = <"84DD1D451CA804948FD7BD6263173162">
-		["build_uid"] = <"17114f0f-c0c5-47e2-b9b5-a0c8400775e6">
+		["build_uid"] = <"27e3fba3-121a-40ca-b30c-78251e22a88c">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -495,9 +493,6 @@ definition
 			}
 		}
 	}
-
-
-
 
 
 ontology
