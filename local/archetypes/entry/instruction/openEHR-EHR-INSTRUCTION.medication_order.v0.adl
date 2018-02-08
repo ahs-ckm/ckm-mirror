@@ -195,8 +195,8 @@ Standards for medication and medical device records – technical annex [Interne
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"84DD1D451CA804948FD7BD6263173162">
-		["build_uid"] = <"89a6d1ed-5f57-485f-a349-2d4edae15d55">
+		["MD5-CAM-1.0.1"] = <"FB0ED31411FDB8F1EAF4AF2060442104">
+		["build_uid"] = <"af77719b-05e1-4313-8509-965ebb0dfa0c">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -230,12 +230,12 @@ definition
 								include
 									archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_clock(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v1/}
 							}
-							ELEMENT[at0094] occurrences matches {0..*} matches {	-- Delivery method
+							ELEMENT[at0094] occurrences matches {0..*} matches {	-- Administration method
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							allow_archetype CLUSTER[at0095] occurrences matches {0..*} matches {	-- Delivery device details
+							allow_archetype CLUSTER[at0095] occurrences matches {0..*} matches {	-- Administration device
 								include
 									archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
 							}
@@ -269,6 +269,27 @@ definition
 							}
 							CLUSTER[at0062] occurrences matches {0..1} matches {	-- Medication safety
 								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0064] occurrences matches {0..1} matches {	-- Exceptional safety override?
+										value matches {
+											DV_BOOLEAN matches {
+												value matches {True, False}
+											}
+										}
+									}
+									CLUSTER[at0178] occurrences matches {0..1} matches {	-- Safety override
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0171] occurrences matches {0..*} matches {	-- Overriden safety advice
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0162] occurrences matches {0..*} matches {	-- Override reason
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
 									CLUSTER[at0051] occurrences matches {0..*} matches {	-- Maximum dose
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0130] occurrences matches {0..1} matches {	-- Maximum amount
@@ -296,23 +317,6 @@ definition
 													}
 												}
 											}
-										}
-									}
-									ELEMENT[at0171] occurrences matches {0..*} matches {	-- Overriden safety advice
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0064] occurrences matches {0..1} matches {	-- Exceptional safety override?
-										value matches {
-											DV_BOOLEAN matches {
-												value matches {True, False}
-											}
-										}
-									}
-									ELEMENT[at0162] occurrences matches {0..*} matches {	-- Override reason
-										value matches {
-											DV_TEXT matches {*}
 										}
 									}
 									CLUSTER[at0150] occurrences matches {0..1} matches {	-- Total daily effective dose
@@ -623,13 +627,13 @@ Coding of the route with a terminology is preferred, where possible. Multiple po
 					description = <"Structured description of the site of administration of the ordered item.">
 				>
 				["at0094"] = <
-					text = <"Delivery method">
-					description = <"The technique or device by which the ordered item is to be delivered.">
+					text = <"Administration method">
+					description = <"The technique or device by which the ordered item is to be administered.">
 					comment = <"For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.">
 				>
 				["at0095"] = <
-					text = <"Delivery device details">
-					description = <"Details of the medical device used to assist delivery of the ordered item.">
+					text = <"Administration device">
+					description = <"Details of the medical device used to assist administration of the ordered item.">
 				>
 				["at0105"] = <
 					text = <"Patient information">
@@ -770,6 +774,10 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					text = <"Structured dose and timing directions">
 					description = <"Details of structured dose and timing directions.">
 				>
+				["at0178"] = <
+					text = <"Safety override">
+					description = <"Overriding of a known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication.">
+				>
 			>
 		>
 		["nb"] = <
@@ -897,13 +905,13 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					description = <"Strukturert beskrivelse av administreringsstedet for den ordinerte varen.">
 				>
 				["at0094"] = <
-					text = <"Administreringsmetode">
-					description = <"Teknikken eller utstyret som brukes for å administrere den ordinerte varen.">
-					comment = <"For eksempel \"via Z-trackinjeksjon\", \"via forstøver\". Koding av administreringsmetoden med en terminologi er anbefalt, der det er mulig.">
+					text = <"*Administration method(en)">
+					description = <"*The technique or device by which the ordered item is to be administered.(en)">
+					comment = <"*For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.(en)">
 				>
 				["at0095"] = <
-					text = <"Detaljer om administreringsutstyr">
-					description = <"Detaljer om det medisinske utstyret som brukes til å administrere den ordinerte varen.">
+					text = <"*Administration device(en)">
+					description = <"*Details of the medical device used to assist administration of the ordered item.(en)">
 				>
 				["at0105"] = <
 					text = <"Bruksområde">
@@ -1043,6 +1051,10 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					text = <"Strukturerte anvisninger om dose og timing">
 					description = <"Detaljerte og strukturerte anvisninger om dose og timing.">
 				>
+				["at0178"] = <
+					text = <"*Safety override(en)">
+					description = <"*Overriding of a known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication.(en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -1172,14 +1184,13 @@ Sempre que possível, é desejável que o local do corpo seja codificado com uma
 					description = <"Descrição estruturada do local da administração do item prescrito.">
 				>
 				["at0094"] = <
-					text = <"Método da administração">
-					description = <"A técnica ou dispositivo pelo qual o item prescrito é administrado.">
-					comment = <"Por exemplo: \"nebulização\", \"via injetável\".
-Sempre que possível, é desejável que o local do corpo esteja codificado com uma terminologia.">
+					text = <"*Administration method(en)">
+					description = <"*The technique or device by which the ordered item is to be administered.(en)">
+					comment = <"*For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.(en)">
 				>
 				["at0095"] = <
-					text = <"Detalhes do dispositivo">
-					description = <"Detalhes do dispositivo medicinal utilizado para suportar a administração do item prescrito.">
+					text = <"*Administration device(en)">
+					description = <"*Details of the medical device used to assist administration of the ordered item.(en)">
 				>
 				["at0105"] = <
 					text = <"Informações do paciente">
@@ -1318,6 +1329,10 @@ Sempre que possível, é desejável que o local do corpo esteja codificado com u
 				["at0177"] = <
 					text = <"Orientações estuturadas de dose e duração">
 					description = <"Detalhes das orientações estuturadas de dose e duração.">
+				>
+				["at0178"] = <
+					text = <"*Safety override(en)">
+					description = <"*Overriding of a known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication.(en)">
 				>
 			>
 		>
