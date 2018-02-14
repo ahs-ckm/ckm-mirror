@@ -61,8 +61,8 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"BF3B9C1830C13E1B7F7046D9229CA793">
-		["build_uid"] = <"3615f531-bf48-4511-bf5d-a63ec89479f8">
+		["MD5-CAM-1.0.1"] = <"D184E6EF3CF7AB01D8815F0A17B3E195">
+		["build_uid"] = <"446972c1-b40f-4e3a-bb65-0efed7faeaf6">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -123,20 +123,9 @@ definition
 									}
 								}
 							}
-							ELEMENT[at0040] occurrences matches {0..1} matches {	-- Service due
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
-							ELEMENT[at0145] occurrences matches {0..1} matches {	-- Service period start
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
-							ELEMENT[at0144] occurrences matches {0..1} matches {	-- Service period expiry
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
+							allow_archetype CLUSTER[at0155] occurrences matches {0..*} matches {	-- Service direction
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.service_direction\.v0/}
 							}
 							ELEMENT[at0147] occurrences matches {0..1} matches {	-- Indefinite?
 								value matches {
@@ -149,7 +138,7 @@ definition
 								include
 									archetype_id/value matches {/.*/}
 							}
-							allow_archetype CLUSTER[at0149] occurrences matches {0..*} matches {	-- Attachment
+							allow_archetype CLUSTER[at0149] occurrences matches {0..*} matches {	-- Attachment/multimedia
 								include
 									archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
 							}
@@ -173,10 +162,6 @@ definition
 								value matches {
 									DV_TEXT matches {*}
 								}
-							}
-							allow_archetype CLUSTER[at0155] occurrences matches {0..*} matches {	-- Multimedia
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia\.v1/}
 							}
 						}
 					}
@@ -251,11 +236,6 @@ ontology
 				["at0011"] = <
 					text = <"Receiver identifier">
 					description = <"The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.">
-				>
-				["at0040"] = <
-					text = <"Service due">
-					description = <"The date/time, or acceptable interval of date/time, for provision of the service.">
-					comment = <"In practice, clinicians will often think in terms of ordering services as approximate timing, for example: review in 3 months, 6 months or 12 months. As clinical systems need more exact parameters to operate on, this '3 months' will usually be converted to an exact date 3 months from the date of recording and stored using this data element.">
 				>
 				["at0062"] = <
 					text = <"Reason for request">
@@ -337,16 +317,6 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					text = <"Receiver">
 					description = <"Details about the healthcare provider or organisation receiving the request for service.">
 				>
-				["at0144"] = <
-					text = <"Service period expiry">
-					description = <"The date/time that marks the conclusion of the valid period of time for delivery of this service.">
-					comment = <"This date/time is the equivalent to the latest possible date for service delivery or to the date of expiry for this request. For example: a service may be required to be completed before another event, such as scheduled surgery.">
-				>
-				["at0145"] = <
-					text = <"Service period start">
-					description = <"The date/time that marks the beginning of the valid period of time for delivery of this service.">
-					comment = <"This date/time is the equivalent to the earliest possible date for service delivery. For example: sometimes a certain amount of time must pass before a service can be performed, for example some procedures can only be performed once the patient has stopped taking medications for a specific amount of time.">
-				>
 				["at0147"] = <
 					text = <"Indefinite?">
 					description = <"The valid period for this request is open ended and has no date of expiry.">
@@ -358,7 +328,7 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					comment = <"For example: hospital vs home care delivery.">
 				>
 				["at0149"] = <
-					text = <"Attachment">
+					text = <"Attachment/multimedia">
 					description = <"Digital document, image, video or diagram as supporting information for the request.">
 				>
 				["at0150"] = <
@@ -370,8 +340,8 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					description = <"To indicate if patient transition is dependent on the completion of this order.">
 				>
 				["at0155"] = <
-					text = <"Multimedia">
-					description = <"*">
+					text = <"Service direction">
+					description = <"Structured details of a single service direction for an ordered item, such as a laboratory test, diagnostic image etc.">
 				>
 			>
 		>
@@ -401,11 +371,6 @@ Status is used to denote whether this is the initial request, or a follow-up req
 				["at0011"] = <
 					text = <"Mottakers rekvisisjonsidentifikator">
 					description = <"Rekvisisjonens identifikator, tilordnet av den som mottar rekvisisjonen. Mottaker kan være helsepersonell, organisasjon eller applikasjonen.">
-				>
-				["at0040"] = <
-					text = <"*Service due(en)">
-					description = <"*The date/time, or acceptable interval of date/time, for provision of the service.(en)">
-					comment = <"*In practice, clinicians will often think in terms of ordering services as approximate timing, for example: review in 3 months, 6 months or 12 months. As clinical systems need more exact parameters to operate on, this '3 months' will usually be converted to an exact date 3 months from the date of recording and stored using this data element.(en)">
 				>
 				["at0062"] = <
 					text = <"*Reason for request(en)">
@@ -485,16 +450,6 @@ Status is used to denote whether this is the initial request, or a follow-up req
 				["at0142"] = <
 					text = <"Mottaker">
 					description = <"Detaljer om helsepersonellet eller organisasjonen som mottar prosedyrerekvisisjonen.">
-				>
-				["at0144"] = <
-					text = <"*Service period expiry(en)">
-					description = <"*The date/time that marks the conclusion of the valid period of time for delivery of this service.(en)">
-					comment = <"*This date/time is the equivalent to the latest possible date for service delivery or to the date of expiry for this request. For example: a service may be required to be completed before another event, such as scheduled surgery.(en)">
-				>
-				["at0145"] = <
-					text = <"*Service period start(en)">
-					description = <"*The date/time that marks the beginning of the valid period of time for delivery of this service.(en)">
-					comment = <"*This date/time is the equivalent to the earliest possible date for service delivery. For example: sometimes a certain amount of time must pass before a service can be performed, for example some procedures can only be performed once the patient has stopped taking medications for a specific amount of time.(en)">
 				>
 				["at0147"] = <
 					text = <"*Indefinite?(en)">
