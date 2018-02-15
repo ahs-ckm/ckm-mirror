@@ -65,8 +65,8 @@ This archetype is designed to be used within the 'Timing' SLOT within the CLUSTE
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"813C7A1EC5DDE3D0E7B6610129A07F41">
-		["build_uid"] = <"88c6a50e-cd35-4697-8cc2-175cb8d3125b">
+		["MD5-CAM-1.0.1"] = <"791B8826A88305E4B66F6E13948975C1">
+		["build_uid"] = <"1b32a154-3d9b-48e7-a2bb-047b6d0b4bb9">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -156,6 +156,7 @@ definition
 							>
 						}
 					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0014] occurrences matches {0..1} matches {	-- Interval
@@ -259,7 +260,9 @@ ontology
 				["at0003"] = <
 					text = <"Frequency">
 					description = <"The frequency as number of times per time period that the activity is to take place.">
-					comment = <"For example: \"4 times per day\" or \"3 to 4 times per hour\".">
+					comment = <"For example: \"q4h\", \"every 4 hours\".
+The Text element can be used when a value set is required, and can include both \"q4h\" type as well as \"QID\" type values.
+Note: \"every 4 - 6 hours\" can be represented using the Interval, however as per best practice should be avoided.">
 				>
 				["at0004"] = <
 					text = <"Specific time">
@@ -332,8 +335,10 @@ ontology
 				>
 				["at0003"] = <
 					text = <"*Frequency(en)">
-					description = <"*The frequency as number of times per time period (limited to a single day) that the activity is to take place.(en)">
-					comment = <"*e.g. \"4 times per day\" or \"\"3 to 4 times per hour\"(en)">
+					description = <"*The frequency as number of times per time period that the activity is to take place.(en)">
+					comment = <"*For example: \"q4h\", \"every 4 hours\".
+The Text element can be used when a value set is required, and can include both \"q4h\" type as well as \"QID\" type values.
+Note: \"every 4 - 6 hours\" can be represented using the Interval, however as per best practice should be avoided.(en)">
 				>
 				["at0004"] = <
 					text = <"*Specific time(en)">
@@ -404,9 +409,11 @@ ontology
 					description = <"Strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet innenfor ett døgn.">
 				>
 				["at0003"] = <
-					text = <"Frekvens">
-					description = <"Frekvensen for aktiviteten som skal finne sted, angitt som antall ganger per tidsperiode.">
-					comment = <"For eksempel \"4 ganger per dag\" eller \"3-4 ganger per time\".">
+					text = <"*Frequency(en)">
+					description = <"*The frequency as number of times per time period that the activity is to take place.(en)">
+					comment = <"*For example: \"q4h\", \"every 4 hours\".
+The Text element can be used when a value set is required, and can include both \"q4h\" type as well as \"QID\" type values.
+Note: \"every 4 - 6 hours\" can be represented using the Interval, however as per best practice should be avoided.(en)">
 				>
 				["at0004"] = <
 					text = <"Spesifikt tidspunkt">
