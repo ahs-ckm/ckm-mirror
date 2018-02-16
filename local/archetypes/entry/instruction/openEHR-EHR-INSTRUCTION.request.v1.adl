@@ -61,9 +61,9 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"61E4E754AF3288D0446198C2FEB209EF">
-		["build_uid"] = <"18477fb9-29d3-403e-bbe1-e380b5faf4b3">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"194638CC6CE2B8D2FC6EA8B26AA366B6">
+		["build_uid"] = <"d71e1be3-62fb-4be4-85f2-e0a0d8775576">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -125,7 +125,7 @@ definition
 							}
 							allow_archetype CLUSTER[at0155] occurrences matches {0..*} matches {	-- Service direction
 								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.service_direction\.v0/}
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.service_direction(-[a-zA-Z0-9_]+)*\.v1/}
 							}
 							ELEMENT[at0147] occurrences matches {0..1} matches {	-- Indefinite?
 								value matches {
