@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
   <id>05e85678-abaf-4201-8fe8-bdb1d01345d1</id>
-  <name>Neuro Audiological Auditory Brainstem Response - Peds Order</name>
+  <name>NEURO Audiological Auditory Brainstem Response Order-Peds</name>
   <description>
     <original_author>
       <item>
@@ -12,6 +12,7 @@
       <item>Katrina Simpson-Pineda</item>
       <item>Marlene Mann</item>
       <item>Colin Latter</item>
+      <item>AHS Neurophysiology Order Catalogue Clinical Working Group</item>
     </other_contributors>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
@@ -70,7 +71,7 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0062]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[at0062]">
     <items>
       <item>
         <key>TransformAnnotation.If Other</key>
@@ -78,7 +79,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.translation_requirements.v0]/items[at0001]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.translation_requirements.v0]/items[at0001]">
     <items>
       <item>
         <key>TransformAnnotation.IfYes</key>
@@ -86,7 +87,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.translation_requirements.v0]/items[at0002]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.translation_requirements.v0]/items[at0002]">
     <items>
       <item>
         <key>TransformAnnotation.If Yes</key>
@@ -94,7 +95,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0150]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[at0150]">
     <items>
       <item>
         <key>Catalogue Pattern.Ordering Clinician Instructions</key>
@@ -102,7 +103,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0121]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[at0121]">
     <items>
       <item>
         <key>Catalogue Pattern.Synonyms</key>
@@ -110,7 +111,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0040]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[at0040]">
     <items>
       <item>
         <key>TransformAnnotation.Default Instance Value Date Time</key>
@@ -118,7 +119,7 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request" max="1" name="Audiological Auditory Brainstem Response - Peds">
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v1" concept_name="Service request" max="1" name="Audiological Auditory Brainstem Response Order-Peds">
     <Rule path="/activities[at0001]/description[at0009]/items[at0121]">
       <constraint xsi:type="textConstraint">
         <includedValues>Audiological Auditory Brainstem Response - Peds</includedValues>
@@ -144,33 +145,19 @@
       </constraint>
     </Rule>
     <Rule path="/activities[at0001]/description[at0009]/items[at0153]" max="0" />
-    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" min="1" name="Date Requested for" />
-    <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
-    <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0078]" max="0" />
     <Rule path="/activities[at0001]/description[at0009]/items[at0150]" max="1" name="Additional Information" />
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0" concept_name="Transportation requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v1" concept_name="Transportation requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
       <Rule path="/items[at0002]" min="1" />
       <Rule path="/items[at0001]" max="0" />
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.translation_requirements.v0" concept_name="Translation requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Yes</includedValues>
-          <includedValues>No</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
   </definition>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
-    <digest id="MD5-CAM-1.0.1">A64F331996C9A4C2D057263D4C03EC50</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v1">
+    <digest id="MD5-CAM-1.0.1">61E4E754AF3288D0446198C2FEB209EF</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v0">
-    <digest id="MD5-CAM-1.0.1">C6E535B6D4CFDE87FF68A97F65920BCF</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.translation_requirements.v0">
-    <digest id="MD5-CAM-1.0.1">12EC02278AD5F87A48384EC8CBAD2C44</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v1">
+    <digest id="MD5-CAM-1.0.1">9EFC415F7D73779890D92718C9F64694</digest>
   </integrity_checks>
 </template>
