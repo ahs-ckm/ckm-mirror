@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>31698ac4-c99f-407b-abfd-6623206ab90d</id>
+  <name>REF Spiritual Care Referral Order</name>
+  <description>
+    <original_author>
+      <item>
+        <key>Teresa Highway</key>
+      </item>
+      <item>
+        <key>Ron Krawec</key>
+      </item>
+    </original_author>
+    <other_contributors>
+      <item>Katrina Simpson-Pineda</item>
+      <item>Marlene Mann</item>
+      <item>AHS Referral Order Catalogue Clinical Working Group</item>
+    </other_contributors>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>For ordering a Spiritual Care Referral </purpose>
+      <use />
+      <misuse>For use </misuse>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>SC Referral; Spiritual Health Practitioner (SHP) Referral; SHP Referral</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[at0062]">
+    <items>
+      <item>
+        <key>TransformAnnotation.If Other</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]/activities[at0001]/description[at0009]/items[at0150]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Ordering Clinician Instructions</key>
+        <value>Use this field for more information about the order
+Examples include:
+- If referral diagnosis requires a specific protocol to be initiated, enter the protocol here.
+- Referral diagnosis status</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v1" concept_name="Service request" max="1" name="Spiritual Care Referral">
+    <Rule path="/activities[at0001]/description[at0009]/items[at0121]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Spiritual care referral</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0148]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0135]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0062]" name="Reason for referral">
+      <constraint xsi:type="textConstraint" limitToList="false">
+        <includedValues>Spiritual distress (struggles with religious and/or existential beliefs, loss of meaning or purpose, that may include loss of hope)</includedValues>
+        <includedValues>End-of-life care (palliative sedation; removal of life-support; medical assistance in dying (MAID); death)</includedValues>
+        <includedValues>End-of-life protocols (post-death care of the body)</includedValues>
+        <includedValues>Grief and loss</includedValues>
+        <includedValues>Life-threatening trauma</includedValues>
+        <includedValues>Prayer / rituals</includedValues>
+        <includedValues>Moral / ethical dilemma</includedValues>
+        <includedValues>Facilitating community religious referrals</includedValues>
+        <includedValues>Spiritual assessment</includedValues>
+        <includedValues>Emotional / spiritual suppor</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0064]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0068]" min="1" default="Routine">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Routine</includedValues>
+        <includedValues>Urgent</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0153]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0078]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0150]" max="1" name="Additional Information" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v1">
+    <digest id="MD5-CAM-1.0.1">194638CC6CE2B8D2FC6EA8B26AA366B6</digest>
+  </integrity_checks>
+</template>
