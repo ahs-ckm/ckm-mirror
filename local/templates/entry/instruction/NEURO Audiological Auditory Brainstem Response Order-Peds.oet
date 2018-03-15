@@ -174,7 +174,12 @@
       </Items>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.transportation_requirements.v1" concept_name="Transportation requirements" path="/activities[at0001]/description[at0009]/items[at0116]">
-      <Rule path="/items[at0002]" min="1" />
+      <Rule path="/items[at0002]" min="1" default="Yes">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Yes</includedValues>
+          <includedValues>No</includedValues>
+        </constraint>
+      </Rule>
       <Rule path="/items[at0001]" max="0" />
     </Items>
   </definition>
