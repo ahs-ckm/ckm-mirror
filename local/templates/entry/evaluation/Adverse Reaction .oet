@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>3e561d19-9e3d-4701-b39a-5f8390d4c899</id>
+  <name>Adverse Reaction </name>
+  <description>
+    <original_author>
+      <item>
+        <key>Marlene Mann</key>
+      </item>
+    </original_author>
+    <other_contributors>
+      <item>Ed Schwab</item>
+      <item>Katrina Simpson-Pineda</item>
+      <item>Colin Latter</item>
+    </other_contributors>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>To record a clinical assessment of the risk for an adverse reaction upon future exposure to the specified substance or class of substance. Where a risk is identified, to record information or evidence about reaction events.</purpose>
+      <keywords>
+        <item>Allergy</item>
+        <item>Reaction</item>
+        <item>Intolerance</item>
+        <item>Allergic</item>
+      </keywords>
+      <use>Use to record information about the presence of the risk of an adverse reaction</use>
+      <misuse>Not to record physiological reactions to physical agents, infectious agents or food contaminants. </misuse>
+      <copyright>©Alberta Health Services (Canada)</copyright>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v0" concept_name="Adverse reaction risk">
+    <Rule path="/data[at0001]/items[at0101]" max="0" />
+    <Rule path="/data[at0001]/items[at0117]" max="0" />
+    <Rule path="/data[at0001]/items[at0058]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0010]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0021]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0011]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0027]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0028]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0020]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0025]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0106]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0018]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0040]" max="0" />
+    <Rule path="/data[at0001]/items[at0009]/items[at0032]" max="0" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v0">
+    <digest id="MD5-CAM-1.0.1">3A1ABF833CDF4FA47D518ECF2B835BC9</digest>
+  </integrity_checks>
+</template>
