@@ -2,7 +2,7 @@
 	openEHR-EHR-INSTRUCTION.medication_order.v0
 
 concept
-	[at0000]	-- Medication order
+	[at0000]	-- Medication order modified
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -195,101 +195,88 @@ Standards for medication and medical device records – technical annex [Interne
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"FB0ED31411FDB8F1EAF4AF2060442104">
-		["build_uid"] = <"af77719b-05e1-4313-8509-965ebb0dfa0c">
+		["MD5-CAM-1.0.1"] = <"F398A292F3F3FC12F18B3E46733292F5">
+		["build_uid"] = <"ed954af5-6c2d-4ddf-823f-31a50beb25f9">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	INSTRUCTION[at0000] matches {	-- Medication order
+	INSTRUCTION[at0000] matches {	-- Medication order modified
 		activities cardinality matches {0..*; unordered} matches {
 			ACTIVITY[at0001] occurrences matches {0..*} matches {	-- Order
 				description matches {
 					ITEM_TREE[at0002] matches {	-- Tree
-						items cardinality matches {1..*; ordered} matches {
+						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0070] occurrences matches {1..*} matches {	-- Medication item
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0143] occurrences matches {0..1} matches {	-- Preparation details
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_substance(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.medication_substance(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							ELEMENT[at0091] occurrences matches {0..*} matches {	-- Route
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0092] occurrences matches {0..1} matches {	-- Body site
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0093] occurrences matches {0..1} matches {	-- Structured body site
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_clock(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							ELEMENT[at0094] occurrences matches {0..*} matches {	-- Administration method
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0095] occurrences matches {0..*} matches {	-- Administration device
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							ELEMENT[at0009] occurrences matches {0..1} matches {	-- Overall directions description
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0047] occurrences matches {0..1} matches {	-- Parsable directions
-								value matches {
-									DV_PARSABLE matches {
-										formalism matches {"text/html", "text/plain", "text/xml"}
-									}
-								}
-							}
-							ELEMENT[at0173] occurrences matches {0..*} matches {	-- Specific directions description
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0174] occurrences matches {0..*} matches {	-- Dosage justification
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
 							allow_archetype CLUSTER[at0177] occurrences matches {0..*} matches {	-- Structured dose and timing directions
 								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.therapeutic_direction(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.therapeutic_direction(-[a-zA-Z0-9_]+)*\.v1/}
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.therapeutic_direction(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.therapeutic_direction(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.therapeutic_direction_modified\.v0/}
 								exclude
 									archetype_id/value matches {/.*/}
 							}
+							ELEMENT[at0018] occurrences matches {0..*} matches {	-- Clinical indication
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0148] occurrences matches {0..*} matches {	-- Therapeutic intent
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0107] occurrences matches {0..*} matches {	-- Monitoring instruction
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							CLUSTER[at0113] occurrences matches {0..1} matches {	-- Order details
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0139] occurrences matches {0..1} matches {	-- Priority
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Order start date/time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Order stop date/time
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..*} matches {	-- Order stop condition
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..*} matches {	-- Order start condition
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0181] occurrences matches {0..*} matches {	-- Administrations completed
+										include
+											archetype_id/value matches {/.*/}
+									}
+									allow_archetype CLUSTER[at0112] occurrences matches {0..*} matches {	-- Order summary
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_order_summary(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.medication_order_summary(-[a-zA-Z0-9_]+)*\.v1/}
+									}
+								}
+							}
+							ELEMENT[at0044] occurrences matches {0..*} matches {	-- Additional instruction
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 							CLUSTER[at0062] occurrences matches {0..1} matches {	-- Medication safety
 								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0064] occurrences matches {0..1} matches {	-- Exceptional safety override?
-										value matches {
-											DV_BOOLEAN matches {
-												value matches {True, False}
-											}
-										}
-									}
-									CLUSTER[at0178] occurrences matches {0..1} matches {	-- Safety override
-										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0171] occurrences matches {0..*} matches {	-- Overriden safety advice
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0162] occurrences matches {0..*} matches {	-- Override reason
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-										}
-									}
 									CLUSTER[at0051] occurrences matches {0..*} matches {	-- Maximum dose
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0130] occurrences matches {0..1} matches {	-- Maximum amount
@@ -303,6 +290,7 @@ definition
 															>
 														>
 													>
+													DV_TEXT matches {*}
 												}
 											}
 											ELEMENT[at0146] occurrences matches {0..1} matches {	-- Maximum amount unit
@@ -315,6 +303,28 @@ definition
 													DV_DURATION matches {
 														value matches {|>=PT0S|}
 													}
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0178] occurrences matches {0..1} matches {	-- Safety override
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0064] occurrences matches {0..1} matches {	-- Exceptional safety override?
+												value matches {
+													DV_BOOLEAN matches {
+														value matches {True, False}
+													}
+												}
+											}
+											ELEMENT[at0171] occurrences matches {0..*} matches {	-- Overriden safety advice
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0162] occurrences matches {0..*} matches {	-- Override reason
+												value matches {
+													DV_TEXT matches {*}
 												}
 											}
 										}
@@ -328,6 +338,7 @@ definition
 											}
 											ELEMENT[at0151] occurrences matches {0..1} matches {	-- Total daily amount
 												value matches {
+													DV_TEXT matches {*}
 													C_DV_QUANTITY <
 														property = <[openehr::380]>
 														list = <
@@ -348,133 +359,27 @@ definition
 									}
 								}
 							}
-							ELEMENT[at0044] occurrences matches {0..*} matches {	-- Additional instruction
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
 							ELEMENT[at0105] occurrences matches {0..*} matches {	-- Patient information
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0107] occurrences matches {0..*} matches {	-- Monitoring instruction
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0018] occurrences matches {0..*} matches {	-- Clinical indication
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0148] occurrences matches {0..*} matches {	-- Therapeutic intent
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							CLUSTER[at0113] occurrences matches {0..1} matches {	-- Order details
-								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Order start date/time
-										value matches {
-											DV_DATE_TIME matches {*}
-										}
-									}
-									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Order stop date/time
-										value matches {
-											DV_DATE_TIME matches {*}
-										}
-									}
-									ELEMENT[at0011] occurrences matches {0..*} matches {	-- Order start criterion
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0016] occurrences matches {0..*} matches {	-- Order stop criterion
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0060] occurrences matches {0..1} matches {	-- Administrations completed
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|>=0|}
-											}
-										}
-									}
-									ELEMENT[at0050] occurrences matches {0..1} matches {	-- Duration of order completed
-										value matches {
-											DV_DURATION matches {
-												value matches {PWDTH/|>=PT0H|}
-											}
-										}
-									}
-									allow_archetype CLUSTER[at0112] occurrences matches {0..*} matches {	-- Order summary
-										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_order_summary(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.medication_order_summary(-[a-zA-Z0-9_]+)*\.v1/}
-									}
-								}
-							}
-							allow_archetype CLUSTER[at0069] occurrences matches {0..*} matches {	-- Authorisation directions
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_authorisation(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.medication_authorisation(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							CLUSTER[at0129] occurrences matches {0..1} matches {	-- Dispense directions
-								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0106] occurrences matches {0..*} matches {	-- Dispense instruction
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									allow_archetype CLUSTER[at0065] occurrences matches {0..*} matches {	-- Dispense amount
-										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_supply_amount(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.medication_supply_amount(-[a-zA-Z0-9_]+)*\.v1/}
-									}
-									ELEMENT[at0132] occurrences matches {0..1} matches {	-- Substitution direction
-										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0168, 	-- Permitted
-													at0169]	-- Not permitted
-												}
-											}
-										}
-									}
-									ELEMENT[at0154] occurrences matches {0..1} matches {	-- Non-substitution reason
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0139] occurrences matches {0..1} matches {	-- Priority
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0155] occurrences matches {0..1} matches {	-- Dispensing start date
-										value matches {
-											DV_DATE_TIME matches {*}
-										}
-									}
-									ELEMENT[at0161] occurrences matches {0..1} matches {	-- Dispensing expiry date
-										value matches {
-											DV_DATE_TIME matches {*}
-										}
-									}
-									allow_archetype CLUSTER[at0170] occurrences matches {0..*} matches {	-- Dispense details
-										include
-											archetype_id/value matches {/.*/}
-									}
-								}
-							}
-							allow_archetype CLUSTER[at0166] occurrences matches {0..*} matches {	-- Additional details
-								include
-									archetype_id/value matches {/.*/}
-							}
 							ELEMENT[at0167] occurrences matches {0..1} matches {	-- Comment
 								value matches {
 									DV_TEXT matches {*}
 								}
+							}
+							allow_archetype CLUSTER[at0143] occurrences matches {0..1} matches {	-- Preparation details
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_substance(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.medication_substance(-[a-zA-Z0-9_]+)*\.v1/}
+							}
+							allow_archetype CLUSTER[at0180] occurrences matches {0..*} matches {	-- Community/outpatient add on
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_add_on_outpatient\.v0/}
+							}
+							allow_archetype CLUSTER[at0166] occurrences matches {0..*} matches {	-- Additional details
+								include
+									archetype_id/value matches {/.*/}
 							}
 						}
 					}
@@ -504,7 +409,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Medication order">
+					text = <"Medication order modified">
 					description = <"An order for a medication, vaccine, nutritional product or other therapeutic item for an identified individual.">
 				>
 				["at0001"] = <
@@ -529,13 +434,8 @@ ontology
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
-				["at0009"] = <
-					text = <"Overall directions description">
-					description = <"Complete narrative description about how the ordered item is to be used.">
-					comment = <"This narrative should normally subsume data captured in 'Dose amount', 'Dose timing' and any additional instructions for use. Where the medication dose directions are fully carried by the structured, computable dose directions, this element should carry the narrative equivalent, generally auto-generated. If it is not possible to represent the intended 'Dose direction' fully in computable form, partial representation is not recommended, and the directions should be only recorded in narrative form using this data element.">
-				>
 				["at0011"] = <
-					text = <"Order start criterion">
+					text = <"Order start condition">
 					description = <"A condition which, when met, requires the commencement of administration or use.">
 					comment = <"For example: 'Start if symptoms recur'. This is intended for a general pre-condition which should trigger the whole medication course to be started, and not for 'as required' administrations of an ongoing order.">
 				>
@@ -548,7 +448,7 @@ ontology
 					description = <"The date and optional time when it is planned to cease use of the ordered item.">
 				>
 				["at0016"] = <
-					text = <"Order stop criterion">
+					text = <"Order stop condition">
 					description = <"A condition which, when met, requires the cessation of administration or use.">
 					comment = <"For example: 'Stop after symptoms disappear''.">
 				>
@@ -562,16 +462,6 @@ ontology
 					description = <"An additional instruction on how to use or store the ordered item.">
 					comment = <"For example: precautions as 'take with food', 'Avoid grapefruit', 'Dissolve in water', 'store in a cool, dry place'. This data element allows multiple occurrences and should be coded with a reference terminology, where possible.">
 				>
-				["at0047"] = <
-					text = <"Parsable directions">
-					description = <"A parsable, computable text representation of the directions.">
-					comment = <"Generally this is only used when passing information between legacy systems. For example: '10mg bd; 20mg n' as used by the NHS Dose syntax (in development).">
-				>
-				["at0050"] = <
-					text = <"Duration of order completed">
-					description = <"The time period during which the individual/patient has already been using the ordered item as a part of the intended whole order but prior to the issuance of this order.">
-					comment = <"For example: To record that the patient had been taking antibiotics 3 days prior to hospital admission, in the context of a 7 day course.">
-				>
 				["at0051"] = <
 					text = <"Maximum dose">
 					description = <"Details about the maximum, cumulative dose allowed over a defined period for the ordered item.">
@@ -582,11 +472,6 @@ ontology
 					description = <"The period of time during which the maximum dose is calculated.">
 					comment = <"Example: 24 hours.">
 				>
-				["at0060"] = <
-					text = <"Administrations completed">
-					description = <"The number of administrations of the ordered item that have been completed, as part of the intended whole order but prior to the issuance of this order.">
-					comment = <"For example: To record that the patient has taken the two first antibiotic tablets of a three day course, prior to discharge from the hospital to a nursing home.">
-				>
 				["at0062"] = <
 					text = <"Medication safety">
 					description = <"Details about medication safety for the ordered item.">
@@ -595,55 +480,15 @@ ontology
 					text = <"Exceptional safety override?">
 					description = <"Confirmation by the prescriber that the normal dose or other safety limit has been overridden due to exceptional circumstances.">
 				>
-				["at0065"] = <
-					text = <"Dispense amount">
-					description = <"Details about the amount of the ordered item to be dispensed.">
-					comment = <"This SLOT allows for local variation in the different jurisdictions regarding medication dispensing amount to be managed.">
-				>
-				["at0069"] = <
-					text = <"Authorisation directions">
-					description = <"Details of authorisation of the ordered item, including supporting local self-administration, issue and endorsement policies.">
-					comment = <"For example: details of repeat/refill supply. This SLOT allows for local variation in the different jurisdictions regarding medication authorisation and re-authorisation to be managed.">
-				>
 				["at0070"] = <
 					text = <"Medication item">
 					description = <"Name of the medication, vaccine or other therapeutic/prescribable item being ordered.">
 					comment = <"Depending on the prescribing context this field could be used for either generic- or product-based prescribing. This data field can be used to record tightly bound orders of different medications when they are prescribed as a single pack. It is strongly recommended that the 'Medication item' be coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack to be used. Free text entry should only be used if there is no appropriate terminology available.">
 				>
-				["at0091"] = <
-					text = <"Route">
-					description = <"The route by which the ordered item is to be administered into the subject's body.">
-					comment = <"For example: 'oral', 'intravenous', or 'topical'.
-Coding of the route with a terminology is preferred, where possible. Multiple potential routes may be specified.">
-				>
-				["at0092"] = <
-					text = <"Body site">
-					description = <"Name of the site of administration of the ordered item.">
-					comment = <"For example: 'left upper arm', 'intravenous catheter right hand'.
- Coding of the body site with a terminology is preferred, where possible.">
-				>
-				["at0093"] = <
-					text = <"Structured body site">
-					description = <"Structured description of the site of administration of the ordered item.">
-				>
-				["at0094"] = <
-					text = <"Administration method">
-					description = <"The technique or device by which the ordered item is to be administered.">
-					comment = <"For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.">
-				>
-				["at0095"] = <
-					text = <"Administration device">
-					description = <"Details of the medical device used to assist administration of the ordered item.">
-				>
 				["at0105"] = <
 					text = <"Patient information">
 					description = <"An additional instruction directed primarily at the individual/patient or carers.">
 					comment = <"For example: 'To reduce your blood pressure', 'To thin your blood'. This data element allows multiple occurrences and should be coded with a reference terminology, where possible. If required it is possible to use a LINK attribute to associate this element with, for example, the 'original diagnosis' in a separate Problem list composition but the indication should be explicitly recorded here, as the link target may change over time.">
-				>
-				["at0106"] = <
-					text = <"Dispense instruction">
-					description = <"An additional instruction directed primarily at the person dispensing the ordered item.">
-					comment = <"Example: Detailed instructions for phased dispensing of opiates.">
 				>
 				["at0107"] = <
 					text = <"Monitoring instruction">
@@ -659,19 +504,10 @@ Coding of the route with a terminology is preferred, where possible. Multiple po
 					text = <"Order details">
 					description = <"Details about the whole medication order.">
 				>
-				["at0129"] = <
-					text = <"Dispense directions">
-					description = <"Directions about the dispensing of the ordered item.">
-				>
 				["at0130"] = <
 					text = <"Maximum amount">
 					description = <"The maximum, cumulative amount of medication which should be administered within the allowed period. The unit for this amount is carried in Maximum amount unit.">
 					comment = <"For example: 1, 1.5, 0.125.">
-				>
-				["at0132"] = <
-					text = <"Substitution direction">
-					description = <"Permission for substitution with a bioequivalent item.">
-					comment = <"In many jurisdictions, substitution of an ordered item as a generic form or with a different brand name, which has been determined as bioequivalent, is allowed at the point of dispense or supply. In other cases substitution is assumed and the clinician has to explicitly request non-substitution.">
 				>
 				["at0139"] = <
 					text = <"Priority">
@@ -708,21 +544,6 @@ Coding of the route with a terminology is preferred, where possible. Multiple po
 					description = <"The dose unit associated with the total daily amount.">
 					comment = <"The dose units are normally scientific units such as mg, ml rather than 'tablets'.">
 				>
-				["at0154"] = <
-					text = <"Non-substitution reason">
-					description = <"The reason why an ordered item should not be substituted at dispense.">
-					comment = <"For example 'Generic preparation not bio-equivalent'.">
-				>
-				["at0155"] = <
-					text = <"Dispensing start date">
-					description = <"The date from which the ordered item is permitted to be dispensed for the first time.">
-					comment = <"May be used to control the time of dispensing of medications with potential for abuse. For example: benzodiazepines or analgesics.">
-				>
-				["at0161"] = <
-					text = <"Dispensing expiry date">
-					description = <"The date after which the ordered item is no longer valid to be legally dispensed.">
-					comment = <"In some jurisdictions, orders to dispense may have an expiry date after which the prescription may not be dispensed.">
-				>
 				["at0162"] = <
 					text = <"Override reason">
 					description = <"The reason for a clinical safety or maximum dose override.">
@@ -742,33 +563,10 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					text = <"Comment">
 					description = <"Additional narrative about the medication order not captured in other fields.">
 				>
-				["at0168"] = <
-					text = <"Permitted">
-					description = <"Substitution of the medication with a bioequivalent medication is allowed.">
-				>
-				["at0169"] = <
-					text = <"Not permitted">
-					description = <"Substitution of the medication with a bioequivalent medication is not allowed.">
-				>
-				["at0170"] = <
-					text = <"Dispense details">
-					description = <"Further details related to dispense directions.">
-					comment = <"This SLOT allows for local variation in the different jurisdictions regarding medication dispensing.">
-				>
 				["at0171"] = <
 					text = <"Overriden safety advice">
 					description = <"A known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication. This element is normally only recorded when this safety advice is overridden.">
 					comment = <"For example: 'Allergic to penicillin', 'Atenolol duplicated'.">
-				>
-				["at0173"] = <
-					text = <"Specific directions description">
-					description = <"A narrative description of a specific part of overall directions.">
-					comment = <"In some settings, it is common to split overall narrative directions into more specific segments of narrative. For example in hospital settings, it can be common to split the overall directions into 'Dose amount' and 'Dose timing', both as narrative text. These terms can be applied at template or run-time.">
-				>
-				["at0174"] = <
-					text = <"Dosage justification">
-					description = <"A description of the justification used to calculate a dose amount or administration rate where this is dependent on some other factor.">
-					comment = <"For example: 'Adjusted for amputation'.">
 				>
 				["at0177"] = <
 					text = <"Structured dose and timing directions">
@@ -777,6 +575,15 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 				["at0178"] = <
 					text = <"Safety override">
 					description = <"Overriding of a known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication.">
+				>
+				["at0180"] = <
+					text = <"Community/outpatient add on">
+					description = <"Details of medication ordering pertinent to community or outpatient administration including authorisation of the ordered item, and dispense instructions.">
+				>
+				["at0181"] = <
+					text = <"Administrations completed">
+					description = <"To capture administrations of the ordered item that have been completed, as part of the intended whole order but prior to the issuance of this order.">
+					comment = <"For example: To record that the patient has taken the two first antibiotic tablets of a three day course, prior to discharge from the hospital to a nursing home or to record that the patient had been taking antibiotics 3 days prior to hospital admission, in the context of a 7 day course.">
 				>
 			>
 		>
@@ -808,15 +615,10 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					description = <"Ytterligere informasjon som er nødvendig for å registrere lokalt innhold/kontekst, eller for å sammenstille med andre referansemodeller/formalismer.">
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
-				["at0009"] = <
-					text = <"Overordnet anvisningsbeskrivelse">
-					description = <"En komplett fritekstbeskrivelse av hvordan den ordinerte varen skal brukes.">
-					comment = <"Denne fritekstbeskrivelsen bør vanligvis omfatte data i \"Dosemengde\", \"Timing\" og eventuelle andre instruksjoner. I tilfeller hvor legemiddelets anvisning er fullt strukturert, bør dette feltet inneholde en fritekstekvivalent som vanligvis autogenereres. Er det ikke mulig å representere de ønskede anvisningene i en fullt strukturert form, anbefales ikke delvis strukturert form. I stedet bør anvisningen kun registreres som fritekst i dette dataelementet.">
-				>
 				["at0011"] = <
-					text = <"Startkriterium">
-					description = <"Et vilkår for at den ordinerte varen kan tas i bruk.">
-					comment = <"For eksempel \"Start dersom symptomer kommer tilbake\". Dette er ment som et generelt kriterium som setter i gang hele ordineringen, og ikke for behovsadministrering i en pågående ordinering.">
+					text = <"*Order start condition(en)">
+					description = <"*A condition which, when met, requires the commencement of administration or use.(en)">
+					comment = <"*For example: 'Start if symptoms recur'. This is intended for a general pre-condition which should trigger the whole medication course to be started, and not for 'as required' administrations of an ongoing order.(en)">
 				>
 				["at0012"] = <
 					text = <"Startdato/tid for ordineringen">
@@ -827,9 +629,9 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					description = <"Dato og valgfri tid når det er planlagt å seponere den ordinerte varen.">
 				>
 				["at0016"] = <
-					text = <"Seponeringskriterium">
-					description = <"Et vilkår for at den ordinerte varen skal seponeres.">
-					comment = <"For eksempel \"Seponer når symptomer forsvinner\".">
+					text = <"*Order stop condition(en)">
+					description = <"*A condition which, when met, requires the cessation of administration or use.(en)">
+					comment = <"*For example: 'Stop after symptoms disappear''.(en)">
 				>
 				["at0018"] = <
 					text = <"Klinisk indikasjon">
@@ -841,16 +643,6 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					description = <"Tilleggsinstruksjon for hvordan bruke eller lagre den ordinerte varen.">
 					comment = <"For eksempel forholdsregler som \"tas med mat\", \"unngå grapefrukt\", \"løses opp i vann\" eller \"oppbevares på et kjølig tørt sted\". Dette dataelementet kan repeteres, og bør dersom mulig kodes med en terminologi, f.eks. FEST.">
 				>
-				["at0047"] = <
-					text = <"Maskinlesbare anvisninger">
-					description = <"En maskinlesbar tekstfremstilling av anvisningene.">
-					comment = <"Brukes vanligvis ved deling av informasjon mellom eldre systemer.">
-				>
-				["at0050"] = <
-					text = <"Del av ordinering allerede administrert">
-					description = <"Tidsperioden individet/pasienten har brukt den ordinerte varen i forkant av denne instruksjonen.">
-					comment = <"Eksempel: For å registrere at pasienten har tatt antibiotika i 3 dager av en 7-dagerskur før en sykehusinnleggelse.">
-				>
 				["at0051"] = <
 					text = <"Maksimumsdose">
 					description = <"Detaljer om den maksimale kumulative dosen av den ordinerte varen som er tillatt i en definert tidsperiode.">
@@ -861,11 +653,6 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					description = <"Tidsperioden maksimumsdosen er kalkulert for.">
 					comment = <"Eksempel: 24 timer.">
 				>
-				["at0060"] = <
-					text = <"Antall administreringer utført">
-					description = <"Antall administreringer av den ordinerte varen som er utført som del av den planlagte ordineringen, men i forkant av denne instruksjonen.">
-					comment = <"For eksempel for å registrere at pasienten har tatt de to første antibiotikatablettene av en 3 dagers kur, i forkant av utskrivelse fra sykehus til sykehjem.">
-				>
 				["at0062"] = <
 					text = <"Legemiddelsikkerhet">
 					description = <"Detaljer knyttet til sikkerhet rundt den ordinerte varen.">
@@ -874,54 +661,15 @@ The goal or target dose might be recorded here or more commonly as part of a lin
 					text = <"Overstyring av sikkerhetsgrenser?">
 					description = <"Bekreftelse fra forskriveren om at den maksimale dosen eller andre sikkerhetsgrenser er overstyrt på grunn av spesielle omstendigheter.">
 				>
-				["at0065"] = <
-					text = <"Utdelingsmengde">
-					description = <"Detaljer om mengden av den ordinerte varen som skal utdeles.">
-					comment = <"Dette SLOTet tillater lokal variasjon i regelverk for legemiddelutdeling mellom forskjellige myndighetsområder.">
-				>
-				["at0069"] = <
-					text = <"Autoriseringsveiledning">
-					description = <"Detaljer om autoriseringen for den ordinerte varen, støtter også selvadministrering, utlevering og retningslinjer for godkjenning.">
-					comment = <"For eksempel detaljer om reiterering. Dette SLOTet tillater lokale variasjoner mellom forskjellige myndighetsområder når det gjelder legemiddelautorisering og re-autorisering.">
-				>
 				["at0070"] = <
 					text = <"Legemiddel">
 					description = <"Navnet på legemiddelet, vaksinen eller det medisinske forbruksmateriellet som ordineres.">
 					comment = <"Avhengig av kontekst kan dette elementet brukes enten for generisk eller varebasert ordinering. Dataelementet kan brukes til å registrere tett sammenbundne ordineringer av forskjellige legemidler når de ordineres som en pakke. Det anbefales sterkt at \"Legemiddel\" kodes med en terminologi som understøtter beslutningsstøtte der dette er mulig, f.eks. FEST. Nivå av koding kan variere fra legemiddelnavn til strukturerte detaljer om den aktuelle legemiddelforpakningen som skal brukes. Fritekst bør bare brukes om ingen passende terminologi er tilgjengelig.">
 				>
-				["at0091"] = <
-					text = <"Administreringsvei">
-					description = <"Administreringsveien for den ordinerte varen.">
-					comment = <"For eksempel \"oral bruk\", \"intravenøst\", \"på huden\" eller \"enteralt\".
-Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administreringsvei. Det kan spesifiseres flere mulige administreringsveier.">
-				>
-				["at0092"] = <
-					text = <"Anatomisk lokalisering">
-					description = <"Navn på kroppsstedet der den ordinerte varen skal administreres.">
-					comment = <"For eksempel \"venstre overarm\", \"intravenøst kateter høyre hånd\". Det bør om mulig benyttes terminologi, f.eks. SNOMED CT eller EDQM standardtermer, for å angi kroppssted.">
-				>
-				["at0093"] = <
-					text = <"Strukturert anatomisk lokalisering">
-					description = <"Strukturert beskrivelse av administreringsstedet for den ordinerte varen.">
-				>
-				["at0094"] = <
-					text = <"*Administration method(en)">
-					description = <"*The technique or device by which the ordered item is to be administered.(en)">
-					comment = <"*For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.(en)">
-				>
-				["at0095"] = <
-					text = <"*Administration device(en)">
-					description = <"*Details of the medical device used to assist administration of the ordered item.(en)">
-				>
 				["at0105"] = <
 					text = <"Bruksområde">
 					description = <"Tilleggsinstruksjon primært rettet mot pasient og pårørende.">
 					comment = <"For eksempel \"Blodtrykksreduserende\", \"Blodfortynnende\". Dette dataelementet kan repeteres, og bør dersom mulig kodes med en terminologi, f.eks. FEST. Ved behov kan man bruke en lenke for å assosiere dette elementet med f.eks. den opprinnelige diagnosen i en Problemliste, men det bør likevel registreres tekst her for å sikre data for fremtiden, siden målet for lenken kan endre seg over tid.">
-				>
-				["at0106"] = <
-					text = <"Utdelingsinstruksjon">
-					description = <"Tilleggsinstruksjon primært rettet mot personen som deler ut den ordinerte varen.">
-					comment = <"Eksempel: Detaljerte instruksjoner for stegvis utdeling av opiater.">
 				>
 				["at0107"] = <
 					text = <"Overvåkningsinstruksjon">
@@ -937,19 +685,10 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					text = <"Ordineringsdetaljer">
 					description = <"Detaljer om hele legemiddelordineringen.">
 				>
-				["at0129"] = <
-					text = <"Utdelingsanvisning">
-					description = <"Veiledning for utdeling av den ordinerte varen.">
-				>
 				["at0130"] = <
 					text = <"Maksimum legemiddelmengde">
 					description = <"Den maksimale kumulative legemiddelmengden som bør administreres i perioden. Enheten for denne mengden legges i elementet \"Enhet for maksimum legemiddelmengde\".">
 					comment = <"For eksempel 1, 1.5, 0.125.">
-				>
-				["at0132"] = <
-					text = <"Generisk bytte">
-					description = <"Indikerer om generisk bytte med en bioekvivalent vare er tillatt.">
-					comment = <"I mange myndighetsområder er generisk bytte av en ordinert vare mot en bioekvivalent vare fra en annen produsent tillatt. I andre områder er bytte forutsatt, og ordinerende kliniker må eksplisitt avslå bytte.">
 				>
 				["at0139"] = <
 					text = <"Prioritet">
@@ -986,21 +725,6 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					description = <"Enheten som hører til den totale daglige dosemengden.">
 					comment = <"Enhetene er som regel vitenskapelige enheter som \"mg\" eller \"ml\" heller enn \"tabletter\". Koding av enheten med en terminologi, f.eks. FEST, foretrekkes der det er mulig.">
 				>
-				["at0154"] = <
-					text = <"Begrunnelse for byttereservasjon">
-					description = <"Begrunnelsen for beslutningen om at generisk bytte av den ordinerte varen ikke tillates.">
-					comment = <"For eksempel \"Generisk vare er ikke bioekvivalent\".">
-				>
-				["at0155"] = <
-					text = <"Startdato utlevering">
-					description = <"Datoen den ordinerte varen kan utdeles for første gang.">
-					comment = <"Kan brukes til å kontrollere utdelingstidspunkt for varer med misbrukspotensiale, f.eks. benzodiazepiner og sterke smertestillende.">
-				>
-				["at0161"] = <
-					text = <"Utløpsdato utdeling">
-					description = <"Dato da ordineringen ikke lenger er gyldig for utdeling.">
-					comment = <"I noen myndighetsområder kan utleveringsanmodninger ha en utløpsdato, og etter denne datoen kan resepten ikke lenger utleveres.">
-				>
 				["at0162"] = <
 					text = <"Årsak til overstyring">
 					description = <"Begrunnelsen for hvorfor sikkerhetsgrensen eller maksimumsdosen er overstyrt.">
@@ -1019,33 +743,10 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					text = <"Kommentar">
 					description = <"Ytterligere fritekst om legemiddelordineringen som ikke er fanget i andre felt.">
 				>
-				["at0168"] = <
-					text = <"Tillatt">
-					description = <"Generisk bytte med bioekvivalent legemiddel er tillatt.">
-				>
-				["at0169"] = <
-					text = <"Ikke tillatt">
-					description = <"Generisk bytte med bioekvivalent legemiddel er ikke tillatt.">
-				>
-				["at0170"] = <
-					text = <"Utdelingsdetaljer">
-					description = <"Ytterligere detaljer relatert til utdelingsanvisningene.">
-					comment = <"Dette SLOTet tillater lokal variasjon i regelverk for legemiddelutdeling mellom forskjellige myndighetsområder.">
-				>
 				["at0171"] = <
 					text = <"Overstyrt sikkerhetsanbefaling">
 					description = <"Et kjent problem relatert til legemiddelsikkerhet for dette individet og den ordinerte varen, f.eks. allergi, advarsel om legemiddelduplisering, eller kontraindikasjon. Registreres ordinært bare dersom anbefalingen overstyres.">
 					comment = <"For eksempel \"allergisk mot penicillin\" eller \"atenolol duplisert\".">
-				>
-				["at0173"] = <
-					text = <"Spesifikk anvisningsbeskrivelse">
-					description = <"Fritekstbeskrivelse av en spesifikk del av den overordnede anvisningen.">
-					comment = <"I noen sammenhenger er det vanlig å dele den samlede fritekstbeskrivelsen av anvisningen inn i mer spesifikke segmenter. For eksempel kan det i sykehus være vanlig å dele de samlede anvisningene opp i \"Mengde\" og \"Administreringstidspunkt\", selv om begge er i fritekst. Segmentnavnene kan legges til i et templat eller i applikasjonen.">
-				>
-				["at0174"] = <
-					text = <"Begrunnelse for dose">
-					description = <"Begrunnelsen for hvorfor en spesifikk dose er valgt, der dette er avhengig av en ytre faktor.">
-					comment = <"For eksempel: \"Justert pga amputasjon\".">
 				>
 				["at0177"] = <
 					text = <"Strukturerte anvisninger om dose og timing">
@@ -1054,6 +755,14 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 				["at0178"] = <
 					text = <"*Safety override(en)">
 					description = <"*Overriding of a known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication.(en)">
+				>
+				["at0180"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
+				["at0181"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -1085,16 +794,10 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					description = <"Informações adicionais necessárias para capturar o conteúdo local ou para se alinhar com outros modelos de referência / formalismos.">
 					comment = <"Por exemplo: requisitos de informações locais ou metadados adicionais para alinhar com os equivalentes FHIR ou CIMI.">
 				>
-				["at0009"] = <
-					text = <"Instruções Gerais da Prescrição">
-					description = <"Narrativa completa da descrição de como o item deve ser utilizado.">
-					comment = <"Esta narrativa deve normalmente incluir os dados capturados em \"quantidade de dose\", \"Duração da dose\" e quaisquer instruções adicionais de uso. Ainda que o detalhamento da dose esteja totalmente representado de forma estruturada e computável, esse elemento deve também representar o equivalente narrativo, geralmente gerado automaticamente. Se não for possível representar o detalhamento da dose do medicamento na forma computável, não se recomenda a representação parcial destes itens, Neste caso, deve ser registradas somente em forma narrativa usando este elemento de dados.
-">
-				>
 				["at0011"] = <
-					text = <"Critério para o início da prescrição">
-					description = <"Uma condição que, quando encontrada, exige o início da administração ou uso.">
-					comment = <"Por exemplo: \"Iniciar se o sintoma reaparecerem\". Isso se destina a uma pré-condição geral que deve desencadear o uso da medicamento, e não para as administrações \"se necessário\" de uma prescrição em andamento.">
+					text = <"*Order start condition(en)">
+					description = <"*A condition which, when met, requires the commencement of administration or use.(en)">
+					comment = <"*For example: 'Start if symptoms recur'. This is intended for a general pre-condition which should trigger the whole medication course to be started, and not for 'as required' administrations of an ongoing order.(en)">
 				>
 				["at0012"] = <
 					text = <"Data/Hora do início prescrição">
@@ -1105,9 +808,9 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					description = <"A data e hora opcional quando está planejado finalizar a utilização do ítem prescrito">
 				>
 				["at0016"] = <
-					text = <"Critérios para interromper a prescrição">
-					description = <"Uma condição que se existente, exige a interrupção da administração ou uso.">
-					comment = <"Por exemplo: \"Interromper após o desaparecimento dos sintomas\".">
+					text = <"*Order stop condition(en)">
+					description = <"*A condition which, when met, requires the cessation of administration or use.(en)">
+					comment = <"*For example: 'Stop after symptoms disappear''.(en)">
 				>
 				["at0018"] = <
 					text = <"Indicação Clínica">
@@ -1119,16 +822,6 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					description = <"Instruções adicionais sobre como usar ou armazenar o ítem prescrito.">
 					comment = <"Por exemplo: alertas sobre \"tomar com alimentos\", \"evitar frutas\", \"dissolver em água\",\"guardar em geladeira, lugar seco\". Este elemento de dados permite múltiplas ocorrências e deve ser codificado com uma terminologia de referência, sempre que possível.">
 				>
-				["at0047"] = <
-					text = <"Orientação para parsear texto">
-					description = <"Uma representação em texto parseável das orientações.">
-					comment = <"Normalmente isto é utilizado somente quando passando informações entre sistemas legados.">
-				>
-				["at0050"] = <
-					text = <"Duração do uso do ítem da prescrição">
-					description = <"O período de tempo em que o indíviduo/paciente vem fazendo uso do item prescrito com parte da duração total do tratamento, antes da execução da prescrição atual.">
-					comment = <"Por exemplo: para registrar que o paciente está fazendo uso de antibióticos por 3 dias, num total de 7 dias previstos para o tratamento, antes da internação hospitalar.">
-				>
 				["at0051"] = <
 					text = <"Dose máxima">
 					description = <"Detalhes sobre a dose máxima cumulativa permitida durante um período definido para o item prescrito.">
@@ -1139,11 +832,6 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					description = <"O período do tempo durante o qual a dose máxima é calculada.">
 					comment = <"Exemplo: 24 horas.">
 				>
-				["at0060"] = <
-					text = <"Administrações finalizadas">
-					description = <"O número de administrações realizadas do item prescrito, como parte da prescrição total, antes da execução da prescrição atual.">
-					comment = <"Por exemplo: para registrar que o paciente tomou os dois primeiros comprimidos de antibiótico de três dias de tratamento, antes da alta hospitalar para a casa de repouso.">
-				>
 				["at0062"] = <
 					text = <"Segurança de medicamentos">
 					description = <"Detalhes sobre a segurança de medicamentos prescritos.">
@@ -1152,55 +840,15 @@ Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administrerings
 					text = <"Cancelamento excepcional do alerta?">
 					description = <"Confirmação pelo prescritor de que a dose normal ou outro limite de segurança foi ultrapassado, por circunstâncias excepcionais.">
 				>
-				["at0065"] = <
-					text = <"Quantidade a ser dispensada">
-					description = <"Detalhes sobre a quantidade do item prescrito a ser dispensada.">
-					comment = <"Este SLOT possibilita ajustes locais para acomodar as legislações vigentes sobre como as quantidades do ítem prescrito devem ser dispensadas.">
-				>
-				["at0069"] = <
-					text = <"Informações da autorização">
-					description = <"Detalhes da autorização do ítem prescrito, incluindo o local de administração e políticas de reembolso.">
-					comment = <"Por exemplo: detalhes sobre a renovação da prescrição. Este SLOT possibilita o gerenciamento das diferenças regionais a respeito das autorizações. No caso Brasileiro, não existe \"refill\"de prescrições.">
-				>
 				["at0070"] = <
 					text = <"Item da prescrição de medicamentos">
 					description = <"Nome do medicamento, vacina ou outro item terapêutico/prescritível a ser solicitado.">
 					comment = <"Dependendo do contexto da prescrição, esse campo pode ser utilizado para uma prescrição de medicamentos genériicos ou comerciais. Este campo de dados pode ser utilizado para registrar prescrições relacionadas de vários medicamentos diferentes quando estão são prescritos como um único pacote. É altamente recomendável que o \"item de medicação\" seja codificado com uma terminologia capaz de desencadear o suporte à decisão, sempre que possível. A extensão da codificação pode variar do nome simples do item de medicação até os detalhes estruturados sobre o a embalagem da medicação a ser utilizada. A entrada de texto livre só deve ser utilizada se não houver uma terminologia apropriada disponível.">
 				>
-				["at0091"] = <
-					text = <"Via de Administração">
-					description = <"A via de administração pela qual o item prescrito deve ser administrada à pessoa.">
-					comment = <"Por exemplo: 'oral', 'intravenosa', ou 'cutâena.'
-É desejável que avia de administração seja condificada com uma terminologia, sempre que possível. Várias vias de administração potenciais poderão ser especificadas.">
-				>
-				["at0092"] = <
-					text = <"Local do corpo">
-					description = <"Nome do local de administração do item prescrito.">
-					comment = <"Por exemplo: \"braço esquerdo\", \"catéter intravenoso da mão direita˜.
-Sempre que possível, é desejável que o local do corpo seja codificado com uma terminologia.">
-				>
-				["at0093"] = <
-					text = <"Local do corpo estruturado">
-					description = <"Descrição estruturada do local da administração do item prescrito.">
-				>
-				["at0094"] = <
-					text = <"*Administration method(en)">
-					description = <"*The technique or device by which the ordered item is to be administered.(en)">
-					comment = <"*For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.(en)">
-				>
-				["at0095"] = <
-					text = <"*Administration device(en)">
-					description = <"*Details of the medical device used to assist administration of the ordered item.(en)">
-				>
 				["at0105"] = <
 					text = <"Informações do paciente">
 					description = <"Informações adicionais direcionadas principalmente para o indivíduo/paciente ou cuidador.">
 					comment = <"Por exemplo: \"Para reduzir sua pressão sanguínea\". Este elemento de dados permite múltiplas ocorrências e deve ser codificado com uma terminologia de referência, sempre que possível. Se necessário, é possível usar um atributo LINK para associar esse elemento, por exemplo, ao \"diagnóstico original\" separado de uma lista de problemas, mas a indicação deve ser explicitamente registrada aqui, pois o objetivo do link pode mudar ao longo do tempo.">
-				>
-				["at0106"] = <
-					text = <"Instruções para a dispensação">
-					description = <"Instruções adicionais direcionadas primariamente para a pessoa responsável pela dispensação do ítem prescrito.">
-					comment = <"Exemplo: Instruções detalhadas da dispensão de opiáceos em etapas.">
 				>
 				["at0107"] = <
 					text = <"Monitoramento da instrução">
@@ -1216,19 +864,10 @@ Sempre que possível, é desejável que o local do corpo seja codificado com uma
 					text = <"Prescrição detalhada">
 					description = <"Detalhes sobre a prescrição como um todo.">
 				>
-				["at0129"] = <
-					text = <"Orientações para a dispensação">
-					description = <"Orientações sobre a dispensação do ítem prescrito.">
-				>
 				["at0130"] = <
 					text = <"Quantidade máxima">
 					description = <"A quantidade máxima, cumulativa de medicamento que deve ser administrado dentro do período permitido. A unidade para esta quantidade é descrita na unidade da quantidade máxima.">
 					comment = <"Por exemplo: 1; 1,5; 0,125.">
-				>
-				["at0132"] = <
-					text = <"Orientações para substituição">
-					description = <"Permissão para substituir item prescrito por outro bioequivalente.">
-					comment = <"Em várias alçadas, é permitida a substituição de um ítem prescrito por outro como genérico ou comercial, classificados como bioequivalentes no momento da dispensação ou compra. Em outras situações, a substituição é sempre considerada e o prescritor deve explicitar que NÃO aceita substituições.">
 				>
 				["at0139"] = <
 					text = <"Prioridade">
@@ -1265,21 +904,6 @@ Sempre que possível, é desejável que o local do corpo seja codificado com uma
 					description = <"A unidade de dose associada com a quantidade total diária.">
 					comment = <"As unidades de dose são normalmente unidades cinetíficas como mg, ml ao invés de \"comprimidos\"">
 				>
-				["at0154"] = <
-					text = <"Justificativa para a não substituição">
-					description = <"Motivo pelo qual o ítem prescrito não deve ser substituído no momento da dispensação.">
-					comment = <"Por exemplo: preparação do genérico não bioequivalente.">
-				>
-				["at0155"] = <
-					text = <"Data do início da dispensação">
-					description = <"Data inicial permitida para a primeira dispensação do ítem prescrito.">
-					comment = <"Pode ser utilizado para controlar o período de dispensação de medicamentos que potencialmente podem levar a uso inadequado.">
-				>
-				["at0161"] = <
-					text = <"Data de validade da dispensação">
-					description = <"Data a partir da qual a dispensação não é mais válida.">
-					comment = <"Em algumas alçadas as prescrições podem incorporar uma data de validade, informando que a partir desta data o ítem não pode ser dispensado. No Brasil ver regras locais da ANVISA para medicamentos controlados, por exemplo.">
-				>
 				["at0162"] = <
 					text = <"Justificativa do cancelamento do alerta">
 					description = <"O motivo pelo qual um item de segurança clínica ou de uma dose máxima não foi cumprido.">
@@ -1298,33 +922,10 @@ Sempre que possível, é desejável que o local do corpo seja codificado com uma
 					text = <"Comentários">
 					description = <"Comentários adicionais sobre o ítem prescrito em texto livre, não capturados em outros campos.">
 				>
-				["at0168"] = <
-					text = <"Perimitido">
-					description = <"Permitir a subsituição do medicamento por medicamento bioequivalente.">
-				>
-				["at0169"] = <
-					text = <"Não permitidio">
-					description = <"Não é permitido subsituir medicamento por medicamento bioequivalente.">
-				>
-				["at0170"] = <
-					text = <"Detalhes da dispensação">
-					description = <"Detalhes adicionais das instruções de dispensação.">
-					comment = <"Este SLOT possibilita que as variações locais sejam incorporadas no que diz respeito a legislação de dispensação de medicamentos.">
-				>
 				["at0171"] = <
 					text = <"Aviso de segurança cancelado">
 					description = <"Uma questão de segurança conhecida ou reconhecida de uma pessoa ecom relação ao item prescrito, tais como, alergia, aviso de duplicidade de drogas ou contra-indicação. Este elemento normalmente é registrado apenas quando este aviso de segurança é cancelado.">
 					comment = <"Por exemplo: \"Alergia a penicilina\", \"Atenolol duplicado\".">
-				>
-				["at0173"] = <
-					text = <"Orientações específicas">
-					description = <"Descrição em texto de uma parte das orientações globais.">
-					comment = <"Em algumas situações é comum separar as orientações em segmentos de narrativas mais específicas. Por exemplo: é comum num hospital separar as orientações em 'quantidade da dose' e 'duração da dose', ambas como texto. Estes termos podem se aplicados no template ou durante a excecução do sistema.">
-				>
-				["at0174"] = <
-					text = <"Justificativa da dosagem">
-					description = <"A descrição da justificativa utilizada para calcular a dose total ou taxa da administração quando esta é dependente de algum outro fator.">
-					comment = <"Por exemplo: \"Ajustado por causa da amputação\".">
 				>
 				["at0177"] = <
 					text = <"Orientações estuturadas de dose e duração">
@@ -1333,6 +934,14 @@ Sempre que possível, é desejável que o local do corpo seja codificado com uma
 				["at0178"] = <
 					text = <"*Safety override(en)">
 					description = <"*Overriding of a known or recognised safety issue which applies to this subject and the ordered item, such as an allergy, drug duplication warning or contraindication.(en)">
+				>
+				["at0180"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
+				["at0181"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
