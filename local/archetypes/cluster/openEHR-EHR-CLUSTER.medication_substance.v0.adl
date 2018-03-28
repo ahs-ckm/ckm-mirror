@@ -69,8 +69,8 @@ Royal Australian College of General Practitioners. Fact Sheet: Medicines List. 2
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"64172A3452F28AB9465BFD9D0969B0B0">
-		["build_uid"] = <"cebb2726-e05e-495d-9a5c-606181d8d2f2">
+		["MD5-CAM-1.0.1"] = <"550B1DBE8890D1439155F882C73E517D">
+		["build_uid"] = <"72e880b2-eecc-4745-9cea-79ff648cee3c">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -113,6 +113,7 @@ definition
 							>
 						>
 					>
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0116] occurrences matches {0..1} matches {	-- Strength unit
@@ -200,14 +201,15 @@ definition
 	}
 
 
-
 ontology
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
 					text = <"Medication substance">
-					description = <"The strength and form of the medication substance, including details of specific ingredients where required by an ad-hoc preparation or infusion.">
+					description = <"The strength and form of the medication substance, including details of specific ingredients where required by an ad-hoc preparation or infusion.
+
+">
 					comment = <"This is commonly carried as part of the medicine name and provided by the medicines terminology but in some cases must be specified separately.">
 				>
 				["at0071"] = <
@@ -344,9 +346,11 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Legemiddelsubstans">
-					description = <"Legemiddelsubstansens styrke og form og detaljer om spesifikke ingredienser som er nødvendig ved magistrell tilbereding eller infusjon.">
-					comment = <"Legemiddelsubstansen er vanligvis en del av navnet på legemiddelet og beskrevet av legemiddelterminologien, men i noen tilfeller trengs en ytterligere spesifisering.">
+					text = <"*Medication substance(en)">
+					description = <"*The strength and form of the medication substance, including details of specific ingredients where required by an ad-hoc preparation or infusion.
+
+(en)">
+					comment = <"*This is commonly carried as part of the medicine name and provided by the medicines terminology but in some cases must be specified separately.(en)">
 				>
 				["at0071"] = <
 					text = <"Form">
@@ -482,9 +486,11 @@ ontology
 		["pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"Substância do medicamento">
-					description = <"A concentração e forma farmacêutica da substância medicamentosa, incluindo os detalhes de ingredientes específicos para preparações manipuladas ou infusões.">
-					comment = <"Geralmente estes dados estão presentes no nome do medicamento e são fornecidos por uma Terminologia. Em alguns casos, podem estar separados.">
+					text = <"*Medication substance(en)">
+					description = <"*The strength and form of the medication substance, including details of specific ingredients where required by an ad-hoc preparation or infusion.
+
+(en)">
+					comment = <"*This is commonly carried as part of the medicine name and provided by the medicines terminology but in some cases must be specified separately.(en)">
 				>
 				["at0071"] = <
 					text = <"Forma Farmacêutica">
