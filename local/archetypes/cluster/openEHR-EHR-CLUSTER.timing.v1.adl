@@ -32,38 +32,25 @@ This archetype is designed to be used within the 'Timing' SLOT within any clinic
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"DA722EF455C441648F3748B2415E30BD">
-		["build_uid"] = <"a57babf0-87fe-4152-9000-bb652e28638e">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"5A1FC61CBF70908534F9D058242785BC">
+		["build_uid"] = <"11c47114-6f57-4d57-9f95-327d70c5e8f8">
+		["revision"] = <"1.0.1">
 	>
 
 definition
 	CLUSTER[at0000] matches {	-- Timing
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Frequency
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Time
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {	-- Timing description
+			ELEMENT[at0011] occurrences matches {0..1} matches {	-- 'As required' criterion
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {	-- Specific time
-				value matches {
-					DV_TIME matches {*}
-					DV_INTERVAL<DV_TIME> matches {
-						upper matches {
-							DV_TIME matches {*}
-						}
-						lower matches {
-							DV_TIME matches {*}
-						}
-					}
-				}
-			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Specific date
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Date
 				value matches {
 					DV_DATE matches {*}
 					DV_INTERVAL<DV_DATE> matches {
@@ -76,72 +63,10 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..*} matches {	-- Specific day of week
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0019, 	-- Monday
-							at0020, 	-- Tuesday
-							at0021, 	-- Wednesday
-							at0022, 	-- Thursday
-							at0023, 	-- Friday
-							at0024, 	-- Saturday
-							at0025]	-- Sunday
-						}
-					}
-				}
-			}
-			ELEMENT[at0007] occurrences matches {0..31} matches {	-- Specific day of month
-				value matches {
-					DV_COUNT matches {
-						magnitude matches {|1..31|}
-					}
-					DV_INTERVAL<DV_COUNT> matches {
-						upper matches {
-							DV_COUNT matches {
-								magnitude matches {|1..31|}
-							}
-						}
-						lower matches {
-							DV_COUNT matches {
-								magnitude matches {|1..31|}
-							}
-						}
-					}
-				}
-			}
 			ELEMENT[at0009] occurrences matches {0..1} matches {	-- Exact timing critical?
 				value matches {
 					DV_BOOLEAN matches {
 						value matches {True, False}
-					}
-				}
-			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {	-- As required
-				value matches {
-					DV_BOOLEAN matches {
-						value matches {True, False}
-					}
-				}
-			}
-			ELEMENT[at0011] occurrences matches {0..1} matches {	-- 'As required' criterion
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			CLUSTER[at0012] occurrences matches {0..*} matches {	-- Specific event
-				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0014] occurrences matches {0..1} matches {	-- Event name
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {	-- Time offset
-						value matches {
-							DV_DURATION matches {*}
-							DV_TEXT matches {*}
-						}
 					}
 				}
 			}
@@ -179,69 +104,41 @@ ontology
 					description = <"Structured information about the intended timing of a therapeutic or diagnostic activity.">
 				>
 				["at0001"] = <
-					text = <"Frequency">
-					description = <"The frequency as how often, either by number of times per time period or interval between each scheduled activity, that the activity is to take place.">
-					comment = <"For example: \"q4h\", \"every 4 hours\", \"weekly\", \"every 2 days\".
-">
-				>
-				["at0004"] = <
-					text = <"Specific time">
-					description = <"A specific time or interval of time when the activity should occur.">
-					comment = <"For example: \"08:00\" or \"15:00-16:00\".">
+					text = <"Time">
+					description = <"1. The frequency as how often, either by number of times per time period or interval between each scheduled activity, that the activity is to take place.  2. Text description of the daily timing. This element is intended to allow implementers to use the structures for different timings without necessarily specifying the timings in a structured way. 3. A specific time or interval of time when the activity should occur. 4. Record as True if the activity should only occur when the \"'As required' criterion\" is met.  5. A specific, named time event that the activity should occur in relation to. 5a. The name of the event that triggers the activity to take place.  5b. The period of time before or after the named event when the activity should take place. ">
+					comment = <"1. For example: \"q4h\", \"every 4 hours\", \"weekly\", \"every 2 days\".
+
+2. For example: \"Take morning and evening\".
+3. For example: \"08:00\" or \"15:00-16:00\".
+4. Termed 'PRN' (\"pro re nata\", latin: \"as the situation arises\") or 'PN' (\"per necessare\", latin: \"when required\") in some cultures.
+5a. \"Before each meal\", \"at bedtime\", \"in the morning\". It is understood that these event names may not equate to the same exact times in different cultures. Coding with a terminology, for example HL7 FHIR Named events, is recommended where appropriate.
+5b. Negative durations can be used to signify that the activity should be taken before a known event.">
 				>
 				["at0005"] = <
-					text = <"Specific date">
-					description = <"The activity should take place on a specific date or a specific range of dates.">
-					comment = <"For example: 'on 12 Jan 2017' or 'on 30 Oct 2017 to 6 Nov 2017'.">
-				>
-				["at0006"] = <
-					text = <"Specific day of week">
-					description = <"The activity should take place on a specific day of the week.">
-					comment = <"For example: 'On Monday, Wednesday and Friday'.">
-				>
-				["at0007"] = <
-					text = <"Specific day of month">
-					description = <"The activity should take place on a specific day or interval of days of the month.">
-					comment = <"For example: 'on the 3rd, 13th and 23rd of each month' or 'on the 1st to the 10th of each month'.">
-				>
-				["at0008"] = <
-					text = <"Timing description">
-					description = <"Text description of the daily timing. This element is intended to allow implementers to use the structures for different timings without necessarily specifying the timings in a structured way.">
-					comment = <"For example: \"Take morning and evening\".">
+					text = <"Date">
+					description = <"1.The activity should take place on a specific date or a specific range of dates.
+2.The activity should take place on a specific day of the week.
+3.The activity should take place on a specific day or interval of days of the month.
+">
+					comment = <"1.For example: 'on 12 Jan 2017' or 'on 30 Oct 2017 to 6 Nov 2017'.
+2.For example: 'On Monday, Wednesday and Friday'.
+3.For example: 'on the 3rd, 13th and 23rd of each month' or 'on the 1st to the 10th of each month'.
+">
 				>
 				["at0009"] = <
 					text = <"Exact timing critical?">
 					description = <"Is exact timing of the activity critical to effectiveness, or patient safety or wellbeing?">
 					comment = <"For example when administering antiparkinson medications.">
 				>
-				["at0010"] = <
-					text = <"As required">
-					description = <"Record as True if the activity should only occur when the \"'As required' criterion\" is met.">
-					comment = <"Termed 'PRN' (\"pro re nata\", latin: \"as the situation arises\") or 'PN' (\"per necessare\", latin: \"when required\") in some cultures.">
-				>
 				["at0011"] = <
 					text = <"'As required' criterion">
 					description = <"The condition which triggers an 'As required' activity.">
 					comment = <"For example: \"for pain\".">
 				>
-				["at0012"] = <
-					text = <"Specific event">
-					description = <"A specific, named time event that the activity should occur in relation to.">
-				>
 				["at0013"] = <
 					text = <"On / off cycle">
 					description = <"A cycle of activity where an on-off pattern is required.">
 					comment = <"For example: \"Apply an ice pack on for 20 minutes, off for an hour, repeat\" or For example: 'take for 1 week, omit 2 weeks, repeat 4 times'">
-				>
-				["at0014"] = <
-					text = <"Event name">
-					description = <"The name of the event that triggers the activity to take place.">
-					comment = <"For example: \"Before each meal\", \"at bedtime\", \"in the morning\". It is understood that these event names may not equate to the same exact times in different cultures. Coding with a terminology, for example HL7 FHIR Named events, is recommended where appropriate.">
-				>
-				["at0015"] = <
-					text = <"Time offset">
-					description = <"The period of time before or after the named event when the activity should take place. Negative durations can be used to signify that the activity should be taken before a known event.">
-					comment = <"For example:For example: '30 minutes after meal = meal + 30 minutes', '2 hours before bedtime = bedtime -2 hours'. '3 days after onset of menstruation = menstrual onset + 3 days', '2 weeks prior to admission= admission -2 weeks'.">
 				>
 				["at0016"] = <
 					text = <"On">
@@ -254,34 +151,6 @@ ontology
 				["at0018"] = <
 					text = <"Repetitions">
 					description = <"The number of repetitions of the on/off cycle.">
-				>
-				["at0019"] = <
-					text = <"Monday">
-					description = <"The activity should take place on Monday.">
-				>
-				["at0020"] = <
-					text = <"Tuesday">
-					description = <"The activity should take place on Tuesday.">
-				>
-				["at0021"] = <
-					text = <"Wednesday">
-					description = <"The activity should take place on Wednesday.">
-				>
-				["at0022"] = <
-					text = <"Thursday">
-					description = <"The activity should take place on Thursday.">
-				>
-				["at0023"] = <
-					text = <"Friday">
-					description = <"The activity should take place on Friday.">
-				>
-				["at0024"] = <
-					text = <"Saturday">
-					description = <"The activity should take place on Saturday.">
-				>
-				["at0025"] = <
-					text = <"Sunday">
-					description = <"The activity should take place on Sunday.">
 				>
 			>
 		>
