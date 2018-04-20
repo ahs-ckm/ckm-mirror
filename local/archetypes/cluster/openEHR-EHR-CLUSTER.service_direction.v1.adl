@@ -92,9 +92,9 @@ Standards for medication and medical device records – technical annex [Interne
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"1BC3AC8B6C178916B5163C5C42FFB66E">
-		["build_uid"] = <"484ae66e-d5ec-4c82-8274-47fe1cf1ae28">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"5E79FF9E1979D873E513DFBAFD02531C">
+		["build_uid"] = <"bb913da8-6907-4217-81ab-4e364b66150f">
+		["revision"] = <"1.0.1">
 	>
 
 definition
@@ -107,24 +107,9 @@ definition
 					}
 				}
 			}
-			allow_archetype CLUSTER[at0176] occurrences matches {0..*} matches {	-- Daily timing
+			allow_archetype CLUSTER[at0176] occurrences matches {0..*} matches {	-- Timing
 				include
 					archetype_id/value matches {/.*/}
-			}
-			ELEMENT[at0066] occurrences matches {0..1} matches {	-- Direction duration
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0067, 	-- Indefinite
-							at0068]	-- Indefinite - not to be discontinued
-						}
-					}
-					DV_DURATION matches {
-						value matches {|>=PT0S|}
-					}
-					DV_TEXT matches {*}
-				}
 			}
 			ELEMENT[at0172] occurrences matches {0..1} matches {	-- Maximum number of services provided
 				value matches {
@@ -132,14 +117,6 @@ definition
 						magnitude matches {|>=1|}
 					}
 				}
-			}
-			allow_archetype CLUSTER[at0090] occurrences matches {0..1} matches {	-- Direction repetition
-				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.timing_repetition(-[a-zA-Z0-9_]+)*\.v0/}
-			}
-			allow_archetype CLUSTER[at0156] occurrences matches {0..*} matches {	-- Additional details
-				include
-					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -159,36 +136,13 @@ ontology
 					comment = <"For example: ''1' '2', '3'.
 Where multiple dosage directions are expressed, the 'Direction sequence' makes the order in which they should be executed explicit. For example: (1) 1 tab daily for 3 days, (2) 1 tab twice daily for 4 days, (3) 1 tablet for 7 days.  ">
 				>
-				["at0066"] = <
-					text = <"Direction duration">
-					description = <"The length of time for which this direction should be applied.">
-					comment = <"For example: 'for 7 days','Indefinite'. An example of a set of multiple directions, with varying durations might be ... '1 tablet daily for 3 days, 2 tablets daily for 4 days, then 3 tablets Indefinite'.">
-				>
-				["at0067"] = <
-					text = <"Indefinite">
-					description = <"The direction should be continued indefinitely.">
-				>
-				["at0068"] = <
-					text = <"Indefinite - not to be discontinued">
-					description = <"The direction should be continued indefinitely with a strong recommendation that it never be discontinued.">
-				>
-				["at0090"] = <
-					text = <"Direction repetition">
-					description = <"Structured details about pattern of repetition for each set of daily directions.">
-					comment = <"For example: 'every 3 days', 'on Thursdays and Sundays', '3 days after onset of menstruation'.">
-				>
-				["at0156"] = <
-					text = <"Additional details">
-					description = <"Further details about an ordered item direction.">
-					comment = <"For example, conditional instructions such as insulin /glucose infusion rates dependent on blood glucose, or detailed administration instructions for particular preparations.">
-				>
 				["at0172"] = <
 					text = <"Maximum number of services provided">
 					description = <"The maximum number of services to be given for this direction.">
 					comment = <"Example: 'Give once only' = 1 or '400mg 12hrly for 3 doses' = 3.">
 				>
 				["at0176"] = <
-					text = <"Daily timing">
+					text = <"Timing">
 					description = <"The combination of a medication dose and administration timing for a single day.">
 				>
 			>
@@ -203,29 +157,6 @@ Where multiple dosage directions are expressed, the 'Direction sequence' makes t
 					text = <"Anvisningsrekkefølge">
 					description = <"Tilsiktet rekkefølge for denne anvisningen i den overordnede anvisningssekvensen.">
 					comment = <"For eksempel \"1\", \"2\", \"3\". I tilfeller der ordineringen består av flere doseringsanvisninger, spesifiserer anvisningsrekkefølgen i hvilken rekkefølge anvisningene skal utføres. For eksempel \"(1) 1 tablett daglig i 3 dager, (2) 1 tablett to ganger daglig i 4 dager, (3) 1 tablett i 7 dager.\"">
-				>
-				["at0066"] = <
-					text = <"Anvisningsvarighet">
-					description = <"Varigheten av denne anvisningen.">
-					comment = <"For eksempel \"i 7 dager\" eller \"på ubestemt tid\". Et eksempel som er sammensatt av flere ulike varigheter kan være: \"1 tablett daglig i 3 dager\", \"2 tabletter daglig i 4 dager\", \"3 tabletter på ubestemt tid\".">
-				>
-				["at0067"] = <
-					text = <"Ubestemt">
-					description = <"Anvisningen skal videreføres på ubestemt tid.">
-				>
-				["at0068"] = <
-					text = <"Ubestemt - ikke seponer">
-					description = <"Anvisningen skal videreføres på ubestemt tid, med en sterk anbefaling om ikke å seponere.">
-				>
-				["at0090"] = <
-					text = <"Repetering av anvisning">
-					description = <"Strukturerte detaljer om repeteringsmønsteret for hvert sett av daglige anvisninger.">
-					comment = <"For eksempel \"hver 3. dag\", \"på tirsdager og søndager\", \"3 dager etter menstruasjonsblødningens 1. dag\".">
-				>
-				["at0156"] = <
-					text = <"Ytterligere detaljer">
-					description = <"Ytterligere detaljer om anvisningen.">
-					comment = <"For eksempel betingede instruksjoner som infusjonshastighet av insulin/glukose basert på blodsukkermåling, eller detaljerte instruksjoner for spesifikke legemidler.">
 				>
 				["at0172"] = <
 					text = <"Maksimalt antall administreringer">
@@ -249,29 +180,6 @@ Where multiple dosage directions are expressed, the 'Direction sequence' makes t
 					description = <"A posição desta orientação na sequência geral de orientações.">
 					comment = <"Por exemplo: '' 1 '' 2 ',' 3 '.
 Quando múltiplas orientações de dosagem são expressas, a \"seqüência de instruções\" torna a ordem na qual estas devem ser executados explicitas. Por exemplo: (1) 1 comprimido diariamente por 3 dias, (2) 1 comprimido duas vezes ao dia por 4 dias, (3) 1 comprimido por 7 dias.">
-				>
-				["at0066"] = <
-					text = <"Duração da Instrução">
-					description = <"Período de tempo no qual esta orientação se aplica.">
-					comment = <"Por exemplo: 'por 7 dias', 'uso contínuo'. Um exemplo de um conjunto de múltiplas orientações, com diferentes durações, pode ser ... 1 comprimido por dia durante 3 dias, 2 comprimidos por dia durante 4 dias e depois 3 comprimidos de uso contínuo.">
-				>
-				["at0067"] = <
-					text = <"Uso contínuo">
-					description = <"Esta instrução indica que trata-se de uso contínuo, ou seja que deve ser seguida indefinidamente.">
-				>
-				["at0068"] = <
-					text = <"Uso contínuo - não deve ser descontinuado.">
-					description = <"A orientação deve ser continuada indefinidamente com uma recomendação forte que não seja interrompida.">
-				>
-				["at0090"] = <
-					text = <"Orientações de repetição">
-					description = <"Detalhes estruturados sobre o padrão de repetição para cada conjunto de orientações diárias.">
-					comment = <"Por exemplo: 'a cada 3 dias', 'às quintas-feiras e domingos', '3 dias após o início da menstruação'.">
-				>
-				["at0156"] = <
-					text = <"Detalhes adicionais">
-					description = <"Detalhes adicionais sobre uma orientação a respeito de um tem prescrito.">
-					comment = <"Por exemplo, instruções condicionais, tais como taxas de infusão de insulina / glicose dependentes da glicemia, ou instruções detalhadas de administração para preparações específicas.">
 				>
 				["at0172"] = <
 					text = <"Número máximo de administrações">
