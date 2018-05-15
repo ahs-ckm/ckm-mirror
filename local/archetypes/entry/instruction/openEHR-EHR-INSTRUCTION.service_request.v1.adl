@@ -61,9 +61,9 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"AE0DC2437BA57321F0225605AF83101C">
-		["build_uid"] = <"3770d9eb-69dc-4873-a5dc-a35c2cb488b2">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"B48161A11EF4549FFAE82EE73B385AF5">
+		["build_uid"] = <"4e209b08-fdb1-4c1f-8bf1-173c9d8edf76">
+		["revision"] = <"1.0.1">
 	>
 
 definition
@@ -73,37 +73,9 @@ definition
 				description matches {
 					ITEM_TREE[at0009] matches {	-- Tree
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0121] matches {	-- Service name
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0062] occurrences matches {0..*} matches {	-- Reason for request
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0068] occurrences matches {0..1} matches {	-- Priority
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0155] occurrences matches {0..*} matches {	-- Service direction
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.service_direction(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							allow_archetype CLUSTER[at0132] occurrences matches {0..*} matches {	-- Additional order elements
+							allow_archetype CLUSTER[at0132] occurrences matches {0..*} matches {	-- Order elements
 								include
 									archetype_id/value matches {/.*/}
-							}
-							ELEMENT[at0150] occurrences matches {0..100} matches {	-- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0149] occurrences matches {0..*} matches {	-- Attachment/multimedia
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
 							}
 						}
 					}
@@ -191,25 +163,10 @@ ontology
 					text = <"Receiver identifier">
 					description = <"The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.">
 				>
-				["at0062"] = <
-					text = <"Reason for request">
-					description = <"Describes the reason for the request.">
-					comment = <"Coding of the 'Reason for request' with a coding system is desirable, if available.">
-				>
-				["at0068"] = <
-					text = <"Priority">
-					description = <"Urgency of the request for service.">
-					comment = <"Specific definitions of emergency and urgent will vary between clinical contexts, clinical systems and the nature of the request itself, so have not be defined in this archetype. If explicit timing is required then the Service period should be clearly stated.">
-				>
 				["at0112"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
-				>
-				["at0121"] = <
-					text = <"Service name">
-					description = <"Identification of the service requested, by name.">
-					comment = <"Coding of the 'Service name' with a coding system is desirable, if available.">
 				>
 				["at0127"] = <
 					text = <"Request status">
@@ -221,7 +178,7 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					description = <"A list of person's or organisation who should receive copies of any communication.">
 				>
 				["at0132"] = <
-					text = <"Additional order elements">
+					text = <"Order elements">
 					description = <"Additional detail about the service requested.">
 					comment = <"Example: CLUSTER archetype specifying complex timing requirements.">
 				>
@@ -232,18 +189,6 @@ Status is used to denote whether this is the initial request, or a follow-up req
 				["at0142"] = <
 					text = <"Receiver">
 					description = <"Details about the healthcare provider or organisation receiving the request for service.">
-				>
-				["at0149"] = <
-					text = <"Attachment/multimedia">
-					description = <"Digital document, image, video or diagram as supporting information for the request.">
-				>
-				["at0150"] = <
-					text = <"Comment">
-					description = <"Additional narrative about the service request not captured in other fields.">
-				>
-				["at0155"] = <
-					text = <"Service direction">
-					description = <"Structured details of a single service direction for an ordered item, such as a laboratory test, diagnostic image etc.">
 				>
 				["at0156"] = <
 					text = <"Supporting Context">
@@ -286,25 +231,10 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					text = <"Mottakers rekvisisjonsidentifikator">
 					description = <"Rekvisisjonens identifikator, tilordnet av den som mottar rekvisisjonen. Mottaker kan være helsepersonell, organisasjon eller applikasjonen.">
 				>
-				["at0062"] = <
-					text = <"*Reason for request(en)">
-					description = <"*A short phrase describing the reason for the request.(en)">
-					comment = <"*Coding of the 'Reason for request' with a coding system is desirable, if available.(en)">
-				>
-				["at0068"] = <
-					text = <"*Priority(en)">
-					description = <"*Urgency of the request for service.(en)">
-					comment = <"*Specific definitions of emergency and urgent will vary between clinical contexts, clinical systems and the nature of the request itself, so have not be defined in this archetype. If explicit timing is required then the Service period should be clearly stated.(en)">
-				>
 				["at0112"] = <
 					text = <"Tilleggsinformasjon">
 					description = <"Ytterligere informasjon som er nødvendig for å registrere lokalt innhold/kontekst, eller for å sammenstille med andre referansemodeller/formalismer.">
 					comment = <"F.eks lokale informasjonskrav eller ekstra metadata for å tilpasse med FHIR eller CIMI ekvivalenter.">
-				>
-				["at0121"] = <
-					text = <"Tjenestenavn">
-					description = <"Navn på forespurt tjeneste.">
-					comment = <"Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig.">
 				>
 				["at0127"] = <
 					text = <"Rekvisisjonsstatus">
@@ -326,18 +256,6 @@ Status is used to denote whether this is the initial request, or a follow-up req
 				["at0142"] = <
 					text = <"Mottaker">
 					description = <"Detaljer om helsepersonellet eller organisasjonen som mottar prosedyrerekvisisjonen.">
-				>
-				["at0149"] = <
-					text = <"*Attachment(en)">
-					description = <"*Digital document, image, video or diagram as supporting information for the request.(en)">
-				>
-				["at0150"] = <
-					text = <"*Comment(en)">
-					description = <"*Additional narrative about the service request not captured in other fields.(en)">
-				>
-				["at0155"] = <
-					text = <"*Multimedia(en)">
-					description = <"**(en)">
 				>
 				["at0156"] = <
 					text = <"*New activity(en)">
