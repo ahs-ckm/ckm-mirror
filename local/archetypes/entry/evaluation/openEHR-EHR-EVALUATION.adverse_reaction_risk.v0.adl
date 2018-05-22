@@ -273,8 +273,8 @@ Thien FC. Drug hypersensitivity. Med J Aust. 2006 Sep 18;185(6):333-8. Review. P
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"3A1ABF833CDF4FA47D518ECF2B835BC9">
-		["build_uid"] = <"8463e7da-7075-4875-882a-1aeec9e50470">
+		["MD5-CAM-1.0.1"] = <"F4272D9AF60BDB5AB0A28E1D3F57F899">
+		["build_uid"] = <"c693f42f-5f43-453d-abcb-7e7b6554ac83">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -454,6 +454,10 @@ definition
 								}
 							}
 						}
+					}
+					allow_archetype CLUSTER[at0129] occurrences matches {0..*} matches {	-- Additional information
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -809,6 +813,10 @@ However, 'Refuted' may be useful for reconciliation of the adverse reaction list
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
+				["at0129"] = <
+					text = <"Additional information">
+					description = <"*">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -1076,6 +1084,10 @@ Onde uma representação textual da data da última ocorrência é exigido por e
 					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
 					comment = <"*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
+				["at0129"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["nb"] = <
@@ -1337,6 +1349,10 @@ Når en tekstlig representasjon av datoen er påkrevd, f.eks. \"i barndommen\" e
 					text = <"Utvidelse">
 					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
+				>
+				["at0129"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
