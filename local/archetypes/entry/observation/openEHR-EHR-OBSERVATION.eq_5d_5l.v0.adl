@@ -50,8 +50,8 @@ Users of the EQ-5D-5L archetype must ensure that they comply with the terms of u
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"8572EF693892A453996F516ECE78CDF0">
-		["build_uid"] = <"8f7b3263-dfd0-4d62-b56c-dbb18e540466">
+		["MD5-CAM-1.0.1"] = <"D6AB3B81DB1C2B203A553031D5E1728F">
+		["build_uid"] = <"1a2786b6-fa58-4038-8cd2-29eea37f2837">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -114,7 +114,7 @@ definition
 											9|[local::at0038]  	-- No response/ambiguous value
 										}
 									}
-									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Health state
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Index score
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -257,9 +257,8 @@ ontology
 					description = <"Level 5: indicating extreme problems.">
 				>
 				["at0024"] = <
-					text = <"Health state">
-					description = <"A unique health state is defined by combining 1 level from each of the 5 dimensions. Each state is referred to in terms of a 5 digit code.">
-					comment = <"Example: a state of 11111 indicates no problems on any of the 5 dimensions, while state 12345 indicates no problems with mobility, slight problems with washing or dressing, moderate problems with doing usual activities, severe pain or discomfort and extreme anxiety or depression.">
+					text = <"Index score">
+					description = <"EQ-5D-5L health states, defined by the EQ-5D-5L descriptive system, may be converted into a single index value. The index values, presented in country specific value sets, facilitate the calculation of quality-adjusted life years (QALYs) that are used to inform economic evaluations of health care interventions.">
 				>
 				["at0025"] = <
 					text = <"How good or bad is your health today?">
