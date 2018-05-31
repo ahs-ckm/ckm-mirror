@@ -1,0 +1,54 @@
+﻿archetype (adl_version=1.4; uid=54f4df7d-4f98-4d76-acb7-263bdb2122ef)
+	openEHR-EHR-COMPOSITION.order_set.v0
+
+concept
+	[at0000]	-- Order set
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"79990F812E881DB38579AA44454FB575">
+		["build_uid"] = <"dc23031c-21bc-4e12-9fe6-bbd561a09993">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Order set
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Order set">
+					description = <"unknown">
+				>
+			>
+		>
+	>

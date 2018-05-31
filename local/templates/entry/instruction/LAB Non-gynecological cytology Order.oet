@@ -1,0 +1,185 @@
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template" xmlns:uuid="java:java.util.UUID">
+   <id>6d0ded4a-f044-4caa-bbc0-fbc4dab2737f</id>
+   <name>LAB Non-gynecological cytology Order</name>
+   <description>
+      <lifecycle_state>Initial</lifecycle_state>
+      <details>
+         <purpose>For ordering a(n) Non-gynecological cytology</purpose>
+         <use></use>
+         <misuse></misuse>
+      </details>
+      <other_details>
+         <item>
+            <key>MetaDataSet:Sample Set </key>
+            <value>Template metadata sample set </value>
+         </item>
+         <item>
+            <key>Acknowledgements</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Business Process Level</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Care setting</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Client group</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Clinical Record Element</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Copyright</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Issues</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Owner</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Sign off</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Speciality</key>
+            <value></value>
+         </item>
+         <item>
+            <key>User roles</key>
+            <value></value>
+         </item>
+      </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-INSTRUCTION.request.v1]">
+      <items>
+         <item>
+            <key>Catalogue Pattern.Clinical Decision Support Requirements</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Contraindications</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Configuration Notes</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Patient Requirements</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Ordering Clinician Instructions</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Clinical Communication</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Recommended Use</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Order Includes</key>
+            <value></value>
+         </item>
+         <item>
+            <key>Catalogue Pattern.Synonyms</key>
+            <value></value>
+         </item>
+      </items>
+   </annotations>
+   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v1" concept_name="Service request">
+      <Rule path="/activities[at0001]" max="1" name="Non-gynecological cytology"></Rule>
+      <Rule path="/activities[at0001]/description[at0009]/items[at0121]" default="Non-gynecological cytology"></Rule>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_direction.v1" concept_name="Service direction" path="/activities[at0001]/description[at0009]/items[at0132]">
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.timing_daily.v1" concept_name="Timing - daily" path="/items[at0176]"></Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.timing_repetition.v1" concept_name="Timing - repetition" path="/items[at0090]"></Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Priority:">
+            <Rule path="/items[at0002]" default="Routine (Default)Priority (Supporting clinical information required - Free Text)Critical (contact pathologist for approval)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Test requestor: (Requesting clinician to act on results)">
+            <Rule path="/items[at0002]" default="Drop down list/smart look up or other (Free Text)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Collected by:">
+            <Rule path="/items[at0002]" default="Drop down list/smart look up or other (Free Text)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Copies of Results to:">
+            <Rule path="/items[at0002]" default="Drop down list/smart look up or other (Free Text)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Date of Collection (Mandatory):">
+            <Rule path="/items[at0002]" default="Enter date"></Rule>
+            <Rule path="/items[at0003]" default="Calendar dropdown- default current date"></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Time of Collection:">
+            <Rule path="/items[at0002]" default="Enter time"></Rule>
+            <Rule path="/items[at0003]" default="Clock (HH:MM) - Default to current time"></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Clinical Information/History">
+            <Rule path="/items[at0002]" default=""></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Clinical Information/History: Current problems, Differential diagnosis, and Relevant family/past medical history (Mandatory)">
+            <Rule path="/items[at0002]" default="Free Text"></Rule>
+            <Rule path="/items[at0003]" default="Derive from CIS"></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Other information:(Select all that apply)">
+            <Rule path="/items[at0002]" default="Previous RadiotherapyPrevious ChemotherapyInfectious PatientImmuocompromised PatientProvide details (Free Text)"></Rule>
+            <Rule path="/items[at0003]" default="Derive from CIS"></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Sample type:(Select appropriate)">
+            <Rule path="/items[at0002]" default="BreastCerebrospinal FluidFluid, AbdominalFluid, PeritonealFluid, PleuralFluid, SynovialLungLymph nodeOral mucosaSputumThyroidUrine, catheterUrine, ileal conduitUrine, voidedUrine, washingOther (Free text)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Location:(Select all that apply)">
+            <Rule path="/items[at0002]" default="LeftRightUpperLowerMedialOther (free text)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Clinical Presentation of Lesion:">
+            <Rule path="/items[at0002]" default="CystSolid MassMultinodal/MultifocalComplexLymphadenopathyLocal&#xA;    Generalized&#xA;B symptoms"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Imaging Appearance of the lesion:(Select appropriate)">
+            <Rule path="/items[at0002]" default="Benign AppearanceIndeterminate AppearanceMalignant Appearance"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="Collection Procedure:(Select appropriate)">
+            <Rule path="/items[at0002]" default="Aspirate (Specify method of collection - Free text)Bronchoalveolar Lavage (BAL)Bronchial WashBrushingsScrapingSwab&#xA;Other (Free text)"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0" concept_name="Service request information" max="1" path="/items[at0156]" name="List special handling, studies, and test requests with the sample.">
+            <Rule path="/items[at0002]" default="Free Text"></Rule>
+            <Rule path="/items[at0003]" default=""></Rule>
+         </Items>
+      </Items>
+   </definition>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v1">
+      <digest id="MD5-CAM-1.0.1">194638CC6CE2B8D2FC6EA8B26AA366B6</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_direction.v1">
+      <digest id="MD5-CAM-1.0.1">1BC3AC8B6C178916B5163C5C42FFB66E</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.timing_daily.v1">
+      <digest id="MD5-CAM-1.0.1">137055BE39B80E32A0457AE398E2113D</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.timing_repetition.v1">
+      <digest id="MD5-CAM-1.0.1">A927D108F43823B14BA5E8EB3888E1D1</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v0">
+      <digest id="MD5-CAM-1.0.1">87E776B2100EFA16CB09A4C18CD195FD</digest>
+   </integrity_checks>
+</template>
