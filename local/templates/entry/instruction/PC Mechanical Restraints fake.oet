@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>a6e8c510-b79b-4428-b7df-51039e6ed6b6</id>
+  <name>PC Mechanical Restraints fake</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.patient_care.v0" concept_name="Fake Patient care" max="1" name="Mechanical Restraints">
+    <Rule path="/activities[at0001]/description[at0002]/items[at0009]" name="Restraint Type" />
+    <Rule path="/activities[at0001]/description[at0002]/items[at0010]" name="Action">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Apply</includedValues>
+        <includedValues>Remove</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0002]/items[at0012]" name="Indication for restraints" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.patient_care.v0">
+    <digest id="MD5-CAM-1.0.1">E303C8B8AD05CAC45FEDD26909E89B6C</digest>
+  </integrity_checks>
+</template>

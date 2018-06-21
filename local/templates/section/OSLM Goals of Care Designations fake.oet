@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>ebc57128-727d-451e-816a-acd3030782af</id>
+  <name>OSLM Goals of Care Designations fake</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>Example</purpose>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.orderset.v0]/items[openEHR-EHR-SECTION.fakeadhoc.v0 and name/value='Medical Care and Interventions, Including Resuscitation if required followed by Intensive Care Unit admission']">
+    <items>
+      <item>
+        <key>Order Set Notes.Order Decision Support</key>
+        <value>Focus of Care and interventions are for cure or control of the Patient’s condition. The Patient would desire and is expected to benefit from attempted resuscitation and ICU care if required.</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderset.v0]/items[openEHR-EHR-SECTION.fakeadhoc.v0 and name/value='Medical Care and Interventions, Excluding Resuscitation']">
+    <items>
+      <item>
+        <key>Order Set Notes.Order Decision Support</key>
+        <value>Focus of Care and interventions are for cure or control of the Patient’s condition. The Patient either chooses to not receive or would not be expected to benefit from attempted resuscitation followed by life-sustaining care in an ICU. In Pediatrics, ICU can be considered if that location is deemed the best location for delivery of specific short-term symptom-directed care.
+</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderset.v0]/items[openEHR-EHR-SECTION.fakeadhoc.v0 and name/value='Medical Care and Interventions, Focused on Comfort']">
+    <items>
+      <item>
+        <key>Order Set Notes.Order Decision Support</key>
+        <value>Focus of Care and interventions are for the active palliative treatment of the Patient who has a terminal illness, and support for those close to them. This includes medical care for symptom control and psychosocial and spiritual support in advance of death. Care can be provided in any location best suited for these aims, including an ICU, a Hospice or any location that is the most appropriate for symptom-based care for this particular Patient.
+</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderset.v0" concept_name="Mini Order Set" max="1" name="Goals of Care Designations Order Set">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.fakeadhoc.v0" concept_name="Fake ad hoc" max="1" path="/items" name="Medical Care and Interventions, Including Resuscitation if required followed by Intensive Care Unit admission">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="25f9db6d-2e4e-461f-8e2d-2e45fc5fe5cd" concept_name="GCD R3 fake" max="1" path="/items" name="Goals of Care Designation - R3" />
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="2418dd55-56e4-4efd-aa26-196a1d0bd824" concept_name="GCD R2 fake" max="1" path="/items" name="Goals of Care Designation - R2" />
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="f6a4e6fa-3a8b-4f68-9418-f3935172347f" concept_name="GCD R1 fake" max="1" path="/items" name="Goals of Care Designation - R1" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.fakeadhoc.v0" concept_name="Fake ad hoc" max="1" path="/items" name="Medical Care and Interventions, Excluding Resuscitation">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="e18110fe-713a-443d-bc21-f626d3ffafe2" concept_name="GCD M1 fake" max="1" path="/items" name="Goals of Care Designation - M1" />
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="dcb4f68d-ccc7-4898-b75c-699abb229303" concept_name="GCD M2 fake" max="1" path="/items" name="Goals of Care Designation - M2" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.fakeadhoc.v0" concept_name="Fake ad hoc" max="1" path="/items" name="Medical Care and Interventions, Focused on Comfort">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="08ce8e62-a884-4de4-a30e-01e55e72e97c" concept_name="GCD C1 fake" max="1" path="/items" name="Goals of Care Designation - C1" />
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0" template_id="8abdd25e-0b6d-4dcd-bffa-21be9e10a3cb" concept_name="GCD C2 fake" max="1" path="/items" name="Goals of Care Designation - C2" />
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderset.v0">
+    <digest id="MD5-CAM-1.0.1">B28A5D7AD0F7CE5E5DEEEE7ABD5E2DAC</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.fakeadhoc.v0">
+    <digest id="MD5-CAM-1.0.1">AC4BAE33701D164B0C6CCD90A65DF418</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.fake_gcd.v0">
+    <digest id="MD5-CAM-1.0.1">F7933C647ED5A43CCCAC855708480595</digest>
+  </integrity_checks>
+</template>

@@ -1,0 +1,106 @@
+﻿archetype (adl_version=1.4; uid=3b26081f-dcbf-4018-9a21-a74dd267ad96)
+	openEHR-EHR-SECTION.large_order_set.v0
+
+concept
+	[at0000]	-- Large order set
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"example">
+			use = <"example">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"C0861F4231F0A4FC957EBCAE4D00DFB9">
+		["build_uid"] = <"23a1457b-560f-46c5-b5e6-fe544d2cdf4f">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	SECTION[at0000] matches {	-- Large order set
+		items cardinality matches {0..*; unordered} matches {
+			SECTION[at0001] occurrences matches {0..1} matches {*}
+			SECTION[at0002] occurrences matches {0..1} matches {*}
+			SECTION[at0003] occurrences matches {0..1} matches {*}
+			SECTION[at0004] occurrences matches {0..1} matches {*}
+			SECTION[at0005] occurrences matches {0..1} matches {*}
+			SECTION[at0006] occurrences matches {0..1} matches {*}
+			SECTION[at0007] occurrences matches {0..1} matches {*}
+			SECTION[at0008] occurrences matches {0..1} matches {*}
+			SECTION[at0009] occurrences matches {0..1} matches {*}
+			SECTION[at0010] occurrences matches {0..1} matches {*}
+			SECTION[at0011] occurrences matches {0..1} matches {*}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Large order set">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Goals of Care Designation">
+					description = <"Goals of Care Designation.">
+				>
+				["at0002"] = <
+					text = <"Admission">
+					description = <"Admission Orders.">
+				>
+				["at0003"] = <
+					text = <"Laboratory Investigations">
+					description = <"Laboratory Investigations.">
+				>
+				["at0004"] = <
+					text = <"Diagnostic Investigations">
+					description = <"Diagnostic Investigations.">
+				>
+				["at0005"] = <
+					text = <"Medications">
+					description = <"Medications.">
+				>
+				["at0006"] = <
+					text = <"Patient Care">
+					description = <"Patient Care.">
+				>
+				["at0007"] = <
+					text = <"Respiratory Care">
+					description = <"Respiratory Care.">
+				>
+				["at0008"] = <
+					text = <"IV Fluids">
+					description = <"IV Fluid Orders.">
+				>
+				["at0009"] = <
+					text = <"Activity">
+					description = <"Activity.">
+				>
+				["at0010"] = <
+					text = <"Diet/Nutrition">
+					description = <"Diet/Nutrition.">
+				>
+				["at0011"] = <
+					text = <"Other Orders">
+					description = <"Other Orders.">
+				>
+			>
+		>
+	>

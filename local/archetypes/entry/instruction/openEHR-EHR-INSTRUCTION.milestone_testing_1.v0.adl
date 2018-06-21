@@ -1,0 +1,134 @@
+﻿archetype (adl_version=1.4; uid=f59c67b4-39d6-4e4a-ba08-117bcc780ffb)
+	openEHR-EHR-INSTRUCTION.milestone_testing_1.v0
+
+concept
+	[at0000]	-- Milestone testing 1
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Milestone testing">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"4AD7CEDA94A5D7E922580C0F1335A461">
+		["build_uid"] = <"abb43cbf-c7e9-498f-8ee1-a4dfb5469162">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Milestone testing 1
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Text
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {	-- test
+								include
+									archetype_id/value matches {/.*/}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- New element
+								value matches {
+									C_DV_QUANTITY <
+										property = <[openehr::124]>
+										list = <
+											["1"] = <
+												units = <"mg">
+												magnitude = <|1.0..10.0|>
+												precision = <|0|>
+											>
+										>
+										assumed_value = <
+											units = <"mg">
+											precision = <0>
+											magnitude = <5.0>
+										>
+									>
+								}
+							}
+							ELEMENT[at0006] occurrences matches {0..1} matches {	-- change
+								value matches {
+									DV_COUNT matches {*}
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {	-- change2
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0008] occurrences matches {0..1} matches {	-- change3
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Milestone testing 1">
+					description = <"testing">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Text">
+					description = <"Text">
+				>
+				["at0004"] = <
+					text = <"test">
+					description = <"test">
+				>
+				["at0005"] = <
+					text = <"New element">
+					description = <"test">
+				>
+				["at0006"] = <
+					text = <"change">
+					description = <"change">
+				>
+				["at0007"] = <
+					text = <"change2">
+					description = <"change2">
+				>
+				["at0008"] = <
+					text = <"change3">
+					description = <"change3">
+				>
+			>
+		>
+	>

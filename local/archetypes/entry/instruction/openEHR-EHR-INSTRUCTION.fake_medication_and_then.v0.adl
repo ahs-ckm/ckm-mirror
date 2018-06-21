@@ -1,0 +1,206 @@
+﻿archetype (adl_version=1.4; uid=113e2c2e-a6b2-49ef-953f-5b64913334e0)
+	openEHR-EHR-INSTRUCTION.fake_medication_and_then.v0
+
+concept
+	[at0000]	-- Fake medication and then
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Testing of embedding - intent is not overlap with openEHR medication item and show use of defaults in order sets">
+			use = <"Testing only. Item will NOT be published and will be deleted NOT deprecated">
+			misuse = <"any use other than testing">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"F4EE7FFA6A1B0E510D7BA48226527B5B">
+		["build_uid"] = <"08d57fa4-3a72-46fa-b5d7-85588d565ce9">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Fake medication and then
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Medication Item
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- Dosage Form
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Strength
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							CLUSTER[at0006] occurrences matches {0..*} matches {	-- Dosing
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Dose
+										value matches {
+											DV_TEXT matches {*}
+											DV_INTERVAL<DV_QUANTITY> matches {
+												upper matches {
+													C_DV_QUANTITY <
+													>
+												}
+												lower matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+													>
+												}
+											}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Unit
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Route
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Frequency
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Duration
+										value matches {
+											C_DV_QUANTITY <
+											>
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Additional information for this dose
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+							ELEMENT[at0008] occurrences matches {0..1} matches {	-- PRN
+								value matches {
+									DV_BOOLEAN matches {
+										value matches {True, False}
+									}
+								}
+							}
+							ELEMENT[at0013] occurrences matches {0..1} matches {	-- PRN Indication
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0014] occurrences matches {0..1} matches {	-- Additional Information
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0016] occurrences matches {0..1} matches {	-- Review Date
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fake medication and then">
+					description = <"Fake Medication Order with and then ability">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Medication Item">
+					description = <"Identification of medication item being ordered ">
+				>
+				["at0004"] = <
+					text = <"Dosage Form">
+					description = <"Dosage form">
+				>
+				["at0005"] = <
+					text = <"Strength">
+					description = <"Strength">
+				>
+				["at0006"] = <
+					text = <"Dosing">
+					description = <"Dosing">
+				>
+				["at0007"] = <
+					text = <"Dose">
+					description = <"Numerical dose to be administered ">
+				>
+				["at0008"] = <
+					text = <"PRN">
+					description = <"PRN">
+				>
+				["at0009"] = <
+					text = <"Unit">
+					description = <"Unit">
+				>
+				["at0010"] = <
+					text = <"Route">
+					description = <"Route">
+				>
+				["at0011"] = <
+					text = <"Frequency">
+					description = <"Frequency">
+				>
+				["at0012"] = <
+					text = <"Duration">
+					description = <"Duration">
+				>
+				["at0013"] = <
+					text = <"PRN Indication">
+					description = <"PRN indication">
+				>
+				["at0014"] = <
+					text = <"Additional Information">
+					description = <"Additional Information">
+				>
+				["at0015"] = <
+					text = <"Additional information for this dose">
+					description = <"Additional information for this dose">
+				>
+				["at0016"] = <
+					text = <"Review Date">
+					description = <"review date">
+				>
+			>
+		>
+	>

@@ -1,0 +1,152 @@
+﻿archetype (adl_version=1.4; uid=3a64f853-1522-476b-9d8c-7fc3b67c3ead)
+	openEHR-EHR-INSTRUCTION.patient_care.v0
+
+concept
+	[at0000]	-- Fake Patient care
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"example">
+			use = <"example">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"E303C8B8AD05CAC45FEDD26909E89B6C">
+		["build_uid"] = <"e6727ae2-44b6-47da-9b40-ac348b99646f">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Fake Patient care
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Start Date
+								value matches {
+									DV_DATE_TIME matches {
+										value matches {yyyy-mm-ddTHH:MM:SS}
+									}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Start At
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0006, 	-- ASAP
+											at0007, 	-- Routine
+											at0008]	-- STAT
+										}
+									}
+									DV_TIME matches {
+										value matches {HH:MM:??}
+									}
+								}
+							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {	-- Qualifiers
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0010] occurrences matches {0..1} matches {	-- Frequency
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0011] occurrences matches {0..1} matches {	-- PRN
+								value matches {
+									DV_BOOLEAN matches {
+										value matches {True, False}
+									}
+								}
+							}
+							ELEMENT[at0012] occurrences matches {0..1} matches {	-- Additional Information
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							CLUSTER[at0013] occurrences matches {0..1} matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fake Patient care">
+					description = <"example">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Start Date">
+					description = <"Date order is effective.">
+				>
+				["at0005"] = <
+					text = <"Start At">
+					description = <"When order should take effect, urgency or event based.">
+				>
+				["at0006"] = <
+					text = <"ASAP">
+					description = <"As soon as possible.">
+				>
+				["at0007"] = <
+					text = <"Routine">
+					description = <"As determined by internal policy.">
+				>
+				["at0008"] = <
+					text = <"STAT">
+					description = <"Immediately.">
+				>
+				["at0009"] = <
+					text = <"Qualifiers">
+					description = <"Specifics of service required.">
+				>
+				["at0010"] = <
+					text = <"Frequency">
+					description = <"Frequency of order required.">
+				>
+				["at0011"] = <
+					text = <"PRN">
+					description = <"As needed.">
+				>
+				["at0012"] = <
+					text = <"Additional Information">
+					description = <"Additional narrative.">
+				>
+				["at0013"] = <
+					text = <"Any">
+					description = <"Any">
+				>
+			>
+		>
+	>

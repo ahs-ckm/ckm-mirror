@@ -1,0 +1,135 @@
+﻿archetype (adl_version=1.4; uid=887e394e-583a-4291-81f7-61354883a34c)
+	openEHR-EHR-INSTRUCTION.fakedi.v0
+
+concept
+	[at0000]	-- Fake Diagnostic Imaging
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Testing of embedding - intent is not overlap with openEHR Procedure request item and show use of defaults in order sets">
+			use = <"Testing only. Item will NOT be published and will be deleted NOT deprecated">
+			misuse = <"any use other than testing">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"176A69978878102730DA79E1D64F8494">
+		["build_uid"] = <"7deef706-6654-48bd-b20a-4ed91e665b51">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Fake Diagnostic Imaging
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Procedure name
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- Procedure type
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Procedure Requested Date
+								value matches {
+									DV_DATE matches {*}
+								}
+							}
+							ELEMENT[at0006] occurrences matches {0..1} matches {	-- Priority
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {	-- Pending Discharge?
+								value matches {
+									DV_BOOLEAN matches {
+										value matches {True, False}
+									}
+								}
+							}
+							ELEMENT[at0008] occurrences matches {0..1} matches {	-- Clinical Indication
+								value matches {
+									DV_TEXT matches {*}
+									DV_CODED_TEXT matches {
+										defining_code matches {[local::]}
+									}
+								}
+							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {	-- Additional Information
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fake Diagnostic Imaging">
+					description = <"Fake Diagnostic Imaging">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Procedure name">
+					description = <"Procedure name">
+				>
+				["at0004"] = <
+					text = <"Procedure type">
+					description = <"Procedure type">
+				>
+				["at0005"] = <
+					text = <"Procedure Requested Date">
+					description = <"Procedure Requested Date">
+				>
+				["at0006"] = <
+					text = <"Priority">
+					description = <"Priority">
+				>
+				["at0007"] = <
+					text = <"Pending Discharge?">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Clinical Indication">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Additional Information">
+					description = <"Additional Information">
+				>
+			>
+		>
+	>

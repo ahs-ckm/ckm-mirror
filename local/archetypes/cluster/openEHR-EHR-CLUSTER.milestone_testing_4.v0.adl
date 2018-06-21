@@ -1,0 +1,68 @@
+﻿archetype (adl_version=1.4; uid=205ebe05-ed6a-4b75-b9f2-177f3d1d0bc9)
+	openEHR-EHR-CLUSTER.milestone_testing_4.v0
+
+concept
+	[at0000]	-- Milestone testing 4
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"61C8AB48CC366AFFDDA8167E35BA4302">
+		["build_uid"] = <"49241d00-9d20-444c-9940-e3fb13b97cf8">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Milestone testing 4
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype ELEMENT[at0002] occurrences matches {0..*} matches {	-- Test
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- test
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Milestone testing 4">
+					description = <"unknown">
+				>
+				["at0002"] = <
+					text = <"Test">
+					description = <"Test">
+				>
+				["at0003"] = <
+					text = <"test">
+					description = <"test">
+				>
+			>
+		>
+	>

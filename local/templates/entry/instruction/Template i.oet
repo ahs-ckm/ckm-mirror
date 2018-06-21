@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>f52a4e63-dff6-4a89-9a40-914bd2e482ee</id>
+  <name>Template i</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.archetype_b.v0" concept_name="Archetype b">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.archetype_c.v0" concept_name="Archetype c" path="/activities[at0001]/description[at0002]/items[at0003]">
+      <Rule path="/items[at0001]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>value 1</includedValues>
+          <includedValues>value 2</includedValues>
+          <includedValues>value 3</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.archetype_b.v0">
+    <digest id="MD5-CAM-1.0.1">A0FC497AAE1B7675C1640559D31BBE14</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.archetype_c.v0">
+    <digest id="MD5-CAM-1.0.1">E1B069BF7459FA12329E13B076D6DA39</digest>
+  </integrity_checks>
+</template>
