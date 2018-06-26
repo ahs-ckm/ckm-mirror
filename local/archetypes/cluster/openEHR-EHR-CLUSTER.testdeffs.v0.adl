@@ -1,0 +1,74 @@
+﻿archetype (adl_version=1.4; uid=90bfd0db-8f36-44b9-b9ed-e3210921b6f1)
+	openEHR-EHR-CLUSTER.testdeffs.v0
+
+concept
+	[at0000]	-- Testdeffs
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"DFB4A8C9B5AF9C60EA51299384CDE339">
+		["build_uid"] = <"d57fc045-b950-4bd9-8d67-9f104ea2c6b4">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Testdeffs
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- TestDeff
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002, 	-- TestOne
+							at0003]	-- TestTwo
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Testdeffs">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"TestDeff">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"TestOne">
+					description = <"This is the first test of the deffs for internal coded values">
+				>
+				["at0003"] = <
+					text = <"TestTwo">
+					description = <"This is the second test of the deffs for internal coded values">
+				>
+			>
+		>
+	>
