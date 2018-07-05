@@ -21,7 +21,7 @@ description
 			copyright = <"© Alberta Health Services (Canada)">
 		>
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -30,9 +30,9 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"8FC3A36A08E887A2B9474E109A580CFA">
-		["build_uid"] = <"06b751d8-8532-4c19-9ec6-9cb110f05af7">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"F62C9C9A055E6B7B07FEA9A082F2A6F6">
+		["build_uid"] = <"b7f745c4-6333-409e-89e5-315443e5d124">
+		["revision"] = <"1.0.1-alpha">
 	>
 
 definition
@@ -50,6 +50,12 @@ definition
 							ELEMENT[at0004] occurrences matches {0..1} matches {	-- Q2
 								value matches {
 									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Q3
+								value matches {
+									C_DV_QUANTITY <
+									>
 								}
 							}
 						}
@@ -83,6 +89,10 @@ ontology
 				["at0004"] = <
 					text = <"Q2">
 					description = <"blahblahblah">
+				>
+				["at0005"] = <
+					text = <"Q3">
+					description = <"New!">
 				>
 			>
 		>
