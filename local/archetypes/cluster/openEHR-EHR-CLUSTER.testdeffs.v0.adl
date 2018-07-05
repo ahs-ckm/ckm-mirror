@@ -26,8 +26,8 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"DFB4A8C9B5AF9C60EA51299384CDE339">
-		["build_uid"] = <"d57fc045-b950-4bd9-8d67-9f104ea2c6b4">
+		["MD5-CAM-1.0.1"] = <"286A8C4564AF4553800C74AB0BEC8198">
+		["build_uid"] = <"53964ab8-6628-4010-9d34-c9fb65c03938">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -45,9 +45,13 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- New for DAM Testing
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -68,6 +72,10 @@ ontology
 				["at0003"] = <
 					text = <"TestTwo">
 					description = <"This is the second test of the deffs for internal coded values">
+				>
+				["at0004"] = <
+					text = <"New for DAM Testing">
+					description = <"*">
 				>
 			>
 		>
