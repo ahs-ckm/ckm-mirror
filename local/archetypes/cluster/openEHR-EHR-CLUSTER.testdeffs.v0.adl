@@ -26,8 +26,8 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"286A8C4564AF4553800C74AB0BEC8198">
-		["build_uid"] = <"05a1de39-edf4-45f5-ab63-ace3be300e70">
+		["MD5-CAM-1.0.1"] = <"7DA9D5C060D2B82980EE5B66B7FB567E">
+		["build_uid"] = <"6b31697e-9ede-4577-bf3a-93c2aacc9e2e">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -50,9 +50,13 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- DAM Test 2 upload arch
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -76,6 +80,10 @@ ontology
 				>
 				["at0004"] = <
 					text = <"New for DAM Testing">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"DAM Test 2 upload arch">
 					description = <"*">
 				>
 			>
