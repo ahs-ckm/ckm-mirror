@@ -30,9 +30,9 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"76049C3335D9857A4F89FACD3ACAD956">
-		["build_uid"] = <"b1aa7ba8-a026-4486-8281-1f2446af4a15">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"ACBE9D1E756DDA619BA2128375A11E6E">
+		["build_uid"] = <"d8acd1cb-8259-407e-be5b-4e5bcb3dbba6">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -62,7 +62,7 @@ definition
 			}
 			allow_archetype CLUSTER[at0002] occurrences matches {0..1} matches {	-- Person Contact Details
 				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_contact(-[a-zA-Z0-9_]+)*\.v0/}
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_contact(-[a-zA-Z0-9_]+)*\.v1/}
 			}
 		}
 	}
@@ -74,67 +74,67 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Contact">
-					description = <"">
+					description = <"*">
 				>
 				["at0001"] = <
 					text = <"Contact Type">
-					description = <"">
+					description = <"*">
 				>
 				["at0002"] = <
 					text = <"Person Contact Details">
-					description = <"">
+					description = <"*">
 				>
 				["at0003"] = <
 					text = <"Adult Interdependent Relation">
-					description = <"">
+					description = <"*">
 				>
 				["at0004"] = <
 					text = <"Alternate Contact">
-					description = <"">
+					description = <"*">
 				>
 				["at0005"] = <
 					text = <"Custodial Guardian">
-					description = <"">
+					description = <"*">
 				>
 				["at0006"] = <
 					text = <"Deceased">
-					description = <"">
+					description = <"*">
 				>
 				["at0007"] = <
 					text = <"Dependent">
-					description = <"">
+					description = <"*">
 				>
 				["at0008"] = <
 					text = <"Emergency Contact">
-					description = <"">
+					description = <"*">
 				>
 				["at0009"] = <
 					text = <"Financially Responsible">
-					description = <"">
+					description = <"*">
 				>
 				["at0010"] = <
 					text = <"Interpreter">
-					description = <"">
+					description = <"*">
 				>
 				["at0011"] = <
 					text = <"Legal Guardian">
-					description = <"">
+					description = <"*">
 				>
 				["at0012"] = <
 					text = <"Next of Kin">
-					description = <"">
+					description = <"*">
 				>
 				["at0013"] = <
 					text = <"Other">
-					description = <"">
+					description = <"*">
 				>
 				["at0014"] = <
 					text = <"Power of Attorney">
-					description = <"">
+					description = <"*">
 				>
 				["at0015"] = <
 					text = <"Trustee">
-					description = <"">
+					description = <"*">
 				>
 			>
 		>
