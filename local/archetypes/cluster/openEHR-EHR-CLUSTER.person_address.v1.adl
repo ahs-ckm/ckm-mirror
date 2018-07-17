@@ -31,9 +31,9 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"DC758A7378F76C6DD96F1D422B7E3212">
-		["build_uid"] = <"c351e50a-db4b-458e-9f66-81a590e17876">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"F6DE1925F9EA4B5BD732191B1678419D">
+		["build_uid"] = <"2e797256-4f90-4071-9b37-f3501bf26377">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -66,7 +66,7 @@ definition
 			}
 			allow_archetype CLUSTER[at0033] occurrences matches {0..*} matches {	-- Address Details Slot
 				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.address(-[a-zA-Z0-9_]+)*\.v0/}
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.address(-[a-zA-Z0-9_]+)*\.v1/}
 			}
 		}
 	}
