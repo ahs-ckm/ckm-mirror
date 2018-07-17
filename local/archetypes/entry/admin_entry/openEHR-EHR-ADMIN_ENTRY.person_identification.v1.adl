@@ -28,11 +28,11 @@ description
 		["custodian_organisation"] = <"Alberta Health Services (Canada)">
 		["current_contact"] = <"leslie.perin@ahs.ca; Roger.conos@ahs.ca">
 		["original_namespace"] = <"ca.ahs">
-		["custodian_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
-		["MD5-CAM-1.0.1"] = <"05F610686B2E5E43C63425FD9F7CE210">
-		["build_uid"] = <"720e87b9-9051-49cc-a1a4-bb6968a88d70">
-		["revision"] = <"1.0.0">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"5BCC886B44FA3B6AB559433E49DD3DFF">
+		["build_uid"] = <"2739e82e-18b3-4b84-96eb-b2e07f6e65ee">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -42,35 +42,35 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					allow_archetype CLUSTER[at0002] occurrences matches {0..1} matches {	-- Person Legal Name
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0008] occurrences matches {0..1} matches {	-- Person Prefered Name
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {	-- Person Previous Name
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0005] occurrences matches {0..1} matches {	-- Person Demographics
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_demographics(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_demographics(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0004] occurrences matches {0..1} matches {	-- Person Phone
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_phone(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_phone(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {	-- Person Address
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_address(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_address(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {	-- Person Contacts
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.contact(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.contact(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0007] occurrences matches {0..1} matches {	-- Person Death
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.death(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.death(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 				}
 			}
