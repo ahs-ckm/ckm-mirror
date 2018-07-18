@@ -27,9 +27,9 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"433FF38121C0743B3E9CFACD41F41A6D">
-		["build_uid"] = <"6d57a644-b0e0-41bb-9a89-ce273811cd1b">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"BBB1AF132343865C11AC63814811D41F">
+		["build_uid"] = <"bcee8768-5583-4529-a7ff-150b88d384f4">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -66,6 +66,10 @@ definition
 										value matches {True, False}
 									}
 								}
+							}
+							allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {	-- Test Arch 1 Slot
+								include
+									archetype_id/value matches {/.*/}
 							}
 						}
 					}
@@ -109,6 +113,10 @@ ontology
 				>
 				["at0007"] = <
 					text = <"YYC Test Question 5">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Test Arch 1 Slot">
 					description = <"*">
 				>
 			>
