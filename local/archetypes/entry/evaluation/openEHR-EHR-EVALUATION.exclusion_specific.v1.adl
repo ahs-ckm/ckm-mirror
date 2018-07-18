@@ -1,5 +1,5 @@
-﻿archetype (adl_version=1.4; uid=6488ac20-ff90-48ba-a170-3fd74bf6c9d1)
-	openEHR-EHR-EVALUATION.exclusion_specific.v0
+﻿archetype (adl_version=1.4; uid=9fdd832c-0a52-4747-9750-75a2a09790f8)
+	openEHR-EHR-EVALUATION.exclusion_specific.v1
 
 concept
 	[at0000]	-- Exclusion - specific
@@ -67,7 +67,7 @@ Not to be used to record the absence of information - use the EVALUATION.absense
 			copyright = <"© Nasjonal IKT HF, openEHR Foundation, Alberta Health Services (Canada)">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"published">
 	other_contributors = <"Tomas Alme, DIPS ASA, Norway", "Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT editor)", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Kristian Berg, Universitetssykehuset Nord Norge, Norway", "SumanBhusan Bhattacharyya, Sudisa Consultancy Services, India", "Bjørn Christensen, Helse Bergen HF, Norway", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Annette Hole Sjøborg, DIPS ASA, Norway", "Hilde Hollås, DIPS ASA, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Tom Jarl Jakobsen, Helse Bergen, Norway", "Hanne Joensen, Helse Bergen HUS, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Heather Leslie, Ocean Health Systems, Australia (openEHR Editor)", "Hallvard Lærum, Direktoratet for e-helse, Norway", "Siv Marie Lien, DIPS ASA, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Andrej Orel, Marand d.o.o., Slovenia", "Vladimir Pizzo, Hospital Sírio Libanês, Brazil", "Navin Ramachandran, NHS, United Kingdom", "Arild Stangeland, Helse Bergen, Norway", "Nyree Taylor, Ocean Informatics, Australia", "John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT editor)">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -76,34 +76,35 @@ Not to be used to record the absence of information - use the EVALUATION.absense
 Derived from: Eksklusjonsutsagn - spesifikt, Draft archetype [Internet]. Nasjonal IKT, Nasjonal IKT Clinical Knowledge Manager [sited: 2017-03-17]. Available from: http://arketyper.no/ckm/#showArchetype_1078.36.1653
 
 Exclusion statement, Deprecated Archetype [Internet]. openEHR Foundation, openEHR Clinical Knowledge Manager [cited: 2017-02-17]. Available from: http://openehr.org/ckm/#showArchetype_1013.1.617">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"C36A6B78049108739AAE1D1E1012107E">
-		["build_uid"] = <"a5977af2-c9cd-4093-a04a-17595e159f8b">
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"4ABD52309991AB5CED718BADEDC5B7A6">
+		["build_uid"] = <"5fb694e3-00c6-4d77-bb2c-5add594b840f">
+		["revision"] = <"1.0.0">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- Eksklusjonsutsagn - spesifikt
+	EVALUATION[at0000] matches {	-- Exclusion - specific
 		data matches {
 			ITEM_TREE[at0001] matches {	-- Tree
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Eksklusjonsutsagn
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Exclusion statement
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0003] matches {	-- Spesifikt konsept
+					ELEMENT[at0003] matches {	-- Excluded concept
 						name matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0008, 	-- Substans for overfølsomhetsreaksjon
-									at0005, 	-- Familiær sykdom
-									at0006, 	-- Legemiddel
-									at0004, 	-- Problem/diagnose
-									at0007]	-- Prosedyre
+									at0008, 	-- Adverse reaction substance
+									at0005, 	-- Family problem/diagnosis
+									at0006, 	-- Medication
+									at0004, 	-- Problem/diagnosis
+									at0007]	-- Procedure
 								}
 							}
 						}
@@ -111,7 +112,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Kommentar
+					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -122,7 +123,7 @@ definition
 		protocol matches {
 			ITEM_TREE[at0009] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
-					allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {	-- Tilleggsinformasjon
+					allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {	-- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -130,7 +131,6 @@ definition
 			}
 		}
 	}
-
 
 
 ontology
