@@ -1,5 +1,5 @@
-﻿archetype (adl_version=1.4; uid=f71ec264-519b-4e52-8dda-cbc03b97a8a2)
-	openEHR-EHR-ACTION.procedure.v0
+﻿archetype (adl_version=1.4; uid=53916117-bb98-43f6-823d-4c64e2026482)
+	openEHR-EHR-ACTION.procedure.v1
 
 concept
 	[at0000]	-- Procedure
@@ -159,6 +159,22 @@ Não deve ser usado para gravar detalhes sobre as atividades relacionadas, tais 
 Não deve ser usado para gravar uma operação ou procedimento relatório conjunto - usar um modelo em que esse arquétipo é apenas um componente do relatório completo.">
 			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
 		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه">
+			use = <"لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.">
+			keywords = <"الإجراء الطبي", ...>
+			misuse = <"">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"Za beleženje podrobnosti o izvedeni aktivnosti">
+			use = <"Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt">
+			keywords = <"aktivnosti", "postopek">
+			misuse = <"Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion.">
@@ -203,22 +219,6 @@ Not to be used to record details about related activities such as the use of fro
 Not to be used to record a whole operation or procedure report - use a template in which this archetype is only one component of the full report.">
 			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه">
-			use = <"لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.">
-			keywords = <"الإجراء الطبي", ...>
-			misuse = <"">
-			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
-		>
-		["sl"] = <
-			language = <[ISO_639-1::sl]>
-			purpose = <"Za beleženje podrobnosti o izvedeni aktivnosti">
-			use = <"Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt">
-			keywords = <"aktivnosti", "postopek">
-			misuse = <"Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION">
-			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
-		>
 		["es"] = <
 			language = <[ISO_639-1::es]>
 			purpose = <"Para registrar información sobre las actividades requeridas para ejecutar un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización.">
@@ -237,26 +237,26 @@ No utilizar para registrar detalles acerca del informe de la operación, para es
 			copyright = <"© openEHR Foundation, Alberta Health Services (Canada)">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"published">
 	other_contributors = <"Morten Aas, Oslo Universitetssykehus, Norway", "Tomas Alme, DIPS, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Kari Beate Engseth, Finnmarkssykehuset HF + Klinikk Kirkenes, Norway", "Maria Beate Nupen, Oslo Universitetssykehus, Norway", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Fredrik Borchsenius, Oslo universitetssykehus, Norway", "Diego Bosca, IBIME group, Spain", "Rong Chen, Cambio Healthcare Systems, Sweden", "Stephen Chu, NEHTA, Australia (Editor)", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "David Evans, Queensland Health, Australia", "Shahla Foozonkhah, Iran ministry of health and education, Iran", "Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway", "Sebastian Garde, Ocean Informatics, Germany", "Jacquie Garton-Smith, Royal Perth Hospital and DoHWA, Australia", "Bente Gjelsvik, Helse Bergen, Norway", "Andrew Goodchild, NEHTA, Australia", "Heather Grain, Llewelyn Grain Informatics, Australia", "Megan Hawkins, Mater Health Services, Australia", "Sam Heard, Ocean Informatics, Australia", "Kristian Heldal, Telemark Hospital Trust, Norway", "Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway", "Anca Heyd, DIPS ASA, Norway", "Hilde Hollås, DIPS ASA, Norway", "Lars Ivar Mehlum, Helse Bergen HF, Norway", "Lars Karlsen, DIPS ASA, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Mary Kelaher, NEHTA, Australia", "Shinji Kobayashi, Kyoto University, Japan", "Sabine Leh, Haukeland University Hospital, Department of Pathology, Norway", "Heather Leslie, Ocean Health Systems, Australia (openEHR Editor)", "Hugh Leslie, Ocean Informatics, Australia", "Hallvard Lærum, Oslo University Hospital, Norway", "Mike Martyn, The Hobart Anaesthetic Group, Australia", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Chris Mitchell, RACGP, Australia", "Stewart Morrison, NEHTA, Australia", "Bjoern Naess, DIPS ASA, Norway", "Bjørn Næss, DIPS ASA, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Michael Osborne, Mater Health Services, Australia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Chris Pearce, Melbourne East GP Network, Australia", "Rune Pedersen, Universitetssykehuset i Nord Norge, Norway", "Jussara Rotzsch, UNB, Brazil", "Peter Scott, Australia", "Elizabeth Stanick, Hobart Anaesthetic Group, Australia", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Line Sørensen, Helse Bergen, Norway", "John Taylor, NEHTA, Australia", "Micaela Thierley, Helse Bergen, Norway", "Rowan Thomas, St. Vincent's Hospital Melbourne, Australia", "Line Thomassen, Helse Bergen, Norway", "John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)", "Richard Townley-O'Neill, NEHTA, Australia", "Ørjan Vermeer, Haukeland Universitetssjukehus, Kvinneklinikken, Norway", "Ivar Yrke, DIPS AS, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Alberta Health Services (Canada)">
 		["references"] = <"Derived from: Procedure, Published archetype [Internet]. openEHR Foundation, openEHR Clinical Knowledge Manager [cited: 2018-07-18]. Available from: https://openehr.org/ckm/#showArchetype_1013.1.204
 Procedure, Draft Archetype [Internet]. National eHealth Transition Authority, Australia, NEHTA Clinical Knowledge Manager [cited: 2015-03-21]. Available from: http://dcm.nehta.org.au/ckm/#showArchetype_1013.1.936.">
-		["current_contact"] = <"Heather Leslie, Ocean Informatics, heather.leslie@oceaninformatics.com">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"9C3498FA2B44BEA84396E19DDBCD19FA">
-		["build_uid"] = <"ca1c2144-6ecf-401a-9c03-c1dca94032be">
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"1231C78769E65030BB09B42533F72276">
+		["build_uid"] = <"9791cce3-17aa-489d-9055-291a1d542b5d">
+		["revision"] = <"1.0.0">
 	>
 
 definition
-	ACTION[at0000] matches {	-- Prosedyre
+	ACTION[at0000] matches {	-- Procedure
 		ism_transition matches {
-			ISM_TRANSITION[at0004] matches {	-- Prosedyre planlagt
+			ISM_TRANSITION[at0004] matches {	-- Procedure planned
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::526]}
@@ -264,11 +264,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0004]}		-- Prosedyre planlagt
+						defining_code matches {[local::at0004]}		-- Procedure planned
 					}
 				}
 			}
-			ISM_TRANSITION[at0034] matches {	-- X - Prosedyre planlagt
+			ISM_TRANSITION[at0034] matches {	-- X - Procedure planned
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::524]}
@@ -276,11 +276,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0034]}		-- X - Prosedyre planlagt
+						defining_code matches {[local::at0034]}		-- X - Procedure planned
 					}
 				}
 			}
-			ISM_TRANSITION[at0007] matches {	-- Prosedyrerekvisisjon sendt
+			ISM_TRANSITION[at0007] matches {	-- Procedure request sent
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::526]}
@@ -288,11 +288,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0007]}		-- Prosedyrerekvisisjon sendt
+						defining_code matches {[local::at0007]}		-- Procedure request sent
 					}
 				}
 			}
-			ISM_TRANSITION[at0035] matches {	-- X - Prosedyrerekvisisjon sendt
+			ISM_TRANSITION[at0035] matches {	-- X - Procedure request sent
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::524]}
@@ -300,11 +300,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0035]}		-- X - Prosedyrerekvisisjon sendt
+						defining_code matches {[local::at0035]}		-- X - Procedure request sent
 					}
 				}
 			}
-			ISM_TRANSITION[at0038] matches {	-- Prosedyre utsatt
+			ISM_TRANSITION[at0038] matches {	-- Procedure postponed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::527]}
@@ -312,11 +312,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0038]}		-- Prosedyre utsatt
+						defining_code matches {[local::at0038]}		-- Procedure postponed
 					}
 				}
 			}
-			ISM_TRANSITION[at0039] matches {	-- Prosedyre avlyst
+			ISM_TRANSITION[at0039] matches {	-- Procedure cancelled
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::528]}
@@ -324,11 +324,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0039]}		-- Prosedyre avlyst
+						defining_code matches {[local::at0039]}		-- Procedure cancelled
 					}
 				}
 			}
-			ISM_TRANSITION[at0036] matches {	-- Fastsatt tidspunkt for prosedyre
+			ISM_TRANSITION[at0036] matches {	-- Procedure scheduled
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::529]}
@@ -336,11 +336,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0036]}		-- Fastsatt tidspunkt for prosedyre
+						defining_code matches {[local::at0036]}		-- Procedure scheduled
 					}
 				}
 			}
-			ISM_TRANSITION[at0068] matches {	-- Prosedyre påbegynt
+			ISM_TRANSITION[at0068] matches {	-- Procedure commenced
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::245]}
@@ -348,11 +348,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0068]}		-- Prosedyre påbegynt
+						defining_code matches {[local::at0068]}		-- Procedure commenced
 					}
 				}
 			}
-			ISM_TRANSITION[at0047] matches {	-- Prosedyre utført
+			ISM_TRANSITION[at0047] matches {	-- Procedure performed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::245]}
@@ -360,11 +360,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0047]}		-- Prosedyre utført
+						defining_code matches {[local::at0047]}		-- Procedure performed
 					}
 				}
 			}
-			ISM_TRANSITION[at0040] matches {	-- Prosedyre midlertidig stanset
+			ISM_TRANSITION[at0040] matches {	-- Procedure suspended
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::530]}
@@ -372,11 +372,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0040]}		-- Prosedyre midlertidig stanset
+						defining_code matches {[local::at0040]}		-- Procedure suspended
 					}
 				}
 			}
-			ISM_TRANSITION[at0041] matches {	-- Prosedyre avbrutt
+			ISM_TRANSITION[at0041] matches {	-- Procedure aborted
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::531]}
@@ -384,11 +384,11 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0041]}		-- Prosedyre avbrutt
+						defining_code matches {[local::at0041]}		-- Procedure aborted
 					}
 				}
 			}
-			ISM_TRANSITION[at0043] matches {	-- Prosedyre fullført
+			ISM_TRANSITION[at0043] matches {	-- Procedure completed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {[openehr::532]}
@@ -396,7 +396,7 @@ definition
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
-						defining_code matches {[local::at0043]}		-- Prosedyre fullført
+						defining_code matches {[local::at0043]}		-- Procedure completed
 					}
 				}
 			}
@@ -404,61 +404,61 @@ definition
 		description matches {
 			ITEM_TREE[at0001] matches {	-- Tree
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0002] matches {	-- Prosedyrenavn
+					ELEMENT[at0002] matches {	-- Procedure name
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0049] occurrences matches {0..1} matches {	-- Beskrivelse
+					ELEMENT[at0049] occurrences matches {0..1} matches {	-- Description
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0065] occurrences matches {0..*} matches {	-- Metode
+					ELEMENT[at0065] occurrences matches {0..*} matches {	-- Method
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0058] occurrences matches {0..1} matches {	-- Hastegrad
+					ELEMENT[at0058] occurrences matches {0..1} matches {	-- Urgency
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0063] occurrences matches {0..*} matches {	-- Kroppssted
+					ELEMENT[at0063] occurrences matches {0..*} matches {	-- Body site
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {	-- Prosedyredetaljer
+					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {	-- Procedure detail
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_clock(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v1/}
 					}
-					ELEMENT[at0048] occurrences matches {0..*} matches {	-- Resultat
+					ELEMENT[at0048] occurrences matches {0..*} matches {	-- Outcome
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0069] occurrences matches {0..*} matches {	-- Problem ved prosedyre
+					ELEMENT[at0069] occurrences matches {0..*} matches {	-- Procedural difficulty
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0006] occurrences matches {0..*} matches {	-- Komplikasjon
+					ELEMENT[at0006] occurrences matches {0..*} matches {	-- Complication
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0066] occurrences matches {0..1} matches {	-- Planlagt dato/tid
+					ELEMENT[at0066] occurrences matches {0..1} matches {	-- Scheduled date/time
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0060] occurrences matches {0..1} matches {	-- Dato/tid for avslutning av prosedyren
+					ELEMENT[at0060] occurrences matches {0..1} matches {	-- Final end date/time
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0061] occurrences matches {0..1} matches {	-- Total varighet
+					ELEMENT[at0061] occurrences matches {0..1} matches {	-- Total duration
 						value matches {
 							DV_DURATION matches {
 								value matches {|>=PT0S|}
@@ -469,17 +469,17 @@ definition
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
 					}
-					ELEMENT[at0067] occurrences matches {0..1} matches {	-- Prosedyretype
+					ELEMENT[at0067] occurrences matches {0..1} matches {	-- Procedure type
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..*} matches {	-- Begrunnelse
+					ELEMENT[at0014] occurrences matches {0..*} matches {	-- Reason
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Kommentar
+					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -490,27 +490,27 @@ definition
 		protocol matches {
 			ITEM_TREE[at0053] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0054] occurrences matches {0..1} matches {	-- Rekvisisjonsidentifikator
+					ELEMENT[at0054] occurrences matches {0..1} matches {	-- Requestor order identifier
 						value matches {
 							DV_TEXT matches {*}
 							DV_IDENTIFIER matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0055] occurrences matches {0..1} matches {	-- Rekvirent
+					allow_archetype CLUSTER[at0055] occurrences matches {0..1} matches {	-- Requestor
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0056] occurrences matches {0..1} matches {	-- Mottakers rekvisisjonsidentifikator
+					ELEMENT[at0056] occurrences matches {0..1} matches {	-- Receiver order identifier
 						value matches {
 							DV_TEXT matches {*}
 							DV_IDENTIFIER matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0057] occurrences matches {0..*} matches {	-- Mottaker
+					allow_archetype CLUSTER[at0057] occurrences matches {0..*} matches {	-- Receiver
 						include
 							archetype_id/value matches {/.*/}
 					}
-					allow_archetype CLUSTER[at0064] occurrences matches {0..*} matches {	-- Tilleggsinformasjon
+					allow_archetype CLUSTER[at0064] occurrences matches {0..*} matches {	-- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -518,8 +518,6 @@ definition
 			}
 		}
 	}
-
-
 
 
 ontology
