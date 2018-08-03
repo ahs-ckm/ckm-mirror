@@ -2,7 +2,7 @@
 	openEHR-EHR-INSTRUCTION.evan_test_archetype_1.v1
 
 concept
-	[at0000]	-- Evan test archetype 1
+	[at0000]	-- Evan test archetype NEW1
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -30,13 +30,13 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"8E655C2B37C0C4F8728720E7ABD4A4B9">
-		["build_uid"] = <"ce04a1f5-5428-4400-bc84-ea5121de0f73">
-		["revision"] = <"1.1.0">
+		["MD5-CAM-1.0.1"] = <"C3580E56FE495F8D235986EEDFEF9DF0">
+		["build_uid"] = <"c71f01e7-fcbd-4895-af35-190c51c844a3">
+		["revision"] = <"1.2.0">
 	>
 
 definition
-	INSTRUCTION[at0000] matches {	-- Evan test archetype 1
+	INSTRUCTION[at0000] matches {	-- Evan test archetype NEW1
 		activities cardinality matches {0..*; unordered} matches {
 			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
 				description matches {
@@ -72,6 +72,11 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {	-- G!!!
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 						}
 					}
 				}
@@ -85,7 +90,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Evan test archetype 1">
+					text = <"Evan test archetype NEW1">
 					description = <"unknown">
 				>
 				["at0001"] = <
@@ -118,6 +123,10 @@ ontology
 				>
 				["at0008"] = <
 					text = <"F">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"G!!!">
 					description = <"*">
 				>
 			>
