@@ -27,9 +27,9 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"4D849F1977A11308E3409C39136347C4">
-		["build_uid"] = <"56728860-a7cc-44ab-a3c2-94c2c916a1b6">
-		["revision"] = <"1.2.0">
+		["MD5-CAM-1.0.1"] = <"4DB6C63D0466B1D028A8C67CDA4C7148">
+		["build_uid"] = <"c2a4ce5c-6074-4db8-b348-2a52570f595e">
+		["revision"] = <"1.3.0">
 	>
 
 definition
@@ -68,6 +68,11 @@ definition
 								}
 							}
 							ELEMENT[at0008] occurrences matches {0..1} matches {	-- Test 6 saving chages
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {	-- 147 Hash Test
 								value matches {
 									DV_TEXT matches {*}
 								}
@@ -118,6 +123,10 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Test 6 saving chages">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"147 Hash Test">
 					description = <"*">
 				>
 			>
