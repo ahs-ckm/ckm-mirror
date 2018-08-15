@@ -7,27 +7,31 @@ language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2018-08-15">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"">
-			use = <"">
-			misuse = <"">
+			purpose = <"To capture details of medications being taken.">
+			use = <"For documentation of medication reconciliation both to capture the details of the best possible medication history and medication ordering.">
+			misuse = <"Not to be used as a medication order (instruction).">
 			copyright = <"© Alberta Health Services (Canada)">
 		>
 	>
 	lifecycle_state = <"in_development">
-	other_contributors = <>
+	other_contributors = <"Medication Reconciliation Documentation Working Group, Alberta Health Services, Canada", ...>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"AE1632A82D52F8479BC5BE2564CB084C">
-		["build_uid"] = <"e75ee044-1988-4e2c-b835-98dae04941bc">
+		["MD5-CAM-1.0.1"] = <"E8B9B97811545A33AB1C4580E053C970">
+		["build_uid"] = <"242db9d2-1614-4998-b6a0-6eeccce73cfd">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -56,12 +60,14 @@ definition
 			}
 			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Last dose
 				value matches {
+					DV_DATE_TIME matches {*}
 					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0006] occurrences matches {0..1} matches {	-- Quantity
 				value matches {
 					C_DV_QUANTITY <
+						property = <[openehr::128]>
 					>
 				}
 			}
@@ -88,39 +94,39 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Medications details">
-					description = <"unknown">
+					description = <"Capturing details of individual medications.">
 				>
 				["at0001"] = <
 					text = <"Medication name">
-					description = <"*">
+					description = <"Name(s) of identified products used by the patient. These products should include medications (all prescribed, over-the-counter, herbal, vitamin, homeopathic, health remedies products and substances of abuse).">
 				>
 				["at0002"] = <
 					text = <"Dose">
-					description = <"*">
+					description = <"Based on prescription instructions, quantity or amount of the identified product intended to be taken at one time and the unit of measurement, if applicable.">
 				>
 				["at0003"] = <
 					text = <"Route">
-					description = <"*">
+					description = <"Name route of administration by which the identified product enters into the body.">
 				>
 				["at0004"] = <
 					text = <"Frequency">
-					description = <"*">
+					description = <"The number of times an identified product is intended to be taken per time unit, such as \"X\" time per day, week, month or every \"X\" hours, days.">
 				>
 				["at0005"] = <
 					text = <"Last dose">
-					description = <"*">
+					description = <"The date and time when medication was last taken.">
 				>
 				["at0006"] = <
 					text = <"Quantity">
-					description = <"*">
+					description = <"Medication quantity as designated within the prescription.">
 				>
 				["at0007"] = <
 					text = <"Refills">
-					description = <"*">
+					description = <"Number of refills as designated within the prescription.">
 				>
 				["at0008"] = <
 					text = <"OTC/Self prescribed">
-					description = <"*">
+					description = <"Indicating the medication is a self prescribed over the counter one.">
 				>
 			>
 		>
