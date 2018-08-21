@@ -1,0 +1,79 @@
+﻿archetype (adl_version=1.4; uid=8042c986-f0ec-4c73-9c06-7e77ac1bddf7)
+	openEHR-EHR-EVALUATION.discrepancy.v0
+
+concept
+	[at0000]	-- Discrepancy
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"D3348710EE7E73EBA578D93DC6B21368">
+		["build_uid"] = <"f61d5fdb-8074-4f24-9c96-b312da06b524">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	EVALUATION[at0000] matches {	-- Discrepancy
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Discrepancy exists
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {True, False}
+							}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Addendum/comments
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Discrepancy">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Discrepancy exists">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Addendum/comments">
+					description = <"*">
+				>
+			>
+		>
+	>
