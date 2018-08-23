@@ -7,27 +7,31 @@ language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2018-08-23">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"">
+			purpose = <"For the purposes of capturing the ordering details of the medication reconciliation process.">
 			use = <"">
-			misuse = <"">
+			misuse = <"Not to be confused with a service request for a medication.">
 			copyright = <"© Alberta Health Services (Canada)">
 		>
 	>
 	lifecycle_state = <"in_development">
-	other_contributors = <>
+	other_contributors = <"Medication Reconciliation Documentation Working Group, Alberta Health Services, Canada", ...>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"D3D68519F6D914C851B9125B21AE01B8">
-		["build_uid"] = <"c8f1f736-ebc4-4cbe-9694-1df3fa6305c4">
+		["MD5-CAM-1.0.1"] = <"07D5EB641817B7ED33041E3920DAE41B">
+		["build_uid"] = <"7869e7e7-129d-41d0-852a-f583b3a6d64d">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -38,11 +42,7 @@ definition
 				description matches {
 					ITEM_TREE[at0002] matches {	-- Tree
 						items cardinality matches {0..*; unordered} matches {
-							allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {	-- Patient transition
-								include
-									archetype_id/value matches {/.*/}
-							}
-							CLUSTER[at0009] occurrences matches {0..1} matches {	-- New cluster
+							CLUSTER[at0009] occurrences matches {0..*} matches {	-- Medication Order
 								items cardinality matches {1..*; unordered} matches {
 									allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {	-- Best possible medication list
 										include
@@ -59,6 +59,10 @@ definition
 										}
 									}
 								}
+							}
+							allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {	-- Patient transition
+								include
+									archetype_id/value matches {/.*/}
 							}
 							ELEMENT[at0010] occurrences matches {0..1} matches {	-- Prescriber name
 								value matches {
@@ -89,7 +93,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Medication ordering">
-					description = <"unknown">
+					description = <"To capture the ordering details of the medication reconciliation process.">
 				>
 				["at0001"] = <
 					text = <"Current Activity">
@@ -101,35 +105,35 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Patient transition">
-					description = <"*">
+					description = <"Expansion to capture the details of a patient transition.">
 				>
 				["at0005"] = <
 					text = <"Best possible medication list">
-					description = <"*">
+					description = <"Expansion for the order elements pertaining to a best possible medication history.">
 				>
 				["at0007"] = <
 					text = <"Medication order modification">
-					description = <"*">
+					description = <"Used to capture what kind of order modifcation occured at time of transition as part of medication reconciliation.">
 				>
 				["at0008"] = <
 					text = <"Rationale for changes">
-					description = <"*">
+					description = <"The reason a medication was changed during patient transition.">
 				>
 				["at0009"] = <
-					text = <"New cluster">
-					description = <"*">
+					text = <"Medication Order">
+					description = <"A collection of details pertaining to each medication captured as part of the medication reconciliation process.">
 				>
 				["at0010"] = <
 					text = <"Prescriber name">
-					description = <"*">
+					description = <"Prescriber name.">
 				>
 				["at0011"] = <
 					text = <"Date of prescription order">
-					description = <"*">
+					description = <"Date of prescription order.">
 				>
 				["at0012"] = <
 					text = <"Triplicate prescription documentation">
-					description = <"*">
+					description = <"Identification of the medication order details for those medications listed on the Alberta Triplicate Prescription Medication List.">
 				>
 			>
 		>
