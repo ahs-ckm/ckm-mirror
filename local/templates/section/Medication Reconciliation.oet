@@ -110,7 +110,11 @@
           </constraint>
         </Rule>
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.best_possible_medication_history.v1" concept_name="Best possible medication history" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Best possible medication history">
-          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medications_details.v1" concept_name="Medications details" path="/items[at0001]" name="Medications details" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medications_details.v1" concept_name="Medications details" path="/items[at0001]" name="Medications details">
+            <Rule path="/items[at0006]" max="0" />
+            <Rule path="/items[at0007]" max="0" />
+            <Rule path="/items[at0008]" max="0" />
+          </Items>
         </Items>
       </Item>
       <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
@@ -120,8 +124,34 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medication Ordering">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_ordering.v1" concept_name="Medication ordering" path="/items">
+        <Rule path="/activities[at0001]/description[at0002]/items[at0009]/items[at0008]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Order changed</includedValues>
+            <includedValues>Order stopped</includedValues>
+            <includedValues>Order held</includedValues>
+          </constraint>
+        </Rule>
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medications_details.v1" concept_name="Medications details" path="/activities[at0001]/description[at0002]/items[at0009]/items[at0005]" />
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_transition_medication.v0" concept_name="Patient transition - medication" path="/activities[at0001]/description[at0002]/items[at0004]" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_transition_medication.v0" concept_name="Patient transition - medication" path="/activities[at0001]/description[at0002]/items[at0004]">
+          <Rule path="/items[at0001]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Yes</includedValues>
+              <includedValues>No</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0003]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Yes</includedValues>
+              <includedValues>No</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0004]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Yes</includedValues>
+              <includedValues>No</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
       </Item>
     </Item>
   </definition>
