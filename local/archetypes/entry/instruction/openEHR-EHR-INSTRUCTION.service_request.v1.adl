@@ -61,9 +61,9 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"B48161A11EF4549FFAE82EE73B385AF5">
-		["build_uid"] = <"4e209b08-fdb1-4c1f-8bf1-173c9d8edf76">
-		["revision"] = <"1.0.1">
+		["MD5-CAM-1.0.1"] = <"AD8DFB192E67715F0D9E11E95E674AD0">
+		["build_uid"] = <"4ff5a3e3-0af4-4579-941c-fdbb15fc1e86">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -97,36 +97,52 @@ definition
 		protocol matches {
 			ITEM_TREE[at0008] matches {	-- Tree
 				items cardinality matches {1..*; unordered} matches {
-					allow_archetype CLUSTER[at0112] occurrences matches {0..*} matches {	-- Extension
-						include
-							archetype_id/value matches {/.*/}
-					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {	-- Requestor Identifier
-						value matches {
-							DV_TEXT matches {*}
+					CLUSTER[at0159] occurrences matches {0..1} matches {	-- Extension
+						items cardinality matches {1..*; unordered} matches {
+							allow_archetype CLUSTER[at0112] occurrences matches {0..*} matches {	-- Extension
+								include
+									archetype_id/value matches {/.*/}
+							}
 						}
 					}
-					allow_archetype CLUSTER[at0141] occurrences matches {0..*} matches {	-- Requestor
-						include
-							archetype_id/value matches {/.*/}
-					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Receiver identifier
-						value matches {
-							DV_TEXT matches {*}
+					CLUSTER[at0161] occurrences matches {0..1} matches {	-- Requestor
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0010] occurrences matches {0..1} matches {	-- Requestor Identifier
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							allow_archetype CLUSTER[at0141] occurrences matches {0..*} matches {	-- Requestor
+								include
+									archetype_id/value matches {/.*/}
+							}
 						}
 					}
-					allow_archetype CLUSTER[at0142] occurrences matches {0..*} matches {	-- Receiver
-						include
-							archetype_id/value matches {/.*/}
+					CLUSTER[at0162] occurrences matches {0..1} matches {	-- Receiver
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0011] occurrences matches {0..1} matches {	-- Receiver identifier
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							allow_archetype CLUSTER[at0142] occurrences matches {0..*} matches {	-- Receiver
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
 					}
 					ELEMENT[at0127] occurrences matches {0..1} matches {	-- Request status
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0128] occurrences matches {0..*} matches {	-- Distribution list for response
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.distribution\.v1/}
+					CLUSTER[at0160] occurrences matches {0..1} matches {	-- Distribution
+						items cardinality matches {1..*; unordered} matches {
+							allow_archetype CLUSTER[at0128] occurrences matches {0..*} matches {	-- Distribution list for response
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.distribution\.v1/}
+							}
+						}
 					}
 				}
 			}
@@ -202,6 +218,22 @@ Status is used to denote whether this is the initial request, or a follow-up req
 					text = <"Supporting context">
 					description = <"Expansion slot for additional information needed for the order to be actioned or reported.">
 				>
+				["at0159"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0160"] = <
+					text = <"Distribution">
+					description = <"*">
+				>
+				["at0161"] = <
+					text = <"Requestor">
+					description = <"*">
+				>
+				["at0162"] = <
+					text = <"Receiver">
+					description = <"*">
+				>
 			>
 		>
 		["nb"] = <
@@ -267,6 +299,22 @@ Status is used to denote whether this is the initial request, or a follow-up req
 				>
 				["at0158"] = <
 					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
+				["at0159"] = <
+					text = <"*New cluster(en)">
+					description = <"**(en)">
+				>
+				["at0160"] = <
+					text = <"*New cluster(en)">
+					description = <"**(en)">
+				>
+				["at0161"] = <
+					text = <"*New cluster(en)">
+					description = <"**(en)">
+				>
+				["at0162"] = <
+					text = <"*New cluster(en)">
 					description = <"**(en)">
 				>
 			>
