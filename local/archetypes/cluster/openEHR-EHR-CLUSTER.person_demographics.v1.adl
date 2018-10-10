@@ -30,9 +30,9 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"FF40591C047002C6F1B0AD7F964D5C44">
-		["build_uid"] = <"e5bfd35d-4d70-4acf-9774-4aa8d1956f52">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"3289C63092E66DD77FE2DCAD41BC6C99">
+		["build_uid"] = <"f54f88e3-29fd-4777-99ff-616eaeaa3cfd">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -190,6 +190,38 @@ definition
 							at0122]	-- Satanist - Church of Satan
 						}
 					}
+				}
+			}
+			ELEMENT[at0129] occurrences matches {0..1} matches {	-- Provincial Health Number
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0131] occurrences matches {0..1} matches {	-- Unique Lifetime Identifier
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|<100000000|}
+					}
+				}
+			}
+			ELEMENT[at0132] occurrences matches {0..1} matches {	-- Issuing Province
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0133] occurrences matches {0..1} matches {	-- Expiry Date
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0135] occurrences matches {0..1} matches {	-- Eligibility
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0136] occurrences matches {0..1} matches {	-- PHN Exception
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -667,6 +699,30 @@ ontology
 				["at0128"] = <
 					text = <"U">
 					description = <"Undetermined.">
+				>
+				["at0129"] = <
+					text = <"Provincial Health Number">
+					description = <"It is the identifier assigned by the provincial health jurisdictions for identification within their health systems.  For Alberta, PHNs are the subset of ULIs that have been assigned to stakeholder persons upon registration and presumes eligibility for basic health services as defined in the Alberta Health Care Insurance Plan. Different provinces have different algorithms for assigning identifiers.  For example, Alberta PHN is 9 digits; Ontario PHN is 10 digits and version code of 1 to 2 digits.">
+				>
+				["at0131"] = <
+					text = <"Unique Lifetime Identifier">
+					description = <"A Unique Lifetime Identifier (ULI) is a unique and permanent number assigned to all persons and organizations with a vested interest in the health system of Alberta. This includes all Alberta residents, residents of other provinces who receive health services in Alberta, service providers (in province and out of province or country) who provide health services and in some cases non-Alberta residents. This unique identifier is assigned by Alberta Health, upon registration and presumes eligibility for basic health services as defined in Alberta Health Care Insurance Plan.">
+				>
+				["at0132"] = <
+					text = <"Issuing Province">
+					description = <"Assigning authority for the provincial health care number.">
+				>
+				["at0133"] = <
+					text = <"Expiry Date">
+					description = <"The date provincial health care eligibiity ends.">
+				>
+				["at0135"] = <
+					text = <"Eligibility">
+					description = <"This is the effective start date for Alberta Health Care Insurance Plan (AHCIP) coverage.">
+				>
+				["at0136"] = <
+					text = <"PHN Exception">
+					description = <"An exceptions is collected if a valid provincial health care number cannot be provided.">
 				>
 			>
 		>
