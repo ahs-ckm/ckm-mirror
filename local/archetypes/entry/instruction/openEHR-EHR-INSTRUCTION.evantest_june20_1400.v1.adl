@@ -1,0 +1,99 @@
+﻿archetype (adl_version=1.4; uid=8cb80ff0-559f-4b1e-899d-3c874f412e2e)
+	openEHR-EHR-INSTRUCTION.evantest_june20_1400.v1
+
+concept
+	[at0000]	-- Evantest june20 1400
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Evan Samson">
+		["organisation"] = <"Alberta Health Services">
+		["email"] = <"evan.samson@ahs.ca">
+		["date"] = <"2018-06-20">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"blahblahblah">
+			use = <"blahblahblah">
+			misuse = <"blahblahblah">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"Evan Samson, Alberta Health Services<evan.samson@ahs.ca>">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"F62C9C9A055E6B7B07FEA9A082F2A6F6">
+		["build_uid"] = <"b7f745c4-6333-409e-89e5-315443e5d124">
+		["revision"] = <"1.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Evantest june20 1400
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Q1
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- Q2
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Q3
+								value matches {
+									C_DV_QUANTITY <
+									>
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Evantest june20 1400">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Q1">
+					description = <"blahblahblah">
+				>
+				["at0004"] = <
+					text = <"Q2">
+					description = <"blahblahblah">
+				>
+				["at0005"] = <
+					text = <"Q3">
+					description = <"New!">
+				>
+			>
+		>
+	>

@@ -1,0 +1,100 @@
+﻿archetype (adl_version=1.4; uid=3ef9d7a5-1093-48c1-9b30-89ac528497a6)
+	openEHR-EHR-CLUSTER.person_phone.v1
+
+concept
+	[at0000]	-- Person phone
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Alexander McGregor">
+		["organisation"] = <"Alberta Health Services">
+		["email"] = <"alexander.mcgregor@ahs.ca">
+		["date"] = <"2018-07-17">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the type of phone number being recorded.">
+			use = <"To record the type of phone number being recorded.">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <"Leslie Perin - HIM Operations Lead - Person Identification/Encounter Management", "Roger Conos - Business Analyts - Person Identification/Encounter Management">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"foundationalknowledge@albertahealthservices.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"068E18D3035EF9AF33ACD0C9297355A6">
+		["build_uid"] = <"34bd0975-9423-4918-a5bc-5821eb743b38">
+		["revision"] = <"1.0.0">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Person phone
+		items cardinality matches {1; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Primary Phone
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Secondary Phone
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Other/Alternate Phone
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- Phone Extension
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Phone Comments
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Person phone">
+					description = <".">
+				>
+				["at0001"] = <
+					text = <"Primary Phone">
+					description = <".">
+				>
+				["at0002"] = <
+					text = <"Secondary Phone">
+					description = <".">
+				>
+				["at0003"] = <
+					text = <"Other/Alternate Phone">
+					description = <".">
+				>
+				["at0004"] = <
+					text = <"Phone Extension">
+					description = <".">
+				>
+				["at0005"] = <
+					text = <"Phone Comments">
+					description = <".">
+				>
+			>
+		>
+	>

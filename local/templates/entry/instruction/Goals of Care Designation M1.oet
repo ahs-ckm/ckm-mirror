@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="openEHR/v1/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <id>dbef32fe-d409-41ae-a55a-64cd92840bbb</id>
+   <name>Goals of Care Designation M1</name>
+   <description>
+      <lifecycle_state>Initial</lifecycle_state>
+      <details>
+         <purpose>Full rescusitation orders</purpose>
+         <use/>
+         <misuse/>
+      </details>
+      <other_details>
+         <item>
+            <key>MetaDataSet:Sample Set </key>
+            <value>Template metadata sample set </value>
+         </item>
+         <item>
+            <key>Acknowledgements</key>
+            <value/>
+         </item>
+         <item>
+            <key>Business Process Level</key>
+            <value/>
+         </item>
+         <item>
+            <key>Care setting</key>
+            <value/>
+         </item>
+         <item>
+            <key>Client group</key>
+            <value/>
+         </item>
+         <item>
+            <key>Clinical Record Element</key>
+            <value/>
+         </item>
+         <item>
+            <key>Copyright</key>
+            <value/>
+         </item>
+         <item>
+            <key>Issues</key>
+            <value/>
+         </item>
+         <item>
+            <key>Owner</key>
+            <value/>
+         </item>
+         <item>
+            <key>Sign off</key>
+            <value/>
+         </item>
+         <item>
+            <key>Speciality</key>
+            <value/>
+         </item>
+         <item>
+            <key>User roles</key>
+            <value/>
+         </item>
+      </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-INSTRUCTION.gcd.v0]">
+      <items>
+         <item>
+            <key>Order Catalogue.Clinical Decision Support</key>
+            <value>All clinically appropriate medical and surgical interventions directed at cure and control of condition(s) are considered, excluding the option of attempted life-saving resuscitation followed by ICU care.
+• Resuscitation: is not undertaken for cardio respiratory arrest.
+• Life Support Interventions: should not be initiated, or should be discontinued after discussion with the Patient.
+• Life Sustaining Measures: are used when appropriate.
+• Transfer: to another location of care is considered if that location provides more appropriate circumstances for diagnosis and treatment
+• Major Surgery: is considered when appropriate. Resuscitation during surgery or in the recovery room can be considered, including short term physiologic and mechanical support in an ICU, in order to return the Patient to prior level of function. The possibility of intra-operative death or life-threatening deterioration should be discussed with the Patient in advance of the proposed surgery and general decision-making guidance agreed upon and documented.</value>
+         </item>
+         <item>
+            <key>Order Catalogue.Admin Indications</key>
+            <value>Medical Care and Interventions, excluding Resuscitation
+Focus of Care and interventions are for cure or control of the Patient's condition. The Patient either chooses to not receive or would not be expected to benefit from attempted resuscitation followed by life sustaining care in ICU. In Pediatrics, ICU can be considered for delivery of specific short-term symptom-directed care.</value>
+         </item>
+      </items>
+   </annotations>
+   <definition archetype_id="openEHR-EHR-INSTRUCTION.gcd.v0"
+               concept_name="Goals of Care Designation Option 1"
+               max="1"
+               name="Goals of Care Designation M1"
+               xsi:type="INSTRUCTION">
+      <Rule path="/activities[at0001]/description[at0002]/items[at0004]">
+         <constraint xsi:type="textConstraint">
+            <includedValues>All clinically appropriate medical and surgical interventions directed at cure and control of condition(s) are considered, excluding the option attempted life-saving resuscitation followed by ICU care.</includedValues>
+         </constraint>
+      </Rule>
+      <Rule name="Involvement of Patient"
+            path="/activities[at0001]/description[at0002]/items[at0008]"/>
+   </definition>
+   <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.gcd.v0"
+                     xsi:type="ArchetypeIntegrity">
+      <digest id="MD5-CAM-1.0.1">0686EBA86EC29014747FC7B74556F291</digest>
+   </integrity_checks>
+</template>

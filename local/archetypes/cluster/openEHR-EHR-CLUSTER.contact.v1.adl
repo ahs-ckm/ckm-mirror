@@ -1,0 +1,141 @@
+﻿archetype (adl_version=1.4; uid=648777f4-91df-43fe-a646-bec325afd9df)
+	openEHR-EHR-CLUSTER.contact.v1
+
+concept
+	[at0000]	-- Contact
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Alexander McGregor">
+		["organisation"] = <"Alberta Health Services">
+		["email"] = <"alexander.mcgregor@ahs.ca">
+		["date"] = <"2018-07-17">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To collect the contact(s) for a persons.">
+			use = <"For collecting details about a persons contacts.">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <"Leslie Perin - HIM Operations Lead - Person Identification/Encounter Management", "Roger Conos - Business Analyts - Person Identification/Encounter Management">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"foundationalknowledge@albertahealthservices.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"ACBE9D1E756DDA619BA2128375A11E6E">
+		["build_uid"] = <"d8acd1cb-8259-407e-be5b-4e5bcb3dbba6">
+		["revision"] = <"1.1.0">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Contact
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Contact Type
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003, 	-- Adult Interdependent Relation
+							at0004, 	-- Alternate Contact
+							at0005, 	-- Custodial Guardian
+							at0006, 	-- Deceased
+							at0007, 	-- Dependent
+							at0008, 	-- Emergency Contact
+							at0009, 	-- Financially Responsible
+							at0010, 	-- Interpreter
+							at0011, 	-- Legal Guardian
+							at0012, 	-- Next of Kin
+							at0013, 	-- Other
+							at0014, 	-- Power of Attorney
+							at0015]	-- Trustee
+						}
+					}
+				}
+			}
+			allow_archetype CLUSTER[at0002] occurrences matches {0..1} matches {	-- Person Contact Details
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_contact(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Contact">
+					description = <"*">
+				>
+				["at0001"] = <
+					text = <"Contact Type">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Person Contact Details">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Adult Interdependent Relation">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Alternate Contact">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Custodial Guardian">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Deceased">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Dependent">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Emergency Contact">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Financially Responsible">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Interpreter">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Legal Guardian">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Next of Kin">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Other">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Power of Attorney">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Trustee">
+					description = <"*">
+				>
+			>
+		>
+	>

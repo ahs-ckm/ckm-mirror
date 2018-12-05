@@ -1,0 +1,65 @@
+﻿archetype (adl_version=1.4; uid=20cc0284-a140-4b59-a328-170842927b1c)
+	openEHR-EHR-CLUSTER.translation_requirements.v0
+
+concept
+	[at0000]	-- Translation requirements
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2017-06-28">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To identify the patient's need for an interpreter or translational services.">
+			use = <"Intended to capture the patient's need for an interpreter or translational services.">
+			keywords = <"Interpreter", "Interpretation", "Translation", "Translator">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Marlene Mann, BN, MCE, CPHIMS-CA, Prosci Certified, Clinical Documentation - Provincial CMIO, Alberta Health Services, Canada", "Katrina Simpson-Pineda, RN, BN, Clinical Knowledge Topics - Provincial CMIO, Alberta Health Services, Canada", "Colin Latter, B.Kin, CPHIMS-CA, Manager Foundational Knowledge - Provincial CMIO, Alberta Health Services, Canada", "Ed Schwab,RD, CPHIMS-CA, Foundational Knowledge - Provincial CMIO, Alberta Health Services, Canada", "Dr. George Elleker, Physician, Alberta Health Services, Canada", "Dr. Jeffrey Jirsh, Physician, Alberta Health Services, Canada", "Dr. Nigel Ashworth, Physician, Alberta Health Services, Canada", "Dr. Chris White, Physician, Alberta Health Services, Canada", "Dr. Neelan Pillay, Physician, Alberta Health Services, Canada", "Dr. Yahya Agha-Kani, Physician, Alberta Health Services, Canada", "Dr. Luis Bello-Espinosa, Physician - Peds, Alberta Health Services, Canada", "Dr. Jeffrey Buchholter, Physician - Peds, Alberta Health Services, Canada", "Dr. Barry Sinclair, Physician - Peds, Alberta Health Services, Canada">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"12EC02278AD5F87A48384EC8CBAD2C44">
+		["build_uid"] = <"84fba4e2-4c41-42f9-9854-55e6e4dd18d6">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Translation requirements
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Interpreter required
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Translation requirements">
+					description = <"Description of the patient's need for an interpreter or translational services.">
+				>
+				["at0002"] = <
+					text = <"Interpreter required">
+					description = <"Description of translational services required.">
+				>
+			>
+		>
+	>

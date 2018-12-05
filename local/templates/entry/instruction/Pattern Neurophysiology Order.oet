@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>cd2c9a63-5b64-46a4-a35d-84055349903a</id>
+  <name>Pattern Neurophysiology Order</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.request.v0]/activities[at0001]/description[at0009]/items[at0062]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Allow Other</key>
+        <value>Yes</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request">
+    <Rule path="/activities[at0001]/description[at0009]/items[at0121]" name="Examination Requested" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0148]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0135]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0062]" name="Indications" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0064]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0068]" min="1" default="Routine">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Routine</includedValues>
+        <includedValues>Stat</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/activities[at0001]/description[at0009]/items[at0040]" name="Date Requested for" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
+    <Rule path="/activities[at0001]/description[at0009]/items[at0078]" name="Medications" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
+    <digest id="MD5-CAM-1.0.1">11C2E5B1F9F6AD452A2C256A1449234F</digest>
+  </integrity_checks>
+</template>

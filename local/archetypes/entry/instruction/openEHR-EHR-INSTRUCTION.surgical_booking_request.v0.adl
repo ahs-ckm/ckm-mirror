@@ -1,0 +1,365 @@
+﻿archetype (adl_version=1.4; uid=4767c350-de70-48f2-9a47-807ca7b6d4e2)
+	openEHR-EHR-INSTRUCTION.surgical_booking_request.v0
+
+concept
+	[at0000]	-- Surgical booking request
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2018-10-10">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"41771BF9EA5C6804FACC91F936AF98DC">
+		["build_uid"] = <"bed2f078-d23e-4e4a-82d5-9b5d233770b0">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Surgical booking request
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {	-- Patient identification encounter management
+								include
+									archetype_id/value matches {/.*/}
+							}
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Does patient have cancer related to this surgery?
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- Dates the patient is not available for surgery
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Sugery date
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {	-- Decision to treat
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {	-- Ready to treat
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+							ELEMENT[at0010] occurrences matches {0..1} matches {	-- Referral date to surgeon
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+							CLUSTER[at0011] occurrences matches {0..1} matches {	-- Pre-admission clinic
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Pre-admission clinic
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Pre-op assessment clinic date
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Pre-op assessment referral
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {	-- Referring physician name
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+							ELEMENT[at0016] occurrences matches {0..1} matches {	-- Admit category within
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0017] occurrences matches {0..1} matches {	-- Admit type
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {	-- Admit options
+								include
+									archetype_id/value matches {/.*/}
+							}
+							ELEMENT[at0019] occurrences matches {0..1} matches {	-- Provisional diagnosis
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0025] occurrences matches {0..1} matches {	-- pCATS/aCATS diagnosis code
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0032] occurrences matches {0..1} matches {	-- Special OR equipment prosthesis
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0028] occurrences matches {0..1} matches {	-- Fluoroscopy
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0031] occurrences matches {0..1} matches {	-- Regional anesthetic
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0030] occurrences matches {0..1} matches {	-- Special medical concerns/needs/allergies
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0029] occurrences matches {0..1} matches {	-- Autologous blood
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0026] occurrences matches {0..1} matches {	-- Antibiotic resistant organisms
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0027] occurrences matches {0..1} matches {	-- Creutzfeldt-Jakob Disease precautions
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0020] occurrences matches {0..1} matches {	-- Latex allergy
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0021] occurrences matches {0..1} matches {	-- Malignant hyperthermia
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0024] occurrences matches {0..1} matches {	-- Obstructive sleep apnea
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0023] occurrences matches {0..1} matches {	-- Diabetes
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0022] occurrences matches {0..1} matches {	-- BMI
+								value matches {
+									C_DV_QUANTITY <
+									>
+								}
+							}
+							CLUSTER[at0033] occurrences matches {0..1} matches {	-- Postponement
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0035] occurrences matches {0..1} matches {	-- Reason for postponement
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {	-- Date
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+								}
+							}
+							ELEMENT[at0036] occurrences matches {0..1} matches {	-- Consult service
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Surgical booking request">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Does patient have cancer related to this surgery?">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Dates the patient is not available for surgery">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Sugery date">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Decision to treat">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Patient identification encounter management">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Ready to treat">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Referral date to surgeon">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Pre-admission clinic">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Pre-admission clinic">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Pre-op assessment clinic date">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Referring physician name">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Pre-op assessment referral">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Admit category within">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Admit type">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Admit options">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Provisional diagnosis">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Latex allergy">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Malignant hyperthermia">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"BMI">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Diabetes">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Obstructive sleep apnea">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"pCATS/aCATS diagnosis code">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Antibiotic resistant organisms">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Creutzfeldt-Jakob Disease precautions">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Fluoroscopy">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Autologous blood">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Special medical concerns/needs/allergies">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Regional anesthetic">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Special OR equipment prosthesis">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Postponement">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Date">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Reason for postponement">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Consult service">
+					description = <"*">
+				>
+			>
+		>
+	>

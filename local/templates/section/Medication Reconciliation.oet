@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>c4ec0e93-a0ac-4a5d-8dd3-361acc96b28c</id>
+  <name>Medication Reconciliation</name>
+  <description>
+    <original_author />
+    <other_contributors />
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Demographic data']/items[openEHR-EHR-OBSERVATION.height.v2]/data[at0001]/events[at0002]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>&lt;p&gt;does this work?&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Medication Reconciliation">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Demographic data">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient identification" />
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.height.v2" concept_name="Height/Length" path="/items" />
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.body_weight.v2" concept_name="Body weight" path="/items" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c55943d3-0e29-4903-bb0a-56ef7e35e203" concept_name="Adverse Reaction Documentation" max="1" path="/items" name="Adverse Reaction" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.problem_list.v1" concept_name="Problem List" max="1" path="/items" name="Medical conditions" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Encounter">
+      <Item xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.encounter_management_data_set.v0" concept_name="Encounter management data set" path="/items">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.encounter.v0" concept_name="Encounter" path="/data[at0001]/items[at0002]" name="Encounter">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Admission</includedValues>
+              <includedValues>Transfer</includedValues>
+              <includedValues>Discharge</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medication use">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.medication_use.v1" concept_name="Medication use" path="/items">
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0007]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Patient medication containers/packagin</includedValues>
+            <includedValues>MAR</includedValues>
+            <includedValues>Medication discharge plan</includedValues>
+            <includedValues>Patient recall</includedValues>
+            <includedValues>Family recall</includedValues>
+            <includedValues>Patient home medication list</includedValues>
+            <includedValues>Netcare PIN</includedValues>
+            <includedValues>Community pharmacy name/contact number</includedValues>
+            <includedValues>Prescriber</includedValues>
+            <includedValues>Other</includedValues>
+          </constraint>
+        </Rule>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.best_possible_medication_history.v1" concept_name="Best possible medication history" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Best possible medication history">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medications_details.v1" concept_name="Medications details" path="/items[at0001]" name="Medications details">
+            <Rule path="/items[at0006]" max="0" />
+            <Rule path="/items[at0007]" max="0" />
+            <Rule path="/items[at0008]" max="0" />
+          </Items>
+        </Items>
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
+        <Rule path="/data[at0001]/items[at0002]" name="Unable to obtain, please specify" />
+        <Rule path="/data[at0001]/items[at0005]" max="0" />
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medication Ordering">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_ordering.v1" concept_name="Medication ordering" path="/items">
+        <Rule path="/activities[at0001]/description[at0002]/items[at0009]/items[at0008]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Order changed</includedValues>
+            <includedValues>Order stopped</includedValues>
+            <includedValues>Order held</includedValues>
+          </constraint>
+        </Rule>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medications_details.v1" concept_name="Medications details" path="/activities[at0001]/description[at0002]/items[at0009]/items[at0005]" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_transition_medication.v0" concept_name="Patient transition - medication" path="/activities[at0001]/description[at0002]/items[at0004]">
+          <Rule path="/items[at0001]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Yes</includedValues>
+              <includedValues>No</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0003]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Yes</includedValues>
+              <includedValues>No</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0004]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Yes</includedValues>
+              <includedValues>No</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.height.v2">
+    <digest id="MD5-CAM-1.0.1">20C15A9B455D93E49774BC8865D6D419</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.body_weight.v2">
+    <digest id="MD5-CAM-1.0.1">6F9BC1161BE1C67DABEF72CB806FC6BF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.exclusion_global.v1">
+    <digest id="MD5-CAM-1.0.1">0B995EF47CF2E3FFA768EB0B0F1F0FDE</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v1">
+    <digest id="MD5-CAM-1.0.1">C97E43857C9DF11DCD6073A0CC4EB906</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.absence.v1">
+    <digest id="MD5-CAM-1.0.1">F60095265145D89ECD353295AE6B1994</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.problem_list.v1">
+    <digest id="MD5-CAM-1.0.1">9BECEA4A6BCA8E514ECC40DE54E625FF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.encounter_management_data_set.v0">
+    <digest id="MD5-CAM-1.0.1">8C41DC9AF0CCF13FB39450F35035821F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.encounter.v0">
+    <digest id="MD5-CAM-1.0.1">030352BB16538C4AE98D41A5299EA4CE</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.medication_use.v1">
+    <digest id="MD5-CAM-1.0.1">8657CE82C53FDB400FCDC4667059BAA7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.best_possible_medication_history.v1">
+    <digest id="MD5-CAM-1.0.1">BA66C0E0138D900A77BF6263BFDC31D8</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medications_details.v1">
+    <digest id="MD5-CAM-1.0.1">8E48C3E9307FD8EE459DFE8CFAC5D041</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_ordering.v1">
+    <digest id="MD5-CAM-1.0.1">B2B8F600E8EF73AB7198743649D6D5FE</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_transition_medication.v0">
+    <digest id="MD5-CAM-1.0.1">3C395D3CFB18969E30A9B5902F076D10</digest>
+  </integrity_checks>
+</template>

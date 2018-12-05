@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="openEHR/v1/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <id>371752a4-383c-4dfc-867b-502e13603ab1</id>
+   <name>Goals of Care Designation M2</name>
+   <description>
+      <lifecycle_state>Initial</lifecycle_state>
+      <details>
+         <purpose>Full rescusitation orders</purpose>
+         <use/>
+         <misuse/>
+      </details>
+      <other_details>
+         <item>
+            <key>MetaDataSet:Sample Set </key>
+            <value>Template metadata sample set </value>
+         </item>
+         <item>
+            <key>Acknowledgements</key>
+            <value/>
+         </item>
+         <item>
+            <key>Business Process Level</key>
+            <value/>
+         </item>
+         <item>
+            <key>Care setting</key>
+            <value/>
+         </item>
+         <item>
+            <key>Client group</key>
+            <value/>
+         </item>
+         <item>
+            <key>Clinical Record Element</key>
+            <value/>
+         </item>
+         <item>
+            <key>Copyright</key>
+            <value/>
+         </item>
+         <item>
+            <key>Issues</key>
+            <value/>
+         </item>
+         <item>
+            <key>Owner</key>
+            <value/>
+         </item>
+         <item>
+            <key>Sign off</key>
+            <value/>
+         </item>
+         <item>
+            <key>Speciality</key>
+            <value/>
+         </item>
+         <item>
+            <key>User roles</key>
+            <value/>
+         </item>
+      </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-INSTRUCTION.gcd.v0]">
+      <items>
+         <item>
+            <key>Order Catalogue.Clinical Decision Support</key>
+            <value>All clinically appropriate interventions that can be offered in the current non-hospital location of care are considered. If a patient does not respond to available treatments in this location of care, discussion should ensue to change the focus to comfort care. Life-saving resuscitation is not undertaken except in unusual circumstances (see below in Major Surgery).
+
+• Resuscitation: is not undertaken for cardio respiratory arrest.
+• Life Support Interventions: should not be initiated, or should be discontinued after discussion with the Patient.
+• Life Sustaining Measures: are used when appropriate.
+• Transfer: is not usually undertaken, but can be contemplated if symptom management or diagnostic efforts aimed at understanding symptoms can be best undertaken at that other location.
+• Major Surgery: can be considered, in order to prevent suffering from an unexpected trauma or illness. Resuscitation during surgery or in the recovery room can be considered, including short term physiologic and mechanical support in an ICU, in order to return the Patient to prior level of function. The possibility of intra-operative death or life-threatening deterioration should be discussed with the Patient in advance of the proposed surgery and general decision-making guidance agreed upon and noted as special circumstances on the GCD Order Form and Tracking Record.</value>
+         </item>
+         <item>
+            <key>Order Catalogue.Admin Indications</key>
+            <value>Medical Care and Interventions, excluding Resuscitation
+Focus of Care and interventions are for cure or control of the Patient's condition in the patient's current non-hospital location of care'. The Patient either chooses to not receive or would not be expected to benefit from attempted resuscitation followed by life sustaining care in ICU. In Pediatrics, ICU can be considered for delivery of specific short-term symptom-directed care.</value>
+         </item>
+      </items>
+   </annotations>
+   <definition archetype_id="openEHR-EHR-INSTRUCTION.gcd.v0"
+               concept_name="Goals of Care Designation Option 1"
+               max="1"
+               name="Goals of Care Designation M2"
+               xsi:type="INSTRUCTION">
+      <Rule path="/activities[at0001]/description[at0002]/items[at0004]">
+         <constraint xsi:type="textConstraint">
+            <includedValues>All clinically appropriate interventions that can be offered in the current non-hospital location of care are considered. If a patient does not respond to the available treatments in this location of care, discussion should ensue to change the focus to comfort care. Life-saving resuscitation is not undertaken except in unusual circumstances.</includedValues>
+         </constraint>
+      </Rule>
+      <Rule name="Involvement of Patient"
+            path="/activities[at0001]/description[at0002]/items[at0008]"/>
+   </definition>
+   <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.gcd.v0"
+                     xsi:type="ArchetypeIntegrity">
+      <digest id="MD5-CAM-1.0.1">0686EBA86EC29014747FC7B74556F291</digest>
+   </integrity_checks>
+</template>

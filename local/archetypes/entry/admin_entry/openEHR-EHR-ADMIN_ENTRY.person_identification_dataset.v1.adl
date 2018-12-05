@@ -1,0 +1,127 @@
+﻿archetype (adl_version=1.4; uid=3142d66b-1acf-44c1-b68c-7af637cae6e1)
+	openEHR-EHR-ADMIN_ENTRY.person_identification_dataset.v1
+
+concept
+	[at0000]	-- Person identification dataset
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Alexander McGregor">
+		["organisation"] = <"Alberta Health Services">
+		["email"] = <"alexander.mcgregor@ahs.ca">
+		["date"] = <"2018-07-17">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To inform the structure of the Person Identification Data Set.">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"foundationalknowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"4591DDBBDDCF80488E10DBCB4AB8D129">
+		["build_uid"] = <"1b545580-3ecc-487d-9d1d-fcbbdb6b1b71">
+		["revision"] = <"1.0.0">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {	-- Person identification dataset
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0002] occurrences matches {0..1} matches {	-- Person Legal Name
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0003] occurrences matches {0..1} matches {	-- Person Prefered Name (Cluster)
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {	-- Person Previous Name
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0005] occurrences matches {0..1} matches {	-- Person Demographics
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_demographics(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0006] occurrences matches {0..1} matches {	-- Person Phone
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_phone(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Person Address
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_address(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {	-- Person Contact
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.contact(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					allow_archetype CLUSTER[at0009] occurrences matches {0..1} matches {	-- Person Death
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.death(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Person identification dataset">
+					description = <"Provides the structure of the Person Identification Data Set.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Person Legal Name">
+					description = <".">
+				>
+				["at0003"] = <
+					text = <"Person Prefered Name (Cluster)">
+					description = <".">
+				>
+				["at0004"] = <
+					text = <"Person Previous Name">
+					description = <".">
+				>
+				["at0005"] = <
+					text = <"Person Demographics">
+					description = <".">
+				>
+				["at0006"] = <
+					text = <"Person Phone">
+					description = <".">
+				>
+				["at0007"] = <
+					text = <"Person Address">
+					description = <".">
+				>
+				["at0008"] = <
+					text = <"Person Contact">
+					description = <".">
+				>
+				["at0009"] = <
+					text = <"Person Death">
+					description = <".">
+				>
+			>
+		>
+	>

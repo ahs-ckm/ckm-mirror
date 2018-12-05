@@ -1,0 +1,729 @@
+﻿archetype (adl_version=1.4; uid=f85f80db-cbb5-42b4-82a5-23825d72099e)
+	openEHR-EHR-CLUSTER.person_demographics.v1
+
+concept
+	[at0000]	-- Person Demographics
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Alexander McGregor">
+		["organisation"] = <"Alberta Health Services">
+		["email"] = <"alexander.mcgregor@ahs.ca">
+		["date"] = <"2018-07-17">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Representation of a persons demographic data.">
+			use = <"To collect a persons demographic data.">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <"Leslie Perin - HIM Operations Lead - Person Identification/Encounter Management", "Roger Conos - Business Analyts - Person Identification/Encounter Management">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"foundationalknowledge@albertahealthservices.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"3289C63092E66DD77FE2DCAD41BC6C99">
+		["build_uid"] = <"f54f88e3-29fd-4777-99ff-616eaeaa3cfd">
+		["revision"] = <"1.1.0">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Person Demographics
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0123] occurrences matches {0..1} matches {	-- Date of Birth
+				value matches {
+					DV_DATE matches {
+						value matches {yyyy-mm-dd}
+					}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {	-- Gender Identity
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0013, 	-- Male
+							at0014, 	-- Female
+							at0015, 	-- Undetermined
+							at0016, 	-- Transgender M to F
+							at0017, 	-- Transgender F to M
+							at0018, 	-- A-Gender
+							at0019, 	-- Two-Spirit
+							at0020, 	-- Intersex
+							at0021, 	-- Not Listed
+							at0022, 	-- Not Asked
+							at0023]	-- Wishes not to Disclose
+						}
+					}
+				}
+			}
+			ELEMENT[at0124] occurrences matches {0..1} matches {	-- Administrative Gender
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0125, 	-- M
+							at0126, 	-- F
+							at0127, 	-- X
+							at0128]	-- U
+						}
+					}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {	-- Family Physician
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Referring Physician
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {	-- Religon
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0028, 	-- Evangelical
+							at0029, 	-- Orthodox
+							at0030, 	-- Indigineous
+							at0031, 	-- Pentecostal
+							at0032, 	-- Christian Missionary Alliance
+							at0033, 	-- Anglican
+							at0034, 	-- Episcopal
+							at0035, 	-- Church Of England
+							at0036, 	-- Agnostic
+							at0037, 	-- Apostolic
+							at0038, 	-- Associated Gospel
+							at0039, 	-- Atheist
+							at0040, 	-- Baptist
+							at0041, 	-- Bahai
+							at0042, 	-- Brethren
+							at0043, 	-- Buddhist
+							at0044, 	-- Catholic
+							at0045, 	-- Church Of Christ
+							at0046, 	-- Church Of God
+							at0047, 	-- Church Of God In Christ
+							at0048, 	-- Church Of New Jerusalem
+							at0049, 	-- Christadelphian
+							at0050, 	-- Confucianism
+							at0051, 	-- Christian
+							at0052, 	-- Christian Assembly
+							at0053, 	-- Fellowship of Christian Assemblies
+							at0054, 	-- Christian Community
+							at0055, 	-- Christian Fellowship Church
+							at0056, 	-- Christian Missionary Alliance / Alliance
+							at0057, 	-- Reformed
+							at0058, 	-- United
+							at0059, 	-- DISCIPLES OF CHRIST
+							at0060, 	-- DRUID
+							at0061, 	-- DUKABOR
+							at0062, 	-- ECKANKAR
+							at0063, 	-- EASTERN ORTHODOX
+							at0064, 	-- EPISCOPAL/Anglican/Church of England
+							at0065, 	-- EVANGELICAL
+							at0066, 	-- CHRISTIAN ASSEMBLY
+							at0067, 	-- FOLLOWERS OF CHRIST
+							at0068, 	-- FULL GOSPEL
+							at0069, 	-- FREE METHODIST
+							at0070, 	-- FOUR SQUARE CHURCH
+							at0071, 	-- HINDUISM
+							at0072, 	-- Heritage Reformed Congregations
+							at0073, 	-- Hutterian Brethren/Hutterite
+							at0074, 	-- Immanel Bible Church
+							at0075, 	-- Islamic
+							at0076, 	-- Muslim
+							at0077, 	-- Jewish/Judaism
+							at0078, 	-- Messianic Judaism
+							at0079, 	-- Jehovah's Witness
+							at0080, 	-- Presbyterian
+							at0081, 	-- Latter Day Saints - Reorganized
+							at0082, 	-- Latter Day Saints - Mormon
+							at0083, 	-- Lutheran
+							at0084, 	-- Mennonite
+							at0085, 	-- Moravian
+							at0086, 	-- Methodist
+							at0087, 	-- New Apostolic
+							at0088, 	-- None
+							at0089, 	-- Netherlands Reformed Church
+							at0090, 	-- Dutch Reformed Church
+							at0091, 	-- Nazarene
+							at0092, 	-- Protestant
+							at0093, 	-- Quaker
+							at0094, 	-- Religious Science
+							at0095, 	-- Salvation Army
+							at0096, 	-- Church of Scientology
+							at0097, 	-- Seventh Day Adeventist
+							at0098, 	-- Shinto
+							at0099, 	-- Sikhism
+							at0100, 	-- Spiritualist Church
+							at0101, 	-- The New Church
+							at0102, 	-- Swedenborgian Church
+							at0103, 	-- Unasked
+							at0104, 	-- United Church
+							at0105, 	-- United Church - Reform
+							at0106, 	-- United Church Of Christ
+							at0107, 	-- United Pentecostal
+							at0108, 	-- Unity School of Christianity
+							at0109, 	-- Unity Church
+							at0110, 	-- Victory Church
+							at0111, 	-- Village Mission
+							at0112, 	-- Vineyard Churches of Canada
+							at0113, 	-- WW Church Of God
+							at0114, 	-- Withheld - Did Not Wish to State
+							at0115, 	-- Wicca
+							at0116, 	-- Pagan
+							at0117, 	-- Home Church (word of life)
+							at0118, 	-- Spiritual - Not Religious
+							at0119, 	-- Coptic
+							at0120, 	-- Mar-Thoma Church
+							at0121, 	-- Rastafarian
+							at0122]	-- Satanist - Church of Satan
+						}
+					}
+				}
+			}
+			ELEMENT[at0129] occurrences matches {0..1} matches {	-- Provincial Health Number
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0131] occurrences matches {0..1} matches {	-- Unique Lifetime Identifier
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|<100000000|}
+					}
+				}
+			}
+			ELEMENT[at0132] occurrences matches {0..1} matches {	-- Issuing Province
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0133] occurrences matches {0..1} matches {	-- Expiry Date
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0135] occurrences matches {0..1} matches {	-- Eligibility
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0136] occurrences matches {0..1} matches {	-- PHN Exception
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Person Demographics">
+					description = <"Representation of a persons demographic data.">
+				>
+				["at0002"] = <
+					text = <"Referring Physician">
+					description = <".">
+				>
+				["at0008"] = <
+					text = <"Family Physician">
+					description = <"Family physicians are qualified to practice general medicine and have additional training in the specialty of family medicine as well as a clearly defined focus on comprehensive, continuous care of their patients.">
+				>
+				["at0010"] = <
+					text = <"Gender Identity">
+					description = <"\"Gender\" refers to the socially constructed roles, behaviors, activities, and attributes of an individual.">
+				>
+				["at0011"] = <
+					text = <"Religon">
+					description = <".">
+				>
+				["at0013"] = <
+					text = <"Male">
+					description = <".">
+				>
+				["at0014"] = <
+					text = <"Female">
+					description = <".">
+				>
+				["at0015"] = <
+					text = <"Undetermined">
+					description = <".">
+				>
+				["at0016"] = <
+					text = <"Transgender M to F">
+					description = <".">
+				>
+				["at0017"] = <
+					text = <"Transgender F to M">
+					description = <".">
+				>
+				["at0018"] = <
+					text = <"A-Gender">
+					description = <".">
+				>
+				["at0019"] = <
+					text = <"Two-Spirit">
+					description = <"A cultural and spiritual identity used by some First Nations peoples to describe having both masculine and feminine spirits.  It can include people who are gay, lesbian, bisexual, trans or intersex. http://insite.albertahealthservices.ca/assets/phc/tms-phc-srh-media-reference-guide-trans-and-gender-diverse-people.pdf .">
+				>
+				["at0020"] = <
+					text = <"Intersex">
+					description = <"Refers to a person whose anatomical sex is outside the conventional classification. http://insite.albertahealthservices.ca/assets/phc/tms-phc-srh-media-reference-guide-trans-and-gender-diverse-people.pdf .">
+				>
+				["at0021"] = <
+					text = <"Not Listed">
+					description = <".">
+				>
+				["at0022"] = <
+					text = <"Not Asked">
+					description = <".">
+				>
+				["at0023"] = <
+					text = <"Wishes not to Disclose">
+					description = <".">
+				>
+				["at0028"] = <
+					text = <"Evangelical">
+					description = <".">
+				>
+				["at0029"] = <
+					text = <"Orthodox">
+					description = <".">
+				>
+				["at0030"] = <
+					text = <"Indigineous">
+					description = <".">
+				>
+				["at0031"] = <
+					text = <"Pentecostal">
+					description = <".">
+				>
+				["at0032"] = <
+					text = <"Christian Missionary Alliance">
+					description = <".">
+				>
+				["at0033"] = <
+					text = <"Anglican">
+					description = <".">
+				>
+				["at0034"] = <
+					text = <"Episcopal">
+					description = <".">
+				>
+				["at0035"] = <
+					text = <"Church Of England">
+					description = <".">
+				>
+				["at0036"] = <
+					text = <"Agnostic">
+					description = <".">
+				>
+				["at0037"] = <
+					text = <"Apostolic">
+					description = <".">
+				>
+				["at0038"] = <
+					text = <"Associated Gospel">
+					description = <".">
+				>
+				["at0039"] = <
+					text = <"Atheist">
+					description = <".">
+				>
+				["at0040"] = <
+					text = <"Baptist">
+					description = <".">
+				>
+				["at0041"] = <
+					text = <"Bahai">
+					description = <".">
+				>
+				["at0042"] = <
+					text = <"Brethren">
+					description = <".">
+				>
+				["at0043"] = <
+					text = <"Buddhist">
+					description = <".">
+				>
+				["at0044"] = <
+					text = <"Catholic">
+					description = <".">
+				>
+				["at0045"] = <
+					text = <"Church Of Christ">
+					description = <".">
+				>
+				["at0046"] = <
+					text = <"Church Of God">
+					description = <".">
+				>
+				["at0047"] = <
+					text = <"Church Of God In Christ">
+					description = <".">
+				>
+				["at0048"] = <
+					text = <"Church Of New Jerusalem">
+					description = <".">
+				>
+				["at0049"] = <
+					text = <"Christadelphian">
+					description = <".">
+				>
+				["at0050"] = <
+					text = <"Confucianism">
+					description = <".">
+				>
+				["at0051"] = <
+					text = <"Christian">
+					description = <".">
+				>
+				["at0052"] = <
+					text = <"Christian Assembly">
+					description = <".">
+				>
+				["at0053"] = <
+					text = <"Fellowship of Christian Assemblies">
+					description = <".">
+				>
+				["at0054"] = <
+					text = <"Christian Community">
+					description = <".">
+				>
+				["at0055"] = <
+					text = <"Christian Fellowship Church">
+					description = <".">
+				>
+				["at0056"] = <
+					text = <"Christian Missionary Alliance / Alliance">
+					description = <".">
+				>
+				["at0057"] = <
+					text = <"Reformed">
+					description = <".">
+				>
+				["at0058"] = <
+					text = <"United">
+					description = <".">
+				>
+				["at0059"] = <
+					text = <"DISCIPLES OF CHRIST">
+					description = <".">
+				>
+				["at0060"] = <
+					text = <"DRUID">
+					description = <".">
+				>
+				["at0061"] = <
+					text = <"DUKABOR">
+					description = <".">
+				>
+				["at0062"] = <
+					text = <"ECKANKAR">
+					description = <".">
+				>
+				["at0063"] = <
+					text = <"EASTERN ORTHODOX">
+					description = <".">
+				>
+				["at0064"] = <
+					text = <"EPISCOPAL/Anglican/Church of England">
+					description = <".">
+				>
+				["at0065"] = <
+					text = <"EVANGELICAL">
+					description = <".">
+				>
+				["at0066"] = <
+					text = <"CHRISTIAN ASSEMBLY">
+					description = <".">
+				>
+				["at0067"] = <
+					text = <"FOLLOWERS OF CHRIST">
+					description = <".">
+				>
+				["at0068"] = <
+					text = <"FULL GOSPEL">
+					description = <".">
+				>
+				["at0069"] = <
+					text = <"FREE METHODIST">
+					description = <".">
+				>
+				["at0070"] = <
+					text = <"FOUR SQUARE CHURCH">
+					description = <".">
+				>
+				["at0071"] = <
+					text = <"HINDUISM">
+					description = <".">
+				>
+				["at0072"] = <
+					text = <"Heritage Reformed Congregations">
+					description = <".">
+				>
+				["at0073"] = <
+					text = <"Hutterian Brethren/Hutterite">
+					description = <".">
+				>
+				["at0074"] = <
+					text = <"Immanel Bible Church">
+					description = <".">
+				>
+				["at0075"] = <
+					text = <"Islamic">
+					description = <".">
+				>
+				["at0076"] = <
+					text = <"Muslim">
+					description = <".">
+				>
+				["at0077"] = <
+					text = <"Jewish/Judaism">
+					description = <".">
+				>
+				["at0078"] = <
+					text = <"Messianic Judaism">
+					description = <".">
+				>
+				["at0079"] = <
+					text = <"Jehovah's Witness">
+					description = <".">
+				>
+				["at0080"] = <
+					text = <"Presbyterian">
+					description = <".">
+				>
+				["at0081"] = <
+					text = <"Latter Day Saints - Reorganized">
+					description = <".">
+				>
+				["at0082"] = <
+					text = <"Latter Day Saints - Mormon">
+					description = <".">
+				>
+				["at0083"] = <
+					text = <"Lutheran">
+					description = <".">
+				>
+				["at0084"] = <
+					text = <"Mennonite">
+					description = <".">
+				>
+				["at0085"] = <
+					text = <"Moravian">
+					description = <".">
+				>
+				["at0086"] = <
+					text = <"Methodist">
+					description = <".">
+				>
+				["at0087"] = <
+					text = <"New Apostolic">
+					description = <".">
+				>
+				["at0088"] = <
+					text = <"None">
+					description = <".">
+				>
+				["at0089"] = <
+					text = <"Netherlands Reformed Church">
+					description = <".">
+				>
+				["at0090"] = <
+					text = <"Dutch Reformed Church">
+					description = <".">
+				>
+				["at0091"] = <
+					text = <"Nazarene">
+					description = <".">
+				>
+				["at0092"] = <
+					text = <"Protestant">
+					description = <".">
+				>
+				["at0093"] = <
+					text = <"Quaker">
+					description = <".">
+				>
+				["at0094"] = <
+					text = <"Religious Science">
+					description = <".">
+				>
+				["at0095"] = <
+					text = <"Salvation Army">
+					description = <".">
+				>
+				["at0096"] = <
+					text = <"Church of Scientology">
+					description = <".">
+				>
+				["at0097"] = <
+					text = <"Seventh Day Adeventist">
+					description = <".">
+				>
+				["at0098"] = <
+					text = <"Shinto">
+					description = <".">
+				>
+				["at0099"] = <
+					text = <"Sikhism">
+					description = <".">
+				>
+				["at0100"] = <
+					text = <"Spiritualist Church">
+					description = <".">
+				>
+				["at0101"] = <
+					text = <"The New Church">
+					description = <".">
+				>
+				["at0102"] = <
+					text = <"Swedenborgian Church">
+					description = <".">
+				>
+				["at0103"] = <
+					text = <"Unasked">
+					description = <".">
+				>
+				["at0104"] = <
+					text = <"United Church">
+					description = <".">
+				>
+				["at0105"] = <
+					text = <"United Church - Reform">
+					description = <".">
+				>
+				["at0106"] = <
+					text = <"United Church Of Christ">
+					description = <".">
+				>
+				["at0107"] = <
+					text = <"United Pentecostal">
+					description = <".">
+				>
+				["at0108"] = <
+					text = <"Unity School of Christianity">
+					description = <".">
+				>
+				["at0109"] = <
+					text = <"Unity Church">
+					description = <".">
+				>
+				["at0110"] = <
+					text = <"Victory Church">
+					description = <".">
+				>
+				["at0111"] = <
+					text = <"Village Mission">
+					description = <".">
+				>
+				["at0112"] = <
+					text = <"Vineyard Churches of Canada">
+					description = <".">
+				>
+				["at0113"] = <
+					text = <"WW Church Of God">
+					description = <".">
+				>
+				["at0114"] = <
+					text = <"Withheld - Did Not Wish to State">
+					description = <".">
+				>
+				["at0115"] = <
+					text = <"Wicca">
+					description = <".">
+				>
+				["at0116"] = <
+					text = <"Pagan">
+					description = <".">
+				>
+				["at0117"] = <
+					text = <"Home Church (word of life)">
+					description = <".">
+				>
+				["at0118"] = <
+					text = <"Spiritual - Not Religious">
+					description = <".">
+				>
+				["at0119"] = <
+					text = <"Coptic">
+					description = <".">
+				>
+				["at0120"] = <
+					text = <"Mar-Thoma Church">
+					description = <".">
+				>
+				["at0121"] = <
+					text = <"Rastafarian">
+					description = <".">
+				>
+				["at0122"] = <
+					text = <"Satanist - Church of Satan">
+					description = <".">
+				>
+				["at0123"] = <
+					text = <"Date of Birth">
+					description = <"A date of birth is the year, month and day that an individual was born.">
+				>
+				["at0124"] = <
+					text = <"Administrative Gender">
+					description = <".">
+				>
+				["at0125"] = <
+					text = <"M">
+					description = <"Male.">
+				>
+				["at0126"] = <
+					text = <"F">
+					description = <"Female.">
+				>
+				["at0127"] = <
+					text = <"X">
+					description = <"Wishes not to disclose.">
+				>
+				["at0128"] = <
+					text = <"U">
+					description = <"Undetermined.">
+				>
+				["at0129"] = <
+					text = <"Provincial Health Number">
+					description = <"It is the identifier assigned by the provincial health jurisdictions for identification within their health systems.  For Alberta, PHNs are the subset of ULIs that have been assigned to stakeholder persons upon registration and presumes eligibility for basic health services as defined in the Alberta Health Care Insurance Plan. Different provinces have different algorithms for assigning identifiers.  For example, Alberta PHN is 9 digits; Ontario PHN is 10 digits and version code of 1 to 2 digits.">
+				>
+				["at0131"] = <
+					text = <"Unique Lifetime Identifier">
+					description = <"A Unique Lifetime Identifier (ULI) is a unique and permanent number assigned to all persons and organizations with a vested interest in the health system of Alberta. This includes all Alberta residents, residents of other provinces who receive health services in Alberta, service providers (in province and out of province or country) who provide health services and in some cases non-Alberta residents. This unique identifier is assigned by Alberta Health, upon registration and presumes eligibility for basic health services as defined in Alberta Health Care Insurance Plan.">
+				>
+				["at0132"] = <
+					text = <"Issuing Province">
+					description = <"Assigning authority for the provincial health care number.">
+				>
+				["at0133"] = <
+					text = <"Expiry Date">
+					description = <"The date provincial health care eligibiity ends.">
+				>
+				["at0135"] = <
+					text = <"Eligibility">
+					description = <"This is the effective start date for Alberta Health Care Insurance Plan (AHCIP) coverage.">
+				>
+				["at0136"] = <
+					text = <"PHN Exception">
+					description = <"An exceptions is collected if a valid provincial health care number cannot be provided.">
+				>
+			>
+		>
+	>

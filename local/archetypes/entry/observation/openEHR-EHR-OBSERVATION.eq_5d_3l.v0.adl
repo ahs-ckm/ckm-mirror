@@ -1,0 +1,285 @@
+﻿archetype (adl_version=1.4; uid=f5e9446e-c36e-4fa5-9dba-e4242a647366)
+	openEHR-EHR-OBSERVATION.eq_5d_3l.v0
+
+concept
+	[at0000]	-- EQ-5D-3L
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2018-05-02">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To provide a simple, generic measure of health for clinical and economic appraisal.">
+			use = <"The EQ-5D-3L essentially consists of 2 pages – the EQ-5D descriptive system and the EQ visual analogue scale (EQ VAS). The EQ-5D-3L descriptive system comprises the following 5 dimensions: mobility, self-care, usual activities, pain/discomfort and anxiety/depression. Each dimension has 3 levels: no problems, some problems, extreme problems.
+
+Scoring the EQ-5D-3L Descriptive System: The respondent is asked to indicate his/her health state by ticking (or placing a cross) in the box against the most appropriate statement in each of the 5 dimensions.
+
+Scoring the EQ VAS: The EQ VAS records the respondent’s self-rated health on a vertical, visual analogue scale where the endpoints are labeled ‘Best imaginable health state’ and ‘Worst imaginable health state’. This information can be used as a quantitative measure of health outcome as judged by the individual respondents.
+
+While openEHR archetypes are all freely available under an open license, the specific content of the EQ-5D-3L archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners. 
+
+https://www.ncbi.nlm.nih.gov/pubmed/21479777 
+https://www.ncbi.nlm.nih.gov/pubmed/26492214.">
+			keywords = <"health status", "health state", "EQ-5D">
+			misuse = <"It should be noted that the numerals 1-3 have no arithmetic properties and should not be used as a cardinal score.
+
+Users of the EQ-5D-3L archetype must ensure that they comply with the terms of use of the EuroQol Research Foundation who own the copyright of the original assessment https://euroqol.org/support/how-to-obtain-eq-5d/.">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["references"] = <"1. The EuroQol Group (1990). EuroQol-a new facility for the measurement of health-related quality of life. Health Policy 16(3):199-208. 
+2. Brooks R (1996). EuroQol: the current state of play. Health Policy 37(1):53-72. 
+3. Dolan P (1997). Modeling valuations for EuroQol health states. Med Care 35(11):1095-108. 
+4. Roset M, Badia X, Mayo NE (1999). Sample size calculations in studies using the EuroQol 5D. Qual Life Res 8(6):539-49. 
+5. Greiner W, Weijnen T, Nieuwenhuizen M, et al. (2003). A single European currency for EQ-5D health states. Results from a six country study. Eur J Health Econ; 4(3):222-231. 
+6. Shaw JW, Johnson JA, Coons SJ (2005). US valuation of the EQ-5D health states: development and testing of the D1 valuation model. Med Care; 43(3): 203-220.
+7. https://apersu.ca/
+8. https://apersu.ca/about-eq-5d/">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"1C1088F2B2BCBB7C6624D6E617B3782B">
+		["build_uid"] = <"8678e28e-03a5-4749-a152-a7f4d35398c5">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- EQ-5D-3L
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Mobility
+										value matches {
+											1|[local::at0009], 	-- I have no problems in walking about
+											2|[local::at0010], 	-- I have some problems in walking about
+											3|[local::at0011], 	-- I am confined to bed
+											9|[local::at0034]  	-- No response/ambiguous value
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Self-Care
+										value matches {
+											1|[local::at0012], 	-- I have no problems with self care
+											2|[local::at0013], 	-- I have some problems washing or dressing myself
+											3|[local::at0014], 	-- I am unable to wash or dress myself
+											9|[local::at0035]  	-- No response/ambiguous value
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Usual Activities (e.g. work, study, housework, family or leisure activities)
+										value matches {
+											1|[local::at0015], 	-- I have no problems with performing my usual activities
+											2|[local::at0016], 	-- I have some problems with performing my usual activities
+											3|[local::at0017], 	-- I am unable to perform my usual activities
+											9|[local::at0036]  	-- No response/ambiguous value
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Pain/Discomfort
+										value matches {
+											1|[local::at0018], 	-- I have no pain or discomfort
+											2|[local::at0019], 	-- I have moderate pain or discomfort
+											3|[local::at0020], 	-- I have extreme pain or discomfort
+											9|[local::at0037]  	-- No response/ambiguous value
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Anxiety/Depression
+										value matches {
+											1|[local::at0021], 	-- I am not anxious or depressed
+											2|[local::at0022], 	-- I am moderately anxious or depressed
+											3|[local::at0023], 	-- I am extremely anxious or depressed
+											9|[local::at0038]  	-- No response/ambiguous value
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Health state
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {	-- How good or bad is your health today?
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+														magnitude = <|0.0..100.0|>
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0026] matches {*}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"EQ-5D-3L">
+					description = <"The EQ-5D is a standardised three level research tool designed to capture the health and economical status of a person at a given point in time.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"Self-reported health status captured by EQ-5D-3L relates to the respondent’s situation at the time of completion. No attempt is made to summarise the recalled health status over the preceding days or weeks, although EQ-5D-3L has been tested in recall mode. An early decision taken by the EuroQol Group determined that health status measurement ought to apply to the respondent’s immediate situation - hence the focus on ‘your own health state today’.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Mobility">
+					description = <"Numerical dipiction of the person's self assessed ability to attend to mobile and active.">
+					comment = <"Instructions to respondent:
+\"By placing a tick in one box in each group below, please indicate which statements best describe your own health state today.\"">
+				>
+				["at0005"] = <
+					text = <"Self-Care">
+					description = <"Numerical dipiction of the person's self assessed ability to attend to self care needs independantly.">
+					comment = <"Instructions to respondent:
+\"By placing a tick in one box in each group below, please indicate which statements best describe your own health state today.\"">
+				>
+				["at0006"] = <
+					text = <"Usual Activities (e.g. work, study, housework, family or leisure activities)">
+					description = <"Numerical dipiction of the person's self assessed ability to attend to usual activities for example work, study, housework, family or leisure.">
+					comment = <"Instructions to respondent:
+\"By placing a tick in one box in each group below, please indicate which statements best describe your own health state today.\"">
+				>
+				["at0007"] = <
+					text = <"Pain/Discomfort">
+					description = <"Numerical dipiction of the person's self assessed level of pain or discomfort.">
+					comment = <"Instructions to respondent:
+\"By placing a tick in one box in each group below, please indicate which statements best describe your own health state today.\"">
+				>
+				["at0008"] = <
+					text = <"Anxiety/Depression">
+					description = <"Numerical dipiction of the person's self assessed anxity or depressed emotional state.">
+					comment = <"Instructions to respondent:
+\"By placing a tick in one box in each group below, please indicate which statements best describe your own health state today.\"">
+				>
+				["at0009"] = <
+					text = <"I have no problems in walking about">
+					description = <"Level 1 - No problems.">
+				>
+				["at0010"] = <
+					text = <"I have some problems in walking about">
+					description = <"Level 2 - Some problems.">
+				>
+				["at0011"] = <
+					text = <"I am confined to bed">
+					description = <"Level 3 - Extreme problems.">
+				>
+				["at0012"] = <
+					text = <"I have no problems with self care">
+					description = <"Level 1 - No problems.">
+				>
+				["at0013"] = <
+					text = <"I have some problems washing or dressing myself">
+					description = <"Level 2 - Some problems.">
+				>
+				["at0014"] = <
+					text = <"I am unable to wash or dress myself">
+					description = <"Level 3 - Extreme problems.">
+				>
+				["at0015"] = <
+					text = <"I have no problems with performing my usual activities">
+					description = <"Level 1 - No problems.">
+				>
+				["at0016"] = <
+					text = <"I have some problems with performing my usual activities">
+					description = <"Level 2 - Some problems.">
+				>
+				["at0017"] = <
+					text = <"I am unable to perform my usual activities">
+					description = <"Level 3 - Extreme problems.">
+				>
+				["at0018"] = <
+					text = <"I have no pain or discomfort">
+					description = <"Level 1 - No problems.">
+				>
+				["at0019"] = <
+					text = <"I have moderate pain or discomfort">
+					description = <"Level 2 - Some problems.">
+				>
+				["at0020"] = <
+					text = <"I have extreme pain or discomfort">
+					description = <"Level 3 - Extreme problems.">
+				>
+				["at0021"] = <
+					text = <"I am not anxious or depressed">
+					description = <"Level 1 - No problems.">
+				>
+				["at0022"] = <
+					text = <"I am moderately anxious or depressed">
+					description = <"Level 2 - Some problems.">
+				>
+				["at0023"] = <
+					text = <"I am extremely anxious or depressed">
+					description = <"Level 3 - Extreme problems.">
+				>
+				["at0024"] = <
+					text = <"Health state">
+					description = <"A unique health state is defined by combining 1 level from each of the 5 dimensions. Each state is referred to in terms of a 5 digit code.">
+					comment = <"Example: a state of 11111 indicates no problems on any of the 5 dimensions, while state 11223 indicates no problems with mobility and self care, some problems with performing usual activities, moderate pain/discomfort and extreme anxiety or depression.">
+				>
+				["at0025"] = <
+					text = <"How good or bad is your health today?">
+					description = <"The visiual acuity scale records the respondents self-rate health on a vertical, visual analogue scale where the endpoints are labelled \"Best imaginable health state' and ' Worst imaginable health state'.">
+					comment = <"After providing the visual acuity scale to the respondent, they can be given the following instructions: We would like you to indicate on this scale how good or bad your own health is today, in your opinion. Please do this by drawing a line from the box below to whichever point on the scale indicates how good or bad your health state is today.\"">
+				>
+				["at0026"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0034"] = <
+					text = <"No response/ambiguous value">
+					description = <"No score indicated.">
+				>
+				["at0035"] = <
+					text = <"No response/ambiguous value">
+					description = <"No score indicated.">
+				>
+				["at0036"] = <
+					text = <"No response/ambiguous value">
+					description = <"No score indicated.">
+				>
+				["at0037"] = <
+					text = <"No response/ambiguous value">
+					description = <"No score indicated.">
+				>
+				["at0038"] = <
+					text = <"No response/ambiguous value">
+					description = <"No score indicated.">
+				>
+			>
+		>
+	>

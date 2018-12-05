@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="openEHR/v1/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <id>9d7d0703-8321-400b-94a2-75961e9d123b</id>
+   <name>Goals of Care Designation C2</name>
+   <description>
+      <lifecycle_state>Initial</lifecycle_state>
+      <details>
+         <purpose>Full rescusitation orders</purpose>
+         <keywords>
+            <item>C2</item>
+         </keywords>
+         <use/>
+         <misuse/>
+      </details>
+      <other_details>
+         <item>
+            <key>MetaDataSet:Sample Set </key>
+            <value>Template metadata sample set </value>
+         </item>
+         <item>
+            <key>Acknowledgements</key>
+            <value/>
+         </item>
+         <item>
+            <key>Business Process Level</key>
+            <value/>
+         </item>
+         <item>
+            <key>Care setting</key>
+            <value/>
+         </item>
+         <item>
+            <key>Client group</key>
+            <value/>
+         </item>
+         <item>
+            <key>Clinical Record Element</key>
+            <value/>
+         </item>
+         <item>
+            <key>Copyright</key>
+            <value/>
+         </item>
+         <item>
+            <key>Issues</key>
+            <value/>
+         </item>
+         <item>
+            <key>Owner</key>
+            <value/>
+         </item>
+         <item>
+            <key>Sign off</key>
+            <value/>
+         </item>
+         <item>
+            <key>Speciality</key>
+            <value/>
+         </item>
+         <item>
+            <key>User roles</key>
+            <value/>
+         </item>
+      </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-INSTRUCTION.gcd.v0]">
+      <items>
+         <item>
+            <key>Order Catalogue.Clinical Decision Support</key>
+            <value>All care is directed at preparation for imminent death [usually within hours or days] with maximal efforts directed at symptom control.
+• Resuscitation: is not undertaken.
+• Life Support Interventions: should not be initiated, or should be discontinued after discussion with the Patient.
+• Life Sustaining Measures: should be discontinued unless required for symptom management.
+• Major Surgery: is not appropriate.
+• Transfer: is usually not undertaken but may be considered if required.</value>
+         </item>
+         <item>
+            <key>Order Catalogue.Admin Indications</key>
+            <value>Medical Care and Interventions, focused on comfort and preparation for imminent (within hours or days) death
+Focus of Care and interventions are for the active palliative treatment of the Patient who has a terminal illness, and support for those close to them. This includes medical care for symptom control and psychosocial and spiritual support in advance of death. Care can be provided in any location best suited for these aims including an ICU, a Hospice or any location that is the most appropriate for symptom-based care for this particular Patient.</value>
+         </item>
+      </items>
+   </annotations>
+   <definition archetype_id="openEHR-EHR-INSTRUCTION.gcd.v0"
+               concept_name="Goals of Care Designation"
+               max="1"
+               name="Goals of Care Designation C2"
+               xsi:type="INSTRUCTION">
+      <Rule path="/activities[at0001]/description[at0002]/items[at0004]">
+         <constraint xsi:type="textConstraint">
+            <includedValues>All care is directed at preparation for imminent death (usually within hours or days) with maximal efforts directed at symptom control.</includedValues>
+         </constraint>
+      </Rule>
+      <Rule name="Involvement of Patient"
+            path="/activities[at0001]/description[at0002]/items[at0008]"/>
+   </definition>
+   <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.gcd.v0"
+                     xsi:type="ArchetypeIntegrity">
+      <digest id="MD5-CAM-1.0.1">298C9156E9A186DB728B9355AFADBFA7</digest>
+   </integrity_checks>
+</template>

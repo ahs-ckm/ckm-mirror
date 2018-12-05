@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>519e6cd8-a774-4226-b5ad-7d9ea53cf374</id>
+  <name>NFS Pediatric Diet Order</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>For ordering a pediatric diet </purpose>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>&lt;p&gt;Diet&lt;br&gt;Regular Diet&lt;br&gt;Pediatric Diet&lt;br&gt;Kids Diet&lt;br&gt;General Pediatric Diet&lt;br&gt;Normal Pediatric&lt;br&gt;Pediatric Normal&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Frequency']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Frequency']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Speed buttons are as follows:&lt;br&gt;Effective now (default);&lt;br&gt;Effective 0500 (breakfast);&lt;br&gt;Effective 1000 (lunch);&lt;br&gt;Effective 1400 (dinner);&lt;br&gt;Effective breakfast (0500) tomorrow;&lt;br&gt;Effective lunch (1000) tomorrow;&lt;br&gt;Effective supper (1400) tomorrow&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Frequency']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='For']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Requires a numerical entry;&lt;br&gt;Represent the values as speed buttons&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Frequency']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Starting']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Calendar picker for date entry;&lt;br&gt;Represent the values as speed buttons&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Frequency']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='At']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Able to select time&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Standard diet']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Mandatory question;&lt;/p&gt;&lt;p&gt;Represent the values as speed buttons&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Diet textures']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Texture modifications']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Thick fluids modifications']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='GI/GI surgery']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Toddler/Pediatric diabetes']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Eating disorder']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Sodium restriction']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Phosphorus restriction']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Potassium restriction']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Fluid restriction from food services']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Religious/Cultural']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Multi-select;&lt;br&gt;Represent values with check boxes;&amp;nbsp;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Specialized diet']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Represent the values as speed buttons;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Test diet']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value='Standard diet']/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Other restrictions']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Multi-select;&lt;br&gt;Cascading question upon the selection of a Standard Diet&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Ordering Clinician Instructions</key>
+        <value>&lt;p&gt;Process instructions:&amp;nbsp;&lt;/p&gt;&lt;p&gt;WARNING: This is the comment section. Diet order are not accepted in this area.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Pediatric Diet">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Diet effective now (default)</includedValues>
+            <includedValues>Diet effective 0500</includedValues>
+            <includedValues>Diet effective 1000</includedValues>
+            <includedValues>Diet effective 1400</includedValues>
+            <includedValues>Effective breakfast tomorrow</includedValues>
+            <includedValues>Effective lunch tomorrow</includedValues>
+            <includedValues>Effective supper tomorrow</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="For">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>_ Hours</includedValues>
+            <includedValues>_ Days</includedValues>
+            <includedValues>_ Weeks</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Date</includedValues>
+            <includedValues>Today</includedValues>
+            <includedValues>Tomorrow</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Standard diet">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Standard diet">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Infant pureed (less than 12 months)</includedValues>
+            <includedValues>Infant minced (less than 12 months)</includedValues>
+            <includedValues>1-2 years</includedValues>
+            <includedValues>3-4 years</includedValues>
+            <includedValues>5-8 years</includedValues>
+            <includedValues>9-13 years</includedValues>
+            <includedValues>14+ years</includedValues>
+            <includedValues>Clear fluids</includedValues>
+            <includedValues>Full fluids</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Diet textures">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Easy to chew</includedValues>
+            <includedValues>Dysphagia soft</includedValues>
+            <includedValues>Minced</includedValues>
+            <includedValues>Pureed</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Texture modifications">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Pureed bread products</includedValues>
+            <includedValues>No mixed consistency</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Thick fluids modifications">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Mildly thick fluids (nectar)</includedValues>
+            <includedValues>Moderately thick fluids (honey)</includedValues>
+            <includedValues>Extremely thick fluids (pudding)</includedValues>
+            <includedValues>Trial mildly thick fluids (nectar)</includedValues>
+            <includedValues>Trial moderately thick fluids (honey)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="GI/GI surgery">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Post surgical transition</includedValues>
+            <includedValues>Fibre high</includedValues>
+            <includedValues>Fibre low</includedValues>
+            <includedValues>Balanced fluids</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Toddler/Pediatric diabetes">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Tod Diabetic 1000 kcal</includedValues>
+            <includedValues>Tod Diabetic 1200 kcal</includedValues>
+            <includedValues>Ped Diabetic 1400 kcal</includedValues>
+            <includedValues>Ped Diabetic 1600 kcal</includedValues>
+            <includedValues>Ped Diabetic 1800 kcal</includedValues>
+            <includedValues>Ped Diabetic 2000 kcal</includedValues>
+            <includedValues>Ped Diabetic 2200 kcal</includedValues>
+            <includedValues>Ped Diabetic 2400 kcal</includedValues>
+            <includedValues>Ped Diabetic 2600 kcal</includedValues>
+            <includedValues>Diabetic Pregnancy</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Eating disorder">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Ped Progressive A (500-800 kcal)</includedValues>
+            <includedValues>Ped Progressive B (900-100 kcal)</includedValues>
+            <includedValues>Ped Progressive C (1100-1200 kcal)</includedValues>
+            <includedValues>Ped Progressive D (1300-1400 kcal)</includedValues>
+            <includedValues>Ped Progressive E (1500-1600 kcal)</includedValues>
+            <includedValues>Ped Progressive F (1700-1800 kcal)</includedValues>
+            <includedValues>Ped Progressive G (1900-2000 kcal)</includedValues>
+            <includedValues>Ped Progressive H (&gt; 2100 kcal)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Sodium restriction">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>2000 mg/2g Na</includedValues>
+            <includedValues>Toddler Na low (1-4 years)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Phosphorus restriction">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Toddler phosphorus low (1-4 years)</includedValues>
+            <includedValues>Pediatric phosphorus low (5-8 years)</includedValues>
+            <includedValues>Pediatric phosphorus low (9-18 years)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Potassium restriction">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Toddler potassium low (1-4 years)</includedValues>
+            <includedValues>Pediatric potassium low (5-12 years)</includedValues>
+            <includedValues>Pediatric potassium low (13-18 years)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Fluid restriction from food services">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>No Fluid</includedValues>
+            <includedValues>Fld Restriction 400 mL</includedValues>
+            <includedValues>Fld Restriction 600 mL</includedValues>
+            <includedValues>Fld Restriction 800 mL</includedValues>
+            <includedValues>Fld Restriction 1000 mL</includedValues>
+            <includedValues>Fld Restriction 1200 mL</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Religious/Cultural">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Muslim style</includedValues>
+            <includedValues>Kosher style</includedValues>
+            <includedValues>No pork</includedValues>
+            <includedValues>No beef</includedValues>
+            <includedValues>Vegetarian lacto ovo</includedValues>
+            <includedValues>Vegetarian vegan</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Specialized diet">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>High Pro High Cal</includedValues>
+            <includedValues>Chylothorax</includedValues>
+            <includedValues>Gluten Free</includedValues>
+            <includedValues>Metabolic</includedValues>
+            <includedValues>Ketogenic</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Test diet">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Low iodine</includedValues>
+            <includedValues>MIBI</includedValues>
+            <includedValues>5-Hydroxyindolacetoc acid (5-HIAA) test</includedValues>
+            <includedValues>Vanilla mandelic acid (VMA) test</includedValues>
+            <includedValues>High fat test</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Other restrictions">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Cut/Diced</includedValues>
+            <includedValues>Fat, low</includedValues>
+            <includedValues>Finger foods</includedValues>
+            <includedValues>Lactose, low</includedValues>
+            <includedValues>Maternal</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Diet comments" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>

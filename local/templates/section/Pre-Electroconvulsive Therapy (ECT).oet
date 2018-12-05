@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>b936c6cf-1d05-470f-b49e-3808a1bf745d</id>
+  <name>Pre-Electroconvulsive Therapy (ECT)</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Urine Tests']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Urinalysis Random']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Clinical Decision Support Requirements</key>
+        <value>Microscopic examination is done if specifically ordered or if one or more of the following is positive.;Protein;Hemoglobin;Leukocytes;Nitrites (on urine less than 2 hours since time of collection).;Exception: microscopic reported on all pediatric (&lt;16 years old) specimens.</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Contraindications</key>
+        <value>Specimens greater than 24 hours old are not acceptable and will not be analyzed</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Patient Requirements</key>
+        <value>Sample of choice is a first voided morning specimen.;Analysis is preferred within two hours of collection.</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Order Includes</key>
+        <value>Leukocyte, urine (ULEUK; Ketone, qualitative, urine (UKET)</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>Urinalysis (macroscopic)</value>
+      </item>
+      <item>
+        <key>Terminology.CLPL Code</key>
+        <value>3612</value>
+      </item>
+      <item>
+        <key>Terminology.CLPL Description</key>
+        <value>Urinalysis,multiple test</value>
+      </item>
+      <item>
+        <key>Terminology.PCLOCD/LOINC Code</key>
+        <value>24356-8 </value>
+      </item>
+      <item>
+        <key>Terminology.PCLOCD/LOINC Mapping Name</key>
+        <value>Urinalysis complete panel - Urine</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Urine Tests']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Urinalysis Random']/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Priority']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>(Mandatory)</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Urine Tests']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Urinalysis Random']/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Date &amp; time requested for']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>Calendar selectionDropdown(default to actual date);Clock (HH:MM) - Default to current time;(Mandatory)</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Diagnostic Investigations']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Electrocardiogram 12 Lead']">
+    <items>
+      <item>
+        <key>Imaging.Terminology Mapping</key>
+        <value>29303009</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>ECG;Electrocardiogram 12 lead ;Electrocardiogram 15 lead;ECG;EKG;15 lead;12 lead</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Diagnostic Investigations']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Electrocardiogram 12 Lead']/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Date requested for']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>(Mandatory)</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Diagnostic Investigations']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Electrocardiogram 12 Lead']/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Priority']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>(Mandatory)</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Pre-Electroconvulsive Therapy (ECT)']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Urine Tests']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Urine Dipstick - Point of Care testing']/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Date &amp; time requested for']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Clinical Decision Support Requirements</key>
+        <value>break</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pre-Electroconvulsive Therapy (ECT)">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Informed Consent" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitoring" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ECT Treatment Cycle and Dates" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ECT Treatment Parameters" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Orders" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7761ea7-69fd-498e-abab-0a7236f20eff" concept_name="LAB Hematology - Complete Blood Count (CBC), no differential Order" max="1" path="/items" name="Complete Blood Count (CBC), no differential" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76da420d-62c9-455b-a287-2fb9bd06e5b1" concept_name="LAB Chemistry - Sodium Order" max="1" path="/items" name="Sodium" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="60e6b7db-2f65-470c-b234-0d50c970adfb" concept_name="LAB Chemistry - Potassium Order" max="1" path="/items" name="Potassium" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a306577a-51f3-416c-9347-44afe038f268" concept_name="LAB Chemistry - Chloride Order" max="1" path="/items" name="Chloride" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5aeb3f22-1fbd-44cf-82bf-5b74fab1fc75" concept_name="LAB Chemistry - Carbon dioxide Order" max="1" path="/items" name="Carbon dioxide" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bfe35845-1c46-4cf7-b0b1-975393b17713" concept_name="LAB Chemistry - Calcium Order" max="1" path="/items" name="Calcium" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f071ef33-9e25-44af-a43b-b00e8b931b76" concept_name="LAB Chemistry - Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99040c6c-e0c1-448d-a368-15e3151f36e3" concept_name="LAB Chemistry - Bilirubin, Total  Order" max="1" path="/items" name="Bilirubin, Total " />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3773541d-09b2-483f-8f48-43c34a895055" concept_name="LAB Chemistry - Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP)" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="466ee372-c58e-42e4-9c68-9cf155ee204e" concept_name="LAB Chemistry - Creatinine Order" max="1" path="/items" name="Creatinine" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="57821761-1e4a-4eca-b70f-c49cb90c1da9" concept_name="LAB Chemistry - Human chorionic gonadotrophin (hCG), serum Order" max="1" path="/items" name="Human chorionic gonadotrophin (hCG), serum" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine Tests">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" path="/items" name="Urine Dipstick - Point of Care testing">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Date &amp; time requested for">
+            <Rule path="/items[at0002]">
+              <constraint xsi:type="textConstraint">
+                <includedValues>Date/Time</includedValues>
+              </constraint>
+            </Rule>
+          </Items>
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority">
+            <Rule path="/items[at0002]">
+              <constraint xsi:type="textConstraint">
+                <includedValues>STAT</includedValues>
+                <includedValues>Timed</includedValues>
+                <includedValues>Other: ______</includedValues>
+              </constraint>
+            </Rule>
+          </Items>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" path="/items" name="Urinalysis Random">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type">
+            <Rule path="/items[at0002]">
+              <constraint xsi:type="textConstraint">
+                <includedValues>Urine, Random</includedValues>
+              </constraint>
+            </Rule>
+          </Items>
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority">
+            <Rule path="/items[at0002]" default="Routine">
+              <constraint xsi:type="textConstraint">
+                <includedValues>Routine</includedValues>
+                <includedValues>STAT</includedValues>
+              </constraint>
+            </Rule>
+          </Items>
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Date &amp; time requested for">
+            <Rule path="/items[at0002]">
+              <constraint xsi:type="textConstraint">
+                <includedValues>Date/Time</includedValues>
+              </constraint>
+            </Rule>
+          </Items>
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0156]/description[at0157]/items[at0158]" name="To be collected by">
+            <Rule path="/items[at0002]" default="Laboratory">
+              <constraint xsi:type="textConstraint">
+                <includedValues>Laboratory</includedValues>
+                <includedValues>Unit / ward</includedValues>
+              </constraint>
+            </Rule>
+          </Items>
+        </Item>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Investigations">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" path="/items" name="Electrocardiogram 12 Lead">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Date requested for">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Calendar Pick (default today)</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Routine (default)</includedValues>
+              <includedValues>Stat</includedValues>
+              <includedValues>Urgent</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Research Number">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Free text</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Orders">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Maintenance Solutions" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Communication" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antinauseants" />
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults and Referrals" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">B48161A11EF4549FFAE82EE73B385AF5</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>

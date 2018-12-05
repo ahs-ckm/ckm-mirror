@@ -1,0 +1,88 @@
+﻿archetype (adl_version=1.4; uid=fbbfd777-95a5-40e0-8b33-8b72a582391a)
+	openEHR-EHR-CLUSTER.neurophysiology_eeg_add_on.v1
+
+concept
+	[at0000]	-- Neurophysiology eeg add on
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2017-06-16">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Additional neurophysiology order elements to facilitate pediatric electroencephalography orders.">
+			use = <"Additional order elements to complete specific neurophysiology order items.">
+			keywords = <"EEG", "Pediatric EEG">
+			misuse = <"Not intended to be used outside of the neurophysiology orders.">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <"Marlene Mann, BN, MCE, CPHIMS-CA, Prosci Certified, Clinical Documentation - Provincial CMIO, Alberta Health Services, Canada", "Katrina Simpson-Pineda, RN, BN, Clinical Knowledge Topics - Provincial CMIO, Alberta Health Services, Canada", "Colin Latter, B.Kin, CPHIMS-CA, Manager Foundational Knowledge - Provincial CMIO, Alberta Health Services, Canada", "Ed Schwab,RD, CPHIMS-CA, Foundational Knowledge - Provincial CMIO, Alberta Health Services, Canada", "Dr. George Elleker, Physician, Alberta Health Services, Canada", "Dr. Jeffrey Jirsh, Physician, Alberta Health Services, Canada", "Dr. Nigel Ashworth, Physician, Alberta Health Services, Canada", "Dr. Chris White, Physician, Alberta Health Services, Canada", "Dr. Neelan Pillay, Physician, Alberta Health Services, Canada", "Dr. Yahya Agha-Kani, Physician, Alberta Health Services, Canada", "Dr. Luis Bello-Espinosa, Physician - Peds, Alberta Health Services, Canada", "Dr. Jeffrey Buchholter, Physician - Peds, Alberta Health Services, Canada", "Dr. Barry Sinclair, Physician - Peds, Alberta Health Services, Canada">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"B6857DD524A302E63FB0AC10EBCE5618">
+		["build_uid"] = <"dd2bf0fa-82d3-4949-998a-8b7b81a3b482">
+		["revision"] = <"1.0.0">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Neurophysiology eeg add on
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Longterm/continuous monitoring
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002, 	-- 4 hours
+							at0003]	-- 24 hours
+						}
+					}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- Previous routine EEG
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Neurophysiology eeg add on">
+					description = <"Additional neurophysiology order elements to facilitate pediatric electroencephalography orders.">
+				>
+				["at0001"] = <
+					text = <"Longterm/continuous monitoring">
+					description = <"Indicating how long to continue running the test. For use in pediatric patients only.">
+				>
+				["at0002"] = <
+					text = <"4 hours">
+					description = <"4 hours">
+				>
+				["at0003"] = <
+					text = <"24 hours">
+					description = <"24 hours">
+				>
+				["at0004"] = <
+					text = <"Previous routine EEG">
+					description = <"To indicate whether or not the patient has had a preivous routine EEG.">
+				>
+			>
+		>
+	>

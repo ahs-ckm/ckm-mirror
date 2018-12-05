@@ -1,0 +1,134 @@
+﻿archetype (adl_version=1.4; uid=5d775c06-06bd-47f0-8761-e9475a831515)
+	openEHR-EHR-INSTRUCTION.test_archetype_1.v1
+
+concept
+	[at0000]	-- Test archetype 1
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Only to be used for testing">
+			use = <"Testing purposes only">
+			keywords = <"Testing", ...>
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"4DB6C63D0466B1D028A8C67CDA4C7148">
+		["build_uid"] = <"c2a4ce5c-6074-4db8-b348-2a52570f595e">
+		["revision"] = <"1.3.0">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Test archetype 1
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- YYC Test Question 1
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- YYC Test Question 2
+								value matches {
+									C_DV_QUANTITY <
+									>
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- YYC Test Question 3
+								value matches {
+									DV_COUNT matches {*}
+								}
+							}
+							ELEMENT[at0006] occurrences matches {0..1} matches {	-- YYC Test Question 4
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {	-- YYC Test Question 5
+								value matches {
+									DV_BOOLEAN matches {
+										value matches {True, False}
+									}
+								}
+							}
+							ELEMENT[at0008] occurrences matches {0..1} matches {	-- Test 6 saving chages
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0009] occurrences matches {0..1} matches {	-- 147 Hash Test
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test archetype 1">
+					description = <"Only to be used for testing">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"YYC Test Question 1">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"YYC Test Question 2">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"YYC Test Question 3">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"YYC Test Question 4">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"YYC Test Question 5">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Test 6 saving chages">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"147 Hash Test">
+					description = <"*">
+				>
+			>
+		>
+	>

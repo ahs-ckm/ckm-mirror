@@ -1,0 +1,154 @@
+﻿archetype (adl_version=1.4; uid=10baadff-b801-49a6-af55-fe8f4ff0faa6)
+	openEHR-EHR-CLUSTER.payment_responsiblity.v0
+
+concept
+	[at0000]	-- Payment responsiblity
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Alexander McGregor">
+		["organisation"] = <"Alberta Health Services">
+		["email"] = <"alexander.mcgregor@ahs.ca">
+		["date"] = <"2018-08-09">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the details for payment responsibility at registration.">
+			use = <"Recording details of payment responsibility at registration.">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Leslie Perin - HIM Operations Lead - Person Identification/Encounter Management", "Roger Conos - Business Analyts - Person Identification/Encounter Management">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"Alexander McGregor, Alberta Health Services<alexander.mcgregor@ahs.ca>">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"FA0AC547B6D724C5119AD01FADE6B70C">
+		["build_uid"] = <"2758c62d-5353-4177-b02e-7d8d14381860">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Payment responsiblity
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Responsibility of Payment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {	-- Client Primary Insurance Type
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Work Related Accident
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {	-- Accident Date/Time (WCB)
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {	-- Accident (WCB)
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- Injury Date (WCB)
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {	-- WCB Claim Number
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {	-- Part of Body (WCB)
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {	-- Employer (WCB)
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Occupation
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Employer Address
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Payment responsiblity">
+					description = <"TBD.">
+				>
+				["at0001"] = <
+					text = <"Responsibility of Payment">
+					description = <"Responsibility for Payment identifies the primary source responsible for payment of service(s) rendered.">
+				>
+				["at0002"] = <
+					text = <"Work Related Accident">
+					description = <"A work related injury is an injury or illness caused, contributed or significantly aggravated by events or exposures in the work environment. Work related injuries occur on the job and as a direct result of the tasks allotted to the specific job.">
+				>
+				["at0003"] = <
+					text = <"Employer Address">
+					description = <"The primary address where an employer can be found and /or communicated with.">
+				>
+				["at0004"] = <
+					text = <"WCB Claim Number">
+					description = <"A unique identifier assigned by WCB to initiate  a case file when a workplace injury is reported.">
+				>
+				["at0005"] = <
+					text = <"Occupation">
+					description = <"A person's regular work or profession; job or principal activity.">
+				>
+				["at0006"] = <
+					text = <"Injury Date (WCB)">
+					description = <"The date  the patient’s work-related injury occurred.">
+				>
+				["at0007"] = <
+					text = <"Employer (WCB)">
+					description = <"An individual, firm, association, body or corporation that has one or more workers in its service.">
+				>
+				["at0008"] = <
+					text = <"Client Primary Insurance Type">
+					description = <"The insurance identified by the person when presenting for healthcare services (e.g. Provincial Health Care, AB Blue Cross, etc.).">
+				>
+				["at0009"] = <
+					text = <"Part of Body (WCB)">
+					description = <"TBD.">
+				>
+				["at0010"] = <
+					text = <"Accident Date/Time (WCB)">
+					description = <"The exact moment when an unexpected mishap or event occurred.">
+				>
+				["at0011"] = <
+					text = <"Accident (WCB)">
+					description = <"“Accident” is used in the usual and ordinary sense, and means an unexpected mishap or event.">
+				>
+			>
+		>
+	>
