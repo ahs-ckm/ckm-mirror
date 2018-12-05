@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-  <id>c41c7bcb-4d0e-42c1-bbec-22184a129e21</id>
-  <name>LAB Chemistry - Albumin  Order</name>
+  <id>f071ef33-9e25-44af-a43b-b00e8b931b76</id>
+  <name>LAB Chemistry - Alanine Aminotransferase (ALT) Order</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
-      <purpose>For ordering a(n) Albumin </purpose>
+      <purpose>For ordering a(n) Alanine Aminotransferase (ALT)</purpose>
       <use />
       <misuse />
     </details>
@@ -63,20 +63,28 @@
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
     <items>
       <item>
+        <key>Catalogue Pattern.Recommended Use</key>
+        <value>Preferred enzyme for screening for hepatocellular disease.</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>Glutamic Pyruvate Transaminase; GPT; L-Alanine-2-Oxoglutarate Aminotransferase, Serum; SGPT; Transaminase</value>
+      </item>
+      <item>
         <key>Terminology.CLPL Code</key>
-        <value>2036</value>
+        <value>2035</value>
       </item>
       <item>
         <key>Terminology.CLPL Description</key>
-        <value>Albumin</value>
+        <value>Alanine aminotransferase</value>
       </item>
       <item>
         <key>Terminology.PCLOCD/LOINC Code</key>
-        <value>1751-7</value>
+        <value>1742-6</value>
       </item>
       <item>
         <key>Terminology.PCLOCD/LOINC Mapping Name</key>
-        <value>Albumin</value>
+        <value>Alanine Aminotransferase (ALT) </value>
       </item>
     </items>
   </annotations>
@@ -96,7 +104,7 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Albumin ">
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Alanine Aminotransferase (ALT)">
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0156]/description[at0157]/items[at0158]" name="To be collected by">
       <Rule path="/items[at0002]" default="Laboratory">
         <constraint xsi:type="textConstraint">
