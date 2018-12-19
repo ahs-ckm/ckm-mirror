@@ -1,0 +1,116 @@
+﻿archetype (adl_version=1.4; uid=57d0bc50-6d71-4f8a-a27f-d2b823b4529e)
+	openEHR-EHR-INSTRUCTION.test_archetype_collin.v0
+
+concept
+	[at0000]	-- Test archetype collin
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Collin May 3 at 10:31">
+		["date"] = <"2018-05-02">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"239913915316747DD22623049732EA51">
+		["build_uid"] = <"76d47a42-b621-40f9-981b-0d5aaea42ed7">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Test archetype collin
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- New element
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- New element
+								value matches {
+									C_DV_QUANTITY <
+									>
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- New element
+								value matches {
+									DV_COUNT matches {*}
+								}
+							}
+							ELEMENT[at0006] occurrences matches {0..1} matches {	-- New element
+								value matches {
+									C_DV_ORDINAL <
+									>
+								}
+							}
+							ELEMENT[at0007] occurrences matches {0..1} matches {	-- New element
+								value matches {
+									DV_BOOLEAN matches {
+										value matches {True, False}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test archetype collin">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"New element">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"New element">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"New element">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"New element">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"New element">
+					description = <"*">
+				>
+			>
+		>
+	>

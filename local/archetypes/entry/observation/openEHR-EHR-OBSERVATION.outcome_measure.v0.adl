@@ -1,0 +1,123 @@
+﻿archetype (adl_version=1.4; uid=4dfbf437-781b-4b8d-a7ef-6e604aaecdd4)
+	openEHR-EHR-OBSERVATION.outcome_measure.v0
+
+concept
+	[at0000]	-- Clinical Analytics - Outcome Measure
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"AHS">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2016-10-04">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Testing a new archetype">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"E910C2F86F03C7031EA553C9EE87D63F">
+		["build_uid"] = <"5671f24f-e823-4fc8-b84e-e8b34610b607">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Clinical Analytics - Outcome Measure
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Name of Measure
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Definition
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Rationale
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Notes for Interpretation
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Cited References
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Clinical Analytics - Outcome Measure">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Name of Measure">
+					description = <"Specify the full name of the performance measure:">
+				>
+				["at0005"] = <
+					text = <"Definition">
+					description = <"Describe what is being measured. Additional information may be added to provide clarity to terms within the definition as well.">
+				>
+				["at0006"] = <
+					text = <"Rationale">
+					description = <"This field should answer the following questions: \"Why is this measure important?\" and \"What is the measure intended to show?\". Include the relevance of the measure to health policy and strategic priorities to improve the health status of the population and health system performance or Office of the Auditor General (OAG) requirements for reporting. This section may also provide a plain language description of the measure, and a brief background on the development of measure and/or the historical use of the measure.">
+				>
+				["at0007"] = <
+					text = <"Notes for Interpretation">
+					description = <"Provide any additional details that may assist in understanding the application of the measure.">
+				>
+				["at0008"] = <
+					text = <"Cited References">
+					description = <"State the reference material used to develop and support the measure, such as supporting published scientific research material, business documents, reports, etc.">
+				>
+			>
+		>
+	>
