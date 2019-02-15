@@ -12,8 +12,8 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"">
-			use = <"">
+			purpose = <"Change Made">
+			use = <"Change Made">
 			misuse = <"">
 			copyright = <"© Alberta Health Services (Canada)">
 		>
@@ -26,15 +26,15 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"F899F71D21C65477AA782F6811596E75">
-		["build_uid"] = <"bed7f3d8-8996-4196-ac63-2e19b93d30af">
+		["MD5-CAM-1.0.1"] = <"8F2334C9F9DEA2126CE1236A881770D8">
+		["build_uid"] = <"57db5809-9958-4c7b-8383-d1f3034f6f68">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
 	SECTION[at0000] matches {	-- M4 test
-		items cardinality matches {0..*; unordered} matches {
-			allow_archetype INSTRUCTION[at0001] occurrences matches {0..*} matches {	-- INSTRUCTION
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype INSTRUCTION[at0001] occurrences matches {0..*} matches {	-- Name changed
 				include
 					archetype_id/value matches {/.*/}
 			}
@@ -51,7 +51,7 @@ ontology
 					description = <"unknown">
 				>
 				["at0001"] = <
-					text = <"INSTRUCTION">
+					text = <"Name changed">
 					description = <"*">
 				>
 			>
