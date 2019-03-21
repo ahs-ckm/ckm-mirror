@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-  <id>b21dcb37-5770-430b-948d-838dd1014f34</id>
-  <name>Inpatient Consult to Addiction Medicine</name>
+  <id>62372c24-0947-4dc1-9651-0bf6d57dcf59</id>
+  <name>CONS Inpatient Consult to Art Therapy Order</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
@@ -84,15 +84,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Synonyms</key>
-        <value>&lt;p&gt;Drug Addiction;&lt;/p&gt;&lt;p&gt;ARCH;&lt;/p&gt;&lt;p&gt;Addictions;&lt;/p&gt;&lt;p&gt;Recovery;&lt;/p&gt;&lt;p&gt;Addiction Network;&lt;/p&gt;&lt;p&gt;Addictions Network;&lt;/p&gt;&lt;p&gt;Substance&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Inpatient Consult to Addiction Medicine">
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Inpatient Consult to Art Therapy">
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
