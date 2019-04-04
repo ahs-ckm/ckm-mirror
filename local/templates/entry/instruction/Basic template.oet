@@ -60,14 +60,6 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Question 2']">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Annotation on question 2&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Question 1']">
     <items>
       <item>
@@ -76,17 +68,15 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Question 2']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Annotation on question 2&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Basic template">
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 2">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>1</includedValues>
-          <includedValues>2</includedValues>
-          <includedValues>3</includedValues>
-          <includedValues>4</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 1">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
@@ -94,6 +84,16 @@
           <includedValues>B</includedValues>
           <includedValues>C</includedValues>
           <includedValues>D</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 2">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>1</includedValues>
+          <includedValues>2</includedValues>
+          <includedValues>3</includedValues>
+          <includedValues>4</includedValues>
         </constraint>
       </Rule>
     </Items>
