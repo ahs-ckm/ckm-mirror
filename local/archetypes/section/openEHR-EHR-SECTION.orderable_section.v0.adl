@@ -1,0 +1,144 @@
+﻿archetype (adl_version=1.4; uid=21e49f91-f86d-4b26-a44c-a41f7236d81f)
+	openEHR-EHR-SECTION.orderable_section.v0
+
+concept
+	[at0000]	-- Orderable Section
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			author = <
+				["name"] = <"Art Latyp Латыпов Артур Шамилевич">
+				["organisation"] = <"RusBITech РусБИТех, Москва">
+			>
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			author = <
+				["name"] = <"Alan March">
+				["organisation"] = <"Hospital Universitario Austral, Buenos Aires, Argentina">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Einar Fosse">
+				["organisation"] = <"Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway">
+				["einar.fosse@unn.no"] = <"einar.fosse@unn.no">
+			>
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"Dr Ian McNicoll">
+		["organisation"] = <"Ocean Informatics, United Kingdom">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+		["date"] = <"2010-07-03">
+	>
+	details = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Базовый заголовок раздела, должен быть переименован в локальном шаблоне ">
+			use = <"используется для создания и именования разделов в локальных шаблонах">
+			keywords = <"раздел", "шаблон", "заготовка", "название", "образец">
+			misuse = <"">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.">
+			use = <"Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".">
+			misuse = <"No debe mantenerse sin cambios en una plantilla.">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.">
+			use = <"Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"">
+			misuse = <"Skal ikke stå med uendret navn i en template.">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To provide a generic section header which will be renamed in a template to suit a specific clinical context.">
+			use = <"Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".">
+			misuse = <"Not to be left unchanged in a template.">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)">
+			use = <"*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)">
+			misuse = <"*Not to be left unchanged in a template.(en)">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Tomas Alme, DIPS, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Bakke, Bergen Hospital Trust, Norway", "Rong Chen, Cambio Healthcare Systems, Sweden", "Stephen Chu, NeHTA, Australia", "Konstantinos Kalliamvakos, Cambio Healthcare Systems, Sweden", "Lars Karlsen, DIPS ASA, Norway", "Heather Leslie, Ocean Informatics, Australia (Editor)", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (Editor)">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["references"] = <"Derived from: <Add reference to original resource here>">
+		["current_contact"] = <"Ian McNicoll, freshEHR Clinical Informatics UK, ian@freshEHR.com">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"375D0D40FA8E90C855AB845BECE4E341">
+		["build_uid"] = <"a0f300b8-7ae7-4a8d-a474-25f7795d63ee">
+		["revision"] = <"1.1.1-alpha">
+	>
+
+definition
+	SECTION[at0000] matches {*}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Orderable Section">
+					description = <"A generic section header which should be renamed in a template to suit a specific clinical context.">
+				>
+			>
+		>
+		["ru"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Ad hoc heading(en)">
+					description = <"*A generic section header which should be renamed in a template to suit a specific clinical context.(en)">
+				>
+			>
+		>
+		["es-ar"] = <
+			items = <
+				["at0000"] = <
+					text = <"Encabezado ad hoc">
+					description = <"Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.">
+				>
+			>
+		>
+		["sl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Naslov sekcije">
+					description = <"Naslov sekcije">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ad hoc heading">
+					description = <"En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst.">
+				>
+			>
+		>
+	>
