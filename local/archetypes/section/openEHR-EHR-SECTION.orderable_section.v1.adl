@@ -90,13 +90,17 @@ description
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"A89AC74BC8CAD3F0719579389C69006F">
-		["build_uid"] = <"e174c63a-0338-406a-81e5-39d456aff831">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"5A4FA05D404E41C5496EDC50131A12F8">
+		["build_uid"] = <"bd35c2d6-3809-4c89-91cd-9e1027c18b6c">
+		["revision"] = <"1.1.0">
 	>
 
 definition
-	SECTION[at0000] matches {*}
+	SECTION[at0000] matches {	-- Orderable Section
+		items cardinality matches {1..*; unordered} matches {
+			SECTION[at0007] occurrences matches {0..1} matches {*}
+		}
+	}
 
 
 ontology
@@ -107,6 +111,10 @@ ontology
 					text = <"Orderable Section">
 					description = <"A generic section header which should be renamed in a template to suit a specific clinical context.">
 				>
+				["at0007"] = <
+					text = <"Order information">
+					description = <"*">
+				>
 			>
 		>
 		["ru"] = <
@@ -114,6 +122,10 @@ ontology
 				["at0000"] = <
 					text = <"*Ad hoc heading(en)">
 					description = <"*A generic section header which should be renamed in a template to suit a specific clinical context.(en)">
+				>
+				["at0007"] = <
+					text = <"*Order information(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -123,6 +135,10 @@ ontology
 					text = <"Encabezado ad hoc">
 					description = <"Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.">
 				>
+				["at0007"] = <
+					text = <"*Order information(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["sl"] = <
@@ -131,6 +147,10 @@ ontology
 					text = <"Naslov sekcije">
 					description = <"Naslov sekcije">
 				>
+				["at0007"] = <
+					text = <"*Order information(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["nb"] = <
@@ -138,6 +158,10 @@ ontology
 				["at0000"] = <
 					text = <"Ad hoc heading">
 					description = <"En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst.">
+				>
+				["at0007"] = <
+					text = <"*Order information(en)">
+					description = <"**(en)">
 				>
 			>
 		>
