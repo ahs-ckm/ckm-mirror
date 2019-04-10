@@ -1,0 +1,81 @@
+﻿archetype (adl_version=1.4; uid=9eb558fb-60da-4065-9fe6-05c69b49d716)
+	openEHR-EHR-INSTRUCTION.section_information.v0
+
+concept
+	[at0000]	-- Section information
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2019-04-10">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"A place holder for information about how an order or group of orders should be used in an electronic health record.">
+			use = <"A place holder for information about how an order or group of orders should be used in an electronic health record.
+Supporting information for configuring an order/order group.">
+			misuse = <"Not to be used as an order item.">
+			copyright = <"© Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"F35BE29221BBBF06D902DC3D20C8EF62">
+		["build_uid"] = <"fd7dfc31-d78b-43fb-9eb4-4e8624ab03b0">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Section information
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Order elements
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Section information
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Section information">
+					description = <"A place holder for information about how an order or group of orders should be used in an electronic health record.">
+				>
+				["at0001"] = <
+					text = <"Order elements">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Section information">
+					description = <"Configuration notes">
+				>
+			>
+		>
+	>
