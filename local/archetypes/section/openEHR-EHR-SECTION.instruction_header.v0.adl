@@ -1,0 +1,147 @@
+﻿archetype (adl_version=1.4; uid=7d373308-a996-421a-911c-bcc8003b4a19)
+	openEHR-EHR-SECTION.instruction_header.v0
+
+concept
+	[at0000]	-- instruction header
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			author = <
+				["name"] = <"Art Latyp Латыпов Артур Шамилевич">
+				["organisation"] = <"RusBITech РусБИТех, Москва">
+			>
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			author = <
+				["name"] = <"Alan March">
+				["organisation"] = <"Hospital Universitario Austral, Buenos Aires, Argentina">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Einar Fosse">
+				["organisation"] = <"Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway">
+				["einar.fosse@unn.no"] = <"einar.fosse@unn.no">
+			>
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2019-04-30">
+	>
+	details = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Базовый заголовок раздела, должен быть переименован в локальном шаблоне ">
+			use = <"используется для создания и именования разделов в локальных шаблонах">
+			keywords = <"раздел", "шаблон", "заготовка", "название", "образец">
+			misuse = <"">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.">
+			use = <"Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".">
+			misuse = <"No debe mantenerse sin cambios en una plantilla.">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.">
+			use = <"Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"">
+			misuse = <"Skal ikke stå med uendret navn i en template.">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To provide a generic section header which will be renamed in a template to suit a specific instruction.">
+			use = <"Use to construct a section heading in a template that will be renamed to suit the specific instruction. For example: if an order set directs the provider to choose between 1 of 2 order items:
+Order item 1
+Or (instruction heading)
+Order item 2">
+			misuse = <"Not to be left unchanged in a template.">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)">
+			use = <"*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)">
+			misuse = <"*Not to be left unchanged in a template.(en)">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["references"] = <"Derived from: <Add reference to original resource here>">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"0646F829FA0D60318E7E5B2B0A7A6D20">
+		["build_uid"] = <"ac888b09-b4d2-4c5d-bf84-2a587f7c3332">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	SECTION[at0000] matches {*}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"instruction header">
+					description = <"A generic section header which should be renamed in a template to suit a specific instruction.">
+				>
+			>
+		>
+		["ru"] = <
+			items = <
+				["at0000"] = <
+					text = <"*instruction header(en)">
+					description = <"*A generic section header which should be renamed in a template to suit a specific instruction.(en)">
+				>
+			>
+		>
+		["es-ar"] = <
+			items = <
+				["at0000"] = <
+					text = <"*instruction header(en)">
+					description = <"*A generic section header which should be renamed in a template to suit a specific instruction.(en)">
+				>
+			>
+		>
+		["sl"] = <
+			items = <
+				["at0000"] = <
+					text = <"*instruction header(en)">
+					description = <"*A generic section header which should be renamed in a template to suit a specific instruction.(en)">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*instruction header(en)">
+					description = <"*A generic section header which should be renamed in a template to suit a specific instruction.(en)">
+				>
+			>
+		>
+	>
