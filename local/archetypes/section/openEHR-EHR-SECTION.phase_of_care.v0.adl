@@ -1,0 +1,52 @@
+﻿archetype (adl_version=1.4; uid=2f8623a4-5907-4d8d-b914-a1efd013bcdf)
+	openEHR-EHR-SECTION.phase_of_care.v0
+
+concept
+	[at0000]	-- Phase of Care
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ed Schwab">
+		["organisation"] = <"Alberta Health Services, Canada">
+		["email"] = <"ed.schwab@ahs.ca">
+		["date"] = <"2020-05-27">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"A section header used to indicate the phase of care a service request (or sets of service requests) would be carried out.">
+			use = <"For use in groups of service requests (ex: order panels, order sets) to indicate which phase of care the request is carried out">
+			misuse = <"">
+			copyright = <"© openEHR Foundation, Alberta Health Services (Canada), Alberta Health Services (Canada), Alberta Health Services (Canada), Alberta Health Services (Canada)">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Alberta Health Services (Canada)">
+		["current_contact"] = <"FoundationalKnowledge@ahs.ca">
+		["original_namespace"] = <"ca.ahs">
+		["original_publisher"] = <"Alberta Health Services (Canada)">
+		["custodian_namespace"] = <"ca.ahs">
+		["MD5-CAM-1.0.1"] = <"49B3AFE3B6F82ADF474C47198617D73B">
+		["build_uid"] = <"bbf95166-bc3b-43cf-86c6-84767496aee8">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	SECTION[at0000] matches {*}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Phase of Care">
+					description = <"A section header used to indicate the phase of care a service request (or sets of service requests) would be carried out.">
+				>
+			>
+		>
+	>
