@@ -268,6 +268,14 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipsychotics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;methotrimeprazine injection; 6.25 - 25 mg subcutaneous every 8 hours PRN for extreme agitation&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;DO NOT let drug stand in syringe longer than 15 minutes, as drug may absorb to the plastic&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
      <items>
        <item>
@@ -284,19 +292,11 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; oxygen therapy may be used for comfort (no 02 sat titration parameters required)&apos;]/activities[at0156]">
-     <items>
-       <item>
-         <key>Transform.Preselected</key>
-         <value>&lt;p&gt;Y&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #3&apos;]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
      <items>
        <item>
          <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&lt;em&gt;If haloperidol not effective after 3-4 consecutive doses or 8 mg per 24 hours, then consider methotrimeprazine&lt;/em&gt;&lt;/p&gt;</value>
+         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If haloperidol not effective after 3-4 consecutive doses or 8 mg per 24 hours, then consider methotrimeprazine&lt;/em&gt;&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -525,7 +525,7 @@
          </Item>
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="metoclopramide PO/SC">
            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9f0baabb-c9ca-4ec2-a801-bd956dc155fd" concept_name="PHARM metoclopramide ORAL liquid 1 mg/mL Order" max="1" path="/items" name="metoclopramide ORAL liquid 1 mg/mL; 5 - 10 mg oral 3 times per day as needed for nausea/vomiting, reassess after 48 hours"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05b202cc-0015-412c-9c83-ed0c7727d1f0" concept_name="PHARM metoclopramide Tablet Order" max="1" path="/items" name="metoclopramide Tablet; 5 - 10 mg oral 3 times per day as needed for nausea/vomiting, reassess after 48 hours"/>
            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9b485b3-6681-44f9-b0fb-1949efbd6d85" concept_name="PHARM metoclopramide injection Order" max="1" path="/items" name="metoclopramide injection; 5 - 10 mg subcutaneous 3 times per day as needed for nausea/vomiting, reassess after 48 hours"/>
          </Item>
        </Item>
@@ -542,8 +542,8 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antidepressants"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antipsychotics">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="haloperidol SC/IM (linked orders)">
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2d22d5b2-02b0-42ed-9870-188ce381b761" concept_name="PHARM haloperidol injection Order" max="1" path="/items" name="haloperidol injection; amp 0.5 - 1 mg subcutaneous, every hour, as needed, agitation "/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="haloperidol SC/IM">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2d22d5b2-02b0-42ed-9870-188ce381b761" concept_name="PHARM haloperidol injection Order" max="1" path="/items" name="haloperidol injection; amp 0.5 - 1 mg subcutaneous, every 60 minutes, as needed, agitation "/>
            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="IF extreme agitation:"/>
            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1941460d-469a-4cd1-b597-9e7ba8cb3711" concept_name="PHARM methotrimeprazine injection Order" max="1" path="/items" name="methotrimeprazine injection; 6.25 - 25 mg subcutaneous every 8 hours PRN for extreme agitation"/>
          </Item>
@@ -574,21 +574,24 @@
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="End of Life Care">
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; If any end of life PRN medication used more than 2 times in 24 hours, review with physician to consider scheduling"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; oxygen therapy may be used for comfort (no 02 sat titration parameters required)"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="Respiratory Order/Instruction; oxygen therapy may be used for comfort (no 02 sat titration parameters required)"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="_ #3"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="For pain and/or dyspnea"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec0570ba-61bf-43af-90cc-05390bf7740d" concept_name="PHARM morphine 2.5 mg in NaCL 0.9% 50 mL (50 mcg/mL) infusion Order" max="1" path="/items" name="morphine 2.5 mg in NaCL 0.9% 50 mL (50 mcg/mL) infusion; 2.5 mg subcutaneous, every 6 hours"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec0570ba-61bf-43af-90cc-05390bf7740d" concept_name="PHARM morphine 2.5 mg in NaCL 0.9% 50 mL (50 mcg/mL) infusion Order" max="1" path="/items" name="morphine 2.5 mg in NaCL 0.9% 50 mL (50 mcg/mL) infusion; 2.5 mg subcutaneous every hour as needed for pain and/or dyspnea"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c265513-819d-4490-830e-7a131a042b72" concept_name="PHARM HYDROmorphone Infusion Order" max="1" path="/items" name="HYDROmorphone Infusion; 0.5 mg subcutaneous, every 6 hour"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c265513-819d-4490-830e-7a131a042b72" concept_name="PHARM HYDROmorphone Infusion Order" max="1" path="/items" name="HYDROmorphone Infusion; 0.5 – 1 mg subcutaneous every hour as needed for pain and/or dyspnea"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="_ #2"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="For agitation"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a303131-9a71-41ff-ba2e-991d423d3ca1" concept_name="PHARM LORazepam SUBLINGUAL tablet Order" max="1" path="/items" name="LORazepam SUBLINGUAL tablet; 0.5 – 1 mg sublingual every 2 hours as needed, max 2 mg in 24 hours for associated distressing anxiety – call MD if max reached"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #3"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e5c2578a-94a1-48fc-8458-fc4522e6f906" concept_name="PHARM haloperidol infusion Order" max="1" path="/items" name="haloperidol infusion; 0.5 - 1 mg subcutaneous every hour as needed for agitation"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="IF extreme agitation:"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1941460d-469a-4cd1-b597-9e7ba8cb3711" concept_name="PHARM methotrimeprazine injection Order" max="1" path="/items" name="methotrimeprazine injection; 6.25 - 25 mg subcutaneous every 8 hours as needed for extreme agitation"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e8443d3-a1d0-42b3-b9b2-b80bf7d202de" concept_name="PHARM midazolam injection Order" max="1" path="/items" name="midazolam injection; 2 – 5 mg subcutaneous every 6 hours"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e8443d3-a1d0-42b3-b9b2-b80bf7d202de" concept_name="PHARM midazolam injection Order" max="1" path="/items" name="midazolam injection; 2 – 5 mg subcutaneous every hour as needed for respiratory distress not relieved by hydromorphone, or for delirium not responsive to haloperidol/methotrimeprazine"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="_"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="For distressing respiratory secretions"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="465eb440-7e2b-49aa-8ae2-b417d7e8abef" concept_name="PHARM atropine injection Order" max="1" path="/items" name="atropine injection; 0.6 mg subcutaneous every 6 hours as needed for distressing pulmonary secretions"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
