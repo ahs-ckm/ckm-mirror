@@ -66,7 +66,19 @@
          <key>CKT.Content Details</key>
          <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~38bf7696-8f7b-43cd-9c94-c0d7ada21a32~NAME~Analgesics and Antipyretics for Spinal/Epidural Anesthesia Adult Smart Group}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~38bf7696-8f7b-43cd-9c94-c0d7ada21a32~NAME~Analgesics and Antipyretics for Spinal/Epidural Anesthesia Adult Smart Group}</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;Recommended standard dosing: 325 to 1000 mg.&lt;/p&gt;</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Tablet&apos;]/activities[at0001]">
      <items>
@@ -81,6 +93,14 @@
        <item>
          <key>CKT.Content Details</key>
          <value>&lt;p&gt;1,000 mg, oral, every 6 hours, as needed, mild pain&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;NSAIDs (Single Response)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;Caution is advised if ordering NSAIDs on patients with indwelling neuraxial catheters who also are receiving subcutaneous heparin.&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -144,6 +164,14 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Opioids - Oral&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;Recommend starting at low dose and/or increased time intervals for elderly and opioid naïve patients.&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Opioids - Oral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine, short acting Tablet&apos;]/activities[at0001]">
      <items>
        <item>
@@ -177,6 +205,14 @@
        <item>
          <key>CKT.Content Details</key>
          <value>&lt;p&gt;5-10 mg, oral, every 3 hours, as needed, for breakthrough pain&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Opioids - Parenteral&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;Recommend starting at low dose and/or increased time intervals for elderly and opioid naïve patients.&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -276,12 +312,12 @@
        </item>
      </items>
    </annotations>
-   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics">
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Recommended standard dosing: 325 to 1000 mg."/>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics (OSQ 232808)">
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet #1"/>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="NSAIDs (Single Response)">
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Caution is advised if ordering NSAIDs on patients with indwelling neuraxial catheters who also are receiving subcutaneous heparin."/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4f5649b9-2fd1-4fe0-a1be-a10f72da698a" concept_name="PHARM celecoxib Tablet Order" max="1" path="/items" name="celecoxib Tablet"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen Tablet Order" max="1" path="/items" name="ibuprofen Tablet"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen Tablet Order" max="1" path="/items" name="naproxen Tablet"/>
@@ -290,13 +326,13 @@
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="856e1810-6754-4158-9a74-811d23b3b39c" concept_name="PHARM ketorolac injection Order" max="1" path="/items" name="ketorolac injection"/>
      </Item>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Opioids - Oral">
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Recommend starting at low dose and/or increased time intervals for elderly and opioid naïve patients."/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting Tablet Order" max="1" path="/items" name="morphine, short acting Tablet"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting Tablet Order" max="1" path="/items" name="HYDROmorphone, short acting Tablet"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting Tablet"/>
      </Item>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Opioids - Parenteral">
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Recommend starting at low dose and/or increased time intervals for elderly and opioid naïve patients."/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Morphine IV/SC">
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; IV"/>
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
