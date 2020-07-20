@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
    <id>c0106bff-01cf-43f9-9df1-820c58163d7b</id>
-   <name>Burn/Wound Care Head Order Panel</name>
+   <name>Burn_Wound Care Head Order Panel</name>
    <description>
      <lifecycle_state>Initial</lifecycle_state>
      <details>
@@ -60,6 +60,14 @@
        </item>
      </other_details>
    </description>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~c0106bff-01cf-43f9-9df1-820c58163d7b~NAME~Burn_Wound Care Head Order Panel}</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;mupirocin Oint 2%; topical, 2 times per day&apos;]/activities[at0001]">
      <items>
        <item>
@@ -204,7 +212,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~c0106bff-01cf-43f9-9df1-820c58163d7b~NAME~Burn/Wound Care Head Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Burn/Wound Care Head">
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Burn/Wound Care Head">
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ad856e8-02e8-4cd2-9c9a-fdee282d975c" concept_name="PC Dressing Instructions Order" max="1" path="/items" name="Dressing Instructions:; Daily, Include Now, Anatomy: Head"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32ef2da5-8744-46d6-a7d2-50447c72d7e4" concept_name="PC Negative pressure wound therapy Order" max="1" path="/items" name="Negative pressure wound therapy; Once, Anatomy: Head"/>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Pharmacy Supplied Topical Anti-Infectives">
