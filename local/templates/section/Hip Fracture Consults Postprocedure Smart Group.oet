@@ -60,11 +60,19 @@
        </item>
      </other_details>
    </description>
-   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Occupational Therapy&apos;]/activities[at0156]">
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]">
      <items>
        <item>
-         <key>Transform.Preselected</key>
-         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~0206fe8d-81f6-46df-9907-bb139ec4741a~NAME~Hip Fracture Consults Postprocedure Smart Group}</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Physical Therapy&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;assess and treat: post hip fracture surgery&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -76,17 +84,29 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~0206fe8d-81f6-46df-9907-bb139ec4741a~NAME~Hip Fracture Consults Postprocedure Smart Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Hip Fracture Consults Postprocedure Smart Group">
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="afe72e28-a55a-4d01-8c77-fe5f97bca8f5" concept_name="CONS Inpatient Consult to Adult Acute Pain Services Order" max="1" path="/items" name="Inpatient Consult to Adult Acute Pain Services"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3c28ad9-8430-467f-8055-d7a26480f2b3" concept_name="CONS Inpatient Consult to Anesthesiology Order" max="1" path="/items" name="Inpatient Consult to Anesthesiology"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b1ca72-23ee-4714-a1ff-b6689b55ee0f" concept_name="CONS Inpatient Consult to Discharge Planning_Transition Services Order" max="1" path="/items" name="Inpatient Consult to Discharge Planning/Transition Services"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24ae8b49-bb38-4705-9dec-fd3ed26f8989" concept_name="CONS Inpatient Consult to Hospital Medicine Order" max="1" path="/items" name="Inpatient Consult to Hospital Medicine"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99e370c-d849-4585-b382-c30d0a08a894" concept_name="CONS Inpatient Consult to Occupational Therapy Order" max="1" path="/items" name="Inpatient Consult to Occupational Therapy"/>
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Occupational Therapy&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;assess and treat: post hip fracture surgery&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Occupational Therapy&apos;]/activities[at0156]">
+     <items>
+       <item>
+         <key>Transform.Preselected</key>
+         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Hip Fracture Consults Postprocedure Smart Group">
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99e370c-d849-4585-b382-c30d0a08a894" concept_name="CONS Inpatient Consult to Occupational Therapy Order" max="1" path="/items" name="Inpatient Consult to Occupational Therapy"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian; if renal diet ordered"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian; if patient identified as nutrition risk / or poor intake post-op"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e16d1c9-20a3-4ae7-9b48-ffe8f5bfae4e" concept_name="CONS Inpatient Consult to Speech Language Pathology Order" max="1" path="/items" name="Inpatient Consult to Speech Language Pathology"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da7f8b58-fb42-4578-9dc8-4de38fbda558" concept_name="CONS Inpatient Consult to Ostomy Care_Wound Care Order" max="1" path="/items" name="Inpatient Consult to Ostomy Care/Wound Care"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b1ca72-23ee-4714-a1ff-b6689b55ee0f" concept_name="CONS Inpatient Consult to Discharge Planning_Transition Services Order" max="1" path="/items" name="Inpatient Consult to Discharge Planning/Transition Services"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
    </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
