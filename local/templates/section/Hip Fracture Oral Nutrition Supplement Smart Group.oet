@@ -60,7 +60,15 @@
        </item>
      </other_details>
    </description>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~ee41759d-dd25-45aa-8231-0ff53c36e319~NAME~Hip Fracture Oral Nutrition Supplement Smart Group}</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
      <items>
        <item>
          <key>CKT.Clinical Guidance</key>
@@ -68,15 +76,15 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; Med Pass Oral Nutrition Supplements&apos;]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oral Nutrition Supplement; Ensure Protein Max&apos;]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
-         <value>&lt;p&gt;Ensure Protein Max 90 mL orally three times daily (e.g. 0800, 1400, 2000)&lt;/p&gt;</value>
+         <value>&lt;p&gt;Ensure Protein Max 90 mL orally three times daily (e.g.&lt;br&gt;0800, 1400, 2000)&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; Med Pass Oral Nutrition Supplements&apos;]/activities[at0156]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oral Nutrition Supplement; Ensure Protein Max&apos;]/activities[at0156]">
      <items>
        <item>
          <key>Transform.Preselected</key>
@@ -84,11 +92,11 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; Med Pass Oral Nutrition Supplements #1&apos;]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oral Nutrition Supplement; TwoCal HN&apos;]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
-         <value>&lt;p&gt;TwoCal HN 60 mL orally three times daily (e.g. 0800, 1400, 2000)&lt;/p&gt;</value>
+         <value>&lt;p&gt;TwoCal HN 60 mL orally three times daily (e.g. 0800,&lt;br&gt;1400, 2000)&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -108,29 +116,19 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Diet Instructions to Nursing; Refer to Registered Dietician if patient on thickened fluids, renal diet.&apos;]/activities[at0156]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Nutrition Services / Dietitian&apos;]/activities[at0001]">
      <items>
        <item>
-         <key>Transform.Preselected</key>
-         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;Reason for Consult? Pre-procedure evaluation, CNST&lt;br&gt;score equals 2 Yes responses&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to Registered Dietitian if patient on thickened fluids and/or renal diet&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~ee41759d-dd25-45aa-8231-0ff53c36e319~NAME~Hip Fracture Oral Nutrition Supplement Smart Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Hip Fracture Oral Nutrition Supplement Smart Group">
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Hip Fracture Oral Nutrition Supplement Smart Group">
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Med Pass Oral Nutrition Supplements"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Med Pass Oral Nutrition Supplements #1"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9a707da7-4d2c-4cbc-973e-9f9c1590c1c7" concept_name="NFS Oral Nutrition Supplement Order" max="1" path="/items" name="Oral Nutrition Supplement; Ensure Protein Max"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9a707da7-4d2c-4cbc-973e-9f9c1590c1c7" concept_name="NFS Oral Nutrition Supplement Order" max="1" path="/items" name="Oral Nutrition Supplement; TwoCal HN"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="PC Diet instructions to nursing Order" max="1" path="/items" name="Diet Instructions to Nursing; Screen for nutrition risk: use Canadian Nutrition Screening Tool (CNST)"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="PC Diet instructions to nursing Order" max="1" path="/items" name="Diet Instructions to Nursing; Refer to Registered Dietician if patient on thickened fluids, renal diet."/>
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian"/>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" path="/items"/>
    </definition>
