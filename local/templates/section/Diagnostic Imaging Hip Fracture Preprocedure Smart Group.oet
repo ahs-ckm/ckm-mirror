@@ -60,11 +60,27 @@
        </item>
      </other_details>
    </description>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~a0a5aae8-f91d-4500-92d0-56fff87fb5ad~NAME~Diagnostic Imaging Hip Fracture Preprocedure Smart Group}</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
      <items>
        <item>
          <key>CKT.Clinical Guidance</key>
          <value>&lt;p&gt;Consider for patients with acute or chronic cardiopulmonary disease based on history and physical exam if it will change management&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 1 Projection&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;&amp;nbsp;consider for patients with acute/chronic cardiopulmonary disease if it will change management&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -108,7 +124,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a0a5aae8-f91d-4500-92d0-56fff87fb5ad~NAME~Diagnostic Imaging Hip Fracture Preprocedure Smart Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Diagnostic Imaging Hip Fracture Preprocedure Smart Group">
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Diagnostic Imaging Hip Fracture Preprocedure Smart Group">
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a58c3be-c2ab-4e47-9bdd-95028c436cf0" concept_name="DI GR Chest 1 Projection Order" max="1" path="/items" name="GR Chest 1 Projection"/>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3cff7d41-2e53-4d24-9eb2-72088940cdac" concept_name="DI GR Pelvis Order" max="1" path="/items" name="GR Pelvis"/>
