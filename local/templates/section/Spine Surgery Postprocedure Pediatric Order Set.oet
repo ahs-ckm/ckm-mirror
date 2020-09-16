@@ -184,6 +184,22 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Sequential Compression Device; On Unit&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;Continuous until patient ambulating&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Follow-Up Smart Group; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge Follow-Up; Surgeon&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;In 4-6 weeks&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Spine Surgery Postprocedure Pediatric Order Set">
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
@@ -297,6 +313,7 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d2138bd5-8c0f-4085-8671-16b4ad0bffc7" concept_name="CONS Inpatient Consult to KidClot Order" max="1" path="/items" name="Inpatient Consult to KidClot; On Unit"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="528e44bc-af74-465f-a535-3a62f4bb1d0c" concept_name="PC Sequential Compression Device Order" max="1" path="/items" name="Sequential Compression Device; On Unit"/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics ">
@@ -338,9 +355,11 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Drainage Tubes; Post Discharge">
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fabd0388-be7f-448b-8891-1530b6741b0e" concept_name="PC Drain Care Order" max="1" path="/items" name="Drain Care; Post Discharge"/>
        </Item>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8d997028-7e76-425a-8066-3a132917fffb" concept_name="Discharge Diet and Nutrition Smart Group" max="1" path="/items" name="Discharge Diet and Nutrition"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="6f45fbeb-4eba-44b3-8ec6-c91a0254669c" concept_name="Discharge Activity Ortho Post Ped Smart Group" max="1" path="/items" name="Discharge Activity Ortho Post Ped Smart Group"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="017c37bd-af7f-4e49-a85e-7cc75de3c69d" concept_name="Discharge Hygiene Ortho Post Ped Smart Group" max="1" path="/items" name="Discharge Hygiene Ortho Post Ped Smart Group"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8d997028-7e76-425a-8066-3a132917fffb" concept_name="Discharge Diet and Nutrition Smart Group" max="1" path="/items" name="Discharge Diet and Nutrition; Post Discharge"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="6f45fbeb-4eba-44b3-8ec6-c91a0254669c" concept_name="Discharge Activity Ortho Post Ped Smart Group" max="1" path="/items" name="Discharge Activity Ortho Post Ped Smart Group; Post Discharge"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="56a9bf2d-6347-4f87-9f62-efba951dc912" concept_name="Discharge Equipment and Devices Spine Post Ped Smart Group" max="1" path="/items" name="Discharge Equipment and Devices; Post Discharge"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="017c37bd-af7f-4e49-a85e-7cc75de3c69d" concept_name="Discharge Hygiene Ortho Post Ped Smart Group" max="1" path="/items" name="Discharge Hygiene Ortho Post Ped Smart Group; Post Discharge"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="74aa13fc-1f25-467d-a2b5-b79c370effb3" concept_name="Discharge Medication Instructions Smart Group" max="1" path="/items" name="Discharge Medication Instructions; Post Discharge"/>
      </Item>
    </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
