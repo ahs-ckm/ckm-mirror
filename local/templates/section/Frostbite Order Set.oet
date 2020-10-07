@@ -95,7 +95,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vasodilators&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vasodilators&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Iloprost Protocol for SEVERE Frostbite GRADE 2 or higher if less than 48-72h since rewarming and no episode of refreezing&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Clinical Guidance</key>
@@ -175,8 +175,8 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="Rewarming"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dfe5f513-569f-4a5c-bc02-c4daee4106a5" concept_name="Frostbite Splint_Cast_Brace_Crutches Order Group" max="1" path="/items" name="Frostbite Splint/Cast/Brace/Crutches"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="48ff0c90-ec5b-4ed3-a524-3f1727f6421f" concept_name="PC In and Out Catheter Order" max="1" path="/items" name="In and Out Catheter"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fc216c0-a423-45c5-a3c2-5868c429b624" concept_name="PC Insert Indwelling Urinary Catheter Order" max="1" path="/items" name="Insert Indwelling Urinary Catheter"/>
@@ -324,6 +324,7 @@
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hemodialysis"/>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vasodilators">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Iloprost is obtained from Health Canada’s Special Access Program (SAP) and may not be readily available at all sites."/>
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Iloprost Protocol for SEVERE Frostbite GRADE 2 or higher if less than 48-72h since rewarming and no episode of refreezing">
            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Iloprost Monitoring: HR and BP every 15 minutes for initial 2 hours of iloprost infusion, then every 30 minutes for the remaining duration of infusion.">
              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="016746fc-7bc7-4337-b78e-087590453a31" concept_name="PHARM iloprost infusion Order" max="1" path="/items" name="iloprost infusion; IV Continuous"/>
