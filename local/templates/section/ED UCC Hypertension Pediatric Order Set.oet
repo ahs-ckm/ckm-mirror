@@ -79,6 +79,14 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Neurological vital signs; Every 4 hours   &apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;Notify Most&lt;br&gt;Responsible&lt;br&gt;Health&lt;br&gt;Practitioner&lt;br&gt;(MRHP) if&lt;br&gt;Glasgow Coma&lt;br&gt;Scale drops 2 or&lt;br&gt;more points&lt;br&gt;below the&lt;br&gt;baseline score&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Measure Blood Pressure&apos;]/activities[at0001]">
      <items>
        <item>
@@ -191,19 +199,27 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;DimenhyDRINATE &apos;]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Ondansetron: Should be used as a single dose in most situations. Multiple doses, especially IV, can lead to QT prolongation.  Dose Guidance: 8-15 kg: 2 mg/dose. 15 - 30 kg; 4mg/dose. Greater than 30 kg: 8mg/dose&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
      <items>
        <item>
          <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;dimenhyDRINATE:&lt;br&gt;Oral: frequency: q6h prn. Patients &amp;lt;6 years, maximum dose 75mg per 24 hours, maximum single dose&lt;br&gt;25mg; 6-12 years: 150mg per 24 hours, or 50 mg per dose; &amp;gt;12 years: 400mg per 24 hours, or 100 mg per&lt;br&gt;dose&lt;br&gt;Injection: frequency: q6h prn. Patients &amp;lt;6 years, maximum dose 75mg per 24 hours, maximum single dose&lt;br&gt;25mg; 6-12 years: 150mg per 24 hours, or 50 mg per dose; &amp;gt;12 years: 400mg per 24 hours, or 100 mg per&lt;br&gt;dose&lt;br&gt;Rectal: frequency: q8h prn. Patients &amp;lt;5 years: 25mg maximum; 6-7 years: 25mg every 8 hours; 8-11 years:&lt;br&gt;50 mg every 8 hours; over 12 years: 50 mg every 8 hours&lt;/p&gt;</value>
+         <value>&lt;p&gt;dose guidance:&lt;br&gt;◾ 8-15 kg: 2 mg/dose&lt;br&gt;◾ Greater than 15-30 kg: 4 mg/dose&lt;br&gt;◾ Greater than 30 kg: 8 mg/dose&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Ondansetron: Should be used as a single dose in most situations. Multiple doses, especially IV, can lead to QT prolongation.  Dose Guidance: 8-15 kg: 2 mg/dose. 15 - 30 kg; 4mg/dose. Greater than 30 kg: 8mg/dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ondansetron Oral Disintegrating tablet; oral (Ma 8 mg), every 8 hours PRN&apos;]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ondansetron Oral Disintegrating tablet; oral (Ma 8 mg), every 8 hours PRN&apos;]/activities[at0001]">
      <items>
        <item>
          <key>Transform.Technical Notes</key>
          <value>&lt;p&gt;Defaults 2mg (Max 8mg)&amp;nbsp;&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;DimenhyDRINATE &apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+     <items>
+       <item>
+         <key>CKT.Clinical Guidance</key>
+         <value>&lt;p&gt;Oral: frequency: q6h prn.&lt;/p&gt;&lt;p&gt;Patients &amp;lt;6 years, maximum dose 75mg per 24 hours, maximum single dose&lt;br&gt;25mg;&lt;/p&gt;&lt;p&gt;6-12 years: 150mg per 24 hours, or 50 mg per dose; &amp;gt;12 years: 400mg per 24 hours, or 100 mg per dose&lt;/p&gt;&lt;p&gt;&lt;br&gt;Injection: frequency: q6h prn. Patients &amp;lt;6 years, maximum dose 75mg per 24 hours, maximum single dose&lt;br&gt;25mg; 6-12 years: 150mg per 24 hours, or 50 mg per dose; &amp;gt;12 years: 400mg per 24 hours, or 100 mg per dose&lt;/p&gt;&lt;p&gt;&lt;br&gt;Rectal: frequency: q8h prn. Patients &amp;lt;5 years: 25mg maximum; 6-7 years: 25mg every 8 hours; 8-11 years:&lt;br&gt;50 mg every 8 hours; over 12 years: 50 mg every 8 hours&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -286,6 +302,7 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Once"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="PC Neurological Vital Signs Order" max="1" path="/items" name="Neurological vital signs; Every 4 hours   "/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8cd69316-156e-4d35-9a82-dfff2fae9e25" concept_name="PC Measure Blood Pressure Order" max="1" path="/items" name="Measure Blood Pressure"/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors">
@@ -508,17 +525,19 @@
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5db13963-d77a-43d8-ac09-d3831abb8285" concept_name="ED Analgesics and Antipyretics Pediatric Order Group " max="1" path="/items" name="ED Analgesics and Antipyretics Pediatric Order Group "/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="DimenhyDRINATE ">
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE injection; IV, 0.5 - 1 mg/kg/dose every 6 hours PRN"/>
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM dimenhyDRINATE Tablet Order" max="1" path="/items" name="dimenhyDRINATE Tablet; oral, 0.5-1 mg/kg/dose, every 6 hours PRN"/>
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b92a969-5e3f-4eed-9f4a-1ee889f2b8b1" concept_name="PHARM dimenhyDRINATE Suppository Order" max="1" path="/items" name="dimenhyDRINATE Suppository; rectal, 12.5 mg every 8 hours PRN"/>
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="907f470f-caf1-432f-8f59-6720d969177d" concept_name="PHARM dimenhyDRINATE 3 mg/mL ORAL liquid Order" max="1" path="/items" name="dimenhyDRINATE 3 mg/mL ORAL liquid; oral, 0.5 - 1 mg/kg/dose, every 6 hours PRN"/>
-         </Item>
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Ondansetron: Should be used as a single dose in most situations. Multiple doses, especially IV, can lead to QT prolongation.  Dose Guidance: 8-15 kg: 2 mg/dose. 15 - 30 kg; 4mg/dose. Greater than 30 kg: 8mg/dose">
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ondansetron ORAL liquid 0.8 mg/mL Order" max="1" path="/items" name="ondansetron ORAL liquid 0.8 mg/mL; oral, 0.1 mg/kg/dose (Max 8 mg), every 8 hours, PRN"/>
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron Tablet; oral, 0.1mg/kg/dose (Max 8mg), every 8 hours PRN"/>
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7014313-c3f3-4fc4-9077-6d796f649b99" concept_name="PHARM ondansetron Oral Disintegrating tablet Order" max="1" path="/items" name="ondansetron Oral Disintegrating tablet; oral (Ma 8 mg), every 8 hours PRN"/>
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
          </Item>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7014313-c3f3-4fc4-9077-6d796f649b99" concept_name="PHARM ondansetron Oral Disintegrating tablet Order" max="1" path="/items" name="ondansetron Oral Disintegrating tablet; oral (Ma 8 mg), every 8 hours PRN"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron Tablet; oral, 0.1mg/kg/dose (Max 8mg), every 8 hours PRN"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ondansetron ORAL liquid 0.8 mg/mL Order" max="1" path="/items" name="ondansetron ORAL liquid 0.8 mg/mL; oral, 0.1 mg/kg/dose (Max 8 mg), every 8 hours, PRN"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="DimenhyDRINATE ">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+         </Item>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="907f470f-caf1-432f-8f59-6720d969177d" concept_name="PHARM dimenhyDRINATE 3 mg/mL ORAL liquid Order" max="1" path="/items" name="dimenhyDRINATE 3 mg/mL ORAL liquid; oral, 0.5 - 1 mg/kg/dose, every 6 hours PRN"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM dimenhyDRINATE Tablet Order" max="1" path="/items" name="dimenhyDRINATE Tablet; oral, 0.5-1 mg/kg/dose, every 6 hours PRN"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE injection; IV, 0.5 - 1 mg/kg/dose every 6 hours PRN"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b92a969-5e3f-4eed-9f4a-1ee889f2b8b1" concept_name="PHARM dimenhyDRINATE Suppository Order" max="1" path="/items" name="dimenhyDRINATE Suppository; rectal, 12.5 mg every 8 hours PRN"/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Gastrointestinal Agents"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antacids"/>
