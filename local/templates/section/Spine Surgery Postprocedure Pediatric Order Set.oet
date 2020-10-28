@@ -136,11 +136,19 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; CPAP or BiPAP&apos;]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
          <value>&lt;p&gt;Patient may use own CPAP or BiPAP&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Respiratory Therapy&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;&amp;nbsp;Reason for Consult: RT to assess patient&lt;/p&gt;&lt;p&gt;Patient on home CPAP or BiPAP&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -261,6 +269,7 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a1545718-63c7-410b-b98c-2431b3284572" concept_name="Respiratory Interventions Smart Group" max="1" path="/items" name="Respiratory Interventions ; On Unit"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; CPAP or BiPAP"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9316348-8678-47b9-9022-9c1ce2554592" concept_name="CONS Inpatient Consult to Respiratory Therapy Order" max="1" path="/items" name="Inpatient Consult to Respiratory Therapy"/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="321b6571-4097-4eb4-b054-4c6598205acd" concept_name="Wound Care Pediatric Smart Group" max="1" path="/items" name="Wound Care ; On Unit"/>
