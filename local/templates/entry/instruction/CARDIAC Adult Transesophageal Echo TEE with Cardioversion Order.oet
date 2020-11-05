@@ -74,7 +74,11 @@
          <key>Technical.ﻩ Technical Traceabililty</key>
          <value>&lt;p&gt;{~AHSID~7f632700-4f61-4bb8-831a-1fed81b07e17~NAME~CARDIAC TEE with Cardioversion Order}&lt;/p&gt;</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~7f632700-4f61-4bb8-831a-1fed81b07e17~NAME~CARDIAC Adult Transesophageal Echo TEE with Cardioversion Order}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~7f632700-4f61-4bb8-831a-1fed81b07e17~NAME~CARDIAC Adult Transesophageal Echo TEE with Cardioversion Order}</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Starting:&apos;]">
      <items>
@@ -92,19 +96,19 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Reference Links:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Resources</key>
+         <value>&lt;p&gt;https://albertareferraldirectory.ca/PublicSearchController?direct=displaySpecialistSearch&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;What is the patient&apos;s sedation requirement?&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>&lt;p&gt;Mandatory; Free text box for comments&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Where should this TEE be performed?&apos;]">
-     <items>
-       <item>
-         <key>Catalogue Pattern.Configuration Notes</key>
-         <value>Mandatory; Free text box for comments</value>
        </item>
      </items>
    </annotations>
@@ -172,6 +176,22 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Saline Bubble&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Saline Bubble?&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;A response to this question may trigger a casacading question&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Saline Bubble&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Reason for Bubble Study &apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available when &quot;yes&quot; selected for Saline Bubble?&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments:&apos;]">
      <items>
        <item>
@@ -210,30 +230,18 @@
          </constraint>
        </Rule>
      </Items>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="What is the patient&apos;s sedation requirement?">
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reference Links:">
        <Rule path="/items[at0002]">
          <constraint xsi:type="textConstraint">
-           <includedValues>Sedation</includedValues>
-           <includedValues>Anesthesia</includedValues>
-           <includedValues>No sedation</includedValues>
+           <includedValues>Alberta Referral Directory</includedValues>
          </constraint>
        </Rule>
      </Items>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Where should this TEE be performed?">
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="What is the patient&apos;s sedation requirement?">
        <Rule path="/items[at0002]">
          <constraint xsi:type="textConstraint">
-           <includedValues>ECHO Department</includedValues>
-           <includedValues>Bedside</includedValues>
-           <includedValues>Prep Recovery</includedValues>
-           <includedValues>Cath Lab</includedValues>
-           <includedValues>EP Lab</includedValues>
-           <includedValues>Hybrid Lab</includedValues>
-           <includedValues>ICU</includedValues>
-           <includedValues>CICU</includedValues>
-           <includedValues>ED</includedValues>
-           <includedValues>Respiratory Therapy</includedValues>
-           <includedValues>DI Ultrasound</includedValues>
-           <includedValues>Unknown</includedValues>
+           <includedValues>Conscious Sedation</includedValues>
+           <includedValues>General Anesthesia</includedValues>
          </constraint>
        </Rule>
      </Items>
@@ -316,6 +324,34 @@
            </constraint>
          </Rule>
        </Items>
+     </Items>
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Saline Bubble">
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Saline Bubble?">
+         <Rule path="/items[at0002]">
+           <constraint xsi:type="textConstraint">
+             <includedValues>Yes</includedValues>
+             <includedValues>No</includedValues>
+           </constraint>
+         </Rule>
+       </Items>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Reason for Bubble Study ">
+         <Rule path="/items[at0002]">
+           <constraint xsi:type="textConstraint">
+             <includedValues>Exclude PFO in Cryptogenic stroke</includedValues>
+             <includedValues>Exclude cardiac shunt</includedValues>
+             <includedValues>Exclude pulmonary shunt</includedValues>
+             <includedValues>Enhance TR signal for RVSP</includedValues>
+           </constraint>
+         </Rule>
+       </Items>
+     </Items>
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Will this be performed bedside?">
+       <Rule path="/items[at0002]" default="No">
+         <constraint xsi:type="textConstraint">
+           <includedValues>No (default)</includedValues>
+           <includedValues>Yes</includedValues>
+         </constraint>
+       </Rule>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
    </definition>
