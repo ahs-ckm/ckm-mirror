@@ -60,6 +60,14 @@
        </item>
      </other_details>
    </description>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~2c9b8c11-3ccd-4726-bda2-1d53b50cd880~NAME~ROP Screening Order Group}</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sucrose ORAL liquid 24%; 0.2 mL, buccal, once, as needed, for procedural pain as tolerated by the patient&apos;]/activities[at0001]">
      <items>
        <item>
@@ -68,7 +76,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 2 drops&apos;]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 2 drops&apos;]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
@@ -76,7 +84,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 3 drops&apos;]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 3 drops&apos;]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
@@ -116,12 +124,12 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~2c9b8c11-3ccd-4726-bda2-1d53b50cd880~NAME~ROP Screening Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="ROP Screening">
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="ROP Screening">
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Medications">
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1fe398b-f069-4cf4-9680-df004a6cffb3" concept_name="PHARM sucrose ORAL liquid 24% Order" max="1" path="/items" name="sucrose ORAL liquid 24%; 0.2 mL, buccal, once, as needed, for procedural pain as tolerated by the patient"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 2 drops"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 3 drops"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 2 drops"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; cyclopentolate-phenylephrine 0.2%-1% drop eye drops; 3 drops"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM tropicamide EYE drop 1% Order" max="1" path="/items" name="tropicamide EYE drop 1%"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine EYE drop 0.5% Order" max="1" path="/items" name="tetracaine EYE drop 0.5%; preservative free"/>
      </Item>
