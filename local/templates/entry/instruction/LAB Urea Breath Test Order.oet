@@ -74,7 +74,11 @@
          <key>Technical.EPIC ID</key>
          <value>LAB572</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~884a1dea-8e7d-47a1-9fee-bb1fc667b268~NAME~LAB Urea Breath Test Order}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~884a1dea-8e7d-47a1-9fee-bb1fc667b268~NAME~LAB Urea Breath Test Order}</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
      <items>
@@ -132,7 +136,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Does the UBT order meet one of the following criteria? If one of the options prvided is not selected, then a UBT will not be processed. Please order HpSAT.&apos;]">
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Does the Urea Breath Test order meet one of the following criteria? If one of the options provided is not selected, then a Urea Breath Test will not be processed and please order H Pylori Test (stool antigen) as a replacment.&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
@@ -232,12 +236,12 @@
          </constraint>
        </Rule>
      </Items>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Does the UBT order meet one of the following criteria? If one of the options prvided is not selected, then a UBT will not be processed. Please order HpSAT.">
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Does the Urea Breath Test order meet one of the following criteria? If one of the options provided is not selected, then a Urea Breath Test will not be processed and please order H Pylori Test (stool antigen) as a replacment.">
        <Rule path="/items[at0002]" default="Approved by Clinical Chemist / Medical Microbiologist">
          <constraint xsi:type="textConstraint">
            <includedValues>Approved by Clinical Chemist / Medical Microbiologist (default)</includedValues>
            <includedValues>GI Specialist request</includedValues>
-           <includedValues>Interminate HpSAT result</includedValues>
+           <includedValues>Indeterminate H Pylori Test (stool antigen) Result</includedValues>
          </constraint>
        </Rule>
      </Items>
