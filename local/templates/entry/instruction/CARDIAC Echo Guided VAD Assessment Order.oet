@@ -246,14 +246,6 @@
          </Rule>
        </Items>
      </Items>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Will this be performed bedside?">
-       <Rule path="/items[at0002]" default="No">
-         <constraint xsi:type="textConstraint">
-           <includedValues>Yes</includedValues>
-           <includedValues>No (default)</includedValues>
-         </constraint>
-       </Rule>
-     </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
    </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
