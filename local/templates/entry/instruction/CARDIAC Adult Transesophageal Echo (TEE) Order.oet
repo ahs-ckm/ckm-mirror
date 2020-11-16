@@ -67,6 +67,10 @@
          <value>&lt;p&gt;ECH160&lt;/p&gt;</value>
        </item>
        <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~eb60e7c3-6e40-48f8-a68e-d0d67fccb464~NAME~CARDIAC Adult Transesophageal Echo (TEE) Order}</value>
+       </item>
+       <item>
          <key>Imaging.Body Part</key>
          <value>&lt;p&gt;%=CA&lt;/p&gt;</value>
        </item>
@@ -98,7 +102,7 @@
          <key>Technical.ﻩ Technical Traceabililty</key>
          <value>&lt;p&gt;{~AHSID~eb60e7c3-6e40-48f8-a68e-d0d67fccb464~NAME~CARDIAC Adult Transesophageal Echo (TEE) Order}&lt;/p&gt;</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~eb60e7c3-6e40-48f8-a68e-d0d67fccb464~NAME~CARDIAC Adult Transesophageal Echo (TEE) Order}</value></item></items>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Starting:&apos;]">
      <items>
@@ -345,14 +349,6 @@
            </constraint>
          </Rule>
        </Items>
-     </Items>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Will this be performed at bedside?">
-       <Rule path="/items[at0002]" default="No">
-         <constraint xsi:type="textConstraint">
-           <includedValues>No (default)</includedValues>
-           <includedValues>Yes</includedValues>
-         </constraint>
-       </Rule>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
    </definition>
