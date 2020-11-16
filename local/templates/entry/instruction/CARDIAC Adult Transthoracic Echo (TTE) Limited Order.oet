@@ -86,7 +86,11 @@
          <key>Technical.ﻩ Technical Traceabililty</key>
          <value>&lt;p&gt;{~AHSID~0a9a3115-e70f-4c53-a39f-ccd4d329243e~NAME~CARDIAC Adult Transthoracic Echo (TTE) Limited Order}&lt;/p&gt;</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~0a9a3115-e70f-4c53-a39f-ccd4d329243e~NAME~CARDIAC Adult Transthoracic Echo (TTE) Limited Order}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~0a9a3115-e70f-4c53-a39f-ccd4d329243e~NAME~CARDIAC Adult Transthoracic Echo (TTE) Limited Order}</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Starting:&apos;]">
      <items>
@@ -273,14 +277,6 @@
            </constraint>
          </Rule>
        </Items>
-     </Items>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Will this be performed bedside?">
-       <Rule path="/items[at0002]">
-         <constraint xsi:type="textConstraint">
-           <includedValues>Yes</includedValues>
-           <includedValues>No</includedValues>
-         </constraint>
-       </Rule>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
    </definition>
