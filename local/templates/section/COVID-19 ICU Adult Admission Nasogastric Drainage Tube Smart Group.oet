@@ -68,23 +68,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; Insert OG tube&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;Once, Until discontinued, Starting S.&lt;/p&gt;&lt;p&gt;Type of tube: OG tube&lt;/p&gt;&lt;p&gt;Action: Insert&lt;/p&gt;&lt;p&gt;Connect to low intermittent wall suction&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; Connect NG tube to low intermittent wall suction&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;Once, Until discontinued, Starting S.&lt;/p&gt;&lt;p&gt;Type of tube: NG tube&lt;/p&gt;&lt;p&gt;Action:&lt;/p&gt;&lt;p&gt;Connect to low intermittent wall suction&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; Connect OG tube to low intermittent wall suction&apos;]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; OG tube, Once, Connect to low intermittent wall suction&apos;]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
@@ -165,9 +149,9 @@
      </items>
    </annotations>
    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="COVID-19 ICU Adult Admission Nasogastric Drainage Tube Smart Group">
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Insert OG tube"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Connect NG tube to low intermittent wall suction"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Connect OG tube to low intermittent wall suction"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Insert OG tube, Once, Connect to low intermittent wall suction"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; NG tube, Once, Connect to low intermittent wall suction"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; OG tube, Once, Connect to low intermittent wall suction"/>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Connect to:">
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Maintain, Low suction continuous"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Maintain, Low suction intermittent"/>
