@@ -74,7 +74,11 @@
          <key>Technical.EPIC ID</key>
          <value>LAB478</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~34c8a5eb-3674-4e5e-8a8f-1da7a56add35~NAME~LAB Lupus Anticoagulant Panel Order}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~34c8a5eb-3674-4e5e-8a8f-1da7a56add35~NAME~LAB Lupus Anticoagulant Panel Order}</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
      <items>
@@ -172,19 +176,19 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date of last dose&apos;]">
-     <items>
-       <item>
-         <key>Catalogue Pattern.Configuration Notes</key>
-         <value>Cascading question available if &quot;Yes&quot; selected for Is patient taking anticoagulant(s)?; Calendar pick</value>
-       </item>
-     </items>
-   </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Anticoagulants in use&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Cascading question available if &quot;Yes&quot; selected for Is patient taking anticoagulant(s)?; A response to this question may trigger a cascading question; Multi-Select </value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date of last dose&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>Cascading question available if &quot;Yes&quot; selected for Is patient taking anticoagulant(s)?; Calendar pick</value>
        </item>
      </items>
    </annotations>
@@ -322,14 +326,6 @@
            </constraint>
          </Rule>
        </Items>
-       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Date of last dose">
-         <Rule path="/items[at0002]">
-           <constraint xsi:type="textConstraint">
-             <includedValues>Yes</includedValues>
-             <includedValues>No</includedValues>
-           </constraint>
-         </Rule>
-       </Items>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Anticoagulants in use">
          <Rule path="/items[at0002]">
            <constraint xsi:type="textConstraint">
@@ -338,11 +334,12 @@
              <includedValues>Dabigatran (Pradaxa)</includedValues>
              <includedValues>LMW Heparin</includedValues>
              <includedValues>Unfractionated Heparin</includedValues>
-             <includedValues>Coumadin</includedValues>
+             <includedValues>Coumadin/Warfarin</includedValues>
              <includedValues>Other</includedValues>
            </constraint>
          </Rule>
        </Items>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Date of last dose"/>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Please provide details"/>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Estrogen based oral contraceptives (birth control pills):">
