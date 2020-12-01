@@ -104,7 +104,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Moderate - High Risk&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Moderate - High Risk&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]">
      <items>
        <item>
          <key>Transform.Preselected</key>
@@ -129,6 +129,14 @@
      </items>
    </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Moderate - High Risk&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+     <items>
+       <item>
+         <key>Transform.Preselected</key>
+         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Moderate - High Risk&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
      <items>
        <item>
          <key>Transform.Preselected</key>
@@ -280,11 +288,11 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]">
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
      <items>
        <item>
          <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;To monitor platelet count for heparin-induced thrombocytopenia (HIT) in heparin-exposed patients with risk of HIT greater than 1%.&lt;/p&gt;</value>
+         <value>&lt;p&gt;&amp;nbsp;To monitor platelet count for heparin-induced thrombocytopenia (HIT) in heparin-exposed patients with risk of HIT greater than 1%.&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -316,12 +324,12 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Moderate - High Risk">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="tinzaparin">
-           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="VTE Prophylaxis">
              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="baa37fce-55b8-485d-9df4-c61cfa2db8b0" concept_name="PHARM tinzaparin injection Order" max="1" path="/items" name="tinzaparin injection; subcutaneous, daily, at bedtime, First Dose today at 2100 "/>
              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
            </Item>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
          </Item>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Higher/Highest Risk">
@@ -370,6 +378,7 @@
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential Order" max="1" path="/items" name="CBC, No Differential; Once, To provide baseline platelet count for patients receiving heparin"/>
      </Item>
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Repeating">
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential Order" max="1" path="/items" name="CBC, No Differential; Every 3 days, for 5 occurrences"/>
      </Item>
      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Until discontinued, Early ambulation"/>
