@@ -216,14 +216,6 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - Emergency&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Opioids IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&amp;nbsp;For pain not controlled by oral opioids, or oral analgesia is contraindicated. Consider dose reduction if patient is elderly or opiate-naïve.&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Analgesics and Antipyretics ">
      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics - Hip Fracture Care Pathway">
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
@@ -279,9 +271,7 @@
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting Tablet; 5-10 mg, oral, every 3 hours, as needed, for pain not controlled by non-opioid analgesia"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
        </Item>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Opioids IV">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="b3f1e8b1-4e18-4831-8a44-7c81f575ea67" concept_name="Opioids IV Ortho_Trauma Preprocedure Adult Order Group" max="1" path="/items" name="Opioids IV Ortho_Trauma Preprocedure Adult Order Group"/>
      </Item>
    </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
@@ -301,5 +291,8 @@
    </integrity_checks>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
      <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
    </integrity_checks>
  </template>
