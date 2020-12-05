@@ -76,6 +76,14 @@
        </item>
      </items>
    </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intake and Output&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+     <items>
+       <item>
+         <key>Transform.Preselected</key>
+         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
      <items>
        <item>
@@ -279,6 +287,7 @@
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Hip Fracture Care Pathway - Intake and Output">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output; Every shift, Preprocedure/Day Surgery"/>
            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
          </Item>
        </Item>
@@ -385,7 +394,12 @@
          </Item>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output; Every 4 hours, First occurrence now, Preprocedure/Day Surgery"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Hip Fracture Care Pathway - Intake and Output">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output; Every shift, Preprocedure/Day Surgery"/>
+         </Item>
+       </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose">
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; AM of Surgery, Once, Preprocedure/Day Surgery"/>
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; QID, 4 times daily, Preprocedure/Day Surgery"/>
@@ -460,17 +474,24 @@
          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARDIAC Electrocardiogram 12 Lead Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Once, Preprocedure/Day Surgery"/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="IV Maintenance Preprocedure Adult Smart Group" max="1" path="/items" name="IV Maintenance Preprocedure Adult Smart Group"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f5475c69-bcb0-45d8-9fad-bd23a4fe1317" concept_name="IV Fluids Preprocedure Adult Smart Group" max="1" path="/items" name="IV Fluids Preprocedure Adult Smart Group"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f3678a95-8957-4587-93b3-1388843a28fc" concept_name="Fluids_Electrolytes Ortho_Trauma Preprocedure Adult Order Group" max="1" path="/items" name="Fluids_Electrolytes Ortho_Trauma Preprocedure Adult Order Group; Preprocedure/Day Surgery"/>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation anThrombosis Agents"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64" concept_name="Antiemetic Day of Procedure Smart Group " max="1" path="/items" name="Antiemetic Day of Procedure"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation anThrombosis Agents">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="20f5da67-fb61-4c66-9ef5-0e5ac83ab490" concept_name="Blood Formation, Coagulation and Thrombosis Agents Ortho_Trauma Preprocedure Adult Order Group" max="1" path="/items" name="Blood Formation, Coagulation and Thrombosis Agents Ortho_Trauma Preprocedure Adult Order Group; Preprocedure/Day Surgery"/>
          </Item>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants #1"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5b8d9620-f3ba-4c8b-8fe3-5304e00191bb" concept_name="Anti-Infective Agents Ortho_Trauma Preprocedure Adult Order Group" max="1" path="/items" name="Anti-Infective Agents Ortho_Trauma Preprocedure Adult Order Group; Preprocedure/Day Surgery"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="73da0a0c-f695-4730-b865-e48db2befe97" concept_name="Analgesics and Antipyretics Day of Procedure Ortho_Trauma Adult Order Group" max="1" path="/items" name="Analgesics and Antipyretics Day of Procedure Ortho_Trauma Adult Order Group; Preprocedure/Day Surgery"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64" concept_name="Antiemetic Day of Procedure Smart Group " max="1" path="/items" name="Antiemetic Day of Procedure; Preprocedure/Day Surgery"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants #1">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a24ed679-f15e-47fa-bc3d-751c7620713c" concept_name="Antiulcer and Acid Suppressant Agents Ortho_Trauma Preprocedure Adult Order Group" max="1" path="/items" name="Antiulcer and Acid Suppressant Agents Ortho_Trauma Preprocedure Adult Order Group; Preprocedure/Day Surgery"/>
+         </Item>
        </Item>
        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults">
          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="48fe7bf2-959b-4b14-8802-fec60b49e866" concept_name="Consults Ortho_Trauma Preprocedure Adult Order Group" max="1" path="/items" name=" Consults Ortho_Trauma Preprocedure Adult Order Group; Preprocedure/Day Surgery"/>
