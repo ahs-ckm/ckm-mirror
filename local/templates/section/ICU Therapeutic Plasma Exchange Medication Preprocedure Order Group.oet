@@ -1,117 +1,117 @@
 <?xml version="1.0"?>
-  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-    <id>9b5f7d8e-98a3-4c48-8f18-89c42bc76943</id>
-    <name>ICU Therapeutic Plasma Exchange Medication Preprocedure Order Group</name>
-    <description>
-      <lifecycle_state>Initial</lifecycle_state>
-      <details>
-        <purpose/>
-        <use/>
-        <misuse/>
-      </details>
-      <other_details>
-        <item>
-          <key>MetaDataSet:Sample Set </key>
-          <value>Template metadata sample set </value>
-        </item>
-        <item>
-          <key>Acknowledgements</key>
-          <value/>
-        </item>
-        <item>
-          <key>Business Process Level</key>
-          <value/>
-        </item>
-        <item>
-          <key>Care setting</key>
-          <value/>
-        </item>
-        <item>
-          <key>Client group</key>
-          <value/>
-        </item>
-        <item>
-          <key>Clinical Record Element</key>
-          <value/>
-        </item>
-        <item>
-          <key>Copyright</key>
-          <value/>
-        </item>
-        <item>
-          <key>Issues</key>
-          <value/>
-        </item>
-        <item>
-          <key>Owner</key>
-          <value/>
-        </item>
-        <item>
-          <key>Sign off</key>
-          <value/>
-        </item>
-        <item>
-          <key>Speciality</key>
-          <value/>
-        </item>
-        <item>
-          <key>User roles</key>
-          <value/>
-        </item>
-      </other_details>
-    </description>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;DiphenhydrAMINE and acetaminophen are recommended prior to every TPE, hydrocortisone if there have been previous allergic reaction during TPE.&lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE injection; 50 mg, Intravenous, once, immediately prior to procedure&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;recommended prior to TPE if plasma is used as a replacement fluid&lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Tablet; 650 mg, Oral, once, 30 minutes prior to procedure &apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;recommended prior to TPE if plasma is used as a replacement fluid&lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;hydrocortisone sodium succinate injection; 100 mg, Intravenous, once, 30 minutes prior to procedure &apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;hydrocortisone if there have been previous allergic reaction during TPE&lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~9b5f7d8e-98a3-4c48-8f18-89c42bc76943~NAME~ICU Therapeutic Plasma Exchange Medication Preprocedure Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Medication - Preprocedure">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE injection; 50 mg, Intravenous, once, immediately prior to procedure"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet; 650 mg, Oral, once, 30 minutes prior to procedure "/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76895ec7-b7e8-40b5-8ae3-28eb3b739e7c" concept_name="PHARM hydrocortisone sodium succinate injection Order" max="1" path="/items" name="hydrocortisone sodium succinate injection; 100 mg, Intravenous, once, 30 minutes prior to procedure "/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </definition>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-      <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
-      <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
-    </integrity_checks>
-  </template>
+   <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+     <id>9b5f7d8e-98a3-4c48-8f18-89c42bc76943</id>
+     <name>ICU Therapeutic Plasma Exchange Medication Preprocedure Order Group</name>
+     <description>
+       <lifecycle_state>Initial</lifecycle_state>
+       <details>
+         <purpose/>
+         <use/>
+         <misuse/>
+       </details>
+       <other_details>
+         <item>
+           <key>MetaDataSet:Sample Set </key>
+           <value>Template metadata sample set </value>
+         </item>
+         <item>
+           <key>Acknowledgements</key>
+           <value/>
+         </item>
+         <item>
+           <key>Business Process Level</key>
+           <value/>
+         </item>
+         <item>
+           <key>Care setting</key>
+           <value/>
+         </item>
+         <item>
+           <key>Client group</key>
+           <value/>
+         </item>
+         <item>
+           <key>Clinical Record Element</key>
+           <value/>
+         </item>
+         <item>
+           <key>Copyright</key>
+           <value/>
+         </item>
+         <item>
+           <key>Issues</key>
+           <value/>
+         </item>
+         <item>
+           <key>Owner</key>
+           <value/>
+         </item>
+         <item>
+           <key>Sign off</key>
+           <value/>
+         </item>
+         <item>
+           <key>Speciality</key>
+           <value/>
+         </item>
+         <item>
+           <key>User roles</key>
+           <value/>
+         </item>
+       </other_details>
+     </description>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;DiphenhydrAMINE and acetaminophen are recommended prior to every TPE, hydrocortisone if there have been previous allergic reaction during TPE.&lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE injection; 50 mg, Intravenous, once, immediately prior to procedure&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;recommended prior to TPE if plasma is used as a replacement fluid&lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Tablet; 650 mg, Oral, once, 30 minutes prior to procedure &apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;recommended prior to TPE if plasma is used as a replacement fluid&lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;hydrocortisone sodium succinate injection; 100 mg, Intravenous, once, 30 minutes prior to procedure &apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;hydrocortisone if there have been previous allergic reaction during TPE&lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~9b5f7d8e-98a3-4c48-8f18-89c42bc76943~NAME~ICU Therapeutic Plasma Exchange Medication Preprocedure Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Medication - Preprocedure">
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE injection; 50 mg, Intravenous, once, immediately prior to procedure"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet; 650 mg, Oral, once, 30 minutes prior to procedure "/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76895ec7-b7e8-40b5-8ae3-28eb3b739e7c" concept_name="PHARM hydrocortisone sodium succinate injection Order" max="1" path="/items" name="hydrocortisone sodium succinate injection; 100 mg, Intravenous, once, 30 minutes prior to procedure "/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </definition>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+       <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+       <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+       <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+       <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+       <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+     </integrity_checks>
+   </template>
