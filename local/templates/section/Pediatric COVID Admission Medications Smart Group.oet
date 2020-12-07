@@ -1,240 +1,240 @@
 <?xml version="1.0"?>
-    <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-      <id>dd231691-83f1-46c7-9085-ed75e40bdcd9</id>
-      <name>Pediatric COVID Admission Medications Smart Group</name>
-      <description>
-        <lifecycle_state>Initial</lifecycle_state>
-        <details>
-          <purpose/>
-          <use/>
-          <misuse/>
-        </details>
-        <other_details>
-          <item>
-            <key>MetaDataSet:Sample Set </key>
-            <value>Template metadata sample set </value>
-          </item>
-          <item>
-            <key>Acknowledgements</key>
-            <value/>
-          </item>
-          <item>
-            <key>Business Process Level</key>
-            <value/>
-          </item>
-          <item>
-            <key>Care setting</key>
-            <value/>
-          </item>
-          <item>
-            <key>Client group</key>
-            <value/>
-          </item>
-          <item>
-            <key>Clinical Record Element</key>
-            <value/>
-          </item>
-          <item>
-            <key>Copyright</key>
-            <value/>
-          </item>
-          <item>
-            <key>Issues</key>
-            <value/>
-          </item>
-          <item>
-            <key>Owner</key>
-            <value/>
-          </item>
-          <item>
-            <key>Sign off</key>
-            <value/>
-          </item>
-          <item>
-            <key>Speciality</key>
-            <value/>
-          </item>
-          <item>
-            <key>User roles</key>
-            <value/>
-          </item>
-        </other_details>
-      </description>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
-        <items>
-          <item>
-            <key>Technical.ﻩ Technical Traceability</key>
-            <value>{~AHSID~dd231691-83f1-46c7-9085-ed75e40bdcd9~NAME~Pediatric COVID Admission Medications Smart Group}</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-        <items>
-          <item>
-            <key>CKT.Clinical Guidance</key>
-            <value>&lt;p&gt;&lt;strong&gt;Antibiotics&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Recommended if patient critically ill, at risk of early deterioration, suspicion of secondary bacterial pneumonia, or sepsis.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Continuation of Antibiotics after initial empiric therapy is not recommended for confirmed COVID-19 patients who do not have proven (or strongly suspected) bacterial or fungal co-infection/superinfection.&lt;/em&gt;&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;amoxicillin - High Dose&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-        <items>
-          <item>
-            <key>CKT.Clinical Guidance</key>
-            <value>&lt;p&gt;&amp;nbsp;To be used if there are risk factors for resistant Streptococcus pneumonia: Unimmunized or incompletely immunized, attends daycare, use of amoxicillin in preceding 3 months, failure of initial therapy.&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;amoxicillin - High Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ampicillin&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-        <items>
-          <item>
-            <key>CKT.Clinical Guidance</key>
-            <value>&lt;p&gt;&amp;nbsp;200-400 mg/kg/day divided every 6 hours.&amp;nbsp;&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ampicillin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-        <items>
-          <item>
-            <key>CKT.Content Details</key>
-            <value>&lt;p&gt;200-400 mg/kg/day divided&amp;nbsp;every 6 hours&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ampicillin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;cefTRIAXone&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-        <items>
-          <item>
-            <key>CKT.Clinical Guidance</key>
-            <value>&lt;p&gt;&amp;nbsp;50-75 mg/Kg/dose every 24 hours or Divided every 12 hours&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;cefTRIAXone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-        <items>
-          <item>
-            <key>CKT.Content Details</key>
-            <value>&lt;p&gt;Can be divided into 2 doses (q12h)&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;cefTRIAXone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin ORAL liquid 40 mg/mL; 10 mg/kg/dose, oral, Once , STAT&apos;]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin ORAL liquid 40 mg/mL; 5 mg/kg/dose, oral, daily, For 4 days&apos;]/activities[at0001]">
-        <items>
-          <item>
-            <key>Transform.Technical Notes</key>
-            <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin ORAL liquid 40 mg/mL; 5 mg/kg/dose, oral, daily, For 4 days&apos;]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection;10 mg/kg/dose, intravenous, once, STAT&apos;]/activities[at0001]">
-        <items>
-          <item>
-            <key>CKT.Content Details</key>
-            <value>&lt;p&gt;&amp;nbsp;maximum 500 mg/dose&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection;10 mg/kg/dose, intravenous, once, STAT&apos;]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection; 5 mg/kg/dose, intravenous, daily for 4 days&apos;]/activities[at0001]">
-        <items>
-          <item>
-            <key>Transform.Technical Notes</key>
-            <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection; 5 mg/kg/dose, intravenous, daily for 4 days&apos;]/activities[at0156]">
-        <items>
-          <item>
-            <key>Transform.Preselected</key>
-            <value>&lt;p&gt;Y&lt;/p&gt;</value>
-          </item>
-        </items>
-      </annotations>
-      <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pediatric COVID Admission Medications Smart Group">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b689d593-074e-4521-b0d5-3b36ee37cd23" concept_name="PHARM amoxicillin ORAL liquid 50 mg/mL Order" max="1" path="/items" name="amoxicillin Oral liquid 50 mg/mL; (Standard Dose) 50 mg/kg/day, oral, 3 times per day"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="amoxicillin - High Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b689d593-074e-4521-b0d5-3b36ee37cd23" concept_name="PHARM amoxicillin ORAL liquid 50 mg/mL Order" max="1" path="/items" name="amoxicillin Oral liquid 50 mg/mL; (High Dose), 100 mg/kg/day, oral, 3 times per day"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="ampicillin">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="efb7f546-10b0-4aad-a930-97faaf58e5e2" concept_name="PHARM ampicillin injection Order" max="1" path="/items" name="ampicillin injection; 200 mg/kg/day, intravenous, every 6 hours "/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="cefTRIAXone">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 50 mg/kg/day, intravenous, every 24 hours, STAT"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="AZIthromycin PO">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f373abf7-05df-496d-868b-599bb0b16afe" concept_name="PHARM AZIthromycin ORAL liquid 40 mg/mL Order" max="1" path="/items" name="AZIthromycin Oral liquid 40 mg/mL; 10 mg/kg/dose, oral, Once , STAT"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed by"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f373abf7-05df-496d-868b-599bb0b16afe" concept_name="PHARM AZIthromycin ORAL liquid 40 mg/mL Order" max="1" path="/items" name="AZIthromycin Oral liquid 40 mg/mL; 5 mg/kg/dose, oral, daily, For 4 days"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="AZIthromycin IV">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87c88028-2aef-4aa9-9d1d-c6f427ed9e45" concept_name="PHARM AZIthromycin injection Order" max="1" path="/items" name="AZIthromycin injection;10 mg/kg/dose, intravenous, once, STAT"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed by"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87c88028-2aef-4aa9-9d1d-c6f427ed9e45" concept_name="PHARM AZIthromycin injection Order" max="1" path="/items" name="AZIthromycin injection; 5 mg/kg/dose, intravenous, daily for 4 days"/>
-        </Item>
-      </definition>
-      <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-        <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-      </integrity_checks>
-      <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-        <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-      </integrity_checks>
-      <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-        <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-      </integrity_checks>
-      <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-        <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-      </integrity_checks>
-      <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-        <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-      </integrity_checks>
-    </template>
+     <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+       <id>dd231691-83f1-46c7-9085-ed75e40bdcd9</id>
+       <name>Pediatric COVID Admission Medications Smart Group</name>
+       <description>
+         <lifecycle_state>Initial</lifecycle_state>
+         <details>
+           <purpose/>
+           <use/>
+           <misuse/>
+         </details>
+         <other_details>
+           <item>
+             <key>MetaDataSet:Sample Set </key>
+             <value>Template metadata sample set </value>
+           </item>
+           <item>
+             <key>Acknowledgements</key>
+             <value/>
+           </item>
+           <item>
+             <key>Business Process Level</key>
+             <value/>
+           </item>
+           <item>
+             <key>Care setting</key>
+             <value/>
+           </item>
+           <item>
+             <key>Client group</key>
+             <value/>
+           </item>
+           <item>
+             <key>Clinical Record Element</key>
+             <value/>
+           </item>
+           <item>
+             <key>Copyright</key>
+             <value/>
+           </item>
+           <item>
+             <key>Issues</key>
+             <value/>
+           </item>
+           <item>
+             <key>Owner</key>
+             <value/>
+           </item>
+           <item>
+             <key>Sign off</key>
+             <value/>
+           </item>
+           <item>
+             <key>Speciality</key>
+             <value/>
+           </item>
+           <item>
+             <key>User roles</key>
+             <value/>
+           </item>
+         </other_details>
+       </description>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+         <items>
+           <item>
+             <key>Technical.ﻩ Technical Traceability</key>
+             <value>{~AHSID~dd231691-83f1-46c7-9085-ed75e40bdcd9~NAME~Pediatric COVID Admission Medications Smart Group}</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+         <items>
+           <item>
+             <key>CKT.Clinical Guidance</key>
+             <value>&lt;p&gt;&lt;strong&gt;Antibiotics&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Recommended if patient critically ill, at risk of early deterioration, suspicion of secondary bacterial pneumonia, or sepsis.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Continuation of Antibiotics after initial empiric therapy is not recommended for confirmed COVID-19 patients who do not have proven (or strongly suspected) bacterial or fungal co-infection/superinfection.&lt;/em&gt;&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;amoxicillin - High Dose&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+         <items>
+           <item>
+             <key>CKT.Clinical Guidance</key>
+             <value>&lt;p&gt;&amp;nbsp;To be used if there are risk factors for resistant Streptococcus pneumonia: Unimmunized or incompletely immunized, attends daycare, use of amoxicillin in preceding 3 months, failure of initial therapy.&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;amoxicillin - High Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ampicillin&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+         <items>
+           <item>
+             <key>CKT.Clinical Guidance</key>
+             <value>&lt;p&gt;&amp;nbsp;200-400 mg/kg/day divided every 6 hours.&amp;nbsp;&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ampicillin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+         <items>
+           <item>
+             <key>CKT.Content Details</key>
+             <value>&lt;p&gt;200-400 mg/kg/day divided&amp;nbsp;every 6 hours&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ampicillin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;cefTRIAXone&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+         <items>
+           <item>
+             <key>CKT.Clinical Guidance</key>
+             <value>&lt;p&gt;&amp;nbsp;50-75 mg/Kg/dose every 24 hours or Divided every 12 hours&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;cefTRIAXone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+         <items>
+           <item>
+             <key>CKT.Content Details</key>
+             <value>&lt;p&gt;Can be divided into 2 doses (q12h)&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;cefTRIAXone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin ORAL liquid 40 mg/mL; 10 mg/kg/dose, oral, Once , STAT&apos;]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin ORAL liquid 40 mg/mL; 5 mg/kg/dose, oral, daily, For 4 days&apos;]/activities[at0001]">
+         <items>
+           <item>
+             <key>Transform.Technical Notes</key>
+             <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin ORAL liquid 40 mg/mL; 5 mg/kg/dose, oral, daily, For 4 days&apos;]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection;10 mg/kg/dose, intravenous, once, STAT&apos;]/activities[at0001]">
+         <items>
+           <item>
+             <key>CKT.Content Details</key>
+             <value>&lt;p&gt;&amp;nbsp;maximum 500 mg/dose&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection;10 mg/kg/dose, intravenous, once, STAT&apos;]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection; 5 mg/kg/dose, intravenous, daily for 4 days&apos;]/activities[at0001]">
+         <items>
+           <item>
+             <key>Transform.Technical Notes</key>
+             <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;AZIthromycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;AZIthromycin injection; 5 mg/kg/dose, intravenous, daily for 4 days&apos;]/activities[at0156]">
+         <items>
+           <item>
+             <key>Transform.Preselected</key>
+             <value>&lt;p&gt;Y&lt;/p&gt;</value>
+           </item>
+         </items>
+       </annotations>
+       <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pediatric COVID Admission Medications Smart Group">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b689d593-074e-4521-b0d5-3b36ee37cd23" concept_name="PHARM amoxicillin ORAL liquid 50 mg/mL Order" max="1" path="/items" name="amoxicillin Oral liquid 50 mg/mL; (Standard Dose) 50 mg/kg/day, oral, 3 times per day"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="amoxicillin - High Dose">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b689d593-074e-4521-b0d5-3b36ee37cd23" concept_name="PHARM amoxicillin ORAL liquid 50 mg/mL Order" max="1" path="/items" name="amoxicillin Oral liquid 50 mg/mL; (High Dose), 100 mg/kg/day, oral, 3 times per day"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="ampicillin">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="efb7f546-10b0-4aad-a930-97faaf58e5e2" concept_name="PHARM ampicillin injection Order" max="1" path="/items" name="ampicillin injection; 200 mg/kg/day, intravenous, every 6 hours "/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="cefTRIAXone">
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 50 mg/kg/day, intravenous, every 24 hours, STAT"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="AZIthromycin PO">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f373abf7-05df-496d-868b-599bb0b16afe" concept_name="PHARM AZIthromycin ORAL liquid 40 mg/mL Order" max="1" path="/items" name="AZIthromycin Oral liquid 40 mg/mL; 10 mg/kg/dose, oral, Once , STAT"/>
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed by"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f373abf7-05df-496d-868b-599bb0b16afe" concept_name="PHARM AZIthromycin ORAL liquid 40 mg/mL Order" max="1" path="/items" name="AZIthromycin Oral liquid 40 mg/mL; 5 mg/kg/dose, oral, daily, For 4 days"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="AZIthromycin IV">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87c88028-2aef-4aa9-9d1d-c6f427ed9e45" concept_name="PHARM AZIthromycin injection Order" max="1" path="/items" name="AZIthromycin injection;10 mg/kg/dose, intravenous, once, STAT"/>
+           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed by"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87c88028-2aef-4aa9-9d1d-c6f427ed9e45" concept_name="PHARM AZIthromycin injection Order" max="1" path="/items" name="AZIthromycin injection; 5 mg/kg/dose, intravenous, daily for 4 days"/>
+         </Item>
+       </definition>
+       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+         <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+       </integrity_checks>
+       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+         <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+       </integrity_checks>
+       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+         <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+       </integrity_checks>
+       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+         <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+       </integrity_checks>
+       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+         <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+       </integrity_checks>
+     </template>
