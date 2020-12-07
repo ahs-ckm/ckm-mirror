@@ -1,160 +1,160 @@
 <?xml version="1.0"?>
- <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-   <id>20105651-40be-4ce3-a274-b50eb83109b1</id>
-   <name>COVID_19 ICU Bacterial Infection Order Group</name>
-   <description>
-     <lifecycle_state>Initial</lifecycle_state>
-     <details>
-       <purpose/>
-       <use/>
-       <misuse/>
-     </details>
-     <other_details>
-       <item>
-         <key>MetaDataSet:Sample Set </key>
-         <value>Template metadata sample set </value>
-       </item>
-       <item>
-         <key>Acknowledgements</key>
-         <value/>
-       </item>
-       <item>
-         <key>Business Process Level</key>
-         <value/>
-       </item>
-       <item>
-         <key>Care setting</key>
-         <value/>
-       </item>
-       <item>
-         <key>Client group</key>
-         <value/>
-       </item>
-       <item>
-         <key>Clinical Record Element</key>
-         <value/>
-       </item>
-       <item>
-         <key>Copyright</key>
-         <value/>
-       </item>
-       <item>
-         <key>Issues</key>
-         <value/>
-       </item>
-       <item>
-         <key>Owner</key>
-         <value/>
-       </item>
-       <item>
-         <key>Sign off</key>
-         <value/>
-       </item>
-       <item>
-         <key>Speciality</key>
-         <value/>
-       </item>
-       <item>
-         <key>User roles</key>
-         <value/>
-       </item>
-     </other_details>
-   </description>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
-     <items>
-       <item>
-         <key>Technical.ﻩ Technical Traceability</key>
-         <value>{~AHSID~20105651-40be-4ce3-a274-b50eb83109b1~NAME~COVID_19 ICU Bacterial Infection Order Group}</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&amp;nbsp;Worsening pneumonia may also be due to inflammation so prolonged antibiotic therapy beyond 5 to&amp;nbsp;7 days in the absence of positive cultures is not currently recommended.&amp;nbsp;&lt;br&gt;Culture directed therapy is preferred. &amp;nbsp;Empiric therapy pending sputum/bronch culture results:&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Recommended dosing frequency for vancomycin every 8 to 12 hours. Refer to Bugs and Drugs (http://bugsanddrugs.org/) for frequency adjustments based on creatinine clearance.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Recommended loading dose 25 to 30 mg/kg/dose, maximum 3000 mg/dose.&lt;/p&gt;&lt;p&gt;Recommended maintenance dose 15 mg/kg/dose&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 15 mg/kg/dose, Intravenous, Every 12 hours for 3 days. Starting 12 hours after initial 25 mg/kg/dose dose. Target trough. Reassess in 48 to 72 hours. &apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&lt;em&gt;Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Linezolid&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;All patients with functional GI tract should use oral formulation, use IV formulation only if non-functional GI tract.&lt;/p&gt;&lt;p&gt;Alternate if renal dysfunction or known prior MRSA pneumonia&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Linezolid&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;linezolid injection; 600 mg, Intravenous, every 12 hours, for 6 doses.&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&lt;em&gt;Reassess in 48 to 72 hours. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA. Use IV formulation only if non-functional GI tract. STAT&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Linezolid&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;linezolid Tablet; 600 mg, Oral, every 12 hours, for 6 doses&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&lt;em&gt;Reassess in 48 to 72 hours. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA.&amp;nbsp;Encouraged for all patients with functional GI tract&lt;/em&gt;.&amp;nbsp;&lt;em&gt;Encouraged for all patients with functional GI tract. STAT&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Management of Possible Secondary Bacterial Infection/Ventilator Associated Pneumonia in Adult COVID-19 patients">
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Empiric therapy pending sputum/bronch culture results">
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cbe5b12d-2960-43f4-9c40-f6ae2cc4aee6" concept_name="PHARM meropenem injection Order" max="1" path="/items" name="meropenem injection; 500 mg, intravenous, every 6 hours, for 3 days"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ab1712c1-797c-4370-a11b-a2f0c31cfc8d" concept_name="PHARM piperacillin-tazobactam injection Order" max="1" path="/items" name="piperacillin-tazobactam injection; 4.5 g, intravenous, every 6 hours, for 3 days"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-     </Item>
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="ADD if patient not documented as MRSA negative">
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="vancomycin IV">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 25 mg/kg/dose, (max 3000 mg) Intravenous, Once. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA, STAT"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="FOLLOWED BY/THEN"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, Intravenous, Every 12 hours for 3 days. Starting 12 hours after initial 25 mg/kg/dose dose. Target trough. Reassess in 48 to 72 hours. "/>
-       </Item>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Linezolid">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d7e63db-b139-4aba-aa16-7c732a4b0f77" concept_name="PHARM linezolid injection Order" max="1" path="/items" name="linezolid injection; 600 mg, Intravenous, every 12 hours, for 6 doses."/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="60043240-034a-4384-a0f5-fe03ae49dbd3" concept_name="PHARM linezolid Tablet Order" max="1" path="/items" name="linezolid Tablet; 600 mg, Oral, every 12 hours, for 6 doses"/>
-       </Item>
-     </Item>
-   </definition>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
-     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
-   </integrity_checks>
- </template>
+  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+    <id>20105651-40be-4ce3-a274-b50eb83109b1</id>
+    <name>COVID_19 ICU Bacterial Infection Order Group</name>
+    <description>
+      <lifecycle_state>Initial</lifecycle_state>
+      <details>
+        <purpose/>
+        <use/>
+        <misuse/>
+      </details>
+      <other_details>
+        <item>
+          <key>MetaDataSet:Sample Set </key>
+          <value>Template metadata sample set </value>
+        </item>
+        <item>
+          <key>Acknowledgements</key>
+          <value/>
+        </item>
+        <item>
+          <key>Business Process Level</key>
+          <value/>
+        </item>
+        <item>
+          <key>Care setting</key>
+          <value/>
+        </item>
+        <item>
+          <key>Client group</key>
+          <value/>
+        </item>
+        <item>
+          <key>Clinical Record Element</key>
+          <value/>
+        </item>
+        <item>
+          <key>Copyright</key>
+          <value/>
+        </item>
+        <item>
+          <key>Issues</key>
+          <value/>
+        </item>
+        <item>
+          <key>Owner</key>
+          <value/>
+        </item>
+        <item>
+          <key>Sign off</key>
+          <value/>
+        </item>
+        <item>
+          <key>Speciality</key>
+          <value/>
+        </item>
+        <item>
+          <key>User roles</key>
+          <value/>
+        </item>
+      </other_details>
+    </description>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+      <items>
+        <item>
+          <key>Technical.ﻩ Technical Traceability</key>
+          <value>{~AHSID~20105651-40be-4ce3-a274-b50eb83109b1~NAME~COVID_19 ICU Bacterial Infection Order Group}</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+      <items>
+        <item>
+          <key>CKT.Clinical Guidance</key>
+          <value>&lt;p&gt;&amp;nbsp;Worsening pneumonia may also be due to inflammation so prolonged antibiotic therapy beyond 5 to&amp;nbsp;7 days in the absence of positive cultures is not currently recommended.&amp;nbsp;&lt;br&gt;Culture directed therapy is preferred. &amp;nbsp;Empiric therapy pending sputum/bronch culture results:&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+      <items>
+        <item>
+          <key>CKT.Clinical Guidance</key>
+          <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Recommended dosing frequency for vancomycin every 8 to 12 hours. Refer to Bugs and Drugs (http://bugsanddrugs.org/) for frequency adjustments based on creatinine clearance.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Recommended loading dose 25 to 30 mg/kg/dose, maximum 3000 mg/dose.&lt;/p&gt;&lt;p&gt;Recommended maintenance dose 15 mg/kg/dose&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 15 mg/kg/dose, Intravenous, Every 12 hours for 3 days. Starting 12 hours after initial 25 mg/kg/dose dose. Target trough. Reassess in 48 to 72 hours. &apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&lt;em&gt;Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA&lt;/em&gt;&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Linezolid&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+      <items>
+        <item>
+          <key>CKT.Clinical Guidance</key>
+          <value>&lt;p&gt;All patients with functional GI tract should use oral formulation, use IV formulation only if non-functional GI tract.&lt;/p&gt;&lt;p&gt;Alternate if renal dysfunction or known prior MRSA pneumonia&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Linezolid&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;linezolid injection; 600 mg, Intravenous, every 12 hours, for 6 doses.&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&lt;em&gt;Reassess in 48 to 72 hours. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA. Use IV formulation only if non-functional GI tract. STAT&lt;/em&gt;&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Linezolid&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;linezolid Tablet; 600 mg, Oral, every 12 hours, for 6 doses&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&lt;em&gt;Reassess in 48 to 72 hours. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA.&amp;nbsp;Encouraged for all patients with functional GI tract&lt;/em&gt;.&amp;nbsp;&lt;em&gt;Encouraged for all patients with functional GI tract. STAT&lt;/em&gt;&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Management of Possible Secondary Bacterial Infection/Ventilator Associated Pneumonia in Adult COVID-19 patients">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Empiric therapy pending sputum/bronch culture results">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cbe5b12d-2960-43f4-9c40-f6ae2cc4aee6" concept_name="PHARM meropenem injection Order" max="1" path="/items" name="meropenem injection; 500 mg, intravenous, every 6 hours, for 3 days"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ab1712c1-797c-4370-a11b-a2f0c31cfc8d" concept_name="PHARM piperacillin-tazobactam injection Order" max="1" path="/items" name="piperacillin-tazobactam injection; 4.5 g, intravenous, every 6 hours, for 3 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="ADD if patient not documented as MRSA negative">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="vancomycin IV">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 25 mg/kg/dose, (max 3000 mg) Intravenous, Once. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA, STAT"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="FOLLOWED BY/THEN"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, Intravenous, Every 12 hours for 3 days. Starting 12 hours after initial 25 mg/kg/dose dose. Target trough. Reassess in 48 to 72 hours. "/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Linezolid">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d7e63db-b139-4aba-aa16-7c732a4b0f77" concept_name="PHARM linezolid injection Order" max="1" path="/items" name="linezolid injection; 600 mg, Intravenous, every 12 hours, for 6 doses."/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="60043240-034a-4384-a0f5-fe03ae49dbd3" concept_name="PHARM linezolid Tablet Order" max="1" path="/items" name="linezolid Tablet; 600 mg, Oral, every 12 hours, for 6 doses"/>
+        </Item>
+      </Item>
+    </definition>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+      <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+      <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+      <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+    </integrity_checks>
+  </template>
