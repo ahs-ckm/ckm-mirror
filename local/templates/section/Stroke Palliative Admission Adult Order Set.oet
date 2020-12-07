@@ -1,251 +1,251 @@
 <?xml version="1.0"?>
-  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-    <id>efdaf3cd-55ac-4504-a21d-9ab3d56035a3</id>
-    <name>Stroke Palliative Admission Adult Order Set</name>
-    <description>
-      <lifecycle_state>Initial</lifecycle_state>
-      <details>
-        <purpose/>
-        <use/>
-        <misuse/>
-      </details>
-      <other_details>
-        <item>
-          <key>MetaDataSet:Sample Set </key>
-          <value>Template metadata sample set </value>
-        </item>
-        <item>
-          <key>Acknowledgements</key>
-          <value/>
-        </item>
-        <item>
-          <key>Business Process Level</key>
-          <value/>
-        </item>
-        <item>
-          <key>Care setting</key>
-          <value/>
-        </item>
-        <item>
-          <key>Client group</key>
-          <value/>
-        </item>
-        <item>
-          <key>Clinical Record Element</key>
-          <value/>
-        </item>
-        <item>
-          <key>Copyright</key>
-          <value/>
-        </item>
-        <item>
-          <key>Issues</key>
-          <value/>
-        </item>
-        <item>
-          <key>Owner</key>
-          <value/>
-        </item>
-        <item>
-          <key>Sign off</key>
-          <value/>
-        </item>
-        <item>
-          <key>Speciality</key>
-          <value/>
-        </item>
-        <item>
-          <key>User roles</key>
-          <value/>
-        </item>
-      </other_details>
-    </description>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;&amp;nbsp;This order set is ONLY to be used for patients with Goals of Care designation of C1 or C2.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Admit to Inpatient&apos;]/activities[at0156]">
-      <items>
-        <item>
-          <key>Transform.Preselected</key>
-          <value>&lt;p&gt;Y&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Notification of Admission&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Notify Primary Care Physician and Other Clinicians in the active circle of care regarding patient admission&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;NPO&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;NPO except: Other (specify) ***&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Per protocol&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;As appropriate to assess patient comfort.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Patient Care Interventions&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Ensure all vital signs, blood work, and investigations previously ordered are cancelled.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Medications&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Ensure all previous medication orders are discontinued&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Consults/Referrals&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Cancel any outstanding consultations, with exception to Palliative Consults.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Provide Family Education/Support&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Ensure the patient&apos;s family is aware that death is expected and ascertain how they would like to be notified when the patient deteriorates or dies.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Eye/Tissue Donation&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Offer the option of eye and tissue donation to the patient/family. Contact the Donation Coordinator for Human Organ Procurement and Exchange Program (HOPE) or Southern Alberta Organ and Tissue Donation Program (SAOTDP) for further information and to initiate process.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Repiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply): Other (Specify) Humidified Air&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Repiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Humidified Air&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;&amp;nbsp;Humidified air recommended for comfort.&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~efdaf3cd-55ac-4504-a21d-9ab3d56035a3~NAME~Stroke Palliative Admission Adult Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Stroke Palliative Admission Adult Order Set">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Patient May Go Off Service"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notification of Admission"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care Designation Order Panel"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="NFS NPO Order" max="1" path="/items" name="NPO"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Enteral Feeding Tube - Discontinue"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Enteral Feeding Diet"/>
-        </Item>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Per protocol"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Assessment of Neurological Vital Signs"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Palliative Care Focused Nursing Interventions">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Nurse May Pronounce Death"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Maximum Care and Comfort"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Move Patient to Private Room"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Patient Care Interventions"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Medications"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Consults/Referrals"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Provide Family Education/Support"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Eye/Tissue Donation"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Repiratory Interventions">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Oxygen Therapy"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Humidified Air"/>
-        </Item>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="PC Remove Peripheral IV Order" max="1" path="/items" name="Remove Peripheral IV; Once"/>
-        </Item>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Autonomic Agents">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6f7a50cc-6ee7-48a3-8727-93631daec4a3" concept_name="PHARM scopolamine injection Order" max="1" path="/items" name="scopolamine injection; 0.4 mg, subcutaneous, every 6 hours, as needed, reduce upper airway secretions"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4137060-8f73-4a74-b277-569d87f275cf" concept_name="PHARM glycopyrrolate injection Order" max="1" path="/items" name="glycopyrrolate injection; 0.2 mg, subcutaneous, every 4 hours, as needed, reduce upper airway secretions"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; 1 mg, subcutaneous, every 12 hours"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; 1 mg, subcutaneous, every hour, as needed, for break through pain"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; acetaminophen suppository, 650 mg, rectal, every 4 hours, as needed, for pain"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE injection; 25-50 mg, intravenous, every 4 hours, as needed, nausea, vomiting"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43e0fd0d-5e2a-434e-b496-80438feeefbd" concept_name="PHARM metoclopramide 10 mg in NaCl 0.9% 50 mL injection Order" max="1" path="/items" name="metoclopramide 10 mg in NaCl 0.9% 50 mL injection; 10 mg, intravenous, every 6 hours, as needed, nausea, vomiting"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="261721cb-4944-41a1-b9a3-f7d37c160437" concept_name="PHARM ondansetron, preservative free 4 mg in D5W 50 mL injection Order" max="1" path="/items" name="ondansetron, preservative free 4 mg in D5W 50 mL injection; 4 mg, intravenous, every 8 hours, as needed, nausea, vomiting"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Central Nervous System Agents">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2d22d5b2-02b0-42ed-9870-188ce381b761" concept_name="PHARM haloperidol injection Order" max="1" path="/items" name="haloperidol injection; 2 mg, subcutaneous, every hour, as needed, agitation, restlessness"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="581d8ac7-3660-49d3-b3e9-644b992a8d4b" concept_name="PHARM OLANZapine tartrate injection Order" max="1" path="/items" name="OLANZapine tartrate injection; 5 mg, subcutaneous, 2 times per day, as needed, agitation, restlessness"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43532be5-ba21-477c-bd23-3910062bab09" concept_name="PHARM hydroxypropylmethylcellulose EYE drop 0.5% Order" max="1" path="/items" name="hydroxypropylmethylcellulose EYE drop 0.5%; 1 drop, BOTH eyes, every hour, as needed, dry eyes"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; artificial saliva gel, topical, every 12 hours, as needed, dry mouth"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; artificial saliva spray, 1 spray, oral, every 12 hours, as needed, dry mouth"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="beadff22-ed42-4b10-871c-0e155c767ba8" concept_name="PHARM macrogol-propylene glycol Gel 15%-20% (SECARIS) Order" max="1" path="/items" name="macrogol-propylene glycol Gel 15%-20% (SECARIS); BOTH nostrils, every 4 hours, as needed, dry nose"/>
-        </Item>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consutls/Referrals">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Allied Health Consults">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f2c2a3d4-4c01-4562-b000-db32d3312987" concept_name="CONS Inpatient Consult to Spiritual Care Order" max="1" path="/items" name="Inpatient Consult to Spiritual Care"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f4f2f8ff-c771-4e1a-b005-449449893f93" concept_name="CONS Inpatient Consult to Palliative Medicine Order" max="1" path="/items" name="Inpatient Consult to Palliative Medicine"/>
-        </Item>
-      </Item>
-    </definition>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-      <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-      <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-    </integrity_checks>
-  </template>
+   <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+     <id>efdaf3cd-55ac-4504-a21d-9ab3d56035a3</id>
+     <name>Stroke Palliative Admission Adult Order Set</name>
+     <description>
+       <lifecycle_state>Initial</lifecycle_state>
+       <details>
+         <purpose/>
+         <use/>
+         <misuse/>
+       </details>
+       <other_details>
+         <item>
+           <key>MetaDataSet:Sample Set </key>
+           <value>Template metadata sample set </value>
+         </item>
+         <item>
+           <key>Acknowledgements</key>
+           <value/>
+         </item>
+         <item>
+           <key>Business Process Level</key>
+           <value/>
+         </item>
+         <item>
+           <key>Care setting</key>
+           <value/>
+         </item>
+         <item>
+           <key>Client group</key>
+           <value/>
+         </item>
+         <item>
+           <key>Clinical Record Element</key>
+           <value/>
+         </item>
+         <item>
+           <key>Copyright</key>
+           <value/>
+         </item>
+         <item>
+           <key>Issues</key>
+           <value/>
+         </item>
+         <item>
+           <key>Owner</key>
+           <value/>
+         </item>
+         <item>
+           <key>Sign off</key>
+           <value/>
+         </item>
+         <item>
+           <key>Speciality</key>
+           <value/>
+         </item>
+         <item>
+           <key>User roles</key>
+           <value/>
+         </item>
+       </other_details>
+     </description>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;&amp;nbsp;This order set is ONLY to be used for patients with Goals of Care designation of C1 or C2.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Admit to Inpatient&apos;]/activities[at0156]">
+       <items>
+         <item>
+           <key>Transform.Preselected</key>
+           <value>&lt;p&gt;Y&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Notification of Admission&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Notify Primary Care Physician and Other Clinicians in the active circle of care regarding patient admission&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;NPO&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;NPO except: Other (specify) ***&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Per protocol&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;As appropriate to assess patient comfort.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Patient Care Interventions&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Ensure all vital signs, blood work, and investigations previously ordered are cancelled.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Medications&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Ensure all previous medication orders are discontinued&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Consults/Referrals&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Cancel any outstanding consultations, with exception to Palliative Consults.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Provide Family Education/Support&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Ensure the patient&apos;s family is aware that death is expected and ascertain how they would like to be notified when the patient deteriorates or dies.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Palliative Care Focused Nursing Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Eye/Tissue Donation&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Offer the option of eye and tissue donation to the patient/family. Contact the Donation Coordinator for Human Organ Procurement and Exchange Program (HOPE) or Southern Alberta Organ and Tissue Donation Program (SAOTDP) for further information and to initiate process.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Repiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply): Other (Specify) Humidified Air&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Repiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Humidified Air&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;&amp;nbsp;Humidified air recommended for comfort.&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~efdaf3cd-55ac-4504-a21d-9ab3d56035a3~NAME~Stroke Palliative Admission Adult Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Stroke Palliative Admission Adult Order Set">
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Patient May Go Off Service"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notification of Admission"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care Designation Order Panel"/>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="NFS NPO Order" max="1" path="/items" name="NPO"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Enteral Feeding Tube - Discontinue"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Enteral Feeding Diet"/>
+         </Item>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Per protocol"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Assessment of Neurological Vital Signs"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Palliative Care Focused Nursing Interventions">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Nurse May Pronounce Death"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Maximum Care and Comfort"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Move Patient to Private Room"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Patient Care Interventions"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Medications"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Consults/Referrals"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Provide Family Education/Support"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Eye/Tissue Donation"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Repiratory Interventions">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Oxygen Therapy"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Humidified Air"/>
+         </Item>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="PC Remove Peripheral IV Order" max="1" path="/items" name="Remove Peripheral IV; Once"/>
+         </Item>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Autonomic Agents">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6f7a50cc-6ee7-48a3-8727-93631daec4a3" concept_name="PHARM scopolamine injection Order" max="1" path="/items" name="scopolamine injection; 0.4 mg, subcutaneous, every 6 hours, as needed, reduce upper airway secretions"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4137060-8f73-4a74-b277-569d87f275cf" concept_name="PHARM glycopyrrolate injection Order" max="1" path="/items" name="glycopyrrolate injection; 0.2 mg, subcutaneous, every 4 hours, as needed, reduce upper airway secretions"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; 1 mg, subcutaneous, every 12 hours"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; 1 mg, subcutaneous, every hour, as needed, for break through pain"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; acetaminophen suppository, 650 mg, rectal, every 4 hours, as needed, for pain"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE injection; 25-50 mg, intravenous, every 4 hours, as needed, nausea, vomiting"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43e0fd0d-5e2a-434e-b496-80438feeefbd" concept_name="PHARM metoclopramide 10 mg in NaCl 0.9% 50 mL injection Order" max="1" path="/items" name="metoclopramide 10 mg in NaCl 0.9% 50 mL injection; 10 mg, intravenous, every 6 hours, as needed, nausea, vomiting"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="261721cb-4944-41a1-b9a3-f7d37c160437" concept_name="PHARM ondansetron, preservative free 4 mg in D5W 50 mL injection Order" max="1" path="/items" name="ondansetron, preservative free 4 mg in D5W 50 mL injection; 4 mg, intravenous, every 8 hours, as needed, nausea, vomiting"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Central Nervous System Agents">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2d22d5b2-02b0-42ed-9870-188ce381b761" concept_name="PHARM haloperidol injection Order" max="1" path="/items" name="haloperidol injection; 2 mg, subcutaneous, every hour, as needed, agitation, restlessness"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="581d8ac7-3660-49d3-b3e9-644b992a8d4b" concept_name="PHARM OLANZapine tartrate injection Order" max="1" path="/items" name="OLANZapine tartrate injection; 5 mg, subcutaneous, 2 times per day, as needed, agitation, restlessness"/>
+         </Item>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43532be5-ba21-477c-bd23-3910062bab09" concept_name="PHARM hydroxypropylmethylcellulose EYE drop 0.5% Order" max="1" path="/items" name="hydroxypropylmethylcellulose EYE drop 0.5%; 1 drop, BOTH eyes, every hour, as needed, dry eyes"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; artificial saliva gel, topical, every 12 hours, as needed, dry mouth"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; artificial saliva spray, 1 spray, oral, every 12 hours, as needed, dry mouth"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="beadff22-ed42-4b10-871c-0e155c767ba8" concept_name="PHARM macrogol-propylene glycol Gel 15%-20% (SECARIS) Order" max="1" path="/items" name="macrogol-propylene glycol Gel 15%-20% (SECARIS); BOTH nostrils, every 4 hours, as needed, dry nose"/>
+         </Item>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consutls/Referrals">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Allied Health Consults">
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f2c2a3d4-4c01-4562-b000-db32d3312987" concept_name="CONS Inpatient Consult to Spiritual Care Order" max="1" path="/items" name="Inpatient Consult to Spiritual Care"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker"/>
+           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f4f2f8ff-c771-4e1a-b005-449449893f93" concept_name="CONS Inpatient Consult to Palliative Medicine Order" max="1" path="/items" name="Inpatient Consult to Palliative Medicine"/>
+         </Item>
+       </Item>
+     </definition>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+       <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+       <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+       <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+       <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+       <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+     </integrity_checks>
+   </template>
