@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+ <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+   <id>12e2db04-2dee-411e-a99d-6275f19a2f59</id>
+   <name>Diagnostic Imaging Ortho Postprocedure Adult Order Group</name>
+   <description>
+     <lifecycle_state>Initial</lifecycle_state>
+     <details>
+       <purpose/>
+       <use/>
+       <misuse/>
+     </details>
+     <other_details>
+       <item>
+         <key>MetaDataSet:Sample Set </key>
+         <value>Template metadata sample set </value>
+       </item>
+       <item>
+         <key>Acknowledgements</key>
+         <value/>
+       </item>
+       <item>
+         <key>Business Process Level</key>
+         <value/>
+       </item>
+       <item>
+         <key>Care setting</key>
+         <value/>
+       </item>
+       <item>
+         <key>Client group</key>
+         <value/>
+       </item>
+       <item>
+         <key>Clinical Record Element</key>
+         <value/>
+       </item>
+       <item>
+         <key>Copyright</key>
+         <value/>
+       </item>
+       <item>
+         <key>Issues</key>
+         <value/>
+       </item>
+       <item>
+         <key>Owner</key>
+         <value/>
+       </item>
+       <item>
+         <key>Sign off</key>
+         <value/>
+       </item>
+       <item>
+         <key>Speciality</key>
+         <value/>
+       </item>
+       <item>
+         <key>User roles</key>
+         <value/>
+       </item>
+     </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~12e2db04-2dee-411e-a99d-6275f19a2f59~NAME~Diagnostic Imaging Ortho Postprocedure Adult Order Group}</value>
+       </item>
+     </items>
+   </annotations>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Diagnostic Imaging Ortho Postprocedure Adult Order Group">
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Shoulder GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b9e6eab4-ceef-45cc-b7c9-44838dbd4ed5" concept_name="DI GR Shoulder 4 or More Projections Left Order" max="1" path="/items" name="GR Shoulder 4 or More Projections Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da655372-e504-46da-9483-8f62e6bc1640" concept_name="DI GR Shoulder 4 or More Projections Right Order" max="1" path="/items" name="GR Shoulder 4 or More Projections Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd5572a2-1d99-419e-b742-83db423664ba" concept_name="DI GR Scapula Left Order" max="1" path="/items" name="GR Scapula Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="013994fc-0c41-4d5e-9b09-02fdb3fb3835" concept_name="DI GR Scapula Right Order" max="1" path="/items" name="GR Scapula Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bf2ec153-bbfb-4f32-b45c-9503b51a6407" concept_name="DI GR Clavicle Left Order" max="1" path="/items" name="GR Clavicle Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d37dc8d7-17a6-4f73-bc8f-6556e2e9309b" concept_name="DI GR Clavicle Right Order" max="1" path="/items" name="GR Clavicle Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Humerus, Elbow, Radius and Ulna GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="667a90c0-44fd-45b7-9d11-febd3a80db3b" concept_name="DI GR Humerus Left Order" max="1" path="/items" name="GR Humerus Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7a93784-7054-4d1d-b7e6-53ab753f647e" concept_name="DI GR Humerus Right Order" max="1" path="/items" name="GR Humerus Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ba3e4e4a-dbfb-4302-bcf8-bc946156f75f" concept_name="DI GR Elbow Left Order" max="1" path="/items" name="GR Elbow Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b0367421-8fbd-4c10-a17a-fae7b7d5d516" concept_name="DI GR Elbow with Obliques Left Order" max="1" path="/items" name="GR Elbow with Obliques Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0397442e-e275-47b0-b09c-e1d3b760091c" concept_name="DI GR Elbow Right Order" max="1" path="/items" name="GR Elbow Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ad03c5d-1c77-423e-910c-020dc24090df" concept_name="DI GR Elbow with Obliques Right Order" max="1" path="/items" name="GR Elbow with Obliques Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f45938c-09c6-4c19-85df-d53776f9ffd0" concept_name="DI GR Radius and Ulna Left Order" max="1" path="/items" name="GR Radius and Ulna Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a800e9a-1a7f-493c-bdab-8a3fa077580a" concept_name="DI GR Radius and Ulna Right Order" max="1" path="/items" name="GR Radius and Ulna Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Hand and Wrist GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32775e8d-acfb-4d55-877d-0e0b02c73cbd" concept_name="DI GR Finger Right Order" max="1" path="/items" name="GR Finger Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d17ca256-420f-4566-bee7-0d28efe0e46e" concept_name="DI GR Finger Left Order" max="1" path="/items" name="GR Finger Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd450674-1b77-4252-931e-0d900b5597d4" concept_name="DI GR Finger Bilateral Order" max="1" path="/items" name="GR Finger Bilateral; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="85d1fd9b-ab83-4304-b0a7-b1cce42a41e4" concept_name="DI GR Hand Left Order" max="1" path="/items" name="GR Hand Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbc85467-3847-4dea-a808-24404465ae47" concept_name="DI GR Hand Right Order" max="1" path="/items" name="GR Hand Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03c699bc-40a3-49a6-80b9-d50d369b8a6d" concept_name="DI GR Scaphoid Left Order" max="1" path="/items" name="GR Scaphoid Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0500ab4b-f919-4b1e-ba4e-3072c1e3f632" concept_name="DI GR Scaphoid Right Order" max="1" path="/items" name="GR Scaphoid Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d21eb88-839d-4afa-adf5-9cf46e4e44ee" concept_name="DI GR Wrist Right Order" max="1" path="/items" name="GR Wrist Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad68b891-b68f-4f66-88ca-a46bc4707386" concept_name="DI GR Wrist Left Order" max="1" path="/items" name="GR Wrist Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Spine GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="db64f6f9-9161-4fb9-abec-75610691f63a" concept_name="DI GR Cervical Spine Order" max="1" path="/items" name="GR Cervical Spine; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76d9d81a-6d16-4f61-b690-9e9892671a56" concept_name="DI GR Thoracic Spine Order" max="1" path="/items" name="GR Thoracic Spine; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d5f6cfc5-4f2a-4f22-a185-1995ca9b4df6" concept_name="DI GR Lumbar Spine Order" max="1" path="/items" name="GR Lumbar Spine; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3519cee9-e63f-45d4-8671-8d1054988e30" concept_name="DI GR Sacrum Order" max="1" path="/items" name="GR Sacrum; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Hip and Pelvis GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3cff7d41-2e53-4d24-9eb2-72088940cdac" concept_name="DI GR Pelvis Order" max="1" path="/items" name="GR Pelvis; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b452b70b-289a-41b7-a3ee-8332cf8cd305" concept_name="DI GR Hip Right Order" max="1" path="/items" name="GR Hip Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="40948bc2-fe7f-4243-a330-c9321daac977" concept_name="DI GR Hip Left Order" max="1" path="/items" name="GR Hip Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="449762fe-2be7-4062-a0a2-9cf6f76ca314" concept_name="DI GR Pelvis and Hip Right Order" max="1" path="/items" name="GR Pelvis and Hip Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6d00e636-8827-4345-9eea-a684f98bc8c0" concept_name="DI GR Pelvis and Hip Left Order" max="1" path="/items" name="GR Pelvis and Hip Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Femur, Tibia, Fibula and Knee GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c41f00b8-51e2-46e5-a9e2-7cf770799e80" concept_name="DI GR Femur Left Order" max="1" path="/items" name="GR Femur Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df3e83b9-8166-4db0-8b6e-f2106965e7ad" concept_name="DI GR Femur Right Order" max="1" path="/items" name="GR Femur Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="939ff16f-d0a5-41e6-8a95-c84e1986352d" concept_name="DI GR Tibia and Fibula Right Order" max="1" path="/items" name="GR Tibia and Fibula Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9fd069e7-24b5-4f0d-bda8-1959f04d9ede" concept_name="DI GR Tibia and Fibula Left Order" max="1" path="/items" name="GR Tibia and Fibula Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6d6e865d-8c96-4bbd-b99f-968e756d12f6" concept_name="DI GR Knee Right Order" max="1" path="/items" name="GR Knee Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eab7c150-de2b-418a-8f51-3230531f1037" concept_name="DI GR Knee Skyline Right Order" max="1" path="/items" name="GR Knee Skyline Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46e93bd9-4f9c-4d38-89d5-a877f0d5de6b" concept_name="DI GR Knee with Obliques Right Order" max="1" path="/items" name="GR Knee with Obliques Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d53eb5c6-25de-4f97-9207-82c6234d328d" concept_name="DI GR Knee Left Order" max="1" path="/items" name="GR Knee Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="043fab70-dacf-4cdd-9383-be2792013d93" concept_name="DI GR Knee Skyline Left Order" max="1" path="/items" name="GR Knee Skyline Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5db52e87-6d44-4224-99d7-642a7945ea7c" concept_name="DI GR Knee with Obliques Left Order" max="1" path="/items" name="GR Knee with Obliques Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="15467f18-1862-4819-b2a6-71a8c3457a6f" concept_name="DI GR Knee Weightbearing Hip to Ankle Bilateral Order" max="1" path="/items" name="GR Knee Weightbearing Hip to Ankle Bilateral; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Foot and Ankle GR">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="16ef10e7-4f54-4aa0-9079-25f52c33896b" concept_name="DI GR Toe Left Order" max="1" path="/items" name="GR Toe Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cfe8a752-47df-4ab5-9731-55699224071d" concept_name="DI GR Toe Right Order" max="1" path="/items" name="GR Toe Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="406561e9-80fa-4488-aad8-62f7105f9159" concept_name="DI GR Calcaneus Left Order" max="1" path="/items" name="GR Calcaneus Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9663ef22-7943-42e1-961e-e12899fa8165" concept_name="DI GR Calcaneus Right Order" max="1" path="/items" name="GR Calcaneus Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="399a86a9-4651-4394-b595-25215f53af6f" concept_name="DI GR Calcaneus Bilateral Order" max="1" path="/items" name="GR Calcaneus Bilateral; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="206fc40e-b772-4fdc-91e5-ef67747bfb9d" concept_name="DI GR Foot Left Order" max="1" path="/items" name="GR Foot Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bc73ca54-0aed-4d78-b32f-eefe4cd18e87" concept_name="DI GR Foot Right Order" max="1" path="/items" name="GR Foot Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4f97e8d-326f-44bb-9e0f-e9f8fe91f486" concept_name="DI GR Ankle Left Order" max="1" path="/items" name="GR Ankle Left; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1e524f4b-1905-468f-988c-8be9656c1154" concept_name="DI GR Ankle Right Order" max="1" path="/items" name="GR Ankle Right; Once"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+     </Item>
+   </definition>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+   </integrity_checks>
+ </template>
