@@ -1,189 +1,189 @@
 <?xml version="1.0"?>
- <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-   <id>acaca930-0aeb-4aec-9210-57bebcba54fe</id>
-   <name>ICU Therapeutic Plasma Exchange Replacement Fluid Order Panel</name>
-   <description>
-     <lifecycle_state>Initial</lifecycle_state>
-     <details>
-       <purpose/>
-       <use/>
-       <misuse/>
-     </details>
-     <other_details>
-       <item>
-         <key>MetaDataSet:Sample Set </key>
-         <value>Template metadata sample set </value>
-       </item>
-       <item>
-         <key>Acknowledgements</key>
-         <value/>
-       </item>
-       <item>
-         <key>Business Process Level</key>
-         <value/>
-       </item>
-       <item>
-         <key>Care setting</key>
-         <value/>
-       </item>
-       <item>
-         <key>Client group</key>
-         <value/>
-       </item>
-       <item>
-         <key>Clinical Record Element</key>
-         <value/>
-       </item>
-       <item>
-         <key>Copyright</key>
-         <value/>
-       </item>
-       <item>
-         <key>Issues</key>
-         <value/>
-       </item>
-       <item>
-         <key>Owner</key>
-         <value/>
-       </item>
-       <item>
-         <key>Sign off</key>
-         <value/>
-       </item>
-       <item>
-         <key>Speciality</key>
-         <value/>
-       </item>
-       <item>
-         <key>User roles</key>
-         <value/>
-       </item>
-     </other_details>
-   </description>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>Transform.Technical Notes</key>
-         <value>&lt;p&gt;&amp;nbsp;From May 11 -&amp;nbsp;&lt;/p&gt;&lt;p&gt;Talk to Jason Beals&lt;/p&gt;&lt;p&gt;Add comment – take volume from previous section&lt;/p&gt;&lt;p&gt;? Default apheresis?&lt;/p&gt;</value>
-       </item>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;Replacement fluid should be administered alternating 1 L at a time, with the exception of plasma, which should be administered last.&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;No bleeding&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;Patients who are &lt;strong&gt;not at risk of bleeding&lt;/strong&gt; should receive replacement with a combination of 60-70% albumin and 30-40% 0.9% saline to equal the total replacement volume. 100% albumin should be avoided due to risk of hyperalbuminemia.&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;No bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prepare Albumin 5%&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;No bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;Patients who are &lt;strong&gt;bleeding or are at high risk of bleeding&lt;/strong&gt; should receive replacement with 10-15 mL/Kg of plasma, administered at the end of the procedure, and the remainder of the total replacement volume should be made up with a combination of 60-70% albumin and 30-40% NS&lt;/em&gt;&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma Protein Product Albumin 5% Panel&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prepare Albumin 5%&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma Protein Product Albumin 5% Panel&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma (10-15 mL/kg, rounded to nearest 250 mL)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prepare Plasma&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&amp;nbsp;Indication: Plasmapheresis/Plasma Exchange&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma (10-15 mL/kg, rounded to nearest 250 mL)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Plasma&apos;]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;&amp;nbsp;Indication: Plasmapheresis/Plasma Exchange&lt;/p&gt;&lt;p&gt;Transfusion duration per unit (hrs): ***&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~acaca930-0aeb-4aec-9210-57bebcba54fe~NAME~ICU Therapeutic Plasma Exchange Replacement Fluid Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Replacement Fluid">
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="No bleeding">
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Plasma Protein Product Albumin 5% Panel">
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0449b196-5fe7-4b89-8ef7-f74f497c64a1" concept_name="PC Prepare Albumin 5% Order" max="1" path="/items" name="Prepare Albumin 5%"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43f10889-d342-4451-acdc-868bade0e82b" concept_name="PHARM Albumin Human 5% Order" max="1" path="/items" name="Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-       </Item>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 1-2250 mL/hr, Intravenous, Once"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-     </Item>
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Bleeding or high risk of bleeding">
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Plasma Protein Product Albumin 5% Panel">
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0449b196-5fe7-4b89-8ef7-f74f497c64a1" concept_name="PC Prepare Albumin 5% Order" max="1" path="/items" name="Prepare Albumin 5%"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43f10889-d342-4451-acdc-868bade0e82b" concept_name="PHARM Albumin Human 5% Order" max="1" path="/items" name="Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-       </Item>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 1-2250 mL/hr, Intravenous, Once"/>
-       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Plasma (10-15 mL/kg, rounded to nearest 250 mL)">
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4361620f-50d8-46d9-8257-a4417efd37c1" concept_name="PC Prepare Plasma Order" max="1" path="/items" name="Prepare Plasma"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="58f2f408-4601-43a4-8ac8-e7f48f82d529" concept_name="LAB Transfuse Plasma Order" max="1" path="/items" name="Transfuse Plasma"/>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-       </Item>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-     </Item>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-   </definition>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
-     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
-   </integrity_checks>
- </template>
+  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+    <id>acaca930-0aeb-4aec-9210-57bebcba54fe</id>
+    <name>ICU Therapeutic Plasma Exchange Replacement Fluid Order Panel</name>
+    <description>
+      <lifecycle_state>Initial</lifecycle_state>
+      <details>
+        <purpose/>
+        <use/>
+        <misuse/>
+      </details>
+      <other_details>
+        <item>
+          <key>MetaDataSet:Sample Set </key>
+          <value>Template metadata sample set </value>
+        </item>
+        <item>
+          <key>Acknowledgements</key>
+          <value/>
+        </item>
+        <item>
+          <key>Business Process Level</key>
+          <value/>
+        </item>
+        <item>
+          <key>Care setting</key>
+          <value/>
+        </item>
+        <item>
+          <key>Client group</key>
+          <value/>
+        </item>
+        <item>
+          <key>Clinical Record Element</key>
+          <value/>
+        </item>
+        <item>
+          <key>Copyright</key>
+          <value/>
+        </item>
+        <item>
+          <key>Issues</key>
+          <value/>
+        </item>
+        <item>
+          <key>Owner</key>
+          <value/>
+        </item>
+        <item>
+          <key>Sign off</key>
+          <value/>
+        </item>
+        <item>
+          <key>Speciality</key>
+          <value/>
+        </item>
+        <item>
+          <key>User roles</key>
+          <value/>
+        </item>
+      </other_details>
+    </description>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+      <items>
+        <item>
+          <key>Transform.Technical Notes</key>
+          <value>&lt;p&gt;&amp;nbsp;From May 11 -&amp;nbsp;&lt;/p&gt;&lt;p&gt;Talk to Jason Beals&lt;/p&gt;&lt;p&gt;Add comment – take volume from previous section&lt;/p&gt;&lt;p&gt;? Default apheresis?&lt;/p&gt;</value>
+        </item>
+        <item>
+          <key>CKT.Clinical Guidance</key>
+          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;Replacement fluid should be administered alternating 1 L at a time, with the exception of plasma, which should be administered last.&lt;/em&gt;&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;No bleeding&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+      <items>
+        <item>
+          <key>CKT.Clinical Guidance</key>
+          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;Patients who are &lt;strong&gt;not at risk of bleeding&lt;/strong&gt; should receive replacement with a combination of 60-70% albumin and 30-40% 0.9% saline to equal the total replacement volume. 100% albumin should be avoided due to risk of hyperalbuminemia.&lt;/em&gt;&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;No bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prepare Albumin 5%&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;No bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+      <items>
+        <item>
+          <key>CKT.Clinical Guidance</key>
+          <value>&lt;p&gt;&amp;nbsp;&lt;em&gt;Patients who are &lt;strong&gt;bleeding or are at high risk of bleeding&lt;/strong&gt; should receive replacement with 10-15 mL/Kg of plasma, administered at the end of the procedure, and the remainder of the total replacement volume should be made up with a combination of 60-70% albumin and 30-40% NS&lt;/em&gt;&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma Protein Product Albumin 5% Panel&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prepare Albumin 5%&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma Protein Product Albumin 5% Panel&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&amp;nbsp;Indication: Plasma exchange&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma (10-15 mL/kg, rounded to nearest 250 mL)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prepare Plasma&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&amp;nbsp;Indication: Plasmapheresis/Plasma Exchange&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Bleeding or high risk of bleeding&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Plasma (10-15 mL/kg, rounded to nearest 250 mL)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Plasma&apos;]/activities[at0001]">
+      <items>
+        <item>
+          <key>CKT.Content Details</key>
+          <value>&lt;p&gt;&amp;nbsp;Indication: Plasmapheresis/Plasma Exchange&lt;/p&gt;&lt;p&gt;Transfusion duration per unit (hrs): ***&lt;/p&gt;</value>
+        </item>
+      </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~acaca930-0aeb-4aec-9210-57bebcba54fe~NAME~ICU Therapeutic Plasma Exchange Replacement Fluid Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Replacement Fluid">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="No bleeding">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Plasma Protein Product Albumin 5% Panel">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0449b196-5fe7-4b89-8ef7-f74f497c64a1" concept_name="PC Prepare Albumin 5% Order" max="1" path="/items" name="Prepare Albumin 5%"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43f10889-d342-4451-acdc-868bade0e82b" concept_name="PHARM Albumin Human 5% Order" max="1" path="/items" name="Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 1-2250 mL/hr, Intravenous, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Bleeding or high risk of bleeding">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Plasma Protein Product Albumin 5% Panel">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0449b196-5fe7-4b89-8ef7-f74f497c64a1" concept_name="PC Prepare Albumin 5% Order" max="1" path="/items" name="Prepare Albumin 5%"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43f10889-d342-4451-acdc-868bade0e82b" concept_name="PHARM Albumin Human 5% Order" max="1" path="/items" name="Albumin, Human 5%; ___mLs, Intravenous, Once (round to nearest 250 mL)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 1-2250 mL/hr, Intravenous, Once"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Plasma (10-15 mL/kg, rounded to nearest 250 mL)">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4361620f-50d8-46d9-8257-a4417efd37c1" concept_name="PC Prepare Plasma Order" max="1" path="/items" name="Prepare Plasma"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="58f2f408-4601-43a4-8ac8-e7f48f82d529" concept_name="LAB Transfuse Plasma Order" max="1" path="/items" name="Transfuse Plasma"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </definition>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+      <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+      <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+      <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+    </integrity_checks>
+    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+      <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+    </integrity_checks>
+  </template>
