@@ -1,144 +1,144 @@
 <?xml version="1.0"?>
-  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-    <id>b1727c17-f2c8-4bc3-9546-0db3924623c0</id>
-    <name>COVID-19 ICU Admission Adult IV Maintenance Smart Group</name>
-    <description>
-      <lifecycle_state>Initial</lifecycle_state>
-      <details>
-        <purpose/>
-        <use/>
-        <misuse/>
-      </details>
-      <other_details>
-        <item>
-          <key>MetaDataSet:Sample Set </key>
-          <value>Template metadata sample set </value>
-        </item>
-        <item>
-          <key>Acknowledgements</key>
-          <value/>
-        </item>
-        <item>
-          <key>Business Process Level</key>
-          <value/>
-        </item>
-        <item>
-          <key>Care setting</key>
-          <value/>
-        </item>
-        <item>
-          <key>Client group</key>
-          <value/>
-        </item>
-        <item>
-          <key>Clinical Record Element</key>
-          <value/>
-        </item>
-        <item>
-          <key>Copyright</key>
-          <value/>
-        </item>
-        <item>
-          <key>Issues</key>
-          <value/>
-        </item>
-        <item>
-          <key>Owner</key>
-          <value/>
-        </item>
-        <item>
-          <key>Sign off</key>
-          <value/>
-        </item>
-        <item>
-          <key>Speciality</key>
-          <value/>
-        </item>
-        <item>
-          <key>User roles</key>
-          <value/>
-        </item>
-      </other_details>
-    </description>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
-      <items>
-        <item>
-          <key>Technical.ﻩ Technical Traceability</key>
-          <value>{~AHSID~b1727c17-f2c8-4bc3-9546-0db3924623c0~NAME~COVID-19 ICU Admission Adult IV Maintenance Smart Group}</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses (single select)&apos;]">
-      <items>
-        <item>
-          <key>Transform.Technical Notes</key>
-          <value>&lt;p&gt;Items below should be single select&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses (single select)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;Conservative intravenous fluid strategies in keeping with lung preservation strategies recommended&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions (single select)&apos;]">
-      <items>
-        <item>
-          <key>Transform.Technical Notes</key>
-          <value>&lt;p&gt;Items below should be single select&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions (single select)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;Conservative intravenous fluid strategies in keeping with lung preservation strategies recommended&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="COVID-19 ICU Admission Adult IV Maintenance Smart Group">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="edc6d443-87da-40da-9326-33d7653b0129" concept_name="PC Maintain IV Access Order" max="1" path="/items" name="Maintain IV Access"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="PC Convert to Saline Lock IV Order" max="1" path="/items" name="Convert to Saline Lock IV; Saline Lock IV 5 mL, Every 12 hours, Flush all unused CENTRAL line ports"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="PC Convert to Saline Lock IV Order" max="1" path="/items" name="Convert to Saline Lock IV; Saline Lock IV 3 mL, Every 12 hours, Flush all unused PERIPHERAL line IV&apos;s"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 5 mL, IV lock, every 12 hours, Flush all UNUSED CENTRAL line ports"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 3 mL, IV lock, every 12 hours, Flush all UNUSED PERIPHERAL line ports"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 5 mL, IV lock, every 12 hours, Flush all PICC line ports"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses (single select)">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer s injection Order" max="1" path="/items" name="lactated Ringer&apos;s injection; intravenous, once"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; intravenous, once"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM electrolyte solution (PLASMA-LYTE A) injection Order" max="1" path="/items" name="electrolyte solution (PLASMA-LYTE A) injection; intravenous, once"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions (single select)">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer s injection Order" max="1" path="/items" name="lactated Ringer&apos;s injection; 30 mL/hr, intravenous, continuous, stop when drinking well (when patient tolerates 800 mL oral intake)"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 30 mL/hr, intravenous, continuous, stop when drinking well (when patient tolerates 800 mL oral intake)"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM electrolyte solution (PLASMA-LYTE A) injection Order" max="1" path="/items" name="electrolyte solution (PLASMA-LYTE A) injection; 30 mL/hr, intravenous, continuous, stop when drinking well (when patient tolerates 800 mL oral intake)"/>
-      </Item>
-    </definition>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-      <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-      <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-    </integrity_checks>
-  </template>
+   <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+     <id>b1727c17-f2c8-4bc3-9546-0db3924623c0</id>
+     <name>COVID-19 ICU Admission Adult IV Maintenance Smart Group</name>
+     <description>
+       <lifecycle_state>Initial</lifecycle_state>
+       <details>
+         <purpose/>
+         <use/>
+         <misuse/>
+       </details>
+       <other_details>
+         <item>
+           <key>MetaDataSet:Sample Set </key>
+           <value>Template metadata sample set </value>
+         </item>
+         <item>
+           <key>Acknowledgements</key>
+           <value/>
+         </item>
+         <item>
+           <key>Business Process Level</key>
+           <value/>
+         </item>
+         <item>
+           <key>Care setting</key>
+           <value/>
+         </item>
+         <item>
+           <key>Client group</key>
+           <value/>
+         </item>
+         <item>
+           <key>Clinical Record Element</key>
+           <value/>
+         </item>
+         <item>
+           <key>Copyright</key>
+           <value/>
+         </item>
+         <item>
+           <key>Issues</key>
+           <value/>
+         </item>
+         <item>
+           <key>Owner</key>
+           <value/>
+         </item>
+         <item>
+           <key>Sign off</key>
+           <value/>
+         </item>
+         <item>
+           <key>Speciality</key>
+           <value/>
+         </item>
+         <item>
+           <key>User roles</key>
+           <value/>
+         </item>
+       </other_details>
+     </description>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+       <items>
+         <item>
+           <key>Technical.ﻩ Technical Traceability</key>
+           <value>{~AHSID~b1727c17-f2c8-4bc3-9546-0db3924623c0~NAME~COVID-19 ICU Admission Adult IV Maintenance Smart Group}</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses (single select)&apos;]">
+       <items>
+         <item>
+           <key>Transform.Technical Notes</key>
+           <value>&lt;p&gt;Items below should be single select&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses (single select)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;Conservative intravenous fluid strategies in keeping with lung preservation strategies recommended&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions (single select)&apos;]">
+       <items>
+         <item>
+           <key>Transform.Technical Notes</key>
+           <value>&lt;p&gt;Items below should be single select&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions (single select)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;Conservative intravenous fluid strategies in keeping with lung preservation strategies recommended&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="COVID-19 ICU Admission Adult IV Maintenance Smart Group">
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="edc6d443-87da-40da-9326-33d7653b0129" concept_name="PC Maintain IV Access Order" max="1" path="/items" name="Maintain IV Access"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="PC Convert to Saline Lock IV Order" max="1" path="/items" name="Convert to Saline Lock IV; Saline Lock IV 5 mL, Every 12 hours, Flush all unused CENTRAL line ports"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="PC Convert to Saline Lock IV Order" max="1" path="/items" name="Convert to Saline Lock IV; Saline Lock IV 3 mL, Every 12 hours, Flush all unused PERIPHERAL line IV&apos;s"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 5 mL, IV lock, every 12 hours, Flush all UNUSED CENTRAL line ports"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 3 mL, IV lock, every 12 hours, Flush all UNUSED PERIPHERAL line ports"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 5 mL, IV lock, every 12 hours, Flush all PICC line ports"/>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses (single select)">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer s injection Order" max="1" path="/items" name="lactated Ringer&apos;s injection; intravenous, once"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; intravenous, once"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM electrolyte solution (PLASMA-LYTE A) injection Order" max="1" path="/items" name="electrolyte solution (PLASMA-LYTE A) injection; intravenous, once"/>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions (single select)">
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer s injection Order" max="1" path="/items" name="lactated Ringer&apos;s injection; 30 mL/hr, intravenous, continuous, stop when drinking well (when patient tolerates 800 mL oral intake)"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 30 mL/hr, intravenous, continuous, stop when drinking well (when patient tolerates 800 mL oral intake)"/>
+         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM electrolyte solution (PLASMA-LYTE A) injection Order" max="1" path="/items" name="electrolyte solution (PLASMA-LYTE A) injection; 30 mL/hr, intravenous, continuous, stop when drinking well (when patient tolerates 800 mL oral intake)"/>
+       </Item>
+     </definition>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+       <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+       <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+       <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+       <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+       <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+     </integrity_checks>
+   </template>
