@@ -1,97 +1,97 @@
 <?xml version="1.0"?>
-  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-    <id>96e83f0f-a31f-4b61-a8d2-f48e14d1d27e</id>
-    <name>COVID-19 ICU Adult Admission Line Patency Smart Group</name>
-    <description>
-      <lifecycle_state>Initial</lifecycle_state>
-      <details>
-        <purpose/>
-        <use/>
-        <misuse/>
-      </details>
-      <other_details>
-        <item>
-          <key>MetaDataSet:Sample Set </key>
-          <value>Template metadata sample set </value>
-        </item>
-        <item>
-          <key>Acknowledgements</key>
-          <value/>
-        </item>
-        <item>
-          <key>Business Process Level</key>
-          <value/>
-        </item>
-        <item>
-          <key>Care setting</key>
-          <value/>
-        </item>
-        <item>
-          <key>Client group</key>
-          <value/>
-        </item>
-        <item>
-          <key>Clinical Record Element</key>
-          <value/>
-        </item>
-        <item>
-          <key>Copyright</key>
-          <value/>
-        </item>
-        <item>
-          <key>Issues</key>
-          <value/>
-        </item>
-        <item>
-          <key>Owner</key>
-          <value/>
-        </item>
-        <item>
-          <key>Sign off</key>
-          <value/>
-        </item>
-        <item>
-          <key>Speciality</key>
-          <value/>
-        </item>
-        <item>
-          <key>User roles</key>
-          <value/>
-        </item>
-      </other_details>
-    </description>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
-      <items>
-        <item>
-          <key>Technical.ﻩ Technical Traceability</key>
-          <value>{~AHSID~96e83f0f-a31f-4b61-a8d2-f48e14d1d27e~NAME~COVID-19 ICU Adult Admission Line Patency Smart Group}</value>
-        </item>
-      </items>
-    </annotations>
-    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Line Patency - Maintenance of Pressure Lines">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Arterial Line">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 3 mL/hr, intra-arterial, for arterial line patency"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin 250 units in NaCl 0.9% 250 mL bag (1 unit/mL), 3 mL/hr, intra-arterial, for arterial line patency"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Central Venous Pressure Catheter">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 3 mL/hr, intravenous, for line patency"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin 250 units in NaCl 0.9% 250 mL bag (1 unit/mL), 3 mL/hr, intravenous, for line patency"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Pulmonary Arterial Line">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 3 mL/hr, intra-arterial, for pulmonary artery catheter patency"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin 250 units in NaCl 0.9% 250 mL bag (1 unit/mL), 3 mL/hr, intra-arterial, for pulmonary artery catheter patency"/>
-      </Item>
-    </definition>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-      <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-    </integrity_checks>
-  </template>
+   <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+     <id>96e83f0f-a31f-4b61-a8d2-f48e14d1d27e</id>
+     <name>COVID-19 ICU Adult Admission Line Patency Smart Group</name>
+     <description>
+       <lifecycle_state>Initial</lifecycle_state>
+       <details>
+         <purpose/>
+         <use/>
+         <misuse/>
+       </details>
+       <other_details>
+         <item>
+           <key>MetaDataSet:Sample Set </key>
+           <value>Template metadata sample set </value>
+         </item>
+         <item>
+           <key>Acknowledgements</key>
+           <value/>
+         </item>
+         <item>
+           <key>Business Process Level</key>
+           <value/>
+         </item>
+         <item>
+           <key>Care setting</key>
+           <value/>
+         </item>
+         <item>
+           <key>Client group</key>
+           <value/>
+         </item>
+         <item>
+           <key>Clinical Record Element</key>
+           <value/>
+         </item>
+         <item>
+           <key>Copyright</key>
+           <value/>
+         </item>
+         <item>
+           <key>Issues</key>
+           <value/>
+         </item>
+         <item>
+           <key>Owner</key>
+           <value/>
+         </item>
+         <item>
+           <key>Sign off</key>
+           <value/>
+         </item>
+         <item>
+           <key>Speciality</key>
+           <value/>
+         </item>
+         <item>
+           <key>User roles</key>
+           <value/>
+         </item>
+       </other_details>
+     </description>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+       <items>
+         <item>
+           <key>Technical.ﻩ Technical Traceability</key>
+           <value>{~AHSID~96e83f0f-a31f-4b61-a8d2-f48e14d1d27e~NAME~COVID-19 ICU Adult Admission Line Patency Smart Group}</value>
+         </item>
+       </items>
+     </annotations>
+     <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Line Patency - Maintenance of Pressure Lines">
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Arterial Line">
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 3 mL/hr, intra-arterial, for arterial line patency"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin 250 units in NaCl 0.9% 250 mL bag (1 unit/mL), 3 mL/hr, intra-arterial, for arterial line patency"/>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Central Venous Pressure Catheter">
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 3 mL/hr, intravenous, for line patency"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin 250 units in NaCl 0.9% 250 mL bag (1 unit/mL), 3 mL/hr, intravenous, for line patency"/>
+       </Item>
+       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Pulmonary Arterial Line">
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 3 mL/hr, intra-arterial, for pulmonary artery catheter patency"/>
+         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin 250 units in NaCl 0.9% 250 mL bag (1 unit/mL), 3 mL/hr, intra-arterial, for pulmonary artery catheter patency"/>
+       </Item>
+     </definition>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+       <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+       <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+       <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+       <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+     </integrity_checks>
+   </template>
