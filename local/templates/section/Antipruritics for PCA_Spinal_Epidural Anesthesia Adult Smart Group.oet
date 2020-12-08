@@ -1,121 +1,121 @@
 <?xml version="1.0"?>
-  <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-    <id>647b07f0-223b-440c-8f19-6d3b6d6b2e73</id>
-    <name>Antipruritics for PCA_Spinal_Epidural Anesthesia Adult Smart Group</name>
-    <description>
-      <lifecycle_state>Initial</lifecycle_state>
-      <details>
-        <purpose/>
-        <use/>
-        <misuse/>
-      </details>
-      <other_details>
-        <item>
-          <key>MetaDataSet:Sample Set </key>
-          <value>Template metadata sample set </value>
-        </item>
-        <item>
-          <key>Acknowledgements</key>
-          <value/>
-        </item>
-        <item>
-          <key>Business Process Level</key>
-          <value/>
-        </item>
-        <item>
-          <key>Care setting</key>
-          <value/>
-        </item>
-        <item>
-          <key>Client group</key>
-          <value/>
-        </item>
-        <item>
-          <key>Clinical Record Element</key>
-          <value/>
-        </item>
-        <item>
-          <key>Copyright</key>
-          <value/>
-        </item>
-        <item>
-          <key>Issues</key>
-          <value/>
-        </item>
-        <item>
-          <key>Owner</key>
-          <value/>
-        </item>
-        <item>
-          <key>Sign off</key>
-          <value/>
-        </item>
-        <item>
-          <key>Speciality</key>
-          <value/>
-        </item>
-        <item>
-          <key>User roles</key>
-          <value/>
-        </item>
-      </other_details>
-    </description>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
-      <items>
-        <item>
-          <key>Technical.ﻩ Technical Traceability</key>
-          <value>{~AHSID~647b07f0-223b-440c-8f19-6d3b6d6b2e73~NAME~Antipruritics for PCA_Spinal_Epidural Anesthesia Adult Smart Group}</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;naloxone injection&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;&lt;em&gt;For naloxone, recommended standard dosing is 0.02 to 0.04 mg. &lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;0.02 mg, intravenous, every 2 hours, as needed, opioid-induced pruritis&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;nalbuphine injection&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;&lt;em&gt;Nalbuphine may cause sedation and/or respiratory depression in the elderly (over the age of 60). Consider limiting the dose to 2.5 mg every 3 hours or use IV naloxone instead. &lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;2.5 mg, intravenous, every 3 hours, as needed, opioid-induced pruritis&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE injection&apos;]/activities[at0001]">
-      <items>
-        <item>
-          <key>CKT.Clinical Guidance</key>
-          <value>&lt;p&gt;&lt;em&gt;For diphenhydramine, recommended standard dosing is 10 to 50 mg. Maximum daily dose 400 mg.&lt;/em&gt;&lt;/p&gt;</value>
-        </item>
-        <item>
-          <key>CKT.Content Details</key>
-          <value>&lt;p&gt;25 mg, intravenous, every 4 hours, as needed, pruritis&lt;/p&gt;</value>
-        </item>
-      </items>
-    </annotations>
-    <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Antipruritics (OSQ 232819) ">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="63f47fa1-0b8a-4624-8769-9ec68ce14421" concept_name="PHARM naloxone injection Order" max="1" path="/items" name="naloxone injection"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a10737b8-610b-4e26-a6e2-7e89a5c80ee4" concept_name="PHARM nalbuphine injection Order" max="1" path="/items" name="nalbuphine injection"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE injection"/>
-    </definition>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-    </integrity_checks>
-    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-      <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-    </integrity_checks>
-  </template>
+   <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+     <id>647b07f0-223b-440c-8f19-6d3b6d6b2e73</id>
+     <name>Antipruritics for PCA_Spinal_Epidural Anesthesia Adult Smart Group</name>
+     <description>
+       <lifecycle_state>Initial</lifecycle_state>
+       <details>
+         <purpose/>
+         <use/>
+         <misuse/>
+       </details>
+       <other_details>
+         <item>
+           <key>MetaDataSet:Sample Set </key>
+           <value>Template metadata sample set </value>
+         </item>
+         <item>
+           <key>Acknowledgements</key>
+           <value/>
+         </item>
+         <item>
+           <key>Business Process Level</key>
+           <value/>
+         </item>
+         <item>
+           <key>Care setting</key>
+           <value/>
+         </item>
+         <item>
+           <key>Client group</key>
+           <value/>
+         </item>
+         <item>
+           <key>Clinical Record Element</key>
+           <value/>
+         </item>
+         <item>
+           <key>Copyright</key>
+           <value/>
+         </item>
+         <item>
+           <key>Issues</key>
+           <value/>
+         </item>
+         <item>
+           <key>Owner</key>
+           <value/>
+         </item>
+         <item>
+           <key>Sign off</key>
+           <value/>
+         </item>
+         <item>
+           <key>Speciality</key>
+           <value/>
+         </item>
+         <item>
+           <key>User roles</key>
+           <value/>
+         </item>
+       </other_details>
+     </description>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+       <items>
+         <item>
+           <key>Technical.ﻩ Technical Traceability</key>
+           <value>{~AHSID~647b07f0-223b-440c-8f19-6d3b6d6b2e73~NAME~Antipruritics for PCA_Spinal_Epidural Anesthesia Adult Smart Group}</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;naloxone injection&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;&lt;em&gt;For naloxone, recommended standard dosing is 0.02 to 0.04 mg. &lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;0.02 mg, intravenous, every 2 hours, as needed, opioid-induced pruritis&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;nalbuphine injection&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;&lt;em&gt;Nalbuphine may cause sedation and/or respiratory depression in the elderly (over the age of 60). Consider limiting the dose to 2.5 mg every 3 hours or use IV naloxone instead. &lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;2.5 mg, intravenous, every 3 hours, as needed, opioid-induced pruritis&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE injection&apos;]/activities[at0001]">
+       <items>
+         <item>
+           <key>CKT.Clinical Guidance</key>
+           <value>&lt;p&gt;&lt;em&gt;For diphenhydramine, recommended standard dosing is 10 to 50 mg. Maximum daily dose 400 mg.&lt;/em&gt;&lt;/p&gt;</value>
+         </item>
+         <item>
+           <key>CKT.Content Details</key>
+           <value>&lt;p&gt;25 mg, intravenous, every 4 hours, as needed, pruritis&lt;/p&gt;</value>
+         </item>
+       </items>
+     </annotations>
+     <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Antipruritics (OSQ 232819) ">
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="63f47fa1-0b8a-4624-8769-9ec68ce14421" concept_name="PHARM naloxone injection Order" max="1" path="/items" name="naloxone injection"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a10737b8-610b-4e26-a6e2-7e89a5c80ee4" concept_name="PHARM nalbuphine injection Order" max="1" path="/items" name="nalbuphine injection"/>
+       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE injection"/>
+     </definition>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+       <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+       <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+     </integrity_checks>
+     <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+       <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+     </integrity_checks>
+   </template>
