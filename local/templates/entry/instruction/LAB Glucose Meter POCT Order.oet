@@ -1,1 +1,243 @@
-<?xml version="1.0"?> <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">   <id>e8da34ee-6e55-438b-ba29-8a6c15655d40</id>   <name>LAB Glucose Meter POCT Order</name>   <description>     <lifecycle_state>Initial</lifecycle_state>     <details>       <purpose>For ordering a(n) Glucose Meter POCT</purpose>       <use />       <misuse />     </details>     <other_details>       <item>         <key>MetaDataSet:Sample Set </key>         <value>Template metadata sample set </value>       </item>       <item>         <key>Acknowledgements</key>         <value />       </item>       <item>         <key>Business Process Level</key>         <value />       </item>       <item>         <key>Care setting</key>         <value />       </item>       <item>         <key>Client group</key>         <value />       </item>       <item>         <key>Clinical Record Element</key>         <value />       </item>       <item>         <key>Copyright</key>         <value />       </item>       <item>         <key>Issues</key>         <value />       </item>       <item>         <key>Owner</key>         <value />       </item>       <item>         <key>Sign off</key>         <value />       </item>       <item>         <key>Speciality</key>         <value />       </item>       <item>         <key>User roles</key>         <value />       </item>     </other_details>   </description>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">     <items>       <item>         <key>Catalogue Pattern.Synonyms</key>         <value>POCT Glucose; Glucose Meter Point of Care</value>       </item>       <item>         <key>Technical.ﻩ Technical Traceabililty</key>         <value>{~AHSID~8db69d60-4fa7-43dd-9359-5e59f02901ce~NAME~LAB Glucose Meter POCT Order}</value>       </item>       <item>         <key>Technical.EPIC ID</key>         <value />       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Frequency:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Mandatory; A response to this question may trigger a cascading question</value>       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='For:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Cascading question available and mandatory for all frequency selections except  "Once"; Numeric entry</value>       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Starting:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Mandatory; Calendar pick</value>       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='At:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Cascading question available and mandatory if "2 times daily PRN", "3 times daily PRN", "As needed", "At bedtime PRN", "Every 15 mins", "Every shift", "Now then every 24 hours", "Once" or "Weekly" is selected for frequency; Time entry default to now</value>       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='First Occurrence:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Cascading question available and mandatory if "2 times daily", "2 times daily after meals", "2 times daily and at bedtime", "3 times daily", "3 times daily after meals", "3 times daily before meals", "4 times daily", "4 times daily after meals and at bedtime", "4 times daily before meals and at bedtime", "At bedtime", "Daily", "Daily at Night (0200)", "Every 1 hour", "Every 12 hours", "Every 2 hours", "Every 3 hours", "Every 4 hours", "Every 48 hours", "Every 6 hours", "Every 8 hours", "Every Mon/Wed/Fri", "Every morning", "Every Tue/Thu/Sat", "Fasting 2 hour and bedtime", "Fasting and 1 hour post meal", or "Fasting and 2 hour post meal" selected for Frequency. Time entry</value>       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Adjust Schedule:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Cascading question available and mandatory if "2 times daily", "2 times daily after meals", "2 times daily and at bedtime", "3 times daily", "3 times daily after meals", "3 times daily before meals", "4 times daily", "4 times daily after meals and at bedtime", "4 times daily before meals and at bedtime", "At bedtime", "Daily", "Daily at Night (0200)", "Every 1 hour", "Every 12 hours", "Every 2 hours", "Every 3 hours", "Every 4 hours", "Every 48 hours", "Every 6 hours", "Every 8 hours", "Every Mon/Wed/Fri", "Every morning", "Every Tue/Thu/Sat" or "Fasting 2 hour and bedtime", "Fasting and 1 hour post meal", or "Fasting and 2 hour post meal" selected for Frequency. Time entry</value>       </item>     </items>   </annotations>   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Comments:']">     <items>       <item>         <key>Catalogue Pattern.Configuration Notes</key>         <value>Free text</value>       </item>     </items>   </annotations>   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Glucose Meter POCT">     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency:">         <Rule path="/items[at0002]">           <constraint xsi:type="textConstraint">             <includedValues>2 times daily</includedValues>             <includedValues>2 times daily after meals</includedValues>             <includedValues>2 times daily and at bedtime</includedValues>             <includedValues>2 times daily PRN</includedValues>             <includedValues>3 times daily</includedValues>             <includedValues>3 times daily after meals</includedValues>             <includedValues>3 times daily before meals</includedValues>             <includedValues>3 times daily PRN</includedValues>             <includedValues>4 times daily</includedValues>             <includedValues>4 times daily after meals and at bedtime</includedValues>             <includedValues>4 times daily before meals and at bedtime</includedValues>             <includedValues>As needed</includedValues>             <includedValues>At bedtime</includedValues>             <includedValues>At bedtime PRN</includedValues>             <includedValues>Daily</includedValues>             <includedValues>Daily at Night (0200) Every 1 hour</includedValues>             <includedValues>Every 12 hours</includedValues>             <includedValues>Every 15 min Every 2 hours</includedValues>             <includedValues>Every 3 hours</includedValues>             <includedValues>Every 4 hours</includedValues>             <includedValues>Every 48 hours</includedValues>             <includedValues>Every 6 hours</includedValues>             <includedValues>Every 8 hours</includedValues>             <includedValues>Every Mon/Wed/Fri</includedValues>             <includedValues>Every morning</includedValues>             <includedValues>Every shift</includedValues>             <includedValues>Every Tue/Thu/Sat</includedValues>             <includedValues>Fasting 2 hour and bedtime</includedValues>             <includedValues>Fasting and 1 hour post meal</includedValues>             <includedValues>Fasting and 2 hour post meal</includedValues>             <includedValues>Now then every 24 hours</includedValues>             <includedValues>Once</includedValues>             <includedValues>Weekly</includedValues>           </constraint>         </Rule>       </Items>       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="For:">         <Rule path="/items[at0002]" default="Occurences">           <constraint xsi:type="textConstraint">             <includedValues>Occurences (default)</includedValues>             <includedValues>Hours</includedValues>             <includedValues>Days</includedValues>             <includedValues>Weeks</includedValues>           </constraint>         </Rule>       </Items>       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting:">         <Rule path="/items[at0002]" default="Today">           <constraint xsi:type="textConstraint">             <includedValues>Today (default)</includedValues>             <includedValues>Tomorrow</includedValues>           </constraint>         </Rule>       </Items>       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:" />       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="First Occurrence:">         <Rule path="/items[at0002]" default="As scheduled">           <constraint xsi:type="textConstraint">             <includedValues>Include Now</includedValues>             <includedValues>As scheduled (default)</includedValues>           </constraint>         </Rule>       </Items>       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Adjust Schedule:" />     </Items>     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority:">       <Rule path="/items[at0002]" default="Routine">         <constraint xsi:type="textConstraint">           <includedValues>Add-On</includedValues>           <includedValues>Routine (default)</includedValues>           <includedValues>STAT</includedValues>           <includedValues>Timed</includedValues>           <includedValues>Today</includedValues>           <includedValues>Urgent</includedValues>         </constraint>       </Rule>     </Items>     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:" />   </definition>   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>   </integrity_checks>   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>   </integrity_checks>   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>   </integrity_checks> </template>
+<?xml version="1.0"?>
+ <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+   <id>e8da34ee-6e55-438b-ba29-8a6c15655d40</id>
+   <name>LAB Glucose Meter POCT Order</name>
+   <description>
+     <lifecycle_state>Initial</lifecycle_state>
+     <details>
+       <purpose>For ordering a(n) Glucose Meter POCT</purpose>
+       <use/>
+       <misuse/>
+     </details>
+     <other_details>
+       <item>
+         <key>MetaDataSet:Sample Set </key>
+         <value>Template metadata sample set </value>
+       </item>
+       <item>
+         <key>Acknowledgements</key>
+         <value/>
+       </item>
+       <item>
+         <key>Business Process Level</key>
+         <value/>
+       </item>
+       <item>
+         <key>Care setting</key>
+         <value/>
+       </item>
+       <item>
+         <key>Client group</key>
+         <value/>
+       </item>
+       <item>
+         <key>Clinical Record Element</key>
+         <value/>
+       </item>
+       <item>
+         <key>Copyright</key>
+         <value/>
+       </item>
+       <item>
+         <key>Issues</key>
+         <value/>
+       </item>
+       <item>
+         <key>Owner</key>
+         <value/>
+       </item>
+       <item>
+         <key>Sign off</key>
+         <value/>
+       </item>
+       <item>
+         <key>Speciality</key>
+         <value/>
+       </item>
+       <item>
+         <key>User roles</key>
+         <value/>
+       </item>
+     </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Synonyms</key>
+         <value>POCT Glucose; Glucose Meter Point of Care</value>
+       </item>
+       <item>
+         <key>Technical.ﻩ Technical Traceabililty</key>
+         <value>{~AHSID~8db69d60-4fa7-43dd-9359-5e59f02901ce~NAME~LAB Glucose Meter POCT Order}</value>
+       </item>
+       <item>
+         <key>Technical.EPIC ID</key>
+         <value/>
+       </item>
+     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~e8da34ee-6e55-438b-ba29-8a6c15655d40~NAME~LAB Glucose Meter POCT Order}</value></item></items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>Mandatory; A response to this question may trigger a cascading question</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;For:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>Cascading question available and mandatory for all frequency selections except  &quot;Once&quot;; Numeric entry</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Starting:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>Mandatory; Calendar pick</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available and mandatory if &quot;2 times daily PRN&quot;, &quot;3 times daily PRN&quot;, &quot;As needed&quot;, &quot;At bedtime PRN&quot;, &quot;Conditional PRN&quot;, &amp;nbsp;&quot;Every 15 mins&quot;, &quot;Every shift&quot;, &quot;Monthly&quot;, &quot;Now then every 24 hours&quot;, &quot;Once&quot; or &quot;Weekly&quot; is selected for frequency;&lt;br&gt;Time entry default to now&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Ending:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available available if &quot;2 times daily PRN&quot;, &quot;3 times daily PRN&quot;, &quot;As needed&quot;, &quot;At bedtime PRN&quot;, or &quot;Conditional PRN&quot; is selected for frequency;&lt;br&gt;Calendar pick&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;First Occurrence:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available and mandatory if &quot;2 times daily&quot;, &quot;2 times daily after meals&quot;, &quot;2 times daily and at bedtime&quot;, &quot;2 times daily before meals&quot;, &quot;2 times daily before meals POCT Glucose&quot;, &quot;3 times daily&quot;, &quot;3 times daily after meals&quot;, &quot;3 times daily before meals&quot;, &quot;4 times daily&quot;, &quot;4 times daily after meals and at bedtime&quot;, &quot;4 times daily before meals and at bedtime&quot;, &quot;At bedtime&quot;, &quot;Daily&quot;, &quot;Daily at Night (0200)&quot;, &quot;Every 1 hour&quot;, &quot;Every 12 hours&quot;, &quot;Every 2 hours&quot;, &quot;Every 3 hours&quot;, &quot;Every 4 hours&quot;, &quot;Every 48 hours&quot;, &quot;Every 6 hours&quot;, &quot;Every 8 hours&quot;, &quot;Every Mon/Wed/Fri&quot;, &quot;Every morning&quot;, &quot;Every Tue/Thu/Sat&quot;, &quot;Fasting 2 hour and bedtime&quot;, &quot;Fasting and 1 hour post meal&quot;, or &quot;Fasting and 2 hour post meal&quot; selected for Frequency.&lt;br&gt;Time entry&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Adjust Schedule:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available and mandatory if &quot;2 times daily&quot;, &quot;2 times daily after meals&quot;, &quot;2 times daily and at bedtime&quot;, &quot;2 times daily before meals&quot;, &quot;2 times daily before meals POCT Glucose&quot;, &quot;3 times daily&quot;, &quot;3 times daily after meals&quot;, &quot;3 times daily before meals&quot;, &quot;4 times daily&quot;, &quot;4 times daily after meals and at bedtime&quot;, &quot;4 times daily before meals and at bedtime&quot;, &quot;At bedtime&quot;, &quot;Daily&quot;, &quot;Daily at Night (0200)&quot;, &quot;Every 1 hour&quot;, &quot;Every 12 hours&quot;, &quot;Every 2 hours&quot;, &quot;Every 3 hours&quot;, &quot;Every 4 hours&quot;, &quot;Every 48 hours&quot;, &quot;Every 6 hours&quot;, &quot;Every 8 hours&quot;, &quot;Every Mon/Wed/Fri&quot;, &quot;Every morning&quot;, &quot;Every Tue/Thu/Sat&quot;, &quot;Fasting 2 hour and bedtime&quot;, &quot;Fasting and 1 hour post meal&quot;, or &quot;Fasting and 2 hour post meal&quot; selected for Frequency.&lt;br&gt;Time entry&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>Free text</value>
+       </item>
+     </items>
+   </annotations>
+   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Glucose Meter POCT">
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency:">
+         <Rule path="/items[at0002]">
+           <constraint xsi:type="textConstraint">
+             <includedValues>2 times daily</includedValues>
+             <includedValues>2 times daily after meals</includedValues>
+             <includedValues>2 times daily and at bedtime</includedValues>
+             <includedValues>2 times daily before meals</includedValues>
+             <includedValues>2 times daily before meals POCT Glucose</includedValues>
+             <includedValues>2 times daily PRN</includedValues>
+             <includedValues>3 times daily</includedValues>
+             <includedValues>3 times daily after meals</includedValues>
+             <includedValues>3 times dails before meals</includedValues>
+             <includedValues>3 times daily PRN</includedValues>
+             <includedValues>4 times daily</includedValues>
+             <includedValues>4 times daily after meals and at bedtime</includedValues>
+             <includedValues>4 times daily before meals and at bedtime</includedValues>
+             <includedValues>As needed</includedValues>
+             <includedValues>At bedtime</includedValues>
+             <includedValues>At bedtime PRN</includedValues>
+             <includedValues>Conditional PRN</includedValues>
+             <includedValues>Daily</includedValues>
+             <includedValues>Daily at Night (0200)</includedValues>
+             <includedValues>Every 1 hour</includedValues>
+             <includedValues>Every 12 hours</includedValues>
+             <includedValues>Every 15 min</includedValues>
+             <includedValues>Every 2 hours</includedValues>
+             <includedValues>Every 3 hours</includedValues>
+             <includedValues>Every 4 hours</includedValues>
+             <includedValues>Every 48 hours</includedValues>
+             <includedValues>Every 6 hours</includedValues>
+             <includedValues>Every 8 hours</includedValues>
+             <includedValues>Every Mon/Wed/Fri</includedValues>
+             <includedValues>Every morning</includedValues>
+             <includedValues>Every shift</includedValues>
+             <includedValues>Every Tue/Wed/Sat</includedValues>
+             <includedValues>Fasting 2 hour and bedtime</includedValues>
+             <includedValues>Fasting and 1 hour post meal</includedValues>
+             <includedValues>Fasting and 2 hour post meal</includedValues>
+             <includedValues>Monthly</includedValues>
+             <includedValues>Now then every 24 hours</includedValues>
+             <includedValues>Once (default)</includedValues>
+             <includedValues>Weekly</includedValues>
+           </constraint>
+         </Rule>
+       </Items>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="For:">
+         <Rule path="/items[at0002]" default="Occurences">
+           <constraint xsi:type="textConstraint">
+             <includedValues>Occurences (default)</includedValues>
+             <includedValues>Hours</includedValues>
+             <includedValues>Days</includedValues>
+             <includedValues>Weeks</includedValues>
+           </constraint>
+         </Rule>
+       </Items>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting:">
+         <Rule path="/items[at0002]" default="Today">
+           <constraint xsi:type="textConstraint">
+             <includedValues>Today (default)</includedValues>
+             <includedValues>Tomorrow</includedValues>
+           </constraint>
+         </Rule>
+       </Items>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Ending:"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="First Occurrence:">
+         <Rule path="/items[at0002]" default="As scheduled">
+           <constraint xsi:type="textConstraint">
+             <includedValues>Include Now</includedValues>
+             <includedValues>As scheduled (default)</includedValues>
+           </constraint>
+         </Rule>
+       </Items>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Adjust Schedule:"/>
+     </Items>
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority:">
+       <Rule path="/items[at0002]" default="Routine">
+         <constraint xsi:type="textConstraint">
+           <includedValues>Add-On</includedValues>
+           <includedValues>Routine (default)</includedValues>
+           <includedValues>STAT</includedValues>
+           <includedValues>Timed</includedValues>
+           <includedValues>Today</includedValues>
+           <includedValues>Urgent</includedValues>
+         </constraint>
+       </Rule>
+     </Items>
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
+   </definition>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+   </integrity_checks>
+ </template>
