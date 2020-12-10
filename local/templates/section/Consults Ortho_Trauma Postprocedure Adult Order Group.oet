@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+ <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+   <id>322e8b88-fe67-4637-ab84-d48b0811bc4d</id>
+   <name>Consults Ortho_Trauma Postprocedure Adult Order Group</name>
+   <description>
+     <lifecycle_state>Initial</lifecycle_state>
+     <details>
+       <purpose/>
+       <use/>
+       <misuse/>
+     </details>
+     <other_details>
+       <item>
+         <key>MetaDataSet:Sample Set </key>
+         <value>Template metadata sample set </value>
+       </item>
+       <item>
+         <key>Acknowledgements</key>
+         <value/>
+       </item>
+       <item>
+         <key>Business Process Level</key>
+         <value/>
+       </item>
+       <item>
+         <key>Care setting</key>
+         <value/>
+       </item>
+       <item>
+         <key>Client group</key>
+         <value/>
+       </item>
+       <item>
+         <key>Clinical Record Element</key>
+         <value/>
+       </item>
+       <item>
+         <key>Copyright</key>
+         <value/>
+       </item>
+       <item>
+         <key>Issues</key>
+         <value/>
+       </item>
+       <item>
+         <key>Owner</key>
+         <value/>
+       </item>
+       <item>
+         <key>Sign off</key>
+         <value/>
+       </item>
+       <item>
+         <key>Speciality</key>
+         <value/>
+       </item>
+       <item>
+         <key>User roles</key>
+         <value/>
+       </item>
+     </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~322e8b88-fe67-4637-ab84-d48b0811bc4d~NAME~Consults Ortho_Trauma Postprocedure Adult Order Group}</value>
+       </item>
+     </items>
+   </annotations>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Consults Ortho_Trauma Postprocedure Adult Order Group">
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10323cf0-19f2-43cc-b986-28785b081372" concept_name="CONS Inpatient Consult to Internal Medicine Order" max="1" path="/items" name="Inpatient Consult to Internal Medicine; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="afe72e28-a55a-4d01-8c77-fe5f97bca8f5" concept_name="CONS Inpatient Consult to Adult Acute Pain Services Order" max="1" path="/items" name="Inpatient Consult to Adult Acute Pain Services; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99e370c-d849-4585-b382-c30d0a08a894" concept_name="CONS Inpatient Consult to Occupational Therapy Order" max="1" path="/items" name="Inpatient Consult to Occupational Therapy; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b1ca72-23ee-4714-a1ff-b6689b55ee0f" concept_name="CONS Inpatient Consult to Discharge Planning_Transition Services Order" max="1" path="/items" name="Inpatient Consult to Discharge Planning/Transition Services; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="341f2d3e-e1e5-4cf4-9c9e-c9ddc3c50bd3" concept_name="CONS Inpatient Consult to Geriatric Medicine Order" max="1" path="/items" name="Inpatient Consult to Geriatric Medicine; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="Inpatient Consult to Fracture Liason Service; Reason for consult: ***"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+   </definition>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+   </integrity_checks>
+ </template>
