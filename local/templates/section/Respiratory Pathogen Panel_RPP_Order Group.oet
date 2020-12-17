@@ -60,6 +60,14 @@
        </item>
      </other_details>
    </description>
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~62589a73-67e3-4733-9fcb-806557609200~NAME~Respiratory Pathogen Panel_RPP_Order Group}</value>
+       </item>
+     </items>
+   </annotations>
    <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
      <items>
        <item>
@@ -68,7 +76,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
      <items>
        <item>
          <key>CKT.Content Details</key>
@@ -76,7 +84,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
      <items>
        <item>
          <key>Transform.Preselected</key>
@@ -84,11 +92,10 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~62589a73-67e3-4733-9fcb-806557609200~NAME~Respiratory Pathogen Panel_RPP_Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Respiratory Pathogen Panel (RPP) - Only for outbreaks, severely immunocompromised, critical respiratory failure, AFP, myocarditis, or pre-transplant">
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items">
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1271c2e1-e182-4bf9-a62c-99ea3ed32b0f" concept_name="LAB Respiratory NAT Panel Order" max="1" path="/items" name="Respiratory NAT Panel; Once, Swab, Nasopharynx"/>
-       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-     </Item>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Respiratory Pathogen Panel (RPP) - Only for outbreaks, severely immunocompromised, critical respiratory failure, AFP, myocarditis, or pre-transplant">
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1271c2e1-e182-4bf9-a62c-99ea3ed32b0f" concept_name="LAB Respiratory NAT Panel Order" max="1" path="/items" name="Respiratory NAT Panel; Respiratory pathogen NAT panel (RPP), Once, Swab, Nasopharynx"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
    </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
      <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
