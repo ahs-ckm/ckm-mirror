@@ -65,8 +65,8 @@
        <item>
          <key>Catalogue Pattern.Synonyms</key>
          <value>Quantitative RUNX1/RUNX1T1;
- Quantitative t(8;21);
- AMLD</value>
+  Quantitative t(8;21);
+  AMLD</value>
        </item>
        <item>
          <key>Technical.ﻩ Technical Traceabililty</key>
@@ -76,14 +76,18 @@
          <key>Technical.EPIC ID</key>
          <value>LAB42091</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~009ee9d1-223e-4d6a-8ab1-7ca48f13f37a~NAME~LAB t821 RUNX1RUNX1T1 Follow_Up Order}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~009ee9d1-223e-4d6a-8ab1-7ca48f13f37a~NAME~LAB t821 RUNX1RUNX1T1 Follow_Up Order}</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Mandatory;
- A response to this question may trigger a cascading question</value>
+  A response to this question may trigger a cascading question</value>
        </item>
      </items>
    </annotations>
@@ -92,7 +96,7 @@
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Cascading question available and  mandatory if &quot;As needed&quot; selected for frequency;
- Numeric Entry</value>
+  Numeric Entry</value>
        </item>
      </items>
    </annotations>
@@ -101,7 +105,7 @@
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Mandatory;
- Calendar pick</value>
+  Calendar pick</value>
        </item>
      </items>
    </annotations>
@@ -110,7 +114,15 @@
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Mandatory;
- Time entry default to now</value>
+  Time entry default to now</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Ending:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available if &quot;As needed&quot; selected for frequency;&lt;br&gt;Calendar pick&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -135,7 +147,7 @@
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Free text;
- Free text box for comments:</value>
+  Free text box for comments:</value>
        </item>
      </items>
    </annotations>
@@ -144,6 +156,14 @@
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>Free text</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Reference Links:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Resources</key>
+         <value>&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:169px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;https://www.albertahealthservices.ca/webapps/labservices/indexAPL.asp?id=8709&amp;amp;tests=&amp;amp;zoneid=1&amp;amp;details=true&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
        </item>
      </items>
    </annotations>
@@ -178,6 +198,7 @@
          </Rule>
        </Items>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Ending:"/>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type:">
        <Rule path="/items[at0002]" default="Blood">
@@ -188,12 +209,12 @@
        </Rule>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source:">
-       <Rule path="/items[at0002]" default="Blood, venous">
+       <Rule path="/items[at0002]" default="Blood, Venous">
          <constraint xsi:type="textConstraint">
-           <includedValues>Blood, venous (default)</includedValues>
            <includedValues>Blood, Arterial</includedValues>
            <includedValues>Blood, Capillary</includedValues>
            <includedValues>Blood, Central Line</includedValues>
+           <includedValues>Blood, Venous (default)</includedValues>
            <includedValues>Bone Marrow Aspirate</includedValues>
            <includedValues>Bone Marrow Biopsy</includedValues>
          </constraint>
@@ -201,13 +222,7 @@
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional clinical history / information"/>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
-     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reference Links:">
-       <Rule path="/items[at0002]">
-         <constraint xsi:type="textConstraint">
-           <includedValues>Https://www.albertahealthservices.ca/webapps/labservices/indexAPL.asp?id=8002&amp;#38;tests=&amp;#38;zoneid=1&amp;#38;details=true</includedValues>
-         </constraint>
-       </Rule>
-     </Items>
+     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reference Links:"/>
    </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
      <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
