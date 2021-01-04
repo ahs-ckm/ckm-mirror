@@ -64,7 +64,7 @@
      <items>
        <item>
          <key>Catalogue Pattern.Clinician Communication</key>
-         <value>&lt;p&gt;South Sector Testing: Order as HEMOSTASIS INVESTIGATIONS.&lt;/p&gt;</value>
+         <value>&lt;p&gt;Process Instructions: South Sector Testing: Order as HEMOSTASIS INVESTIGATIONS.&lt;/p&gt;</value>
        </item>
        <item>
          <key>Catalogue Pattern.Synonyms</key>
@@ -78,7 +78,11 @@
          <key>Technical.EPIC ID</key>
          <value>&lt;p&gt;LAB1116&lt;/p&gt;</value>
        </item>
-     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~efaa1ebc-f70b-4209-ade8-0985b4a7f556~NAME~LAB Factor VIII Inhibitor Order}</value></item></items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~efaa1ebc-f70b-4209-ade8-0985b4a7f556~NAME~LAB Factor VIII Inhibitor Order}</value>
+       </item>
+     </items>
    </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
      <items>
@@ -109,6 +113,14 @@
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
          <value>&lt;p&gt;Cascading question available and mandatory if &quot;As needed&quot;, &quot;Conditional PRN&quot;, &quot;Every 2 days&quot;, &quot;Every 2 weeks&quot;, &quot;Every 3 days&quot;, &quot;Every 48 hours&quot;, &quot;Monthly&quot;, &quot;First occurrence then every 1 hour&quot;, &quot;First occurrence then every 12 hours&quot;, First occurrence then every 2 hours&quot;, &quot;First occurrence then every 24 hours&quot;, &quot;First occurrence then every 4 hours&quot;, &quot;First occurrence then every 6 hours&quot;, &quot;First occurrence then every 8 hours&quot;, &quot;Once&quot;, &quot;STAT&quot;, &quot;Timed&quot;, or &quot;Weekly&quot; chosen for frequency;&lt;br&gt;Time entry default to now&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Ending:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>&lt;p&gt;Cascading question available if &quot;As needed&quot; or &quot;Conditional PRN&quot; chosen for frequency;&lt;br&gt;Calendar pick&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -152,14 +164,6 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date of last dose&apos;]">
-     <items>
-       <item>
-         <key>Catalogue Pattern.Configuration Notes</key>
-         <value>Cascading question available if &quot;Yes&quot; selected for Is patient taking anticoagulant(s)?; Calendar pick</value>
-       </item>
-     </items>
-   </annotations>
    <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Anticoagulants in use&apos;]">
      <items>
        <item>
@@ -176,7 +180,15 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Replacement&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Product replacement history&apos;]">
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date of last dose:&apos;]">
+     <items>
+       <item>
+         <key>Catalogue Pattern.Configuration Notes</key>
+         <value>Cascading question available if &quot;Yes&quot; selected for Is patient taking anticoagulant(s)?; Calendar pick</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Replacement&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Product Replacement History&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
@@ -184,7 +196,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Replacement&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Replacement product date of last dose&apos;]">
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Replacement&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Replacement Product Date of last dose&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
@@ -192,7 +204,7 @@
        </item>
      </items>
    </annotations>
-   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Replacement&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Replacement product dosage patient received&apos;]">
+   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Replacement&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Replacement Product Dosage patient received&apos;]">
      <items>
        <item>
          <key>Catalogue Pattern.Configuration Notes</key>
@@ -212,7 +224,7 @@
      <items>
        <item>
          <key>Catalogue Pattern.Resources</key>
-         <value>&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:279px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;https://www.albertahealthservices.ca/webapps/labservices/indexAPL.asp?zoneid=1&amp;amp;SearchText=Factor&amp;amp;submit=Submit+Query&amp;amp;upperTest=-1&amp;amp;lowerTest=-1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
+         <value>&lt;p&gt;https://www.albertahealthservices.ca/webapps/labservices/indexAPL.asp?id=9020&amp;amp;tests=&amp;amp;zoneid=11&amp;amp;details=true&lt;/p&gt;</value>
        </item>
      </items>
    </annotations>
@@ -268,6 +280,7 @@
          </Rule>
        </Items>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Ending:"/>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="First Occurrence:">
          <Rule path="/items[at0002]" default="As scheduled">
            <constraint xsi:type="textConstraint">
@@ -286,11 +299,11 @@
        </Rule>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source:">
-       <Rule path="/items[at0002]" default="Blood, venous">
+       <Rule path="/items[at0002]" default="Blood, Venous">
          <constraint xsi:type="textConstraint">
            <includedValues>Blood, Arterial</includedValues>
            <includedValues>Blood, Central Line</includedValues>
-           <includedValues>Blood, venous (default)</includedValues>
+           <includedValues>Blood, Venous (default)</includedValues>
          </constraint>
        </Rule>
      </Items>
@@ -303,31 +316,24 @@
            </constraint>
          </Rule>
        </Items>
-       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Date of last dose">
-         <Rule path="/items[at0002]">
-           <constraint xsi:type="textConstraint">
-             <includedValues>Yes</includedValues>
-             <includedValues>No</includedValues>
-           </constraint>
-         </Rule>
-       </Items>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Anticoagulants in use">
          <Rule path="/items[at0002]">
            <constraint xsi:type="textConstraint">
              <includedValues>Rivaroxaban (Xarelto)</includedValues>
              <includedValues>Apixaban (Eliquis)</includedValues>
-             <includedValues>Dabigatran (Pradaxa)</includedValues>
              <includedValues>LMW Heparin</includedValues>
              <includedValues>Unfractionated Heparin</includedValues>
-             <includedValues>Coumadin</includedValues>
+             <includedValues>Coumadin/Warfarin</includedValues>
+             <includedValues>Dabigatran (Pradaxa)</includedValues>
              <includedValues>Other</includedValues>
            </constraint>
          </Rule>
        </Items>
        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Please provide details"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Date of last dose:"/>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Replacement">
-       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Product replacement history">
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Product Replacement History">
          <Rule path="/items[at0002]">
            <constraint xsi:type="textConstraint">
              <includedValues>Activated Factor VII</includedValues>
@@ -344,8 +350,8 @@
            </constraint>
          </Rule>
        </Items>
-       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Replacement product date of last dose"/>
-       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Replacement product dosage patient received"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Replacement Product Date of last dose"/>
+       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Replacement Product Dosage patient received"/>
      </Items>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reference Links:"/>
