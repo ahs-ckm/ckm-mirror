@@ -60,8 +60,27 @@
        </item>
      </other_details>
    </description>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~16f8b5d6-a79e-4c45-aedc-8b0d9759c41f~NAME~Bumping test panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Bumping test panel"/>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Technical.ﻩ Technical Traceability</key>
+         <value>{~AHSID~16f8b5d6-a79e-4c45-aedc-8b0d9759c41f~NAME~Bumping test panel}</value>
+       </item>
+     </items>
+   </annotations>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Bumping test panel">
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="370f0c1b-77e5-4d4d-ae17-e61334df2815" concept_name="Bumping test item level" max="1" path="/items" name="Bumping test item level"/>
+   </definition>
    <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
      <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
    </integrity_checks>
  </template>
