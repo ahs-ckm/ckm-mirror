@@ -68,7 +68,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Regression Order Item A Evan']/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Regression Order Item A Evan']/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -76,7 +76,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Regression Order Item A Evan']/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Regression Order Item A Evan']/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -84,7 +84,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Regression Order Item B Evan']/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Regression Order Item B Evan']/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -93,9 +93,10 @@
     </items>
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Regression Order Panel Evan">
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Heading" />
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2512a381-6f0a-473a-a476-5dcb6bc5f8a1" concept_name="Regression Order Item A Evan" max="1" path="/items" name="Regression Order Item A Evan" />
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd70484c-13a3-4c9a-ac9d-268eb33e2dd4" concept_name="Regression Order Item B Evan" max="1" path="/items" name="Regression Order Item B Evan" />
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Heading">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2512a381-6f0a-473a-a476-5dcb6bc5f8a1" concept_name="Regression Order Item A Evan" max="1" path="/items" name="Regression Order Item A Evan" />
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd70484c-13a3-4c9a-ac9d-268eb33e2dd4" concept_name="Regression Order Item B Evan" max="1" path="/items" name="Regression Order Item B Evan" />
+    </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
