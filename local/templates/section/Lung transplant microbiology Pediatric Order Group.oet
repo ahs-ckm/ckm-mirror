@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+ <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+   <id>d143c2dc-15cd-49a7-a8d7-356ecf912804</id>
+   <name>Lung transplant microbiology Pediatric Order Group</name>
+   <description>
+     <lifecycle_state>Initial</lifecycle_state>
+     <details>
+       <purpose/>
+       <use/>
+       <misuse/>
+     </details>
+     <other_details>
+       <item>
+         <key>MetaDataSet:Sample Set </key>
+         <value>Template metadata sample set </value>
+       </item>
+       <item>
+         <key>Acknowledgements</key>
+         <value/>
+       </item>
+       <item>
+         <key>Business Process Level</key>
+         <value/>
+       </item>
+       <item>
+         <key>Care setting</key>
+         <value/>
+       </item>
+       <item>
+         <key>Client group</key>
+         <value/>
+       </item>
+       <item>
+         <key>Clinical Record Element</key>
+         <value/>
+       </item>
+       <item>
+         <key>Copyright</key>
+         <value/>
+       </item>
+       <item>
+         <key>Issues</key>
+         <value/>
+       </item>
+       <item>
+         <key>Owner</key>
+         <value/>
+       </item>
+       <item>
+         <key>Sign off</key>
+         <value/>
+       </item>
+       <item>
+         <key>Speciality</key>
+         <value/>
+       </item>
+       <item>
+         <key>User roles</key>
+         <value/>
+       </item>
+     </other_details>
+   </description>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+     <items>
+       <item>
+         <key>Transform.Technical Notes</key>
+         <value>&lt;p&gt;&lt;em&gt;Lung transplant microbiology Pediatric Order Group&lt;/em&gt;&lt;/p&gt;</value>
+       </item>
+     <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~d143c2dc-15cd-49a7-a8d7-356ecf912804~NAME~Lung transplant microbiology Pediatric Order Group}</value></item></items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bronchoscopy; Routine&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Bronchoscopy Intervention Required? No&lt;/p&gt;&lt;p&gt;Zone? ***&lt;/p&gt;&lt;p&gt;Select Endoscopy Site: ***&lt;/p&gt;&lt;p&gt;Select Department: Bedside&lt;/p&gt;&lt;p&gt;Scheduling Urgency? Routine&lt;/p&gt;&lt;p&gt;What is the patient&apos;s sedation requirement? No Sedation&lt;/p&gt;&lt;p&gt;Is this procedure being added after the exam began? No&lt;/p&gt;&lt;p&gt;Additional equipment/instrument needs? No&lt;/p&gt;&lt;p&gt;Is the patient on anticoagulants? Unknown&lt;/p&gt;&lt;p&gt;&lt;em&gt;Post-op lung transplant admission bronchoscopy&lt;/em&gt;&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Fungal Culture; Sputum, Once&apos;]/activities[at0001]">
+     <items>
+       <item>
+         <key>CKT.Content Details</key>
+         <value>&lt;p&gt;&amp;nbsp;Send sputum for fungal culture&lt;/p&gt;</value>
+       </item>
+     </items>
+   </annotations>
+   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Lung transplant microbiology">
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a1353852-a031-4e88-b88a-9aff122bd26e" concept_name="Blood Culture - Pediatric Weight Based Order Panel" max="1" path="/items" name="Blood Culture Panel - Pediatric Weight Based"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="31ca923c-7ea2-4108-8c84-1a3847ae3048" concept_name="RESP DIAG Bronchoscopy Order" max="1" path="/items" name="Bronchoscopy; Routine"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6e17c4b-79c6-4238-a21c-8e3889aba284" concept_name="RESP NEO Endotracheal Aspirate Order" max="1" path="/items" name="Endotracheal Aspirate; for culture and sensitivity, Once"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1418d60f-8b10-4a3e-b11c-e8479cf3f637" concept_name="LAB Bronchial Culture Routine Order" max="1" path="/items" name="Bronchial Culture, Routine; Once"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcdb91d1-acd6-40e3-bad6-0c78a07eee06" concept_name="LAB Fungal Culture Order" max="1" path="/items" name="Fungal Culture; Sputum, Once"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LAB Mycobacteria Culture Order" max="1" path="/items" name="Mycobacteria Culture; Once"/>
+     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0788012b-f118-4261-87d7-6aeefef504b5" concept_name="Respiratory Infection_incl. COVID-19_NAT Order Panel - Orderable" max="1" path="/items" name="Respiratory Infection (incl. COVID-19) NAT Order Panel"/>
+     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a25e87f1-8b19-48a8-a784-2445388f471b" concept_name="LAB Mycoplasma_Ureaplasma NAT Order" max="1" path="/items" name="Mycoplasma/Ureaplasma NAT; Once"/>
+   </definition>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+   </integrity_checks>
+   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+   </integrity_checks>
+ </template>
