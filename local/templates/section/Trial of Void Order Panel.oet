@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~64b22ccf-e74d-41ec-a7fd-0abff30260d4~NAME~Trial of Void Order Panel}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -84,22 +92,14 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Urinalysis; Ambulatory, lab to collect, Urine, Midstream&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Jan 22 - Need approval of authors to include this ambulatory order&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~64b22ccf-e74d-41ec-a7fd-0abff30260d4~NAME~Trial of Void Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Trial of Void Order Panel">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Trial of Void Order Panel">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a780fadd-aa06-4e08-bf94-fd3db5a2ff22" concept_name="PC Encourage fluids Order" max="1" path="/items" name="Encourage fluids; Until Discontinued"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6a77701c-5ee7-4192-a328-4dce64ab54b8" concept_name="PHARM ciprofloxacin Tablet Order" max="1" path="/items" name="ciprofloxacin Tablet; 500 mg, oral, once"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ea61b9b-b736-4542-a289-74e1b3eaf1b2" concept_name="PHARM sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS) Order" max="1" path="/items" name="sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS); oral, once, Indication: Antibiotic Prophylaxis"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5455a834-6ac8-4452-94d4-3b261b4bd2a1" concept_name="PHARM ceFIXime Tablet Order" max="1" path="/items" name="ceFIXime Tablet; 400 mg, oral, once, Intraprocedure Indication: Antibiotic Prophylaxis"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="843677a1-df5f-4b85-9cda-875d20f749ad" concept_name="PC Bladder Scan Order" max="1" path="/items" name="Bladder Scan; Measure post void residual, once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LAB Urinalysis Order" max="1" path="/items" name="Urinalysis; Ambulatory, lab to collect, Urine, Midstream"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Patient Care Orders; Ambulatory"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
