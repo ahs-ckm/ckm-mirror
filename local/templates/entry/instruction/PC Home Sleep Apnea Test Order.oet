@@ -70,7 +70,11 @@
         <key>Technical.ﻩ Technical Traceabililty</key>
         <value>{~AHSID~27a7ccf5-794a-4ccf-bd78-1866cc5f0334~NAME~PC Home sleep apnea test Order}</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~27a7ccf5-794a-4ccf-bd78-1866cc5f0334~NAME~PC Home Sleep Apnea Test Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~27a7ccf5-794a-4ccf-bd78-1866cc5f0334~NAME~PC Home Sleep Apnea Test Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Status&apos;]">
     <items>
@@ -145,6 +149,30 @@
       <item>
         <key>Catalogue Pattern.Care Setting</key>
         <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where should this procedure be performed?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where should this procedure be performed?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Where should this procedure be performed?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;A response of &quot;Connect Care&quot; to this question triggers a cascading question&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where should this procedure be performed?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred site for this order:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when &quot;Connect Care&quot;&amp;nbsp; selected for Where should this procedure be perfomred?;&lt;br&gt;Free Text&lt;br&gt;Search functionality, open selection entry&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -391,10 +419,20 @@
       <Rule path="/items[at0002]" default="Ancillary Performed">
         <constraint xsi:type="textConstraint">
           <includedValues>Ancillary Performed (default)</includedValues>
-          <includedValues>Clinic Performed</includedValues>
           <includedValues>Hospital Performed</includedValues>
         </constraint>
       </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Where should this procedure be performed?">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Where should this procedure be performed?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Connect Care</includedValues>
+            <includedValues>Non-Connect Care - Req to Print</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred site for this order:"/>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency">
@@ -430,6 +468,7 @@
           <includedValues>STAT</includedValues>
           <includedValues>Timed</includedValues>
           <includedValues>Today</includedValues>
+          <includedValues>Urgent</includedValues>
         </constraint>
       </Rule>
     </Items>
