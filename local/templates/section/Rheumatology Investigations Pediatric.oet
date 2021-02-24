@@ -1,246 +1,245 @@
 <?xml version="1.0"?>
-     <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-       <id>3d116f39-54b1-48fd-8579-e59d7ac2654a</id>
-       <name>Rheumatology Investigations Pediatric</name>
-       <description>
-         <lifecycle_state>Initial</lifecycle_state>
-         <details>
-           <purpose/>
-           <use/>
-           <misuse/>
-         </details>
-         <other_details>
-           <item>
-             <key>MetaDataSet:Sample Set </key>
-             <value>Template metadata sample set </value>
-           </item>
-           <item>
-             <key>Acknowledgements</key>
-             <value/>
-           </item>
-           <item>
-             <key>Business Process Level</key>
-             <value/>
-           </item>
-           <item>
-             <key>Care setting</key>
-             <value/>
-           </item>
-           <item>
-             <key>Client group</key>
-             <value/>
-           </item>
-           <item>
-             <key>Clinical Record Element</key>
-             <value/>
-           </item>
-           <item>
-             <key>Copyright</key>
-             <value/>
-           </item>
-           <item>
-             <key>Issues</key>
-             <value/>
-           </item>
-           <item>
-             <key>Owner</key>
-             <value/>
-           </item>
-           <item>
-             <key>Sign off</key>
-             <value/>
-           </item>
-           <item>
-             <key>Speciality</key>
-             <value/>
-           </item>
-           <item>
-             <key>User roles</key>
-             <value/>
-           </item>
-         </other_details>
-       </description>
-       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
-         <items>
-           <item>
-             <key>Technical.ﻩ Technical Traceability</key>
-             <value>{~AHSID~3d116f39-54b1-48fd-8579-e59d7ac2654a~NAME~Rheumatology Investigations Pediatric}</value>
-           </item>
-         </items>
-       </annotations>
-       <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]">
-         <items>
-           <item>
-             <key>Transform.Clinical Notes</key>
-             <value>&lt;p&gt;All lab orders default to Routine, Once&lt;/p&gt;</value>
-           </item>
-         </items>
-       </annotations>
-       <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Rheumatology Investigations Pediatric">
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items">
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" path="/items">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" path="/items">
-               <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" path="/activities[at0001]/description[at0009]/items[at0132]">
-                 <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" path="/items[at0002]"/>
-               </Items>
-             </Item>
-           </Item>
-         </Item>
-         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
-         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - Routine">
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9ce6c04c-77ba-402d-832b-23b220e3d3e5" concept_name="LAB Erythrocyte Sedimentation Rate (ESR) Order" max="1" path="/items" name="Erythrocyte Sedimentation Rate (ESR)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d23cd527-4cfe-4b97-89a5-d08cb98558ca" concept_name="LAB Reticulocytes Order" max="1" path="/items" name="Reticulocytes"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="73d8993c-cf48-4372-8204-c5f123539e86" concept_name="LAB 25-Hydroxy Vitamin D Order" max="1" path="/items" name="25-Hydroxy Vitamin D"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d96b65e-e5e5-42b8-aac8-240f1eb83977" concept_name="LAB Angiotensin Converting Enzyme (ACE) Order" max="1" path="/items" name="Angiotensin Converting Enzyme (ACE)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b8e7233a-9bca-492b-bc6e-5e1deec78280" concept_name="LAB Anti-Beta-2 Glycoprotein Order" max="1" path="/items" name="Anti-Beta-2 Glycoprotein"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61118760-6eba-4488-906f-c7eb23b1ca01" concept_name="LAB Anti-Cardiolipin Antibody Order" max="1" path="/items" name="Anti-Cardiolipin Antibody"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="06dee5e3-0df8-48a0-bf11-2d75ef666762" concept_name="LAB Anti-Double Stranded DNA Order" max="1" path="/items" name="Anti-Double Stranded DNA"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7d4ee35-4e83-4c8b-92c1-994547f5444f" concept_name="LAB Anti-Glomerular Basement Membrane (GBM) Order" max="1" path="/items" name="Anti-Glomerular Basement Membrane (GBM)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="23a393ed-4f0b-46b6-b3e6-7e8bfe6aa36b" concept_name="LAB Anti-Neutrophil Cytoplasmic Antibody (ANCA) Order" max="1" path="/items" name="Anti-Neutrophil Cytoplasmic Antibody (ANCA)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e028adb-07fc-42c7-8f42-e8a8a46746ec" concept_name="LAB Anti-Nuclear Antibody (ANA) Panel Order" max="1" path="/items" name="Anti-Nuclear Antibody (ANA) Panel"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fb99043b-c3d4-4edf-a846-4dc5918fe7f6" concept_name="LAB Anti-Proteinase 3 (PR3) Order" max="1" path="/items" name="Anti-Proteinase 3 (PR3)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated Order" max="1" path="/items" name="Bilirubin, Total and Conjugated"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5a6f87a6-e2e5-4344-9847-54fed07d75f9" concept_name="LAB CH50 Complement REF Order" max="1" path="/items" name="CH50 Complement REF"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cc199d8d-65a8-44f4-97d9-aa07f7853151" concept_name="LAB Complement C3 Order" max="1" path="/items" name="Complement C3"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e51a8f5b-c812-4353-95cd-3c20d604d380" concept_name="LAB Complement C4 Order" max="1" path="/items" name="Complement C4"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a6827f03-6d44-4f31-ae8f-09f11b7256c1" concept_name="LAB Creatine Kinase (CK) Order" max="1" path="/items" name="Creatine Kinase (CK)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c77ec2ba-b104-462b-9aea-2ccb9ae9885a" concept_name="LAB Ferritin Order" max="1" path="/items" name="Ferritin"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="52cea719-f06f-4b68-851b-57d014723457" concept_name="LAB Free T4 Order" max="1" path="/items" name="Free T4"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c06828a-6ea9-4b2b-ba69-5f8c5945905b" concept_name="LAB Glucose Fasting Order" max="1" path="/items" name="Glucose, Fasting"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="888631be-e114-4319-bdfc-987a5edaf431" concept_name="LAB Immunoglobulin A (IgA) Order" max="1" path="/items" name="Immunoglobulin A (IgA)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="358a22cc-966f-46f3-8e1b-033a4dc380dc" concept_name="LAB Immunoglobulin D (IgD) Order" max="1" path="/items" name="Immunoglobulin D (IgD)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad6864e0-9797-4947-a253-3680af88def3" concept_name="LAB Immunoglobulin G (IgG) Order" max="1" path="/items" name="Immunoglobulin G (IgG)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="768e9cc8-5907-4a8e-b4f2-7903967a8f15" concept_name="LAB Immunoglobulin M (IgM) Order" max="1" path="/items" name="Immunoglobulin M (IgM)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f7843eda-b7e9-44b2-a5c1-a0942a275fb1" concept_name="LAB Iron and TIBC Order" max="1" path="/items" name="Iron and TIBC"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) Order" max="1" path="/items" name="Lactate Dehydrogenase (LD)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dfb0574d-d6cd-49d6-88f6-2a9d08e8706d" concept_name="LAB Lipid Panel Order" max="1" path="/items" name="Lipid Panel"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0d7f07f3-872f-4883-8b59-e568d2bce326" concept_name="LAB Mononucleosis Screen Order" max="1" path="/items" name="Mononucleosis Screen"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="977644de-0c3e-4cfd-b1e3-dc17835d84a2" concept_name="LAB Parathyroid Hormone (PTH) Order" max="1" path="/items" name="Parathyroid Hormone (PTH)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="529f5cc2-79a1-4985-8b49-a3d2e0fd1f3d" concept_name="LAB Rheumatoid Factor Order" max="1" path="/items" name="Rheumatoid Factor"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07892e60-1173-4ead-9e1c-ad7a4c8738fb" concept_name="LAB Thyroid Stimulating Hormone (TSH) Order" max="1" path="/items" name="Thyroid Stimulating Hormone (TSH)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dc554256-dc03-443c-9110-d40047f76779" concept_name="LAB Total Protein Order" max="1" path="/items" name="Total Protein"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2f8f064b-7784-49d4-b989-06a9e0ab51e8" concept_name="LAB Transferrin Order" max="1" path="/items" name="Transferrin"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c3f25e2-0dec-4b31-9cce-0faa3773371b" concept_name="LAB Triglycerides Order" max="1" path="/items" name="Triglycerides"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5535231f-8988-4ba4-9b10-11ded170d31e" concept_name="LAB Urate Order" max="1" path="/items" name="Urate"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="82f14490-b4d1-49b7-9f6a-c18d35056285" concept_name="LAB Von Willebrand Antigen (Factor VIII) Order" max="1" path="/items" name="Von Willebrand Antigen (Factor VIII)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9e427cd-f516-4097-a4f6-084f78df6c55" concept_name="LAB D-Dimer Order" max="1" path="/items" name="D-Dimer"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f8b7b7e1-6e8f-4e97-87fb-3b479754cdb2" concept_name="LAB Fibrinogen Order" max="1" path="/items" name="Fibrinogen"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34c8a5eb-3674-4e5e-8a8f-1da7a56add35" concept_name="LAB Lupus Anticoagulant Panel Order" max="1" path="/items" name="Lupus Anticoagulant Panel"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbf4a251-314e-47f5-bf4d-d9fe30bea419" concept_name="LAB Direct Antiglobulin Test Order" max="1" path="/items" name="Direct Antiglobulin Test"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Micro Serology">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbd79bf8-7bc4-4520-967e-1a07a0f64c31" concept_name="LAB Blastomyces Immunodiffusion Serology Order" max="1" path="/items" name="Blastomyces Immunodiffusion Serology"/>
-             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a1353852-a031-4e88-b88a-9aff122bd26e" concept_name="Blood Culture - Pediatric Weight Based Order Panel" max="1" path="/items" name="Blood Culture Panel - Pediatric Weight Based"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e819a30b-1598-4545-adf1-d12034fa6060" concept_name="LAB Coccidioides Serology Order" max="1" path="/items" name="Coccidioides Serology"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="288f1605-cc95-4e68-ad26-34646aefa0f9" concept_name="LAB Cold Agglutinin Titre Order" max="1" path="/items" name="Cold Agglutinin Titre"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="38399cac-e119-4f1f-816f-c87dcf675cb5" concept_name="LAB Cytomegalovirus (CMV) NAT Order" max="1" path="/items" name="Cytomegalovirus (CMV) NAT"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="82a1b29c-f13e-4934-8806-46cc7181c36d" concept_name="LAB Cytomegalovirus Acute Serology - IgM Order" max="1" path="/items" name="Cytomegalovirus Acute Serology - IgM"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25af327b-ce32-4315-9701-9148136a15f9" concept_name="LAB CMV Immunity - IgG Order" max="1" path="/items" name="CMV Immunity - IgG"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c7ea5dee-5a27-4871-b0d8-64b72322a081" concept_name="LAB Epstein-Barr Virus (EBV) NAT Order" max="1" path="/items" name="Epstein-Barr Virus (EBV) NAT"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="51d47a39-66ef-425d-97b1-e37c7ed8df55" concept_name="LAB Epstein-Barr Virus Serology Panel Order" max="1" path="/items" name="Epstein-Barr Virus Serology Panel"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c771fcd-1265-43da-800f-7e5301baa93b" concept_name="LAB Hepatitis A Virus Acute Serology - IgM Order" max="1" path="/items" name="Hepatitis A Virus Acute Serology - IgM"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bc7d2d5f-8845-46b7-a361-e8f0f107dbce" concept_name="LAB Hepatitis A Virus Immunity Serology - IgG Order" max="1" path="/items" name="Hepatitis A Virus Immunity Serology - IgG"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88c4ae98-e05c-46b6-8844-232d3d889733" concept_name="LAB Hepatitis B Core Antibody IgM Order" max="1" path="/items" name="Hepatitis B Core Antibody, IgM"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7cd2e113-1eb2-4877-8a41-00a555cec5fe" concept_name="LAB Hepatitis B Core Antibody Total Order" max="1" path="/items" name="Hepatitis B Core Antibody, Total"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ca88ac9-c9ce-4408-9a72-165a3e43ab35" concept_name="LAB Hepatitis B E Antigen Serology Order" max="1" path="/items" name="Hepatitis B E Antigen Serology"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df5465bb-2aad-42ef-9604-03dd0a51428f" concept_name="LAB Hepatitis B Surface Antibody Order" max="1" path="/items" name="Hepatitis B Surface Antibody"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46d8f219-0569-4748-b8c8-4b82359f2fea" concept_name="LAB Hepatitis C Virus Serology Order" max="1" path="/items" name="Hepatitis C Virus Serology"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b46b0f3a-e5a3-4c98-bc48-16ac39084f35" concept_name="LAB Herpes Simplex Virus Serology - IgG Order" max="1" path="/items" name="Herpes Simplex Virus Serology - IgG"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a3309141-0a95-471c-8ddb-31c46e575bce" concept_name="LAB Histoplasma Antigen Order" max="1" path="/items" name="Histoplasma Antigen"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a0523f4e-cdf4-446d-a259-2ddff99eb0d8" concept_name="LAB Histoplasma Immunodiffusion Serology Order" max="1" path="/items" name="Histoplasma Immunodiffusion Serology"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c5abe026-0844-4673-ba2f-b678616fbd7a" concept_name="LAB Lyme Disease Serology Order" max="1" path="/items" name="Lyme Disease Serology"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8d79a43b-3af2-41ff-9a9e-0a6f1e9c558a" concept_name="LAB Mycoplasma Serology Acute - IgM Order" max="1" path="/items" name="Mycoplasma Serology Acute - IgM"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3fcd8747-f47d-49eb-b91d-a0a88f07be7d" concept_name="LAB Parvovirus Acute Serology - IgM Order" max="1" path="/items" name="Parvovirus Acute Serology - IgM"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="892c5d3b-a83a-4877-9c64-3f1757e0b04f" concept_name="LAB Parvovirus Immunity Serology - IgG Order" max="1" path="/items" name="Parvovirus Immunity Serology - IgG"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed43dd98-ef12-41ff-87e7-776c5e801e1d" concept_name="LAB Toxoplasma Serology - IgG Order" max="1" path="/items" name="Toxoplasma Serology - IgG"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68484fc3-f7d1-40cf-904d-24e2aa467b58" concept_name="LAB Toxoplasma Serology - IgM Order" max="1" path="/items" name="Toxoplasma Serology - IgM"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="96e7eef0-d88f-4785-9114-eeadab4e8f90" concept_name="LAB Herpes Simplex and Varicella Zoster Virus NAT Order" max="1" path="/items" name="Herpes Simplex and Varicella Zoster Virus NAT"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1a36d52b-373d-4971-bd31-190ae0ef964d" concept_name="LAB Varicella Zoster Virus Immunity Serology - IgG Order" max="1" path="/items" name="Varicella Zoster Virus Immunity Serology - IgG"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Micro Urine">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LAB Urine Culture Routine Order" max="1" path="/items" name="Urine Culture, Routine"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Synovial Fluid">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="51a72851-3b86-4c9b-a245-bda65f8702ad" concept_name="LAB Fluid Culture Routine Order" max="1" path="/items" name="Fluid Culture, Routine"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcdb91d1-acd6-40e3-bad6-0c78a07eee06" concept_name="LAB Fungal Culture Order" max="1" path="/items" name="Fungal Culture"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7557b5e-49b5-49cb-822e-858772559be0" concept_name="LAB Cell Count Body Fluid Order" max="1" path="/items" name="Cell Count, Body Fluid"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LAB Mycobacteria Culture Order" max="1" path="/items" name="Mycobacteria Culture"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b80430c5-cd2e-4135-981c-3460688f96ef" concept_name="LAB Urinalysis Microscopic Order" max="1" path="/items" name="Urinalysis, Microscopic"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d276f22d-37ec-46fc-ae4a-95573b177f8c" concept_name="LAB Calcium  Creatinine Ratio Urine Random Order" max="1" path="/items" name="Calcium / Creatinine Ratio, Urine, Random"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c082b764-51d1-4332-b17b-f105d80e52b2" concept_name="LAB Phosphate Urine Random Order" max="1" path="/items" name="Phosphate, Urine, Random"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f50c4890-cb83-4b83-ae7b-732efa5aad41" concept_name="LAB Protein  Creatinine Ratio Urine Random Order" max="1" path="/items" name="Protein / Creatinine Ratio, Urine, Random"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a630662a-7c93-487b-b140-149193fb4029" concept_name="LAB Albumin  Creatinine Ratio Urine Order" max="1" path="/items" name="Albumin / Creatinine Ratio, Urine"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="373a40c8-8318-43bd-a47d-95e6d80a348b" concept_name="LAB N-Telopeptide Urine Random Order" max="1" path="/items" name="N-Telopeptide, Urine, Random"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="24 Hour Urine">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c4130952-6f65-4e03-941d-0e98b3050928" concept_name="LAB Calcium  Creatinine Ratio Urine 24 Hour Order" max="1" path="/items" name="Calcium / Creatinine Ratio, Urine, 24 Hour"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bdb96a20-d77a-4a79-bff0-38c8d17378a8" concept_name="LAB Protein  Creatinine Ratio Urine 24 Hour Order" max="1" path="/items" name="Protein / Creatinine Ratio, Urine, 24 Hour"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="544eea64-c7c8-4575-bba3-dd1c2287d8cb" concept_name="LAB Phosphate Urine 24 Hour Order" max="1" path="/items" name="Phosphate, Urine, 24 Hour"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e1d439a-81b3-4cc7-9b04-c91004109db1" concept_name="LAB Albumin Urine 24 Hour Order" max="1" path="/items" name="Albumin, Urine, 24 Hour"/>
-           </Item>
-           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Mitogen Investigations">
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="06dee5e3-0df8-48a0-bf11-2d75ef666762" concept_name="LAB Anti-Double Stranded DNA Order" max="1" path="/items" name="Anti-Double Stranded DNA"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e028adb-07fc-42c7-8f42-e8a8a46746ec" concept_name="LAB Anti-Nuclear Antibody (ANA) Panel Order" max="1" path="/items" name="Anti-Nuclear Antibody (ANA) Panel"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a80af401-26c5-42ee-a288-debde2c92754" concept_name="LAB Anti-Histone (HISA) Order" max="1" path="/items" name="Anti-Histone (HISA)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bebcc55d-d642-4482-8a2d-aa7cf22a8fd5" concept_name="LAB Anti-Glutamic Acid Decarboxylase (GAD65) Order" max="1" path="/items" name="Anti-Glutamic Acid Decarboxylase (GAD65)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="94d2923f-92b0-4127-bedd-9fd03a693946" concept_name="LAB Myelin Associated Glycoprotien Antibody Order" max="1" path="/items" name="Myelin Associated Glycoprotien Antibody"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a3ad80e3-f223-4d57-af80-10a468cdb096" concept_name="LAB Sjogrens Syndrome-A (SS-ARo) Order" max="1" path="/items" name="Sjogrens Syndrome-A (SS-A/Ro)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="128b9a83-b496-4d67-bf53-86e235265567" concept_name="LAB Sjogrens Syndrome-B (SS-BLa) Order" max="1" path="/items" name="Sjogrens Syndrome-B (SS-B/La)"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="946211ac-0e47-4242-9918-8abba295c422" concept_name="LAB Anti-Scl-70 Order" max="1" path="/items" name="Anti-Scl-70"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4389aee-02aa-4cf6-b322-a8411bcee533" concept_name="LAB Acetylcholine Receptor Binding Order" max="1" path="/items" name="Acetylcholine Receptor, Binding"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
-             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER #1"/>
-           </Item>
-         </Item>
-       </definition>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-         <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-       </integrity_checks>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-         <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-       </integrity_checks>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-         <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-       </integrity_checks>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
-         <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
-       </integrity_checks>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-         <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-       </integrity_checks>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-         <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-       </integrity_checks>
-       <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-         <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-       </integrity_checks>
-     </template>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>3d116f39-54b1-48fd-8579-e59d7ac2654a</id>
+  <name>Rheumatology Investigations Pediatric</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~3d116f39-54b1-48fd-8579-e59d7ac2654a~NAME~Rheumatology Investigations Pediatric}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;All lab orders default to Routine, Once&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Rheumatology Investigations Pediatric">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" path="/items">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" path="/items">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" path="/activities[at0001]/description[at0009]/items[at0132]">
+            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" path="/items[at0002]"/>
+          </Items>
+        </Item>
+      </Item>
+    </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - Routine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9ce6c04c-77ba-402d-832b-23b220e3d3e5" concept_name="LAB Erythrocyte Sedimentation Rate (ESR) Order" max="1" path="/items" name="Erythrocyte Sedimentation Rate (ESR)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d23cd527-4cfe-4b97-89a5-d08cb98558ca" concept_name="LAB Reticulocytes Order" max="1" path="/items" name="Reticulocytes"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="73d8993c-cf48-4372-8204-c5f123539e86" concept_name="LAB 25-Hydroxy Vitamin D Order" max="1" path="/items" name="25-Hydroxy Vitamin D"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d96b65e-e5e5-42b8-aac8-240f1eb83977" concept_name="LAB Angiotensin Converting Enzyme (ACE) Order" max="1" path="/items" name="Angiotensin Converting Enzyme (ACE)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b8e7233a-9bca-492b-bc6e-5e1deec78280" concept_name="LAB Anti-Beta-2 Glycoprotein Order" max="1" path="/items" name="Anti-Beta-2 Glycoprotein"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61118760-6eba-4488-906f-c7eb23b1ca01" concept_name="LAB Anti-Cardiolipin Antibody Order" max="1" path="/items" name="Anti-Cardiolipin Antibody"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="06dee5e3-0df8-48a0-bf11-2d75ef666762" concept_name="LAB Anti-Double Stranded DNA Order" max="1" path="/items" name="Anti-Double Stranded DNA"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7d4ee35-4e83-4c8b-92c1-994547f5444f" concept_name="LAB Anti-Glomerular Basement Membrane (GBM) Order" max="1" path="/items" name="Anti-Glomerular Basement Membrane (GBM)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="23a393ed-4f0b-46b6-b3e6-7e8bfe6aa36b" concept_name="LAB Anti-Neutrophil Cytoplasmic Antibody (ANCA) Order" max="1" path="/items" name="Anti-Neutrophil Cytoplasmic Antibody (ANCA)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e028adb-07fc-42c7-8f42-e8a8a46746ec" concept_name="LAB Anti-Nuclear Antibody (ANA) Panel Order" max="1" path="/items" name="Anti-Nuclear Antibody (ANA) Panel"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fb99043b-c3d4-4edf-a846-4dc5918fe7f6" concept_name="LAB Anti-Proteinase 3 (PR3) Order" max="1" path="/items" name="Anti-Proteinase 3 (PR3)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated Order" max="1" path="/items" name="Bilirubin, Total and Conjugated"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5a6f87a6-e2e5-4344-9847-54fed07d75f9" concept_name="LAB CH50 Complement REF Order" max="1" path="/items" name="CH50 Complement REF"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cc199d8d-65a8-44f4-97d9-aa07f7853151" concept_name="LAB Complement C3 Order" max="1" path="/items" name="Complement C3"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e51a8f5b-c812-4353-95cd-3c20d604d380" concept_name="LAB Complement C4 Order" max="1" path="/items" name="Complement C4"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a6827f03-6d44-4f31-ae8f-09f11b7256c1" concept_name="LAB Creatine Kinase (CK) Order" max="1" path="/items" name="Creatine Kinase (CK)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c77ec2ba-b104-462b-9aea-2ccb9ae9885a" concept_name="LAB Ferritin Order" max="1" path="/items" name="Ferritin"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="52cea719-f06f-4b68-851b-57d014723457" concept_name="LAB Free T4 Order" max="1" path="/items" name="Free T4"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c06828a-6ea9-4b2b-ba69-5f8c5945905b" concept_name="LAB Glucose Fasting Order" max="1" path="/items" name="Glucose, Fasting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="888631be-e114-4319-bdfc-987a5edaf431" concept_name="LAB Immunoglobulin A (IgA) Order" max="1" path="/items" name="Immunoglobulin A (IgA)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="358a22cc-966f-46f3-8e1b-033a4dc380dc" concept_name="LAB Immunoglobulin D (IgD) Order" max="1" path="/items" name="Immunoglobulin D (IgD)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad6864e0-9797-4947-a253-3680af88def3" concept_name="LAB Immunoglobulin G (IgG) Order" max="1" path="/items" name="Immunoglobulin G (IgG)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="768e9cc8-5907-4a8e-b4f2-7903967a8f15" concept_name="LAB Immunoglobulin M (IgM) Order" max="1" path="/items" name="Immunoglobulin M (IgM)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f7843eda-b7e9-44b2-a5c1-a0942a275fb1" concept_name="LAB Iron and TIBC Order" max="1" path="/items" name="Iron and TIBC"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) Order" max="1" path="/items" name="Lactate Dehydrogenase (LD)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dfb0574d-d6cd-49d6-88f6-2a9d08e8706d" concept_name="LAB Lipid Panel Order" max="1" path="/items" name="Lipid Panel"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0d7f07f3-872f-4883-8b59-e568d2bce326" concept_name="LAB Mononucleosis Screen Order" max="1" path="/items" name="Mononucleosis Screen"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="977644de-0c3e-4cfd-b1e3-dc17835d84a2" concept_name="LAB Parathyroid Hormone (PTH) Order" max="1" path="/items" name="Parathyroid Hormone (PTH)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="529f5cc2-79a1-4985-8b49-a3d2e0fd1f3d" concept_name="LAB Rheumatoid Factor Order" max="1" path="/items" name="Rheumatoid Factor"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07892e60-1173-4ead-9e1c-ad7a4c8738fb" concept_name="LAB Thyroid Stimulating Hormone (TSH) Order" max="1" path="/items" name="Thyroid Stimulating Hormone (TSH)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dc554256-dc03-443c-9110-d40047f76779" concept_name="LAB Total Protein Order" max="1" path="/items" name="Total Protein"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2f8f064b-7784-49d4-b989-06a9e0ab51e8" concept_name="LAB Transferrin Order" max="1" path="/items" name="Transferrin"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c3f25e2-0dec-4b31-9cce-0faa3773371b" concept_name="LAB Triglycerides Order" max="1" path="/items" name="Triglycerides"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5535231f-8988-4ba4-9b10-11ded170d31e" concept_name="LAB Urate Order" max="1" path="/items" name="Urate"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="82f14490-b4d1-49b7-9f6a-c18d35056285" concept_name="LAB Von Willebrand Antigen (Factor VIII) Order" max="1" path="/items" name="Von Willebrand Antigen (Factor VIII)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9e427cd-f516-4097-a4f6-084f78df6c55" concept_name="LAB D-Dimer Order" max="1" path="/items" name="D-Dimer"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f8b7b7e1-6e8f-4e97-87fb-3b479754cdb2" concept_name="LAB Fibrinogen Order" max="1" path="/items" name="Fibrinogen"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34c8a5eb-3674-4e5e-8a8f-1da7a56add35" concept_name="LAB Lupus Anticoagulant Panel Order" max="1" path="/items" name="Lupus Anticoagulant Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbf4a251-314e-47f5-bf4d-d9fe30bea419" concept_name="LAB Direct Antiglobulin Test Order" max="1" path="/items" name="Direct Antiglobulin Test"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Micro Serology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbd79bf8-7bc4-4520-967e-1a07a0f64c31" concept_name="LAB Blastomyces Immunodiffusion Serology Order" max="1" path="/items" name="Blastomyces Immunodiffusion Serology"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a1353852-a031-4e88-b88a-9aff122bd26e" concept_name="Blood Culture - Pediatric Weight Based Order Panel" max="1" path="/items" name="Blood Culture Panel - Pediatric Weight Based"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e819a30b-1598-4545-adf1-d12034fa6060" concept_name="LAB Coccidioides Serology Order" max="1" path="/items" name="Coccidioides Serology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="288f1605-cc95-4e68-ad26-34646aefa0f9" concept_name="LAB Cold Agglutinin Titre Order" max="1" path="/items" name="Cold Agglutinin Titre"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="38399cac-e119-4f1f-816f-c87dcf675cb5" concept_name="LAB Cytomegalovirus (CMV) NAT Order" max="1" path="/items" name="Cytomegalovirus (CMV) NAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="82a1b29c-f13e-4934-8806-46cc7181c36d" concept_name="LAB Cytomegalovirus Acute Serology - IgM Order" max="1" path="/items" name="Cytomegalovirus Acute Serology - IgM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25af327b-ce32-4315-9701-9148136a15f9" concept_name="LAB CMV Immunity - IgG Order" max="1" path="/items" name="CMV Immunity - IgG"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c7ea5dee-5a27-4871-b0d8-64b72322a081" concept_name="LAB Epstein-Barr Virus (EBV) NAT Order" max="1" path="/items" name="Epstein-Barr Virus (EBV) NAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="51d47a39-66ef-425d-97b1-e37c7ed8df55" concept_name="LAB Epstein-Barr Virus Serology Panel Order" max="1" path="/items" name="Epstein-Barr Virus Serology Panel"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c771fcd-1265-43da-800f-7e5301baa93b" concept_name="LAB Hepatitis A Virus Acute Serology - IgM Order" max="1" path="/items" name="Hepatitis A Virus Acute Serology - IgM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bc7d2d5f-8845-46b7-a361-e8f0f107dbce" concept_name="LAB Hepatitis A Virus Immunity Serology - IgG Order" max="1" path="/items" name="Hepatitis A Virus Immunity Serology - IgG"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88c4ae98-e05c-46b6-8844-232d3d889733" concept_name="LAB Hepatitis B Core Antibody IgM Order" max="1" path="/items" name="Hepatitis B Core Antibody, IgM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7cd2e113-1eb2-4877-8a41-00a555cec5fe" concept_name="LAB Hepatitis B Core Antibody Total Order" max="1" path="/items" name="Hepatitis B Core Antibody, Total"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ca88ac9-c9ce-4408-9a72-165a3e43ab35" concept_name="LAB Hepatitis B E Antigen Serology Order" max="1" path="/items" name="Hepatitis B E Antigen Serology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df5465bb-2aad-42ef-9604-03dd0a51428f" concept_name="LAB Hepatitis B Surface Antibody Order" max="1" path="/items" name="Hepatitis B Surface Antibody"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46d8f219-0569-4748-b8c8-4b82359f2fea" concept_name="LAB Hepatitis C Virus Serology Order" max="1" path="/items" name="Hepatitis C Virus Serology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b46b0f3a-e5a3-4c98-bc48-16ac39084f35" concept_name="LAB Herpes Simplex Virus Serology - IgG Order" max="1" path="/items" name="Herpes Simplex Virus Serology - IgG"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a3309141-0a95-471c-8ddb-31c46e575bce" concept_name="LAB Histoplasma Antigen Order" max="1" path="/items" name="Histoplasma Antigen"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a0523f4e-cdf4-446d-a259-2ddff99eb0d8" concept_name="LAB Histoplasma Immunodiffusion Serology Order" max="1" path="/items" name="Histoplasma Immunodiffusion Serology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c5abe026-0844-4673-ba2f-b678616fbd7a" concept_name="LAB Lyme Disease Serology Order" max="1" path="/items" name="Lyme Disease Serology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8d79a43b-3af2-41ff-9a9e-0a6f1e9c558a" concept_name="LAB Mycoplasma Serology Acute - IgM Order" max="1" path="/items" name="Mycoplasma Serology Acute - IgM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3fcd8747-f47d-49eb-b91d-a0a88f07be7d" concept_name="LAB Parvovirus Acute Serology - IgM Order" max="1" path="/items" name="Parvovirus Acute Serology - IgM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="892c5d3b-a83a-4877-9c64-3f1757e0b04f" concept_name="LAB Parvovirus Immunity Serology - IgG Order" max="1" path="/items" name="Parvovirus Immunity Serology - IgG"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed43dd98-ef12-41ff-87e7-776c5e801e1d" concept_name="LAB Toxoplasma Serology - IgG Order" max="1" path="/items" name="Toxoplasma Serology - IgG"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68484fc3-f7d1-40cf-904d-24e2aa467b58" concept_name="LAB Toxoplasma Serology - IgM Order" max="1" path="/items" name="Toxoplasma Serology - IgM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="96e7eef0-d88f-4785-9114-eeadab4e8f90" concept_name="LAB Herpes Simplex and Varicella Zoster Virus NAT Order" max="1" path="/items" name="Herpes Simplex and Varicella Zoster Virus NAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1a36d52b-373d-4971-bd31-190ae0ef964d" concept_name="LAB Varicella Zoster Virus Immunity Serology - IgG Order" max="1" path="/items" name="Varicella Zoster Virus Immunity Serology - IgG"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Micro Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LAB Urine Culture Routine Order" max="1" path="/items" name="Urine Culture, Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Synovial Fluid">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="51a72851-3b86-4c9b-a245-bda65f8702ad" concept_name="LAB Fluid Culture Routine Order" max="1" path="/items" name="Fluid Culture, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcdb91d1-acd6-40e3-bad6-0c78a07eee06" concept_name="LAB Fungal Culture Order" max="1" path="/items" name="Fungal Culture"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7557b5e-49b5-49cb-822e-858772559be0" concept_name="LAB Cell Count Body Fluid Order" max="1" path="/items" name="Cell Count, Body Fluid"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LAB Mycobacteria Culture Order" max="1" path="/items" name="Mycobacteria Culture"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b80430c5-cd2e-4135-981c-3460688f96ef" concept_name="LAB Urinalysis Microscopic Order" max="1" path="/items" name="Urinalysis, Microscopic"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d276f22d-37ec-46fc-ae4a-95573b177f8c" concept_name="LAB Calcium  Creatinine Ratio Urine Random Order" max="1" path="/items" name="Calcium / Creatinine Ratio, Urine, Random"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c082b764-51d1-4332-b17b-f105d80e52b2" concept_name="LAB Phosphate Urine Random Order" max="1" path="/items" name="Phosphate, Urine, Random"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f50c4890-cb83-4b83-ae7b-732efa5aad41" concept_name="LAB Protein  Creatinine Ratio Urine Random Order" max="1" path="/items" name="Protein / Creatinine Ratio, Urine, Random"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a630662a-7c93-487b-b140-149193fb4029" concept_name="LAB Albumin  Creatinine Ratio Urine Order" max="1" path="/items" name="Albumin / Creatinine Ratio, Urine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="373a40c8-8318-43bd-a47d-95e6d80a348b" concept_name="LAB N-Telopeptide Urine Random Order" max="1" path="/items" name="N-Telopeptide, Urine, Random"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="24 Hour Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c4130952-6f65-4e03-941d-0e98b3050928" concept_name="LAB Calcium  Creatinine Ratio Urine 24 Hour Order" max="1" path="/items" name="Calcium / Creatinine Ratio, Urine, 24 Hour"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bdb96a20-d77a-4a79-bff0-38c8d17378a8" concept_name="LAB Protein  Creatinine Ratio Urine 24 Hour Order" max="1" path="/items" name="Protein / Creatinine Ratio, Urine, 24 Hour"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="544eea64-c7c8-4575-bba3-dd1c2287d8cb" concept_name="LAB Phosphate Urine 24 Hour Order" max="1" path="/items" name="Phosphate, Urine, 24 Hour"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e1d439a-81b3-4cc7-9b04-c91004109db1" concept_name="LAB Albumin Urine 24 Hour Order" max="1" path="/items" name="Albumin, Urine, 24 Hour"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Mitogen Investigations">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="06dee5e3-0df8-48a0-bf11-2d75ef666762" concept_name="LAB Anti-Double Stranded DNA Order" max="1" path="/items" name="Anti-Double Stranded DNA"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e028adb-07fc-42c7-8f42-e8a8a46746ec" concept_name="LAB Anti-Nuclear Antibody (ANA) Panel Order" max="1" path="/items" name="Anti-Nuclear Antibody (ANA) Panel"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a80af401-26c5-42ee-a288-debde2c92754" concept_name="LAB Anti-Histone (HISA) Order" max="1" path="/items" name="Anti-Histone (HISA)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bebcc55d-d642-4482-8a2d-aa7cf22a8fd5" concept_name="LAB Anti-Glutamic Acid Decarboxylase (GAD65) Order" max="1" path="/items" name="Anti-Glutamic Acid Decarboxylase (GAD65)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a3ad80e3-f223-4d57-af80-10a468cdb096" concept_name="LAB Sjogrens Syndrome-A (SS-ARo) Order" max="1" path="/items" name="Sjogrens Syndrome-A (SS-A/Ro)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="128b9a83-b496-4d67-bf53-86e235265567" concept_name="LAB Sjogrens Syndrome-B (SS-BLa) Order" max="1" path="/items" name="Sjogrens Syndrome-B (SS-B/La)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="946211ac-0e47-4242-9918-8abba295c422" concept_name="LAB Anti-Scl-70 Order" max="1" path="/items" name="Anti-Scl-70"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4389aee-02aa-4cf6-b322-a8411bcee533" concept_name="LAB Acetylcholine Receptor Binding Order" max="1" path="/items" name="Acetylcholine Receptor, Binding"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER #1"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
