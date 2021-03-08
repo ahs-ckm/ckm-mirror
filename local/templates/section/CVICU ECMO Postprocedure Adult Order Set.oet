@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~69f6e543-8a5f-47d7-b632-02b903db8441~NAME~CVICU ECMO Postprocedure Adult Order Set}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -103,8 +111,12 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ECMO Management; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Should be Adult Critical Care EAP&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;ECMO Blood Gas Parameter Goals: SpO2 (%), PaO2 (mmHg), pH&lt;/p&gt;&lt;p&gt;ECMO FiO2: Other (specify)&lt;/p&gt;&lt;p&gt;ECMO Pmax: 20 cmH2O&lt;/p&gt;&lt;p&gt;ECMO PEEP: 10 cmH2O&lt;/p&gt;&lt;p&gt;ECMO Set Ventilator Rate: 10 Breaths/minute&lt;/p&gt;&lt;p&gt;Minimum flow of 2.5 LPM if fully anticoagulated.&lt;br&gt;Every 4 hour burping of oxygenator, increase sweep gas to max level for 10 seconds.&lt;br&gt;Ensure appropriate securement device at all times AS PER UNIT POLICY.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;ECMO Blood Gas Parameter Goals: SpO2 (%), PaO2 (mmHg), pH&lt;/p&gt;&lt;p&gt;ECMO FiO2: Other (specify)&lt;/p&gt;&lt;p&gt;&lt;s&gt;ECMO Pmax: 20 cmH2O&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&lt;s&gt;ECMO PEEP: 10 cmH2O&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;ECMO Sweep Gas:&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;ECMO Flow min: 2.5&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;ECMO Flow max:&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;LA/LV Vent Flow min: 250&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;LA/LV Vent Flow max:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ECMO Set Ventilator Rate: 10 Breaths/minute&lt;/p&gt;&lt;p&gt;Minimum flow of 2.5 LPM if fully anticoagulated.&lt;br&gt;Every 4 hour burping of oxygenator, increase sweep gas to max level for 10 seconds.&lt;br&gt;Ensure appropriate securement device at all times AS PER UNIT POLICY.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -116,7 +128,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~69f6e543-8a5f-47d7-b632-02b903db8441~NAME~CVICU ECMO Postprocedure Adult Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="CVICU ECMO Postprocedure Adult">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anticoagulants; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Feb 22 - ERX Request 1038 - Pending&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="CVICU ECMO Postprocedure Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Postprocedure Care (Floor/On Unit)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety; Recovery &amp; On Unit">
@@ -129,8 +149,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="PC Gastric Tube Care Order" max="1" path="/items" name="Gastric Tube Care; Nasogastric Drainage Tube connect to, Until discontinued"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ECMO Management; Recovery &amp; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eb0a69bc-aace-491a-a9a6-21741d1c4df6" concept_name="RESP PED Extra Corporeal Life Support - Ventilator Management Order" max="1" path="/items" name="Extra Corporeal Life Support - Ventilator Management; continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eb0a69bc-aace-491a-a9a6-21741d1c4df6" concept_name="RESP PED Extra Corporeal Life Support - Ventilator Management Order IP" max="1" path="/items" name="Extra Corporeal Life Support - Ventilator Management; continuous"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care; Recovery &amp; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f57074d6-fdcf-4c26-beaa-a1f268731deb" concept_name="SURG BEDSIDE Wound Care Order" max="1" path="/items" name="Wound Care; POC as per unit protocol"/>
@@ -146,6 +165,8 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium; Once STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate; Once STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea; Once STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) Order" max="1" path="/items" name="Lactate Dehydrogenase (LD); Once STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2361047e-db84-4c5b-b31b-6de3e2d31552" concept_name="LAB Plasma Hemoglobin Order" max="1" path="/items" name="Plasma Hemoglobin; Once STAT"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Coagulation; Recovery &amp; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9e427cd-f516-4097-a4f6-084f78df6c55" concept_name="LAB D-Dimer Order" max="1" path="/items" name="D-Dimer; Weekly"/>
@@ -168,6 +189,7 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticoagulants; Recovery &amp; On Unit">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="55374ac7-9ed8-40ce-b289-4037b7c4b6ef" concept_name="Mechanical Circulatory Support ECMO Order Group" max="1" path="/items" name="Mechanical Circulatory Support ECMO Order Group"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Heparin for Line Patency; 1 unit/mL, 1-5 mLs, every 1 hour, as needed for line patency ECMO oxygenator pigtail"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Specialty Consults; Recovery &amp; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3edb412b-121d-45e0-a286-6c24f21d9cee" concept_name="CONS Inpatient Consult to Transplantation Order" max="1" path="/items" name="Inpatient Consult to Transplantation"/>
