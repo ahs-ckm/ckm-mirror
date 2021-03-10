@@ -1,98 +1,115 @@
 <?xml version="1.0"?>
- <template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-   <id>a1e3b304-f040-4921-98b9-9f59e30ce28c</id>
-   <name>Citrate Titration Smart Group</name>
-   <description>
-     <lifecycle_state>Initial</lifecycle_state>
-     <details>
-       <purpose/>
-       <use/>
-       <misuse/>
-     </details>
-     <other_details>
-       <item>
-         <key>MetaDataSet:Sample Set </key>
-         <value>Template metadata sample set </value>
-       </item>
-       <item>
-         <key>Acknowledgements</key>
-         <value/>
-       </item>
-       <item>
-         <key>Business Process Level</key>
-         <value/>
-       </item>
-       <item>
-         <key>Care setting</key>
-         <value/>
-       </item>
-       <item>
-         <key>Client group</key>
-         <value/>
-       </item>
-       <item>
-         <key>Clinical Record Element</key>
-         <value/>
-       </item>
-       <item>
-         <key>Copyright</key>
-         <value/>
-       </item>
-       <item>
-         <key>Issues</key>
-         <value/>
-       </item>
-       <item>
-         <key>Owner</key>
-         <value/>
-       </item>
-       <item>
-         <key>Sign off</key>
-         <value/>
-       </item>
-       <item>
-         <key>Speciality</key>
-         <value/>
-       </item>
-       <item>
-         <key>User roles</key>
-         <value/>
-       </item>
-     </other_details>
-   </description>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-     <items>
-       <item>
-         <key>CKT.Clinical Guidance</key>
-         <value>&lt;p&gt;&lt;strong&gt;4% Trisodium Citrate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Monitoring: &lt;/strong&gt;The infusion of Citrate is titrated to the post-filter ionized calcium target goal selected. The post-filter&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;ionized calcium must be drawn from the blue injection port on the hemofilter set. Monitor Q1h until stable then q4h.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width:0px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;strong&gt;Circuit ionized calcium mmol/L (target 0.2 –&amp;nbsp;0.4 mmol/L)&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;strong&gt;4% sodium citrate Infusion Rate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;(start at 180 mL/hr and 140 mL/hr in patients with liver failure)&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Greater than 0.5&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Increase 30 mL/hr and call MD&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;0.41 to 0.5&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Increase 20 mL/hr&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;0.2 to 0.4&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;No change&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Less than 0.2&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Decrease 20 mL/hr&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-     <items>
-       <item>
-         <key>CKT.Content Details</key>
-         <value>&lt;p&gt;Target post-filter ionized calcium (iCa) 0.20 - 0.40 mmol/L. Adjust citrate infusion rate as per nomogram. Circuit ionized calcium mmol/L (target 0.2 - 0.4 mmol/L) 4% sodium citrate Infusion Rate (start at 180 mL/hr and 140 mL/hr in patients with liver failure) Greater than 0.5 Increase 30 mL/hr and call MD Between 0.41 to 0.5 Increase 20 mL/hr Between 0.2 to 0.4 No change Less than 0.2 Decrease 20 mL/hr&lt;/p&gt;</value>
-       </item>
-     </items>
-   </annotations>
-   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a1e3b304-f040-4921-98b9-9f59e30ce28c~NAME~Citrate Titration Smart Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Citrate Titration">
-     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication - CRRT Citrate - Citrate Titration"/>
-   </definition>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
-     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-   </integrity_checks>
-   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-   </integrity_checks>
- </template>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>a1e3b304-f040-4921-98b9-9f59e30ce28c</id>
+  <name>Citrate Titration Smart Group</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~a1e3b304-f040-4921-98b9-9f59e30ce28c~NAME~Citrate Titration Smart Group}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;4% Trisodium Citrate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Solution: &lt;/strong&gt;40 grams Trisodium Citrate in 1000 mL D5W – 40mg/mL[KK1]&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Monitoring: &lt;/strong&gt;The infusion of Citrate is titrated to the post-filter ionized calcium target goal selected. The post-filter ionized calcium (iCa) must be drawn from the blue injection port on the hemofilter set.&lt;/p&gt;&lt;p&gt;Draw initial post filter iCA &lt;strong&gt;1&lt;/strong&gt; hour after therapy initiation.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Titration Nomogram for 4% Trisodium Citrate Infusion:&lt;/u&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;left&quot; style=&quot;width:0px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;strong&gt;Post Filter (circuit)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ionized Calcium&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;(Target 0.20 – 0.45mmol/ L)&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;strong&gt;4% Tridosium Citrate Infusion Rate &lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;strong&gt;Repeat Post-Filter iCa&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Greater than 0.5 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;↑ 30 mL/hr + call MD&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;In 1 hour&lt;/p&gt;&lt;p&gt;(If infusion capped per MD orders, repeat q4hrs)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;0.46-0.5 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;↑ 20 mL/hr&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;In 1 hour&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;0.2-0.45 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;No change&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;In 4 hours&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;Less than 0. 20 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;↓ 20 mL/hr&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;In 1 hour&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;If post filter iCa is greater than 0.50 mmol/L, notify MRHP. The MRHP may order no further increase (capped) of the trisodium citrate infusion rate if the filter appears to be working well.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication - CRRT Citrate - Citrate Titration&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Target post-filter ionized calcium (iCa) 0.20 - 0.45&amp;nbsp;mmol/L.&lt;/p&gt;&lt;p&gt;Adjust citrate infusion rate as per nomogram.&lt;/p&gt;&lt;p&gt;View the CRRT Nomogram report on the Summary activity.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Circuit ionized calcium mmol/L (target 0.2 - 0.45 mmol/L)&lt;/p&gt;&lt;p&gt;4% sodium citrate Infusion Rate (start at 180 mL/hr and 140 mL/hr in patients with liver failure)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Greater than 0.5&lt;/p&gt;&lt;p&gt;Increase 30 mL/hr and call MD&lt;/p&gt;&lt;p&gt;Repeat Post-Filter iCa in 1 hour (If infusion capped per MD orders, repeat every 4 hours)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Between 0.46&amp;nbsp;to 0.5&lt;/p&gt;&lt;p&gt;Increase 20 mL/hr&lt;/p&gt;&lt;p&gt;Repeat Post-Filter iCa in 1 hour&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Between 0.2 to 0.45&lt;/p&gt;&lt;p&gt;No change&lt;/p&gt;&lt;p&gt;Repeat Post-Filter iCa in 4&amp;nbsp;hour&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Less than 0.2&lt;/p&gt;&lt;p&gt;Decrease 20 mL/hr&lt;/p&gt;&lt;p&gt;Repeat Post-Filter iCa in 1 hour&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Citrate Toxicity&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;It is important to monitor for citrate toxicity, particularly in patients with liver dysfunction. Citrate accumulation in its most severe form is recognized by the development of severe ionized hypocalcemia and progressive hypotension&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Citrate Titration">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication - CRRT Citrate - Citrate Titration"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Citrate Toxicity"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+</template>
