@@ -76,30 +76,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Dialysate and Replacement Potassium&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;DO NOT ORDER ADDITONAL POTASSIUM IF ORDERING PRISMASOL 4&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Dialysate and Replacement Potassium&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sterile water for injection 100 mL injection; *** mmol/L, continuous as needed, CRRT dialysate and replacement&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Potassium for dialysate and replacement solution for CRRT.&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;WARNING: DO NOT ORDER ADDITONAL POTASSIUM IF ORDERING PRISMASOL 4&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Dialysate and Replacement Potassium&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sterile water for injection 100 mL injection; *** mmol/L, continuous as needed, CRRT dialysate and replacement&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Priming Solution - Heparin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; 1000 mL, continuous as needed, CRRT circuit priming&apos;]/activities[at0001]">
     <items>
       <item>
@@ -150,12 +126,7 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="CVVHDF Citrate">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fcfa8558-f829-4127-96b0-452c7dca01c3" concept_name="REN Continuous Renal Replacement Therapy - Adult Order" max="1" path="/items" name="Continuous Renal Replacement Therapy Adult; CRRT CVVHDF Citrate Adult"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Dialysate and Replacement Potassium">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="48e649b4-dd84-47cd-8590-9887f989d08c" concept_name="PHARM potassium chloride 40 mmol in sterile water for injection 100 mL injection Order" max="1" path="/items" name="potassium chloride 40 mmol in sterile water for injection 100 mL injection; *** mmol/L, continuous as needed, CRRT dialysate and replacement"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; NO potassium chloride needed for CRRT"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="72a1a7b8-9a8d-42ec-966e-ec1bacf3f4ca" concept_name="Dialysate and Replacement Potassium Order Group" max="1" path="/items" name="Dialysate and Replacement Potassium"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Supplementary Bicarbonate Infusion (if necessary)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c409230-cd57-420f-a990-b72db6dd4afb" concept_name="PHARM sodium bicarbonate infusion Order" max="1" path="/items" name="sodium bicarbonate infusion; *** mmol/hr, intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
