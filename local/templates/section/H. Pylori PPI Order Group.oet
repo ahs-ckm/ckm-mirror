@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>64b882a2-a344-44a1-82ae-d9339caa55e4</id>
+  <name>H. Pylori PPI Order Group</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Single Select&lt;/p&gt;</value>
+      </item>
+    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~64b882a2-a344-44a1-82ae-d9339caa55e4~NAME~H. Pylori PPI Order Group}</value></item></items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;pantoprazole magnesium Enteric-coated tablet; 40 mg PO BID for 14 days. Before breakfast and before dinner.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="PPI">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="01fef066-3c28-4cc8-aa05-70f85e171a4e" concept_name="PHARM pantoprazole sodium, delayed-release Tablet Order" max="1" path="/items" name="pantoprazole sodium, delayed-release Tablet; 40 mg PO BID for 14 days. Before breakfast and before dinner."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium Enteric-coated tablet; 40 mg PO BID for 14 days. Before breakfast and before dinner."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="274a88ac-0879-4184-b5f1-2ffe0efee4ea" concept_name="PHARM RABEprazole Enteric-coated tablet Order" max="1" path="/items" name="RABEprazole Enteric-coated tablet; 20 mg PO BID for 14 days. Before breakfast and before dinner."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="01238183-090c-4481-b8cd-c16185530b0f" concept_name="PHARM omeprazole, delayed release Capsule Order" max="1" path="/items" name="omeprazole, delayed release Capsule; 20 mg PO BID for 14 days. Before breakfast and before dinner."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dc3edba2-94c4-48f1-8426-00b71665d2ad" concept_name="PHARM esomeprazole, delayed release Tablet Order" max="1" path="/items" name="esomeprazole, delayed release Tablet; 40 mg PO BID for 14 days. Before breakfast and before dinner."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="85e7f7b0-2358-40bd-9519-60490d855dcb" concept_name="PHARM lansoprazole, delayed-release Tablet Order" max="1" path="/items" name="lansoprazole, delayed-release Tablet; 30 mg PO BID for 14 days. Before breakfast and before dinner."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Dexlansoprazole 60 mg, PO BID, for 14 days, before breakfast and before dinner."/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
