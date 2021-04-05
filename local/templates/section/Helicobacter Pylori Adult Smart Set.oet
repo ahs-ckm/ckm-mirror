@@ -92,11 +92,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Second Line: Choose Bismuth or Levofloxacin Based Triple Therapy (Single Select)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Second Line: Choose Bismuth or Levofloxacin Based Triple Therapy (Single Select)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Single Select&lt;/p&gt;</value>
+        <value>&lt;p&gt;single select&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -105,6 +105,14 @@
       <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;Single Select&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fourth Line: Rifabutin Based Triple Therapy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;pantoprazole magnesium Enteric-coated tablet; 40 mg, PO, BID, for 10 days. Before breakfast and before dinner.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -124,6 +132,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Penicillin Allergy&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;PPI, Clarithromycin, Metronidazole (PCM):&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;clarithromycin Tablet; 500 mg, PO, twice a day for 14 days.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Penicillin Allergy&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;PPI, Clarithromycin, Metronidazole (PCM):&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE Tablet; 500 mg, PO, twice a day for 14 days.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Helicobacter Pylori Adult Smart Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="First Line: CLAMET Concomitant Quadruple Therapy">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="64b882a2-a344-44a1-82ae-d9339caa55e4" concept_name="H. Pylori PPI Order Group" max="1" path="/items" name="PPI"/>
@@ -133,8 +157,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Second Line: Choose Bismuth or Levofloxacin Based Triple Therapy (Single Select)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="a7f5f0d2-807c-48b5-82ab-b4e2d4dbf8f5" concept_name="Bismuth Based Quadruple Therapy Order Group" max="1" path="/items" name="Bismuth Based Quadruple Therapy"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="OR"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="67f4402a-1243-418d-a640-41b93c448cc5" concept_name="Levofloxacin Based Triple Therapy Order Group" max="1" path="/items" name="Levofloxacin Based Triple Therapy"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Third Line: if 2nd line was Bismuth choose Levofloxacin as 3rd line, if 2nd line was levofloxacin choose Bismuth as 3rd line treament">
@@ -144,7 +167,13 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="a7f5f0d2-807c-48b5-82ab-b4e2d4dbf8f5" concept_name="Bismuth Based Quadruple Therapy Order Group" max="1" path="/items" name="Bismuth Based Quadruple Therapy"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fourth Line: Rifabutin Based Triple Therapy">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="64b882a2-a344-44a1-82ae-d9339caa55e4" concept_name="H. Pylori PPI Order Group" max="1" path="/items" name="PPI"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium Enteric-coated tablet; 40 mg, PO, BID, for 10 days. Before breakfast and before dinner."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="01fef066-3c28-4cc8-aa05-70f85e171a4e" concept_name="PHARM pantoprazole sodium, delayed-release Tablet Order" max="1" path="/items" name="pantoprazole sodium, delayed-release Tablet; 40 mg, PO, BID, for 10 days. Before breakfast and before dinner."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="274a88ac-0879-4184-b5f1-2ffe0efee4ea" concept_name="PHARM RABEprazole Enteric-coated tablet Order" max="1" path="/items" name="RABEprazole Enteric-coated tablet; 20 mg, PO, BID, for 10 days. Before breakfast and before dinner."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="01238183-090c-4481-b8cd-c16185530b0f" concept_name="PHARM omeprazole, delayed release Capsule Order" max="1" path="/items" name="omeprazole, delayed release Capsule; 20mg, PO, BID, for 10 days. Before breakfast and before dinner."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dc3edba2-94c4-48f1-8426-00b71665d2ad" concept_name="PHARM esomeprazole, delayed release Tablet Order" max="1" path="/items" name="esomeprazole, delayed release Tablet; 40mg, PO, BID, for 10 days. Before breakfast and before dinner."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="85e7f7b0-2358-40bd-9519-60490d855dcb" concept_name="PHARM lansoprazole, delayed-release Tablet Order" max="1" path="/items" name="lansoprazole, delayed-release Tablet; 30mg, PO, BID, for 10 days. Before breakfast and before dinner."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Dexlansoprazole 60 mg, PO, BID, for 10 days. Before Breakfast and before dinner."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3c558a0f-62d3-43d6-80b8-b5b51bd3b740" concept_name="PHARM amoxicillin Capsule Order" max="1" path="/items" name="amoxicillin Capsule; 1g PO, twice a day, for 10 days."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b4a88a2d-31c0-48fe-a2c4-93be31854d9f" concept_name="PHARM rifABUTin Capsule Order" max="1" path="/items" name="rifABUTin Capsule; 150 mg PO, twice a day, for 10 days."/>
     </Item>
@@ -164,14 +193,14 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
-    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
