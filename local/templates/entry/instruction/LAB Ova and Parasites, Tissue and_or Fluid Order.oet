@@ -78,7 +78,11 @@
         <key>Technical.EPIC ID</key>
         <value>&lt;p&gt;LAB4086&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~b8a3db48-d8fd-4a30-9651-ea4b5f30397b~NAME~LAB Ova and Parasites, Tissue and/or Fluid Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~b8a3db48-d8fd-4a30-9651-ea4b5f30397b~NAME~LAB Ova and Parasites, Tissue and/or Fluid Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
     <items>
@@ -140,7 +144,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Free text</value>
+        <value>&lt;p&gt;Multi-select; Free text box for comments&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -160,14 +164,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Travel history (other than Canada and USA) within past 2 years before onset of symptoms (country and date of return)&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Mandatory; Free text</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Onset of symptoms (select appropriate)&apos;]">
     <items>
       <item>
@@ -176,15 +172,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Exposure history (select all that apply)&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Mandatory; Multi-select; Free text box for comments</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Demographics (select all that apply):&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Reason for screening&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -370,7 +358,7 @@
           <includedValues>Larynx</includedValues>
           <includedValues>Leg Stump, Left</includedValues>
           <includedValues>Leg Stump, Right</includedValues>
-          <includedValues>Leg, Left</includedValues>
+          <includedValues>Leg, Left;</includedValues>
           <includedValues>Leg, Right</includedValues>
           <includedValues>Leg, Unspecified</includedValues>
           <includedValues>Lip, Lower</includedValues>
@@ -425,6 +413,7 @@
           <includedValues>Pulmonary Valve</includedValues>
           <includedValues>Rectal</includedValues>
           <includedValues>Retroperitoneum</includedValues>
+          <includedValues>Scalp</includedValues>
           <includedValues>Scrotum</includedValues>
           <includedValues>Shoulder, Left</includedValues>
           <includedValues>Shoulder, Right</includedValues>
@@ -478,7 +467,49 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Suspected Organism:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Suspected Organism:">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Actinomyces</includedValues>
+          <includedValues>Actinomycete</includedValues>
+          <includedValues>Arcanobacterium</includedValues>
+          <includedValues>Bacillus anthracis</includedValues>
+          <includedValues>Brucella</includedValues>
+          <includedValues>Burkholderia</includedValues>
+          <includedValues>Campylobacter</includedValues>
+          <includedValues>Chlamydia</includedValues>
+          <includedValues>Clostridium botulinum</includedValues>
+          <includedValues>Clostridium tetani</includedValues>
+          <includedValues>Corynebacterium</includedValues>
+          <includedValues>Coxiella burnetii</includedValues>
+          <includedValues>CPO</includedValues>
+          <includedValues>Diphtheria</includedValues>
+          <includedValues>ESBL</includedValues>
+          <includedValues>Francisella</includedValues>
+          <includedValues>Fusobacterium</includedValues>
+          <includedValues>GAS</includedValues>
+          <includedValues>Haemophilus ducreyi</includedValues>
+          <includedValues>Helicobacter</includedValues>
+          <includedValues>Legionella</includedValues>
+          <includedValues>Listeria</includedValues>
+          <includedValues>Mycobacterium tuberculosis</includedValues>
+          <includedValues>Neisseria gonorrhoeae</includedValues>
+          <includedValues>Neisseria meningitidis</includedValues>
+          <includedValues>Propionibacterium</includedValues>
+          <includedValues>Pseudomonas</includedValues>
+          <includedValues>Salmonella</includedValues>
+          <includedValues>Shiga toxin</includedValues>
+          <includedValues>Shigella</includedValues>
+          <includedValues>Staphylococcus aureus</includedValues>
+          <includedValues>Stenotrophomonas</includedValues>
+          <includedValues>Vibrio</includedValues>
+          <includedValues>VRE</includedValues>
+          <includedValues>Yeast</includedValues>
+          <includedValues>Yersinia</includedValues>
+          <includedValues>Zygomycosis</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Clinical History/Information:"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Patient status:">
       <Rule path="/items[at0002]">
@@ -498,7 +529,6 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Travel history (other than Canada and USA) within past 2 years before onset of symptoms (country and date of return)"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Onset of symptoms (select appropriate)">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
@@ -507,22 +537,17 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Exposure history (select all that apply)">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reason for screening">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
-          <includedValues>Raw fish or meat (Specify)</includedValues>
+          <includedValues>Travel history (other than Canada and USA) within past 2 years before onset of symptoms (country and ate of return)</includedValues>
+          <includedValues>Raw fist or meat (Specify)</includedValues>
           <includedValues>Contact with a person with parasitic infection (Specify)</includedValues>
           <includedValues>Confirmed previous parasitic infection (Specify)</includedValues>
           <includedValues>Contaminated or untreated water (Specify)</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Demographics (select all that apply):">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Refugee/Recent immigrant/international adoption (Specify)</includedValues>
-          <includedValues>Employment - Food handler, Daycare worker, Health Care Worker (Specify)</includedValues>
-          <includedValues>Work Visa (Specify)</includedValues>
+          <includedValues>Refugee / recent immigrant / international adoption (specify)</includedValues>
+          <includedValues>Employment - food handler, daycare worker, health care worker (specify)</includedValues>
+          <includedValues>Work visa (specify)</includedValues>
         </constraint>
       </Rule>
     </Items>
