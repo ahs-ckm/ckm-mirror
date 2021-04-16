@@ -72,14 +72,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If Activity as Tolerated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulate; choose crutches, cane, one person assist, two person assist, stand by assist etc.&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If Activity as Tolerated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions, POD 0: stand at bedside the evening of surgery and walk to doorway if able&apos;]/activities[at0156]">
     <items>
       <item>
@@ -88,7 +80,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If Activity as Tolerated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions, POD 1: start BE-FIT reconditioning program 3 times daily &amp; up in chair for all meals&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If Activity as Tolerated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions, POD 1: start BE-FIT reconditioning program 3 times daily &amp; up in chair for all meals. Activity goal is 4 hours.&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -96,7 +88,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If Activity as Tolerated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions, POD 2 initiate appropriate daily mobility plan with a goal to walking in hall  3 x daily&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If Activity as Tolerated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions, POD 2 initiate appropriate daily mobility plan with a goal to walking in hall  3 x daily. Activity goal is 4 hours.&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -128,7 +120,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Notify physiotherapist if pre-operative mobility concerns, if patient requires more than one-person assist, or if patient requires walking aid.&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Consult physiotherapist if pre-operative mobility concerns, if patient requires more than one-person assist, or if patient requires walking aid.&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -136,15 +128,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Notify Occupational Therapist if concerns with skin integrity or independent activity of daily living.&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Turn Cough Deep Breathe&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Consult Occupational Therapist if concerns with skin integrity or independent activity of daily living.&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -154,10 +138,9 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Activity EASE Postprocedure Smart Group">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="If Activity as Tolerated">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339a8148-d792-4add-bdf2-644fe6f9ca03" concept_name="PC Ambulate Order" max="1" path="/items" name="Ambulate; choose crutches, cane, one person assist, two person assist, stand by assist etc."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No Activity Restrictions, POD 0: stand at bedside the evening of surgery and walk to doorway if able"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No Activity Restrictions, POD 1: start BE-FIT reconditioning program 3 times daily &amp; up in chair for all meals"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No Activity Restrictions, POD 2 initiate appropriate daily mobility plan with a goal to walking in hall  3 x daily"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No Activity Restrictions, POD 1: start BE-FIT reconditioning program 3 times daily &amp; up in chair for all meals. Activity goal is 4 hours."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No Activity Restrictions, POD 2 initiate appropriate daily mobility plan with a goal to walking in hall  3 x daily. Activity goal is 4 hours."/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="If Activity Restricted">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Choose: strict bed rest or bed rest with exceptions."/>
@@ -166,9 +149,9 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Orient patient to place/time/date qam &amp; each clinical contact; update whiteboard every shift"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Ask patient/caregivers to bring clothes from home and have patient dress daily once appropriate"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Encourage patient to participate in activities of daily living as able."/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notify physiotherapist if pre-operative mobility concerns, if patient requires more than one-person assist, or if patient requires walking aid."/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notify Occupational Therapist if concerns with skin integrity or independent activity of daily living."/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a09f9ba1-ee35-4a24-905e-86679d0d65f3" concept_name="PC Turn Cough Deep Breathe Order" max="1" path="/items" name="Turn Cough Deep Breathe"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Consult physiotherapist if pre-operative mobility concerns, if patient requires more than one-person assist, or if patient requires walking aid."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Consult Occupational Therapist if concerns with skin integrity or independent activity of daily living."/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99654b40-201f-4014-864b-256d0617b2c8" concept_name="PC Incentive Spirometry Order" max="1" path="/items" name="Incentive Spirometry; every 4 hours, while awake."/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
