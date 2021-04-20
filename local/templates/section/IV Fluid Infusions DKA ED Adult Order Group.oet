@@ -60,11 +60,27 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~8ced69ff-4635-47a8-8e2c-105c4e79c79c~NAME~IV Fluid Infusions DKA ED Adult Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Most DKA patients are total body potassium depleted at presentation. Once diuresis is established, potassium should be added to IV solution based on serum potassium values:&amp;nbsp;&lt;br&gt;o Serum K+ greater than 5.2 mmol/L: HOLD potassium&amp;nbsp;&lt;br&gt;o Serum K+ 3.3 – 5.2 mmol/L: add potassium chloride 20 mmol/L to each 1 Litre bag of fluid&amp;nbsp;&lt;br&gt;o Serum K+ less than 3.3 mmol/L: HOLD insulin until K+ greater than 3.3 mmol/L AND add potassium chloride 20 to 40 mmol to each 1 litre bag of fluid&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;o NOTE: Maximum rate of K+ administration is 20 mmol/hour. For example, 1 Litre of Normal Saline with 40 mmol of potassium chloride should run at 500 mL/hour max rate.&amp;nbsp;&lt;br&gt;o Consider using potassium phosphate instead of potassium chloride if severe hypophosphatemia&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;When serum glucose less than 15 mmol/L change IV fluids to D5W-0.45% NaCl with potassium chloride at a rate of 150 or 250 mL/hour to maintain plasma glucose of 12 to 14 mmol/L and continue insulin infusion until acidosis corrected.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Add: &quot;If serum glucose greater than 14mmol/L&quot; to nursing comment for each infusion&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -76,7 +92,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; 250 mL/hr, intravenous, once, as needed, if postassium level yet unknown or greater than 5.2, reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose greater than 14mmol/L, if postassium level yet unknown or greater than 5.2, reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -84,7 +108,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; 250 mL/hr, intravenous, once, as needed, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose greater than 14mmol/L, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -92,11 +124,27 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;&amp;nbsp;If serum glucose greater than 14 mmol/L&lt;/span&gt;, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;April 19/21 (Lyle Thomas) Add:&lt;/p&gt;&lt;p&gt;Additional Clinical Guidance text:&amp;nbsp;&lt;em&gt;If plasma corrected Sodium (Corrected plasma [Na+] = Measured [Na+] + [3/10 × ([Glucose (mmol/L)] −&amp;nbsp;5)] is more than 135 and if plasma osmolality is falling less than 3 mmol/kg/hour; choose the following intravenous solution.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&quot;If serum glucose greater than 14mmol/L&quot; to nursing comment for each infusion&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -104,11 +152,19 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Maximum of 50 mL/kg TOTAL in first 4 hours including previous boluses/EMS fluids&lt;br&gt;Choice of fluid and concentration of KCl should be continually adjusted based on latest electrolyte results&lt;/p&gt;</value>
+        <value>&lt;p&gt;If plasma corrected Sodium (Corrected plasma [Na+] = Measured [Na+] + [3/10 × ([Glucose (mmol/L)] −&amp;nbsp;5)] is more than 135 and if plasma osmolality is falling less than 3 mmol/kg/hour; choose the following intravenous solution.&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Maximum of 50 mL/kg TOTAL in first 4 hours including previous boluses/EMS fluids&lt;br&gt;Choice of fluid and concentration of KCl should be continually adjusted based on latest electrolyte results&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed, if postassium level yet unknown or greater than 5.2, reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose greater than 14mmol/L, if postassium level yet unknown or greater than 5.2, reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -116,7 +172,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose greater than 14mmol/L, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -124,11 +188,27 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;f serum glucose greater than 14mmol/L, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;April 19/21 Add: &quot;If serum glucose less&amp;nbsp;than 14mmol/L&quot; to nursing comment for each infusion (Lyle Thomas)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -140,7 +220,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed, if postassium level yet unknown or greater than 5., reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose less than 14mmol/L, if postassium level yet unknown or greater than 5., reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -148,7 +236,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose less than 14mmol/L, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -156,7 +252,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;If serum glucose less than 14mmol/L, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -172,27 +276,27 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~8ced69ff-4635-47a8-8e2c-105c4e79c79c~NAME~IV Fluid Infusions DKA ED Adult Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="IV Fluid Infusions DKA ED Adult Order Group">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="IV Fluid Infusions DKA ED Adult Order Group">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.9%)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 250 mL/hr, intravenous, once, as needed, if postassium level yet unknown or greater than 5.2, reassess when next electrolytes available"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection Order" max="1" path="/items" name="potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; 250 mL/hr, intravenous, once, as needed, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c5c6f74-fdfb-4000-913e-7874b69dba06" concept_name="PHARM potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 250 mL/hr, intravenous, once, as needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection Order" max="1" path="/items" name="potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; 250 mL/hr, intravenous, once, as needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c5c6f74-fdfb-4000-913e-7874b69dba06" concept_name="PHARM potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Initial management: serum glucose Greater than 14 mmol/L (NaCl 0.45%)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="745a84d0-3022-4aaf-8316-7a4cfbc6a520" concept_name="PHARM sodium chloride 0.45% infusion Order" max="1" path="/items" name="sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed, if postassium level yet unknown or greater than 5.2, reassess when next electrolytes available"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0fc86c8-f617-42b3-a28d-ca877589917a" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05a135a6-39d4-4c96-96cc-fd2208ab3750" concept_name="PHARM potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="745a84d0-3022-4aaf-8316-7a4cfbc6a520" concept_name="PHARM sodium chloride 0.45% infusion Order" max="1" path="/items" name="sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0fc86c8-f617-42b3-a28d-ca877589917a" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05a135a6-39d4-4c96-96cc-fd2208ab3750" concept_name="PHARM potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Ongoing management: serum glucose Less than 14 mmol/L (D5-NaCl 0.45%)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="035b0056-ec67-41b3-929a-5e8da8be6a19" concept_name="PHARM dextrose 5%-sodium chloride 0.45% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed, if postassium level yet unknown or greater than 5., reassess when next electrolytes available"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level 3.3-5.2 and urinary output, reassess when next electrolytes available"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e849890b-4e0c-42e8-81f7-d8f3f230f393" concept_name="PHARM potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed, if potassium level less than 3.3 (hold insulin until greater than 3.3), reassess when next electrolytes available"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="035b0056-ec67-41b3-929a-5e8da8be6a19" concept_name="PHARM dextrose 5%-sodium chloride 0.45% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.45% infusion; 250 mL/hr, intravenous, once, as needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e849890b-4e0c-42e8-81f7-d8f3f230f393" concept_name="PHARM potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 250 mL/hr, intravenous, once, as needed"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad9f9b9-8613-4ff8-a01e-69cb81457ddf" concept_name="PHARM potassium phosphates 15 mmol in NaCl 0.9% 250 mL (0.06 mmol/mL) injection Order" max="1" path="/items" name="potassium phosphates 15 mmol in NaCl 0.9% 250 mL (0.06 mmol/mL) injection; 15 mmol of phosphate, intravenous, once"/>
