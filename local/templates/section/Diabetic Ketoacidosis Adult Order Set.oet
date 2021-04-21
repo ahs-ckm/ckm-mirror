@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>2b99c64c-889e-46e8-88c0-e6665e0b4f5a</id>
+  <name>Diabetic Ketoacidosis Adult Order Set</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~2b99c64c-889e-46e8-88c0-e6665e0b4f5a~NAME~Diabetic Ketoacidosis Adult Order Set}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size:18px&quot;&gt;Order Set Requirements: __________&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size:18px&quot;&gt;Order Set Keywords: __________&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;For patients on Sodium-glucose co-transporter 2 (SGLT2) inhibitors and in DKA:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (a) &amp;nbsp;If Blood Glucose less than 14 mmol/L refer to - Ongoing Insulin Management (within Insulin Therapy Section) – Start once blood glucose is LESS THAN 14 mmol/L for 2 consecutive readings AND refer to Intravenous Fluid Replacement Orders (Glucose less than 14 mmol/L)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (b) &amp;nbsp;If Blood Glucose equal to or greater than 14 mmol/L refer to - Initial Insulin Management (within Insulin Therapy Section) – When blood glucose is EQUAL to or GREATER than 14 mmol/L, hold SGLT2.&lt;br&gt;&amp;nbsp;&lt;br&gt;This orderset is NOT for use in pregnant population.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider opening and merging any appropriate diagnosis based order sets&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;single select&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Diabetic Medium (1600-1800 kcal)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Standard Diet: Regular&lt;/p&gt;&lt;p&gt;Diabetes/Heart Healthy: Diabetic Medium (1600-1800 kcal)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Standard Diet: ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Activity as Tolerated&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Activity Level: No Activity Restrictions&lt;/p&gt;&lt;p&gt;Other Instructions: As tolerated&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Fall Prevention Risk Assessment&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Nursing to perform Fall Prevention Risk Assessment per protocol.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; de-escalating frequency; Per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Every 30 minutes x 2;&lt;br&gt;then every hour x 4;&lt;br&gt;then every 2 hours x 24 hours;&lt;br&gt;and then Authorized Prescriber to reassess&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Orthostatic blood pressure; BID for 1 day (or specify)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 times daily, For 1 day&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider if severe hyper/hypokalemia with ECG changes, suspected acute coronary syndrome as precipitating cause or as per physician discretion. &amp;nbsp;In some zones, this may require ICU or CCU consult or admission. &amp;nbsp;Refer to local policy.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardiac Monitoring; (Off for Test)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Type: Continuous bedside; Telemetry (T-Pak) ***&lt;/p&gt;&lt;p&gt;Can the patient be off monitoring for tests and activities: Yes&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardiac Monitoring; (Not Off for Test)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Type: Continuous bedside; Telemetry (T-Pak) ***&lt;/p&gt;&lt;p&gt;Can the patient be off monitoring for tests and activities: No&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Point of Care Testing Glucose&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;POCT glucose, i.e. capillary blood glucose, may be inaccurate if a patient is critically ill. &amp;nbsp;Use non-POCT, (non-capillary) glucose to assess accuracy prior to reliance on POCT glucose. &amp;nbsp;See POCT glucose procedure for details and other potential interferences.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Point of Care Testing Glucose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT; Every 1 hour, while on IV insulin infusion or until anion gap is normalized&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Every 1 Hour &amp;nbsp;for 1 day, Every 1 hour while on IV insulin infusion or until anion gap is normalized. If glucose level too high for Point of Care testing (POCT), serum glucose levels should be ordered every 1 to 2 hours until readable on bedside glucose monitors to adjust treatment appropriate&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Point of Care Testing Glucose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT; 4 times daily before meals and at bedtime&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Every 2 Hours, If glucose level too high for Point of Care testing (POCT), serum glucose levels should be ordered every 1 to 2 hours until readable on bedside glucose monitors to adjust treatment appropriately.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); First occurrence then every 2 hours, For 4 occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); First occurrence then every 4 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting H+10 hours&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Repeat every 4 hours until anion gap has normalized&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); First occurrence then every 4 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Osmolality; First occurrence then every 2 hours, for 4 occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Osmolality&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Repeat every 4 hours until anion gap has normalized&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting H+10 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Osmolality&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Gas Venous POCT; First occurrence then every 2 hours, For 4 occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Gas Venous POCT; First occurrence then every 4 hours, For 4 occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting H+12 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Gas Venous POCT; First occurrence then every 4 hours, For 4 occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Order imaging studies if there is a clinical concern for a precipitating cause of DKA.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluids Replacement Once Euvolemic - Potassium Added&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;If plasma corrected Sodium (Corrected plasma [Na+] = Measured [Na+] + [3/10 x ([Glucose (mmol/L)] - 5)] is more than 135 and if plasma osmolality is falling less than 3 mmol/kg/hour, choose the following IV solution.&lt;br&gt;&amp;nbsp;&lt;br&gt;Reassess fluid rate and type every 2 hours depending on hydration status, serum sodium and serum osmolality.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;strong&gt;For potassium chloride supplementation see Potassium Replacement guidance&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Potassium Replacement&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Adjust potassium chloride supplementation based on most recent electrolyte results&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Potassium Replacement&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If serum potassium is less than 3.3 mmol/L&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;HOLD insulin infusion until serum potassium is GREATER than 3.3 mmol/L&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;Choose IV solution with potassium chloride 40 mmol/L.&amp;nbsp;&amp;nbsp;Maximum rate is 10 mmol/hour in peripheral line.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Potassium Replacement&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If serum potassium is less than 3.3 mmol/L&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride Oral liquid 100 mg/mL; 20 mmol, oral, daily with breakfast, Recommend further diluting dose in cold water or juice and drink slowly.&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Potassium Replacement&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If serum potassium is 3.3-5.5 mmol/L&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Choose IV solution of potassium chloride 20 mmol/L OR IV solution with potassium chloride 40 mmol/L (Maximum rate is 10 mmol/hour in peripheral line)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Potassium Replacement&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;If serum potassium is greater than 5.5 mmol/L OR if urine output is less than 30 mL/hour&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;HOLD potassium chloride in IV solution.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sodium Bicarbonate IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider ONLY if blood pH is less than 7.0 on Arterial Blood Gas or Venous Blood Gas despite fluid resuscitation and potassium replacement.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Magnesium IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;If clinically indicated, infuse over 1 or 2 hours.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Phosphate IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Not recommended unless serum phosphate concentration below 0.32 mmol/L, cardiac dysfunction, anemia, or respiratory depression.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis &apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider opening and merging VTE prophylaxis order set&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Diabetic Ketoacidosis Adult Order Set">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfer"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care Designation Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0ac6e392-4e13-45c4-b1ee-27da7ab645ce" concept_name="Isolation Adult Order Panel" max="1" path="/items" name="Isolation Adult Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Legal Status"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consent"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Visitation Status"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Family Conference"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Assistive Devices"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="NFS NPO Order" max="1" path="/items" name="NPO"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="NFS Adult Diet Order" max="1" path="/items" name="Adult Diet; Diabetic Medium (1600-1800 kcal)"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="NFS Adult Diet Order" max="1" path="/items" name="Adult Diet"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Activity as Tolerated"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Fall Prevention Risk Assessment"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; de-escalating frequency; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67cf5799-7710-4b99-9aca-1324a5a21f83" concept_name="PC Orthostatic blood pressure Order" max="1" path="/items" name="Orthostatic blood pressure; BID for 1 day (or specify)"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; (Off for Test)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; (Not Off for Test)"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output; Every 4 hours, continue until intravenous therapy discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Point of Care Testing Glucose">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; Every 1 hour, while on IV insulin infusion or until anion gap is normalized"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; 4 times daily before meals and at bedtime"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Indwelling Urinary Catheter Management">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fc216c0-a423-45c5-a3c2-5868c429b624" concept_name="PC Insert Indwelling Urinary Catheter Order" max="1" path="/items" name="Insert Indwelling Urinary Catheter; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ea7de312-dae7-4211-a219-9dd48522fcf1" concept_name="PC Urinary Catheter - Discontinue Order" max="1" path="/items" name="Urinary Catheter - Discontinue; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ea7de312-dae7-4211-a219-9dd48522fcf1" concept_name="PC Urinary Catheter - Discontinue Order" max="1" path="/items" name="Urinary Catheter - Discontinue; Once, Discontinue once on unit"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="47e4ef97-8262-48d1-b98f-a992db71852c" concept_name="Respiratory Interventions Oxygen Therapy Order Panel" max="1" path="/items" name="Respiratory Interventions Oxygen Therapy Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Oxygen Therapy">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="713d9666-2fed-4279-8e60-38a1667d2dc1" concept_name="ED Adult Oxygen Therapy Smart Group" max="1" path="/items" name="ED Adult Oxygen Therapy Smart Group"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - Routine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; ; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="991ba455-614e-4c92-b890-e8daffecdabb" concept_name="LAB Beta-Hydroxybutyrate (BOH) Order" max="1" path="/items" name="Beta-Hydroxybutyrate (BOH); Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e5db8eb-f957-4eeb-88d6-3278983ffe82" concept_name="LAB Osmolality Order" max="1" path="/items" name="Osmolality; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Lactic Acid, Venous, Whole blood; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase Order" max="1" path="/items" name="Lipase; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbdc630e-847e-466a-a859-3299451363c4" concept_name="LAB Beta hCG Quantitative Order" max="1" path="/items" name="Beta hCG, Quantitative; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79551925-2bb2-4566-8da8-b3c36abde072" concept_name="LAB Troponin Order" max="1" path="/items" name="Troponin; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a6827f03-6d44-4f31-ae8f-09f11b7256c1" concept_name="LAB Creatine Kinase (CK) Order" max="1" path="/items" name="Creatine Kinase (CK); Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c Order" max="1" path="/items" name="Hemoglobin A1c; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0f538df2-15d7-4385-844b-7fc2c7d3d6a9" concept_name="Blood Culture Panel Adult Order Group" max="1" path="/items" name="Blood Culture Panel - Adult x 2"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8a1a4a80-89d4-449a-a9f9-b49c01c9e45c" concept_name="LAB Osmolality Urine Random Order" max="1" path="/items" name="Osmolality, Urine, Random; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LAB Urinalysis Order" max="1" path="/items" name="Urinalysis; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LAB Urine Culture Routine Order" max="1" path="/items" name="Urine Culture, Routine; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7546c5e7-682b-45f8-aa31-f8b43b52ee8b" concept_name="LAB Acetaminophen Level Order" max="1" path="/items" name="Acetaminophen Level; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e436b476-5668-4d62-adae-3c5c888cc19b" concept_name="LAB Ethanol Level Order" max="1" path="/items" name="Ethanol Level; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1253e744-556b-4b78-b066-0d3b0e8d90cd" concept_name="LAB Alcohol Panel (Ethylene Glycol Methanol Isopropanol Acetone) Order" max="1" path="/items" name="Alcohol Panel (Ethylene Glycol, Methanol, Isopropanol, Acetone); Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35d71863-bc6c-4a05-a957-0300306e884c" concept_name="LAB Salicylate Level Order" max="1" path="/items" name="Salicylate Level; Timed, for 1 occurrence"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Repeating">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential Order" max="1" path="/items" name="CBC, No Differential; Daily morning, for 3 occurrences"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Electrolytes and Serum Osmolality every 2 hours x 4; then every 4 hours until anion gap has normalized">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); First occurrence then every 2 hours, For 4 occurrences"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); First occurrence then every 4 hours"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e5db8eb-f957-4eeb-88d6-3278983ffe82" concept_name="LAB Osmolality Order" max="1" path="/items" name="Osmolality; First occurrence then every 2 hours, for 4 occurrences"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And #2"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e5db8eb-f957-4eeb-88d6-3278983ffe82" concept_name="LAB Osmolality Order" max="1" path="/items" name="Osmolality"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Point of Care Testing (Non Glucose)"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Venous Blood Gas every 2 hours x 4; then every 4 hours until anion gap and HCO3 have normalized">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous POCT; First occurrence then every 2 hours, For 4 occurrences"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous POCT; First occurrence then every 4 hours, For 4 occurrences"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Computed Tomography"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ultrasound"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Nuclear Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Magnetic Resonance"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Interventional Radiology"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cardiology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARDIAC Electrocardiogram 12 Lead Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Neurology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Audiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="PC Insert Peripheral IV Order" max="1" path="/items" name="Insert Peripheral IV; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="PC Convert to Saline Lock IV Order" max="1" path="/items" name="Convert to Saline Lock IV; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8d7a0df6-ac8f-4680-8904-114d3ab26f53" concept_name="PHARM sodium chloride 0.9% injection Order" max="1" path="/items" name="sodium chloride 0.9% injection; flush 2-5 mL, IV lock, every 8 hours, as needed, maintenance of line patency"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses; Severe Dehydration/Hypovolemic Shock">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; bolus; 1,000 mL, intravenous, Administer over 1 Hours, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; bolus; 2,000 mL, intravenous, Administer over 1 Hours, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; To be given after initial bolus; 250 mL/hr, intravenous, continuous, To be given after initial bolus"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Boluses - Mild or Moderate Dehydration">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; bolus; 500 mL, intravenous, Administer over 1 Hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 250 mL/hr, intravenous, continuous"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluids Replacement Once Euvolemic - Potassium Added">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0fc86c8-f617-42b3-a28d-ca877589917a" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 250 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05a135a6-39d4-4c96-96cc-fd2208ab3750" concept_name="PHARM potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 125 mL/hr, intravenous, continuous"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Potassium Replacement">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="If serum potassium is less than 3.3 mmol/L">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da51a833-952e-4795-bf64-a8e02b7c09b6" concept_name="PHARM potassium chloride 10 mmol in sterile water for injection 100 mL injection Order" max="1" path="/items" name="potassium chloride 10 mmol in sterile water for injection 100 mL injection; 10 mmol, intravenous, at 100 mL/hr, Administer over 1 Hour, every hour, For 3 doses"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2ae8c655-4844-4383-a10b-4aee17a6b7c5" concept_name="PHARM potassium chloride Oral liquid 100 mg/mL Order" max="1" path="/items" name="potassium chloride Oral liquid 100 mg/mL; 20 mmol, oral, daily with breakfast, Recommend further diluting dose in cold water or juice and drink slowly."/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="92066846-a099-40a2-b65a-11463816af21" concept_name="PHARM potassium chloride, long acting Tablet Order" max="1" path="/items" name="potassium chloride, long acting Tablet; 1500 mg, oral, frequency ***"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="If serum potassium is 3.3-5.5 mmol/L">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #2"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; See Clinical Guidance Above"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="If serum potassium is greater than 5.5 mmol/L OR if urine output is less than 30 mL/hour">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #3"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; no potassium replacement prescribed. Reason: elevated serum potassium level."/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Sodium Bicarbonate IV">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="23dbfcfb-2905-41ff-bd15-b6dfe97f5afe" concept_name="PHARM sodium bicarbonate injection Order" max="1" path="/items" name="sodium bicarbonate injection; 50 mmol, intravenous, Administer over 1 Hours, once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Magnesium IV">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="744bfe90-242b-4e40-af90-f9d52af11749" concept_name="PHARM magnesium sulfate infusion Order" max="1" path="/items" name="magnesium sulfate infusion; 2 g, intravenous, once, Infuse over 1 hour"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="744bfe90-242b-4e40-af90-f9d52af11749" concept_name="PHARM magnesium sulfate infusion Order" max="1" path="/items" name="magnesium sulfate infusion; 4 g, intravenous, once, Infuse over 2 hours"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Phosphate IV">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="846f7531-ff9a-4d4e-9576-487c8eb7ff00" concept_name="PHARM sodium phosphates 15 mmol in NaCl 0.9% 100 mL (0.15 mmol/mL) injection Order" max="1" path="/items" name="sodium phosphates 15 mmol in NaCl 0.9% 100 mL (0.15 mmol/mL) injection; 15 mmol, intravenous, once, Over 4 hours"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis "/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hemodialysis"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Insulin"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Allied Health Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99e370c-d849-4585-b382-c30d0a08a894" concept_name="CONS Inpatient Consult to Occupational Therapy Order" max="1" path="/items" name="Inpatient Consult to Occupational Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b1ca72-23ee-4714-a1ff-b6689b55ee0f" concept_name="CONS Inpatient Consult to Discharge Planning_Transition Services Order" max="1" path="/items" name="Inpatient Consult to Discharge Planning/Transition Services"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5a00cec0-0189-4b62-9a1a-d7b783f6a076" concept_name="CONS Inpatient Consult to Diabetes Educator Order" max="1" path="/items" name=" Inpatient Consult to Diabetes Educator "/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e16d1c9-20a3-4ae7-9b48-ffe8f5bfae4e" concept_name="CONS Inpatient Consult to Speech Language Pathology Order" max="1" path="/items" name="Inpatient Consult to Speech Language Pathology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="27702399-60d3-4d0f-ba67-f4fe3a15a5ad" concept_name="REF Ambulatory Referral to Diabetes Order" max="1" path="/items" name="Ambulatory Referral to Diabetes"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83653a0b-8908-412a-9428-da8f4e0939aa" concept_name="REF Ambulatory Referral to Diabetes Education Order" max="1" path="/items" name="Ambulatory Referral to Diabetes Education"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
