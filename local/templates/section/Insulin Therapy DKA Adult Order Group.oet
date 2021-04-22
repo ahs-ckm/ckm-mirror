@@ -64,7 +64,7 @@
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;April 19/21 (Lyle Thomas)&lt;/p&gt;&lt;p&gt;Add comment re: SGLT2 discontinue into clinical guidance?&lt;/p&gt;&lt;p&gt;Remove Group &apos;Patients on SGLT2)&lt;/p&gt;&lt;p&gt;Add Nursing Communication: Hold continuous insulin infusion pump&lt;/p&gt;&lt;p&gt;Add &apos;or serum blood glucose results&apos; to insulin tables&lt;/p&gt;&lt;p&gt;Update insulin dose to range 0.25-10 units/hr&lt;/p&gt;&lt;p&gt;Update clinical guidance - &apos;Transition to Subcutaneous Insulin Orders&apos;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Add comment re: SGLT2 discontinue into clinical guidance&lt;/p&gt;&lt;p&gt;Remove Group &apos;Patients on SGLT2&apos;&lt;/p&gt;&lt;p&gt;Change NC: Hold SGLT2 to Hold medication: SGLT2 EAP&lt;/p&gt;&lt;p&gt;Add Hold medication: Hold continuous insulin infusion pump&lt;/p&gt;&lt;p&gt;Add Notify MRHP&lt;/p&gt;&lt;p&gt;Add &apos;or serum blood glucose results&apos; to insulin tables&lt;/p&gt;&lt;p&gt;Update insulin dose to range 0.25-10 units/hr&lt;/p&gt;&lt;p&gt;Update clinical guidance - &apos;Transition to Subcutaneous Insulin Orders&apos;&lt;/p&gt;</value>
       </item>
       <item>
         <key>Technical.ﻩ Technical Traceability</key>
@@ -101,6 +101,38 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Starting dose for infusion: *** units/hr&lt;/p&gt;&lt;p&gt;Change in Capillary Glucose Reading (mmol/L) &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; l &amp;nbsp; &amp;nbsp; &amp;nbsp; Change in Insulin IV Rate&lt;br&gt;=============================================================================&lt;br&gt;If glucose decreases by 1 - 4 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; l &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Continue current IV rate&lt;br&gt;---------------------------------------------------------------------------------------------------------------------------------&lt;br&gt;If glucose fails to decrease on 2 consecutive readings &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Double IV rate&lt;br&gt;---------------------------------------------------------------------------------------------------------------------------------&lt;br&gt;If glucose decreases by more than 4 mmol / L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Reduce insulin IV rate by half&lt;br&gt;---------------------------------------------------------------------------------------------------------------------------------&lt;br&gt;If glucose LESS than 14 mmol/L for 2 consecutive readings &amp;nbsp;l &amp;nbsp; &amp;nbsp;Contact authorized prescriber to change IV insulin order&lt;br&gt;==============================================================================&lt;br&gt;Adjust insulin infusion every 1 hour according to capiliary blood glucose results.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hold Medication; SGLT2&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Hold Details: hold one dose&lt;br&gt;Which Dose: Next dose&lt;br&gt;Rationale/Details: Patient in DKA&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hold Medication; SGLT2&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hold Medication; Continuous Subcutaneous Insulin Pump&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Hold Details: hold one dose&lt;br&gt;Which Dose: Next dose&lt;br&gt;Rationale/Details: Patient in DKA&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hold Medication; Continuous Subcutaneous Insulin Pump&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -148,7 +180,31 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Once glucose is less than 14, set the IV insulin infusion rate in this order at 50% of the current rate, and place this order. &amp;nbsp;Discontinue the previous IV insulin infusion order. &amp;nbsp; The suggested titrations are intended to keep the blood glucose at 12 - 14 mmol/L.&lt;/p&gt;</value>
+        <value>&lt;p&gt;The goal is to maintain glucose between 12-14 mmol/L until acidosis is reversed (when CO2 or HCO3 are normalized).&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing Insulin Management - Start once blood glucose is LESS THAN 14 mmol/L for 2 consecutive readings&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Intravenous Fluid Replacement Orders (Glucose less than 14 mmol/L)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;If plasma corrected Sodium (Corrected plasma [Na+] = Measured [Na+] + [3/10 × ([Glucose (mmol/L)] − 5)] is more than 135 and if plasma osmolality is falling less than 3 mmol/kg/hour; choose the following intravenous solution.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing Insulin Management - Start once blood glucose is LESS THAN 14 mmol/L for 2 consecutive readings&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing Insulin Management - Start when Glucose is LESS than 14 for 2 consecutive readings&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Once glucose is less than 14, set the IV insulin infusion rate in this order at 50% of the current rate, and place this order. &amp;nbsp;&lt;strong&gt;Discontinue the previous IV insulin infusion order. &lt;/strong&gt;&amp;nbsp; The suggested titrations are intended to keep the blood glucose at 12 - 14 mmol/L.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing Insulin Management - Start once blood glucose is LESS THAN 14 mmol/L for 2 consecutive readings&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Ongoing Insulin Management - Start when Glucose is LESS than 14 for 2 consecutive readings&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Starting dose for infusion: *** units/hr&lt;/p&gt;&lt;p&gt;Goal Blood Glucose is 12 - 14 mmol/L based on hourly glucose monitoring&lt;/p&gt;&lt;p&gt;Glucose LESS than 7 (any time) &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; Hold insulin infusion and contact Authorizing Prescriber&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose 7 - 9.9 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; Decrease rate by 1 unit/hour &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose 10 - 11.9 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; Decrease rate by 0.5 units/hour&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose 12 - 14 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; l &amp;nbsp; &amp;nbsp; &amp;nbsp; Maintain current rate&lt;br&gt;------------------------------------------------------------------------------------------------------------ &amp;nbsp;&lt;br&gt;Glucose 14.1 - 16 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; l &amp;nbsp; &amp;nbsp; &amp;nbsp;Increase rate by 1 unit/hour&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose GREATER than 16 mmol/L &amp;nbsp; l &amp;nbsp; &amp;nbsp;Increase rate by 2 units/hour&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Adjust insulin infusion every 1 hour according to capiliary blood glucose results or serum blood glucose results.&lt;br&gt;If insulin infusion is less than 2 units/hr then contact MD to increase the rate of D5-0.45%NS infusion to be able to maintain minimum insulin infusion rate.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -156,7 +212,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Starting dose for infusion: *** units/hr&lt;/p&gt;&lt;p&gt;Goal Blood Glucose is 12 - 14 mmol/L based on hourly glucose monitoring&lt;/p&gt;&lt;p&gt;Glucose LESS than 7 (any time) &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; Hold insulin infusion and contact Authorizing Prescriber&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose 7 - 9.9 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; Decrease rate by 1 unit/hour &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose 10 - 11.9 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;l &amp;nbsp; &amp;nbsp; &amp;nbsp; Decrease rate by 0.5 units/hour&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose 12 - 14 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; l &amp;nbsp; &amp;nbsp; &amp;nbsp; Maintain current rate&lt;br&gt;------------------------------------------------------------------------------------------------------------ &amp;nbsp;&lt;br&gt;Glucose 14.1 - 16 mmol/L &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; l &amp;nbsp; &amp;nbsp; &amp;nbsp;Increase rate by 1 unit/hour&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Glucose GREATER than 16 mmol/L &amp;nbsp; l &amp;nbsp; &amp;nbsp;Increase rate by 2 units/hour&lt;br&gt;------------------------------------------------------------------------------------------------------------&lt;br&gt;Adjust insulin infusion every 1 hour according to capiliary blood glucose results or serum blood glucose results.&lt;br&gt;If insulin infusion is less than 2 units/hr then contact MD to increase the rate of D5-0.45%NS infusion to be able to maintain minimum insulin infusion rate.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Contact Authorized Prescriber to change insulin order or IV fluid orders if:&lt;br&gt;· Glucose is out of range (12-14 mmol/L) for 2 consecutive readings&lt;br&gt;· Subcutaneous Insulin should be started once acidosis is resolved (pH greater&lt;br&gt;than 7.3, normalized anion gap and CO2 , or HCO3) and when patient is&lt;br&gt;tolerating oral diet (subcutaneous insulin to be initiated)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -194,6 +250,9 @@
       </Item>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; SGLT2"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; Continuous Subcutaneous Insulin Pump"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); If active orders for SGLT2 or Continuous Subcutaneous Insulin Pump"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Hold SGLT2"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Hold continuous insulin infusion pump"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Initial Insulin Management - When Glucose is EQUAL to or GREATER than 14">
@@ -202,7 +261,21 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Ongoing Insulin Management - Start once blood glucose is LESS THAN 14 mmol/L for 2 consecutive readings">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="28fe8b51-7253-4365-86fd-5b8512de277e" concept_name="PHARM insulin regular (HumuLIN R) 100 units in NaCl 0.9% 100 mL (1 unit/mL) infusion Order" max="1" path="/items" name="insulin regular (HumuLIN R) 100 units in NaCl 0.9% 100 mL (1 unit/mL) infusion; 0.25-10 units/hr, intravenous, titrated"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Intravenous Fluid Replacement Orders (Glucose less than 14 mmol/L)">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion; 50 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e849890b-4e0c-42e8-81f7-d8f3f230f393" concept_name="PHARM potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; 50 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion; 50 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #1"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Ongoing Insulin Management - Start when Glucose is LESS than 14 for 2 consecutive readings">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="28fe8b51-7253-4365-86fd-5b8512de277e" concept_name="PHARM insulin regular (HumuLIN R) 100 units in NaCl 0.9% 100 mL (1 unit/mL) infusion Order" max="1" path="/items" name="insulin regular (HumuLIN R) 100 units in NaCl 0.9% 100 mL (1 unit/mL) infusion; 0.25-10 units/hr, intravenous, titrated"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Contact Authorized Prescriber to change insulin order or IV fluid orders if:"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Transition to Subcutaneous Insulin Orders">
