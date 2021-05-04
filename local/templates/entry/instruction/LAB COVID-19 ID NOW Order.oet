@@ -152,6 +152,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Symptoms&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Close Contact to a Known COVID-19 Case?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available for all symptom selections expect &quot;None&quot; and &quot;Unknown&quot; for What types of symptoms/manifestations are present?&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Symptoms&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Please provide details&apos;]">
     <items>
       <item>
@@ -307,6 +315,15 @@
         </Rule>
       </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="What is the date of symptom onset?"/>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Close Contact to a Known COVID-19 Case?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Please provide details"/>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Suspect Emerging Pathogen or Severe Respiratory Illness (e.g. Avian Influenza (H7N9, H5N1), SARS, MERS-CoV)?">
