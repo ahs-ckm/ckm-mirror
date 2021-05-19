@@ -68,6 +68,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Section 2 Level 1&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Section 2 Level 2&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Section 2 Level 3&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Section 2 Level 4&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="New Ad hoc Header orderable groups Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="One Level">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b35fe467-3157-4cd6-9416-54e7a2a30248" concept_name="Z.Orderable Ad Hoc Group w blank in preselected anno for no box" max="1" path="/items" name="Orderable Ad Hoc Group w blank in preselected anno for no box"/>
@@ -81,6 +89,19 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Three Levels b">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Three Levels c">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="130557f1-a9b1-4769-91c1-fc4fab3bb776" concept_name="Z.Orderable Ad Hoc Group w y in preselected anno for checked box" max="1" path="/items" name="Orderable Ad Hoc Group w y in preselected anno for checked box"/>
+        </Item>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Section 2 Level 1">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b35fe467-3157-4cd6-9416-54e7a2a30248" concept_name="Z.Orderable Ad Hoc Group w blank in preselected anno for no box" max="1" path="/items" name="Orderable Ad Hoc Group w blank in preselected anno for no box"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Section 2 Level 2">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7788ff2a-ba43-4924-9406-b5f1ae6822fe" concept_name="Z.Orderable Ad Hoc Group w n in preselected anno for unchecked box" max="1" path="/items" name="Orderable Ad Hoc Group w n in preselected anno for unchecked box"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Section 2 Level 3">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="130557f1-a9b1-4769-91c1-fc4fab3bb776" concept_name="Z.Orderable Ad Hoc Group w y in preselected anno for checked box" max="1" path="/items" name="Orderable Ad Hoc Group w y in preselected anno for checked box"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Section 2 Level 4">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="af2cb90c-80da-49ca-9b27-24ae481c6e4b" concept_name="z.BuildBuddy Test Order Item 1" max="1" path="/items" name="z.BuildBuddy Test Order Item 1"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
         </Item>
       </Item>
     </Item>
