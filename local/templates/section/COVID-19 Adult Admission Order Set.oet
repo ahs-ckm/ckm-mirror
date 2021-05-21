@@ -192,14 +192,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis &apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Use pharmacological prophylaxis (low molecular-weight heparin preferred) in adults without contraindications.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;COVID-19 is a major risk factor for VTE.&lt;/em&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -245,14 +237,6 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Reassess after 48 to 72 hours&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antibacterials&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Doxycycline or Azithromycin&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;doxycycline tablet&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;doxycycline Capsule; 100 mg PO 2 times per day for 5 doses. &apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Start 12 hours following initial loading dose. Reassess after 48 to 72 hours. Recommend adequate fluid intake. Do not open capsules or crush tablets as this drug is very irritating.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -446,7 +430,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" concept_name="LAB Blood Culture Routine Order" max="1" path="/items" name="Blood Culture, Routine; x2"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level Pre-dose Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level, Pre-Dose Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
@@ -579,7 +563,7 @@
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="372c5d60-a44e-4a28-9d6e-8b5a5a41eae4" concept_name="PHARM AZIthromycin Tablet Order" max="1" path="/items" name="AZIthromycin Tablet; 500 mg Oral, every 24 hours for 3 doses. Reassess after 48 to 72 hours , STAT"/>
-            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87c88028-2aef-4aa9-9d1d-c6f427ed9e45" concept_name="PHARM AZIthromycin injection Order" max="1" path="/items" name="AZIthromycin injection; 500 mg IV every 24 hours for 3 doses. Reassess after 48 to 72 hours , STAT"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
