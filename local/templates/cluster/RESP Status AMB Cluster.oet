@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>23914631-b99e-44e8-bc72-397b24bed978</id>
+  <name>RESP Status AMB Cluster</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value />
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value />
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value />
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value />
+      </item>
+      <item>
+        <key>Build team</key>
+        <value />
+      </item>
+      <item>
+        <key>Comments</key>
+        <value />
+      </item>
+      <item>
+        <key>Record name</key>
+        <value />
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Status']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;A response to this question may trigger a cascading question.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Release']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available if 'Standing' is selected under 'Status'.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Interval']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available if 'Standing' is selected under 'Status'.;&lt;/p&gt;&lt;p&gt;Mandatory if 'Auto' is selected in response to 'Release'.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Count']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available if 'Standing' is selected under 'Status'.&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;&lt;p&gt;Numerical entry field&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Expected Date']">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available only when 'Future' is selected in response to 'Status'.;&lt;/p&gt;&lt;p&gt;Allow the option to select 'Approx.' along with any response.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value='Expires']/items[at0002]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Calendar Pick:&lt;/p&gt;&lt;p&gt;Cascading question available when "Standing or Future" selected under Status;&lt;br&gt;Cascading question available when "Auto or Manual" selected under Release;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" name="Status">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Status">
+      <Rule path="/items[at0002]" default="Future">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Standing</includedValues>
+          <includedValues>Future (default)</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Release">
+      <Rule path="/items[at0002]" default="Auto">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Auto (default)</includedValues>
+          <includedValues>Manual</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Interval">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Every 12 weeks</includedValues>
+          <includedValues>Every 16 weeks</includedValues>
+          <includedValues>Every 2 weeks</includedValues>
+          <includedValues>Every 24 weeks</includedValues>
+          <includedValues>Every 3 weeks</includedValues>
+          <includedValues>Every 32 weeks</includedValues>
+          <includedValues>Every 4 weeks</includedValues>
+          <includedValues>Every 6 weeks</includedValues>
+          <includedValues>Every 8 weeks</includedValues>
+          <includedValues>Every weekday</includedValues>
+          <includedValues>Every year</includedValues>
+          <includedValues>Once a week</includedValues>
+          <includedValues>Three times a week</includedValues>
+          <includedValues>Twice a week</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Count" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Expected Date">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Today</includedValues>
+          <includedValues>Tomorrow</includedValues>
+          <includedValues>1 Week</includedValues>
+          <includedValues>2 Weeks</includedValues>
+          <includedValues>1 Month</includedValues>
+          <includedValues>3 Months</includedValues>
+          <includedValues>6 Months</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Expires" />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
