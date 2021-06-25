@@ -72,7 +72,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Order Set Requirements:&lt;/p&gt;&lt;p&gt;Order Set Keywords: Cancer, GVHD, BMT&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider Opening and merging the following order sets:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;- Adult Oncology Admission&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;- Oncology Supportive Care Symptom Management&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Refer to the &lt;u&gt;&lt;strong&gt;Alberta Bone Marrow and Blood Cell Transplant Program: Standard Practice Manual &lt;/strong&gt;&lt;/u&gt;for guidance (URL: https://ahsweb.ca/HEE/AB_Bone_Marrow_Blood_Cell_Transplant_Program_Manual)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Order Set Requirements:&lt;/p&gt;&lt;p&gt;Order Set Keywords: Oncology, Cancer, GVHD, BMT&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider Opening and merging the following order sets:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;- Adult Oncology Admission&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;- Oncology Supportive Care Symptom Management&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Refer to the &lt;u&gt;&lt;strong&gt;Alberta Bone Marrow and Blood Cell Transplant Program: Standard Practice Manual &lt;/strong&gt;&lt;/u&gt;for guidance (URL: https://ahsweb.ca/HEE/AB_Bone_Marrow_Blood_Cell_Transplant_Program_Manual)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -113,14 +113,14 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a345a504-6281-4165-ba70-94c62fead1a8" concept_name="PC Monitor Bowel Routine Order" max="1" path="/items" name="Monitor Bowel Routine; every shift"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output; (Stool), every shift"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="866222b6-a0ad-4130-bc21-393c197e7c20" concept_name="LAB Cyclosporine Level Pre-dose Order" max="1" path="/items" name="Cyclosporine Level, Pre-dose; Once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="168a348b-b31f-425e-bf9b-5a7f8c29ff51" concept_name="LAB Tacrolimus Level Order" max="1" path="/items" name="Tacrolimus Level; Once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbad9375-d4fa-4c09-9c60-01dd6430a3e5" concept_name="LAB Sirolimus Level Order" max="1" path="/items" name="Sirolimus Level; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="866222b6-a0ad-4130-bc21-393c197e7c20" concept_name="LAB Cyclosporine Level Pre-dose Order" max="1" path="/items" name="Cyclosporine Level, Pre-dose; Per Medication Dosing"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="168a348b-b31f-425e-bf9b-5a7f8c29ff51" concept_name="LAB Tacrolimus Level Order" max="1" path="/items" name="Tacrolimus Level; Per Medication Dosing"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbad9375-d4fa-4c09-9c60-01dd6430a3e5" concept_name="LAB Sirolimus Level Order" max="1" path="/items" name="Sirolimus Level; Per Medication Dosing"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
@@ -136,11 +136,11 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68478d78-bb7b-431c-8470-45234d1e6f77" concept_name="PHARM betamethasone valerate Cream 0.1% Order" max="1" path="/items" name="betamethasone valerate Cream 0.1%; topical, 3 times per day"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; hydrocortisone Cream 1%; topical, 3 times per day"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Medications">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1b4965e4-58a0-4491-b876-372a730dff4b" concept_name="PHARM ruxolitinib Tablet Order" max="1" path="/items" name="ruxolitinib Tablet; 5 mg, oral, 2 times per day, as scheduled"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f1133e85-8cd4-4835-8a35-21a337082f0a" concept_name="PHARM cycloSPORINE Oral liquid 100 mg/mL Order" max="1" path="/items" name="cycloSPORINE Oral liquid 100 mg/mL; 5 mL, swish and spit, 4 times per day"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9cc7f7fc-f36b-44b3-a569-ba28fe6de1d7" concept_name="PHARM betamethasone sodium phosphate Enema 5 mg/100 mL Order" max="1" path="/items" name="betamethasone sodium phosphate Enema 5 mg/100 mL; 10 mLs, swish and spit, 4 times per day"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Medications - 2nd Line Treatment">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1b4965e4-58a0-4491-b876-372a730dff4b" concept_name="PHARM ruxolitinib Tablet Order" max="1" path="/items" name="ruxolitinib Tablet; 5 mg, oral, 2 times per day, as scheduled"/>
       </Item>
     </Item>
   </definition>
