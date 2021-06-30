@@ -84,22 +84,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Thyroid Stimulating Hormone (TSH)&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;if not performed in last 6/12&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Consider ABG if:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Patient is critically ill&lt;/li&gt;&lt;li&gt;Patient shows signs of carbon dioxide retention (e.g. acute breathlessness or drowsiness, increased respiratory rate)&lt;/li&gt;&lt;li&gt;Patient is at risk of metabolic conditions&lt;/li&gt;&lt;li&gt;Unexpected or inappropriate drop below 94% SpO2 while patient is awake&lt;/li&gt;&lt;li&gt;Increased breathlessness or drop of less than or equal to 3% SpO2 when patient with chronic hypoxemia was previously stable&lt;/li&gt;&lt;/ul&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Convert to Saline Lock IV&apos;]/activities[at0001]">
     <items>
       <item>
@@ -259,38 +243,15 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="02b0ba00-0a43-4c69-9eae-12a841c8b1a9" concept_name="Oxygen Therapy Order Panel" max="1" path="/items" name="Oxygen Therapy Order Panel"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="47e4ef97-8262-48d1-b98f-a992db71852c" concept_name="Respiratory Interventions Oxygen Therapy Order Panel" max="1" path="/items" name="Respiratory Interventions Oxygen Therapy Order Panel"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; STAT"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase Order" max="1" path="/items" name="Lipase; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79551925-2bb2-4566-8da8-b3c36abde072" concept_name="LAB Troponin Order" max="1" path="/items" name="Troponin; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c Order" max="1" path="/items" name="Hemoglobin A1c"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07892e60-1173-4ead-9e1c-ad7a4c8738fb" concept_name="LAB Thyroid Stimulating Hormone (TSH) Order" max="1" path="/items" name="Thyroid Stimulating Hormone (TSH)"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); STAT"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
@@ -301,12 +262,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Point of Care Testing (Non Glucose)"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34fd84e4-0ab2-4743-998e-892958eb37e4" concept_name="LAB Blood Gas Arterial POCT Order" max="1" path="/items" name="Blood Gas Arterial Point of Care; once; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous Point of Care; once; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4d9a5948-3693-4aa9-8bb8-c9ebbbb0b0bc" concept_name="RESP ADULT Blood Gas Venous Order" max="1" path="/items" name="Blood Gas Venous; once; STAT"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
@@ -333,28 +289,23 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; tomorrow AM"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium; tomorrow AM"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate; tomorrow AM"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium; tomorrow AM"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); tomorrow AM"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; tomorrow"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); tomorrow AM"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random; tomorrow AM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); tomorrow AM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; tomorrow"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c Order" max="1" path="/items" name="Hemoglobin A1c; tomorrow AM"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; tomorrow AM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07892e60-1173-4ead-9e1c-ad7a4c8738fb" concept_name="LAB Thyroid Stimulating Hormone (TSH) Order" max="1" path="/items" name="Thyroid Stimulating Hormone (TSH)"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase Order" max="1" path="/items" name="Lipase; tomorrow AM"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP); tomorrow AM"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79551925-2bb2-4566-8da8-b3c36abde072" concept_name="LAB Troponin Order" max="1" path="/items" name="Troponin; tomorrow AM"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; tomorrow AM"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); tomorrow AM"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" concept_name="LAB Blood Culture Routine Order" max="1" path="/items" name="Blood Culture, Routine; tomorrow AM"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LAB Urinalysis Order" max="1" path="/items" name="Urinalysis; tomorrow AM"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4aa8cf90-0563-4146-b50d-cfb2e912dcad" concept_name="LAB Pregnancy Test Urine Order" max="1" path="/items" name="Pregnancy Test, Urine; tomorrow AM"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
@@ -374,19 +325,14 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; daily for 3 occurences"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium; daily for 3 occurences"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate; daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium; daily for 3 occurences"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; daily for 3 occurences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); daily for 3 occurences"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random; daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase Order" max="1" path="/items" name="Lipase; daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP); daily for 3 occurences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; daily for 3 occurences"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79551925-2bb2-4566-8da8-b3c36abde072" concept_name="LAB Troponin Order" max="1" path="/items" name="Troponin; daily for 3 occurences"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; daily for 3 occurences"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); daily for 3 occurences"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
@@ -402,9 +348,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Computed Tomography"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ultrasound"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Nuclear Medicine"/>
