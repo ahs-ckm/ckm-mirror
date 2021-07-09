@@ -84,7 +84,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
@@ -108,6 +108,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Topical Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tacrolimus Oint 0.03%; topical, 2 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Apply to ***.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Topical Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tacrolimus Oint 0.1%; topical, 2 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Apply to ***.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Graft vs Host Disease Treatment Adult Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General"/>
@@ -124,11 +140,15 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Decision Support"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Decision Support"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="49233d16-118b-4dc9-8557-8312c7439548" concept_name="Immunosuppressive Agents Oncology Adult Order Group" max="1" path="/items" name="Immunosuppressive Agents"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Drops">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM prednisoLONE acetate Eye drop 1% Order" max="1" path="/items" name="prednisoLONE acetate Eye drop 1%; 2 drops, BOTH eyes, 2 times per day, as scheduled"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; cyclosporine 0.05% eye drop; 1 drop, BOTH eyes, 2 times per day, as scheduled"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43532be5-ba21-477c-bd23-3910062bab09" concept_name="PHARM hydroxypropylmethylcellulose Eye drop 0.5% Order" max="1" path="/items" name="hydroxypropylmethylcellulose Eye drop 0.5%; 1 drop, BOTH eyes, 4 times per day"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="170f1b7d-0415-4765-a552-22609be9a91e" concept_name="PHARM polyvinyl alcohol Eye drop 1.4% Order" max="1" path="/items" name="polyvinyl alcohol Eye drop 1.4%; 1 drop, BOTH eyes, once, as needed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bf5d9811-a0dc-4f69-8008-b8c40fac9718" concept_name="PHARM carboxymethylcellulose, preservative free Eye drop 1% Order" max="1" path="/items" name="carboxymethylcellulose, preservative free Eye drop 1%; 1 drop, BOTH eyes, 3 times per day"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="40067c2f-d4b1-428f-bc57-68bc7baaf0db" concept_name="Corticosteroid aGVHD first line treatment oncology adult order group" max="1" path="/items" name="Corticosteroids"/>
@@ -138,9 +158,8 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; hydrocortisone Cream 1%; topical, 3 times per day"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f1133e85-8cd4-4835-8a35-21a337082f0a" concept_name="PHARM cycloSPORINE Oral liquid 100 mg/mL Order" max="1" path="/items" name="cycloSPORINE Oral liquid 100 mg/mL; 5 mL, swish and spit, 4 times per day"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9cc7f7fc-f36b-44b3-a569-ba28fe6de1d7" concept_name="PHARM betamethasone sodium phosphate Enema 5 mg/100 mL Order" max="1" path="/items" name="betamethasone sodium phosphate Enema 5 mg/100 mL; 10 mLs, swish and spit, 4 times per day"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Medications - 2nd Line Treatment">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1b4965e4-58a0-4491-b876-372a730dff4b" concept_name="PHARM ruxolitinib Tablet Order" max="1" path="/items" name="ruxolitinib Tablet; 5 mg, oral, 2 times per day, as scheduled"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7b08a4fd-5204-43d6-95c4-cd576668a497" concept_name="PHARM tacrolimus Oint 0.03% Order" max="1" path="/items" name="tacrolimus Oint 0.03%; topical, 2 times per day"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99234a8-8aa5-4d09-ac99-1b3f546099fd" concept_name="PHARM tacrolimus Oint 0.1% Order" max="1" path="/items" name="tacrolimus Oint 0.1%; topical, 2 times per day"/>
       </Item>
     </Item>
   </definition>
