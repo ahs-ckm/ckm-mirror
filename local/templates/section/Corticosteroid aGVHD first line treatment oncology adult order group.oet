@@ -72,7 +72,15 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Please refer to the ABMTP standard practice manual for dosing direction. See link at beginning of order set.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Reasses after 7 days and if patient responding begin taper at a rate of 10% every 5 days until off.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Please refer to the ABMTP standard practice manual for dosing direction. See link at beginning of order set.&lt;/p&gt;&lt;p&gt;budesonide is currently non-formulary for GVHD,&amp;nbsp;it is available off the facility list as needed. Suggested initial dosing is 3 mg, oral, 2&amp;nbsp;times per day&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;10% dose reduction every 5 days in patients demonstrating CR/PR as observed by MRHP, beginning no earlier than Day 7 and continuing to approximately Day 56 to allow 7 to 8 week taper.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -87,6 +95,7 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Corticosteroids">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="predniSONE / methylPREDNISolone">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a6f18540-d8c3-4299-9fc6-6ad053a2a33e" concept_name="PHARM predniSONE Oral liquid 5 mg/mL Order" max="1" path="/items" name="predniSONE Oral liquid 5 mg/mL; ***, 2 times per day, with breakfast and supper"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE Tablet Order" max="1" path="/items" name="predniSONE Tablet; 0.5 mg/kg/dose, 2 times per day, with breakfast and supper"/>
