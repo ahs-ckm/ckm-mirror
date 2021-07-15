@@ -162,46 +162,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Response to this question may trigger a cascading question&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select YES to document breast abnormalities in Note Writer Chest. If not using the note writer tool, click NO to provider further information.&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Synonyms</key>
-        <value>&lt;p&gt;Response to this question may trigger a cascading question&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Breast pain is present in:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Single select; free text comments box&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Breast lump present in:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Single select, Free text Comments box&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Discharge is present from&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Single select, Free text Comments box&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments&apos;]">
     <items>
       <item>
@@ -244,46 +204,7 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Are there any Breast Abnormalities to document?">
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select YES to document breast abnormalities in Note Writer Chest. If not using the note writer tool, click NO to provider further information.">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Yes</includedValues>
-            <includedValues>No</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Breast pain is present in:">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Left Breast</includedValues>
-            <includedValues>Right Breast</includedValues>
-            <includedValues>Bilateral Breasts</includedValues>
-            <includedValues>N/A</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Breast lump present in:">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Left Breast</includedValues>
-            <includedValues>Right Breast</includedValues>
-            <includedValues>Bilateral Breasts</includedValues>
-            <includedValues>N/A</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Discharge is present from">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Left Breast</includedValues>
-            <includedValues>Right Breast</includedValues>
-            <includedValues>Bilateral Breasts</includedValues>
-            <includedValues>N/A</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="5626607e-b6d0-45b8-bbb0-ab393337e361" concept_name="DI Breast Abormalities Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Are there any Breast Abnormalities to document?"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
