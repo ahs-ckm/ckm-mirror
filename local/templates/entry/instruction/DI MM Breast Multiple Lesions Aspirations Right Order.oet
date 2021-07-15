@@ -94,7 +94,11 @@
         <key>Technical.ﻩ Technical Traceabililty</key>
         <value>&lt;p&gt;{~AHSID~5e29185c-fca8-4cb3-bc5d-e23039b5bb68~NAME~DI MM Breast Multiple Lesions Aspirations Right Order}&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~5e29185c-fca8-4cb3-bc5d-e23039b5bb68~NAME~DI MM Breast Multiple Lesions Aspirations Right Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~5e29185c-fca8-4cb3-bc5d-e23039b5bb68~NAME~DI MM Breast Multiple Lesions Aspirations Right Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Priority&apos;]">
     <items>
@@ -125,7 +129,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date Requested For&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date Requested For&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -133,7 +137,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -154,15 +158,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Mandatory</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Discharge Type&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Free Text </value>
+        <value>&lt;p&gt;Mandatory, Allow Free Text Comments&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -208,36 +204,7 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Pain">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Right Breast</includedValues>
-          <includedValues>Left Breast</includedValues>
-          <includedValues>Bilateral Breasts</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Lump">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Right Breast</includedValues>
-          <includedValues>Left Breast</includedValues>
-          <includedValues>Bilateral Breasts</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Discharge">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Right Breast</includedValues>
-          <includedValues>Left Breast</includedValues>
-          <includedValues>Bilateral Breasts</includedValues>
-          <includedValues>No Discharge</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Discharge Type"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional Information/other (please describe)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="5626607e-b6d0-45b8-bbb0-ab393337e361" concept_name="DI Breast Abormalities Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Are there any Breast Abnormalities to document?"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
