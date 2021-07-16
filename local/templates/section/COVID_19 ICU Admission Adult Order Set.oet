@@ -224,11 +224,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Clinical Decision Support&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Please open the link and find the current recommendations.&amp;nbsp; These links are being updated regularly:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Recommendations for Antimicrobial management of Adult Hospitalized Patients with COVID-19 &lt;/em&gt;&lt;/strong&gt;https://ahsweb.ca/HEE/Management_of_Adult_Hospitalized_Patients_with_COVID_19&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Antimicrobial and Immunomodulatory Therapy in Adult Patients with COVID-19&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;https://ahsweb.ca/HEE/Antimicrobial_Immunomodulatory_Therapy_Adult_Patients_COVID_19&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;Co-infection with a bacterial pathogen at initial presentation with COVID-19 occurs rarely and the vast majority of patients do not require&amp;nbsp;antibacterials. When required, antibacterials can be ordered independently of the current order set&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Please open the link and find the current recommendations&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;.&amp;nbsp;&amp;nbsp;&lt;/em&gt;&lt;strong&gt;&lt;em&gt;This link is being updated regularly&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Recommendations for Antimicrobial management of Adult Hospitalized Patients with COVID-19&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;http://ahsweb.ca/HEE/Recommendations_for_Antimicrobial_management_of_Adult_Hospitalized_Patients_with_COVID-19&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Antimicrobial and Immunomodulatory Therapy in Adult Patients with COVID-19&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;https://ahsweb.ca/HEE/Antimicrobial_Immunomodulatory_Therapy_Adult_Patients_COVID_19&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -468,13 +468,13 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hemodialysis"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation and Thrombosis"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Decision Support">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticoagulants"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Platelet Inhibitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antihistamines"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="994f58cd-7566-4d76-b78d-9b3ed4a5c4e9" concept_name="COVID-19 ICU Antibacterial Therapy Order Group" max="1" path="/items" name="COVID-19 ICU Antibacterial Therapy"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="20105651-40be-4ce3-a274-b50eb83109b1" concept_name="COVID_19 ICU Bacterial Infection Order Group" max="1" path="/items" name="Management of Possible Secondary Bacterial Infection/Ventilator Associated Pneumonia in Adult COVID-19 patients"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antifungals"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="COVID-19 Antiviral Therapy">
