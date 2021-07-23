@@ -94,7 +94,11 @@
         <key>Technical.ﻩ Technical Traceabililty</key>
         <value>&lt;p&gt;{~AHSID~fe683730-c221-4067-b5ba-a141ac6a41a8~NAME~DI MM Mammogram Screening 1-2 Projections Left Order}&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~fe683730-c221-4067-b5ba-a141ac6a41a8~NAME~DI MM Mammogram Screening 1-2 Projections Left Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~fe683730-c221-4067-b5ba-a141ac6a41a8~NAME~DI MM Mammogram Screening 1-2 Projections Left Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Priority&apos;]">
     <items>
@@ -121,7 +125,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Date Requested For&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Starting:&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -129,7 +133,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Timed Procedure&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -141,7 +145,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Mandatory</value>
+        <value>&lt;p&gt;Mandatory, Allow Free Text Comments&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -154,11 +158,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Discharge Type&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Are there any new breast abnormalities?&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Free Text </value>
+        <value>&lt;p&gt;Cascading question when Yes is selected; Free Text Comments&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -191,8 +195,8 @@
           </constraint>
         </Rule>
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Date Requested For"/>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Timed Procedure"/>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting:"/>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:"/>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is the patient pregnant?">
       <Rule path="/items[at0002]">
@@ -204,7 +208,7 @@
       </Rule>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reason for exam/clinical question to be answered:"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is this is a screening exam?">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Are there any new breast abnormalities?">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
           <includedValues>Yes</includedValues>
@@ -212,36 +216,14 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Pain">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Cancel screening order and enter a diagnostic mammogram order instead.">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
-          <includedValues>Right Breast</includedValues>
-          <includedValues>Left Breast</includedValues>
-          <includedValues>Bilateral Breasts</includedValues>
+          <includedValues>Yes</includedValues>
+          <includedValues>No</includedValues>
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Lump">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Right Breast</includedValues>
-          <includedValues>Left Breast</includedValues>
-          <includedValues>Bilateral Breasts</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Discharge">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Right Breast</includedValues>
-          <includedValues>Left Breast</includedValues>
-          <includedValues>Bilateral Breasts</includedValues>
-          <includedValues>No Discharge</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Discharge Type"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional Information/other (please describe)"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
