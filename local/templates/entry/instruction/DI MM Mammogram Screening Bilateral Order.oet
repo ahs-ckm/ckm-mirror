@@ -100,32 +100,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Priority&apos;]">
-    <items>
-      <item>
-        <key>Imaging.Body Part</key>
-        <value>%=BR</value>
-      </item>
-      <item>
-        <key>Imaging.Laterality</key>
-        <value>No</value>
-      </item>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Mandatory
- </value>
-      </item>
-      <item>
-        <key>Catalogue Pattern.Patient Requirements</key>
-        <value>Skin prep: Do not use perfume, deodorant, antiperspirant or talcum on the day of exam. </value>
-      </item>
-      <item>
-        <key>Catalogue Pattern.Ordering Clinician Instructions</key>
-        <value>Restrictions: Do not use perfume, deodorant, antiperspirant or talcum on the day of exam.</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Started:&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Started:&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -133,19 +108,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>HH:MM</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Is the patient pregnant?&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Mandatory</value>
       </item>
     </items>
   </annotations>
@@ -158,19 +125,35 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Are there any new breast abnormalities?&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Is the patient pregnant?&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question when YES is selected, Free text comments&lt;/p&gt;</value>
+        <value>Mandatory</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Cancel screening order and enter a diagnostic mammogram order instead.&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~5626607e-b6d0-45b8-bbb0-ab393337e361~NAME~DI Breast Abormalities Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Free text comments&lt;/p&gt;</value>
+        <value>&lt;p&gt;Allow additional free text;&lt;/p&gt;&lt;p&gt;A response to this question may trigger cascading questions&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Are there any Breast Abnormalities to document?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Cancel screening order and enter a diagnostic mammogram order instead.&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Free text comments:&lt;/p&gt;&lt;p&gt;Cascading question available when Yes is selected in response to &quot;Are there any Breast Abnormalities?&quot;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -206,6 +189,7 @@
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Started:"/>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:"/>
     </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reason for exam/clinical question to be answered:"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is the patient pregnant?">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
@@ -215,22 +199,23 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reason for exam/clinical question to be answered:"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Are there any new breast abnormalities?">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Yes</includedValues>
-          <includedValues>No</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Cancel screening order and enter a diagnostic mammogram order instead.">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Yes</includedValues>
-          <includedValues>No</includedValues>
-        </constraint>
-      </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Are there any Breast Abnormalities to document?">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Are there any Breast Abnormalities to document?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Cancel screening order and enter a diagnostic mammogram order instead.">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments"/>
   </definition>
