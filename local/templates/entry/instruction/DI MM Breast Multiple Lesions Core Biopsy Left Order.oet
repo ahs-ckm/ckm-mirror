@@ -170,7 +170,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -178,11 +178,27 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]/items[at0002]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]/items[at0002]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Please Specify:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when YES is selected&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Allergy to local anesthetic?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Please Specify:&apos;]/items[at0002]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Free Text&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -268,13 +284,16 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Allergy to local anesthetic?">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Yes</includedValues>
-          <includedValues>No</includedValues>
-        </constraint>
-      </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Allergy to local anesthetic?">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Allergy to local anesthetic?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Please Specify:"/>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Anticoagulants or bleeding disorder?">
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Anticoagulants or bleeding disorder?">
