@@ -60,8 +60,24 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~de485a0f-5cf3-49d6-b275-bb5dc8b54dd8~NAME~Evan multi-build test Order Item}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Evan multi-build test Order Item">
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 1"/>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~de485a0f-5cf3-49d6-b275-bb5dc8b54dd8~NAME~Evan multi-build test Order Item}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Evan multi-build test Order Item">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 1">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>1</includedValues>
+          <includedValues>2</includedValues>
+          <includedValues>3</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 2"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Question 3"/>
   </definition>
