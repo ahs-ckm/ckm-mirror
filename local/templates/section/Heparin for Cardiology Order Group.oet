@@ -63,12 +63,16 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;May 11/21 - consider capping initial bolus dose at 4000 units, and revising PTT rebolus to 30 units/kg (previously 40 units/kg) - pending approval&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~57e4a27c-ac06-49fd-b52c-df497138f9a8~NAME~Heparin for Cardiology Order Group}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;To be used for cardiology indications, no fibrinolytics&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;PTT-based heparin infusions are unavailable at these 6 Edmonton zone sites: UAH, CCI, RAH, SGH, MIS, GNH. If you are ordering for a patient at one of these sites, choose the Anti-Xa based heparin infusion instead&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
