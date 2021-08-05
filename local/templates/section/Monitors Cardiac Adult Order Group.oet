@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~5f9e0984-77de-44d1-a054-f1a0217a5c95~NAME~Monitors Cardiac Adult Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Continuous Cardiac Monitoring - until ambulating&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardiac Monitoring; Telemetry Monitoring (Off for Test); Until discontinued&apos;]/activities[at0001]">
     <items>
       <item>
@@ -124,19 +132,21 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~5f9e0984-77de-44d1-a054-f1a0217a5c95~NAME~Monitors Cardiac Adult Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Monitors">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Monitors">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Continuous Cardiac Monitoring - until ambulating">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; Telemetry Monitoring (Off for Test); Until discontinued"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; Telemetry Monitoring (Not Off for Test); Until discontinued"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Continuous Cardiac Monitoring - monitor overnight, then reassess">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; Telemetry Monitoring (Off for Test); Until discontinued"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; Telemetry Monitoring (Not Off for Test); Until discontinued"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Continuous Cardiac Monitoring - post procedure for (specify hours)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="56c7ef9d-5164-4969-a58d-544c8fe553a3" concept_name="PC Cardiac Monitoring Order" max="1" path="/items" name="Cardiac Monitoring; Telemetry Monitoring (Off for Test); Until discontinued"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
