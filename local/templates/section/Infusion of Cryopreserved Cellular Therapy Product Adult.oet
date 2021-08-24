@@ -67,7 +67,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Consider opening and merging&amp;nbsp;the following ordering tools:&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Adult Oncology Admission&lt;/li&gt;&lt;li&gt;Oncology Supportive Care Symptom Management&lt;/li&gt;&lt;li&gt;Acute Infusion Related Reaction Management Adult&amp;nbsp;&lt;/li&gt;&lt;li&gt;Appropriate conditioning Treatment Plan if indicated&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Cryopreserved Bone Marrow (BM) and Peripheral Blood Stem Cells (PBSC), and Cord Blood contain DMSO.&lt;/p&gt;&lt;p&gt;DMSO Toxicity is the most common complication of HPC Infusion and occurs due to residual DMSO present in thawed HPC. For ABO Incompatible Product check with Transfusion Medicine to determine if Aliquots are required.&lt;/p&gt;&lt;p&gt;Any product with significant amounts of DMSO requires pre-meds and hydration.&lt;/p&gt;</value>
+        <value>&lt;p&gt;When placing orders for the appropriate Cellular Therapy Product Infusion type, please ensure orders are signed and HELD to be released on DAY 0.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Cryopreserved Bone Marrow (BM) and Peripheral Blood Stem Cells (PBSC), and Cord Blood contain dimethylsulfoxide (DMSO).&lt;/p&gt;&lt;p&gt;DMSO Toxicity is the most common complication of HPC Infusion and occurs due to residual DMSO present in thawed HPC. For ABO Incompatible Product check with Transfusion Medicine to determine if Aliquots are required.&lt;/p&gt;&lt;p&gt;Any product with significant amounts of DMSO requires pre-meds and hydration.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Consider opening and merging&amp;nbsp;the following ordering tools:&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Adult Oncology Admission&lt;/li&gt;&lt;li&gt;Oncology Supportive Care Symptom Management&lt;/li&gt;&lt;li&gt;Acute Infusion Related Reaction Management Adult&amp;nbsp;&lt;/li&gt;&lt;li&gt;Appropriate conditioning Treatment Plan, if indicated&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
       <item>
         <key>CKT.Synonym(s)</key>
@@ -192,6 +192,10 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cellular Therapy Product">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e417d3d9-b794-49e7-a7de-6726bd827731" concept_name="PC Prepare Cellular Therapy Product Order" max="1" path="/items" name="Prepare Cellular Therapy Product Order; Inpatient Treatment, Sign"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33bbb9b0-6fc3-4870-8f00-e3224d873ce0" concept_name="PC Infuse Cellular Therapy Product Order" max="1" path="/items" name="Infuse Cellular Therapy Product; Inpatient Treatment; Sign and Hold"/>
+    </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PO Electrolyte Replacement"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Electrolyte Replacement"/>
@@ -199,10 +203,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions"/>
     </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Prepare Cellular Therapy Product Order; Inpatient Treatment, Sign"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Infuse Cellular Therapy Product Order: Inpatient Treatment; Sign and Hold"/>
-    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="585c19a8-9020-48e5-8349-72386f256923" concept_name="PHARM sodium bicarbonate 50 mmol in D5-NaCl 0.45% 1000 mL (50 mmol/L) infusion Order" max="1" path="/items" name="sodium bicarbonate 50 mmol in D5-NaCl 0.45% 1000 mL (50 mmol/L) infusion"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76895ec7-b7e8-40b5-8ae3-28eb3b739e7c" concept_name="PHARM hydrocortisone sodium succinate injection Order" max="1" path="/items" name="hydrocortisone sodium succinate injection"/>
