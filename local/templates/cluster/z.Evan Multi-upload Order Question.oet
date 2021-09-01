@@ -60,7 +60,24 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-CLUSTER.service_request_information.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~1e58ea80-7695-41f9-ad62-8cf76c1f1778~NAME~z.Evan Multi-upload Order Question}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" name="z.Evan Multi-upload Order Question"/>
+  <annotations path="[openEHR-EHR-CLUSTER.service_request_information.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~1e58ea80-7695-41f9-ad62-8cf76c1f1778~NAME~z.Evan Multi-upload Order Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" name="z.Evan Multi-upload Order Question">
+    <Rule path="/items[at0002]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>1</includedValues>
+        <includedValues>2</includedValues>
+        <includedValues>3</includedValues>
+        <includedValues>4</includedValues>
+      </constraint>
+    </Rule>
+  </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
