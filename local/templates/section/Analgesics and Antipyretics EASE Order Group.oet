@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~67164ad0-c1f8-42ce-9c62-ee9747d0434e~NAME~Analgesics and Antipyretics EASE Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;IV_SC Opioids&apos;]">
     <items>
       <item>
@@ -84,14 +92,14 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~67164ad0-c1f8-42ce-9c62-ee9747d0434e~NAME~Analgesics and Antipyretics EASE Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics EASE Order Group">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics EASE Order Group">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance; avoid Meperidine (Demerol) and NSAIDS in frail elderly">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet; 650mg PO QID, for 3 days, on unit.  (maximum daily dose from all sources 3g)"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="IV_SC Opioids">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Hydromorphone">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; 0.25mg subcutaneous q2h PRN"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; 0.5 mg subcutaneous q2h PRN"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked logic)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; 0.25mg IV q2h PRN"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; 0.5 mg IV q2h PRN"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (radial button)"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Morphine">
