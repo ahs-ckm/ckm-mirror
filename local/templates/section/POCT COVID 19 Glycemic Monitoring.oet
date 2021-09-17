@@ -72,7 +72,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Recommend POCT glucose monitoring QID for any patient with diabetes, hyperglycemia with POCT glucose greater than 10.0mmol/L, and initially for any patient receiving dexamethasone therapy regardless of history of diabetes. &amp;nbsp;If no hyperglycemia with dexamethasone treatment in the first 48 hours, POCT glucose monitoring may be reduced to once daily for duration of steroid treatment. &amp;nbsp;For patients not receiving dexamethasone and no past history of diabetes/hyperglycemia, consider POCT glucose in those with risk factors for diabetes or symptoms suggestive of hyperglycemia.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;Basal Bolus Insulin Therapy recommended for treatment of glucose greater than 10.0 mmol/L (greater than 12.0mmol/L in elderly), or for patients with established diabetes. Recommended starting total daily dose (TDD) for new insulin start is 0.5 units/kg/day.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;For patients on insulin starting steroid therapy increase insulin doses by 20%.&lt;/p&gt;&lt;p&gt;&lt;br&gt;Ensure a plan to wean insulin is established as the course of steroids is completed.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;Ketone testing in COVID patients recommended with first POCT glucose greater than 14.0 mmol/L, particularly if no known past diabetes/hyperglycemia.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Point of care (POCT) glucose monitoring 4 times daily is recommended for diabetic patients, those with any glucose &amp;gt;10.0mmol/L, and at the start of dexamethasone therapy regardless of diabetes or prior hyperglycemia. If euglycemic 2 days into dexamethasone therapy, POCT glucose monitoring can be reduced to once daily for the remainder of any steroid treatment. &amp;nbsp;Consider POCT glucose monitoring for other patients with risk factors for diabetes or symptoms suggestive of hyperglycemia.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;Basal Bolus Insulin Therapy [&lt;em&gt;Connect Care link on &apos;Basal Bolus Insulin Therapy&apos; to &amp;nbsp;&quot;https://ahsweb.ca/HEE/BBIT-Protocol&quot;&lt;/em&gt;] (see BBIT order set and BBIT Navigator [ &lt;em&gt;Connect Care link on &apos;BBIT Navigator&apos; to &amp;nbsp;&quot;epicact:MR_VISITNAVIGATOR,RunParamsURLEncoded:TEMPLATE=T_AHS_RX_BBIT&quot;]&lt;/em&gt;) is recommended for persisting glucose recordings greater than 10.0 mmol/L (or &amp;gt; 12.0mmol/L for persons over 65 y.o.), or for patients with established diabetes. For patients starting insulin, use a total daily dose (TDD) estimate of 0.5 units/kg/day. For patients on insulin starting steroid therapy, increase insulin doses by 20% and plan to wean insulin when the steroids stop. Ketone testing is recommended for COVID patients with a first glucose &amp;gt; 14.0 mmol/L, particularly if there is no known past diabetes or hyperglycemia.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;strong&gt;-&amp;nbsp;Chart: Glucose Management&lt;/strong&gt;&lt;br&gt;Connect Care Link: EpicACT:UCW_PATIENT_SUMMARY,Runparams:REPORT=4082151001&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- Chart: BBIT Navigator&lt;/strong&gt;&lt;br&gt;Connect Care Link: EpicACT:MR_VISITNAVIGATOR,RunParamsURLEncoded:TEMPLATE=T_AHS_RX_BBIT&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- Guidance: BBIT Protocol &amp;nbsp;&lt;/strong&gt;&lt;br&gt;https://ahsweb.ca/HEE/BBIT-Protocol&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -88,7 +88,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Available for nurses to activate if patient with COVID-19 and blood glucose over 14.0 mmol/L. Test for ketones&lt;/p&gt;</value>
+        <value>&lt;p&gt;Available for nurse&amp;nbsp;to activate if patient with COVID-19 and blood glucose over 14.0 mmol/L. Test for ketones&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -116,6 +116,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;COVID-19 POCT Glucose- No prior history of diabetes or hyperglycemia- NOT on Steroid Therapy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;COVID-19 POCT Glucose- No prior history of Diabetes or Hyperglycemia- ON Steroid Therapy&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -124,11 +132,35 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;COVID-19 POCT Glucose- No prior history of Diabetes or Hyperglycemia- ON Steroid Therapy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT; 4 times daily before meals and at bedtime for 48 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;COVID-19 POCT Glucose- No prior history of Diabetes or Hyperglycemia- ON Steroid Therapy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT; Every morning for 8 days&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;COVID-19 - Prior history of Diabetes or Hyperglycemia&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;For POCT glucose greater than 10 mmol/L, initiate the Basal Bolus Insulin Therapy order set.&lt;/p&gt;&lt;p&gt;&lt;br&gt;POCT glucose below provided to reduce errors of omission.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;COVID-19 - Prior history of Diabetes or Hyperglycemia&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
