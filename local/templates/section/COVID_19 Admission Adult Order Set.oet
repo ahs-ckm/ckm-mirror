@@ -76,7 +76,7 @@
       </item>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Consider opening and merging the following order sets:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Functional Independence Adult&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Frailty Adult (if EFS-AC sore greater than 5... see calculators)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;Consider opening and merging the following order sets:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Functional Independence Adult&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Frailty Adult (if EFS-AC score greater than 5... see calculators)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
     </items>
   </annotations>
@@ -132,7 +132,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Poor prognostics factors include elevated d-Dimer, troponin, C-reactive protein, LDH, Troponin, Ferritin, low lymphocyte count, and high SOFA score.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;Laboratory tests with prognostic value include: creatinine, urea, bilirubin, LDH, d-Dimer, troponin, C-reactive protein, ferritin, lymphocyte count, and platelet count.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -140,7 +140,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Consider ABG if:&amp;nbsp;&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Patient is critically ill&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Patient shows signs of carbon dioxide retention (e.g. acute breathlessness or drowsiness, increased respiratory rate)&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Patient is at risk of metabolic conditions&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Unexpected or inappropriate drop below 94% SpO2 while patient is awake&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Increased breathlessness or drop of greater than or equal to 3% SpO2 when patient with chronic hypoxemia was previously stable&lt;/p&gt;</value>
+        <value>&lt;p&gt;Consider ABG if:&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Patient is critically ill&lt;/li&gt;&lt;li&gt;Patient shows signs of carbon dioxide retention (e.g. acute dyspnea with drowsiness, tachypnea)&lt;/li&gt;&lt;li&gt;Patient is at risk of metabolic or acid/base derangements&lt;/li&gt;&lt;li&gt;has an unexpected or inappropriate oxygen saturation drop below 94%&amp;nbsp;while patient is awake&lt;/li&gt;&lt;li&gt;has increased dyspnea or a fall in oxygen saturation of 3% or more in the setting of previously stable chronic hypoxemia&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
     </items>
   </annotations>
@@ -148,15 +148,15 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;On current oxygen therapy&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;Priority: STAT&lt;/p&gt;&lt;p&gt;Oxygen Level: On current&amp;nbsp;therapy&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Gas Arterial POCT; Once&apos;]/activities[at0156]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Sept 16/21 - CBC, Electrolyte, creatinine, CRP repeating approved by authors&lt;/p&gt;</value>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Priority: STAT&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -216,6 +216,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Is a mobile exam required? No&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -228,23 +236,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Co-infection with a bacterial pathogen at initial presentation with COVID-19 occurs rarely and the vast majority of patients do not require&amp;nbsp;antibacterials. When required, antibacterials can be ordered independently of the current order set&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Please open the link and find the current recommendations&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;.&amp;nbsp;&amp;nbsp;&lt;/em&gt;&lt;strong&gt;&lt;em&gt;This link is being updated regularly&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Recommendations for Antimicrobial management of Adult Hospitalized Patients with COVID-19&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;&amp;nbsp; &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;http://ahsweb.ca/HEE/Recommendations_for_Antimicrobial_management_of_Adult_Hospitalized_Patients_with_COVID-19&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Antimicrobial and Immunomodulatory Therapy in Adult Patients with COVID-19&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;https://ahsweb.ca/HEE/Antimicrobial_Immunomodulatory_Therapy_Adult_Patients_COVID_19&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antivirals&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Oseltamivir can be used for influenza (suspected or confirmed).&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antivirals&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Discontinue if influenza RPP negative&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;Bacterial co-infection at initial COVID-19 presentation is rare and the vast majority of patients do not require antibacterials. If needed, antibacterials can be ordered independently of the COVID-19 order set.&amp;nbsp;&lt;br&gt;Updated COVID-19 antimicrobial and immunomodulatory guidance is available via the links below, while specific medication guidance is provided alongside individual medication orders.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- Guidance: Antimicrobial Management of Adult Hospitalized Patients with COVID-19&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;https://ahsweb.ca/HEE/Management_of_Adult_Hospitalized_Patients_with_COVID_19&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;- Guidance: Antimicrobial and Immunomodulatory Therapy in Adult Patients with COVID-19&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;https://ahsweb.ca/HEE/Antimicrobial_Immunomodulatory_Therapy_Adult_Patients_COVID_19&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -252,7 +244,15 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Glucocorticoids are strongly recommended in patients who have hypoxemia requiring supplemental oxygen. For use outside of this, expert consultation advised.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;Glucocorticoids are strongly recommended in COVID-19 patients requiring supplemental oxygen for hypoxemia. Expert consultation is advised for other use-cases. &lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Instructions/Follow Up&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Select who the patient should schedule a follow up with: Primary Care provider (PCP)&lt;br&gt;Timeframe: Other (specifiy): 1-3 days&amp;nbsp;&lt;br&gt;Comments: COVID Admission follow up with PCP in 1-3 days.&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -339,24 +339,22 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79551925-2bb2-4566-8da8-b3c36abde072" concept_name="LAB Troponin Order" max="1" path="/items" name="Troponin; Once, STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP); Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c77ec2ba-b104-462b-9aea-2ccb9ae9885a" concept_name="LAB Ferritin Order" max="1" path="/items" name="Ferritin; Once, STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) Order" max="1" path="/items" name="Lactate Dehydrogenase (LD); Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea; Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca87f2c0-fc15-4e6f-bb21-845b5d6e0383" concept_name="LAB B-Type Natriuretic Peptide (BNP or NT-ProBNP) Order" max="1" path="/items" name="B-Type Natriuretic Peptide (BNP or NT-ProBNP); Once, STAT"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9e427cd-f516-4097-a4f6-084f78df6c55" concept_name="LAB D-Dimer Order" max="1" path="/items" name="D-Dimer; Once, STAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; Once, STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9e427cd-f516-4097-a4f6-084f78df6c55" concept_name="LAB D-Dimer Order" max="1" path="/items" name="D-Dimer; Once, STAT"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0f538df2-15d7-4385-844b-7fc2c7d3d6a9" concept_name="Blood Culture Panel Adult Order Group" max="1" path="/items" name="Blood Culture Panel - Adult x 2"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0b43b236-9f83-4897-871a-8e2d04bb7030" concept_name="COVID_19 Serology Order Group" max="1" path="/items" name="COVID-19 Serology"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level, Pre-Dose Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose; Per Med Dosing"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34fd84e4-0ab2-4743-998e-892958eb37e4" concept_name="LAB Blood Gas Arterial POCT Order" max="1" path="/items" name="Blood Gas Arterial POCT; Once"/>
@@ -481,10 +479,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet; 650 mg PO every 4 hour(s) PRN for mild pain"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antivirals">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="37a2bc22-d381-4eba-9127-aa480dd65f8e" concept_name="PHARM oseltamivir Capsule Order" max="1" path="/items" name="oseltamivir Capsule; (if normal renal function) 75 mg PO 2 times per day"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antivirals"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antimalarials"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ACEI/ARB"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation and Thrombosis"/>
@@ -535,10 +530,10 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4d3971-364e-447f-8236-a93931f8b357" concept_name="CONS Inpatient Consult to Obstetrics Order" max="1" path="/items" name="Inpatient Consult to Obstetrics; Reason for consult: ***"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Allied Health Consults">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker; Reason for consult: ***"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian; Reason for consult: ***"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e16d1c9-20a3-4ae7-9b48-ffe8f5bfae4e" concept_name="CONS Inpatient Consult to Speech Language Pathology Order" max="1" path="/items" name="Inpatient Consult to Speech Language Pathology; Reason for consult: ***"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy; Reason for consult: ***"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker; Reason for consult: ***"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e16d1c9-20a3-4ae7-9b48-ffe8f5bfae4e" concept_name="CONS Inpatient Consult to Speech Language Pathology Order" max="1" path="/items" name="Inpatient Consult to Speech Language Pathology; Reason for consult: ***"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referrals"/>
     </Item>
@@ -546,7 +541,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Assistive Devices"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Instructions/Follow Up">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up; With Primary care provider (PCP) in 1 - 3 days; COVID admission follow-up with PCP in 1 - 3 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Referrals"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Labs/Diagnostic Imaging"/>
