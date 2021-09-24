@@ -248,15 +248,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; Infuse Cellular Therapy Product; Inpatient Treatment, Sign &amp; Hold&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Central Nervous System Agents; Inpatient Treatment, Sign &amp; Hold&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -264,7 +256,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Central Nervous System Agents; Inpatient Treatment, Sign &amp; Hold&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -315,19 +307,19 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f2a4dfd8-b45d-4925-bf93-bb1344648e14" concept_name="Cellular Therapy Product PRE Medications Adult Order Group" max="1" path="/items" name="Cellular Therapy Product PRE Medications Adult Order Group; Inpatient Treatment, Sign &amp; Hold"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Cellular Infusion Therapy Orders">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Prepare Cellular Therapy Product Order; Inpatient Treatment, Sign"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Infuse Cellular Therapy Product; Inpatient Treatment, Sign &amp; Hold"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e417d3d9-b794-49e7-a7de-6726bd827731" concept_name="PC Prepare Cellular Therapy Product Order" max="1" path="/items" name="Prepare Cellular Therapy Product Order; Inpatient Treatment, Sign"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33bbb9b0-6fc3-4870-8f00-e3224d873ce0" concept_name="PC Infuse Cellular Therapy Product Order" max="1" path="/items" name="Infuse Cellular Therapy Product; Inpatient Treatment, Sign and Hold"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="97d271d8-99c7-455e-b3a8-f41d1cfeb636" concept_name="Cellular Therapy Product POST Medications Adult Order Group" max="1" path="/items" name="Cellular Therapy Product POST Medications Adult Order Group; Inpatient Treatment, Sign &amp; Hold"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="3a7fb2a7-9fcb-4da3-ae76-eb5e27f0a475" concept_name="Cellular Therapy Product Infusion Reaction Med Adult Order Group" max="1" path="/items" name="Cellular Therapy Product Infusion Reaction Med Adult Order Group; Inpatient Treatment, Sign and Hold"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Central Nervous System Agents; Inpatient Treatment, Sign &amp; Hold">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="06bcfb2a-71f0-4c65-be67-eebc391b31d3" concept_name="PHARM levETIRAcetam Tablet Order" max="1" path="/items" name="levETIRAcetam Tablet"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f2a4dfd8-b45d-4925-bf93-bb1344648e14" concept_name="Cellular Therapy Product PRE Medications Adult Order Group" max="1" path="/items" name="Cellular Therapy Product PRE Medications Adult Order Group; Inpatient Treatment, Sign &amp; Hold"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="97d271d8-99c7-455e-b3a8-f41d1cfeb636" concept_name="Cellular Therapy Product POST Medications Adult Order Group" max="1" path="/items" name="Cellular Therapy Product POST Medications Adult Order Group; Inpatient Treatment, Sign &amp; Hold"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="3a7fb2a7-9fcb-4da3-ae76-eb5e27f0a475" concept_name="Cellular Therapy Product Infusion Reaction Med Adult Order Group" max="1" path="/items" name="Cellular Therapy Product Infusion Reaction Med Adult Order Group; Inpatient Treatment, Sign and Hold"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
