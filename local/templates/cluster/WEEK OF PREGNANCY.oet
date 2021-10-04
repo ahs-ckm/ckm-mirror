@@ -5,9 +5,9 @@
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
-      <purpose />
-      <use />
-      <misuse />
+      <purpose/>
+      <use/>
+      <misuse/>
     </details>
     <other_details>
       <item>
@@ -16,35 +16,35 @@
       </item>
       <item>
         <key>Acknowledgemet</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>Analyst</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>Attachments regarding build</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>Build complete date</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>Build team</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>Comments</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>Record name</key>
-        <value />
+        <value/>
       </item>
       <item>
         <key>To ananlyst date</key>
-        <value />
+        <value/>
       </item>
     </other_details>
   </description>
@@ -64,7 +64,12 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.weeksofpregnancy.v0" concept_name="How many weeks has the patient been pregnant?" max="1" min="1">
+  <annotations path="[openEHR-EHR-CLUSTER.weeksofpregnancy.v0]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~37348661-2eca-4778-a4ab-aa0a7e434333~NAME~WEEK OF PREGNANCY}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.weeksofpregnancy.v0" concept_name="How many weeks has the patient been pregnant?" max="1" min="1">
+    <Rule path="/items[at0001]">
+      <conditionalNode>
+        <gender>F</gender>
+      </conditionalNode>
+    </Rule>
     <Conditional>
       <gender>F</gender>
     </Conditional>
