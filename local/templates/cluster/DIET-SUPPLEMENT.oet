@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>2e6c840c-3e1a-4654-9e84-778a614ba5f6</id>
+  <name>DIET-SUPPLEMENT</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextlql.v0]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;2020018&lt;/p&gt;</value>
+      </item>
+    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~2e6c840c-3e1a-4654-9e84-778a614ba5f6~NAME~DIET-SUPPLEMENT}</value></item></items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextlql.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>Custom List</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>No</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>No</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>No</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>Yes</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>&lt;p&gt;Equals&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>&lt;p&gt;Other (specify)&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>&lt;p&gt;Or&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>&lt;p&gt;121212&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextlql.v0" concept_name="Freetextlql" max="1" name="Select Supplement">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Boost Fruit Flavoured Beverage</includedValues>
+        <includedValues>Carnation Breakfast Essentials (Contains Lactose)</includedValues>
+        <includedValues>Ensure COMPACT (High Energy High PROTEIN)</includedValues>
+        <includedValues>Ensure Plus Calories (High ENERGY)</includedValues>
+        <includedValues>Ensure PROTEIN MAX (High Energy High PROTEIN)</includedValues>
+        <includedValues>Ensure PUDDING</includedValues>
+        <includedValues>Ensure REGULAR</includedValues>
+        <includedValues>Glucerna (Diabetic)</includedValues>
+        <includedValues>Novasource RENAL (Renal High Protein)</includedValues>
+        <includedValues>Suplena (Renal Low Protein)</includedValues>
+        <includedValues>TwoCal HN (High ENERGY)</includedValues>
+        <includedValues>Other (specify)</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextlql.v0" template_id="77272ddd-f485-402d-9ab1-277528c9be5c" concept_name="AHS IP DIET MODULE/ADDITIVE OTHER (SPECIFY)" max="1" path="/items[at0002]" name="Explanatory Comment"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextlql.v0">
+    <digest id="MD5-CAM-1.0.1">9FCE3FD752E1EF8CE8DFC99F25981DF2</digest>
+  </integrity_checks>
+</template>
