@@ -60,7 +60,75 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~af067936-d8b0-4269-87da-d4282d7b9ad5~NAME~CARDIAC Where will this be performed AMB Question}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" name="Where will this be performed?">
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~af067936-d8b0-4269-87da-d4282d7b9ad5~NAME~CARDIAC Where will this be performed AMB Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Mandatory; A response to this question may trigger a cascading question&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;In which zone will this procedure be performed?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;ConnectCare Facility&quot; selected for &quot;Where will this be performed?&quot;; A response to this question may trigger a cascading question&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (North)&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;North (ConnectCare)&quot; selected for &quot;In which zone will this procedure be performed?&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (Edmonton)&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;Edmonton&amp;nbsp;(ConnectCare)&quot; selected for &quot;In which zone will this procedure be performed?&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (Central)&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;Central (ConnectCare)&quot; selected for &quot;In which zone will this procedure be performed?&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (Calgary)&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;Calgary&amp;nbsp;(ConnectCare)&quot; selected for &quot;In which zone will this procedure be performed?&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (South)&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;South (ConnectCare)&quot; selected for &quot;In which zone will this procedure be performed?&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" name="Where will this be performed?">
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Where will this be performed?">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
@@ -69,6 +137,69 @@
           <includedValues>Lab Facility (Requisition to print)</includedValues>
         </constraint>
       </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="ConnectCare Facility">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="In which zone will this procedure be performed?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>North (ConnectCare)</includedValues>
+            <includedValues>Edmonton (ConnectCare)</includedValues>
+            <includedValues>Central (ConnectCare)</includedValues>
+            <includedValues>Calgary (ConnectCare)</includedValues>
+            <includedValues>South (ConnectCare)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (North)">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Grande Prairie Regional Hospital</includedValues>
+            <includedValues>Grande Cache Community Health</includedValues>
+            <includedValues>Manning Community Health Centre</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (Edmonton)">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Mazankowski (University of Alberta Hospital)</includedValues>
+            <includedValues>Stollery (University of Alberta Hospital)</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (Central)"/>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (Calgary)">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Canmore General Hospital</includedValues>
+            <includedValues>Claresholm General Hospital</includedValues>
+            <includedValues>Strathmore District Health Services</includedValues>
+            <includedValues>Alberta Children&apos;s Hospital</includedValues>
+            <includedValues>Peter Lougheed Centre</includedValues>
+            <includedValues>Vulcan Community Health Centre</includedValues>
+            <includedValues>Banff Mineral Springs Hospital</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (South)"/>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Other Facility (Requisition to print)">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="By selecting &apos;Other&apos; the order will be COMPLETED in ConnectCare and a requisition will be printed for the patient">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Understood</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Lab Facility (Requisition to print)">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="By selecting &apos;Lab&apos; - a requisition will print AND an order will remain in ConnectCare which allows lab facilities and mobile collection to use the order">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Understood</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
     </Items>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
