@@ -92,71 +92,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Care Setting</key>
-        <value>&lt;p&gt;IP&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Starting:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Calendar pick default to today</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Time entry default to now</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Class:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Care Setting</key>
-        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Reference Links:&apos;]">
     <items>
       <item>
-        <key>Catalogue Pattern.Care Setting</key>
-        <value>&lt;p&gt;IP&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>Catalogue Pattern.Resources</key>
         <value>&lt;p&gt;https://albertareferraldirectory.ca/PublicSearchController?direct=displaySpecialistSearch&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading questions available if &quot;Connect Care Facilty&quot; selected for &quot;Where will this be performed?&quot;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (Edmonton)&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading mandatory question if &quot;Edmonton (Connect Care)&quot; selected for zone&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (North)&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question mandatory if &quot;North (Connect Care)&quot; selected for zone&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -216,14 +156,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Will this be performed bedside?&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Care Setting</key>
-        <value>&lt;p&gt;IP&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments:&apos;]">
     <items>
       <item>
@@ -233,47 +165,11 @@
     </items>
   </annotations>
   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Adult Transthoracic Echo (TTE) Limited">
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency:">
-        <Rule path="/items[at0002]" default="Once">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Once (default)</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting:">
-        <Rule path="/items[at0002]" default="Today">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Today (default)</includedValues>
-            <includedValues>Tomorrow</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:"/>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="cbac89c1-910d-4775-a209-ff618d605764" concept_name="Q AMB Status" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Status"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority:">
-      <Rule path="/items[at0002]" default="Routine">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Add-on</includedValues>
-          <includedValues>Routine (default)</includedValues>
-          <includedValues>STAT</includedValues>
-          <includedValues>Timed</includedValues>
-          <includedValues>Today</includedValues>
-          <includedValues>Urgent</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Class:">
-      <Rule path="/items[at0002]" default="Ancillary Performed">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Clinic Performed</includedValues>
-          <includedValues>Ancillary Performed (default)</includedValues>
-          <includedValues>Hospital Performed</includedValues>
-          <includedValues>Third Party</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="3bf0eb33-c82d-4795-aeb8-938a9df94a90" concept_name="CARDIAC Frequency Once IP Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="c147b376-9eea-411c-8131-8971a2d5b7c0" concept_name="CARDIAC Status AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Status"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" template_id="6d79deff-c21e-45cf-9d92-5a8ae1782c2b" concept_name="CARDIAC Priority IP Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" template_id="95091874-9477-4225-8337-3d5cfb5bdcd2" concept_name="CARDIAC Priority AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority: (AMB)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" template_id="8b5de589-b33c-4eb1-a3cc-026711cd907b" concept_name="CARDIAC Class AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Class:"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reference Links:">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
@@ -281,60 +177,8 @@
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Procedure/exam wait times may be significantly longer in hospital versus private facilities. Refer to the Alberta Referral Directory for details on wait times and referral criteria/eligibility by location.">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Understood</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Where will this be performed?">
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Where will this be performed?">
-        <Rule path="/items[at0002]" default="Connect Care Facility">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Connect Care Facility (default)</includedValues>
-            <includedValues>Other Facility (Requisition to print)</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Connect Care Facility">
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="In which zone will this procedure be performed?">
-          <Rule path="/items[at0002]">
-            <constraint xsi:type="textConstraint">
-              <includedValues>North (Connect Care)</includedValues>
-              <includedValues>Edmonton (Connect Care) (default)</includedValues>
-              <includedValues>Central (Connect Care)</includedValues>
-              <includedValues>Calgary (Connect Care)</includedValues>
-              <includedValues>South (Connect Care)</includedValues>
-            </constraint>
-          </Rule>
-        </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="If your preferred site is not listed below, it is not live with Connect Care. Please select Other Facility (Requisition to print)">
-          <Rule path="/items[at0002]">
-            <constraint xsi:type="textConstraint">
-              <includedValues>Understood</includedValues>
-            </constraint>
-          </Rule>
-        </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (Edmonton)">
-          <Rule path="/items[at0002]">
-            <constraint xsi:type="textConstraint">
-              <includedValues>Mazankowski (University of Alberta Hospital)</includedValues>
-              <includedValues>Sturgeon Community Hospital</includedValues>
-              <includedValues>Leduc Community Hospital</includedValues>
-            </constraint>
-          </Rule>
-        </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (North)">
-          <Rule path="/items[at0002]">
-            <constraint xsi:type="textConstraint">
-              <includedValues>Queen Elizabeth II Hospital</includedValues>
-              <includedValues>Peace Diagnostic Imaging</includedValues>
-            </constraint>
-          </Rule>
-        </Items>
-      </Items>
-    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" template_id="7684e5c9-82e3-4537-b87f-3fbd6e5f9b3d" concept_name="CARDIAC procedure wait time statement AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Procedure/exam wait times may be significantly longer in hospital versus private facilities. Refer to the Alberta Referral Director for details on wait times and referral criteria/eligibility by location"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="af067936-d8b0-4269-87da-d4282d7b9ad5" concept_name="CARDIAC Where will this be performed AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Where will this be performed?"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Clinical Indication?">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
@@ -394,14 +238,6 @@
           </constraint>
         </Rule>
       </Items>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Will this be performed bedside?">
-      <Rule path="/items[at0002]" default="No">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Yes</includedValues>
-          <includedValues>No (default)</includedValues>
-        </constraint>
-      </Rule>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
   </definition>
