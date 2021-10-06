@@ -1,8 +1,8 @@
-﻿archetype (adl_version=1.4; uid=4f2f18d4-5201-4d33-ab38-216b689cbbb7)
-	openEHR-EHR-CLUSTER.freetextorderquestion.v0
+﻿archetype (adl_version=1.4; uid=f996056b-4d7c-4b39-8ade-36dc95868f89)
+	openEHR-EHR-CLUSTER.quantityorderquestion.v1
 
 concept
-	[at0000]	-- Freetextorderquestion
+	[at0000]	-- Quantityorderquestion
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -15,15 +15,15 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"Generic framework for a free text type question within a request for a health-related service to be supplied by a healthcare provider or agency.">
-			use = <"Use to record a response to a free text type question within a request for a health-related service. This archetype has been designed as a framework that can be used as the basis for a response within a request from one healthcare provider or agency to another healthcare provider or agency for a health-related service.
-This archetype will be used as the basis of each template used to construct a free text type question where the question-specific details and constraints will be applied.">
-			keywords = <"order", "service", "question", "response", "free text">
+			purpose = <"Generic framework for a quantity type question within a request for a health-related service to be supplied by a healthcare provider or agency.">
+			use = <"Use to record a response to a quantity type question within a request for a health-related service. This archetype has been designed as a framework that can be used as the basis for a response within a request from one healthcare provider or agency to another healthcare provider or agency for a health-related service.
+This archetype will be used as the basis of each template used to construct a quantity type question where the question-specific details and constraints will be applied. ">
+			keywords = <"order", "service", "question", "response", "quantity">
 			misuse = <"Not to be used to record a response to any other response type.">
 			copyright = <"© Alberta Health Services (Canada)">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"published">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -32,17 +32,18 @@ This archetype will be used as the basis of each template used to construct a fr
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"32D811F1BCE04146A49B527496212E1F">
-		["build_uid"] = <"aebdf0dc-ab65-4a46-8e3a-1151d9b8aca0">
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"76E5B8090C9996437AD6B994BB1F43A3">
+		["build_uid"] = <"f5f83c13-f9b7-4691-a488-2d479ea7b376">
+		["revision"] = <"1.0.0">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Freetextorderquestion
+	CLUSTER[at0000] matches {	-- Quantityorderquestion
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..*} matches {	-- Question
+			ELEMENT[at0001] occurrences matches {0..*} matches {	-- New element
 				value matches {
-					DV_TEXT matches {*}
+					C_DV_QUANTITY <
+					>
 				}
 			}
 			allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {	-- Cascading Questions
@@ -58,12 +59,12 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Freetextorderquestion">
-					description = <"Free text type order question">
+					text = <"Quantityorderquestion">
+					description = <"Quantity type order question.">
 				>
 				["at0001"] = <
-					text = <"Question">
-					description = <"Question display name.">
+					text = <"New element">
+					description = <"Question display name">
 				>
 				["at0002"] = <
 					text = <"Cascading Questions">
