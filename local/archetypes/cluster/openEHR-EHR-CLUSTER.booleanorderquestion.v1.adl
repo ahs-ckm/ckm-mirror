@@ -1,8 +1,8 @@
-﻿archetype (adl_version=1.4; uid=a461128e-ebaa-4436-a9dc-d71238b76b12)
-	openEHR-EHR-CLUSTER.datetimeorderquestion.v0
+﻿archetype (adl_version=1.4; uid=2e9eedbb-3f8e-45bd-98b2-f082282d1196)
+	openEHR-EHR-CLUSTER.booleanorderquestion.v1
 
 concept
-	[at0000]	-- Datetimeorderquestion
+	[at0000]	-- Booleanorderquestion
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -15,15 +15,15 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"Generic framework for a date/time type question within a request for a health-related service to be supplied by a healthcare provider or agency.">
-			use = <"Use to record a response to a date/time type question within a request for a health-related service. This archetype has been designed as a framework that can be used as the basis for a response within a request from one healthcare provider or agency to another healthcare provider or agency for a health-related service.
-This archetype will be used as the basis of each template used to construct a date/time type question where the question-specific details and constraints will be applied. ">
-			keywords = <"order", "service", "question", "response", "date", "time">
+			purpose = <"Generic framework for a boolean type question within a request for a health-related service to be supplied by a healthcare provider or agency.">
+			use = <"Use to record a response to a boolean type question within a request for a health-related service. This archetype has been designed as a framework that can be used as the basis for a response within a request from one healthcare provider or agency to another healthcare provider or agency for a health-related service.
+This archetype will be used as the basis of each template used to construct a boolean type question where the question-specific details and constraints will be applied. ">
+			keywords = <"order", "service", "question", "response", "boolean">
 			misuse = <"Not to be used to record a response to any other response type.">
 			copyright = <"© Alberta Health Services (Canada)">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"published">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -32,17 +32,19 @@ This archetype will be used as the basis of each template used to construct a da
 		["original_namespace"] = <"ca.ahs">
 		["original_publisher"] = <"Alberta Health Services (Canada)">
 		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"C8FF4504D0E9CB64B32FDC7D0188D233">
-		["build_uid"] = <"934ff40c-355c-48e4-91ff-1aedcf117eac">
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"1F043D4F0F63F9A345015705D7AA3ADD">
+		["build_uid"] = <"5e3439ad-4f6c-4fa0-8018-45086a1db734">
+		["revision"] = <"1.0.0">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Datetimeorderquestion
+	CLUSTER[at0000] matches {	-- Booleanorderquestion
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..*} matches {	-- Question
 				value matches {
-					DV_DATE_TIME matches {*}
+					DV_BOOLEAN matches {
+						value matches {True, False}
+					}
 				}
 			}
 			allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {	-- Cascading Questions
@@ -58,8 +60,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Datetimeorderquestion">
-					description = <"Date / time type order question">
+					text = <"Booleanorderquestion">
+					description = <"Boolean type order question">
 				>
 				["at0001"] = <
 					text = <"Question">
