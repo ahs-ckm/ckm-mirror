@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>a3dc064f-2c6f-4150-855e-4dd55ddf5e1c</id>
+  <name>remdesivir COVID_19 Adult Order Group</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Restricted to a 5-day course of treatment for hospitalized adult patients with COVID-19 pneumonia, who are not mechanically ventilated AND meet the following criteria:&lt;br&gt;&lt;br&gt;1. Admitted to hospital with acute illness due to COVID-19 OR developed acute illness due to hospital-acquired COVID-19, while in hospital for other reasons&lt;br&gt;&lt;br&gt;OR&lt;br&gt;&lt;br&gt;2. Are immunocompromised, defined as follows:&lt;br&gt;-Congenital and acquired immunodeficiency including severe combined immunodeficiency (SCID) and profound hypogammaglobulinemia&lt;br&gt;-HIV infection with CD4 T lymphocyte count &amp;lt; 200 (or less than 15%) and unsuppressed viral load&lt;br&gt;*In patients 5 years or older – use CD4 count &amp;lt;200&lt;br&gt;-Any haemotological malignancy&lt;br&gt;-Within 24 months of stem cell transplant&lt;br&gt;-Solid organ transplant&lt;br&gt;-Current receipt of prednisone &amp;gt; 20 mg/day (or equivalent) for more than 14 days&lt;br&gt;* For pediatric patients on prednisone use: &amp;gt; 2mg/kg body weight for more than 14 days&lt;br&gt;-Chimeric antigen receptor (CAR) T-cell therapy&lt;br&gt;-Anti-B cell therapy (current or within last 6 months)&amp;nbsp;e.g. ocrelizumab, ofatumumab, rituximab&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;remdesivir injection; 200 mg, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;remdesivir injection; 100 mg, intravenous, daily for 4 days, starting tomorrow&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;remdesivir injection; 100 mg, intravenous, daily for 4 days, starting tomorrow&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a3dc064f-2c6f-4150-855e-4dd55ddf5e1c~NAME~remdesivir COVID_19 Adult Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="remdesivir">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68cb5970-ee81-4442-8601-ab3f2c56bc49" concept_name="PHARM remdesivir injection Order" max="1" path="/items" name="remdesivir injection; 200 mg, intravenous, once"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed by"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68cb5970-ee81-4442-8601-ab3f2c56bc49" concept_name="PHARM remdesivir injection Order" max="1" path="/items" name="remdesivir injection; 100 mg, intravenous, daily for 4 days, starting tomorrow"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
