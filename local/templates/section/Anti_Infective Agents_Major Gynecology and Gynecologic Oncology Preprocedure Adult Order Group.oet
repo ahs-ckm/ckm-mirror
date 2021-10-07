@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~9cee43d4-f5bb-4174-b4c8-0aeb1f859b1f~NAME~Anti_Infective Agents_Major Gynecology and Gynecologic Oncology Preprocedure Adult Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
@@ -76,30 +84,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;gentamicin IV + clindamycin IV - If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;gentamicin IV + clindamycin IV - If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; 1.5 mg/kg/dose, intravenous, on call to surgical suite, Preprocedure/Day Surgery, to be given within 60 minutes prior to incision&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;gentamicin IV + clindamycin IV - If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;clindamycin injection; 600 mg, intravenous, on call to surgical suite, Preprocedure/Day Surgery, to be given within 60 minutes prior to incision&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;gentamicin IV + clindamycin IV - If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -108,7 +92,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~9cee43d4-f5bb-4174-b4c8-0aeb1f859b1f~NAME~Anti_Infective Agents_Major Gynecology and Gynecologic Oncology Preprocedure Adult Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Anti-Infective Agents - Major Gynecology and Gynecologic Oncology">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Anti-Infective Agents - Major Gynecology and Gynecologic Oncology">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ceFAZolin IV (add metroNIDAZOLE for procedures entering the rectum)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM ceFAZolin injection Order" max="1" path="/items" name="ceFAZolin injection; 2 g, intravenous, on call to surgical suite, Preprocedure/Day Surgery, to be given within 60 minutes prior to incision"/>
@@ -116,13 +100,7 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="gentamicin IV + clindamycin IV - If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; 1.5 mg/kg/dose, intravenous, on call to surgical suite, Preprocedure/Day Surgery, to be given within 60 minutes prior to incision"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eae3d03c-57f0-4341-8e81-0577dfab869f" concept_name="PHARM clindamycin injection Order" max="1" path="/items" name="clindamycin injection; 600 mg, intravenous, on call to surgical suite, Preprocedure/Day Surgery, to be given within 60 minutes prior to incision"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ab422ae1-d036-4c4a-9e40-7161b9c4e4ef" concept_name="gentamicin_clindamycin IV Preprocedure Adult Order Group" max="1" path="/items" name="gentamicin IV + clindamycin IV - If patient has ceFAZolin allergy or severe non-IgE mediated reaction to any beta-lactam"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
