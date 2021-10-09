@@ -95,23 +95,45 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; Pre-Delivery (Single Select)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Maternal Monitoring; Post-Delivery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: Per Protocol&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Q15 min X4 in delivery room;&lt;br&gt;Q30 min X2;&lt;br&gt;Q4h X2;&lt;br&gt;Q shift until discharge&lt;/p&gt;&lt;p&gt;Assessment to include: Temperature, Pulse, Respirations, Blood Pressure, and physical assessment including fundal assessment&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Labour and Delivery Admission Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="195c4f12-d7e8-48cf-a49e-18e20a4322f0" concept_name="ADT Admit to L&amp;D Order" max="1" path="/items" name="Admit to L&amp;D"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b7829db7-3a1d-4940-ada9-52df8ceee0e5" concept_name="Women&apos;s Health Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care Designation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f70cbffc-8c98-42ff-ae8a-b314f5d7cbe3" concept_name="Womens Health Diet and Nutrition Adult Order Group" max="1" path="/items" name="Diet and Nutrition; Pre-Delivery"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad8e387d-6339-43c0-89c2-4f0db1945168" concept_name="Womens Health Activity Adult Order Group" max="1" path="/items" name="Activity; Pre-Delivery (Single Select)"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6174506a-189b-4b00-bf86-113d349033de" concept_name="Womens Health Maternal Monitoring Adult Order Group" max="1" path="/items" name="Maternal Monitoring; Pre-Delivery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Maternal Monitoring; Post-Delivery">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b67d7195-503b-42fc-b67b-99939467ffd9" concept_name="Womens Health Fetal Monitoring Adult Order Group" max="1" path="/items" name="Fetal Monitoring; Pre-Delivery"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dcb94978-4fa0-4fec-ae97-236f6863e35a" concept_name="Womens Health Laboratory Hematology STAT Adult Order Group" max="1" path="/items" name="Hematology; Pre-Delivery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="62312fc8-dd67-4f70-9c37-80dd1cc69045" concept_name="Womens Health Laboratory Transfusion Medicine STAT Adult Order Group" max="1" path="/items" name="Transfusion Medicine; Pre-Delivery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="25a244a2-035c-4f73-ad31-0102b51912e2" concept_name="Womens Health No Prenatal Care Adult Order Group" max="1" path="/items" name="No Prenatal Care; Pre-Delivery"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="db565036-c183-4430-b886-11b561c6817f" concept_name="Labour and Delivery Fluids and Electrolytes Adult Order Group" max="1" path="/items" name="Fluids and Electrolytes; Pre-Delivery"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
