@@ -68,7 +68,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
@@ -76,23 +76,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;This test&amp;nbsp;is&amp;nbsp;restricted based on site. If testing will be conducted in regional hospital-based APL labs in High Level, Grande Prairie, Fort McMurray, Red Deer, Lethbridge or Medicine Hat, CHOOSE:&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Rapid COVID-19 Serology; STAT&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp; Is this serology test to evaluate eligibility for casirivimab/imdevimab (Regen-CoV)?&amp;nbsp;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;COVID-19 Serology (Edmonton or Calgary)&apos;]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
@@ -100,7 +84,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 Serology; STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;COVID-19 Serology (Edmonton or Calgary)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -108,7 +92,31 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;COVID-19 Serology (Edmonton or Calgary)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;COVID-19 Rapid Serology Test&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;This test&amp;nbsp;is&amp;nbsp;restricted based on site. If testing will be conducted in regional hospital-based APL labs in High Level, Grande Prairie, Fort McMurray, Red Deer, Lethbridge or Medicine Hat, CHOOSE:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;COVID-19 Rapid Serology Test&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp; Is this serology test to evaluate eligibility for casirivimab/imdevimab (Regen-CoV)?&amp;nbsp;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;COVID-19 Rapid Serology Test&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -118,12 +126,14 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="COVID-19 Serology">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="COVID-19 Serology">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eb38c8e1-8be0-4a7a-905f-27b809f346e7" concept_name="LAB Rapid Covid-19 Serology Order" max="1" path="/items" name="Rapid COVID-19 Serology; STAT"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="COVID-19 Serology (Edmonton or Calgary)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4235eb1b-6650-4cce-8231-7148d5036c61" concept_name="LAB COVID-19 Serology Order" max="1" path="/items" name="COVID-19 Serology; STAT"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="COVID-19 Rapid Serology Test">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eb38c8e1-8be0-4a7a-905f-27b809f346e7" concept_name="LAB Rapid COVID-19 Serology Order" max="1" path="/items" name="Rapid COVID-19 Serology; STAT"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
