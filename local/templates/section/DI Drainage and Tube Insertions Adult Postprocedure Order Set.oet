@@ -82,24 +82,24 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Diet Instructions to Nursing; Resume Previous Diet as Tolerated Now&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Resume previous diet as tolerated, encourage fluids for patients with no fluid restriction&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Phase of Care</key>
-        <value>&lt;p&gt;Recovery &amp;amp; on unit&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Diet Instructions to Nursing; Resume Previous Diet as Tolerated 1 hour Post Starting H+1&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
+        <key>CKT.Content Details</key>
         <value>&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Resume previous diet as tolerated, encourage fluids for patients with no fluid restriction&lt;/p&gt;</value>
       </item>
       <item>
-        <key>CKT.Phase of Care</key>
-        <value>&lt;p&gt;Recovery &amp;amp; On Unit&lt;/p&gt;</value>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Diet Instructions to Nursing; Resume Previous Diet as Tolerated 1 hour Post&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting H+1&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Resume previous diet as tolerated, encourage fluids for patients with no fluid restriction&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -734,14 +734,17 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="NFS NPO Order" max="1" path="/items" name="NPO; Recovery and On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="PC Diet instructions to nursing Order" max="1" path="/items" name="Diet Instructions to Nursing; Resume Previous Diet as Tolerated Now"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="PC Diet instructions to nursing Order" max="1" path="/items" name="Diet Instructions to Nursing; Resume Previous Diet as Tolerated 1 hour Post Starting H+1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="PC Diet instructions to nursing Order" max="1" path="/items" name="Diet Instructions to Nursing; Resume Previous Diet as Tolerated 1 hour Post"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Education"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Strict bed rest"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Bed rest with bathroom privileges"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Adjust Head of Bed to"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; As tolerated"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
