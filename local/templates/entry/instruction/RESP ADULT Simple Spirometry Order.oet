@@ -86,10 +86,29 @@
         <key>Technical.EPIC ID</key>
         <value>RT17</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~807ee7ea-aab7-4fc9-bab1-50c6f581f8e6~NAME~RESP ADULT Simple Spirometry Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~807ee7ea-aab7-4fc9-bab1-50c6f581f8e6~NAME~RESP ADULT Simple Spirometry Order}</value>
+      </item>
+    </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:
-First Occurrence&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Class AMB&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;IP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At: First Occurrence&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -97,15 +116,57 @@ First Occurrence&apos;]">
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Priority&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;IP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Sched Inst: AMB&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Comment field pre-populated; Free text&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>Comment field pre-populated; Free text</value>
+        <value>&lt;p&gt;Free text&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;CC Results AMB&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Add PCP search field&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Simple Spirometry">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="23914631-b99e-44e8-bc72-397b24bed978" concept_name="RESP Status AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Status AMB"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Class AMB">
+      <Rule path="/items[at0002]" default="Clinic Performed">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Ancillary Performed</includedValues>
+          <includedValues>Clinic Performed (default)</includedValues>
+          <includedValues>Hospital Performed</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency">
         <Rule path="/items[at0002]">
@@ -121,8 +182,7 @@ First Occurrence&apos;]">
           </constraint>
         </Rule>
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:
-First Occurrence">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At: First Occurrence">
         <Rule path="/items[at0002]">
           <constraint xsi:type="textConstraint">
             <includedValues>Time selection</includedValues>
@@ -143,10 +203,18 @@ First Occurrence">
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional Tests Required"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Goals"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Sched Inst: AMB">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
           <includedValues>Patients should not be given a bronchodilator 4 hours before scheduled test.</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="CC Results AMB">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Recipient</includedValues>
         </constraint>
       </Rule>
     </Items>
