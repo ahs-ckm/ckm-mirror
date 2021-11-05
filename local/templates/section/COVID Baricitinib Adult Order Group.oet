@@ -68,7 +68,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
@@ -86,7 +86,9 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Consider if significant progressive respiratory failure due to COVID-19 pneumonia requiring ventilation (invasive or non-invasive) or supplemental oxygen – baricitinib">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97d91fca-9095-472a-84f5-10f5d7dd77b1" concept_name="PHARM Baricitinib tablet Order" max="1" path="/items" name="Baricitinib tablet; 4 mg oral daily x 14 days"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97d91fca-9095-472a-84f5-10f5d7dd77b1" concept_name="PHARM Baricitinib tablet Order" max="1" path="/items" name="Baricitinib tablet; 4 mg, oral, daily x 14 days"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97d91fca-9095-472a-84f5-10f5d7dd77b1" concept_name="PHARM Baricitinib tablet Order" max="1" path="/items" name="Baricitinib tablet; Renal Dysfunction Dosing 2 mg, oral, daily x 14 days"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
