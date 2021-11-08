@@ -68,22 +68,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Priority: Routine/STAT&lt;br&gt;Reason for Consult:&amp;nbsp;&lt;br&gt;Did you contact the consultant? Yes/No&lt;br&gt;Level of Consultation:&amp;nbsp;&lt;br&gt;Comments: Date symptom started ***&lt;br&gt;Current therapy (Which treatment has patient been started on for their cardiac symptoms (if any)?) ***&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0156]">
     <items>
       <item>
@@ -116,7 +100,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatine Kinase (CK)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatine Kinase (CK)&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -189,7 +173,6 @@
     </items>
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Cardiology">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d8517b9-f68d-419a-a77b-bf0f138ea586" concept_name="CONS Inpatient Consult to Cardiology Order" max="1" path="/items" name="Inpatient Consult to Cardiology"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="418aa4ab-4dec-4c37-8e02-5094278ae3be" concept_name="Checkpoint Inhibitor Related Toxicity_Comprehensive Metabolic Labs Adult Order Group" max="1" path="/items" name="Comprehensive Metabolic Labs"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
