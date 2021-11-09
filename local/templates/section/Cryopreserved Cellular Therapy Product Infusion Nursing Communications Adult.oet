@@ -72,11 +72,19 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Make default/pre-selection? awaiting author confirmation&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Must confirm with Edmonton zone. Quite possible that CTP is &lt;u&gt;not &lt;/u&gt;thawed at bedside&amp;nbsp;&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments: Cryopreserved product, to be thawed at bedside, will be delivered directly to Unit.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Product Thawed at Bedside&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -88,7 +96,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Infuse via Silicone CVAD&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Infuse via silicone CVAD&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -96,7 +104,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Infuse via Silicone CVAD&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Infuse via silicone CVAD&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -107,8 +115,20 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Aliquot&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Is &apos;equal to or greater than&apos; accurate for the WBC count/Aliqout?&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;If product ABO Incompatible check with Transfusion Medicine to determine if Aliquots are required.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;If Cellular Therapy Product WBC count equal to or greater than 1x10^9/Kg&amp;nbsp;check with Cellular Therapy Lab&amp;nbsp;to determine if Aliquots are required.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Aliquot&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -136,7 +156,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments: Epinephrine for Anaphylaxis&amp;nbsp;kit must be available during cellular therapy infusion as it may cause anaphylaxis reactions; Refer to AHS Anaphylaxis Management: Administration of Intramuscular Epinephrine&amp;nbsp;for epiNEPHrine administration and further anaphylaxis management.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments: Epinephrine for Anaphylaxis&amp;nbsp;kit must be available during cellular therapy infusion as it may cause anaphylaxis reactions; Refer to &lt;em&gt;AHS Anaphylaxis Management: Administration of Intramuscular Epinephrine&lt;/em&gt;&amp;nbsp;for epinephrine&amp;nbsp;administration and further anaphylaxis management.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -151,7 +171,7 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Cryopreserved Cellular Therapy Product Infusion Nursing Communications Adult; Inpatient Treatment, Sign and Hold">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Product Thawed at Bedside"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Thawed/Diluted Product Delivery to Unit"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Infuse via Silicone CVAD"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Infuse via silicone CVAD"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Aliquot"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Emergency Equipment"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17543adf-583d-46d4-8b33-46db069480cf" concept_name="PC At Bedside Order" max="1" path="/items" name="At Bedside; Epinephrine for Anaphylaxis Kit"/>
