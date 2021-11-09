@@ -88,6 +88,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Treatment Options&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Treatment Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;High Risk of Bleeding Contraindications&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1 and name/value=&apos;Section supporting context #1&apos;]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Treatment Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Op Prophylaxis&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -104,53 +120,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential; Every 3 days, for 5 occurrences, to monitor platelet count for heparin-induced thrombocytopenia (HIT) in heparin- exposed patients with risk of HIT greater than 1%&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;To monitor platelet count for heparin-induced thrombocytopenia (HIT) in heparin-exposed patients with risk of HIT greater than 1%&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Avoid intramuscular (IM) injections while receiving anticoagulant therapy.&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Hold VTE prophylaxis if platelets 50 x 10^9/L or less&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="VTE Prophylaxis - Hip Fracture Pre Procedure Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Decision Support">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Treatment Options">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="High Risk of Bleeding Contraindications">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #1"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="When bleeding risk decreases, pharmacologic thromboprophylaxis should be substituted for or added to mechanical thromboprophylaxis"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="528e44bc-af74-465f-a535-3a62f4bb1d0c" concept_name="PC Sequential Compression Device Order" max="1" path="/items" name="Sequential Compression Device; Apply, Until discontinued. For patients with a high risk of bleeding, use SCDs at least until the initial risk of bleeding decreases"/>
@@ -174,19 +152,6 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df94fc61-7e8a-4890-8269-d3cea3b1064f" concept_name="PC AntiEmbolism Stockings Order" max="1" path="/items" name="AntiEmbolism Stockings; Until discontinued"/>
       </Item>
     </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential Order" max="1" path="/items" name="CBC, No Differential; Once, To provide baseline platelet count for patients receiving heparin"/>
-    </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Repeating">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential Order" max="1" path="/items" name="CBC, No Differential; Every 3 days, for 5 occurrences, to monitor platelet count for heparin-induced thrombocytopenia (HIT) in heparin- exposed patients with risk of HIT greater than 1%"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; Daily Morning, Ensure daily PT INR order while on warfarin"/>
-    </Item>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Avoid intramuscular (IM) injections while receiving anticoagulant therapy."/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Hold VTE prophylaxis if platelets 50 x 10^9/L or less"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Notify attending physician to reassess prophylaxis if platelets 100 x 10^9 /L or less"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Notify attending physician if INR greater than 3"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
