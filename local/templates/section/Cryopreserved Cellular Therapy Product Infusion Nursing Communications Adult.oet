@@ -72,7 +72,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Must confirm with Edmonton zone. Quite possible that CTP is &lt;u&gt;not &lt;/u&gt;thawed at bedside&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Must confirm with Edmonton zone. Quite possible that CTP is &lt;u&gt;not &lt;/u&gt;thawed at bedside. If true, would remove default selection and could be personalized or selected at time of ordering&amp;nbsp;&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -135,10 +135,6 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Emergency Equipment&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Updated from &apos;Emergency cart&apos;. Should this order be removed completely?&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments: Ensure emergency equipment readily available on unit prior to cellular therapy product infusion.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
@@ -168,6 +164,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Corticosteroids&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Avoid use of corticosteroids with Haplodentical CTP (upt to 24 hours preceding infusion) and with Donor Lymphocyte infusion.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Cryopreserved Cellular Therapy Product Infusion Nursing Communications Adult; Inpatient Treatment, Sign and Hold">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Product Thawed at Bedside"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Thawed/Diluted Product Delivery to Unit"/>
@@ -175,6 +179,7 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Aliquot"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Emergency Equipment"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17543adf-583d-46d4-8b33-46db069480cf" concept_name="PC At Bedside Order" max="1" path="/items" name="At Bedside; Epinephrine for Anaphylaxis Kit"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Corticosteroids"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
