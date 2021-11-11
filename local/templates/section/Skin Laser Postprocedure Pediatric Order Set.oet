@@ -100,6 +100,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Follow-Up&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Select who the patient should schedule a follow up with.&amp;nbsp;&lt;br&gt;&amp;nbsp;Note: these orders cannot be scheduled.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Post-Discharge Dressing Care&apos;]/activities[at0001]">
     <items>
       <item>
@@ -129,14 +137,6 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Action:&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Cleanse&lt;/strong&gt;; Irrigate with Catheter and Syringe; Irrigate with Syringe; Other (Please Specify)&lt;/p&gt;&lt;p&gt;Solution:&lt;/p&gt;&lt;p&gt;Normal Saline; Wound Cleanser; &lt;strong&gt;Other (Please Specify)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Mild soap and water&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Cleanse laser areas every ***&lt;/em&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Instructions/Follow Up&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Call a provider for help if experiencing:&amp;nbsp;&lt;/p&gt;&lt;p&gt;*&amp;nbsp; Persistent nausea or vomiting&lt;/p&gt;&lt;p&gt;*&amp;nbsp; Redness, Tenderness, Pain,Swelling, Odor, Green/Yellow Discharge around incision&lt;/p&gt;&lt;p&gt;*&amp;nbsp; Temperature Greater than 38o Celcius&lt;/p&gt;&lt;p&gt;*&amp;nbsp; Bleeding from the surgical site&lt;/p&gt;&lt;p&gt;*&amp;nbsp; Crusting or Blistering Develops&lt;/p&gt;&lt;p&gt;Other&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -241,14 +241,34 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Request for Other Service"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Follow-Up">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; Surgeon in 3 - 4 weeks"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; Surgeon in 1 - 2 weeks"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; Primary Care Provider (PCP)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; specify"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fb01bb83-ce69-4839-a324-3ee92b47d370" concept_name="PC Discharge Call MD Order" max="1" path="/items" name="Discharge Call MD"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e7ab4f8f-58b5-4b00-ba0a-ccf133d9cafc" concept_name="Discharge Wound Care Smart Group" max="1" path="/items" name="Discharge Wound Care; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e558569f-57aa-47bd-a2c5-5945310fd4f1" concept_name="PC Wound management Order" max="1" path="/items" name="Wound management; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e558569f-57aa-47bd-a2c5-5945310fd4f1" concept_name="PC Wound management Order" max="1" path="/items" name="Wound management; Post Discharge; Cleanse daily with soap and water and apply vaseline twice a day for 1 week"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Instructions/Follow Up">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8c7c44cd-ddd8-4939-81c1-79b8c18f17ca" concept_name="Discharge Follow-Up Smart Group" max="1" path="/items" name="Discharge Follow-Up Smart Group; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fb01bb83-ce69-4839-a324-3ee92b47d370" concept_name="PC Discharge Call MD Order" max="1" path="/items" name="Discharge Call MD; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5fd8ccaf-fe6a-4005-9afa-3f409a68f20b" concept_name="PC Discharge diet Order" max="1" path="/items" name="Discharge diet; Return to Previous Diet"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5fd8ccaf-fe6a-4005-9afa-3f409a68f20b" concept_name="PC Discharge diet Order" max="1" path="/items" name="Discharge diet; Full Fluid Bariatric"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5fd8ccaf-fe6a-4005-9afa-3f409a68f20b" concept_name="PC Discharge diet Order" max="1" path="/items" name="Discharge diet; Low Fiber"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5fd8ccaf-fe6a-4005-9afa-3f409a68f20b" concept_name="PC Discharge diet Order" max="1" path="/items" name="Discharge diet #3"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No strenuous activity"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No strenuous activity or sports"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; weight Bearing Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Lifting Instructions. No lifting greater than or equal to *** lbs for *** weeks"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May return to work/school"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Instructions/Follow Up"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Referrals"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Labs/Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications">
@@ -256,8 +276,11 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Otic Agents"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Smooth Muscle Relaxants/Antispasmodics"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="16e9bb13-d9b2-41b1-ae38-966417288673" concept_name="Discharge Activity Skin Laser Post Ped Order Group" max="1" path="/items" name="Discharge Activity; Post Discharge"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dfe49732-c1ce-49b8-b1b2-f03d9b5a66f7" concept_name="Discharge Medications - Topical Agents Skin Laser Post Ped Order Group" max="1" path="/items" name="Discharge Medications - Topical Agents; Post Discharge"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f8c2924-5ea3-4133-a223-357e551361d3" concept_name="PHARM acetaminophen Oral liquid 32 mg/mL Order" max="1" path="/items" name="acetaminophen Oral liquid 32 mg/mL; 15 mg/kg/dose"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM ibuprofen Oral liquid 40 mg/mL Order" max="1" path="/items" name="ibuprofen Oral liquid 40 mg/mL; 10 mg/kg/dose"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet; Take *** every 6 hours as needed for pain"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen Tablet Order" max="1" path="/items" name="ibuprofen Tablet; Take *** every 6 hours as needed for pain for 3 days"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
