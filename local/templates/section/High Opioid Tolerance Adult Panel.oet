@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>9773d697-3bcf-4d58-8701-f1efc68c95e1</id>
+  <name>High Opioid Tolerance Adult Panel</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;***For use in clients enrolled in Injectable Opioid Agonist Therapy (&lt;strong&gt;iOAT&lt;/strong&gt;) program.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Eligibility Criteria:&lt;/p&gt;&lt;p&gt;&amp;nbsp;- Criteria met for severe opioid use disorder&lt;/p&gt;&lt;p&gt;&amp;nbsp;- Previously tried and was unsuccessful on oral Opioid Agonist Treatment (Methadone/Suboxone ®/SROM)&lt;/p&gt;&lt;p&gt;&amp;nbsp;- Must be a person who uses IV drugs&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;All prescibed injections administered by the client must be supervised by a Registered Nurse with monitoring pre and post injection for medical stability (no overdose, seizure or other adverse avent)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A long acting oral opioid given at the last injection appointment to avoid withdrawal symptoms overnight (Kadian® or Methadone)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine, long acting 24 hour (Kadian) Capsule; Optional overnight bridging therapy&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Overnight bridging therapy:&lt;/p&gt;&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;left&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&amp;nbsp;- Open capsule(s) and pour beads into med cup.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;- Witness ingestion on patient care unit. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;- Follow dose with a cup of water to ensure all beads have been swallowed.&lt;/p&gt;&lt;p&gt;&amp;nbsp;- Hold if sedated.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;- Continue Kadian&lt;sup&gt;®&lt;/sup&gt; orders for *** days.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~9773d697-3bcf-4d58-8701-f1efc68c95e1~NAME~High Opioid Tolerance Adult Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="High Opioid Tolerance Adult Panel">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No Activity Restrictions"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="PC Patient Education (Specify) Order" max="1" path="/items" name="Patient Education (Specify)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbdc630e-847e-466a-a859-3299451363c4" concept_name="LAB Beta hCG Quantitative Order" max="1" path="/items" name="Beta hCG, Quantitative"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bc7d2d5f-8845-46b7-a361-e8f0f107dbce" concept_name="LAB Hepatitis A Virus Immunity Serology - IgG Order" max="1" path="/items" name="Hepatitis A Virus Immunity Serology - IgG"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e7bc390-51ef-4ada-9aab-cb8cf83087b1" concept_name="LAB Hepatitis B Virus Surface Antigen Order" max="1" path="/items" name="Hepatitis B Virus Surface Antigen"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df5465bb-2aad-42ef-9604-03dd0a51428f" concept_name="LAB Hepatitis B Surface Antibody Order" max="1" path="/items" name="Hepatitis B Surface Antibody"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46d8f219-0569-4748-b8c8-4b82359f2fea" concept_name="LAB Hepatitis C Virus Serology Order" max="1" path="/items" name="Hepatitis C Virus Serology"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2141bc37-6842-4209-93d1-cf6b0e4d3a84" concept_name="LAB Hepatitis C Virus (HCV) NAT Order" max="1" path="/items" name="Hepatitis C Virus (HCV) NAT"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9793b6bd-6ac9-47c2-934a-04d837ac4ca0" concept_name="LAB HIV 1 and 2 Serology (Antigen and Antibody) Order" max="1" path="/items" name="HIV 1 and 2 Serology (Antigen and Antibody)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="19256be8-6968-4c50-8345-043e94d399db" concept_name="LAB Syphilis Screen Order" max="1" path="/items" name="Syphilis Screen"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cad277fe-004c-42de-8baf-d9a2be2d115f" concept_name="LAB Chlamydia and Gonorrhea Screen Order" max="1" path="/items" name="Chlamydia and Gonorrhea Screen; Urine"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="407e1011-590f-4a39-9cad-a8753037469f" concept_name="LAB Urine General Toxicology Panel Order" max="1" path="/items" name="Urine General Toxicology Panel"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ff473ab-a67b-44b0-85eb-841110737c8e" concept_name="LAB Urine Opioid Dependency Panel Order" max="1" path="/items" name="Urine Opioid Dependency Panel"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="63f47fa1-0b8a-4624-8769-9ec68ce14421" concept_name="PHARM naloxone injection Order" max="1" path="/items" name="naloxone injection; 0.4 mg IV x 1 dose PRN for suspected opioid overdose"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7a23625d-05f5-4b17-bbb4-dd5c29dd135b" concept_name="PHARM LORazepam injection Order" max="1" path="/items" name="LORazepam injection; 2 mg IV every 5 minutes PRN for seizure"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE Capsule Order" max="1" path="/items" name="diphenhydrAMINE Capsule; 25 mg PO every 4 hours PRN for pruritus"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; HOLD all OPIOIDS for Injectable Opioid Agonist Therapy (iOAT)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection #1"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection #2"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection #3"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2dfe27f6-b0e2-4cc0-a0ea-fa5c727d922e" concept_name="PHARM morphine, long acting 24 hour (Kadian) Capsule Order" max="1" path="/items" name="morphine, long acting 24 hour (Kadian) Capsule; Optional overnight bridging therapy"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
