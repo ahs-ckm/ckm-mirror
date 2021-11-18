@@ -74,7 +74,11 @@
         <key>Technical.EPIC ID</key>
         <value>&lt;p&gt;LAB13&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~25e2f8da-cc2f-4981-8be4-9125b8a916d1~NAME~LAB Non-Gynecological Cytology Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~25e2f8da-cc2f-4981-8be4-9125b8a916d1~NAME~LAB Non-Gynecological Cytology Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
     <items>
@@ -129,6 +133,18 @@
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Mandatory; Free text box for comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Specimen Source(s):&apos;]/items[at0002]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>&lt;p&gt;Cytopathology&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br&gt;Nongynecologic&lt;br&gt;Medical Cytology&lt;br&gt;Non Gynecologic&lt;br&gt;Cytology&lt;br&gt;Bronch&lt;br&gt;BAL&lt;br&gt;APN&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;LAB13&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -225,9 +241,7 @@
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source(s):">
       <Rule path="/items[at0002]">
         <constraint xsi:type="textConstraint">
-          <includedValues>Adipose Tissue</includedValues>
-          <includedValues>Adrenal Gland, Left</includedValues>
-          <includedValues>Adrenal Glad, Right</includedValues>
+          <includedValues>Adrenal Gland, Right</includedValues>
           <includedValues>Anus</includedValues>
           <includedValues>Aortic Valve</includedValues>
           <includedValues>Appendix</includedValues>
@@ -250,9 +264,8 @@
           <includedValues>Bronchus, Right</includedValues>
           <includedValues>Bursa</includedValues>
           <includedValues>Capillary</includedValues>
-          <includedValues>Carpal Tunnel</includedValues>
+          <includedValues>Carpal tunnel</includedValues>
           <includedValues>Cartilage</includedValues>
-          <includedValues>Cerebrospinal Fluid</includedValues>
           <includedValues>Cervix</includedValues>
           <includedValues>Colon</includedValues>
           <includedValues>Conjunctiva</includedValues>
@@ -271,21 +284,22 @@
           <includedValues>Epididymis, Left</includedValues>
           <includedValues>Epididymis, Right</includedValues>
           <includedValues>Epiglottis</includedValues>
-          <includedValues>Esophagus</includedValues>
           <includedValues>Eye, Left</includedValues>
           <includedValues>Eye, Right</includedValues>
+          <includedValues>Esophagus</includedValues>
           <includedValues>Fallopian Tube, Left</includedValues>
           <includedValues>Fallopian Tube, Right</includedValues>
           <includedValues>Fallopian Tube, Unspecified</includedValues>
-          <includedValues>Fascia</includedValues>
+          <includedValues>Fascial</includedValues>
           <includedValues>Fetus</includedValues>
           <includedValues>Foot, Left</includedValues>
           <includedValues>Foot, Right</includedValues>
           <includedValues>Foreign Body</includedValues>
           <includedValues>Foreskin</includedValues>
           <includedValues>Gallbladder</includedValues>
-          <includedValues>Gastroesophageal Junction</includedValues>
+          <includedValues>Gastroesophageal junction</includedValues>
           <includedValues>Gingiva</includedValues>
+          <includedValues>Pineal Gland</includedValues>
           <includedValues>Hair</includedValues>
           <includedValues>Hand, Left</includedValues>
           <includedValues>Hand, Right</includedValues>
@@ -301,18 +315,6 @@
           <includedValues>Larynx</includedValues>
           <includedValues>Leg, Left</includedValues>
           <includedValues>Leg, Right</includedValues>
-          <includedValues>Ligament</includedValues>
-          <includedValues>Lip, Lower</includedValues>
-          <includedValues>Lip, Upper</includedValues>
-          <includedValues>Liver</includedValues>
-          <includedValues>Lung, Left</includedValues>
-          <includedValues>Lung, Left Lingula</includedValues>
-          <includedValues>Lung, Left Lower Lobe</includedValues>
-          <includedValues>Lung, Left Upper Lobe</includedValues>
-          <includedValues>Lung, Right</includedValues>
-          <includedValues>Lung, Right Lower Lobe</includedValues>
-          <includedValues>Lung, Right Middle Lobe</includedValues>
-          <includedValues>Lung, Right Upper Lobe</includedValues>
           <includedValues>Lymph Node Regional</includedValues>
           <includedValues>Lymph Node Sentinel</includedValues>
           <includedValues>Lymph Node, Other</includedValues>
@@ -339,14 +341,13 @@
           <includedValues>Perineum</includedValues>
           <includedValues>Peritoneum</includedValues>
           <includedValues>Pharynx</includedValues>
-          <includedValues>Pineal Gland</includedValues>
           <includedValues>Pituitary Gland</includedValues>
           <includedValues>Placenta</includedValues>
           <includedValues>Pleura</includedValues>
           <includedValues>Products of Conception</includedValues>
           <includedValues>Prostate</includedValues>
           <includedValues>Pulmonary Valve</includedValues>
-          <includedValues>Rectum</includedValues>
+          <includedValues>Colon, Rectum</includedValues>
           <includedValues>Retroperitoneum</includedValues>
           <includedValues>Salivary Gland, Left</includedValues>
           <includedValues>Salivary Gland, Right</includedValues>
@@ -358,7 +359,7 @@
           <includedValues>Sinus, Right</includedValues>
           <includedValues>Sinus, Unspecified</includedValues>
           <includedValues>Skin</includedValues>
-          <includedValues>Smal Bowel</includedValues>
+          <includedValues>Small Bowel</includedValues>
           <includedValues>Soft Tissue</includedValues>
           <includedValues>Spermatic Cord, Left</includedValues>
           <includedValues>Spermatic Cord, Right</includedValues>
@@ -371,7 +372,7 @@
           <includedValues>Testicle, Left</includedValues>
           <includedValues>Testicle, Right</includedValues>
           <includedValues>Thymus</includedValues>
-          <includedValues>Throglossal Duct</includedValues>
+          <includedValues>Thyroglossal duct</includedValues>
           <includedValues>Thyroid</includedValues>
           <includedValues>Tongue</includedValues>
           <includedValues>Tonsil, Left</includedValues>
@@ -386,11 +387,6 @@
           <includedValues>Ureter, Left</includedValues>
           <includedValues>Ureter, Right</includedValues>
           <includedValues>Urethra</includedValues>
-          <includedValues>Urine, Catheter</includedValues>
-          <includedValues>Urine, First Catch</includedValues>
-          <includedValues>Urine, First Morning</includedValues>
-          <includedValues>Urine, Midstream</includedValues>
-          <includedValues>Urine, Other</includedValues>
           <includedValues>Uterus</includedValues>
           <includedValues>Uvula</includedValues>
           <includedValues>Vagina</includedValues>
@@ -400,6 +396,26 @@
           <includedValues>Vein</includedValues>
           <includedValues>Vocal Cord</includedValues>
           <includedValues>Vulva</includedValues>
+          <includedValues>Lung, Left Lower Lobe</includedValues>
+          <includedValues>Lung, Left Upper Lobe</includedValues>
+          <includedValues>Lung, Right Lower Lobe</includedValues>
+          <includedValues>Lung, Right Middle Lobe</includedValues>
+          <includedValues>Lung, Right Upper Lobe</includedValues>
+          <includedValues>Lumbar Puncture</includedValues>
+          <includedValues>Urine, Cystoscopy</includedValues>
+          <includedValues>Urine, Catheter</includedValues>
+          <includedValues>Cerebrospinal Fluid</includedValues>
+          <includedValues>Brain, Ventricle</includedValues>
+          <includedValues>Urine, Midstream</includedValues>
+          <includedValues>Lung, Left Lingula</includedValues>
+          <includedValues>Lung, Unspecified</includedValues>
+          <includedValues>Lung, Left</includedValues>
+          <includedValues>Lung, Right</includedValues>
+          <includedValues>Pleural Cavity, Left</includedValues>
+          <includedValues>Pleural Cavity, Right</includedValues>
+          <includedValues>Pleural Cavity, Unspecified</includedValues>
+          <includedValues>Adipose Tissue</includedValues>
+          <includedValues>Adrenal Gland, Left</includedValues>
         </constraint>
       </Rule>
     </Items>
