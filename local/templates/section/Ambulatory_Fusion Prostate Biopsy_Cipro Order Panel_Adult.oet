@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~8d792b49-5159-4463-ad70-1f209a5f4baa~NAME~Ambulatory_Fusion Prostate Biopsy_Cipro Order Panel_Adult}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Fusion Guided Prostate Biopsy; Clinic Performed&apos;]/activities[at0156]">
     <items>
       <item>
@@ -84,19 +92,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lidocaine 10 mg/mL injection; *** mg, once, Intramuscular; Intraprocedure (PENDING APPROVAL)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lidocaine 10 mg/mL injection; 40 mg, other - see admin instructions, once; Intraprocedure (PENDING APPROVAL)&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;INC000149278 request from Sept 30/21&lt;/p&gt;&lt;p&gt;ERX revision request to include IM as route&lt;/p&gt;&lt;p&gt;MAR revision request to inlcude site&lt;/p&gt;</value>
+        <value>&lt;p&gt;INC000149278 request from Sept 30/21&lt;/p&gt;&lt;p&gt;ERX revision request to include IM as route - denied (IM not appropriate route)&lt;/p&gt;&lt;p&gt;MAR revision request to inlcude site&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp; Inject to prostate&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp; Admin Instructions: Intraprostate&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lidocaine 10 mg/mL injection; *** mg, once, Intramuscular; Intraprocedure (PENDING APPROVAL)&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lidocaine 10 mg/mL injection; 40 mg, other - see admin instructions, once; Intraprocedure (PENDING APPROVAL)&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -184,10 +192,10 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~8d792b49-5159-4463-ad70-1f209a5f4baa~NAME~Ambulatory_Fusion Prostate Biopsy_Cipro Order Panel_Adult}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Fusion Prostate Biopsy - Cipro Order Panel">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Fusion Prostate Biopsy - Cipro Order Panel">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a4e65d7-5d1f-411e-af8c-e400857e2350" concept_name="SURG GU Fusion Guided Prostate Biopsy Order" max="1" path="/items" name="Fusion Guided Prostate Biopsy; Clinic Performed"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6a77701c-5ee7-4192-a328-4dce64ab54b8" concept_name="PHARM ciprofloxacin Tablet Order" max="1" path="/items" name="ciprofloxacin Tablet; 1000 mg, oral, once, as needed; Preprocedure/Day Surgery"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4e3b67-0478-43a4-bc33-69dc8ac6cb55" concept_name="PHARM lidocaine 10 mg/mL injection Order" max="1" path="/items" name="lidocaine 10 mg/mL injection; *** mg, once, Intramuscular; Intraprocedure (PENDING APPROVAL)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4e3b67-0478-43a4-bc33-69dc8ac6cb55" concept_name="PHARM lidocaine 10 mg/mL injection Order" max="1" path="/items" name="lidocaine 10 mg/mL injection; 40 mg, other - see admin instructions, once; Intraprocedure (PENDING APPROVAL)"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Anticoagulants/Sepsis/Enema, Until discontinued; Preprocedure/Day Surgery"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Pathology Sample; Once, Intraprocedure"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="PC Patient Education (Specify) Order" max="1" path="/items" name="Patient Education (Specify); Return to normal activities as tolerated; Prior to discharge; Intraprocedure"/>
