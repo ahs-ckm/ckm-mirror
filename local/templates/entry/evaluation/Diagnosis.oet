@@ -48,7 +48,17 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-EVALUATION.problem_diagnosis.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~2a16f116-cddd-4f2e-a48c-1b64f449312c~NAME~Diagnosis}</value></item></items></annotations><definition xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" name="Diagnosis"/>
+  <annotations path="[openEHR-EHR-EVALUATION.problem_diagnosis.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~2a16f116-cddd-4f2e-a48c-1b64f449312c~NAME~Diagnosis}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" name="Diagnosis">
+    <Rule path="/data[at0001]/items[at0009]" max="0"/>
+  </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">B64784F74B12BB4752FA590E88D22BD2</digest>
   </integrity_checks>
