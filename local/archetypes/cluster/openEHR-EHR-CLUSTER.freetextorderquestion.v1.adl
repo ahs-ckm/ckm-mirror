@@ -2,7 +2,7 @@
 	openEHR-EHR-CLUSTER.freetextorderquestion.v1
 
 concept
-	[at0000]	-- Freetextorderquestion
+	[at0000]	-- Free text order question
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -26,19 +26,14 @@ This archetype will be used as the basis of each template used to construct a fr
 	lifecycle_state = <"published">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["custodian_organisation"] = <"Alberta Health Services (Canada)">
 		["current_contact"] = <"FoundationalKnowledge@albertahealthservices.ca">
-		["original_namespace"] = <"ca.ahs">
-		["original_publisher"] = <"Alberta Health Services (Canada)">
-		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"FA8E04D99E789267B3CBEE3FEA7C281E">
-		["build_uid"] = <"bac8a08d-2dbd-40a7-8681-598293132b34">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"5DC6E2FC9E91ADD05E7C5B3E06F83D23">
+		["build_uid"] = <"7b3befbf-06a3-4339-a71b-70bc066647b1">
+		["revision"] = <"1.0.1">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Freetextorderquestion
+	CLUSTER[at0000] matches {	-- Free text order question
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..*} matches {	-- Question
 				value matches {
@@ -58,7 +53,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Freetextorderquestion">
+					text = <"Free text order question">
 					description = <"Free text type order question">
 				>
 				["at0001"] = <

@@ -2,7 +2,7 @@
 	openEHR-EHR-CLUSTER.datetimeorderquestion.v1
 
 concept
-	[at0000]	-- Datetimeorderquestion
+	[at0000]	-- Date time order question
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -26,19 +26,14 @@ This archetype will be used as the basis of each template used to construct a da
 	lifecycle_state = <"published">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["custodian_organisation"] = <"Alberta Health Services (Canada)">
 		["current_contact"] = <"FoundationalKnowledge@albertahealthservices.ca">
-		["original_namespace"] = <"ca.ahs">
-		["original_publisher"] = <"Alberta Health Services (Canada)">
-		["custodian_namespace"] = <"ca.ahs">
-		["MD5-CAM-1.0.1"] = <"1583D638D2150A0D970B075469D4BDED">
-		["build_uid"] = <"9c8156e9-3aec-4226-a3d4-6fe9b1c00d0b">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"37AE50193A7EA542A4F219FF051EE95B">
+		["build_uid"] = <"14f4a99c-7a91-4df3-8aa8-dd0adfdc1745">
+		["revision"] = <"1.0.1">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Datetimeorderquestion
+	CLUSTER[at0000] matches {	-- Date time order question
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..*} matches {	-- Question
 				value matches {
@@ -58,7 +53,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Datetimeorderquestion">
+					text = <"Date time order question">
 					description = <"Date / time type order question">
 				>
 				["at0001"] = <
