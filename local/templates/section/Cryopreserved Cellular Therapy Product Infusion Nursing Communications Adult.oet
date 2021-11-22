@@ -115,12 +115,8 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Aliquot&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Is &apos;equal to or greater than&apos; accurate for the WBC count/Aliqout?&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;If Cellular Therapy Product WBC count equal to or greater than 1x10^9/Kg&amp;nbsp;check with Cellular Therapy Lab&amp;nbsp;to determine if Aliquots are required.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Start Date: T&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;If Cellular Therapy Product WBC count&amp;nbsp;greater than 1x10^9/Kg&amp;nbsp;confirm&amp;nbsp;with Cellular Therapy Lab&amp;nbsp;to determine if Aliquots are required.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -164,11 +160,19 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; TBI&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;TBI must be completed PRIOR to infusion of Cellular Therapy Product&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Corticosteroids&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Avoid use of corticosteroids with Haplodentical CTP (upt to 24 hours preceding infusion) and with Donor Lymphocyte infusion.&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Avoid use of corticosteroids with Haploidentical CTP (up&amp;nbsp;to 24 hours preceding infusion) and with Donor Lymphocyte infusion.&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -179,6 +183,7 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Aliquot"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Emergency Equipment"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17543adf-583d-46d4-8b33-46db069480cf" concept_name="PC At Bedside Order" max="1" path="/items" name="At Bedside; Epinephrine for Anaphylaxis Kit"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; TBI"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Corticosteroids"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
