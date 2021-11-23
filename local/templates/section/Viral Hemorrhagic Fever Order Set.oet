@@ -112,7 +112,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;For 1 occurrence&lt;/p&gt;</value>
+        <value>&lt;p&gt;For 1 occurrence&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -168,7 +168,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Specimen Type:***(blood)(Swab)&lt;/p&gt;&lt;p&gt;Specimen Source: *** (blood, venous)(Nasopharynx)&lt;br&gt;Suspected Pathogen: *** (SARS)(MERS-CoV)(Avian Influenza)(Other: Specify in comments)&lt;br&gt;Relevant Travel History: *** (Yes)(No)(Unknown)&lt;br&gt;What types of symptoms/manifestations are present? ***&lt;br&gt;For 1 occurrence&lt;/p&gt;</value>
+        <value>&lt;p&gt;Specimen Type:***(blood)(Swab)&lt;/p&gt;&lt;p&gt;Specimen Source: *** (blood, venous)(Nasopharynx)&lt;br&gt;Suspected Pathogen: *** (SARS)(MERS-CoV)(Avian Influenza)(Other: Specify in comments)&lt;br&gt;Relevant Travel History: *** (Yes)(No)(Unknown)&lt;br&gt;What types of symptoms/manifestations are present? ***&lt;br&gt;For 1 occurrence&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -189,11 +189,13 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00d7c41d-3caa-4390-a598-841cd0a34e49" concept_name="LAB Ebola Virus--Blood_ Venous Order" max="1" path="/items" name="Ebola Virus--Blood, Venous"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="40520f8a-ad1e-450c-8b0e-913f69432247" concept_name="LAB Ebola Virus NAT Order" max="1" path="/items" name="Ebola Virus NAT; Referred test, Blood, Venous"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8423bca-9de2-4861-89b1-c245ba4e9077" concept_name="LAB Ebola Virus Serology _Referred Test_ Order" max="1" path="/items" name="Ebola Virus Serology (Referred Test)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b2be4e70-a081-4ee8-b55e-5e933e83e6ce" concept_name="LAB Miscellaneous Test Order" max="1" path="/items" name="Miscellaneous Test"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Hemorrhagic Fever Virus">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83a8a402-8e50-4358-a7a0-66d9ce3c8599" concept_name="LAB Emerging Pathogen NAT Order" max="1" path="/items" name="Emerging Pathogen NAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="57395a36-1fa7-4a46-9a0d-fa1979ee3a68" concept_name="LAB Emerging Pathologen Serology Order" max="1" path="/items" name="Emerging Pathologen Serology; Referred Test, Blood, Venous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b2be4e70-a081-4ee8-b55e-5e933e83e6ce" concept_name="LAB Miscellaneous Test Order" max="1" path="/items" name="Miscellaneous Test"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient or Discharged patient">
@@ -203,11 +205,13 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00d7c41d-3caa-4390-a598-841cd0a34e49" concept_name="LAB Ebola Virus--Blood_ Venous Order" max="1" path="/items" name="Ebola Virus--Blood, Venous"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="40520f8a-ad1e-450c-8b0e-913f69432247" concept_name="LAB Ebola Virus NAT Order" max="1" path="/items" name="Ebola Virus NAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8423bca-9de2-4861-89b1-c245ba4e9077" concept_name="LAB Ebola Virus Serology _Referred Test_ Order" max="1" path="/items" name="Ebola Virus Serology (Referred Test)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b2be4e70-a081-4ee8-b55e-5e933e83e6ce" concept_name="LAB Miscellaneous Test Order" max="1" path="/items" name="Miscellaneous Test"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Hemorrhagic Fever Virus">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83a8a402-8e50-4358-a7a0-66d9ce3c8599" concept_name="LAB Emerging Pathogen NAT Order" max="1" path="/items" name="Emerging Pathogen NAT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e91967f0-cac4-4084-9f97-3c34792ec76b" concept_name="LAB Emerging Pathogen Serology _Referred Test_ Order" max="1" path="/items" name="Emerging Pathogen Serology (Referred Test); Blood, Venous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b2be4e70-a081-4ee8-b55e-5e933e83e6ce" concept_name="LAB Miscellaneous Test Order" max="1" path="/items" name="Miscellaneous Test"/>
       </Item>
     </Item>
   </definition>
