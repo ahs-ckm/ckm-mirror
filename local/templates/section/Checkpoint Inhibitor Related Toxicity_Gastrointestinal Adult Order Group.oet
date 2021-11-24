@@ -76,19 +76,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Gastroenterology&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Content Details:&amp;nbsp;Comments: Date symptom started ***&lt;br&gt;Mucous membrane involvement: Yes/No&lt;br&gt;Current therapy (Which treatment has patient been started on for their gastrointestinal symptoms (if any)?) ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Gastroenterology&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Priority: Routine/STAT&lt;br&gt;Reason for Consult:&amp;nbsp;&lt;br&gt;Did you contact the consultant? Yes/No&lt;br&gt;Level of Consultation:&amp;nbsp;&lt;br&gt;Comments: Date symptom started ***&lt;/p&gt;&lt;p&gt;Current therapy (Which treatment has patient been started on for their gastrointestinal&amp;nbsp;symptoms (if any)?) ***&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -150,6 +150,7 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Gastrointestinal">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b77200df-979f-4137-bdb7-709f7c5c0197" concept_name="REF Ambulatory Referral to Gastroenterology Order" max="1" path="/items" name="Ambulatory Referral to Gastroenterology"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="19fde4d5-07fa-4e65-a810-4049babed3e5" concept_name="CONS Inpatient Consult to Gastroenterology Order" max="1" path="/items" name="Inpatient Consult to Gastroenterology"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
