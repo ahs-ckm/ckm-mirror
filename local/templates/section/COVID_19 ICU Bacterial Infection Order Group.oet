@@ -108,6 +108,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vancomycin Level, Pre-Dose; Per Medication Dosing (Pending Review)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Author request Nov 29/21&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vancomycin Level, Pre-Dose; Per Medication Dosing (Pending Review)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ADD if patient not documented as MRSA negative&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;vancomycin IV&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -156,7 +172,7 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Management of Possible Secondary Bacterial Infection/Ventilator Associated Pneumonia in Adult COVID-19 patients">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Critical Care Management of Possible Secondary Bacterial Infection/Ventilator Associated Pneumonia in Adult COVID-19 patients">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Empiric therapy pending sputum/bronch culture results">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cbe5b12d-2960-43f4-9c40-f6ae2cc4aee6" concept_name="PHARM meropenem injection Order" max="1" path="/items" name="meropenem injection; 500 mg, intravenous, every 6 hours, for 3 days"/>
@@ -170,6 +186,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 25 mg/kg/dose, (max 3000 mg) Intravenous, Once. Discontinue vancomycin or linezolid if MRSA carriage swab and bacterial respiratory cultures are negative for MRSA, STAT"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="FOLLOWED BY"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, Intravenous, Every 12 hours for 3 days. Starting 12 hours after initial 25 mg/kg/dose dose. Target trough. Reassess in 48 to 72 hours."/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level, Pre-Dose Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose; Per Medication Dosing (Pending Review)"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
@@ -198,5 +215,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
 </template>
