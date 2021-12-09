@@ -90,7 +90,11 @@
         <key>Technical.EPIC ID</key>
         <value>RT107</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~c47fedcb-087d-4d60-a713-9d0df456b750~NAME~RESP ADULT Spontaneous Breathing Trial IP Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~c47fedcb-087d-4d60-a713-9d0df456b750~NAME~RESP ADULT Spontaneous Breathing Trial IP Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency&apos;]">
     <items>
@@ -108,8 +112,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At
-Until Specified&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At Until Specified&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -117,11 +120,19 @@ Until Specified&apos;]">
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;SBT/ERT in hold&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>Free text</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Free text&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -155,8 +166,7 @@ Until Specified&apos;]">
           </constraint>
         </Rule>
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At
-Until Specified">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At Until Specified">
         <Rule path="/items[at0002]">
           <constraint xsi:type="textConstraint">
             <includedValues>Time selection</includedValues>
@@ -183,7 +193,15 @@ Until Specified">
         </constraint>
       </Rule>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="SBT/ERT in hold">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Yes</includedValues>
+          <includedValues>No</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
