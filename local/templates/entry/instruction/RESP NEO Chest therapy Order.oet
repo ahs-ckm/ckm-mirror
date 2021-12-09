@@ -82,7 +82,27 @@
         <key>Technical.EPIC ID</key>
         <value>RT7</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~fac8fef7-7dde-471c-ae6c-61ce7e2bf73b~NAME~RESP NEO Chest therapy Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~fac8fef7-7dde-471c-ae6c-61ce7e2bf73b~NAME~RESP NEO Chest therapy Order}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Class AMB&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;IP&lt;/p&gt;</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency&apos;]">
     <items>
@@ -100,8 +120,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At
-Until Specified&apos;]">
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At Until Specified&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
@@ -114,6 +133,14 @@ Until Specified&apos;]">
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>Cascading question available when &quot;q4h&quot;, &quot;q6h&quot;, or &quot;q8h&quot; is selected under Frequency; Time entry</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Priority&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;IP&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -136,6 +163,10 @@ Until Specified&apos;]">
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Sched Inst: AMB&apos;]">
     <items>
       <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Free text&lt;/p&gt;</value>
       </item>
@@ -151,6 +182,10 @@ Until Specified&apos;]">
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;CC Results AMB&apos;]">
     <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Add PCP search field&lt;/p&gt;</value>
@@ -196,8 +231,7 @@ Until Specified&apos;]">
           </constraint>
         </Rule>
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At
-Until Specified">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At Until Specified">
         <Rule path="/items[at0002]">
           <constraint xsi:type="textConstraint">
             <includedValues>Time selection</includedValues>
