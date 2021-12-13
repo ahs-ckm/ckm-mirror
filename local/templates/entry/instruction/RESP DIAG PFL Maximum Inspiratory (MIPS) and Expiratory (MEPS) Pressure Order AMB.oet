@@ -152,6 +152,42 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;A response to this question triggers a cascading question;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;IP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;For:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Numeric entry&lt;/p&gt;&lt;p&gt;Cascading question available when &quot;As needed&quot; selected under Frequency;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Frequency&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;At:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when &quot;As needed&quot; selected under Frequency;&lt;br&gt;Able to select time&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Priority&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;IP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where should this procedure be performed?&apos;]">
     <items>
       <item>
@@ -225,6 +261,15 @@
     </items>
   </annotations>
   <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="PFL Maximum Inspiratory (MIPS) and Expiratory (MEPS) Pressure">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Class">
+      <Rule path="/items[at0002]" default="Clinic Performed">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Ancillary Performed</includedValues>
+          <includedValues>Clinic Performed (default)</includedValues>
+          <includedValues>Hospital Performed</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Status">
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Status">
         <Rule path="/items[at0002]" default="Future">
@@ -279,12 +324,50 @@
       </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Expires"/>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Class">
-      <Rule path="/items[at0002]" default="Clinic Performed">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Frequency">
+        <Rule path="/items[at0002]" default="Once">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Once</includedValues>
+            <includedValues>As needed</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="For:">
+        <Rule path="/items[at0002]" default="Occurences">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Occurrences (default)</includedValues>
+            <includedValues>Hours</includedValues>
+            <includedValues>Days</includedValues>
+            <includedValues>Weeks</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting">
+        <Rule path="/items[at0002]" default="Today">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Calendar pick (Default to actual date)</includedValues>
+            <includedValues>Today (default)</includedValues>
+            <includedValues>Tomorrow</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="At:">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Time selection</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority">
+      <Rule path="/items[at0002]" default="Routine">
         <constraint xsi:type="textConstraint">
-          <includedValues>Ancillary Performed</includedValues>
-          <includedValues>Clinic Performed (default)</includedValues>
-          <includedValues>Hospital Performed</includedValues>
+          <includedValues>Add-on</includedValues>
+          <includedValues>Routine (default)</includedValues>
+          <includedValues>STAT</includedValues>
+          <includedValues>Timed</includedValues>
+          <includedValues>Today</includedValues>
         </constraint>
       </Rule>
     </Items>
@@ -308,10 +391,10 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
 </template>
