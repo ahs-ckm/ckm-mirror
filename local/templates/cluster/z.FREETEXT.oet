@@ -67,38 +67,6 @@
         <value>Free Text</value>
       </item>
       <item>
-        <key>Order Specific Questions.Additional Info</key>
-        <value>&lt;p&gt;Additional Info&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Number of Digit</key>
-        <value>&lt;p&gt;2&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Restrict by Rule</key>
-        <value>&lt;p&gt;100365&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Age From</key>
-        <value>&lt;p&gt;21&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Age Units</key>
-        <value>&lt;p&gt;Years&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Age Through</key>
-        <value>&lt;p&gt;22&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Age Through units</key>
-        <value>&lt;p&gt;Years&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Answer Button Values</key>
-        <value>&lt;p&gt;Answer Button Values&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>Order Specific Questions.Cascading - Comparison Operator</key>
         <value>&lt;p&gt;Equals&lt;/p&gt;</value>
       </item>
@@ -139,6 +107,10 @@
         <value>Yes</value>
       </item>
       <item>
+        <key>Order Specific Questions.Additional Info</key>
+        <value>&lt;p&gt;Additional Info&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Order Specific Questions.Released Flag</key>
         <value>Yes</value>
       </item>
@@ -158,6 +130,34 @@
         <key>Order Specific Questions.Show Answer Fields</key>
         <value>Yes</value>
       </item>
+      <item>
+        <key>Order Specific Questions.Number of Digit</key>
+        <value>&lt;p&gt;2&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Restrict by Rule</key>
+        <value>&lt;p&gt;100365&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Age From</key>
+        <value>&lt;p&gt;21&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Age Units</key>
+        <value>&lt;p&gt;Years&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Age Through</key>
+        <value>&lt;p&gt;22&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Age Through units</key>
+        <value>&lt;p&gt;Years&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>&lt;p&gt;Answer Button Values&lt;/p&gt;</value>
+      </item>
     </items>
   </annotations>
   <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Free Text">
@@ -165,6 +165,8 @@
       <constraint xsi:type="textConstraint">
         <includedValues>Response</includedValues>
         <includedValues>List</includedValues>
+        <includedValues>#3</includedValues>
+        <includedValues>#4</includedValues>
       </constraint>
     </Rule>
   </definition>
