@@ -78,7 +78,11 @@
         <key>Technical.EPIC ID</key>
         <value>RT90</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~27b4c0dc-6b75-47cb-9511-d09c9aeaf279~NAME~RESP ADULT Tracheostomy Care Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~27b4c0dc-6b75-47cb-9511-d09c9aeaf279~NAME~RESP ADULT Tracheostomy Care Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Class AMB&apos;]">
     <items>
@@ -206,8 +210,7 @@
           </constraint>
         </Rule>
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting;
-Until Specified">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Starting; Until Specified">
         <Rule path="/items[at0002]">
           <constraint xsi:type="textConstraint">
             <includedValues>Calendar pick (Default to actual date) Today (default) Tomorrow</includedValues>
