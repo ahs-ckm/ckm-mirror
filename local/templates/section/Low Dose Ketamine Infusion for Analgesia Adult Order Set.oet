@@ -94,6 +94,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Protocol for duration of infusion and 12 hours post discontinuation of Low-Dose Ketamine Infusion for Analgesia&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Add a timepoint of once &apos;pre&apos; infusion to obtain baseline per HCS-289-01? or would an routine vs documented suffice as the &apos;baseline&apos;?&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Frequency: Per protocol&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;Monitor as follows:&amp;nbsp;&lt;br&gt;Every 15 minutes for one hour, every 2 hours for 4 hours, then every 4 hours for duration of infusion and 12 hours post discontinuation of infusion. Repeat monitoring sequence with any rate increase of the low-dose ketamine infusion for analgesia.&lt;/p&gt;</value>
       </item>
@@ -109,6 +113,10 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Protocol for duration of infusion and 8 hours post discontinuation of Low-Dose Ketamine Infusion for Analgesia&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Does this order remain relevant? Does not appear as frequency within provinical procedure document HCS-289-01&amp;nbsp;MANAGEMENT OF LOW-DOSE KETAMINE CONTINUOUS INTRAVENOUS INFUSIONS FOR ANALGESIA - ADULT Procedure HCS-289-01 (ahsnet.ca)&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Frequency: Per protocol&amp;nbsp;&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;Monitor as follows:&amp;nbsp;&lt;br&gt;Every 15 minutes for one hour, every 2 hours for 4 hours, then every 4 hours for duration of infusion and 8 hours post discontinuation of infusion. Repeat monitoring sequence with any rate increase of the low-dose ketamine infusion for analgesia.&lt;/p&gt;</value>
@@ -267,7 +275,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Dose: 10-30 mL/hr&lt;/p&gt;&lt;p&gt;Route: intravenous&lt;/p&gt;&lt;p&gt;Frequency: continuous&amp;nbsp;&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Maintain Intravenous Access for duration of therapy and for 8 to 12 hours post discontinuation of Low-Dose Ketamine Infusion for Analgesia.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Dose: 10-30 mL/hr&lt;/p&gt;&lt;p&gt;Route: intravenous&lt;/p&gt;&lt;p&gt;Frequency: continuous&amp;nbsp;&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Maintenance infusion line to infuse concurrently with Low Dose Ketamine infusion&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -275,12 +283,16 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Dose: 10-30 mL/hr&lt;/p&gt;&lt;p&gt;Route: intravenous&lt;/p&gt;&lt;p&gt;Frequency: continuous&amp;nbsp;&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Maintain Intravenous Access for duration of therapy and for 8 to 12 hours post discontinuation of Low-Dose Ketamine Infusion for Analgesia.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Dose: 10-30 mL/hr&lt;/p&gt;&lt;p&gt;Route: intravenous&lt;/p&gt;&lt;p&gt;Frequency: continuous&amp;nbsp;&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Maintenance infusion line to infuse concurrently with Low Dose Ketamine infusion&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;per HCS-289-01 require update to weight guidance?&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight is required for the calculation of dosing. Use the actual body weight up to a maximum weight of 100 kilograms (kg). b) For weights greater than 100 kg, use 100 kg to calculate the dose (i.e., if the patient weighs 175 kg, use 100 kg to calculate the infusion rate)&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Recommended Dose is 0.1 to 0.3 to mg/kg/hour. Select patient populations may require a higher dose. It is reasonable to use actual body weight up to a weight to 100 kg.&lt;br&gt;Maximum 0.4 mg/kg/hr&lt;/p&gt;</value>
