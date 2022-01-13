@@ -532,11 +532,35 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Specify; Recovery &amp; On Unit&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Additional Instructions; Recovery &amp; On Unit&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge activity; No Weight Bearing; Post Discharge&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;No lifting &amp;gt;= *** lbs for *** weeks&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Notify&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Patient should call a provider for help if they experience:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -684,14 +708,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Patient should call a provider for help if they experience:&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Post-Discharge Dressing Care; Wound care steri-strips&apos;]/activities[at0001]">
     <items>
       <item>
@@ -713,14 +729,6 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Explanatory Comment: ***&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge activity; No lifting over; Post Discharge&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;No lifting &amp;gt;= *** lbs for *** weeks&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -817,13 +825,37 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Patient to void prior to discharge, check urine for blood clots; Recovery &amp; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="PC Remove Peripheral IV Order" max="1" path="/items" name="Remove Peripheral IV; Discontinue IV or maintain vascular access as applicable; Recovery &amp; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discharge Instructions; Recovery &amp; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discharge patient after specified time; Recovery &amp; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discharge patient once bedrest is complete; Recovery &amp; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Patient to void prior to discharge, check urine for blood clots; Recovery &amp; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Hemoglobin Level"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Specify; Recovery &amp; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Additional Instructions; Recovery &amp; On Unit"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Follow up">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; Primary Care Provider (PCP); Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; Radiologist; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f7be27-a61f-4a2f-baea-8745f5a81830" concept_name="PC Discharge Follow-Up Order" max="1" path="/items" name="Discharge Follow-Up; Other; Post Discharge"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Activity">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No strenuous activity; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No Weight Bearing; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Activity as Tolerated; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May return to work/school; Post Discharge #1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Avoid straddle activities; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Special activity instructions; Post Discharge"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Hygiene">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May Shower; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May tub bathe; Post Discharge"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Notify">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Heavy Bleeding; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Persistent nausea or vomiting; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Redness, Tenderness, Pain, Swelling, Odor; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Temperature greater than 38 degrees celsius; Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Referrals">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Home Care Orders">
@@ -847,19 +879,6 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c60abc3-c04e-495d-bd33-991a4da0c878" concept_name="PC Patient Care Orders Order" max="1" path="/items" name="Patient Care Orders;  Home Care Orders"/>
         </Item>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); If difficulty breathing, headache, or visual disturbances; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if extreme fatigue; Post discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if heavy bleeding (filling a pad an hour); Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if Hives; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if Persistent dizziness or light headedness; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if Persistent nausea or vomitting; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if Redness, tenderness, pain, swelling, odor or green/yellow discharge around incision site; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if severe uncontrolled pain; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if Temperature greater than 38 degree Celsius; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if Persistent diarrhea; Post Discharge"/>
-      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e74ade78-fa66-4a87-b6f1-5587ddb557c1" concept_name="PC Post-Discharge Dressing Care Order" max="1" path="/items" name="Post-Discharge Dressing Care; No Dressing Needed"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e74ade78-fa66-4a87-b6f1-5587ddb557c1" concept_name="PC Post-Discharge Dressing Care Order" max="1" path="/items" name="Post-Discharge Dressing Care; Do not remove dressing before follow-up visit"/>
@@ -872,21 +891,8 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e74ade78-fa66-4a87-b6f1-5587ddb557c1" concept_name="PC Post-Discharge Dressing Care Order" max="1" path="/items" name="Post-Discharge Dressing Care; Wound care stitches/staples/sutures"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e74ade78-fa66-4a87-b6f1-5587ddb557c1" concept_name="PC Post-Discharge Dressing Care Order" max="1" path="/items" name="Post-Discharge Dressing Care; (Specify)"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No strenuous activity; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No lifting over; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No driving; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No smoking; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May return to work/school; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Resume sexual activity; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Activity restrictions (specify); Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Special activity instructions; Post Discharge"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hygiene">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May Shower; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May tub bathe; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Sponge bath only until follow-up visit; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; Special hygiene instructions (specify); Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5fd8ccaf-fe6a-4005-9afa-3f409a68f20b" concept_name="PC Discharge diet Order" max="1" path="/items" name="Discharge diet; Post Discharge"/>
       </Item>
     </Item>
   </definition>
