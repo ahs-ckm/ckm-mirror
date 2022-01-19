@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>CKT.Synonym(s)</key>
+        <value>&lt;p&gt;Synonyms:&amp;nbsp;Immunotherapy Related Toxicity, immune related adverse event (irAE), Immune Checkpoint Inhibitor (CPI), monoclonal antibodies (mAb), atezolizumab (Tecentriq), ipilimumab (Yervoy), pembrolizumab (Keytruda), nivolumab (Opdivo), Avelumab (Bavencio), Durvalumab (Imfinzi), Cemiplimab (Libtayo), melanoma, non-small cell lung carcinoma, renal cell carcinoma, bladder cancer, head and neck squamous cell, gastric, hepatocellular, ovarian, breast, colorectal, Hodgkin lymphoma&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~efa92b23-b2f3-4aa5-811a-c3fe73ee650d~NAME~Oncology Checkpoint Inhibitor Related Toxicities Adult Order Set}</value>
       </item>
@@ -70,10 +74,6 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
-      <item>
-        <key>CKT.Synonym(s)</key>
-        <value>&lt;p&gt;Synonyms:&amp;nbsp;Immunotherapy Related Toxicity, immune related adverse event (irAE), Immune Checkpoint Inhibitor (CPI), monoclonal antibodies (mAb), atezolizumab (Tecentriq), ipilimumab (Yervoy), pembrolizumab (Keytruda), nivolumab (Opdivo), Avelumab (Bavencio), Durvalumab (Imfinzi), Cemiplimab (Libtayo), melanoma, non-small cell lung carcinoma, renal cell carcinoma, bladder cancer, head and neck squamous cell, gastric, hepatocellular, ovarian, breast, colorectal, Hodgkin lymphoma&lt;/p&gt;</value>
-      </item>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;&lt;em&gt;For more information, refer to the following provincial resources:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Provincial Clinical Practice Guideline&lt;/em&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Supp-018 Follow-Up and Management of Checkpoint Inhibitor Related Toxicities in Cancer Patients (URL:&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Follow_up_Management_Checkpoint_Inhibitor_Related_Toxicities)&lt;/li&gt;&lt;li&gt;&lt;em&gt;SUPP-019: Acute Infusion-Related Adverse Events to Chemotherapy and Monoclonal Antibodies (URL:&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Acute_Infusion_Related_Adverse _Events_Chemotherapy_Monoclonal_Antibodies)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;​​​​&lt;em&gt;Alberta Health Services Policy&lt;/em&gt;&lt;ul&gt;&lt;li&gt;Anaphylaxis Management: Administration of Intramuscular Epinephrine (HCS-223) &lt;em&gt;(URL:&lt;/em&gt;&amp;nbsp;https://ahsweb.ca/HEE/ANAPHYLAXIS_MANAGEMENT_ADMINISTRATION_IM_EPINEPHRINE)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Cancer Care Alberta&lt;/em&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Acute Infusion-Related Adverse Events - Nursing Management&lt;/em&gt;&lt;/li&gt;&lt;li&gt;(&lt;em&gt;URL&lt;/em&gt;:https://ahsweb.ca/HEE/Acute_Infusion_Related_Adverse_Events_Nursing_Management&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</value>
@@ -85,6 +85,14 @@
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Consider opening and merging any appropriate diagnosis based order sets&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Admit to Inpatient&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Service: [hard stop]&lt;/p&gt;&lt;p&gt;Level of Care [hard stop]&lt;/p&gt;&lt;p&gt;Most Responsible Physician: [hard stop]&lt;/p&gt;&lt;p&gt;Which Provider Team is responsible for this patient? [hard stop]&lt;/p&gt;&lt;p&gt;Diagnosis: [hard stop]&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -125,14 +133,6 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;If blood glucose is greater than 18.0 mmol/L initiate&lt;br&gt;Hyperglycemia Procedure and call prescriber.&lt;/p&gt;&lt;p&gt;Refer to AHS Glycemic Management Policy&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;single order vs standardized order panel&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -372,46 +372,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;&lt;u&gt;General Management&lt;/u&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Grade 1: &amp;nbsp; &amp;nbsp; &amp;nbsp; Mild Symptoms - Supportive measures&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Grade 2: &amp;nbsp; &amp;nbsp; &amp;nbsp; Moderate Symptoms - Supportive measures, may add steroids&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Grade 3-4: &amp;nbsp; &amp;nbsp;Severe Symptoms - Add steroids (or increase dose)&lt;/em&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiulcer Agents and Acid Suppressants&apos;]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Should these be mutli-select or single select?&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiulcer Agents and Acid Suppressants&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Consider the following where prolonged corticosteroid treatments used&lt;/em&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anti-Infective Agents&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Consider the following where prolonged corticosteroid treatments used&lt;/em&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vitamins &amp; Minerals&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Consider the following where prolonged corticosteroid treatments used&lt;/em&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]">
     <items>
       <item>
@@ -420,12 +380,12 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Oncology Checkpoint Inhibitor Related Toxicities Adult Order Set">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Oncology Checkpoint Inhibitor Related Toxicities Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient; Admit to ___; Under ___; Admitting Diagnosis ___"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notify Primary Care physician and other clinicians in the active circle of care regarding patient admission"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfer"/>
@@ -471,7 +431,6 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="1d40d04b-da63-4fac-9310-68e5f724f668" concept_name="PFT Before Day of Procedure Adult Order Group" max="1" path="/items" name="Pulmonary Function Test Panel"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy; Titrate oxygent to maintain target saturation range: Min 90%"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fd5df4f4-8e32-4ed4-8eb4-012976601180" concept_name="Respiratory Interventions Oxygen Therapy Order Panel_No Guidance" max="1" path="/items" name="Respiratory Interventions Oxygen Therapy Order Panel_No Guidance"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
@@ -733,32 +692,8 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hemodialysis"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Decision Support"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Prophylactic/Supportive Medication">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="01fef066-3c28-4cc8-aa05-70f85e171a4e" concept_name="PHARM pantoprazole sodium, delayed-release Tablet Order" max="1" path="/items" name="pantoprazole sodium, delayed-release Tablet; 40 mg, oral, daily"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine Tablet Order" max="1" path="/items" name="raNITIdine Tablet; 150 mg, oral, daily"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="41526016-5abb-4f77-9096-6769fbdd879d" concept_name="PHARM sulfamethoxazole-trimethoprim Tablet 400 mg-80 mg (Septra) Order" max="1" path="/items" name="sulfamethoxazole-trimethoprim Tablet 400 mg-80 mg (Septra); 1 tablet, oral, daily"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="If patient has allergy to sulfa or sulfamethoxazole/trimethoprim order one or both:">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c6ae050-c7c0-4d9a-b7a6-be11fbb29c72" concept_name="PHARM dapsone Tablet Order" max="1" path="/items" name="dapsone Tablet; 50 mg, oral, daily"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="91c978b5-a8ff-41d7-ae39-100511d52684" concept_name="PHARM penicillin V potassium Tablet Order" max="1" path="/items" name="penicillin V potassium Tablet; 300 mg, oral, 2 times per day"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vitamins &amp; Minerals">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="412feb43-8c95-4b90-994f-f0a6a7551140" concept_name="PHARM calcium carbonate (as elemental) Tablet Order" max="1" path="/items" name="calcium carbonate (as elemental) Tablet"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ac4fe7fb-35cd-41fe-9251-e12dfe9d6662" concept_name="PHARM vitamin D3 (cholecalciferol) Tablet Order" max="1" path="/items" name="vitamin D3 (cholecalciferol) Tablet; 1000 units, oral, daily"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Skeletal Muscle Relaxants"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Neuromuscular Blocking Agents"/>
