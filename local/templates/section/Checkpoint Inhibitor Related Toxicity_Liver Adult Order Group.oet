@@ -79,16 +79,12 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Gastroenterology&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Content Details:&amp;nbsp;Comments: Date symptom started ***&lt;br&gt;Mucous membrane involvement: Yes/No&lt;br&gt;Current therapy (Which treatment has patient been started on for their gastrointestinal symptoms (if any)?) ***&lt;/p&gt;</value>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;no amb referral to hepatology, so left gastro referral&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
       </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Gastroenterology&apos;]/activities[at0001]">
-    <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Priority: Routine/STAT&lt;br&gt;Reason for Consult:&amp;nbsp;&lt;br&gt;Did you contact the consultant? Yes/No&lt;br&gt;Level of Consultation:&amp;nbsp;&lt;br&gt;Comments: Date symptom started ***&lt;/p&gt;&lt;p&gt;Current therapy (Which treatment has patient been started on for their gastrointestinal&amp;nbsp;symptoms (if any)?) ***&lt;/p&gt;</value>
+        <value>&lt;p&gt;Content Details:&amp;nbsp;Comments: Date symptom started ***&lt;br&gt;Mucous membrane involvement: Yes/No&lt;br&gt;Current therapy (Which treatment has patient been started on for their gastrointestinal symptoms (if any)?) ***&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -144,30 +140,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hepatitis C Antibody Confirmation&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;reference content &apos;hepatitis C antibody qualitative&apos; is this the AHS equivalent? or what about Hep C virus serology? which to keep?&amp;nbsp;&lt;/p&gt;&lt;p&gt;awaiting clarification from lab&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hepatitis C Antibody Confirmation&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hepatitis C Virus Serology&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;reference content &apos;hepatitis C antibody qualitative&apos; is this the AHS equivalent? or what about Hep C virus serology? which to keep?&amp;nbsp;&lt;/p&gt;&lt;p&gt;awaiting clarification from lab&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hepatitis C Virus (HCV) NAT&apos;]/activities[at0156]">
     <items>
       <item>
@@ -200,27 +172,18 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Anti-Nuclear Antibody (ANA) Panel&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Reference document also include ANA Hep-2 substrate. what AHS equivalent?&amp;nbsp;&lt;/p&gt;&lt;p&gt;awaiting confirmation from lab that ANA panel includes the Hep-2 substrate&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Liver">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b77200df-979f-4137-bdb7-709f7c5c0197" concept_name="REF Ambulatory Referral to Gastroenterology Order" max="1" path="/items" name="Ambulatory Referral to Gastroenterology"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="19fde4d5-07fa-4e65-a810-4049babed3e5" concept_name="CONS Inpatient Consult to Gastroenterology Order" max="1" path="/items" name="Inpatient Consult to Gastroenterology"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2eb8087b-cd55-4af9-a17b-34a75174399c" concept_name="CONS Inpatient Consult to Hepatology Order" max="1" path="/items" name="Inpatient Consult to Hepatology"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="418aa4ab-4dec-4c37-8e02-5094278ae3be" concept_name="Checkpoint Inhibitor Related Toxicity_Comprehensive Metabolic Labs Adult Order Group" max="1" path="/items" name="Comprehensive Metabolic Labs"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated Order" max="1" path="/items" name="Bilirubin, Total and Conjugated"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df5465bb-2aad-42ef-9604-03dd0a51428f" concept_name="LAB Hepatitis B Surface Antibody Order" max="1" path="/items" name="Hepatitis B Surface Antibody"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e7bc390-51ef-4ada-9aab-cb8cf83087b1" concept_name="LAB Hepatitis B Virus Surface Antigen Order" max="1" path="/items" name="Hepatitis B Virus Surface Antigen"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7cd2e113-1eb2-4877-8a41-00a555cec5fe" concept_name="LAB Hepatitis B Core Antibody Total Order" max="1" path="/items" name="Hepatitis B Core Antibody, Total"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b51db55a-7380-46d2-8fd8-6f83e75f2b6c" concept_name="LAB Hepatitis C Antibody Confirmation Order" max="1" path="/items" name="Hepatitis C Antibody Confirmation"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46d8f219-0569-4748-b8c8-4b82359f2fea" concept_name="LAB Hepatitis C Virus Serology Order" max="1" path="/items" name="Hepatitis C Virus Serology"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2141bc37-6842-4209-93d1-cf6b0e4d3a84" concept_name="LAB Hepatitis C Virus (HCV) NAT Order" max="1" path="/items" name="Hepatitis C Virus (HCV) NAT"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bc7d2d5f-8845-46b7-a361-e8f0f107dbce" concept_name="LAB Hepatitis A Virus Immunity Serology - IgG Order" max="1" path="/items" name="Hepatitis A Virus Immunity Serology - IgG"/>
@@ -233,7 +196,7 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c22c4f4-39c0-4cda-acd3-507b92dba0c3" concept_name="LAB Anti-LKM Order" max="1" path="/items" name="Anti-LKM"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5263dac5-00ba-4562-94f8-12119eee3a75" concept_name="LAB Ceruloplasmin Order" max="1" path="/items" name="Ceruloplasmin"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="27609cec-5349-499e-b620-1310e3b0c63b" concept_name="LAB Alpha-1 Antitrypsin Order" max="1" path="/items" name="Alpha-1 Antitrypsin"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83d8a895-dbaf-471d-9def-18a6d51654a2" concept_name="LAB THIOPURINE METHYLTRANSFERASE (TPMT) PHENOTYPING" max="1" path="/items" name="THIOPURINE METHYLTRANSFERASE (TPMT) PHENOTYPING"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8f222240-320a-46b7-b4d5-9119ccc39f55" concept_name="LAB Anti-Mitochondrial Order" max="1" path="/items" name="Anti-Mitochondrial"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
