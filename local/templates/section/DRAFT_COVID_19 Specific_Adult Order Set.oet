@@ -308,14 +308,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunomodulators&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;tocilizumab OR baricitinib&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consider if admission less than 7 days, significant respiratory failure requiring ventilation (invasive or non-invasive) less than 24 hours previous – tocilizumab&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Default dose to 400 mg&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_COVID-19 Specific - Adult Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Decision Support and Reference Links">
@@ -346,7 +338,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Physiologic Goals"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c36af771-c693-4000-b1ff-01e1e324d08f" concept_name="POCT Glucose COVID_19 Adult Order Group" max="1" min="1" path="/items" name="DRAFT_POCT Glucose"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c36af771-c693-4000-b1ff-01e1e324d08f" concept_name="DRAFT_POCT Glucose COVID_19 Adult Order Group" max="1" min="1" path="/items" name="DRAFT_POCT Glucose"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
@@ -477,7 +469,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b9aa0228-820a-45f5-939e-ed8daf834c51" concept_name="dexAMETHasone PO_IV for treatment of COVID-19 Order Group" max="1" path="/items" name="dexAMETHasone PO/IV for treatment of COVID-19"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunomodulators">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="81e0036f-d953-49c6-99a6-172721f1c4bb" concept_name="COVID_19 tocilizumab or baricitinib Adult Order Group" max="1" path="/items" name="tocilizumab OR baricitinib"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="def4ada4-2719-4897-bb7f-2bf88aaa62b1" concept_name="COVID_19 tocilizumab or Sarilumab or baricitinib Adult Order Group" max="1" path="/items" name="tocilizumab OR Sarilumab OR baricitinib"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7ec40822-f113-4565-bb88-bb1dee9a5f71" concept_name="COVID Casirivimab_Imdevimab Order Group" max="1" path="/items" name="Consider if patient unvaccinated, seronegative, no prior COVID-19 infection OR if patient immunocompromised – casirivimab/imdevimab. Not for use in confirmed or suspected Omicron variant cases due to documented loss of neutralizing activity."/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Platelet Inhibitors"/>
