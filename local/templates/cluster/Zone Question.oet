@@ -1,0 +1,829 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>52e546f9-ee75-4100-bb26-bc77201b14c9</id>
+  <name>Zone Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;Calgary Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Endoscopy Site:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;Calgary Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question available when: BAN MSH, CAN CGH, HRI HRGH is selected in response to &quot;Select Endoscopy Site&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question available whenCGY ACH is selected in response to &quot;Select Endoscopy Site&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #2&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question available when CGY FMC&amp;nbsp;is selected in response to &quot;Select Endoscopy Site&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #3&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question available when CGY PLC; CGY SHC&amp;nbsp;is selected in response to &quot;Select Endoscopy Site&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #4&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question available when CGY RGH&amp;nbsp;is selected in response to &quot;Select Endoscopy Site&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Will this procedure be combined with a non-Lumens case?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question is triggered when answer of OR, MOR3, OR1, OR7, OR9, TCCOR, OR3, OR4 is selected in response to &quot;Select Department&quot;;&lt;br&gt;Additional Free text comments available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Patient Classification&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Hard stop;&lt;br&gt;Cascading question is triggered when answer of OR, MOR3, OR1, OR7, OR9, TCCOR, OR3, OR4 is selected in response to &quot;Select Department&quot;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;Central&amp;nbsp;Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Endoscopy Site&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;Central Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘DVHCC’ is selected in response to ‘Select Endoscopy Site’;&lt;br&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘STMH’ is selected in response to ‘Select Endoscopy Site’;&lt;br&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #2&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘LHCC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #3&apos;]/items[at0002]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘RDHC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;&amp;nbsp;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Will this procedure be combined with a non-Lumens case?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Mandatory;&lt;br&gt;Cascading question is triggered when answer of &apos;OR&apos;, &apos;U27 OR&apos; is selected in response to &quot;Select Department&quot;;&lt;br&gt;Allow additional free text comments available&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #1&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Patient Classification&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘OR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;Edmonton Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Endoscopy Site&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;Edmonton Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘EDM UAH WMC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;br&gt;Allow additional free text&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘EDM STO WMC’, ‘STO WVHC’, or ‘FTS FSCH’ is selected in response to ‘Select Endoscopy Site’;&lt;br&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #2&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘EDM RAH ATC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;br&gt;Allow additional free text&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #3&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘EDM GNH’ or, ‘EDM MCH’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;&lt;p&gt;Allow additional free text&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #4&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘STA SCH’ or ‘LED LCH’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Will this procedure be combined with a non-Lumens case?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘OR’, ‘OR1’, ‘OR2’ or ‘GOR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #2&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Patient Classification?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘OR’, ‘OR1’, ‘OR2’ or ‘GOR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;North Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Endoscopy Site&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;If response of &apos;North Zone&apos; to question &apos;Zone&apos; this triggers a list of Hospitals with Endoscopy services and related cascading questions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘BAR BHHC’, ‘EDS EHC’, ‘FMH NLRH’, ‘FVW FVHC’, ‘GRP GPRH’, ‘HIN HHC’, ‘LLB LLHC’ or ‘VIK VHC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘COL CLHC’, ‘DAY DHC’, ’HLN NWHC’, ‘PRH PRCH’, ‘STP SPHC’, ‘VER VHC’, ‘WAI WHC’, ‘WET WHCC’ or ‘WHI WHC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #2&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘QEII’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #3&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘MCL SHCHC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Will this procedure be combined with a Non Lumens Case?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘OR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Patient Classification&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘OR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when &apos;South Zone&apos; is selected in response to &apos;Zone&apos;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘COA CHC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘MED MHRH’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #2&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘PIN PCHC’ or ‘BRO BHC’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Select Department #3&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘LET CRH’ is selected in response to ‘Select Endoscopy Site’;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Will this procedure be combined with a Non Lumens Case?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Contraindications</key>
+        <value>&lt;p&gt;Cascading question available when ‘OR’, ‘AMB3 OR’ or ‘AMB4 OR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;&amp;nbsp;Mandatory;&lt;/p&gt;&lt;p&gt;&amp;nbsp;Allow additional free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Select Endoscopy Site #4&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Patient Classification&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when ‘AMB3 OR’ or ‘AMB4 OR’ is selected in response to ‘Select Department’;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~52e546f9-ee75-4100-bb26-bc77201b14c9~NAME~Zone Question}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" name="Zone">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Zone">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Calgary Zone</includedValues>
+          <includedValues>Central Zone</includedValues>
+          <includedValues>Edmonton Zone</includedValues>
+          <includedValues>North Zone</includedValues>
+          <includedValues>South Zone</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Select Endoscopy Site">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Endoscopy Site:">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>BAN MSH</includedValues>
+            <includedValues>CAN CGH</includedValues>
+            <includedValues>CGY ACH</includedValues>
+            <includedValues>CGY CCSC</includedValues>
+            <includedValues>CGY FMC</includedValues>
+            <includedValues>CGY PLC</includedValues>
+            <includedValues>CGY RGH</includedValues>
+            <includedValues>CGY SHC</includedValues>
+            <includedValues>HRI HRGH</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #1">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+            <includedValues>GI LAB</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #2">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>Bronchoscopy</includedValues>
+            <includedValues>MOR3</includedValues>
+            <includedValues>OR1</includedValues>
+            <includedValues>OR7</includedValues>
+            <includedValues>OR9</includedValues>
+            <includedValues>TCCOR</includedValues>
+            <includedValues>OR Emergent</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #3">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>Bronchoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #4">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR3</includedValues>
+            <includedValues>OR4</includedValues>
+            <includedValues>OR Emergent</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Will this procedure be combined with a non-Lumens case?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Patient Classification">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Day Surgery</includedValues>
+            <includedValues>Emergency</includedValues>
+            <includedValues>Inpatient</includedValues>
+            <includedValues>Outpatient</includedValues>
+            <includedValues>Surgery Admit</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Select Endoscopy Site #1">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Endoscopy Site">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>DVHCC</includedValues>
+            <includedValues>STMH</includedValues>
+            <includedValues>LHCC</includedValues>
+            <includedValues>RDHC</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #1">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #2">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #3">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>U27 OR</includedValues>
+            <includedValues>OR Emergent</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Will this procedure be combined with a non-Lumens case?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Patient Classification">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Day Surgery</includedValues>
+            <includedValues>Emergency</includedValues>
+            <includedValues>Inpatient</includedValues>
+            <includedValues>Outpatient</includedValues>
+            <includedValues>Surgery Admit</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Select Endoscopy Site #2">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Endoscopy Site">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>EDM UAH WMC</includedValues>
+            <includedValues>EDM STO WMC</includedValues>
+            <includedValues>EDM RAH ATC</includedValues>
+            <includedValues>EDM GNH</includedValues>
+            <includedValues>EDM MCH</includedValues>
+            <includedValues>STO WVHC</includedValues>
+            <includedValues>STA SCH</includedValues>
+            <includedValues>FTS FSCH</includedValues>
+            <includedValues>LED LCH</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+            <includedValues>Motility</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #1">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #2">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>GOR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #3">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR1</includedValues>
+            <includedValues>OR2</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #4">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Will this procedure be combined with a non-Lumens case?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Patient Classification?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Day Surgery</includedValues>
+            <includedValues>Emergency</includedValues>
+            <includedValues>Inpatient</includedValues>
+            <includedValues>Outpatient</includedValues>
+            <includedValues>Surgery Admit</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Select Endoscopy Site #3">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Endoscopy Site">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>BAR BHHC</includedValues>
+            <includedValues>COL CLHC</includedValues>
+            <includedValues>DAY DHC</includedValues>
+            <includedValues>EDS EHC</includedValues>
+            <includedValues>FMH NLRH</includedValues>
+            <includedValues>FVW FVHC</includedValues>
+            <includedValues>GRP GPRH</includedValues>
+            <includedValues>GRP QEII</includedValues>
+            <includedValues>HIN HHC</includedValues>
+            <includedValues>HLH NWHC</includedValues>
+            <includedValues>LLB LLHC</includedValues>
+            <includedValues>MCL SHCHC</includedValues>
+            <includedValues>PRH PRCH</includedValues>
+            <includedValues>STP SPHC</includedValues>
+            <includedValues>VER VHC</includedValues>
+            <includedValues>VIK VHC</includedValues>
+            <includedValues>WAI WHC</includedValues>
+            <includedValues>WET WHCC</includedValues>
+            <includedValues>WHI WHC</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #1">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #2">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #3">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Will this procedure be combined with a Non Lumens Case?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Patient Classification">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Day Surgery</includedValues>
+            <includedValues>Emergency</includedValues>
+            <includedValues>Inpatient</includedValues>
+            <includedValues>Outpatient</includedValues>
+            <includedValues>Surgery Admit</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Select Endoscopy Site #4">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Endoscopy Site">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>COA CHC</includedValues>
+            <includedValues>MED MHRH</includedValues>
+            <includedValues>PIN PCHC</includedValues>
+            <includedValues>LET CRH</includedValues>
+            <includedValues>BRO BHC</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #1">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>AMB3 OR</includedValues>
+            <includedValues>AMB4 OR</includedValues>
+            <includedValues>OR Emergent</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #2">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Select Department #3">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Endoscopy</includedValues>
+            <includedValues>OR</includedValues>
+            <includedValues>STAT OR</includedValues>
+            <includedValues>Bedside</includedValues>
+            <includedValues>ER</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Will this procedure be combined with a Non Lumens Case?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Patient Classification">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Day Surgery</includedValues>
+            <includedValues>Emergency</includedValues>
+            <includedValues>Inpatient</includedValues>
+            <includedValues>Outpatient</includedValues>
+            <includedValues>Surgery Admit</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+    </Items>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
