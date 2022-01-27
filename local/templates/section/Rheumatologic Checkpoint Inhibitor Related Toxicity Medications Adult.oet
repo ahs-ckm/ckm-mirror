@@ -60,11 +60,27 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunosuppressives Agents&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~1f161151-801c-4929-ad7c-2d34446a9488~NAME~Rheumatologic Checkpoint Inhibitor Related Toxicity Medications Adult}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;For rheumatologic checkpoint inhibitor related toxicity grading and treatment recommendations, refer to&amp;nbsp;&lt;em&gt;Supp-018 Follow-Up and Management of Checkpoint Inhibitor Related Toxicities in Cancer Patients (URL:&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Follow_up_Management_Checkpoint_Inhibitor_Related_Toxicities)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;is prednisone the only steroid option for Rheum?&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -76,15 +92,24 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~1f161151-801c-4929-ad7c-2d34446a9488~NAME~Rheumatologic Checkpoint Inhibitor Related Toxicity Medications Adult}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Rheumatologic Toxicity Medications">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunosuppressives Agents&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Rheumatologic Toxicity Medications">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE Tablet Order" max="1" path="/items" name="predniSONE Tablet; 0.5 mg/kg/dose, oral, daily"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="009cf117-8dbf-4563-9377-5644de4f4715" concept_name="Checkpoint Inhibitor Related Toxicity_Supportive Medications Adult Order Group" max="1" path="/items" name="Consider the following where prolonged corticosteroid treatments used"/>
+    </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunosuppressives Agents">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2da7b915-7ed6-4b9a-8c5b-9a34b7a41c94" concept_name="PHARM methotrexate Tablet Order" max="1" path="/items" name="methotrexate Tablet; 20 mg, oral, weekly"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e77fba2a-c96b-4252-af3b-a97c61c7e265" concept_name="PHARM hydroxychloroquine Tablet Order" max="1" path="/items" name="hydroxychloroquine Tablet; 400 mg, oral, 2 times per day"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE Tablet Order" max="1" path="/items" name="predniSONE Tablet; 0.5 mg/kg/dose, oral, daily"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
   </definition>
@@ -102,5 +127,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
 </template>
