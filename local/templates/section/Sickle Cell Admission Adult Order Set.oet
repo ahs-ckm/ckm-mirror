@@ -88,14 +88,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Diet Orders&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulate; at least daily progressing to at least 3 times daily in hallway&apos;]/activities[at0156]">
     <items>
       <item>
@@ -186,6 +178,10 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This order displays as &quot;Bilateral manual baselike BP&apos; in system. Requires correction to appropriate EAP NUR432 name when/if other break/fix arise&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Comments: Please do bilateral manual baseline BP: &amp;nbsp;Right Arm, Left Arm. &amp;nbsp;&lt;br&gt;Notify physician if greater than 20 mmHg difference.&lt;/p&gt;</value>
@@ -1390,7 +1386,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5d77d782-029c-41f6-8255-422ea4dccdbf" concept_name="Height and Weight Order Panel" max="1" path="/items" name="Height and Weight Order Panel"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5357ef09-8533-4c7c-b821-a1149a945b31" concept_name="PC Bilateral manual baseline BP Order" max="1" path="/items" name="Bilateral manual baseline BP"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8cd69316-156e-4d35-9a82-dfff2fae9e25" concept_name="PC Measure Blood Pressure Order" max="1" path="/items" name="Measure Blood Pressure"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication"/>
