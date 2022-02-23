@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>f24b2d50-4339-4dcd-8114-fdf61262b5d1</id>
+  <name>LAB Frequency LAB POINT OF CARE TEST DOCKED DEVICE ORDERABLES 54 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~f24b2d50-4339-4dcd-8114-fdf61262b5d1~NAME~LAB Frequency LAB POINT OF CARE TEST DOCKED DEVICE ORDERABLES 54 Question}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Frequency">
+    <Rule path="/items[at0001]" default="Once">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Once (default)</includedValues>
+        <includedValues>Daily</includedValues>
+        <includedValues>2 times daily</includedValues>
+        <includedValues>3 times daily</includedValues>
+        <includedValues>4 times daily</includedValues>
+        <includedValues>As needed</includedValues>
+        <includedValues>Every morning</includedValues>
+        <includedValues>At bedtime</includedValues>
+        <includedValues>Every shift</includedValues>
+        <includedValues>4 times daily before meals and at bedtime</includedValues>
+        <includedValues>2 times daily before meals</includedValues>
+        <includedValues>2 times daily after meals</includedValues>
+        <includedValues>2 times daily PRN</includedValues>
+        <includedValues>2 times daily and at bedtime</includedValues>
+        <includedValues>At bedtime PRN</includedValues>
+        <includedValues>Every Mon/Wed/Fri</includedValues>
+        <includedValues>Every Tue/Thu/Sat</includedValues>
+        <includedValues>4 times daily after meals and at bedtime</includedValues>
+        <includedValues>First occurrence then every 4 hours</includedValues>
+        <includedValues>First occurrence then every 2 hours</includedValues>
+        <includedValues>First occurrence then every 1 hour</includedValues>
+        <includedValues>Every 3 hours</includedValues>
+        <includedValues>First occurrence then every 6 hours</includedValues>
+        <includedValues>First occurrence then every 8 hours</includedValues>
+        <includedValues>3 times daily before meals</includedValues>
+        <includedValues>3 times daily after meals</includedValues>
+        <includedValues>3 times daily PRN</includedValues>
+        <includedValues>Weekly</includedValues>
+        <includedValues>First occurrence then every 12 hours</includedValues>
+        <includedValues>Now then every 24 hours</includedValues>
+        <includedValues>Every 48 hours</includedValues>
+        <includedValues>Daily Morning</includedValues>
+        <includedValues>Daily Afternoon</includedValues>
+        <includedValues>Daily Evening</includedValues>
+        <includedValues>Conditional PRN</includedValues>
+        <includedValues>Every Mon/Thu</includedValues>
+        <includedValues>STAT</includedValues>
+        <includedValues>Monthly</includedValues>
+        <includedValues>Every 2 weeks</includedValues>
+      </constraint>
+    </Rule>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
