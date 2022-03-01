@@ -84,7 +84,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Multi-select;&lt;/p&gt;&lt;p&gt;Free text field for Comments&lt;/p&gt;</value>
+        <value>&lt;p&gt;Free text field for Comments;&lt;/p&gt;&lt;p&gt;When order is opened by a scheduler a pop up and decision tree about adding additonal time based on intervention is activated.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -101,6 +101,46 @@
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Cascading question when Valve Placement&amp;nbsp;is selected in response to the question &quot;Enter Intervention&quot;;&lt;br&gt;Free Text Comment&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Type of Bronchoscope&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;A response to this question may trigger cascading questions;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Enter Stent Detail:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when &apos;Stent&apos; is selected in response to &apos; Additional equipment/instruction needs?&apos;;&lt;/p&gt;&lt;p&gt;Allow additional free text comments.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Enter Biopsy Needle detail:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when &apos;US Biopsy&apos; is selected in response to &apos; Additional equipment/instruction needs?&apos;;&amp;nbsp;&lt;br&gt;Allow additional free text comments.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Enter other details:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when &apos;EBUS Needle, &apos;Cryoprobe&apos;, or &apos;Others&apos; is selected in response to &apos; Additional equipment/instruction needs?&apos;;&lt;/p&gt;&lt;p&gt;Free-text Comment field.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -536,38 +576,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;A response to this question may trigger cascading questions;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Enter Stent Detail:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when &apos;Stent&apos; is selected in response to &apos; Additional equipment/instruction needs?&apos;;&lt;/p&gt;&lt;p&gt;Allow additional free text comments.&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Enter Biopsy Needle detail:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question available when &apos;US Biopsy&apos; is selected in response to &apos; Additional equipment/instruction needs?&apos;;&amp;nbsp;&lt;br&gt;Allow additional free text comments.&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Additional equipment/instrument needs?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Enter other details:&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question available when &apos;EBUS Needle, &apos;Cryoprobe&apos;, or &apos;Others&apos; is selected in response to &apos; Additional equipment/instruction needs?&apos;;&lt;/p&gt;&lt;p&gt;Free-text Comment field.&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Is the patient a diabetic?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Is the patient a diabetic?&apos;]">
     <items>
       <item>
@@ -605,14 +613,6 @@
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Additional field for free-text comments.&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Type of Bronchoscope&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Allow additional free text comments&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -669,6 +669,51 @@
         </Rule>
       </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter other details"/>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Type of Bronchoscope">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>XP</includedValues>
+          <includedValues>P</includedValues>
+          <includedValues>IT</includedValues>
+          <includedValues>XT</includedValues>
+          <includedValues>Q</includedValues>
+          <includedValues>MP190F</includedValues>
+          <includedValues>Others</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional equipment/instrument needs?">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Additional equipment/instrument needs?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Stent</includedValues>
+            <includedValues>US Biopsy</includedValues>
+            <includedValues>EBUS Needle</includedValues>
+            <includedValues>Cryoprobe</includedValues>
+            <includedValues>Others</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter Stent Detail:">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Tracheobronchial</includedValues>
+            <includedValues>Others</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter Biopsy Needle detail:">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Ultrasound FNA</includedValues>
+            <includedValues>Ultrasound FNB</includedValues>
+            <includedValues>Quick Core</includedValues>
+            <includedValues>Transbronchial</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter other details:"/>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is Cytotech required?">
       <Rule path="/items[at0002]">
@@ -1183,38 +1228,6 @@
         </Rule>
       </Items>
     </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional equipment/instrument needs?">
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Additional equipment/instrument needs?">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Stent</includedValues>
-            <includedValues>US Biopsy</includedValues>
-            <includedValues>EBUS Needle</includedValues>
-            <includedValues>Cryoprobe</includedValues>
-            <includedValues>Others</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter Stent Detail:">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Tracheobronchial</includedValues>
-            <includedValues>Others</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter Biopsy Needle detail:">
-        <Rule path="/items[at0002]">
-          <constraint xsi:type="textConstraint">
-            <includedValues>Ultrasound FNA</includedValues>
-            <includedValues>Ultrasound FNB</includedValues>
-            <includedValues>Quick Core</includedValues>
-            <includedValues>Transbronchial</includedValues>
-          </constraint>
-        </Rule>
-      </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Enter other details:"/>
-    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is the patient a diabetic?">
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Is the patient a diabetic?">
         <Rule path="/items[at0002]">
@@ -1255,19 +1268,6 @@
       </Items>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Prep Instruction:"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Type of Bronchoscope">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>XP</includedValues>
-          <includedValues>P</includedValues>
-          <includedValues>IT</includedValues>
-          <includedValues>XT</includedValues>
-          <includedValues>Q</includedValues>
-          <includedValues>MP190F</includedValues>
-          <includedValues>Others</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Scheduling Instructions:"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
   </definition>
