@@ -148,11 +148,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1]">
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patient.&apos;]">
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
         <value>&lt;p&gt;Cascading question available when &apos;South&amp;nbsp;Zone AHS&apos; is selected in response to &apos;Where will this procedure be performed?&apos;;&lt;/p&gt;&lt;p&gt;A response to this question will trigger a cascading question;&lt;/p&gt;&lt;p&gt;Mandatory;&lt;/p&gt;&lt;p&gt;Allow free text comments&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #3&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;A paper requisition will be auto-printed when this order is signed. Please ensure it is faxed to the desired DI location. Community DI is not on Connect Care so this order will require paper tracking and faxing per existing processes.&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question available when &apos;Please select one preferred location&apos; is responded to.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -263,6 +271,13 @@
             <includedValues>Chinook Regional Hospital</includedValues>
             <includedValues>Medicine Hat Regional Hospital</includedValues>
             <includedValues>Screen Test - Mobile</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="A paper requisition will be auto-printed when this order is signed. Please ensure it is faxed to the desired DI location. Community DI is not on Connect Care so this order will require paper tracking and faxing per existing processes.">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Understood</includedValues>
           </constraint>
         </Rule>
       </Items>
