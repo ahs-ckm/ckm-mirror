@@ -136,7 +136,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question available when Red Deer Regional Hospital Centre;&lt;/p&gt;&lt;p&gt;St. Joseph General Hospital; St. Mary’s Hospital; Wainwright Health Centre&lt;/p&gt;&lt;p&gt;is selected in response to &quot;Where will this procedure be performed?&quot;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Cascading question available when &apos;Red Deer Regional Hospital Centre; St. Joseph General Hospital; St. Mary’s Hospital; Wainwright Health Centre&apos; is selected in response to &quot;Where will this procedure be performed?&quot;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -176,7 +176,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question available when Chinook Regional Hospital; Medicine Hat is selected in response to &quot;Where will this procedure be performed?&quot;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Cascading question available when Chinook Regional Hospital; Medicine Hat is selected in response to &quot;Please select one preferred location.&quot;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -233,7 +233,17 @@
       </Items>
     </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patication. #1">
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, imaging staff may schedule at an alternate location and notify both the ordering provider and the patient.">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Alberta Children’s Hospital</includedValues>
+            <includedValues>Foothills Medical Centre</includedValues>
+            <includedValues>Peter Lougheed Centre</includedValues>
+            <includedValues>Rockyview General Hospital</includedValues>
+            <includedValues>South Health Campus</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="A paper requisition will be auto-printed once this order is signed. Please ensure it is faxed to the desired DI location or provided to the patient. This site is not on Connect Care so this order will require existing paper tracking and faxing processes.">
         <Rule path="/items[at0002]">
           <constraint xsi:type="textConstraint">
