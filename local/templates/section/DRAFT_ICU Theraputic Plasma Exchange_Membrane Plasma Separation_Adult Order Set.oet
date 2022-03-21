@@ -72,6 +72,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;This order set is NOT intended for use for patients with TTP. Consult hematologist for patients requiring TTP management&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Technical Notes: Should this be removed?&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
@@ -120,6 +128,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Therapeutic Plasma Exchange (TPE) Citrate Anticoagulation&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Tehcnical Notes: Replacement Fluid -&amp;nbsp;Need to use consistent wording for saline&lt;/p&gt;&lt;p&gt;- 0.9% saline&lt;/p&gt;&lt;p&gt;- NaCl 0.9%&lt;/p&gt;&lt;p&gt;- normal saline&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Therapeutic Plasma Exchange (TPE) Citrate Anticoagulation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;TPE - Citrate&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -152,6 +168,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Therapeutic Plasma Exchange (TPE) Citrate Anticoagulation&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider adjusting wording to:&lt;/p&gt;&lt;p&gt;&quot;Adjust citrate infusion rate as per nomogram - View the TPE Citrate Nomogram report on the Sidebar Summary activity. &quot;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&quot;Adjust calcium chloride&amp;nbsp;infusion rate as per nomogram - View the TPE calcium chloride Nomogram report on the Sidebar Summary activity. &quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Therapeutic Plasma Exchange (TPE) Heparin Anticoagulation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;TPE - Heparin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -176,6 +200,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="acaca930-0aeb-4aec-9210-57bebcba54fe" concept_name="Replacement Fluid ICU TPE Order Group" max="1" path="/items" name="Replacement Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e0d653e0-40b0-4f1e-b2f7-d2ba02c8073a" concept_name="Citrate Titration ICU TPE Order Group" max="1" path="/items" name="Citrate Titration"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ea8edb7c-f03b-4fae-b418-b7f5b3e188f1" concept_name="Labs ICU TPE Citrate Order Group" max="1" path="/items" name="Labs"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -185,7 +210,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Therapeutic Plasma Exchange Heparin Adult"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a5292274-4fbe-42d2-b8b2-0c065d3012ae" concept_name="Replacement Fluid ICU TPE Heparin Order Group" max="1" path="/items" name="Replacement Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="acaca930-0aeb-4aec-9210-57bebcba54fe" concept_name="Replacement Fluid ICU TPE Order Group" max="1" path="/items" name="Replacement Fluid"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d79d0aeb-4886-47b4-b646-7d915af105fe" concept_name="Anticoagulation ICU TPE Order Group" max="1" path="/items" name="Anticoagulation"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LAB Type and Screen Order" max="1" path="/items" name="Type and Screen; Once, as needed, if not current"/>
