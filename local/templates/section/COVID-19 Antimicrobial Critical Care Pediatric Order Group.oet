@@ -76,23 +76,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Severe Illness&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&amp;nbsp;50 - 100&amp;nbsp;mg/Kg/day&amp;nbsp;every 24 hours or Divided every 12 hours&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Severe Illness&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Severe Illness&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Severe Illness&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -116,11 +100,11 @@
       </item>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;When vancomycin is expected to continue for more than 48 hours, refer to &lt;u&gt;&lt;strong&gt;Bugs and Drugs&lt;/strong&gt;&lt;/u&gt; or the &lt;u&gt;&lt;strong&gt;AHS Parenteral Drug Monograph&lt;/strong&gt;&lt;/u&gt; for details. Clinicians unfamiliar with Therapeutic Drug Monitoring of vancomycin are encouraged to consult with a pharmacist.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Suggest Therapeutic Drug Monitoring (TDM) when vancomycin is expected to continue for more than 48 hours. Refer to &lt;strong&gt;Bugs and Drugs &lt;/strong&gt;or the &lt;strong&gt;AHS Parenteral Drug Monograph&lt;/strong&gt; for details. Clinicians unfamiliar with TDM of vancomycin are encouraged to consult with a pharmacist&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Critical Illness: Consider addition of vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Critical Illness: Consider addition of vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 15 mg/kg/dose, intravenous, every 6 hours&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -155,16 +139,15 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="COVID-19 Antimicrobial Critical Care Pediatric Order Group">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Severe Illness">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cefTRIAXone">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 100 mg/kg/day, intravenous, every 12 hours, STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 100 mg/kg/day, intravenous, every 12 hours, STAT"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Critical Illness: Consider addition of vancomycin">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, intravenous, every 6 hours"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level, Pre-Dose Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; daily morning"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea; daily morning"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="If patient has been in hospital/health care facility within last 6 months, consider:">
@@ -190,5 +173,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
 </template>
