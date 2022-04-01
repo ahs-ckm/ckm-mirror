@@ -76,14 +76,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;A paper requsition will be auto-printed once this order is signed. Please ensure it is faxed to the desired DI location. This zone is currently not on Connect Care so this order will require paper tracking and faxing per existing processes. #1&apos;]">
-    <items>
-      <item>
-        <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when &apos;Community DI All Zones (Non-AHS)&apos; Is selected in response to &apos;Where will this procedure be performed?&apos;.&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Please select one preferred location.&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Please select one preferred location.&apos;]">
     <items>
       <item>
@@ -96,7 +88,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when Cross Cancer Institute,&amp;nbsp;Is selected in response to &apos;Please select one preferred location?&apos;.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when Cross Cancer Institute,&amp;nbsp;Is selected in response to &apos;Please select one preferred location?&apos;.;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -112,7 +104,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when &apos;Please select one preferred location&apos; is responded to.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when Richmond Road Diagnostic and Treatment Center &amp;nbsp;&apos;Please select one preferred location&apos; is responded to.;&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -128,7 +120,15 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Cascading question available when &apos;Please select one preferred location&apos; is responded to.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Cascading question available when Peace Diagnostic Imaging - Grande Prairie &apos;Please select one preferred location&apos; is responded to.&lt;/p&gt;&lt;p&gt;Mandatory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;A paper requsition will be auto-printed once this order is signed. Please ensure it is faxed to the desired DI location. This zone is currently not on Connect Care so this order will require paper tracking and faxing per existing processes. #1&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Cascading question available when &apos;Community DI All Zones (Non-AHS)&apos; Is selected in response to &apos;Where will this procedure be performed?&apos;.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -140,13 +140,6 @@
           <includedValues>Calgary Zone AHS</includedValues>
           <includedValues>North Zone AHS</includedValues>
           <includedValues>Community DI All Zones (Non-AHS) Default</includedValues>
-        </constraint>
-      </Rule>
-    </Items>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="A paper requsition will be auto-printed once this order is signed. Please ensure it is faxed to the desired DI location. This zone is currently not on Connect Care so this order will require paper tracking and faxing per existing processes. #1">
-      <Rule path="/items[at0002]">
-        <constraint xsi:type="textConstraint">
-          <includedValues>Understood</includedValues>
         </constraint>
       </Rule>
     </Items>
@@ -197,6 +190,13 @@
           </constraint>
         </Rule>
       </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="A paper requsition will be auto-printed once this order is signed. Please ensure it is faxed to the desired DI location. This zone is currently not on Connect Care so this order will require paper tracking and faxing per existing processes. #1">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Understood</includedValues>
+        </constraint>
+      </Rule>
     </Items>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
