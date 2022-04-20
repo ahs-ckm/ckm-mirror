@@ -48,7 +48,15 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~d80fc70f-2a2e-49fd-9165-8dc077e69210~NAME~LAB Frequency LAB ORDERABLES 1 Question}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Frequency">
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~d80fc70f-2a2e-49fd-9165-8dc077e69210~NAME~LAB Frequency LAB ORDERABLES 1 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Frequency">
     <Rule path="/items[at0001]" default="Once">
       <constraint xsi:type="textConstraint">
         <includedValues>Once (default)</includedValues>
