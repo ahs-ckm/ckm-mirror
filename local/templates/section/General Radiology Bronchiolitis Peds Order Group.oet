@@ -60,43 +60,33 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~160433f8-08bc-425b-a739-21d060e8edf8~NAME~General Radiology Bronchiolitis Peds Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:inherit&quot;&gt;Chest x-rays are not routinely recommended in bronchiolitis. Consider in severe illness (i.e., PICU patient).&amp;nbsp; If performed, patchy infiltrates/bilateral atelectasis are typical and are not an absolute indication to start antibiotics for pneumonia.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Chest x-rays are not routinely recommended in bronchiolitis.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;If performed, patchy infiltrates/bilateral atelectasis are typical and are not an absolute indication to start antibiotics for pneumonia.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Consider in severe illness (i.e., PICU patient), if fever occurring later in course, impending respiratory failure or concerns for congestive heart failure.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Urgent, Once, Today&lt;/p&gt;&lt;p&gt;Reason for exam/clinical question to be answered: &lt;strong&gt;Fever Recurring Later in Course&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Is a mobile exam required? &lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Urgent, Once, Today&lt;/p&gt;&lt;p&gt;Reason for exam/clinical question to be answered: &lt;strong&gt;***&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Is a mobile exam required? &lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections #1&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Urgent, Once, Today&lt;/p&gt;&lt;p&gt;Reason for exam/clinical question to be answered:&amp;nbsp;&lt;strong&gt;Severe respiratory Distress Impending Respiratory Failure&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Is a mobile exam required?&amp;nbsp;&lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections #2&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Urgent, Once, Today&lt;/p&gt;&lt;p&gt;Reason for exam/clinical question to be answered:&amp;nbsp;&lt;strong&gt;Evaluate Heart Size and Pulmonary Vasculature&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Is a mobile exam required?&amp;nbsp;&lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~160433f8-08bc-425b-a739-21d060e8edf8~NAME~General Radiology Bronchiolitis Peds Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="General Radiology">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="General Radiology">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections #1"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections #2"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
