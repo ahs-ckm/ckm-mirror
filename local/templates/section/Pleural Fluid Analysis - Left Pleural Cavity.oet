@@ -66,7 +66,11 @@
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;Should be available independently on the browse&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~39725054-c67b-4fab-b905-6b2b40959b1d~NAME~Pleural Fluid Analysis - Left Pleural Cavity}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~39725054-c67b-4fab-b905-6b2b40959b1d~NAME~Pleural Fluid Analysis - Left Pleural Cavity}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
@@ -81,6 +85,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Pleural Fluid,&lt;/p&gt;&lt;p&gt;Specimen Source: Pleural Cavity, Left&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pleural Fluid POCT; Once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;May 25/22 - INC000491176 - Request to add&amp;nbsp;Pleural Fluid POCT (LAB4174) to Pleural Fluid Analysis Panels, pending author approval&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -151,6 +163,7 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pleural Fluid Analysis - Left Pleural Cavity">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="22916384-f8ed-4b60-90f5-616fb6268394" concept_name="LAB pH Body Fluid Order" max="1" path="/items" name="pH, Body Fluid; Once"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="94b98385-d6c4-41e4-a50b-8b356e85ce85" concept_name="LAB Pleural Fluid POCT Order" max="1" path="/items" name="Pleural Fluid POCT; Once"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2571092d-577c-43d6-8abe-c89ea57e8549" concept_name="LAB Protein Body Fluid Order" max="1" path="/items" name="Protein, Body Fluid; Once"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="374203c6-48d7-4114-8d20-95775357b3ca" concept_name="LAB Glucose Body Fluid Order" max="1" path="/items" name="Glucose, Body Fluid; Once"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7557b5e-49b5-49cb-822e-858772559be0" concept_name="LAB Cell Count Body Fluid Order" max="1" path="/items" name="Cell Count, Body Fluid; Once"/>
