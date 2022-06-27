@@ -66,6 +66,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>CKT.Synonym(s)</key>
+        <value>&lt;p&gt;Synonyms:&amp;nbsp;Post Anesthesia Care Unit, Recovery, PACU, CPAP, Obstructive Sleep Apnea, OSA, PAP therapy, STOP Bang Airway, General Anesthetic&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~4f57d73d-147b-4b54-9e23-b6c99ac9e13b~NAME~Anesthesia Postprocedure Adult Order Set}</value>
       </item>
@@ -215,7 +219,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Assessments; Recovery (only)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy_SpO2 greater than 92%&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Assessments; Recovery (only)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -773,8 +777,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments; Recovery (only)">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; oxygen therapy panel with no guidance_includes notify orders?"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="02b0ba00-0a43-4c69-9eae-12a841c8b1a9" concept_name="Oxygen Therapy Order Panel" max="1" path="/items" name="Oxygen Therapy Order Panel"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="847b265b-c79f-4478-b20c-a60233f54d07" concept_name="Oxygen Therapy Order Panel_No Guidance_No Blood Gas" max="1" path="/items" name="Oxygen Therapy Order Panel"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy_SpO2 greater than 92%"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions; Recovery (only)">
