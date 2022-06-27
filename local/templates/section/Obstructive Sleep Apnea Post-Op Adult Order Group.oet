@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~a8641e36-ce7d-4a16-bf77-309b897d174b~NAME~Obstructive Sleep Apnea Post-Op Adult Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -191,6 +199,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CPAP therapy; resume home settings; On Unit&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#3498db&quot;&gt;The cpap therapy order EAP [EQ75] is a supply order. Should this be replaced with EAP Non-Invasive Ventilation [RT127 (Custom)] which includes orders for vent mode, schedule, cpap, target saturation mask type etc.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Priority: Routine&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;Positive Airway Pressure (PAP) therapy: Resume as per home settings&lt;/p&gt;&lt;p&gt;Quantity: 1&lt;/p&gt;</value>
       </item>
@@ -200,7 +212,7 @@
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#3498db&quot;&gt;replace ____ with wild card hard stop?&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#3498db&quot;&gt;The cpap therapy order EAP [EQ75] is a supply order. Should this be replaced with EAP Non-Invasive Ventilation [RT127 (Custom)] which includes orders for vent mode, schedule, cpap, target saturation mask type etc.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -280,7 +292,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a8641e36-ce7d-4a16-bf77-309b897d174b~NAME~Obstructive Sleep Apnea Post-Op Adult Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Obstructive Sleep Apnea Post-Op Adult">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Obstructive Sleep Apnea Post-Op Adult">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care; On Unit">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Apply Postive Airway Pressure"/>
@@ -298,7 +310,7 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Once Aldrete Score is 7"/>
     </Item>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; oxygen therapy panel_no CDS, no blood gas, includes notify orders"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="847b265b-c79f-4478-b20c-a60233f54d07" concept_name="Oxygen Therapy Order Panel_No Guidance_No Blood Gas" max="1" path="/items" name="Oxygen Therapy Order Panel; On Unit"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d12db1f0-26a3-4cca-a17e-7d2d696ca20f" concept_name="SURG DME CPAP therapy Order" max="1" path="/items" name="CPAP therapy; resume home settings; On Unit"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d12db1f0-26a3-4cca-a17e-7d2d696ca20f" concept_name="SURG DME CPAP therapy Order" max="1" path="/items" name="CPAP therapy; PAP new initiation; On Unit"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults_Referrals; On Unit">
