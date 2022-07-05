@@ -78,10 +78,6 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#3498db&quot;&gt;Update url in build to HEE link&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Consider opening and merging the following order sets if appropriate&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Restraints, Adult Order Set&lt;/li&gt;&lt;li&gt;PCA Order Sets&lt;/li&gt;&lt;li&gt;Difficult Airway Adult&amp;nbsp; &amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Anesthesia - Perioperative Obstructive Sleep Apnea, Adult - Inpatient ClinicalKnowledge Topic&lt;/p&gt;&lt;p&gt;https://ahsweb.ca/HEE/Anesthesia_Perioperative_Obstructive_Sleep_Apnea_ Adult_Inpatient&lt;/p&gt;</value>
       </item>
@@ -179,15 +175,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Planning; Recovery (only)&apos;]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Draft &apos;Discharge Planning content. Awaiting approval to add &apos;discharge when criteria met&apos; communication orders per&amp;nbsp;INC000618825&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Planning; Recovery (only)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Criteria Met&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Planning; Recovery (only)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discharge when Criteria Met&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -200,18 +188,6 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Frequency: Until discontinued&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;Discharge from PACU when ***&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Planning; Recovery (only)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Contact Anesthesia&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Use a nursing comm or a notify order? both options included for now&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Frequency: Until discontinued&lt;/p&gt;&lt;p&gt;Comments: Contact Anesthesia prior to discharge&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -277,10 +253,6 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PACU&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs - Hematology; Recovery (only)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential&apos;]/activities[at0001]">
     <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#3498db&quot;&gt;(currently configured with &apos;once&apos;&amp;nbsp;freq but should be updated to match all other lab orders in this OS)&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Frequency: STAT&lt;/p&gt;&lt;p&gt;Specimen Type: Blood&lt;/p&gt;&lt;p&gt;Specimen Source: Blood&lt;/p&gt;</value>
@@ -776,9 +748,8 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT #1"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Planning; Recovery (only)">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Criteria Met"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discharge when Criteria Met"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Contact Anesthesia"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP)"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight"/>
