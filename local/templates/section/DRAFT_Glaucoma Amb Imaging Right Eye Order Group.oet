@@ -60,15 +60,32 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~cd71cee6-b6e4-456b-b2e6-be66df4cf962~NAME~DRAFT_Glaucoma Amb Imaging Right Eye Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Glaucoma Amb Imaging Right Eye Order Group">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Optical Coherence Tomography"/>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~cd71cee6-b6e4-456b-b2e6-be66df4cf962~NAME~DRAFT_Glaucoma Amb Imaging Right Eye Order Group}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Humphrey Visual Field - Right Eye&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Type: 24-2; 30-2; 10-2; 120 point; Binocular Estermann; SITA-Fast&lt;br&gt;Stimulus Color:&amp;nbsp;&lt;strong&gt;White&lt;/strong&gt;; Red&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Glaucoma Amb Imaging Right Eye Order Group">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="12a8a19b-e54d-409f-b2ef-c8c77d14e1a2" concept_name="SURG OPHTHVISUALFIELD Humphrey Visual Field - Right Eye Order" max="1" path="/items" name="Humphrey Visual Field - Right Eye"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c33411e5-db0a-4dd7-b03d-3b470f4fd18a" concept_name="SURG OPHTHOTHER Corneal Pachymetry - Right Eye Order" max="1" path="/items" name="Corneal Pachymetry - Right Eye"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae3de743-0bfc-42ac-971d-b5769f55ffd3" concept_name="SURG OPHTH TOMOGRAPHY OCT Anterior Segment - Right Eye Order" max="1" path="/items" name="OCT, Anterior Segment - Right Eye"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="93ecada2-c871-49d0-a9f1-7da4bfe8b2d2" concept_name="SURG OPHTH TOMOGRAPHY OCT Optic Nerve - Right Eye Order" max="1" path="/items" name="OCT, Optic Nerve - Right Eye"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; OCT and HRT Optic Nerve"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; OCT Macula and Optic Nerve"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; OCT Macula Only"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a6ad59f6-6455-43e7-86a6-073f095d18d4" concept_name="SURG OPHTH TOMOGRAPHY OCT Macula and Optic Nerve - Right Eye" max="1" path="/items" name="OCT, Macula and Optic Nerve - Right Eye"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03595a45-537c-4c61-bd6d-da9bf2eaeede" concept_name="SURG OPHTH TOMOGRAPHY OCT Macula Only - Right Eye" max="1" path="/items" name="OCT, Macula Only - Right Eye"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="141c975d-243e-4ed1-8007-f85157df59f1" concept_name="SURG OPHTH TOMOGRAPHY Heidelberg Retina Tomography (HRT) - Right Eye Order" max="1" path="/items" name="Heidelberg Retina Tomography (HRT) - Right Eye"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="906f3c75-5321-4701-99cc-d1744a2f9e56" concept_name="SURG OPHTHVISUALFIELD Octopus Visual Field - Right Eye Order" max="1" path="/items" name="Octopus Visual Field - Right Eye"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f29f1949-fc1d-4272-8cc7-62ef67f06e02" concept_name="SURG OPHTH ULTRASOUND Ultrasound Biomicroscopy (UBM) - Right Eye Order" max="1" path="/items" name="Ultrasound Biomicroscopy (UBM) - Right Eye"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
