@@ -1,0 +1,1265 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>22f4575d-e180-4a98-8757-c0f738c065bb</id>
+  <name>DRAFT_Urinary Tract Infection Adult Order Set</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~22f4575d-e180-4a98-8757-c0f738c065bb~NAME~DRAFT_Urinary Tract Infection Adult Order Set}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size:18px&quot;&gt;Order Set Requirements:&lt;/span&gt;&lt;/strong&gt;&lt;em&gt;Height and weight for medication calculations&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size:18px&quot;&gt;Order Set Keywords: &lt;/span&gt;&lt;/strong&gt;UTI, bladder infection, cystitis, pyelonephritis, urosepsis&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider opening and merging any appropriate diagnosis based order sets&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Admission&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Admit to Inpatient&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Service: [hard stop]&lt;/p&gt;&lt;p&gt;Level of Care:&amp;nbsp;[hard stop]&lt;/p&gt;&lt;p&gt;Most Responsible Physician:&amp;nbsp;[hard stop]&lt;/p&gt;&lt;p&gt;Which Provider Team is responsible for this patient?&amp;nbsp;[hard stop]&lt;/p&gt;&lt;p&gt;Diagnosis:&amp;nbsp;[hard stop]&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Diet Orders&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Microbiology&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Obtained before starting antimicrobial therapy in patients with suspected sepsis or septic shock if doing so results in no substantial delay in the start of antimicrobials.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Is this section also required under Routine Labs?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;This&amp;nbsp;section restricted to female patients only&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vaginal Swabs&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider testing for Trichomonas in sexually active patients if they have:&lt;br&gt;1.&amp;nbsp;&amp;nbsp; &amp;nbsp;Vaginitis/urethritis symptoms&lt;br&gt;2.&amp;nbsp;&amp;nbsp; &amp;nbsp;Evidence of discharge on exam or concern for PID&lt;br&gt;If the female patient has had an EXPOSURE to Trichomonas – the recommendations are empirically treat and NOT test for trichomonas&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vaginal Swabs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Chlamydia and Gonorrhea Screen; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Swab&lt;/p&gt;&lt;p&gt;Specimen Souce: Vagina&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vaginal Swabs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Trichomonas vaginalis Screen; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Swab&lt;/p&gt;&lt;p&gt;Specimen Souce: Vagina&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vaginal Swabs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bacterial Vaginosis/Yeast; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Swab&lt;/p&gt;&lt;p&gt;Specimen Souce: Vagina&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vaginal Swabs&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Sensitivity of urine chlamydia and gonorrhea testing in females is significantly lower than vaginal swabs. &amp;nbsp;Only use Urine chlamydia and gonorrhea if unable to collect a vaginal swab.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test, Urine; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Urine&lt;/p&gt;&lt;p&gt;Specimen Souce: Urine, Midstream&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Chlamydia and Gonorrhea Screen; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Urine&lt;/p&gt;&lt;p&gt;Specimen Souce: *** (should this be defaulted? Urine, first catch or Urine, Other)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Female)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Male)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Is this section also required under Routine Labs?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;This&amp;nbsp;section restricted to male patients only&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sexually Transmitted Infection Workup (Male)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: Urine&lt;/p&gt;&lt;p&gt;Specimen Souce: *** (should this be defaulted? Urine, first catch or Urine, Other)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Is this section also required under Routine Labs?&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Do not test urine for infection in the absence of localizing urinary symptoms or flank pain, unless septic, pregnant, or undergoing an invasive urologic procedure. &amp;nbsp;If there are nonspecific symptoms such as weakness, confusion, falls, or behavior change in an older patient, a trial of hydration and workup for other causes of delirium is most appropriate as treatment of asymptomatic bacteriuria does not benefit these patients. &amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;Send urine for analysis and culture if at least TWO of the following are present:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;pain on voiding &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;fever/rigors (temperature greater than 38°C)&lt;/li&gt;&lt;li&gt;flank pain/suprapubic pain&lt;/li&gt;&lt;li&gt;new or increased frequency, urgency or incontinence&lt;/li&gt;&lt;li&gt;blood in the urine&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;See Appropriateness of Care: Asymptomatic Bacteriuria resources for further guidance:&lt;/p&gt;&lt;p&gt;-&amp;nbsp;&lt;u&gt;&lt;strong&gt;Appropriateness of Care: Asymptomatic Bacteriuria&lt;/strong&gt;&lt;/u&gt; (URL: https://www.albertahealthservices.ca/info/Page15718.aspx )&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider ABG if:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Patient is critically ill&lt;/li&gt;&lt;li&gt;Patient shows signs of carbon dioxide retention (e.g. acute breathlessness or drowsiness, increased respiratory rate)&lt;/li&gt;&lt;li&gt;Patient is at risk of metabolic conditions&lt;/li&gt;&lt;li&gt;Unexpected or inappropriate drop below 94% SpO2 while patient is awake&lt;/li&gt;&lt;li&gt;Increased breathlessness or drop of less than or equal to 3% SpO2 when patient with chronic hypoxemia was previously stable&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Microbiology&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Obtained before starting antimicrobial therapy in patients with suspected sepsis or septic shock if doing so results in no substantial delay in the start of antimicrobials.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ultrasound&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;US Pelvis Female&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Restricted to female patients only&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ultrasound&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;US Pelvis Male&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Restricted to male patients only&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50 mL/hr, intravenous, continuous&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50 mL/hr, intravenous, continuous&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50 mL/hr, intravenous, continuous&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.9% infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50 mL/hr, intravenous, continuous&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Should we refer to the Sepsis Bundle order set?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;If Septic/Hemodynamically unstable, refer to Urosepsis order group&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Females or Males with First Episode&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fosfomycin Packet 3 g; Alternative when nitrofuratoin can&apos;t be used due to allergy/intolerance/resistance/renal dysfunction (CrCl less than 40 mL/min) - fosfomycin packet&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;3 g, oral, once&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Females or Males with First Episode&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative for 1st time cystitis and no antibiotic exposure within last 6 months&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Due to higher resistance rates and potential for serious adverse effects, including C. difficile infection, reserve quinolone use for when other options are not possible.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative for 1st time cystitis and no antibiotic exposure within last 6 months&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ceFIXime Tablet; Alternative in other patients: ceFIXime tablet&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;400 mg, oral, daily, for 5 days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative for 1st time cystitis and no antibiotic exposure within last 6 months&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnant&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Pre/1-week post treatment urine cultures recommended followed by monthly urine cultures during remainder of pregnancy&lt;br&gt;&amp;nbsp;&lt;br&gt;Note: Avoid nitrofurantoin at 38-42 weeks gestation due to risk of newborn hemolysis&lt;br&gt;&amp;nbsp;&lt;br&gt;Note: sulfamethoxazole-trimethoprim should be avoided in 1st trimester or after 32 weeks gestation&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnant&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS); Alternative (avoid in first trimester and after 32 weeks gestation): sulfamethoxazole-trimethoprim 800 mg-160 mg per tablet&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;160 mg of trimethoprim, oral, 2 times per day, for 7&amp;nbsp;days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnant&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Complicated UTI is defined as being associated with functional and anatomical abnormalities of the genitourinary tract including – obstructive uropathy, recent GU instrumentation, delayed/impaired voiding, metabolic abnormalities or immunocompromised states.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Lower urinary tract and afebrile, systemically well:&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Upper urinary tract and/or febrile, systemically unwell:&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Upper urinary tract and/or febrile, systemically unwell:&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Added text: &quot;Reassess for discontinuation of gentamicin at 48 hours&quot;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Total duration of empiric and targeted therapy 7-10 days, reassess therapy with blood and urine culture results. Adjust interval for gentamicin (to 48 hours) if needed based on renal function.&lt;/p&gt;&lt;p&gt;Reassess for discontinuation of gentamicin at 48 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Upper urinary tract and/or febrile, systemically unwell:&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Change guidance from &quot;(7 mg/kg based on IBW, or dosing weight if total body weight more than 20% above IBW)&quot; to &quot;(7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)&quot;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;7 mg/kg/dose, intravenous, every 24 hours, scheduled, for 10 days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Upper urinary tract and/or febrile, systemically unwell:&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Upper urinary tract and/or febrile, systemically unwell:&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;added &quot;Ensure catheter has been removed&amp;nbsp;if possible&quot;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;added very basic statement but please feel free to edit the wording&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Do you want to add an order for catheter removal (in patient care section) for cases of CAUTI?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Asymptomatic = No treatment&lt;/p&gt;&lt;p&gt;Ensure catheter has been removed&amp;nbsp;if possible&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Symptomatic:&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Febrile, systemically unwell&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Added &quot;&lt;em&gt;Reassess for discontinuation of gentamicin at 48 hours&lt;/em&gt;[&quot;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Adjust interval for gentamicin (to 48 hours) if needed based on renal function.&lt;/p&gt;&lt;p&gt;Reassess for discontinuation of gentamicin at 48 hours[&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Febrile, systemically unwell&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Febrile, systemically unwell&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;7 mg/kg/dose, intravenous, every 24 hours, scheduled, for 10 days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Febrile, systemically unwell&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Febrile, systemically unwell&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Catheter-associated UTI (CA-UTI)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Cystitis - Empiric Therapy, review with C&amp;S results&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Functional/structural urinary abnormalities/catheterized; see above for complicated UTI&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hospitalized/Septic&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Added this text&amp;nbsp;&quot;Reassess for discontinuation of gentamicin at 48 hours&quot;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Adjust interval for gentamicin (to 48 hours) if needed based on renal function.&lt;/p&gt;&lt;p&gt;Reassess for discontinuation of gentamicin at 48 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hospitalized/Septic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; (7 mg/kg based on IBW, or dosing weight if total body weight more than 20% above IBW)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;7 mg/kg/dose, intravenous, every 24 hours, scheduled, for 10 days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hospitalized/Septic&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy - follow up cultures 1 week after therapy and monthly for duration of pregnancy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy - follow up cultures 1 week after therapy and monthly for duration of pregnancy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Consider adding &quot;gentamicin AND ampicillin&quot; to heading&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;7 mg/kg/dose, intravenous, every 24 hours, scheduled, for 10 days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ampicillin injection; 2 g, intravenous, every 6 hours, scheduled, for 10 days&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alternative&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pyelonephritis&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Add this guidance text?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;For cases of septic shock, refer to Sepsis Bundle order set&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;A) If uncomplicated&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Adjust interval for gentamicin (to 48 hours) if needed based on renal function (CrCl)&lt;br&gt;Discontinue gentamicin at 48 hours unless culture results warrant continuation&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;A) If uncomplicated&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;7 mg/kg/dose, intravenous, every 24 hours, scheduled, for 10 days&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;A) If uncomplicated&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Heading changed from &quot;B) If uncomplicated but suspected enterococcal infection (recent enterococcal or gram positive cocci UTI)&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Reassess at 48-72 hours with culture results&lt;br&gt;vancomycin maintenance dose: 15 mg/kg based on actual body weight; maximum dose is 2g)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 25 mg/kg/dose, intravenous, once, STAT. Loading Dose&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 15 mg/kg/dose, intravenous, every 12 hours. Reassess at 48-72 hours with culture results&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;C) If complicated (antibiotics in past 3 months, obstructive uropathy, recent instrumentation, immunocompromised)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Added &quot;for 10 days&quot;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Indication? Sepsis&lt;/p&gt;&lt;p&gt;Why is this medication preferred over a non-restricted alternative? First line therapy/most appropriate spectrum&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;C) If complicated (antibiotics in past 3 months, obstructive uropathy, recent instrumentation, immunocompromised)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;C) If complicated (antibiotics in past 3 months, obstructive uropathy, recent instrumentation, immunocompromised)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Should this section be removed because we are adding the reference to the sepsis order set?&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Reassess at 48-72 hours with culture results&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;meropenem AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Indication? Sepsis&lt;/p&gt;&lt;p&gt;Why is this medication preferred over a non-restricted alternative? Resistance to non-restricted alternatives&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;meropenem AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;meropenem AND vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 25 mg/kg/dose, intravenous, once, STAT. Loading Dose&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;meropenem AND vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 15 mg/kg/dose, intravenous, every 12 hours. Reassess at 48-72 hours with culture results&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;meropenem AND vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;meropenem AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Reassess at 48-72 hours with culture results&lt;br&gt;Discontinue tobramycin at 48 hours unless culture results warrant continuation&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ciprofloxacin Tablet; 400 mg, intravenous, every 12 hours, scheduled&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tobramycin injection;  (based on ideal body weight OR dosing weight if obese)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;7 mg/kg/dose, intravenous, every 24 hours, scheduled&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tobramycin injection;  (based on ideal body weight OR dosing weight if obese)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 25 mg/kg/dose, intravenous, once, STAT. Loading Dose&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection; 15 mg/kg/dose, intravenous, every 12 hours. Reassess at 48-72 hours with culture results&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urosepsis&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Internal Medicine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for consult: ___&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Urinary Tract Infection Adult Order Set">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notify Primary Care physician and other clinicians in the active circle of care regarding patient admission"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care Designation Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0ac6e392-4e13-45c4-b1ee-27da7ab645ce" concept_name="Isolation Adult Order Panel" max="1" path="/items" name="Isolation Adult Order Panel"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ef152e9a-eb88-498e-9c38-2e59fd91a68c" concept_name="Diet and Nutrition Admission Adult Order Group" max="1" path="/items" name="Diet and Nutrition"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="57009bf0-2e4e-4775-906f-9a22a6981e38" concept_name="Activity Adult Admission Order Panel" max="1" path="/items" name="Activity Adult Admission Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d49ddec9-c657-431d-b456-a68643935794" concept_name="Vital Signs Order Panel" max="1" path="/items" name="Vital Signs Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b37419ae-0f45-4bc4-b6c2-e5f31e26ba34" concept_name="Cardiac Monitoring Order Panel" max="1" path="/items" name="Cardiac Monitoring Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d50535a8-977a-41b5-9942-a3beff464cb3" concept_name="Intake and Output Order Panel" max="1" path="/items" name="Intake and Output Order Panel"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Point of Care Testing Glucose"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fd5df4f4-8e32-4ed4-8eb4-012976601180" concept_name="Respiratory Interventions Oxygen Therapy Order Panel_No Guidance" max="1" path="/items" name="Respiratory Interventions Oxygen Therapy Order Panel_No Guidance"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="60c9d6c9-bc5c-4b50-ad31-6bd68d3608b9" concept_name="LAB Lactate Order" max="1" path="/items" name="Lactate; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0f538df2-15d7-4385-844b-7fc2c7d3d6a9" concept_name="Blood Culture Panel Adult Order Group" max="1" path="/items" name="Blood Culture Panel - Adult x 2"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Sexually Transmitted Infection Workup (Female)">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vaginal Swabs">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cad277fe-004c-42de-8baf-d9a2be2d115f" concept_name="LAB Chlamydia and Gonorrhea Screen Order" max="1" path="/items" name="Chlamydia and Gonorrhea Screen; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a8d3107-5bd0-43d1-98ec-02520c1086ea" concept_name="LAB Trichomonas vaginalis Screen Order" max="1" path="/items" name="Trichomonas vaginalis Screen; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bf7efc9c-a31a-4bbc-a04a-9ec6e7f8c2e5" concept_name="LAB Bacterial VaginosisYeast Order" max="1" path="/items" name="Bacterial Vaginosis/Yeast; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4aa8cf90-0563-4146-b50d-cfb2e912dcad" concept_name="LAB Pregnancy Test Urine Order" max="1" path="/items" name="Pregnancy Test, Urine; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7136855-e966-442e-b200-65215d6de885" concept_name="LAB Pregnancy Test Urine POCT Order" max="1" path="/items" name="Pregnancy Test Urine POCT; Once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cad277fe-004c-42de-8baf-d9a2be2d115f" concept_name="LAB Chlamydia and Gonorrhea Screen Order" max="1" path="/items" name="Chlamydia and Gonorrhea Screen; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Sexually Transmitted Infection Workup (Male)">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cad277fe-004c-42de-8baf-d9a2be2d115f" concept_name="LAB Chlamydia and Gonorrhea Screen Order" max="1" path="/items" name="Chlamydia and Gonorrhea Screen; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LAB Urinalysis Order" max="1" path="/items" name="Urinalysis; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a5014e76-dbf6-4c5b-869d-84217c4769bc" concept_name="LAB Urinalysis POCT Order" max="1" path="/items" name="Urinalysis, POCT; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LAB Urine Culture Routine Order" max="1" path="/items" name="Urine Culture, Routine; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Point of Care Testing (Non Glucose)"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34fd84e4-0ab2-4743-998e-892958eb37e4" concept_name="LAB Blood Gas Arterial POCT Order" max="1" path="/items" name="Blood Gas Arterial Point of Care; once; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous Point of Care; once; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4d9a5948-3693-4aa9-8bb8-c9ebbbb0b0bc" concept_name="RESP ADULT Blood Gas Venous Order" max="1" path="/items" name="Blood Gas Venous; once; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="60c9d6c9-bc5c-4b50-ad31-6bd68d3608b9" concept_name="LAB Lactate Order" max="1" path="/items" name="Lactate; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0f538df2-15d7-4385-844b-7fc2c7d3d6a9" concept_name="Blood Culture Panel Adult Order Group" max="1" path="/items" name="Blood Culture Panel - Adult x 2"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a58c3be-c2ab-4e47-9bdd-95028c436cf0" concept_name="DI GR Chest 1 Projection Order" max="1" path="/items" name="GR Chest 1 Projection"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32b9c327-eeec-4863-9438-b5df677532ee" concept_name="DI GR Kidneys Ureters Bladder 1 Projection Order" max="1" path="/items" name="GR Kidneys Ureters Bladder 1 Projection"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Computed Tomography">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e753e69-5756-462f-9523-291bb62447de" concept_name="DI CT Abdomen and Pelvis Order" max="1" path="/items" name="CT Abdomen and Pelvis"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a418963-c457-4d5f-8f7b-0b7e7074a3b0" concept_name="DI CT Abdomen and Pelvis Enhanced Order" max="1" path="/items" name="CT Abdomen and Pelvis Enhanced"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ultrasound">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="515dcc3a-54f9-42ba-8234-e137cea87c44" concept_name="DI US Abdomen Order" max="1" path="/items" name="US Abdomen"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="af5c3844-84ed-4e31-b1d1-d9cb27b520e1" concept_name="DI US Pelvis Female Order" max="1" path="/items" name="US Pelvis Female"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0401cccb-4be5-4dc0-a7a1-9e11ab8f48d5" concept_name="DI US Pelvis Male Order" max="1" path="/items" name="US Pelvis Male"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ef574290-2e87-4892-93e1-5d849b5fe565" concept_name="Fluids and Electrolytes Order Panel Order Panel" max="1" path="/items" name="Fluids and Electrolytes Order Panel"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PO Electrolyte Replacement"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Electrolyte Replacement"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cystitis - Empiric Therapy, review with C&amp;S results">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Females or Males with First Episode">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="39559aa9-573b-4320-b089-dcf2570071f9" concept_name="PHARM nitrofurantoin Capsule Order" max="1" path="/items" name="nitrofurantoin Capsule; 100 mg, oral, 2 times per day,  for 5 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ac2b6859-2d2c-4a73-b4f1-4689b91df017" concept_name="PHARM fosfomycin Packet 3 g Order" max="1" path="/items" name="fosfomycin Packet 3 g; Alternative when nitrofuratoin can&apos;t be used due to allergy/intolerance/resistance/renal dysfunction (CrCl less than 40 mL/min) - fosfomycin packet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Alternative for 1st time cystitis and no antibiotic exposure within last 6 months">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="12aa6a8f-63ce-464c-a35b-b1462cc041a2" concept_name="PHARM cephaLEXIN Tablet Order" max="1" path="/items" name="cephaLEXIN Tablet; 500 mg, oral, 4 times per day, for 5 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ea61b9b-b736-4542-a289-74e1b3eaf1b2" concept_name="PHARM sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS) Order" max="1" path="/items" name="sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS); 160 mg of trimethoprim, oral, 2 times per day, for 3 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6a77701c-5ee7-4192-a328-4dce64ab54b8" concept_name="PHARM ciprofloxacin Tablet Order" max="1" path="/items" name="ciprofloxacin Tablet; 250 mg, oral, 2 times per day, 2 hours after breakfast and supper, for 3 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5455a834-6ac8-4452-94d4-3b261b4bd2a1" concept_name="PHARM ceFIXime Tablet Order" max="1" path="/items" name="ceFIXime Tablet; Alternative in other patients: ceFIXime tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pregnant">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="39559aa9-573b-4320-b089-dcf2570071f9" concept_name="PHARM nitrofurantoin Capsule Order" max="1" path="/items" name="nitrofurantoin Capsule; 100 mg, oral, 2 times per day,  for 7 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="12aa6a8f-63ce-464c-a35b-b1462cc041a2" concept_name="PHARM cephaLEXIN Tablet Order" max="1" path="/items" name="cephaLEXIN Tablet; 500 mg, oral, 4 times per day, for 7 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5455a834-6ac8-4452-94d4-3b261b4bd2a1" concept_name="PHARM ceFIXime Tablet Order" max="1" path="/items" name="ceFIXime Tablet; 400 mg, oral, daily, for 7 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ac2b6859-2d2c-4a73-b4f1-4689b91df017" concept_name="PHARM fosfomycin Packet 3 g Order" max="1" path="/items" name="fosfomycin Packet 3 g; 3 g, oral, once"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #3"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ea61b9b-b736-4542-a289-74e1b3eaf1b2" concept_name="PHARM sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS) Order" max="1" path="/items" name="sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS); Alternative (avoid in first trimester and after 32 weeks gestation): sulfamethoxazole-trimethoprim 800 mg-160 mg per tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Complicated UTI or Males Greater than first episode - Empiric Therapy, review with C&amp;S results">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Lower urinary tract and afebrile, systemically well:">
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5455a834-6ac8-4452-94d4-3b261b4bd2a1" concept_name="PHARM ceFIXime Tablet Order" max="1" path="/items" name="ceFIXime Tablet; 400 mg, oral, daily, for 10 days"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="af9efb9f-4a73-4bfd-bf48-cc51cc6c2c0f" concept_name="PHARM amoxicillin-clavulanic acid, (7:1) Tablet 875 mg-125 mg (Clavulin 875) Order" max="1" path="/items" name="amoxicillin-clavulanic acid, (7:1) Tablet 875 mg-125 mg (Clavulin 875); 1 tablet, oral, 2 times per day, for 10 days"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6a77701c-5ee7-4192-a328-4dce64ab54b8" concept_name="PHARM ciprofloxacin Tablet Order" max="1" path="/items" name="ciprofloxacin Tablet; 500 mg, oral, 2 times per day, 2 hours after breakfast and supper, for 7 days"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ea61b9b-b736-4542-a289-74e1b3eaf1b2" concept_name="PHARM sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS) Order" max="1" path="/items" name="sulfamethoxazole-trimethoprim Tablet 800 mg-160 mg (SEPTRA DS); 160 mg of trimethoprim, oral, 2 times per day, for 10 days"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            </Item>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Upper urinary tract and/or febrile, systemically unwell:">
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="efb7f546-10b0-4aad-a930-97faaf58e5e2" concept_name="PHARM ampicillin injection Order" max="1" path="/items" name="ampicillin injection; 2 g, intravenous, every 6 hours, scheduled, for 10 days"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="AND one of the following:">
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 1,000 mg, intravenous, every 24 hours, scheduled, for 10 days"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+              </Item>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            </Item>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Catheter-associated UTI (CA-UTI)">
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Symptomatic:">
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5455a834-6ac8-4452-94d4-3b261b4bd2a1" concept_name="PHARM ceFIXime Tablet Order" max="1" path="/items" name="ceFIXime Tablet; 400 mg, oral, daily, for 10 days"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="af9efb9f-4a73-4bfd-bf48-cc51cc6c2c0f" concept_name="PHARM amoxicillin-clavulanic acid, (7:1) Tablet 875 mg-125 mg (Clavulin 875) Order" max="1" path="/items" name="amoxicillin-clavulanic acid, (7:1) Tablet 875 mg-125 mg (Clavulin 875); 1 tablet, oral, 2 times per day, for 10 days"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6a77701c-5ee7-4192-a328-4dce64ab54b8" concept_name="PHARM ciprofloxacin Tablet Order" max="1" path="/items" name="ciprofloxacin Tablet; 500 mg, oral, 2 times per day, 2 hours after breakfast and supper, for 7 days"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+              </Item>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Febrile, systemically unwell">
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="efb7f546-10b0-4aad-a930-97faaf58e5e2" concept_name="PHARM ampicillin injection Order" max="1" path="/items" name="ampicillin injection; 2 g, intravenous, every 6 hours, scheduled, for 10 days"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="AND one of:">
+                  <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 1,000 mg, intravenous, every 24 hours, scheduled, for 10 days"/>
+                  <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+                  <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)"/>
+                  <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+                </Item>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+              </Item>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            </Item>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pyelonephritis">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hospitalized/Septic">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 1,000 mg, intravenous, every 24 hours, scheduled, for 10 days"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; (7 mg/kg based on IBW, or dosing weight if total body weight more than 20% above IBW)"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pregnancy - follow up cultures 1 week after therapy and monthly for duration of pregnancy">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 1,000 mg, intravenous, every 24 hours, scheduled, for 10 days"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Alternative">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="efb7f546-10b0-4aad-a930-97faaf58e5e2" concept_name="PHARM ampicillin injection Order" max="1" path="/items" name="ampicillin injection; 2 g, intravenous, every 6 hours, scheduled, for 10 days"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urosepsis">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="A) If uncomplicated">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 1,000 mg, intravenous, every 24 hours, scheduled, STAT"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; (7 mg/kg actual or ideal body weight, whichever is less. Use dosing weight if actual body weight greater than 20% above ideal body weight)"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="B) For significant symptomatic UTI, with the suspect or proven enterococcus  – cefTRIAXone + vancomycin">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cefTRIAXone and vancomycin">
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; 1,000 mg, intravenous, every 24 hours, scheduled, Reassess at 48-72 hours with culture results"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="vancomycin Loading dose followed by scheduled dose">
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 25 mg/kg/dose, intravenous, once, STAT. Loading Dose"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed By"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, intravenous, every 12 hours. Reassess at 48-72 hours with culture results"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #2"/>
+              </Item>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #1"/>
+            </Item>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="C) If complicated (antibiotics in past 3 months, obstructive uropathy, recent instrumentation, immunocompromised)">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ab1712c1-797c-4370-a11b-a2f0c31cfc8d" concept_name="PHARM piperacillin-tazobactam injection Order" max="1" path="/items" name="piperacillin-tazobactam injection; 3.375 g, intravenous, every 6 hours, for 10 days"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="D) If septic shock hypotension, lactate greater than 4, or end organ failure AND, previous ESBL/ampC/carbapenemase-producing organism or recent piperacillin tazobactam or recent travel to South Asia">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="meropenem AND vancomycin">
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cbe5b12d-2960-43f4-9c40-f6ae2cc4aee6" concept_name="PHARM meropenem injection Order" max="1" path="/items" name="meropenem injection; 500 mg, intravenous, every 6 hours, scheduled, STAT"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="vancomycin loading dose followed by scheduled dose (dose based on actual body weight/frequency based on CrCl and dosing tables)">
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 25 mg/kg/dose, intravenous, once, STAT. Loading Dose"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed By"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, intravenous, every 12 hours. Reassess at 48-72 hours with culture results"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #3"/>
+              </Item>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #1"/>
+            </Item>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="If carbapenem allergy - ciprofloxacin AND tobramycin AND vancomycin">
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6a77701c-5ee7-4192-a328-4dce64ab54b8" concept_name="PHARM ciprofloxacin Tablet Order" max="1" path="/items" name="ciprofloxacin Tablet; 400 mg, intravenous, every 12 hours, scheduled"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e7b9a44-76ac-43f9-8455-4ae6d85e5291" concept_name="PHARM tobramycin injection Order" max="1" path="/items" name="tobramycin injection;  (based on ideal body weight OR dosing weight if obese)"/>
+              <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="vancomycin loading dose followed by scheduled dose (dose based on actual body weight/frequency based on CrCl and dosing tables)">
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 25 mg/kg/dose, intravenous, once, STAT. Loading Dose"/>
+                <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed By"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin injection; 15 mg/kg/dose, intravenous, every 12 hours. Reassess at 48-72 hours with culture results"/>
+                <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #4"/>
+              </Item>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #2"/>
+            </Item>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inpatient Specialty Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24ae8b49-bb38-4705-9dec-fd3ed26f8989" concept_name="CONS Inpatient Consult to Hospital Medicine Order" max="1" path="/items" name="Inpatient Consult to Hospital Medicine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10323cf0-19f2-43cc-b986-28785b081372" concept_name="CONS Inpatient Consult to Internal Medicine Order" max="1" path="/items" name="Inpatient Consult to Internal Medicine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b694043e-6389-4b06-8868-305813f4a5ee" concept_name="CONS Inpatient Consult to Infectious Diseases Order" max="1" path="/items" name="Inpatient Consult to Infectious Diseases"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="189e5f9c-ea3b-4019-8e3d-74a449b5e92f" concept_name="CONS Inpatient Consult to Urology Order" max="1" path="/items" name="Inpatient Consult to Urology"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Assistive Devices"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Instructions/Follow Up"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Referrals"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Labs/Diagnostic Imaging"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications"/>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
