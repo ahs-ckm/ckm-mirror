@@ -236,7 +236,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Is this standard of care for nursing, or is this order required? Are these the approved tools within AHS/Connect Care?&lt;/p&gt;</value>
+        <value>&lt;p&gt;Consider using Pain Score PRN (rather than Nursing communication)&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -248,7 +248,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Is this standard of care for nursing, or is this order required?&lt;/p&gt;</value>
+        <value>&lt;p&gt;Additional options to consider:&lt;br&gt;- Apply Warming Blanket&lt;br&gt;- Apply Cooling Blanket&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -260,7 +260,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Is this standard of care for nursing, or is this order required?&lt;/p&gt;</value>
+        <value>&lt;p&gt;This is standard of care for nursing - order not required.&lt;/p&gt;&lt;p&gt;ESAS - flowsheet built into CC&lt;br&gt;PAINAD - option within pain management flowsheet (includes row for response to intervention)&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -476,6 +476,18 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Allied Health Consults&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Which parts of this guidance is intended for prescribers, and which for the consulted department?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Pharmacy Consult:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If available consider Pharmacy referral for medication review if patient is&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/em&gt;&lt;em&gt;on greater than 5&amp;nbsp; medications total&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/em&gt;&lt;em&gt;on greater than 1 psychoactive medication&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/em&gt;&lt;em&gt;Has renal or liver dysfunction&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Pharmacy consult to include paper bag test where home medication use/adherence uncertain, assistance with deprescribing if high risk medications.&amp;nbsp; &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Nutrition Services Consult:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider a dietitian referral and notify physician/nurse practitioner when there has been u&lt;/em&gt;&lt;em&gt;intentional weight loss in last 6 months AND eating less than usual for more than a week pre-admission or patient is eating less than 50% of meals for greater than 24 hours in hospital.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Physical Therapy Consult:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider Physical Therapy referral for maintaining mobility and/or concerns about gait,&amp;nbsp;endurance, balance or recurrent falls&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Occupational Therapy:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider delaying Occupational Therapy referrals for cognitive assessments until after patient has had sufficient opportunity to adequately recover/plateau from acute issues; note: delirium can take weeks to months to completely resolve&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Allied Health Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pharmacy&apos;]/activities[at0001]">
     <items>
       <item>
@@ -505,6 +517,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Reason for consult: ***&lt;/p&gt;&lt;p&gt;Consider delaying Occupational Therapy referrals for cognitive assessments until after patient has had sufficient opportunity to adequately recover/plateau from acute issues; note: delirium can take weeks to months to completely resolve&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Precautions and Safety&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;These orders are not needed&lt;/p&gt;&lt;p&gt;Upon admission - nursing completed fall risk via nursing admission navigator&lt;/p&gt;&lt;p&gt;If fall risk identified (automatically populates onto patient storyboard udner allergies/alerts)&lt;/p&gt;&lt;p&gt;At start of each shift and if change in fall status - nursing will re-do the schmid or scott score and that will guide appropriate actions&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -648,6 +668,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f4f2f8ff-c771-4e1a-b005-449449893f93" concept_name="CONS Inpatient Consult to Palliative Medicine Order" max="1" path="/items" name="Inpatient Consult to Palliative Medicine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inpatient Allied Health Consults">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76f9cb07-110b-46b2-927c-581c85b8ae3c" concept_name="CONS Inpatient Consult to Pharmacy Order" max="1" path="/items" name="Inpatient Consult to Pharmacy"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Nutrition Services_Dietitian Order" max="1" path="/items" name="Inpatient Consult to Nutrition Services / Dietitian"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy"/>
