@@ -167,10 +167,6 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;TTP Only&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Clinical Guidance should also appear in the Transfuse Plasma order&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;&lt;em&gt;In patients with TTP, replacement fluid should be 100% plasma. Treatment should be done in consultation with hematology.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
@@ -227,7 +223,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (single select) #1"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="TTP Only">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="615f6b48-af04-4bf9-86ae-dac1d4e83f37" concept_name="Blood Administration_Fresh Frozen Plasma ICU TPE TTP ONLY Adult Order Group" max="1" path="/items" name="Blood Administration - Fresh Frozen Plasma #1"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ce4b5a68-4610-4147-ada8-c47a51bc6ac3" concept_name="Blood Administration_Fresh Frozen Plasma ICU TPE Adult Order Group" max="1" path="/items" name="Blood Administration - Fresh Frozen Plasma"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d17fbbc9-ca2e-43e3-933d-58b2d9680b8b" concept_name="CONS Inpatient Consult to Hematology Order" max="1" path="/items" name="Inpatient Consult to Hematology"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
