@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>86d0abd7-ffd4-449d-9963-f72f9947057d</id>
+  <name>Automated Red Blood Cell Exchange Transfusion Pediatric Inpatient Order Set</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>&lt;p&gt;Exchange, RBC, Automated Exchange&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Keywords:&amp;nbsp;Exchange, RBC, Automated Exchange&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Note – this Order Set is to be used for urgent inpatient exchange transfusions. Routine exchange transfusions should be ordered through the therapy plans.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-Respiratory Monitoring: Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Can the patient be off monitoring for tests and activities (including therapy, ambulation, off-unit procedures, showers, bathroom)? Yes&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication: For Suspected Transfusion Reaction&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;1) Stop transfusion. Keep IV line open with normal saline.&lt;/p&gt;&lt;p&gt;2) Complete transfusion reaction form.&lt;/p&gt;&lt;p&gt;3) Notify blood bank of reaction.&lt;/p&gt;&lt;p&gt;4) Order tests appropriate to the signs and symptoms according to the provincial transfusion reaction algorithm chart (hyperlink located in Side Bar report &amp;amp; Blood Admin Navigator).&lt;/p&gt;&lt;p&gt;5) Contact physician/NP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Pause procedure and notify pediatric hematologist on call or NP STAT if any of the above or below present:&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;1) Citrate toxicity: decreased BP, paresthesias, cramping/twitching, chest pain&lt;/p&gt;&lt;p&gt;2) Anaphylaxis: urticaria, angioedema, SOB, wheezing/stridor, vital sign changes, nausea/vomiting&lt;/p&gt;&lt;p&gt;3) Transfusion Hemolytic reaction: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Fever greater than 38°C and increase at least 1°C from&amp;nbsp;baseline (chills) &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Sudden vital sign changes &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Abdominal/Flank Pain &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Chest Pain &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Dark colored urine/portwine colored IV tubing &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Dyspnea (shortness of breath) decreased O2 Sats &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;• Restlessness&lt;/p&gt;&lt;p&gt;• Nausea/GI symptoms&lt;/p&gt;&lt;p&gt;&amp;nbsp;Also, begin Transfusion Reaction Protocol&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Systolic Blood Pressure Greater Than (mmHg):&lt;/p&gt;&lt;p&gt;Systolic Blood Pressure Less Than (mmHg):&lt;/p&gt;&lt;p&gt;Diastolic Blood Pressure Greater Than (mmHg):&lt;/p&gt;&lt;p&gt;Diastolic Blood Pressure Less Than (mmHg):&lt;/p&gt;&lt;p&gt;Heart Rate Greater Than (bpm):&lt;/p&gt;&lt;p&gt;Heart Rate Less Than (bpm):&lt;/p&gt;&lt;p&gt;Respiratory Rate Greater Than (breaths per minute):&lt;/p&gt;&lt;p&gt;Respiratory Rate Less Than (breaths per minute):&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP) #1&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;immediately if there is an downward trend for Ionized Calcium or if there are any abnormal results&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Reticulocytes&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hemoglobin F and S Quantitation&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Calcium, Ionized&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Magnesium&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Lactate Dehydrogenase (LD)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bilirubin, Total&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ferritin&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;During Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Draw at halfway point in RBC Exchange&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology #1&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology #1&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hemoglobin F and S Quantitation&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology #1&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Direct Antiglobulin Test&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post Transfusion Labs&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry #1&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Calcium, Ionized&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Frequency: once&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Volume to be exchanged: *** (based on blood availability or other factors)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Desired Post exchange hematocrit:&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;0.3&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;OR&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Other: to equal pre exchange Hct, unless pre exchange Hct is less than 0.3, then the desired post Hct is to be 0.3&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Inlet speed max (mL/min): 50 mL/min&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Fluid Replacement: 100%&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;font-family:Helvetica&quot;&gt;Average Replacement Hct: 60%&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anticoagulants&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;ACDA Ratio: 10.1-13:1&lt;/p&gt;&lt;p&gt;Continuous infusion for duration of treatment&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Carbonate&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For patients less than 12 years:&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;For asymptomatic patients with ionized Calcium greater than 0.9 and less than 1.1. Review with NP/MD prior to administration&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Carbonate&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For patients 12 years or older:&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;For asymptomatic patients with ionized Calcium greater than 0.9 and less than 1.1. Review with NP/MD prior to administration&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Gluconate&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric dose (patients under 50 kg)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Aug 19 - awaiting links to calcium protocols that could be referenced for more specific information&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Add 50 mL (5 grams) of 10% calcium gluconate with 50 mL normal saline, for a total volume of 100 mLs of solution. Unit staff/Apheresis team to prepare. Pharmacy do Not&amp;nbsp;send. - Apheresis team to use infusion rate as per Pediatric Apheresis Red Blood Cell Exchange Protocol&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Gluconate&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult dose (patients 50 kg or over)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Aug 19 - awaiting links to calcium protocols that could be referenced for more specific information&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Unit staff/Apheresis team to prepare. Pharmacy do Not&amp;nbsp;send. Apheresis team to use infusion rate as per Adult Apheresis Red Blood Cell Exchange Protocol&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Gluconate&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Emergency Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;For severe citrate toxicity with symptoms (decreased BP, paresthesia, cramping, chest pain) refractory to increase in calcium gluconate continuous infusion rate.&lt;/p&gt;&lt;p&gt;Administration Instructions:&lt;/p&gt;&lt;p&gt;- Mix 50mL calcium gluconate 10%&amp;nbsp; (100mg/ml) with 50 ml sodium chloride 0.9% such that solution 5% calcium gluconate (50mg/ml = 0.1mmol/ml). Bolus dose&amp;nbsp; 50-100mg/kg up to a Maximum dose 2000mg IV; administer up to a maximum rate of 100mg/min (2ml/min). Must be administered in large vein IV or centrally.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Chloride&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Less than 45 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Concentration: 10 mg/mL&lt;br&gt;Start infusion rate at 10mg/kg/hour. Titrate accordingly as ordered by the pediatric MRHP based on ionized Calcium results. Mix 1000mg (10mls) of 10% calcium chloride in 100mls of normal saline for a concentration of 10mg/ml&lt;/p&gt;&lt;p&gt;Unit Staff/Apheresis team to prepare. Pharmacy do not send&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Chloride&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;45 kg or over&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Concentration: 10 mg/mL&lt;/p&gt;&lt;p&gt;Start infusion rate at 500mg/hour. Titrate accordingly as ordered by the pediatric MRHP based on Ionized Calcium results. Mix 1000mg (10mL) of 10% calcium chloride in 100mLs of normal saline for a concentration of 10mg/mL. Unit Staff/Apheresis team to prepare. Pharmacy do not send&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~86d0abd7-ffd4-449d-9963-f72f9947057d~NAME~Automated Red Blood Cell Exchange Transfusion Pediatric Inpatient Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Automated Red Blood Cell Exchange Transfusion Pediatric Inpatient">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consent">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9980910-d476-44ac-a62b-d0c3154691e6" concept_name="PC Verify Informed Consent Order" max="1" path="/items" name="Verify Informed Consent; Confirm informed consent has been obtained"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; per protocol. Vital Signs pre exchange, 15 minutes into start of exchange, then hourly until exchange is complete"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="PC Cardio_Respiratory Monitoring Order" max="1" path="/items" name="Cardio-Respiratory Monitoring: Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication: For Suspected Transfusion Reaction"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; For Anaphylaxis follow Provincial Anaphylaxis Policy and Flow chart"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Pause procedure and notify pediatric hematologist on call or NP STAT if any of the above or below present:"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication: Ensure Calcium Gluconate (inpatient unit) or Calcium Chloride (PICU) is available at bedside in case emergency dose is required"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy: Titrate to Maintain Target Saturation greater than 95%"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Notify Hematologist/NP of ionized Calcium result drawn at halfway point during apheresis exchange"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP) #1"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre Transfusion Labs">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d23cd527-4cfe-4b97-89a5-d08cb98558ca" concept_name="LAB Reticulocytes Order" max="1" path="/items" name="Reticulocytes"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29e480cb-309e-41c4-a2a2-0280133e301c" concept_name="LAB Hemoglobin F and S Quantitation Order" max="1" path="/items" name="Hemoglobin F and S Quantitation"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium Ionized Order" max="1" path="/items" name="Calcium, Ionized"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) Order" max="1" path="/items" name="Lactate Dehydrogenase (LD)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c77ec2ba-b104-462b-9aea-2ccb9ae9885a" concept_name="LAB Ferritin Order" max="1" path="/items" name="Ferritin"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f7843eda-b7e9-44b2-a5c1-a0942a275fb1" concept_name="LAB Iron and TIBC Order" max="1" path="/items" name="Iron and TIBC"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT)"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LAB Type and Screen Order" max="1" path="/items" name="Type and Screen"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="During Transfusion Labs">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium Ionized Order" max="1" path="/items" name="Calcium, Ionized"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Post Transfusion Labs">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology #1">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29e480cb-309e-41c4-a2a2-0280133e301c" concept_name="LAB Hemoglobin F and S Quantitation Order" max="1" path="/items" name="Hemoglobin F and S Quantitation"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d23cd527-4cfe-4b97-89a5-d08cb98558ca" concept_name="LAB Reticulocytes Order" max="1" path="/items" name="Reticulocytes"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbf4a251-314e-47f5-bf4d-d9fe30bea419" concept_name="LAB Direct Antiglobulin Test Order" max="1" path="/items" name="Direct Antiglobulin Test"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry #1">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random Order" max="1" path="/items" name="Glucose, Random"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium Ionized Order" max="1" path="/items" name="Calcium, Ionized"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium Order" max="1" path="/items" name="Magnesium"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate Order" max="1" path="/items" name="Phosphate"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) Order" max="1" path="/items" name="Lactate Dehydrogenase (LD)"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation #1">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f8b7b7e1-6e8f-4e97-87fb-3b479754cdb2" concept_name="LAB Fibrinogen Order" max="1" path="/items" name="Fibrinogen"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine #1">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LAB Urinalysis Order" max="1" path="/items" name="Urinalysis"/>
+        </Item>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 250 mL, intravenous, bolus, once. Administer over 30 minutes. Bolus pre red blood cell exchange."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 250 mL, intravenous, bolus, once. Bolus midway through red blood cell exchange procedure"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM electrolyte solution (Plasma-Lyte A) injection Order" max="1" path="/items" name="electrolyte solution (Plasma-Lyte A) injection; *** mL, intravenous, bolus, once"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="397fc363-ce1c-4971-ac0e-02b1ffc2e63d" concept_name="REN Red Cell Exchange Order" max="1" path="/items" name="Red Cell Exchange"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticoagulants">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8b184d5-7460-4b2e-b1e6-bed7584fe1ab" concept_name="PHARM anticoagulant citrate dextrose solution formula-A injection Order" max="1" path="/items" name="anticoagulant citrate dextrose solution formula-A injection; 750 mL, extracorporeal, once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antihistamine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e291a7f8-304b-4996-bae4-bd0898744b91" concept_name="PHARM cetirizine Oral liquid 1 mg/mL Order" max="1" path="/items" name="cetirizine Oral liquid 1 mg/mL; 5 mg PO once as needed for allergic reaction"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03598775-beba-4039-87cd-db82b478f155" concept_name="PHARM cetirizine Tablet Order" max="1" path="/items" name="cetirizine Tablet; 5 mg PO once as needed for allergic reaction"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics/Antipyretics">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM acetaminophen ORAL liquid 80 mg/mL Order" max="1" path="/items" name="acetaminophen ORAL liquid 80 mg/mL; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen Chewable tablet Order" max="1" path="/items" name="acetaminophen Chewable tablet; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen Tablet; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ondansetron Oral liquid 0.8 mg/mL Order" max="1" path="/items" name="ondansetron Oral liquid 0.8 mg/mL; 4 mg PO every 8 hours as needed for nausea, vomiting"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="OR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron Tablet; 4 mg PO every 8 hours as needed for nausea, vomiting"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Electrolytic, Caloric and Water balance">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium Carbonate">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For patients less than 12 years:">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88262e5e-d31d-44a9-81e0-e3e6624b570c" concept_name="PHARM calcium carbonate (as elemental) Chewable tablet Order" max="1" path="/items" name="calcium carbonate (as elemental) Chewable tablet; 2 tabs PO, once PRN"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For patients 12 years or older:">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88262e5e-d31d-44a9-81e0-e3e6624b570c" concept_name="PHARM calcium carbonate (as elemental) Chewable tablet Order" max="1" path="/items" name="calcium carbonate (as elemental) Chewable tablet; 4 tabs PO, once PRN"/>
+          </Item>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium Gluconate">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric dose (patients under 50 kg)">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a604efde-e1e5-4afd-adb5-7454b394e232" concept_name="PHARM calcium gluconate infusion Order" max="1" path="/items" name="calcium gluconate infusion; 5,000 mg, intravenous, continuous"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Adult dose (patients 50 kg or over)">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a604efde-e1e5-4afd-adb5-7454b394e232" concept_name="PHARM calcium gluconate infusion Order" max="1" path="/items" name="calcium gluconate infusion; 5,000 mg, intravenous, continuous"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Emergency Dose">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c04d7d63-db05-462b-8a2c-d3ad78b13713" concept_name="PHARM calcium gluconate injection Order" max="1" path="/items" name="calcium gluconate injection; 50 mg/kg/dose, intravenous, once as needed"/>
+          </Item>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium Chloride">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Less than 45 kg">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride injection; 10 mg/kg/hour, intravenous, continuous"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="45 kg or over">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride injection; 500 mg/hr (50 mL/hr), intravenous, continuous"/>
+          </Item>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="841e131f-3f17-4587-97ee-e11286b50532" concept_name="Anaphylaxis Management Inpatient Pediatric Order Group" max="1" path="/items" name="Anaphylaxis Management"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="98e7f2ef-778b-45aa-bca4-cae6b3ec3431" concept_name="Hematology Femoral Line Insertion and Removal Inpatient Pediatric Order Panel" max="1" path="/items" name="Femoral Line Insertion and Removal Panel"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="83cbaf81-7a86-4bbf-9e0e-f2ef6a407b4a" concept_name="Pediatric Central Catheter Care Smart Group" max="1" path="/items" name="Pediatric Central Catheter Care"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="82e7d5e2-4b09-4c0a-b91f-e92e8099e3e3" concept_name="Hematology Vortex Dual Port Care Pediatric Inpatient Order Panel" max="1" path="/items" name="Vortex Dual Port Care"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
