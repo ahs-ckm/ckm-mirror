@@ -71,20 +71,16 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;clarification required on CDS specific to hypophysitis vs Thyroid as well as which meds to include in each group&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;For hypophysitis&amp;nbsp;checkpoint inhibitor related toxicity grading and treatment recommendations, refer to&amp;nbsp;&lt;em&gt;Supp-018 Follow-Up and Management of Checkpoint Inhibitor Related Toxicities in Cancer Patients (URL:&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Follow_up_Management_Checkpoint_Inhibitor_Related_Toxicities)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Always start corticosteroids several days before thyroid hormone to prevent percipitating adrenal crisis&lt;/p&gt;&lt;p&gt;Follow Free T4 for thyroid hormone replacement titration (TSH is not accurate)&lt;/p&gt;&lt;p&gt;Consider initial pulse dose therapy with prednisone 1-2 mg/kg/dose, oral, daily (or equivalent) tapered over at least 1-2 weeks&lt;/p&gt;&lt;p&gt;Consider testosterone or estrogen supplementation if needed in those without contraindications&lt;/p&gt;</value>
+        <value>&lt;p&gt;For hypophysitis checkpoint inhibitor related toxicity grading and treatment recommendations, refer to&amp;nbsp;&lt;em&gt;Supp-018 Follow-Up and Management of Checkpoint Inhibitor Related Toxicities in Cancer Patients&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;(URL: https://ahsweb.ca/HEE/Checkpoint-Inhibitors-Information)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Always start corticosteroids several days before thyroid hormone to prevent percipitating adrenal crisis&lt;br&gt;Follow Free T4 for thyroid hormone replacement titration (TSH is not accurate)&lt;br&gt;Consider initial pulse dose therapy with prednisone 1-2 mg/kg/dose, oral, daily (or equivalent) tapered&lt;br&gt;over at least 1-2 weeks.&lt;br&gt;Consider testosterone or estrogen supplementation if needed in those without contraindications.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;hydrocortisone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;hydrocortisone Tablet; 10 mg, oral, daily with breakfast&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;is either prednisone OR hydrocortisone as in should they be single select&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Dr Pabani to confirm dosing for hypophysitis&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -116,6 +112,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE Tablet Order" max="1" path="/items" name="predniSONE Tablet; 1 mg/kg/dose, oral, daily"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="hydrocortisone">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f977fe67-2210-4b12-ad15-ad5877e42b9a" concept_name="PHARM hydrocortisone Tablet Order" max="1" path="/items" name="hydrocortisone Tablet; 10 mg, oral, daily with breakfast"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="and (linked order)"/>
