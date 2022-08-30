@@ -87,7 +87,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-operative Eating and Drinking&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-operative Carbohydrate Loading&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -148,6 +156,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Target Saturation Min: 95&lt;/p&gt;&lt;p&gt;Titrate Oxygen to maintain saturation of equal to or greater than 95%. Use nasal prongs for flow rated below 5 litres per minute.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Stat&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Refer to indications in Unscheduled Caesarean Delivery: Pre-Operative Preparation Protocol.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -259,7 +275,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;If signs and symptoms of hemodynamic instability/shock are present&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;If signs and symptoms of hemodynamic instability/shock are present&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -283,7 +299,15 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;em&gt;Discontinue labour medications and infusions and remove all unnecessary lines and monitors.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consult the MRHP for direction on medications that may need to be continued&lt;/em&gt;.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;em&gt;Consult the MRHP for direction on medications that may need to be continued (e.g. magnesium sulfate, insulin infusions)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;If the patient&apos;s weight is greater than 120 kg, or BMI creater than 30, they may require increased antibiotic dosing. Discuss with MRHP.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -299,6 +323,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e08e963a-501a-4461-9577-f1b0eff9e332" concept_name="Pre-operative Eating and Drinking Unscheduled C Section Order Group" max="1" path="/items" name="Pre-operative Eating and Drinking"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f8889b0e-34e2-430f-93bf-c70cc45d6bfa" concept_name="Pre-operative Carbohydrate Loading Order Group" max="1" path="/items" name="Pre-operative Carbohydrate Loading"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
@@ -312,6 +337,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9590e52f-1cd7-48fc-86e0-8e23cf66c5cc" concept_name="PC Height (or Length) and Weigh Order" max="1" path="/items" name="Height (or Length) and Weigh"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Remove all unnecessary lines and monitors. Notify the OR team if any lines or monitors are left in place (e.g. Fetal Scalp Electrode)"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fc216c0-a423-45c5-a3c2-5868c429b624" concept_name="PC Insert Indwelling Urinary Catheter Order" max="1" path="/items" name="Insert Indwelling Urinary Catheter"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="528e44bc-af74-465f-a535-3a62f4bb1d0c" concept_name="PC Sequential Compression Device Order" max="1" path="/items" name="Sequential Compression Device"/>
       </Item>
@@ -321,6 +347,7 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LAB Type and Screen Order" max="1" path="/items" name="Type and Screen"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For patients with hemodynamic instability, or who are at high risk of post-partum hemorrhage">
@@ -349,7 +376,9 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue labour medications and infusions (e.g. oxytocin infusion, amnioinfusion, dinoprostone vaginal insert)"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM ceFAZolin injection Order" max="1" path="/items" name="ceFAZolin injection"/>
       </Item>
     </Item>
