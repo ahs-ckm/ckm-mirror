@@ -80,7 +80,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Pending approval at Bronchiolitis Steering Committee&lt;/p&gt;</value>
+        <value>&lt;p&gt;Approved&amp;nbsp;at Bronchiolitis Steering Committee Sept 8/22&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -196,7 +196,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Autoexpand this section (pending approval at Bronchiolitis Steering Committee)&lt;/p&gt;</value>
+        <value>&lt;p&gt;Autoexpand this section (Approved&amp;nbsp;at Bronchiolitis Steering Committee Sept 8/22)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -232,6 +232,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP)&apos;]/activities[at0001]">
     <items>
       <item>
@@ -248,15 +256,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy; May use Heated Humidified High Flow&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy; Heated Humidified High Flow&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove &quot;May use&quot; from header &apos;May use Heated Humidified High Flow&apos;&lt;/p&gt;&lt;p&gt;default target saturation range to Other, 90&lt;/p&gt;&lt;p&gt;Oxygen therapy by flow:&amp;nbsp;&lt;strong&gt;High Flow nasal cannula;&amp;nbsp;Heated humidified high flow&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Remove oxygen therapy by FiO2 selection&lt;/p&gt;&lt;p&gt;Update guidance to match ED set&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;pending approval at Bronchiolitis Steering Committee&lt;/p&gt;</value>
+        <value>&lt;p&gt;Approval at Bronchiolitis Steering Committee Sept 8/22&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Routine&lt;/p&gt;&lt;p&gt;Titrate to Maintain Target Saturation Range: &lt;strong&gt;Other&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Target Saturation Min:&lt;strong&gt; 90&lt;/strong&gt;&lt;br&gt;Oxygen Therapy by FiO2. As needed based on patient Oxygen requirements (Select all that apply): &lt;strong&gt;Heated humidified high flow&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Alert physician if oxygen levels go below 90%.&lt;br&gt;Follow local policy and procedure for High Flow Nasal Cannula.&lt;br&gt;If no improvement in WOB and oxygenation in 2 hours consider patient a non-responder to High Flow Nasal Cannula; consider PICU consultation for bipap, CPAP or invasive ventilation.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Routine&lt;/p&gt;&lt;p&gt;Titrate to Maintain Target Saturation Range:&amp;nbsp;&lt;strong&gt;Other&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Target Saturation Min:&amp;nbsp;&lt;strong&gt;90&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply):&amp;nbsp;&lt;strong&gt;High Flow nasal cannula;&amp;nbsp;Heated humidified high flow&lt;/strong&gt;&lt;br&gt;&lt;em&gt;Alert physician if oxygen levels go below 90%. Follow local policy and procedure for High Flow Nasal Cannula. If no improvement in WOB and&amp;nbsp;oxygenation in 2 hours consider&amp;nbsp;patient a non-responder to High Flow Nasal Cannula; consider PICU consultation for bipap, CPAP or invasive ventilation.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -264,7 +276,15 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Routine&lt;br&gt;Titrate to Maintain Target Saturation Range: Other range&lt;br&gt;Target Saturation Min: 88&lt;/p&gt;</value>
+        <value>&lt;p&gt;Routine&lt;br&gt;Titrate to Maintain Target Saturation Range: Other range&lt;br&gt;Target Saturation Min: 88&lt;/p&gt;&lt;p&gt;Only applicable during Room Air Challenge&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -288,11 +308,27 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discontinue oxygen therapy once respiratory rate is less than 60 breaths per minute, child is able to feed and is and not showing signs of respiratory distress&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Room Air Trial&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Conditional PRN, Until Specified&lt;br&gt;Discontinue Trial if SPO2 less than (%): 88&lt;br&gt;For longer than: 5 mins&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trials can be considered and initiated by Nursing if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Past the peak of illness (typically Day 4 or 5 of illness)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Normal respiration rate&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Feeding well (NG removed), energy is improving&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Discuss with the MRHP if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; History of prematurity&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Corrected gestational age less than 44 weeks&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Significant co-morbidities&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Monitoring:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Discontinue continuous monitoring.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Check 02 Saturations at 30 minutes then q4h and PRN&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If Patient Fails Room Air Trial&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DO NOT restart continuous monitoring&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Check O2 saturation level every 4 hours&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; O2 saturation goal: goal greater than 88%&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Re-apply 02 at minimum 0.5 LPM.&amp;nbsp; More 02 may be required to achieve O2 sat goal.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trial may be done every 4-8 hour&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Conditional PRN, Until Specified&lt;br&gt;Discontinue Trial if SPO2 less than (%): 88&lt;br&gt;For longer than: 5 mins&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trials can be considered and initiated by Nursing if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Past the peak of illness (typically Day 4 or 5 of illness)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Normal respiration rate&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Feeding well (NG removed), energy is improving&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Discuss with the MRHP if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; History of prematurity&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Corrected gestational age less than 44 weeks&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Significant co-morbidities&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Monitoring:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Discontinue continuous monitoring.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Check 02 Saturations at 30 minutes then q4h and PRN&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If Patient Fails Room Air Trial&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DO NOT restart continuous monitoring&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Check O2 saturation level every 4 hours&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; O2 saturation goal: goal greater than 88%&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Re-apply 02 at minimum 0.5 LPM.&amp;nbsp; More 02 may be required to achieve O2 sat goal.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trial may be done every 4-8 hour&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Continuous oxygen sat monitoring is NOT required for all patients on oxygen or for weaning of oxygen. Should only be reserved for patients with concern for deterioration and is not a substitute for assessing respiratory status. Desaturation to 88% during sleep is acceptable. Intermittent desaturations to mid 80&apos;s can be normal in healthy infants. Intermittent oxygen saturation monitoring is strongly recommend for children who are improving in clinical condition whether they are on supplemental oxygen or not&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Room Air Trial&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -300,7 +336,7 @@
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -637,7 +673,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5babd97b-e40b-4f5f-80ac-1fb0441c5815" concept_name="PHARM sodium chloride Nasal drop 0.9% Order" max="1" path="/items" name="sodium chloride Nasal drop 0.9%; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy; May use Heated Humidified High Flow"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy; Heated Humidified High Flow"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Room Air Challenge">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f5ba477-b955-4478-9a34-f9bf70d7fccf" concept_name="RESP PED Inpatient Overnight Oximetry or Oxygen Assessment Order" max="1" path="/items" name="Inpatient Overnight Oximetry or Oxygen Assessment"/>
