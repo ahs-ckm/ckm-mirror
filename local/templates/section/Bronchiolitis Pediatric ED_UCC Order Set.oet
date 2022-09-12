@@ -79,6 +79,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Replace single preselected order with the Isolation order group - no preselects (Bronchiolitis Steering Committee Sept 12/22)&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Confirmed or suspected reason for contact &amp;amp; droplet isolation (select all that apply) &lt;strong&gt;Respiratory Infection, viral (e.g. Influenza)&lt;/strong&gt;&lt;/p&gt;</value>
       </item>
@@ -388,6 +392,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="322cf878-eede-4282-bcc5-a4a46d4f4d19" concept_name="Isolation Pediatric Order Group" max="1" path="/items" name="Isolation"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11afb2d3-2d4c-4ae8-8bef-9aa4d567abdc" concept_name="PC Initiate contact and droplet isolation Order" max="1" path="/items" name="Initiate contact and droplet isolation"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
