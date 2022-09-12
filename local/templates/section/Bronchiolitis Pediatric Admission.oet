@@ -175,8 +175,8 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pulse oximetry; every 4 to 8 hours until successful&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Should this be &apos;As needed&apos; rather than &apos;once&apos;?&lt;/p&gt;</value>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove this order&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -283,6 +283,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen Therapy&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;RTWG - Sept 12/22&lt;/p&gt;&lt;p&gt;This order is not required. The Room Air Trial order accounts for initiating oxygen if patient sats drop below 88%.&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Routine&lt;br&gt;Titrate to Maintain Target Saturation Range: Other range&lt;br&gt;Target Saturation Min: 88&lt;/p&gt;&lt;p&gt;Only applicable during Room Air Challenge&lt;/p&gt;</value>
       </item>
@@ -299,6 +303,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Overnight Oximetry or Oxygen Assessment&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove this order&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Transform.Clinical Notes</key>
         <value>&lt;p&gt;This is a one time order, will need to be re-ordered for any subsequent assessment&lt;/p&gt;</value>
       </item>
@@ -308,15 +316,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discontinue oxygen therapy once respiratory rate is less than 60 breaths per minute, child is able to feed and is and not showing signs of respiratory distress&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discontinue Continuous Monitoring: When initiating a room air trial, best practice is to discontinue continuous monitoring&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Change &quot;Discontinue oxygen therapy once respiratory rate is less than 60 breaths per minute, child is able to feed and is and not showing signs of respiratory distress&quot; to &quot;Discontinue Continuous Monitoring:&amp;nbsp;When initiating a room air trial, best practice is to discontinue continuous monitoring&quot;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Until discontinued&lt;/p&gt;&lt;p&gt;&lt;em&gt;When initiating a room air trial, please stop continuous monitoring. Check oxygen saturation at 30 min, then q4 hours and PRN. If oxygen is resumed, do not restart continuous monitoring.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discontinue oxygen therapy once respiratory rate is less than 60 breaths per minute, child is able to feed and is and not showing signs of respiratory distress&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discontinue Continuous Monitoring: When initiating a room air trial, best practice is to discontinue continuous monitoring&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -324,15 +336,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Room Air Trial&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Room Air Trial; every 4 to 8 hours until successful&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Conditional PRN, Until Specified&lt;br&gt;Discontinue Trial if SPO2 less than (%): 88&lt;br&gt;For longer than: 5 mins&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trials can be considered and initiated by Nursing if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Past the peak of illness (typically Day 4 or 5 of illness)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Normal respiration rate&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Feeding well (NG removed), energy is improving&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Discuss with the MRHP if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; History of prematurity&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Corrected gestational age less than 44 weeks&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Significant co-morbidities&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Monitoring:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Discontinue continuous monitoring.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Check 02 Saturations at 30 minutes then q4h and PRN&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If Patient Fails Room Air Trial&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DO NOT restart continuous monitoring&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Check O2 saturation level every 4 hours&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; O2 saturation goal: goal greater than 88%&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Re-apply 02 at minimum 0.5 LPM.&amp;nbsp; More 02 may be required to achieve O2 sat goal.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trial may be done every 4-8 hour&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Continuous oxygen sat monitoring is NOT required for all patients on oxygen or for weaning of oxygen. Should only be reserved for patients with concern for deterioration and is not a substitute for assessing respiratory status. Desaturation to 88% during sleep is acceptable. Intermittent desaturations to mid 80&apos;s can be normal in healthy infants. Intermittent oxygen saturation monitoring is strongly recommend for children who are improving in clinical condition whether they are on supplemental oxygen or not&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Conditional PRN, Until Specified&lt;br&gt;Discontinue Trial if SPO2 less than (%): 88&lt;br&gt;For longer than: 5 mins&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trials can be considered and initiated by Nursing if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Past the peak of illness (typically Day 4 or 5 of illness)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Normal respiration rate&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Feeding well (NG removed), energy is improving&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Discuss with the MRHP if:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; History of prematurity&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Corrected gestational age less than 44 weeks&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Significant co-morbidities&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Monitoring:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Discontinue continuous monitoring.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;s&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/s&gt;Check 02 Saturations at 30 minutes then q4h and PRN&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If Patient Fails Room Air Trial&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DO NOT restart continuous monitoring&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Check O2 saturation level every 4 hours&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; O2 saturation goal: goal greater than 88%&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Re-apply 02 at minimum 0.5 LPM.&amp;nbsp; More 02 may be required to achieve O2 sat goal.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Room Air Trial may be done every 4-8 hour until successful&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Continuous oxygen sat monitoring is NOT required for all patients on oxygen or for weaning of oxygen. Should only be reserved for patients with concern for deterioration and is not a substitute for assessing respiratory status. Desaturation to 88% during sleep is acceptable. Intermittent desaturations to mid 80&apos;s can be normal in healthy infants. Intermittent oxygen saturation monitoring is strongly recommend for children who are improving in clinical condition whether they are on supplemental oxygen or not&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Room Air Trial&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Room Air Trial; every 4 to 8 hours until successful&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -633,6 +645,7 @@
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="322cf878-eede-4282-bcc5-a4a46d4f4d19" concept_name="Isolation Pediatric Order Group" max="1" path="/items" name="Isolation"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11afb2d3-2d4c-4ae8-8bef-9aa4d567abdc" concept_name="PC Initiate contact and droplet isolation Order" max="1" path="/items" name="Initiate contact and droplet isolation"/>
       </Item>
     </Item>
@@ -686,8 +699,8 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Room Air Challenge">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f5ba477-b955-4478-9a34-f9bf70d7fccf" concept_name="RESP PED Inpatient Overnight Oximetry or Oxygen Assessment Order" max="1" path="/items" name="Inpatient Overnight Oximetry or Oxygen Assessment"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue oxygen therapy once respiratory rate is less than 60 breaths per minute, child is able to feed and is and not showing signs of respiratory distress"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c5ee8792-4813-4ed3-b00c-96ec0ce4a373" concept_name="RESP Room Air Trial Order" max="1" path="/items" name="Room Air Trial"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Discontinue Continuous Monitoring: When initiating a room air trial, best practice is to discontinue continuous monitoring"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c5ee8792-4813-4ed3-b00c-96ec0ce4a373" concept_name="RESP Room Air Trial Order" max="1" path="/items" name="Room Air Trial; every 4 to 8 hours until successful"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
       </Item>
