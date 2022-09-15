@@ -76,6 +76,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Steroids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;The default duration is 10 days, we can&apos;t default this to blank. Suggest 30 days?&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Glaucoma Amb Prescription Medications Order Group">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Alpha-Adrenergics">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b6113043-57bd-49b9-b8cc-d709f8751e78" concept_name="PHARM brimonidine Eye drop 0.2% Order" max="1" path="/items" name="brimonidine Eye drop 0.2%; 1 drop two (2) times per day."/>
@@ -93,8 +101,9 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Beta-blockers">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1e5cf0b7-1780-44d6-8494-da6f674f54b6" concept_name="PHARM timolol Eye drop 0.5% Order" max="1" path="/items" name="timolol Eye drop 0.5%; 1 drop one (1) time per day (in the morning)."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1e5cf0b7-1780-44d6-8494-da6f674f54b6" concept_name="PHARM timolol Eye drop 0.5% Order" max="1" path="/items" name="timolol Eye drop 0.5%; 1 drop two (2) times per day."/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7cee18a3-35bb-4466-8b73-ca26d8496dfe" concept_name="PHARM timolol Eye gel 0.5% Order" max="1" path="/items" name="timolol Eye gel 0.5%; 1 drop one (1) time per day (in the morning)."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7cee18a3-35bb-4466-8b73-ca26d8496dfe" concept_name="PHARM timolol Eye gel 0.5% Order" max="1" path="/items" name="timolol Eye gel 0.5%; one (1) time per day (in the morning)."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="01890b22-f11c-4130-91b0-53e95b159e7f" concept_name="PHARM timolol Eye drop 0.25% Order" max="1" path="/items" name="timolol Eye drop 0.25%; 1 drop two (2) times per day."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
@@ -106,6 +115,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Cholinergic Agonists">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine Eye drop 2%; 1 drop two (2) times per day"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine Eye drop 2%; 1 drop three (3) times per day"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine Eye drop 2%; 1 drop four (4) times per day"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
@@ -119,7 +129,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Carbonic Anhydrase Inhibitors Systemic">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8aea1e43-38a5-4fb0-bf27-88584a63e94b" concept_name="PHARM acetaZOLAMIDE Tablet Order" max="1" path="/items" name="acetaZOLAMIDE Tablet; 250 mg, oral, 2 times per day"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8aea1e43-38a5-4fb0-bf27-88584a63e94b" concept_name="PHARM acetaZOLAMIDE Tablet Order" max="1" path="/items" name="acetaZOLAMIDE Tablet; 250 mg, oral, 4 times per day"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8aea1e43-38a5-4fb0-bf27-88584a63e94b" concept_name="PHARM acetaZOLAMIDE Tablet Order" max="1" path="/items" name="acetaZOLAMIDE Tablet; 1250 mg, oral, 4 times per day"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8aea1e43-38a5-4fb0-bf27-88584a63e94b" concept_name="PHARM acetaZOLAMIDE Tablet Order" max="1" path="/items" name="acetaZOLAMIDE Tablet; 125 mg, oral, 4 times per day"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dc48f62f-540e-458e-864c-3910b5023066" concept_name="PHARM methazolAMIDE tablet" max="1" path="/items" name="methazolAMIDE tablet; 50mg, oral, 2 times per day"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
