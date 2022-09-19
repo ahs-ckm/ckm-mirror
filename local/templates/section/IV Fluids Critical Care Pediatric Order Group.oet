@@ -76,6 +76,46 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Special Fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates infusion (ped); 15 mmol in D5W 100 mL (0.15 mmol/mL) injection; intravenous, continuous&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove this ERX&amp;nbsp;6003362&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Special Fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates infusion (ped); 15 mmol in D5W 50 mL (0.3 mmol/mL) injection; intravenous, continuous&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;remove this ERX&amp;nbsp;6003363&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Special Fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates infusion (ped);  *** mmol/kg/hour of phosphate, (0.06 mmol/mL), intravenous, continuous #1&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;add this ERX&amp;nbsp;4200709&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Special Fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates infusion (ped);  *** mmol/kg/hour of phosphate, (0.15 mmol/mL), intravenous, continuous&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;add this ERX&amp;nbsp;4200709&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Special Fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates infusion (ped);  *** mmol/kg/hour of phosphate, (0.3 mmol/mL), intravenous, continuous #2&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;add this ERX&amp;nbsp;4200709&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="IV Fluid Infusions">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Infusions/Maintenance">
@@ -111,9 +151,11 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c5a9ab0-cf62-4bdb-9816-97a2978a4df4" concept_name="PHARM potassium chloride 40 mmol in dextrose 10%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in dextrose 10%-sodium chloride 0.45% 1000 mL (40 mmol/L) infusion; intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="988c22ff-fc0c-48ae-9e82-56a6eb6b5393" concept_name="PHARM potassium chloride 60 mmol in dextrose 10%-sodium chloride 0.45% 1000 mL (60 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 60 mmol in dextrose 10%-sodium chloride 0.45% 1000 mL (60 mmol/L) infusion"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c409230-cd57-420f-a990-b72db6dd4afb" concept_name="PHARM sodium bicarbonate infusion Order" max="1" path="/items" name="sodium bicarbonate infusion; 77 mmol in D5-NaCl 0.45% 1000 mL infusion; intravenous, continuous"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped); 3 mmol in D5W 100 mL (0.06 mmol/mL) injection; intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped); 15 mmol in D5W 100 mL (0.15 mmol/mL) injection; intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped); 15 mmol in D5W 50 mL (0.3 mmol/mL) injection; intravenous, continuous"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped);  *** mmol/kg/hour of phosphate, (0.06 mmol/mL), intravenous, continuous #1"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped);  *** mmol/kg/hour of phosphate, (0.15 mmol/mL), intravenous, continuous"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped);  *** mmol/kg/hour of phosphate, (0.3 mmol/mL), intravenous, continuous #2"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c15b2893-e563-49dd-966d-fe7435b021ae" concept_name="PHARM potassium phosphates 40 mmol in D12.5-NaCl 0.9% 1000 mL bag (0.04 mmol phosphates/mL) Order" max="1" path="/items" name="potassium phosphates 40 mmol in D12.5-NaCl 0.9% 1000 mL bag (0.04 mmol phosphates/mL); intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79850dd3-2a36-4b51-b054-5722b01e7c83" concept_name="PHARM dextrose 25% in water infusion Order" max="1" path="/items" name="dextrose 25% in water infusion; intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="53890498-54f2-4087-a1c7-ef1ac9414a66" concept_name="PHARM dextrose 50% water in 500 mL empty bag Order" max="1" path="/items" name="dextrose 50% water in 500 mL empty bag; intravenous, continuous"/>
