@@ -332,11 +332,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anticoagulant&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;alteplase injection; 0.1 mg/kg/dose, IV lock, once, as needed&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anticoagulant&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;alteplase injection; 0.1-2 mg, IV lock, every 2 hours, as needed&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Sept 21/22 - This ERX has been updated to align with the CVAD locking CCT (CCCIR-22087)&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;For occluded catheter ports. Instill 0.1 mg/kg&amp;nbsp;into each port, and retain for 0.5 - 2 hours.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;For occluded venous catheter ports:&lt;/p&gt;&lt;p&gt;&amp;nbsp;Instill 110% of exact lumen volume using 1 mg/mL concentration (maximum 2 mg in 2 mL). Refer to link to identify specific lumen volume required.&lt;/p&gt;&lt;p&gt;Retain&amp;nbsp;for 0.5 - 2 hours. May instill second dose if catheter remains occluded after 2-hour dwell time&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -420,7 +424,7 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="805d105f-04f9-4002-85e9-d1d8e9bf23a1" concept_name="PHARM heparin infusion Order" max="1" path="/items" name="heparin infusion; (Patient over 1 year); 20 units/kg/hr, intravenous, continuous"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="effaf25a-52f4-416e-8488-920790ebf4a1" concept_name="PHARM alteplase injection Order" max="1" path="/items" name="alteplase injection; 0.1 mg/kg/dose, IV lock, once, as needed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="effaf25a-52f4-416e-8488-920790ebf4a1" concept_name="PHARM alteplase injection Order" max="1" path="/items" name="alteplase injection; 0.1-2 mg, IV lock, every 2 hours, as needed"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
     </Item>
