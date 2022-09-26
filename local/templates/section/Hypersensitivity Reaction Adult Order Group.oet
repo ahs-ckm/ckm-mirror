@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>816e386a-384f-49f2-9a2e-2cc6051e9945</id>
+  <name>Hypersensitivity Reaction Adult Order Group</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <keywords>
+        <item>xyz</item>
+      </keywords>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~816e386a-384f-49f2-9a2e-2cc6051e9945~NAME~Hypersensitivity Reaction Adult Order Group}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;EPINEPHrine, anaphylaxis kit Kit 1 mg/mL; 0.3 mg, Intramuscular, every 5 minutes, as needed, anaphylaxis, For 3 Doses, STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Admin Instructions:&amp;nbsp;Administer to mid-anterior lateral thigh (vastus lateralis muscle); If signs and symptoms of anaphylaxis continue, may repeat dose every 5 minutes for a maximum of 3 doses; Use as first line of treatment for suspected anaphylaxis and refer to AHS Anaphylaxis Management: Administration of Intramuscular Epinephrine (Policy HCS-223) for further instructions on anaphylaxis management&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Hypersensitivity Reaction Adult Order Group">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff481662-45cc-4e90-9564-e3a03644012b" concept_name="PHARM EPINEPHrine, anaphylaxis kit Kit 1 mg/mL Order" max="1" path="/items" name="EPINEPHrine, anaphylaxis kit Kit 1 mg/mL; 0.3 mg, Intramuscular, every 5 minutes, as needed, anaphylaxis, For 3 Doses, STAT"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE injection; 50 mg, Intravenous, once, as needed, suspected hypersensitivity reaction, For 1 Dose, STAT"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a50383f2-2468-43f0-9868-2a26bbd0a054" concept_name="PHARM famotidine injection Order" max="1" path="/items" name="famotidine injection; 20 mg, Intravenous, once, as needed, suspected hypersensitivity reaction, For 1 Dose"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids; Single Select">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76895ec7-b7e8-40b5-8ae3-28eb3b739e7c" concept_name="PHARM hydrocortisone sodium succinate injection Order" max="1" path="/items" name="hydrocortisone sodium succinate injection; 100 mg, Intravenous, once, as needed, suspected hypersensitivity reaction, For 1 Dose,  STAT"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0c9c00c-2757-42de-be79-7e4716a04e95" concept_name="PHARM dexAMETHasone injection Order" max="1" path="/items" name="dexAMETHasone injection; 10 mg, Intravenous, once, as needed, anaphylaxis reaction, For 1 Dose,  STAT"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3da6e611-c8f1-449b-9dc4-e159d52b17a6" concept_name="PHARM salbutamol Inhaler 100 mcg/actuation Order" max="1" path="/items" name="salbutamol Inhaler 100 mcg/actuation; 1-2 puffs, inhalation, every 4 hours, as needed, bronchospasm, dyspnea, STAT"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
