@@ -188,11 +188,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolyte correction fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates infusion (ped)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolyte correction fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium phosphates injection&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX:&amp;nbsp;4200973&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mmol/kg/hour of phosphate&lt;/li&gt;&lt;li&gt;Concentration: *** (0.06 mmol/mL), (0.15 mmol/mL), (0.3 mmol/mL)&lt;/li&gt;&lt;li&gt;Route: IV&lt;/li&gt;&lt;li&gt;Frequency: Continuous&lt;/li&gt;&lt;/ul&gt;</value>
+        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mmol/kg/dose of phosphate&lt;/li&gt;&lt;li&gt;Route: IV&lt;/li&gt;&lt;li&gt;Frequency: once&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
     </items>
   </annotations>
@@ -200,7 +204,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;ul&gt;&lt;li&gt;Dose: *** (10 mmol), (20 mmol), (40 mmol) in 100 mL&lt;/li&gt;&lt;li&gt;Route: IV&lt;/li&gt;&lt;li&gt;Frequency: ***&lt;/li&gt;&lt;/ul&gt;</value>
+        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mmol/kg/dose&lt;/li&gt;&lt;li&gt;Route: IV&lt;/li&gt;&lt;li&gt;Frequency: once&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
     </items>
   </annotations>
@@ -282,7 +286,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Electrolyte correction fluids">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="030e4767-4534-452d-bef3-386f401ac0fe" concept_name="PHARM sodium phosphates infusion (ped) Order" max="1" path="/items" name="sodium phosphates infusion (ped)"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9358c563-2b65-49c6-8c3d-ca0074a35f2d" concept_name="PHARM sodium phosphates injection Order" max="1" path="/items" name="sodium phosphates injection"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b354be09-906d-4c08-85b5-29c5da612779" concept_name="PHARM potassium chloride IV Order" max="1" path="/items" name="potassium chloride IV"/>
     </Item>
   </definition>
