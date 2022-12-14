@@ -64,7 +64,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Clinical Communication</key>
-        <value>&lt;p&gt;Process instructions: Rapid HIV is intended for URGENT DIAGNOSIS of HIV for the indications listed in the &quot;reasons for testing&quot;. This EAP is only available to the below restricted IP sites. Not to be placed on Ambulatory ordering tools except Emergency departments in the below sites.&lt;/p&gt;&lt;p&gt;EDM Royal &amp;nbsp; Alexandra Hospital [101074]&lt;/p&gt;&lt;p&gt;FMH Northern Lights Regional Health &amp;nbsp; Centre [101057]&lt;/p&gt;&lt;p&gt;GRP Queen Elizabeth II Hospital - &amp;nbsp; Mackenzie Place [101832]&lt;/p&gt;&lt;p&gt;LET Chinook Regional Hospital &amp;nbsp; [101317]&lt;/p&gt;&lt;p&gt;MED Medicine Hat Regional Hospital &amp;nbsp; [101052]&lt;/p&gt;&lt;p&gt;RED Red Deer Regional Hospital &amp;nbsp; Centre [101069]&lt;/p&gt;&lt;p&gt;STA Sturgeon Community Hospital &amp;nbsp; [101087]&lt;/p&gt;&lt;p&gt;EDM Misericordia Community Hospital &amp;nbsp; [101055]&lt;/p&gt;&lt;p&gt;EDM WMC University of Alberta &amp;nbsp; Hospital [101094]&lt;/p&gt;&lt;p&gt;GRP Grande Prairie Regional &amp;nbsp; Hospital [101035]&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Order HIV 1 AND 2 SEROLOGY (ANTIGEN AND ANTIBODY) BBFE [LAB47301] for &lt;u&gt;routine diagnosis&lt;/u&gt;. For Blood and Bodily Fluid Exposure order BBFE Panel&lt;/strong&gt;.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Process instructions: Rapid HIV is intended for URGENT DIAGNOSIS of HIV for the indications listed in the &quot;reasons for testing&quot;. This EAP is only available to the below restricted IP sites. Not to be placed on Ambulatory ordering tools except Emergency departments in the below sites.&lt;/p&gt;&lt;p&gt;EDM Royal &amp;nbsp; Alexandra Hospital [101074]&lt;/p&gt;&lt;p&gt;FMH Northern Lights Regional Health &amp;nbsp; Centre [101057]&lt;/p&gt;&lt;p&gt;GRP Queen Elizabeth II Hospital - &amp;nbsp; Mackenzie Place [101832]&lt;/p&gt;&lt;p&gt;LET Chinook Regional Hospital &amp;nbsp; [101317]&lt;/p&gt;&lt;p&gt;MED Medicine Hat Regional Hospital &amp;nbsp; [101052]&lt;/p&gt;&lt;p&gt;RED Red Deer Regional Hospital &amp;nbsp; Centre [101069]&lt;/p&gt;&lt;p&gt;STA Sturgeon Community Hospital &amp;nbsp; [101087]&lt;/p&gt;&lt;p&gt;EDM Misericordia Community Hospital &amp;nbsp; [101055]&lt;/p&gt;&lt;p&gt;EDM WMC University of Alberta &amp;nbsp; Hospital [101094]&lt;/p&gt;&lt;p&gt;GRP Grande Prairie Regional &amp;nbsp; Hospital [101035]&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Order HIV 1 AND 2 SEROLOGY (ANTIGEN AND ANTIBODY) [LAB473]&amp;nbsp;for &lt;u&gt;routine diagnosis&lt;/u&gt;. For Blood and Bodily Fluid Exposure order HIV 1 AND 2 SEROLOGY (ANTIGEN AND ANTIBODY) BBFE [LAB47301]&lt;/strong&gt;&lt;/p&gt;</value>
       </item>
       <item>
         <key>Catalogue Pattern.Synonyms</key>
@@ -78,7 +78,11 @@
         <key>Technical.EPIC ID</key>
         <value>&lt;p&gt;LAB4277&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~04c07d47-4fc7-4d0d-94e4-f97a5a815854~NAME~LAB HIV Serology by Rapid Assay Order}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~04c07d47-4fc7-4d0d-94e4-f97a5a815854~NAME~LAB HIV Serology by Rapid Assay Order}</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Frequency:&apos;]">
     <items>
@@ -225,7 +229,7 @@
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen source:">
       <Rule path="/items[at0002]" default="Blood, venous">
         <constraint xsi:type="textConstraint">
-          <includedValues>Blood, venous (default)</includedValues>
+          <includedValues>Blood</includedValues>
         </constraint>
       </Rule>
     </Items>
