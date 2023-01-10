@@ -60,23 +60,23 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~071d9b46-6e10-4439-971b-cf194f5b4298~NAME~DRAFT_Ocular Oncology Adult Smart Set}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Referral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Class: Internal Referral (To Connect Care Department)&lt;/p&gt;&lt;p&gt;To dept spec: Oncology and Hematology&lt;/p&gt;&lt;p&gt;To dept: ***&lt;/p&gt;&lt;p&gt;To provider:&amp;nbsp;&lt;/p&gt;&lt;p&gt;Reason: Other/not specified&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Class: Internal Referral (To Connect Care Department)&lt;/p&gt;&lt;p&gt;To dept spec: Oncology and Hematology&lt;/p&gt;&lt;p&gt;To dept: ***&lt;/p&gt;&lt;p&gt;To provider: Albert Murtha&lt;/p&gt;&lt;p&gt;Reason: Other/not specified&lt;/p&gt;&lt;p&gt;Comments: Eye (Ocular brachytherapy)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Are these tests completed in clinic (same day as appointment)? Or are they requisitions given to patient/sent to appropriate area to book test?&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;What should be the expiry date (standard is 1 year)?&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections; Ancillary Performed, Future, Expires in 365 days&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
@@ -88,11 +88,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CT Orbits&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CT Orbits; Ancillary Performed, Future, Expires in 365 days&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;1 mm or thinner with eyes in neutral positon&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;MR Orbits and Brain with and without Enhancement; Ancillary Performed, Future, Expires in 365 days&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;T1 scan, 1 mm slices, MPRAGE sequence or similar, eyes in neutral position, with pre and post contrast scans.&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -120,25 +128,26 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~071d9b46-6e10-4439-971b-cf194f5b4298~NAME~DRAFT_Ocular Oncology Adult Smart Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Ocular Oncology Adult Smart Set">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Ocular Oncology Adult Smart Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referral">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3b107b0e-6343-453f-9a46-5d71c641f023" concept_name="REF Ambulatory Referral to Oncology Order" max="1" path="/items" name="Ambulatory Referral to Oncology"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Testing">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP)"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="37a112d6-4fb0-4a0d-b3e8-00584a3b9966" concept_name="DI CT Chest Abdomen Pelvis Order" max="1" path="/items" name="CT Chest Abdomen Pelvis"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c1f87fc8-0aed-426a-9b87-19a92dce7998" concept_name="DI CT Orbits Order" max="1" path="/items" name="CT Orbits"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="82300569-80a1-47c5-bdc2-af2c113532a8" concept_name="DI PT Body Order" max="1" path="/items" name="PT Body"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARDIAC Electrocardiogram 12 Lead Order" max="1" path="/items" name="Electrocardiogram 12 Lead"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine; Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections; Ancillary Performed, Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="37a112d6-4fb0-4a0d-b3e8-00584a3b9966" concept_name="DI CT Chest Abdomen Pelvis Order" max="1" path="/items" name="CT Chest Abdomen Pelvis; Ancillary Performed, Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c1f87fc8-0aed-426a-9b87-19a92dce7998" concept_name="DI CT Orbits Order" max="1" path="/items" name="CT Orbits; Ancillary Performed, Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6473cf41-9537-4c48-b690-f417a78d622c" concept_name="DI MR Orbits and Brain with and without Enhancement Order" max="1" path="/items" name="MR Orbits and Brain with and without Enhancement; Ancillary Performed, Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="82300569-80a1-47c5-bdc2-af2c113532a8" concept_name="DI PT Body Order" max="1" path="/items" name="PT Body; Ancillary Performed, Future, Expires in 365 days"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARDIAC Electrocardiogram 12 Lead Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Future, Expires in 365 days"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Recurrent Testing">
