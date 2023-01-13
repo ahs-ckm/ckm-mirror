@@ -79,10 +79,6 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections; Ancillary Performed, Future, Expires in 365 days&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;2 projection is the standard Chest x-ray (AP/Lat). Is this correct or should it be a 1 projection mobile?&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Reason for exam/clinical question to be answered: Pre-op assessment, Eye plaque brachytherapy to be arranged. Rule out metastatic disease&lt;/p&gt;</value>
       </item>
@@ -107,16 +103,12 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Recurrent Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Humphrey Visual Field - Both Eyes&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Should we also include orders for right eye only and left eye only?&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Status: Standing&lt;/p&gt;&lt;p&gt;Release: Auto&lt;/p&gt;&lt;p&gt;Interval: Every year&lt;/p&gt;&lt;p&gt;Count: 5&lt;/p&gt;&lt;p&gt;Type: 24-2, SITA-Fast&lt;/p&gt;&lt;p&gt;Stimulus Color: White&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Status: Standing&lt;/p&gt;&lt;p&gt;Release: Auto&lt;/p&gt;&lt;p&gt;Interval: Every year&lt;/p&gt;&lt;p&gt;Count: 5&lt;/p&gt;&lt;p&gt;Type: 24-2&lt;/p&gt;&lt;p&gt;Stimulus Color: White&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Recurrent Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; Ophthalmic Imaging Oncology Protocol - Bilateral&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Recurrent Testing&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ophthalmic Imaging Oncology Protocol - Bilateral&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
@@ -124,7 +116,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Status: Standing&lt;/p&gt;&lt;p&gt;Release: Manual&lt;/p&gt;&lt;p&gt;Count: 20&lt;/p&gt;</value>
+        <value>&lt;p&gt;Status: Standing&lt;/p&gt;&lt;p&gt;Release: Manual&lt;/p&gt;&lt;p&gt;Count: 20&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -152,7 +144,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Recurrent Testing">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="244c94ec-8092-4681-ad31-a19c9af17bc7" concept_name="SURG OPHTHVISUALFIELD Humphrey Visual Field - Both Eyes Order" max="1" path="/items" name="Humphrey Visual Field - Both Eyes"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Ophthalmic Imaging Oncology Protocol - Bilateral"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbd0fccd-c4e7-4e67-a03c-55d7d250bf2b" concept_name="SURG OPHTH PHOTOGRAPHY Ophthalmic Imaging Oncology Protocol - Bilateral Order" max="1" path="/items" name="Ophthalmic Imaging Oncology Protocol - Bilateral"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
