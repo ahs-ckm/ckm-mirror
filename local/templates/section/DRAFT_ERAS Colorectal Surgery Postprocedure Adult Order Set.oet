@@ -72,7 +72,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;Order Set Keywords:&lt;/strong&gt; &lt;strong&gt;___________________&lt;/strong&gt;&lt;em&gt; search terms/synonyms for the order set&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;For more information, see Clinical Knowledge Topic ERAS Colorectal Surgery, Adult – Inpatient (URL:https://ahsweb.ca/HEE/ERAS_Colorectal_Surgery_CKT)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider opening and merging the following order sets if appropriate:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Postprocedure Management of Patients with Diabetes Mellitus Adult &lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Any appropriate diagnosis based order sets&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+        <value>&lt;p&gt;&lt;strong&gt;Order Set Keywords:&lt;/strong&gt;eras, bowel surgery, colorectal surgery&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;For more information, see Clinical Knowledge Topic ERAS Colorectal Surgery, Adult – Inpatient (URL:https://ahsweb.ca/HEE/ERAS_Colorectal_Surgery_CKT)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider opening and merging the following order sets if appropriate:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Postprocedure Management of Patients with Diabetes Mellitus Adult &lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Any appropriate diagnosis based order sets&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
     </items>
   </annotations>
@@ -84,7 +84,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Precautions and Safety&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adjust Head of Bed; to: 30 degrees&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Precautions and Safety&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adjust Head of Bed to:&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;30 degrees&lt;/p&gt;&lt;p&gt;While patient on opioids or epidural&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Precautions and Safety&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adjust Head of Bed to:&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -132,11 +140,59 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Post-Op Vital Signs Protocol; Per protocol&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pain Score; Per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Assess Pain at least every 4 hours x 3 days &lt;strong&gt;and then&lt;/strong&gt; every 8 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pain Score; Per protocol&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Assess Nausea&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Assess nausea at least every 4 hours x 3 days &lt;strong&gt;and then&lt;/strong&gt; every 8 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Assess Nausea&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intake and Output&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;include strict oral intake&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intake and Output&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -164,7 +220,23 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Type of drain: Hemovac, Jackson-Pratt; Ileostomy; T-Tube; Suprapubic; Nephrostomy; Urostomy; Chest; Rectal; Ventricular; Subpleural Drain; Pleurex Drain; Tenckhoff; Other&lt;/p&gt;&lt;p&gt;Drain care instructions:&amp;nbsp;reprime every 8 hours and PRN, record output&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Type of drain: Hemovac, &lt;strong&gt;Jackson-Pratt&lt;/strong&gt;; Ileostomy; T-Tube; Suprapubic; Nephrostomy; Urostomy; Chest; Rectal; Ventricular; Subpleural Drain; Pleurex Drain; Tenckhoff; Other&lt;/p&gt;&lt;p&gt;Drain care instructions:&amp;nbsp;reprime every 8 hours and PRN, record output&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Drain Care; Every 8 hours #1&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Type of drain: Hemovac, Jackson-Pratt; Ileostomy; T-Tube; Suprapubic; Nephrostomy; Urostomy; Chest; Rectal; Ventricular; Subpleural Drain; Pleurex Drain; Tenckhoff; &lt;strong&gt;Other&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Specify: &lt;strong&gt;Colostomy&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Drain care instructions:&amp;nbsp;reprime every 8 hours and PRN, record output&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -197,6 +269,22 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;assess and change dressing daily and PRN&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion; 60 mL/hr, intravenous, continuous, On Unit&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -384,11 +472,27 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Treatment Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Instructions/Follow Up&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education (Specify); Prior to discharge, Ensure patient has prescription and teaching provided on injection.&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Teach LMWH self-injection in preparation for discharge if patient on extended tinzaparin therapy&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Treatment Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Instructions/Follow Up&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education (Specify); Prior to discharge, Ensure patient has prescription and teaching provided on injection.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Treatment Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Instructions/Follow Up&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -516,7 +620,7 @@
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -572,15 +676,7 @@
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Prophylaxis Antiemetics; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -672,11 +768,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PRN Antiemetics; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Gastrointestinal Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -742,14 +838,19 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5b3e1da2-8a67-4c6e-a20c-b54e55e0d980" concept_name="Protein/Calorie Dense Oral Nutrition Supplements Order Panel" max="1" path="/items" name="Protein/Calorie Dense Oral Nutrition Supplements Order Panel; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="da13559d-90f6-41a4-88fc-fb49dab8faa4" concept_name="Positioning Order Group" max="1" path="/items" name="Positioning;  On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="PC Adjust Head of Bed to Order" max="1" path="/items" name="Adjust Head of Bed to:"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="PC Adjust Head of Bed to Order" max="1" path="/items" name="Adjust Head of Bed to: #1"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a3394b0b-5b79-4917-875a-8b0892a3a5f0" concept_name="ERAS Activity Postprocedure Smart Group" max="1" path="/items" name="ERAS Activity Post-procedure ; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Notify physiotherapist if pre-operative mobility concerns or if patient requires more than one-person assist"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="184a4cce-134c-4164-a4a7-7140fa7a07a7" concept_name="Vital Signs Postprocedure Order Group" max="1" path="/items" name="Vital Signs Postprocedure Order Group; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Post-Op Vital Signs Protocol; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Post-Op Vital Signs Protocol Day Surgery; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bd9d9b96-d198-499a-8ade-963106ad04b2" concept_name="PC Pain Score Order" max="1" path="/items" name="Pain Score; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Assess Nausea"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="PC Cardio_Respiratory Monitoring Order" max="1" path="/items" name="Continuous Pulse Oximetry; Until discontinued"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
@@ -766,6 +867,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="558775c6-0314-4abc-9b1c-8090abcfc3d3" concept_name="Urinary Catheter ERAS Postprocedure Order Group" max="1" path="/items" name="Urinary Catheter ERAS Postprocedure Order Group"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fabd0388-be7f-448b-8891-1530b6741b0e" concept_name="PC Drain Care Order" max="1" path="/items" name="Drain Care; Every 8 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fabd0388-be7f-448b-8891-1530b6741b0e" concept_name="PC Drain Care Order" max="1" path="/items" name="Drain Care; Every 8 hours #1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5fa8a895-3bd5-4735-abbe-d2cf2ebf5c73" concept_name="PC Stoma care Order" max="1" path="/items" name="Stoma care; as needed"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="PC Patient Education (Specify) Order" max="1" path="/items" name="Patient Education (Specify); Teach: Ostomy self-management"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments">
@@ -854,7 +957,8 @@
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants (Single Response)">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6ad0054d-535d-405d-9a36-785304fe9c16" concept_name="Postoperative Antiulcer Agents and Acid Suppressants Adult Smart Group" max="1" path="/items" name="Postoperative Antiulcer Agents and Acid Suppressants Adult Smart Group       (Single Response); On Unit"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine Tablet Order" max="1" path="/items" name="raNITIdine Tablet; 150 mg, oral, 2 times per day, until discharge"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium Enteric-coated tablet; 40 mg, oral, daily, before breakfast, until discharge"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation and Thrombosis"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticoagulants"/>
