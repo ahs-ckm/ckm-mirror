@@ -192,7 +192,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Frequency: Once&lt;/p&gt;&lt;p&gt;Temperature, heart rate and respiratory rate q15-30 minutes for 2 hours, then q4 hours for 24 hours, and then once per shift. Maintain axillary temperature between 36.5-37.5 degrees Celsius.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Frequency: Per Protocol&lt;/p&gt;&lt;p&gt;Temperature, heart rate and respiratory rate. First 24 hours of age: within 15 minutes of birth, then at one hour of age, then at 2 hours of age, then every 4 hours until 24 hours of age. Respiratory status can be assessed more frequently (every 15 minutes) if the infant has any breathing difficulty. After 24 hours of age until discharge: every every 8 hours. Maintain axillary temperature between 36.5 - 37.5 degrees Celsius.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -348,6 +348,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For newborns at risk for Neonatal Abstinence Syndrome (NAS)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -443,7 +451,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4c2277-d73c-453b-a498-f55bee859781" concept_name="PC Measure body area Order" max="1" path="/items" name="Measure body area; Head Circumference"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="AND (if needed) - For assisted vaginal birth:">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="AND (if needed) - For assisted birth:">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4c2277-d73c-453b-a498-f55bee859781" concept_name="PC Measure body area Order" max="1" path="/items" name="Measure body area; Head Circumference"/>
       </Item>
