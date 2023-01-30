@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~87c6e2f6-4ff4-4c00-8fd0-58c49297c210~NAME~Radioactive_Iodine_with_Thyrotropin_Alfa_Thyrogen Adult Smart Set}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Referral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -73,6 +81,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;o&amp;nbsp; (0.9 mg/mL reconstituted) &amp;nbsp;Injection&lt;/p&gt;&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Dose: 0.9 mg&lt;/p&gt;&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Quantity: 2&lt;/p&gt;&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; For IM Injection. To be administered 24 and 48 hours prior to radioactive sodium iodide I-131 treatment&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Take Home Prescriptions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dexAMETHasone Tablet&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;8 mg, Oral, with breakfast for 5 days starting on the day of Radioactive Iodine I-131 Treatment&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -104,7 +120,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -236,7 +252,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~87c6e2f6-4ff4-4c00-8fd0-58c49297c210~NAME~Radioactive_Iodine_with_Thyrotropin_Alfa_Thyrogen Adult Smart Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Radioactive Iodine with Thyrotropin Alfa (Thyrogen) Adult Smart Set">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Radioactive Iodine with Thyrotropin Alfa (Thyrogen) Adult Smart Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre-Treatment Appointment Request">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c16998b-c676-4b44-8ac2-fc55cda3f005" concept_name="PC Clinic Appointment Request Order" max="1" path="/items" name="Clinic Appointment Request; Oncology Patient Education"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c16998b-c676-4b44-8ac2-fc55cda3f005" concept_name="PC Clinic Appointment Request Order" max="1" path="/items" name="Clinic Appointment Request; Consent"/>
@@ -247,6 +263,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Take Home Prescriptions">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c554-0df9-41b6-896f-1952e6488d2b" concept_name="PHARM thyrotropin alfa injection Order" max="1" path="/items" name="thyrotropin alfa injection"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="aa4c20bb-5d80-4726-9ce7-2a979e32d4f2" concept_name="PHARM dexAMETHasone Tablet Order" max="1" path="/items" name="dexAMETHasone Tablet"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Referral Request to ThyrogenONE Program"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Radioactive Sodium Iodide I-131 Oral Order">
