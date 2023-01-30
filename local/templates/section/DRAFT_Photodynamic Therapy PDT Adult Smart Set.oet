@@ -76,6 +76,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Orders&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Care Order; Calculate patient BSA&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Orders&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Measure Height; once&apos;]/activities[at0156]">
     <items>
       <item>
@@ -89,14 +97,6 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Insert Peripheral IV; once&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Insert butterfly IV administration set&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -144,7 +144,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Admin Instructions:&lt;/p&gt;&lt;p&gt;1) Plunger on 30 mL syringe pulled back as far as it will go and verteporfin injected into syringe with D5W solution totaling 30 mLs of solution in the syringe, once.&lt;/p&gt;&lt;p&gt;2) First Saline lock attached to 30 mL syringe and purged, once.&lt;/p&gt;&lt;p&gt;3) Filter attached to first saline lock and flushed, once.&lt;/p&gt;&lt;p&gt;4) Second saline lock attached to filter and flushed, once.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Admin Instructions:&lt;/p&gt;&lt;p&gt;30 ml syringe, withdraw calculated amount of D5W.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Note: Visudyne is NOT compatible with Normal Saline.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;7 mL sterile water for reconstitution of Visudyne.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -204,7 +204,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Prior to Infusion&lt;/p&gt;</value>
+        <value>&lt;p&gt;Prior to laser&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -292,7 +292,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Prior to Infusion&lt;/p&gt;</value>
+        <value>&lt;p&gt;Prior to laser&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -334,11 +334,13 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="DRAFT_Photodynamic Therapy (PDT) Adult Smart Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fae9e925-c67f-4bb3-8719-c0cc18a44a1b" concept_name="SURG OPHTH TOMOGRAPHY OCT Macula Only - Bilateral Order" max="1" path="/items" name="OCT, Macula Only - Bilateral"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b2542154-e212-4cff-a6cb-23e31354028e" concept_name="SURG OPHTHCLINIC Photodynamic Therapy (PDT) Laser- Left Eye Order" max="1" path="/items" name="Photodynamic Therapy (PDT) Laser- Left Eye"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cbcb5794-5ea1-4ec1-8141-bc1af0ff6408" concept_name="SURG OPHTHCLINIC Photodynamic Therapy Laser (PDT) - Right Eye Order" max="1" path="/items" name="Photodynamic Therapy Laser (PDT) - Right Eye"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Orders">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c60abc3-c04e-495d-bd33-991a4da0c878" concept_name="PC Patient Care Orders Order" max="1" path="/items" name="Patient Care Order; Ensure patient wearing proper protective clothing"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c60abc3-c04e-495d-bd33-991a4da0c878" concept_name="PC Patient Care Orders Order" max="1" path="/items" name="Patient Care Order; Calculate patient BSA"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="PC Measure Height Order" max="1" path="/items" name="Measure Height; once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="PC Weigh Patient Order" max="1" path="/items" name="Weigh Patient; once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
