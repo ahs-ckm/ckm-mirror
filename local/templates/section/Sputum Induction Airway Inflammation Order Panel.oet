@@ -88,7 +88,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;4 puffs of 100 mcg via spacer&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;4 puffs of 100 mcg via spacer&lt;/p&gt;&lt;p&gt;1 occurrence&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -152,11 +152,27 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Aerosolized&lt;/p&gt;&lt;p&gt;4 mL every 10 minutes&amp;nbsp;&lt;/p&gt;&lt;p&gt;2 occurrences&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Aerosolized&lt;/p&gt;&lt;p&gt;4 mL every 10 minutes&amp;nbsp;&lt;/p&gt;&lt;p&gt;3 occurrences&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; sodium chloride Inhalation liquid 3%; PRN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ipratropium Inhaler 20 mcg/actuation; PRN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 puff PRN&lt;/p&gt;&lt;p&gt;1 occurrence&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ipratropium Inhaler 20 mcg/actuation; PRN&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -187,6 +203,7 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="59e520a2-0d98-4980-9e6d-6633494c441b" concept_name="PHARM sodium chloride Inhalation liquid 0.9% Order" max="1" path="/items" name="sodium chloride Inhalation liquid 0.9%; PRN"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1770ad9-2ff7-467b-a647-fd9aa7f9d922" concept_name="PHARM sodium chloride Inhalation liquid 7% Order" max="1" path="/items" name="sodium chloride Inhalation liquid 7%; PRN"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; sodium chloride Inhalation liquid 3%; PRN"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4f6e0c52-223d-4c23-aa40-bf141c5e95ba" concept_name="PHARM ipratropium Inhaler 20 mcg/actuation Order" max="1" path="/items" name="ipratropium Inhaler 20 mcg/actuation; PRN"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc5ce4a8-8ce1-43dc-a640-478b3d02144d" concept_name="RESP PED Sputum Collection Order" max="1" path="/items" name="Sputum Collection"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
