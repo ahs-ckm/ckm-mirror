@@ -76,27 +76,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;nirmatrelivir-rotonavir 150 mg-100 mg kit&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Nirmatrelivir-Ritonavir 300 mg-100 mg Order Panel&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;oral, 2 times per day, As scheduled&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Order Instructions:&lt;br&gt;Paxlovid is administered as 2 pink tablets (nirmatrelvir 150 mg) plus 1 white tablet (ritonavir 100 mg) in the morning and the evening.&lt;br&gt;Dosage adjustment required in renal impairment.&lt;/p&gt;</value>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;nirmatrelivir-rotonavir 150 mg-100 mg kit; (moderate renal function (30 - 60 mL/minute) dose)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Nirmatrelivir-Ritonavir 150 mg-100 mg Order Panel; (moderate renal function (30 - 60 mL/minute) dose)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;oral, 2 times per day, As scheduled&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Order Instructions:&lt;br&gt;Paxlovid (Moderate renal function) is administered as 1 pink tablet (nirmatrelvir 150 mg) plus 1 white tablet (ritonavir 100 mg) twice daily in the morning and the evening.(NOTE: only one of two pink tablets in the blister cavity are required per dose). Dosage adjustment required in renal impairment.&amp;nbsp;&lt;/p&gt;</value>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -110,9 +102,9 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="paxlovid">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a0ccd1ca-572e-4bdc-9783-b822d4d792b8" concept_name="PHARM nirmatrelivir-rotonavir 150 mg-100 mg kit Order" max="1" path="/items" name="nirmatrelivir-rotonavir 150 mg-100 mg kit"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b18d9f46-c331-4fc3-bc0c-71e4b2003f6b" concept_name="Nirmatrelivir_Ritonavir 300 mg-100 mg Order Panel" max="1" path="/items" name="Nirmatrelivir-Ritonavir 300 mg-100 mg Order Panel"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a0ccd1ca-572e-4bdc-9783-b822d4d792b8" concept_name="PHARM nirmatrelivir-rotonavir 150 mg-100 mg kit Order" max="1" path="/items" name="nirmatrelivir-rotonavir 150 mg-100 mg kit; (moderate renal function (30 - 60 mL/minute) dose)"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="95cc9f70-280a-4137-8189-dca7bcb7317c" concept_name="Nirmatrelivir_Ritonavir 150 mg-100 mg Order Panel" max="1" path="/items" name="Nirmatrelivir-Ritonavir 150 mg-100 mg Order Panel; (moderate renal function (30 - 60 mL/minute) dose)"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
@@ -123,6 +115,9 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
