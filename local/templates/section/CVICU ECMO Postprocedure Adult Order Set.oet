@@ -116,7 +116,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;ECMO Blood Gas Parameter Goals: pH; PaCO2 (mmHg); PaO2 (mmHg); SaO2 (%); SpO2 (%), SvO2 (%)&lt;/p&gt;&lt;p&gt;ECMO FiO2: FiO2 50; Other (specify)&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;ECMO Sweep Gas:&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;ECMO Flow min: &lt;/span&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;2.5&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;ECMO Flow max:&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;LA/LV Vent Flow min: &lt;/span&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;250&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;LA/LV Vent Flow max:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;ECMO Set Ventilator Rate: 10 Breaths/minute&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Minimum flow of 2.5 LPM if fully anticoagulated.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Every 4 hour burping of oxygenator, increase sweep gas to max level for 10 seconds.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Ensure appropriate securement device at all times AS PER UNIT POLICY.&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;ECMO Blood Gas Parameter Goals: pH; PaCO2 (mmHg); PaO2 (mmHg); SaO2 (%); SpO2 (%), SvO2 (%)&lt;/p&gt;&lt;p&gt;ECMO FiO2: FiO2 50; Other (specify)&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;ECMO Sweep Gas:&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;ECMO Flow min: &lt;/span&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;2.5&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;ECMO Flow max:&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;LA/LV Vent Flow min: &lt;/span&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;250&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;LA/LV Vent Flow max:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -133,6 +133,22 @@
       <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;ERX 6004294&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Physical Therapy&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Occupational Therapy&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -193,6 +209,8 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Specialty Consults; Recovery &amp; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3edb412b-121d-45e0-a286-6c24f21d9cee" concept_name="CONS Inpatient Consult to Transplantation Order" max="1" path="/items" name="Inpatient Consult to Transplantation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99e370c-d849-4585-b382-c30d0a08a894" concept_name="CONS Inpatient Consult to Occupational Therapy Order" max="1" path="/items" name="Inpatient Consult to Occupational Therapy"/>
       </Item>
     </Item>
   </definition>
