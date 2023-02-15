@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>004d5a2e-3d58-411a-bece-493fc434121a</id>
+  <name>Treatment for HIT or VTE with prior HIT Adult Order Panel</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Heparin Induced Thrombocytopenia:&lt;br&gt;Acute drop in platelet count to less than 150 x 10^9/L or at least a 50% decrease from baseline during or shortly after exposure to heparin. The 4T score can be used for risk stratification of Heparin Induced Thrombocytopenia&lt;br&gt;&amp;nbsp;&lt;br&gt;NOTE:&lt;br&gt;All sources of heparin or low molecular weight heparin must be discontinued, including heparin for line maintenance.&lt;br&gt;&amp;nbsp;&lt;br&gt;Early use of warfarin should be avoided in acute HIT&lt;br&gt;Do not initiate warfarin until platelet count greater than or equal to 150 x 10^9/L&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:767px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:183px&quot;&gt;Medication/Medication Type&lt;/td&gt;&lt;td style=&quot;width:285px&quot;&gt;&amp;nbsp;Indication&lt;/td&gt;&lt;td style=&quot;width:298px&quot;&gt;Contraindication&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:183px&quot;&gt;fondaparinux&lt;/td&gt;&lt;td style=&quot;width:285px&quot;&gt;Heparin induced thrombocytopenia (HIT)&lt;/td&gt;&lt;td style=&quot;width:298px&quot;&gt;Allergy&lt;br&gt;Active Bleeding&lt;br&gt;Contraindicated with severe renal or liver disease&lt;br&gt;Platelet count less than 50&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:183px&quot;&gt;argatroban&lt;/td&gt;&lt;td style=&quot;width:285px&quot;&gt;Heparin induced thrombocytopenia (HIT)&lt;br&gt;&amp;nbsp;&lt;br&gt;Preferred for severe renal or liver disease&lt;/td&gt;&lt;td style=&quot;width:298px&quot;&gt;Allergy&lt;br&gt;Active Bleeding&lt;br&gt;Platelet count less than 50&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:183px&quot;&gt;bivalrudin&lt;/td&gt;&lt;td style=&quot;width:285px&quot;&gt;Heparin induced thrombocytopenia (HIT)&lt;br&gt;Cardiac surgery, PCI&lt;br&gt;Preferred for severe renal or liver disease&lt;/td&gt;&lt;td style=&quot;width:298px&quot;&gt;Allergy&lt;br&gt;Active Bleeding&lt;br&gt;Platelet count less than 50&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;4 T Score:&amp;nbsp;https://ahsweb.ca/HEE/4T_Score_MD_Calc&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Restrictor built in so that applicable sub-panel will be automatically chosen based on patient documented weight&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Contraindicated with severe renal disease (Creatinine Clearance less than 30 mL/min) or liver disease.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For weight less than 50 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For weight 50-100 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For weight greater than 100 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - Repeating&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - Repeating&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider platelet screening in patients on LMWH with Heparin Induced Thrombocytopenia risk greater than 1% such as trauma, critical care or cardiovascular indications&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fondaparinux (for HIT)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Preferred for severe renal or liver disease. To be used in patients with moderate hepatic dysfunction (ALT greater than 100 umol/L, Total Bili greater than 35 mmol/L and INR greater than 1.5), in critically ill patients or those with multi-organ dysfunction. Should not be used in cases of allergy, active bleeding, or platelets less than 50.&lt;br&gt;&amp;nbsp;&lt;br&gt;There is NO antidote for argatroban. If clinically significant bleeding occurs, stop infusion and support patient as clinically indicated.&lt;br&gt;NO dosage modification is necessary for patients with renal impairment.&lt;br&gt;With severe hepatic failure, consider using alternate agent such as bivalrudin where available&lt;br&gt;&amp;nbsp;&lt;br&gt;The lower dose protocol is recommended for critically ill patients, those with multi-organ dysfunction, hepatic dysfunction, post cardiac surgery or patients with right sided heart failure with suspected significant hepatic congestion.&lt;br&gt;With severe hepatic failure, consider using alternate agent&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;If not done in the past week, order the following STAT lab tests:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Chemistry&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Coagulation&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Coagulation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - Repeating&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Coagulation&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;The lower dose protocol is recommended for critically ill patients, those with multi-organ dysfunction, hepatic dysfunction, post cardiac surgery or patients with right sided heart failure with suspected significant hepatic congestion.&lt;br&gt;With severe hepatic failure, consider using alternate agent&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Administration Instructions:&lt;/p&gt;&lt;p&gt;- If PTT less than 35 seconds: Increase by 1 microgram/kg/min&amp;nbsp;&lt;br&gt;- If PTT 35 - 49.9 seconds: Increase by 0.5 microgram/kg/min&amp;nbsp;&lt;br&gt;- If PTT 50 - 84.9 seconds: Maintain at current rate&amp;nbsp;&lt;br&gt;- If PTT 85 - 100 seconds: Decrease rate by 0.5 microgram/kg/min&lt;br&gt;- If PTT greater than 100 seconds: Hold infusion until PTT less than 100 seconds, THEN restart &amp;amp; decrease by 50%&lt;/p&gt;&lt;p&gt;- MAXIMUM STARTING RATE 280 mcg/min. MAXIMUM INFUSION RATE 10 mcg/kg/min.&lt;br&gt;- Ensure patient has current PTT order (q4h or daily).&lt;br&gt;- Re-check PTT 4 hours after any dosage adjustment, after infusion has been on hold and after any restart.&lt;br&gt;- While infusion is on hold, nursing to adjust PTT lab order to repeat q2h until PTT less than 100, then restart according to nomogram.&lt;br&gt;- When stopping argatroban, clamp IV line and leave argatroban assembly in place. The remaining argatroban in the line will maintain patency of the site.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;- Central Venous Catheter Maintenance: If flush/lock required, use normal saline ONLY (patient on argatroban) to flush or lock the line.&lt;br&gt;- Ensure all sources of heparin or low molecular weight heparin have been discontinued including flushes&lt;br&gt;- When three consecutive PTT results are 50-84.9 seconds, discontinue PTT every 4 hours and enter daily PTT (while on argatroban)&lt;/p&gt;&lt;p&gt;&amp;nbsp;-If PTT results no longer fall between 50-84.9 seconds, discontinue daily PTT and enter PTT q4h (while on argatroban)&lt;br&gt;- If PTT greater than 100 seconds, hold infusion and nursing to adjust PTT lab order to repeat q2h until PTT less than 100, then restart according to nomogram.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Weight&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Standard Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Weight&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;The lower dose protocol is recommended for critically ill patients, those with multi-organ dysfunction, hepatic dysfunction, post cardiac surgery or patients with right sided heart failure with suspected significant hepatic congestion.&lt;br&gt;With severe hepatic failure, consider using alternate agent&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Administration Instructions:&lt;/p&gt;&lt;p&gt;- If PTT less than 35 seconds: Increase by 0.2 microgram/kg/min&lt;br&gt;- If PTT 35 - 49.9 seconds: Increase by 0.1 microgram/kg/min&amp;nbsp;&lt;br&gt;- If PTT 50 - 84.9 seconds: Maintain at current rate&lt;br&gt;- If PTT 85 - 100 seconds: Decrease rate by 0.1 microgram/kg/min&amp;nbsp;&lt;br&gt;- If PTT greater than 100 seconds: Hold infusion until PTT less than 100 seconds, THEN restart &amp;amp; decrease by 50%&lt;/p&gt;&lt;p&gt;- MAXIMUM STARTING RATE 70 mcg/min. MAXIMUM INFUSION RATE 10 mcg/kg/min.&lt;br&gt;- Ensure patient has current PTT order (q4h or daily).&lt;br&gt;- Re-check PTT 4 hours after any dosage adjustment, after infusion has been on hold and after any restart.&lt;br&gt;- While infusion is on hold, nursing to adjust PTT lab order to repeat q2h until PTT less than 100 seconds then restart according to nomogram.&lt;br&gt;- When stopping argatroban, clamp IV line and leave argatroban assembly in place. The remaining argatroban in the line will maintain patency of the site.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;- Central Venous Catheter Maintenance: If flush/lock required, use normal saline ONLY (patient on argatroban) to flush or lock the line.&lt;br&gt;- Ensure all sources of heparin or low molecular weight heparin have been discontinued including flushes&lt;br&gt;- When three consecutive PTT results are 50-84.9 seconds, discontinue PTT every 4 hours and enter daily PTT (while on argatroban)&lt;br&gt;- If PTT results no longer fall between 50-84.9 seconds, discontinue daily PTT and enter PTT q4h (while on argatroban)&lt;br&gt;- If PTT greater than 100 seconds, hold infusion and nursing to adjust PTT lab order to repeat q2h until PTT less than 100, then restart according to nomogram.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Weight&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Argatroban Lower Dose Protocol&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Weight&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~004d5a2e-3d58-411a-bece-493fc434121a~NAME~Treatment for HIT or VTE with prior HIT Adult Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Treatment for HIT or VTE with prior HIT">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fondaparinux (for HIT)">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For weight less than 50 kg">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df304555-4c58-4b0b-a80f-b7ef26442e72" concept_name="PHARM fondaparinux injection Order" max="1" path="/items" name="fondaparinux injection; 5 mg, subcutaneous, every 24 hours, give first dose STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For weight 50-100 kg">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df304555-4c58-4b0b-a80f-b7ef26442e72" concept_name="PHARM fondaparinux injection Order" max="1" path="/items" name="fondaparinux injection; 7.5 mg, subcutaneous, every 24 hours, give first dose STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For weight greater than 100 kg">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df304555-4c58-4b0b-a80f-b7ef26442e72" concept_name="PHARM fondaparinux injection Order" max="1" path="/items" name="fondaparinux injection; 10 mg, subcutaneous, every 24 hours, give first dose STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - Repeating">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; Every 3 days"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Please ensure accurate weight within 24 hours is entered"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Avoid IM injections while receiving fondaparinux"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); If platelets 100 X 10^9/L or less"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Argatroban">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - STAT">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; STAT, Prior to commencing argatroban therapy"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); STAT, Prior to commencing argatroban therapy"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); STAT, Prior to commencing argatroban therapy"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total; STAT, Prior to commencing argatroban therapy"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT); STAT, Prior to commencing argatroban therapy"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; STAT, Prior to commencing argatroban therapy"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="To be drawn 2-4 hours after heparin discontinuation:">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR; Conditional PRN, 2-4 hours after heparin discontinuation. Prior to commencing argatroban therapy."/>
+          </Item>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - Repeating">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; Daily Morning"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); First occurrence then every 4 hours, Starting 4 hours after initiation of argatroban infusion"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Argatroban Standard Dose Protocol">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3e1c99b2-6495-4bb0-872a-5e659480da76" concept_name="PHARM argatroban infusion Order" max="1" path="/items" name="argatroban infusion; 1 mg/mL concentration,  2 mcg/kg/min, intravenous, titrated"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Argatroban Standard Dose Protocol"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Weight">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="PC Weigh Patient Order" max="1" path="/items" name="Weigh Patient; once. If patient not weighed in the last 7 days."/>
+          </Item>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Argatroban Lower Dose Protocol">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3e1c99b2-6495-4bb0-872a-5e659480da76" concept_name="PHARM argatroban infusion Order" max="1" path="/items" name="argatroban infusion; 1 mg/mL concentration,  0.5 mcg/kg/min, intravenous, titrated"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Argatroban Lower Dose Protocol"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Weight">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="PC Weigh Patient Order" max="1" path="/items" name="Weigh Patient; once. If patient not weighed in the last 7 days."/>
+          </Item>
+        </Item>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+</template>
