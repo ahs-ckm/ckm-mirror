@@ -71,8 +71,12 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Feb 15/23 - INC001091772 -&amp;nbsp;Update name of Preprocedure Management of Patients with Diabetes Mellitus Adult order set&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Consider opening and merging the following order sets if appropriate:&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Parenteral Nutrition Order Set&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Perioperative management of diabetes order sets&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Any appropriate diagnosis based order sets&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Consider opening and merging the following order sets if appropriate:&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Parenteral Nutrition Order Set&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Preprocedure&amp;nbsp;Management of Patients with Diabetes Mellitus Adult order set&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Any appropriate diagnosis based order sets&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -152,6 +156,18 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;POCT Glusoce&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP); Blood Glucose Targets; Preprocedure/Day Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Feb 15/23 - INC001091772 - Add Notify order&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Blood glucose greater than: 18&lt;br&gt;Blood glucose less than: 4&lt;br&gt;Comments: Do not hold insulin without prescriber order. Initiate appropriate AHS Glycemic Management Protocol when targets are not met and call MRHP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Microbiology; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Eye Culture, Invasive; Once&apos;]/activities[at0001]">
     <items>
       <item>
@@ -165,6 +181,22 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: ***&lt;/p&gt;&lt;p&gt;Specimen Source: ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;POCT Glucose&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Feb 15/23 - INC001091772 -&amp;nbsp;Add POCT Glucose order group (from Copy Template Preprocedure Adult)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;POCT Glucose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP); Blood Glucose Targets; Preprocedure/Day Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Blood glucose greater than: 18&lt;br&gt;Blood glucose less than: 4&lt;br&gt;Comments: Do not hold insulin without prescriber order. Initiate appropriate AHS Glycemic Management Protocol when targets are not met and call MRHP&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -189,6 +221,14 @@
       <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note to IT Build.&amp;nbsp; For all lab specimens listed below please configure to the following settings unless otherwise specified within specific order&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Frequency: Once&lt;/p&gt;&lt;p&gt;Specimen Type: Blood&lt;/p&gt;&lt;p&gt;Specimen Source: Blood, Venous&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diclofenac Eye drop 0.1%; 1 drop, both eyes, Once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Feb 15/23 - INC001091772 -&amp;nbsp;add diclofenac 0.1% eye drops&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -355,8 +395,9 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glusoce; Preprocedure/Day Surgery">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; Once"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glusoce">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; Once; Preprocedure/Day Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Blood Glucose Targets; Preprocedure/Day Surgery"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
@@ -407,7 +448,10 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; Once; Preprocedure/Day Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Blood Glucose Targets; Preprocedure/Day Surgery"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="PC Weigh Patient Order" max="1" path="/items" name="Weigh Patient; Once"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="PC Measure Height Order" max="1" path="/items" name="Measure Height; Once"/>
@@ -437,7 +481,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="IV Maintenance Preprocedure Adult Smart Group" max="1" path="/items" name="IV Maintenance"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="IV Maintenance Preprocedure Adult Order Group" max="1" path="/items" name="IV Maintenance"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anxiolytics; Preprocedure/Day Surgery">
@@ -461,6 +505,7 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ebea1d4-cf3f-4101-9b3b-b5f2f3014822" concept_name="PHARM dexAMETHasone-tobramycin Eye oint 0.1%-0.3% (Tobradex) Order" max="1" path="/items" name="dexAMETHasone-tobramycin Eye oint 0.1%-0.3% (Tobradex); 1 application, once"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dd9e059d-058b-4695-8096-282b3d6db21a" concept_name="PHARM ketorolac Eye drop 0.45% Order" max="1" path="/items" name="ketorolac Eye drop 0.45%; 1 drop, every 10 minutes, for 2 doses, Start 60 minutes pre-op"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM prednisoLONE acetate Eye drop 1% Order" max="1" path="/items" name="prednisoLONE acetate Eye drop 1%; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4ca23cb-18d2-4713-b424-ea4073a2fa9b" concept_name="PHARM diclofenac Eye drop 0.1% Order" max="1" path="/items" name="diclofenac Eye drop 0.1%; 1 drop, both eyes, Once"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b591632d-9220-41ab-b10e-dee9ba2e3085" concept_name="Anti-Glaucoma Agents Ophthalmology Preprocedure Adult Order Group" max="1" path="/items" name="Ophthalmic Agents - Antiglaucoma; Preprocedure/Day Surgery"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Constricting; Preprocedure/Day Surgery">
