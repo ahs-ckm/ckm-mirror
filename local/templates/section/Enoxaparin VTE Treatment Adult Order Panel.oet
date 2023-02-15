@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>ecc92eed-78a9-403e-a0a7-9d69e1b75231</id>
+  <name>Enoxaparin VTE Treatment Adult Order Panel</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~ecc92eed-78a9-403e-a0a7-9d69e1b75231~NAME~Enoxaparin VTE Treatment Adult Order Panel}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Enoxaparin is restricted for use for VTE treatment in patients where twice daily dosing is required for VTE treatment or bridging in mechanical heart valves, pregnancy, major trauma, or obesity.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Enoxaparin twice daily dosing for weights 40 kg - 330 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Enoxaparin twice daily dosing for weights 40 kg - 330 kg&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;strong&gt;Weight-Band Dosing for Therapeutic&amp;nbsp;Subcutaneous Tinzaparin&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;No Weight Documented&lt;/u&gt;: The system will default in a dose of 1mg/kg/dose, subcutaneous, every 12 hours&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Weight Documented&lt;/u&gt;: The system will choose the appropriate weight based on the table below.&lt;/p&gt;&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:465px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Weight Band&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Patient Actual Body Weight (kg)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;&lt;strong&gt;Enoxaparin Dosing&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;Less than 40 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;1 mg/kg/dose SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;40 to 43 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;40 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;43.1 to 48 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;50 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;48.1 to 54 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;50 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;54.1 to 63 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;60 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;63.1 to 74 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;70 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;74.1 to 86 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;80 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;86.1 to 97 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;100 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;97.1 to 109 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;100 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;109.1 to 126 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;120 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;126.1 to 133 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;120 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;133.1 to 148 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;150 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;148.1 to 171 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;160 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;171.1 to 177 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;160 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;177.1 to 195 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;200 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;195.1 to 218 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;200 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;218.1 to 228 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;240 mg SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;228.1 to 266 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;240 mg&amp;nbsp;SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;266.1 to 330 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;300 mg&amp;nbsp;SUBCUTANEOUSLY every 12 hours&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:124px&quot;&gt;Greater than 330 kg&lt;/td&gt;&lt;td style=&quot;width:338px&quot;&gt;1 mg/kg/dose SUBCUTANEOUSLY every 12 hours&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Patient clot risk, bleed risk and renal function must also be assessed to determine appropriateness of applying weight-based band dosing.&lt;/p&gt;&lt;p&gt;&lt;br&gt;CrCl 30 mL per minute or greater and weight 40 kg to 330 kg only&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Enoxaparin twice daily dosing for weights under 40 kg or greater than 330 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Enoxaparin VTE Treatment (Adult)">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Enoxaparin twice daily dosing for weights 40 kg - 330 kg">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8c50ffc8-0dbe-4b6c-a856-5e03ab6eb2fe" concept_name="PHARM enoxaparin injection Order" max="1" path="/items" name="enoxaparin injection; *** mg, subcutaneous, every 12 hours, scheduled"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Enoxaparin twice daily dosing for weights under 40 kg or greater than 330 kg">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8c50ffc8-0dbe-4b6c-a856-5e03ab6eb2fe" concept_name="PHARM enoxaparin injection Order" max="1" path="/items" name="enoxaparin injection; 1 mg/kg/dose, every 12 hours, scheduled"/>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
