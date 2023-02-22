@@ -186,17 +186,20 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron Tablet; 4 mg, oral, every 8 hours, as needed, nausea, vomiting"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked logic)"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80b79825-a35f-40f3-ba6f-030ce06fa116" concept_name="PHARM ondansetron injection Order" max="1" path="/items" name="ondansetron injection; 4 mg, intravenous, every 8 hours, as needed, nausea, vomiting"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Option 2 (metoclopramide)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05b202cc-0015-412c-9c83-ed0c7727d1f0" concept_name="PHARM metoclopramide Tablet Order" max="1" path="/items" name="metoclopramide Tablet; 10 mg, oral, every 6 hours, as needed, nausea, vomiting"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked logic)"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9b485b3-6681-44f9-b0fb-1949efbd6d85" concept_name="PHARM metoclopramide injection Order" max="1" path="/items" name="metoclopramide injection; 10 mg, intravenous, every 6 hours, as needed, nausea, vomiting"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Option 3 (dimenhyDRINATE)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM dimenhyDRINATE Tablet Order" max="1" path="/items" name="dimenhyDRINATE Tablet; 25-50 mg, oral, every 4 hours, as needed, nausea, vomiting"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked logic)"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE injection; 25-50 mg, intravenous, every 4 hours, as needed, nausea, vomiting"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
@@ -213,5 +216,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
