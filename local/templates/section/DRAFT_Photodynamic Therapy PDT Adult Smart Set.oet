@@ -100,7 +100,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in water injection; 10 mL, intravenous, as needed, for 2 doses&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in water injection; 10 mL, intravenous, before transfusion&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
@@ -112,7 +112,27 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in water injection; 10 mL, intravenous, as needed, for 2 doses&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in water injection; 10 mL, intravenous, before transfusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in water injection; 10 mL, intravenous, after transfusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX2364&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Flush IV line once prior to infusion of verteporfin and once following infusion of verteporfin&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenence&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in water injection; 10 mL, intravenous, after transfusion&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -144,7 +164,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Admin Instructions:&lt;/p&gt;&lt;p&gt;30 ml syringe, withdraw calculated amount of D5W.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Note: Visudyne is NOT compatible with Normal Saline.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;7 mL sterile water for reconstitution of Visudyne.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Admin Instructions:&lt;/p&gt;&lt;p&gt;&lt;s&gt;30 ml syringe, withdraw calculated amount of D5W.&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&lt;s&gt;&lt;strong&gt;Note: Visudyne is NOT compatible with Normal Saline.&lt;/strong&gt;&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&lt;s&gt;7 mL sterile water for reconstitution of Visudyne.&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Prod. Admin. Inst.:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;Reconstitute each vial with 7 ml of sterile water for injection resulting In 7.5 ml containing 2 mg/ml; protect reconstituted solution from light and use within 4 hours&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;Dilute the reconstituted solution in DSW to a total volume of 30 ml; protect diluted solution from light and use within 4 hours&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Administration Instructions:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;Do not dilute in any other parenteral solutions or mix with other drugs&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;Administer IV over 10 minutes at a rate of 3 ml/min using an appropriate syringe pump and inline filter; a standard infusion line filter ct 1.2 microns was used in clinical trials&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -348,7 +368,8 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenence">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f72eaa61-8e69-4196-8e1d-588ddf17236d" concept_name="PC Insert Saline Lock IV Order" max="1" path="/items" name="Insert Saline Lock IV; once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="PC Insert Peripheral IV Order" max="1" path="/items" name="Insert Peripheral IV; once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6cfc0295-abc2-4be6-975d-635996a00b27" concept_name="PHARM dextrose 5% in water injection Order" max="1" path="/items" name="dextrose 5% in water injection; 10 mL, intravenous, as needed, for 2 doses"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6cfc0295-abc2-4be6-975d-635996a00b27" concept_name="PHARM dextrose 5% in water injection Order" max="1" path="/items" name="dextrose 5% in water injection; 10 mL, intravenous, before transfusion"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6cfc0295-abc2-4be6-975d-635996a00b27" concept_name="PHARM dextrose 5% in water injection Order" max="1" path="/items" name="dextrose 5% in water injection; 10 mL, intravenous, after transfusion"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="PC Remove Peripheral IV Order" max="1" path="/items" name="Remove Peripheral IV; once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
