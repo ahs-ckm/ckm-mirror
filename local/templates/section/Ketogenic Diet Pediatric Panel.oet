@@ -76,7 +76,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Diet&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Enteral Feed with Tray, Peds&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Diet&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Enteral Feeding with Tray NB/Inf/Ped&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -84,7 +84,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Diet&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Enteral Feed without Tray, Peds&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Diet&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Enteral Feeding without Tray NB/Inf/Ped&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -175,8 +175,8 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Ketogenic Diet Pediatric Panel">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Diet">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="519e6cd8-a774-4226-b5ad-7d9ea53cf374" concept_name="NFS Pediatric Diet Order" max="1" path="/items" name="Pediatric Diet; Ketogenic Diet"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="NFS Enteral Feed with Tray, Pediatric Order" max="1" path="/items" name="Enteral Feed with Tray, Peds"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="NFS Enteral Feed without Tray, Pediatric Order" max="1" path="/items" name="Enteral Feed without Tray, Peds"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="NFS Enteral Feed with Tray, Pediatric Order" max="1" path="/items" name="Enteral Feeding with Tray NB/Inf/Ped"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="NFS Enteral Feed without Tray, Pediatric Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="POCT Blood Glucose Monitoring">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT every _____ hours"/>
