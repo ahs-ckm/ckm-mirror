@@ -74,12 +74,8 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#2980b9&quot;&gt;Is Peptide Receptor Radionuclide Therapy, PRRT an appropriate synonym? was included when order sets combined.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#2980b9&quot;&gt;Spell out PSMA in the name of order set? Lutetium&lt;/span&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;&amp;nbsp;&lt;em&gt;Prostate-specific membrane antigen &lt;/em&gt;&lt;/span&gt;&lt;span style=&quot;color:#2980b9&quot;&gt;Therapy Adult Order set&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Synonyms:&amp;nbsp;&lt;em&gt;Radiotherapy, Radioactive, lu-DOTA-TATE,&amp;nbsp;LuPSMA, Lu 177, Prostate-specific membrane antigen, PSMA, prostate cancer,&amp;nbsp;Radioactive Therapy (Thyroid and Neuroendocrine) Adult, Radiotherapy&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;Select both &quot;Admit to Inpatient&quot; to request bed and&lt;span style=&quot;color:#c0392b&quot;&gt;&amp;nbsp;NM Lutetium PSMA&lt;/span&gt;&amp;nbsp;Therapy for the procedure and alert to Nuclear Medicine for inpatient treatment.&lt;br&gt;&amp;nbsp;&lt;br&gt;For requesting a bed, follow site procedure for requesting lead-lined room.&lt;br&gt;Follow site procedure for scheduling&amp;nbsp;&lt;span style=&quot;color:#c0392b&quot;&gt;NM Lutetium PSMA&lt;/span&gt;&amp;nbsp;Therapy.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;A net new order for &amp;nbsp;NM LU 177 PSMA is required. It does not exist in CC yet at this time. NM LU 177 Octreotate used as a PLACEHOLDER for now.&lt;/span&gt;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Synonyms:&amp;nbsp;&lt;em&gt;Radiotherapy, Radioactive, lu-DOTA-TATE,&amp;nbsp;LuPSMA, Lu 617, Prostate-specific membrane antigen, PSMA, prostate cancer, Radiotherapy, prostate radioligand therapy, PRLT&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;Select both &quot;Admit to Inpatient&quot; to request bed and&lt;span style=&quot;color:#c0392b&quot;&gt;&amp;nbsp;NM Lutetium PSMA&lt;/span&gt;&amp;nbsp;Therapy for the procedure and alert to Nuclear Medicine for inpatient treatment.&lt;br&gt;&amp;nbsp;&lt;br&gt;For requesting a bed, follow site procedure for requesting lead-lined room.&lt;br&gt;Follow site procedure for scheduling&amp;nbsp;&lt;span style=&quot;color:#c0392b&quot;&gt;NM Lutetium PSMA&lt;/span&gt;&amp;nbsp;Therapy.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;A net new order for &amp;nbsp;NM LU 177 PSMA is required. It does not exist in CC yet at this time. NM LU 177 Octreotate used as a PLACEHOLDER for now.&lt;/span&gt;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -139,6 +135,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure Scheduling&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Scheduling for Inpatients&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Procedure Booking Instructions&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Patients receiving Radioactive Therapy requires admission to lead-lined room with private bathroom. Notify unit that patient will be inpatient and require a lead-lined room.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure Scheduling&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Scheduling for Inpatients&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Procedure Booking Instructions&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure Scheduling&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Scheduling for Inpatients&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Admit to Inpatient&apos;]/activities[at0001]">
     <items>
       <item>
@@ -148,22 +160,6 @@
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure Scheduling&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Scheduling for Inpatients&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Admit to Inpatient&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure Scheduling&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Scheduling for Inpatients&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Procedure Booking Instructions&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#2980b9&quot;&gt;Are there any procedure booking details to include to inpatient nursing? or could this nursing comm be eliminated?&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure Scheduling&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Scheduling for Inpatients&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Procedure Booking Instructions&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -187,7 +183,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -195,7 +191,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -203,7 +199,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alkaline Phosphatase (ALP)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alkaline Phosphatase (ALP)&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -211,7 +207,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alkaline Phosphatase (ALP)&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alkaline Phosphatase (ALP)&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -219,7 +215,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST)&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -227,7 +223,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST)&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST)&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -235,7 +231,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT)&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -243,7 +239,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT)&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT)&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -251,7 +247,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bilirubin, Total&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bilirubin, Total&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -259,7 +255,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bilirubin, Total&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bilirubin, Total&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -267,7 +263,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -275,7 +271,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -283,7 +279,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -291,7 +287,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -299,7 +295,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine Clearance&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine Clearance&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -307,16 +303,20 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine Clearance&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;2 weeks Post-Teatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+2&amp;nbsp;weeks&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 2&amp;nbsp;weeks post-treatment&lt;/p&gt;</value>
@@ -342,6 +342,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;4 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+4&amp;nbsp;weeks&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 4&amp;nbsp;weeks post-treatment&lt;/p&gt;</value>
       </item>
@@ -366,6 +370,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC and Differential&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
       </item>
@@ -381,6 +389,10 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Creatinine&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
@@ -398,6 +410,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Bilirubin, Total&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
       </item>
@@ -413,6 +429,10 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Albumin&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
@@ -430,6 +450,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alkaline Phosphatase (ALP)&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
       </item>
@@ -446,6 +470,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST)&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
       </item>
@@ -461,6 +489,10 @@
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Post-Treatment Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;6 weeks Post-Treatment&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT)&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;default W+6 weeks&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;To be drawn 6 weeks post-treatment&lt;/p&gt;</value>
@@ -487,15 +519,19 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Per protocol Until Specified,&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:inherit&quot;&gt;Inpatient Treatment - Signed/Held&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;span style=&quot;color:inherit&quot;&gt;Inpatient Treatment - Signed/Held&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intraprocedure (Nuclear Medicine)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Nuclear Medicine Therapy Administration&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;ERX request for specific lutetium PSAM-617 pending&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Drug Name: Lutetium PSMA-617&lt;/p&gt;&lt;p&gt;Dose: *** MBq 7400 MBq (default dose).&amp;nbsp;&lt;/p&gt;&lt;p&gt;Route: Intravenous,&lt;/p&gt;&lt;p&gt;Frequency: Once&lt;/p&gt;&lt;p&gt;Drug Name: ***&amp;nbsp;&lt;/p&gt;&lt;p&gt;Reason&amp;nbsp;Non Standard Medication required: ***&lt;/p&gt;&lt;p&gt;Admin Instructions: Administer slowly&amp;nbsp;over 1 to 10 minutes&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Drug Name: Lutetium PSMA-617&lt;/p&gt;&lt;p&gt;Dose: 7400 MBq&amp;nbsp;&lt;/p&gt;&lt;p&gt;Route: Intravenous,&lt;/p&gt;&lt;p&gt;Frequency: Once&lt;/p&gt;&lt;p&gt;Drug Name: Lutetium PSMA-616&lt;/p&gt;&lt;p&gt;Forn: injectable&lt;/p&gt;&lt;p&gt;Reason&amp;nbsp;Non Standard Medication required: metastatic prostate cancer&lt;/p&gt;&lt;p&gt;Admin Instructions: Administer slowly&amp;nbsp;over 1 to 10 minutes&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -531,118 +567,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;dimenhyDRINATE PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;dimenhyDRINATE PO/IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #2&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Avoid dimenhyDRINATE in patients 65 years of age or older due to increased risk of side effects including delirium. Suggest 25 mg for mild/moderate nausea, 50 mg for moderate/severe nausea&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;dimenhyDRINATE PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dimenhyDRINATE Tablet&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;25-50 mg, oral, every 4 hours, as needed, nausea, vomiting,&lt;/p&gt;&lt;p&gt;Inpatient Treatment - Signed/Held&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;dimenhyDRINATE PO/IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;dimenhyDRINATE PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dimenhyDRINATE injection&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;25-50 mg, intravenous, every 4 hours, as needed, nausea, vomiting&lt;/p&gt;&lt;p&gt;Inpatient Treatment - Signed/Held&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;metoclopramide PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;metoclopramide PO/IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;PO administration or slow infusion via IVPB are preferred for metoclopramide to reduce the risk of akathisia. Suggest 5 mg for mild/moderate nausea or if CrCl less than 40mL/min; 10 mg for moderate/severe nausea, and CrCl over 40mL/min. Avoid in Parkinson&apos;s patients - may exacerbate symptoms.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;metoclopramide PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metoclopramide Tablet&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;10 mg, oral, every 6 hours, as needed, nausea, vomiting,&lt;/p&gt;&lt;p&gt;Inpatient Treatment - Signed/Held&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;metoclopramide PO/IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;metoclopramide PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metoclopramide injection&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;10 mg, intravenous, every 6 hours, as needed, nausea, vomiting,&lt;/p&gt;&lt;p&gt;Inpatient Treatment - Signed/Held&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ondansetron PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ondansetron PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ondansetron Tablet&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;8 mg, oral, every 8 hours, as needed, nausea, vomiting,&lt;/p&gt;&lt;p&gt;Inpatient Treatment - Signed/Held&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ondansetron PO/IV&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure (Inpatient Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ondansetron PO/IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ondansetron injection&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;8 mg, intravenous, every 8 hours, as needed, nausea, vomiting,&lt;/p&gt;&lt;p&gt;Inpatient Treatment - Signed/Held&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -662,21 +586,24 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Scheduling for Inpatients">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1f98ea01-c380-4d06-a11a-e96e0ce99ab4" concept_name="DI NM Lu-177 Octreotate Therapy Order" max="1" path="/items" name="NM Lu-177 Octreotate Therapy"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Procedure Booking Instructions"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient Order" max="1" path="/items" name="Admit to Inpatient"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre-Treatment Laboratory Investigations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc9fdffb-bde5-4ca2-8533-f51c37298f5e" concept_name="LAB Creatinine Clearance Order" max="1" path="/items" name="Creatinine Clearance"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre-Treatment Labs - 2 weeks">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) Order" max="1" path="/items" name="Alkaline Phosphatase (ALP)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total Order" max="1" path="/items" name="Bilirubin, Total"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc9fdffb-bde5-4ca2-8533-f51c37298f5e" concept_name="LAB Creatinine Clearance Order" max="1" path="/items" name="Creatinine Clearance"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Post-Treatment Laboratory Investigations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="2 weeks Post-Teatment">
@@ -707,7 +634,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intraprocedure (Nuclear Medicine)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Nuclear Medicine Therapy Administration">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a5f7e549-8a96-418c-9a07-1b930bb509bb" concept_name="PHARM Non Standard Medication Order" max="1" path="/items" name="Non Standard Medication"/>
@@ -723,28 +650,6 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="dimenhyDRINATE PO/IV">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #2"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM dimenhyDRINATE Tablet Order" max="1" path="/items" name="dimenhyDRINATE Tablet"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE injection"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="metoclopramide PO/IV">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05b202cc-0015-412c-9c83-ed0c7727d1f0" concept_name="PHARM metoclopramide Tablet Order" max="1" path="/items" name="metoclopramide Tablet"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9b485b3-6681-44f9-b0fb-1949efbd6d85" concept_name="PHARM metoclopramide injection Order" max="1" path="/items" name="metoclopramide injection"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ondansetron PO/IV">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron Tablet"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80b79825-a35f-40f3-ba6f-030ce06fa116" concept_name="PHARM ondansetron injection Order" max="1" path="/items" name="ondansetron injection"/>
-        </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="13341bf5-b9c1-43e6-87f7-311a4679c1be" concept_name="Antiemetics_I_131 MIBG_Lu_DOTA_tate_PSMA_Adult Order Group" max="1" path="/items" name="Antiemetics #1"/>
     </Item>
