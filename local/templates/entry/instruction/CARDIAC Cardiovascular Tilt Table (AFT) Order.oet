@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>65f2917d-25f2-4724-80c1-4ad4abf50255</id>
+  <name>CARDIAC Cardiovascular Tilt Table (AFT) Order</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;CAR47&lt;/p&gt;</value>
+      </item>
+    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~65f2917d-25f2-4724-80c1-4ad4abf50255~NAME~CARDIAC Cardiovascular Tilt Table (AFT) Order}</value></item></items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Reference Links:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Link to Alberta Referral Directory&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~af067936-d8b0-4269-87da-d4282d7b9ad5~NAME~CARDIAC Where will this be performed AMB Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Mandatory; A response to this question may trigger a cascading question&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;In which zone will this procedure be performed?&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;ConnectCare Facility&quot; selected for &quot;Where will this be performed?&quot;; A response to this question may trigger a cascading question&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Where will this be performed?&apos;]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;ConnectCare Facility&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Preferred Site (Calgary)&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Cascading question when &quot;Calgary&amp;nbsp;(ConnectCare)&quot; selected for &quot;In which zone will this procedure be performed?&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1 and name/value=&apos;Clinical Indication:&apos;]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Other&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Free text; Mandatory if &quot;other&quot; selected for clinical indication&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Scheduling Instructions:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Free text&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Care Setting</key>
+        <value>&lt;p&gt;AMB&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]/description[at0009]/items[openEHR-EHR-CLUSTER.service_request_information.v1 and name/value=&apos;Comments:&apos;]">
+    <items>
+      <item>
+        <key>Catalogue Pattern.Configuration Notes</key>
+        <value>&lt;p&gt;Free text&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Cardiovascular Tilt Table (AFT)">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="c147b376-9eea-411c-8131-8971a2d5b7c0" concept_name="CARDIAC Status AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Status"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" template_id="8b5de589-b33c-4eb1-a3cc-026711cd907b" concept_name="CARDIAC Class AMB Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Class:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" template_id="3bf0eb33-c82d-4795-aeb8-938a9df94a90" concept_name="CARDIAC Frequency Once IP Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" template_id="6d79deff-c21e-45cf-9d92-5a8ae1782c2b" concept_name="CARDIAC Priority IP Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Reference Links:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="THIS PROCEDURE IS SPECIFIC TO AUTONOMIC FUNCTION TESTING PERFORMED AT SOUTH HEALTH CAMPUS (SHC) IN CALGARY ONLY - PLEASE CONFIRM THAT THIS IS THE CORRECT PROCEDURE BEFORE CONTINUING - THANK YOU">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Understood</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Where will this be performed?">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Where will this be performed?">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>ConnectCare Facility</includedValues>
+            <includedValues>Other Facility (Requisition to print)</includedValues>
+            <includedValues>Lab Facility (Requisition to print)</includedValues>
+            <includedValues>Community Paramedic</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="ConnectCare Facility">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="In which zone will this procedure be performed?">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Calgary (ConnectCare)</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Preferred Site (Calgary)">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>South Health Campus</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Other Facility (Requisition to print)">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="By selecting &apos;Other&apos; the order will be COMPLETED in ConnectCare and a requisition will be printed for the patient">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Understood</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Lab Facility (Requisition to print)">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="By selecting &apos;Lab&apos; - a requisition will print AND an order will remain in ConnectCare which allows lab facilities and mobile collection to use the order">
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>Understood</includedValues>
+            </constraint>
+          </Rule>
+        </Items>
+      </Items>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Clinical Indication:">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Clinical Indication">
+        <Rule path="/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Syncope</includedValues>
+            <includedValues>Orthostatic Hypotension</includedValues>
+            <includedValues>POTS</includedValues>
+            <includedValues>Baroreflex Failure</includedValues>
+            <includedValues>Autonomic Disorder</includedValues>
+            <includedValues>Other:</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/items[at0002]" name="Other"/>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Scheduling Instructions:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comments:"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
