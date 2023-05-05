@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~d37753a7-2b69-463c-9d7d-ab2efbfee4f4~NAME~Endoscopy Postprocedure Adult Order Set}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -272,7 +280,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~d37753a7-2b69-463c-9d7d-ab2efbfee4f4~NAME~Endoscopy Postprocedure Adult Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Endoscopy Postprocedure Adult Order Set">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Endoscopy Postprocedure Adult Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Postprocedure Care (Floor/On Unit)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; Recovery &amp; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="NFS Adult Diet Order" max="1" path="/items" name="Adult Diet; Regular"/>
@@ -382,6 +390,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; No driving for 24 hours post discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Diagnostic Imaging">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b4e73b9a-0263-4998-9a6a-740da9ec3f0c" concept_name="DI GR Abdomen 2 Projections Order" max="1" path="/items" name="GR Abdomen 2 Projections"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c16e0f-6a8f-435e-a46f-5678732e85fb" concept_name="DI CT Chest Abdomen Pelvis Angiogram Order" max="1" path="/items" name="CT Chest Abdomen Pelvis Angiogram"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3fd71b82-e0db-4964-a492-a988c3e70874" concept_name="DI CT Enterography Order" max="1" path="/items" name="CT Enterography"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d3ef06be-ec37-4482-a320-b2fd206524e5" concept_name="DI MR Enterography Order" max="1" path="/items" name="MR Enterography"/>
