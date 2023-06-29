@@ -60,16 +60,32 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~062fcb24-165c-47f6-982f-25549d02bd2c~NAME~z.test XL Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Test XL Order Set">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~062fcb24-165c-47f6-982f-25549d02bd2c~NAME~z.test XL Order Set}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;OS Section 1&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Test 6/29&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Test XL Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="OS Section 1">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="36635ec7-08e7-488e-a6ef-3b543baae5f7" concept_name="z.test OG 1" max="1" path="/items" name="Test OG 1 Test update Apr-4"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7f6ae3ce-9cc9-477b-b2d3-f89e927fa82d" concept_name="z.Patient Care Group" max="1" path="/items" name="Z.Patient Care group"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="bea995f5-2bf6-4a97-a412-858ac1e495ca" concept_name="z.New Ad hoc Header orderable groups Order Set" max="1" path="/items" name="New Ad hoc Header orderable groups Order Set"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="975efbab-946e-473a-89cf-7708a337df28" concept_name="z.BuildBuddy Test Order Group 1" max="1" path="/items" name="z.Demo Order Group 1"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2ea51840-0be4-4f73-b37b-40104089ab21" concept_name="z.BuildBuddy Test Order Group 2" max="1" path="/items" name="z.Demo Order Group 2"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6bbcc968-61c1-4f3f-8eae-e087b918e059" concept_name="z.BuildBuddy Test Order Group 3" max="1" path="/items" name="z.Demo Order Group 3"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="643886d8-4ddd-48c4-a4ea-7143931453f5" concept_name="z.BuildBuddy Test Order Group 4" max="1" path="/items" name="z.Demo Order Group 4"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2a2929ff-8d61-410c-9184-a532784a1bf9" concept_name="z.BuildBuddy Test Order Group 5" max="1" path="/items" name="z.Demo Order Group 5"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="975efbab-946e-473a-89cf-7708a337df28" concept_name="z.Demo Order Group 1" max="1" path="/items" name="z.Demo Order Group 1"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2ea51840-0be4-4f73-b37b-40104089ab21" concept_name="z.Demo Order Group 2" max="1" path="/items" name="z.Demo Order Group 2"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6bbcc968-61c1-4f3f-8eae-e087b918e059" concept_name="z.Demo Order Group 3" max="1" path="/items" name="z.Demo Order Group 3"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="643886d8-4ddd-48c4-a4ea-7143931453f5" concept_name="z.Demo Order Group 4" max="1" path="/items" name="z.Demo Order Group 4"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2a2929ff-8d61-410c-9184-a532784a1bf9" concept_name="z.Demo Order Group 5" max="1" path="/items" name="z.Demo Order Group 5"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="OS  Section 2">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2ccc28f9-e42d-49b4-99fd-b7eb65885e1f" concept_name="z.Test OG 2" max="1" path="/items" name="Test OG 2"/>
@@ -97,6 +113,9 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
@@ -105,9 +124,6 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
