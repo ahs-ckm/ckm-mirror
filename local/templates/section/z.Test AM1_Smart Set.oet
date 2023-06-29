@@ -100,19 +100,46 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Instructions&apos;]/items[openEHR-EHR-ACTION.health_education.v1]/description[at0001]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;ID of Health Eucation Topic&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="z.Test AM1_Smart Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6b8217b1-04e9-4bcb-86e0-8039411dafec" concept_name="AMB Follow-Up Order Group" max="1" path="/items" name="Follow-up"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Reason for Visit">
-      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" path="/items"/>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" max="1" path="/items" name="Reason for encounter; Reason for Encounter 1">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Reason Dx 1 (preselected)</includedValues>
+            <includedValues>Reason Dx 2 (preselected)</includedValues>
+            <includedValues>Reason Dx 3</includedValues>
+            <includedValues>Reason Dx 4</includedValues>
+            <includedValues>Reason Dx 5</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0004]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Presenting Problem 1 (preselected)</includedValues>
+            <includedValues>Presenting Problem 2</includedValues>
+            <includedValues>Presneting Problem 3</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" max="1" path="/items" name="Reason for encounter; Reason for Encounter 2"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Visit Diagnosis">
-      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" path="/items">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" path="/items" name="Problem/Diagnosis; Problem 1">
         <Rule path="/data[at0001]/items[at0002]">
           <constraint xsi:type="textConstraint">
             <includedValues>HIV exposure [Z20.6]</includedValues>
           </constraint>
         </Rule>
       </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" path="/items" name="Problem/Diagnosis; Problem 2"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Progress Note">
       <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.progress_note.v1" concept_name="Progress note" max="1" path="/items" name="HIV PrEP Progress Note">
@@ -126,7 +153,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinic Administered Medications"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Instructions">
-      <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.health_education.v1" concept_name="Health education" path="/items">
+      <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.health_education.v1" concept_name="Health education" max="1" path="/items" name="Health education; Title of Health Education Topic">
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.information_resource.v1" concept_name="Information resource" path="/description[at0001]/items[at0025]"/>
       </Item>
     </Item>
