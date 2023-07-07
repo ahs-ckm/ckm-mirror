@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~0f7a2f10-3d83-4fab-b7ad-5467a4a4f04c~NAME~ESCN Seizure, Adult Protocol}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -68,11 +76,35 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Once, STAT&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP)&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Notify if blood glucose less than 4 mmol/L or greater than 18 mmol/L&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -104,7 +136,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Apply cardiac monitor leads; monito patient in lead II and if available VI. Interpret the rhythm strip and place on the patient&apos;s health record.&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Apply cardiac monitor leads; monitor patient in lead II and, if available, lead V1. Interpret the rhythm strip and place on the patient&apos;s health record.&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -276,7 +308,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - femal patient of child bearing age (who has not had a hysterectomy) for possibility of pregnancy&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)&apos;]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -284,7 +316,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - femal patient of child bearing age (who has not had a hysterectomy) for possibility of pregnancy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test Urine POCT; Manual&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test Urine POCT; Manual&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -292,7 +332,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - femal patient of child bearing age (who has not had a hysterectomy) for possibility of pregnancy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test Urine POCT; meter resulted&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test Urine POCT; meter resulted&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -300,7 +340,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - femal patient of child bearing age (who has not had a hysterectomy) for possibility of pregnancy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test, Urine&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pregnancy Test, Urine&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -308,7 +348,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - femal patient of child bearing age (who has not had a hysterectomy) for possibility of pregnancy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Beta hCG, Quantitative&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Beta hCG, Quantitative&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -316,7 +356,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~0f7a2f10-3d83-4fab-b7ad-5467a4a4f04c~NAME~ESCN Seizure, Adult Protocol}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="ESCN Seizure, Adult Protocol">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="ESCN Seizure, Adult Protocol">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP)"/>
@@ -345,7 +385,7 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5535231f-8988-4ba4-9b10-11ded170d31e" concept_name="LAB Urate Order" max="1" path="/items" name="Urate"/>
     </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pregnancy Test - femal patient of child bearing age (who has not had a hysterectomy) for possibility of pregnancy">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pregnancy Test - for any patient with a uterus of childbearing age (excluding patients who have a current confirmed pregnancy)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7136855-e966-442e-b200-65215d6de885" concept_name="LAB Pregnancy Test Urine POCT Order" max="1" path="/items" name="Pregnancy Test Urine POCT; Manual"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7136855-e966-442e-b200-65215d6de885" concept_name="LAB Pregnancy Test Urine POCT Order" max="1" path="/items" name="Pregnancy Test Urine POCT; meter resulted"/>
