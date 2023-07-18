@@ -220,19 +220,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications - Other&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Eye drop 0.5%; 1 drop, 4 times per day, as needed, On Unit&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications - Other&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Eye drop 0.5%; 1 drop, 4 times per day, as needed, for pain, On Unit&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Missing PRN reason&lt;/p&gt;&lt;p&gt;Confirm dosing and comments appropriate?&lt;/p&gt;&lt;p&gt;4 times per day for 3 doses?&lt;/p&gt;&lt;p&gt;comment to produce anesthesia?&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;Instill into affected eye(s) at 5 minute intervals up to 3 drops per eye as required to produce anesthesia.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;Instill into affected eye(s) 4 times per day, as needed, up to 3 drops per eye as required to produce anesthesia.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications - Other&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Eye drop 0.5%; dropperette; 1 drop, 4 times per day, as needed, On Unit&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications - Other&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Eye drop 0.5%; dropperette; 1 drop, 4 times per day, as needed, for pain, On Unit&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
@@ -241,10 +237,6 @@
       <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;ERX&amp;nbsp;166728&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;PRN for anesthesia?&lt;/p&gt;&lt;p&gt;4 times per day for 3 doses?&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -486,8 +478,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f9425ca3-654a-4059-aa1d-da113baf1e79" concept_name="Analgesics and Antipyretics Ophthalmology Pediatric Order Group" max="1" path="/items" name="Analgesics and Antipyretics; On Unit"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="92234610-a172-4b72-ab7f-dc56a3de4bcf" concept_name="Antiemetics Postprocedure Pediatric Order Group" max="1" path="/items" name="Antiemetics; On Unit"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications - Other">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine Eye drop 0.5%; 1 drop, 4 times per day, as needed, On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine Eye drop 0.5%; dropperette; 1 drop, 4 times per day, as needed, On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine Eye drop 0.5%; 1 drop, 4 times per day, as needed, for pain, On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine Eye drop 0.5%; dropperette; 1 drop, 4 times per day, as needed, for pain, On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e2e056-c89b-48ec-84d4-d5718460fa9c" concept_name="PHARM xylometazoline Nasal spray 0.1% Order" max="1" path="/items" name="xylometazoline Nasal spray 0.1%; 1 spray, BOTH nostrils, 2 times per day; On Unit"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
