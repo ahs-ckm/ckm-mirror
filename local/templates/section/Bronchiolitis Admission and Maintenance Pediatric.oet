@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Ticket CCCIR:25812&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;-updates to oxygen order&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;-updates to room air trial order and panel&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;-Revisions to blood gas, chest x-ray, medications sections&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;-creation of a new section &quot;Bronchiolitis Deterioration&quot;&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Update name to &quot;Bronchiolitis Admission and Maintenance Pediatric&quot; CCCIR-25812&lt;/p&gt;</value>
       </item>
@@ -176,18 +180,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pulse oximetry; every 4 to 8 hours until successful&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Remove this order&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;ul&gt;&lt;li&gt;Frequency: Once&lt;/li&gt;&lt;li&gt;Comments:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Continuous oxygen sat monitoring is NOT required for all patients on oxygen or for weaning of oxygen. Should only be reserved for patients with concern for deterioration and is not a substitute for assessing respiratory status.&lt;br&gt;Desaturation to 88% during sleep is acceptable. Intermittent desaturations to mid 80&apos;s can be normal in healthy infants.&lt;br&gt;Intermittent oxygen saturation monitoring is strongly recommend for children who are improving in clinical condition whether they are on supplemental oxygen or not.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Height and Weight&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -240,11 +232,11 @@
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Update minimum oxygen saturation range, CCCIR-25812&lt;/p&gt;</value>
+        <value>&lt;p&gt;Update oxygen saturation range, CCCIR-25812&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;Titrate to Maintain Target Saturation Range: Other range&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;Target Saturation Min: 90%&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;Titrate to maintain oxygen saturation greater or equal to 90% starting at 0.5 to 1 LPM via nasal prongs. If greater flow rates required, re-evaluate response to oxygen therapy to determine if issue is airway related, oxygen is being effectively administered, and for the presence of a co-morbidity or increasing severity of bronchiolitis.&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;Titrate to Maintain Target Saturation Range: 90-98%&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color:null&quot;&gt;Titrate to maintain oxygen saturation 90-98% starting at 0.5 to 1 LPM via nasal prongs. If greater flow rates required, re-evaluate response to oxygen therapy to determine if issue is airway related, oxygen is being effectively administered, and for the presence of a co-morbidity or increasing severity of bronchiolitis.&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -592,7 +584,23 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen ORAL liquid 80 mg/mL&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Infants with bronchiolitis and respiratory rates over 70 breaths per minute or in those whom severe respiratory distress prevents oral feeds should undergo blood gas analysis to evaluate the adequacy of ventilation.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Please refer to “Bronchiolitis Deterioration” below.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Chest x-rays are not routinely recommended in bronchiolitis.&lt;/p&gt;&lt;p&gt;If performed, patchy infiltrates/bilateral atelectasis are typical and is not an absolute indication to start antibiotics for pneumonia.&lt;/p&gt;&lt;p&gt;Consider in severe illness (i.e., PICU patient), if fever occurring later in course, impending resp failure or concerns for congestive heart failure.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Please refer to “Bronchiolitis Deterioration” below.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen ORAL liquid 80 mg/mL&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -600,7 +608,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen ORAL liquid 80 mg/mL&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen ORAL liquid 80 mg/mL&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -608,7 +616,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Suppository&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Suppository&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -616,7 +624,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Suppository&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen Suppository&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -624,7 +632,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -632,11 +640,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inhalation Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;u&gt;&lt;strong&gt;Blood Gas&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;Infants with bronchiolitis and respiratory rates over 70 breaths per minute or in those whom severe respiratory distress prevents oral feeds should undergo blood gas analysis to evaluate the adequacy of ventilation&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;Chest X-Ray&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;-Chest x-rays are not routinely recommended in bronchiolitis.&lt;/p&gt;&lt;p&gt;-If performed, patchy infiltrates/bilateral atelectasis are typical and are not an absolute indication to start antibiotics for pneumonia.&lt;/p&gt;&lt;p&gt;-Consider in severe illness (i.e., PICU patient), if fever occurring later in course, impending respiratory failure or concerns for congestive heart failure.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;Medications&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;There is insufficient evidence to suggest that routine use of bronchodilators or hypertonic saline nebulizers change outcomes in bronchiolitis.&lt;/p&gt;&lt;p&gt;If severe respiratory distress with consideration of ventilatory support, consider a trial of inhaled medication, and document a pre and post assessment.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Hypertonic sodium chloride&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;- There is currently no evidence to indicate 3% hypertonic sodium chloride changes length of stay, morbidity, or mortality.&lt;/p&gt;&lt;p&gt;- Normal saline nebulizers (0.9%) might confer short-term benefit, but there are no studies to suggest it alters disease course.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Bronchodilators/Epinephrine&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Consider in children with severe bronchiolitis who are being considered for ventilatory support.&lt;/p&gt;&lt;p&gt;- Do not trial salbutamol in infants LESS THAN 6 months old.&lt;/p&gt;&lt;p&gt;- For children 6-24 months: Salbutamol nebulizer dosing is 2.5 mg (under 20 kg) to 5 mg (greater than 20kg) x 1 dose with pre/post assessment. &amp;nbsp;Repeat only if there is a clear clinical response.&lt;/p&gt;&lt;p&gt;- Epinephrine nebulizer dosing is L-epinephrine 0.5 mg/kg/dose (maximum of 5 mg) of a 1:1000 dilution.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;There is insufficient evidence to suggest that the routine use of bronchodilators or hypertonic saline nebulizers change the outcome of bronchiolitis.&lt;/p&gt;&lt;p&gt;If severe respiratory distress with consideration of ventilatory support, consider a trial of inhaled medication, and document a pre and post assessment.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Please refer to “Bronchiolitis Deterioration” below.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -644,7 +652,7 @@
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Remove &quot;May use&quot; from header &apos;May use Heated Humidified High Flow&apos;&lt;/p&gt;&lt;p&gt;default target saturation range to Other, 90&lt;/p&gt;&lt;p&gt;Oxygen therapy by flow:&amp;nbsp;&lt;strong&gt;High Flow nasal cannula;&amp;nbsp;Heated humidified high flow&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Remove oxygen therapy by FiO2 selection&lt;/p&gt;&lt;p&gt;Update guidance to match ED set&lt;/p&gt;</value>
+        <value>&lt;p&gt;Remove &quot;May use&quot; from header &apos;May use Heated Humidified High Flow&apos;&lt;/p&gt;&lt;p&gt;default target saturation range to&amp;nbsp;90-98&lt;/p&gt;&lt;p&gt;Oxygen therapy by flow:&amp;nbsp;&lt;strong&gt;High Flow nasal cannula;&amp;nbsp;Heated humidified high flow&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Remove oxygen therapy by FiO2 selection&lt;/p&gt;&lt;p&gt;Update guidance to match ED set&lt;/p&gt;</value>
       </item>
       <item>
         <key>Transform.Clinical Notes</key>
@@ -652,11 +660,51 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Routine&lt;/p&gt;&lt;p&gt;Titrate to Maintain Target Saturation Range:&amp;nbsp;&lt;strong&gt;Other&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Target Saturation Min:&amp;nbsp;&lt;strong&gt;90&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply):&amp;nbsp;&lt;strong&gt;High Flow nasal cannula;&amp;nbsp;Heated humidified high flow&lt;/strong&gt;&lt;br&gt;Alert physician if oxygen levels go below 90%. Follow local policy and procedure for High Flow Nasal Cannula. If no improvement in WOB and&amp;nbsp;oxygenation in 2 hours consider&amp;nbsp;patient a non-responder to High Flow Nasal Cannula; consider PICU consultation for bipap, CPAP or invasive ventilatio&lt;em&gt;n.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Routine&lt;/p&gt;&lt;p&gt;Titrate to Maintain Target Saturation Range: &lt;strong&gt;90-98%&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply):&amp;nbsp;&lt;strong&gt;High Flow nasal cannula;&amp;nbsp;Heated humidified high flow&lt;/strong&gt;&lt;br&gt;Alert physician if oxygen levels go below 90%. Follow local policy and procedure for High Flow Nasal Cannula. If no improvement in WOB and&amp;nbsp;oxygenation in 2 hours consider&amp;nbsp;patient a non-responder to High Flow Nasal Cannula; consider PICU consultation for bipap, CPAP or invasive ventilatio&lt;em&gt;n.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Infants with bronchiolitis and respiratory rates over 70 breaths per minute or in those whom severe respiratory distress prevents oral feeds should undergo blood gas analysis to evaluate the adequacy of ventilation.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Chest x-rays are not routinely recommended in bronchiolitis.&lt;/p&gt;&lt;p&gt;If performed, patchy infiltrates/bilateral atelectasis are typical and is not an absolute indication to start antibiotics for pneumonia.&lt;/p&gt;&lt;p&gt;Consider in severe illness (i.e., PICU patient), if fever occurring later in course, impending resp failure or concerns for congestive heart failure.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -664,11 +712,43 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;salbutamol inhalation; 2.5 mg inhalation once&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inhalation Medications&apos;]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inhalation Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;There is insufficient evidence to suggest that the routine use of bronchodilators or hypertonic saline nebulizers change the outcome of bronchiolitis.&lt;/p&gt;&lt;p&gt;If severe respiratory distress with consideration of ventilatory support, consider a trial of inhaled medication, and document a pre and post assessment.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Hypertonic sodium chloride&lt;/u&gt;&lt;/p&gt;&lt;p&gt;- There is currently no evidence to indicate 3% hypertonic sodium chloride changes length of stay, morbidity, or mortality.&lt;/p&gt;&lt;p&gt;- Normal saline nebulizers (0.9%) might confer short-term benefit, but there are no studies to suggest it alters disease course.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Bronchodilators/Epinephrine&lt;/u&gt;&lt;/p&gt;&lt;p&gt;Consider in children with severe bronchiolitis who are being considered for ventilatory support.&lt;/p&gt;&lt;p&gt;- Do not trial salbutamol in infants LESS THAN 6 months old.&lt;/p&gt;&lt;p&gt;- For children 6-24 months: Salbutamol nebulizer dosing is 2.5 mg (under 20 kg) to 5 mg (greater than 20kg) x 1 dose with pre/post assessment. &amp;nbsp;Repeat only if there is a clear clinical response.&lt;/p&gt;&lt;p&gt;- Epinephrine nebulizer dosing is L-epinephrine 0.5 mg/kg/dose (maximum of 5 mL) of a 1:1000 dilution.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inhalation Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;salbutamol inhalation; 2.5 mg inhalation once&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;ul&gt;&lt;li&gt;This is a Formulary Restricted Drug. Which restriction dose this patient meet?: Patients who cannot be treated with MDI with spacer&lt;/li&gt;&lt;li&gt;Specify the reason why patient cannot be treated with MDI with spacer: deteriorating bronchiolitis&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;This is a Formulary Restricted Drug. Which restriction dose this patient meet?: Patients who cannot be treated with MDI with spacer&lt;/p&gt;&lt;p&gt;Specify the reason why patient cannot be treated with MDI with spacer: deteriorating bronchiolitis&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inhalation Medications&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -744,7 +824,6 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="PC Cardio_Respiratory Monitoring Order" max="1" path="/items" name="Cardio-Respiratory Monitoring"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="42391c72-1c4f-4d33-82b5-f3a864d711d3" concept_name="PC Pulse oximetry Order" max="1" path="/items" name="Pulse oximetry; Oxygen Saturation Monitoring - Intermittent"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c95ed23e-7578-492a-93b9-39c75abd31b1" concept_name="PC Continuous pulse oximetry Order" max="1" path="/items" name="Continuous pulse oximetry; Oxygen Saturation Monitoring - Continuous. Reassess in 24 hours"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="42391c72-1c4f-4d33-82b5-f3a864d711d3" concept_name="PC Pulse oximetry Order" max="1" path="/items" name="Pulse oximetry; every 4 to 8 hours until successful"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1f852b6e-f842-4a6b-b706-3a1a6fd15769" concept_name="PC Measure Height or Length Order" max="1" path="/items" name="Measure Height or Length; Once, On Admission"/>
@@ -815,6 +894,14 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluid/Electrolytes">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cb323e99-5590-4813-b849-1a68f5dd3a33" concept_name="IV Fluids Bronchiolitis Peds Order Group" max="1" path="/items" name="IV Fluids"/>
@@ -830,16 +917,30 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM ibuprofen Oral liquid 40 mg/mL Order" max="1" path="/items" name="ibuprofen Oral liquid 40 mg/mL"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inhalation Medications">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Bronchiolitis Deterioration">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88d4856a-46da-4645-b5f8-1b54f9b0dca2" concept_name="RESP PED Oxygen Therapy Order" max="1" path="/items" name="Oxygen Therapy; Heated Humidified High Flow"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad0c1c7c-4333-4143-8402-573327d62900" concept_name="LAB Blood Gas Capillary POCT Order" max="1" path="/items" name="Blood Gas Capillary POCT; Once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous POCT; Once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c3f48a20-6f16-4097-aa4e-fdc6b452b93c" concept_name="PHARM sodium chloride liquid inhalation 3% Order" max="1" path="/items" name="sodium chloride liquid inhalation 3%; 4 mL inhalation once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="38fc5039-efaa-4b9d-bf32-8983ef41e8ab" concept_name="PHARM epinephrine inhalation Order" max="1" path="/items" name="epinephrine inhalation; *** mg (cap of 5 mg) inhalation once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation; 2.5 mg inhalation once"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad0c1c7c-4333-4143-8402-573327d62900" concept_name="LAB Blood Gas Capillary POCT Order" max="1" path="/items" name="Blood Gas Capillary POCT; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous POCT; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inhalation Medications">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c3f48a20-6f16-4097-aa4e-fdc6b452b93c" concept_name="PHARM sodium chloride liquid inhalation 3% Order" max="1" path="/items" name="sodium chloride liquid inhalation 3%; 4 mL inhalation once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation; 2.5 mg inhalation once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="38fc5039-efaa-4b9d-bf32-8983ef41e8ab" concept_name="PHARM epinephrine inhalation Order" max="1" path="/items" name="epinephrine inhalation; *** mg (cap of 5 mg) inhalation once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10f13f4b-08db-486b-82ff-d934fdcde962" concept_name="CONS Inpatient Consult to Pediatric Critical Care Medicine Order" max="1" path="/items" name="Inpatient Consult to Pediatric Critical Care Medicine"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
