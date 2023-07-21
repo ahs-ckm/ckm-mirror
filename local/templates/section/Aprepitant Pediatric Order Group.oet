@@ -60,25 +60,43 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~d2d0008a-e463-450c-9061-415b031e363d~NAME~Aprepitant Pediatric Order Group}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Aprepitant is&amp;nbsp;Formulary restricted (FR).&lt;/p&gt;&lt;p&gt;Administer within 3 hours prior to inducation of GENERAL ANESTHESIA in pediatrics 4 years of age and older who:&lt;br&gt;1) Are undergoing spinal instrumentation, neurosurgery, Nuss procedures, cochlear implant surgery, tonsillectomy +/- adenoidectomy, or jaw wiring OR&lt;br&gt;2) Have at least 3 risk factors* for post-operative nausea and vomiting (using Eberhart Score)&lt;br&gt;&lt;em&gt;*Risk factors include: previous history of post-operative vomiting (POV) or history of post-operative nausea or vomiting (PONV) in relatives, general anesthesia lasting 30 minutes or more, age ≥ 3 years of age, and strabismus surgery.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Recommended dosing:&lt;/p&gt;&lt;p&gt;Children greater than or equal to 4 years and Adolescents:&lt;/p&gt;&lt;p&gt;- under 40 kg: 40 mg&lt;/p&gt;&lt;p&gt;- 40 to 60 kg: 80 mg&lt;/p&gt;&lt;p&gt;- greater than 60 kg: 125 mg&lt;/p&gt;</value>
+        <value>&lt;p&gt;Aprepitant is&amp;nbsp;Formulary restricted (FR).&lt;/p&gt;&lt;p&gt;Administer within 3 hours prior to inducation of GENERAL ANESTHESIA in pediatrics 4 years of age and older who:&lt;br&gt;1) Are undergoing spinal instrumentation, neurosurgery, Nuss procedures, cochlear implant surgery, tonsillectomy +/- adenoidectomy, or jaw wiring OR&lt;br&gt;2) Have at least 3 risk factors* for post-operative nausea and vomiting (using Eberhart Score)&lt;br&gt;&lt;em&gt;*Risk factors include: previous history of post-operative vomiting (POV) or history of post-operative nausea or vomiting (PONV) in relatives, general anesthesia lasting 30 minutes or more, age ≥ 3 years of age, and strabismus surgery.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Recommended dosing:&lt;/p&gt;&lt;p&gt;Children greater than or equal to 4 years and Adolescents:&lt;/p&gt;&lt;p&gt;- under 40 kg: 2 mg/kg/dose for 1 dose&lt;/p&gt;&lt;p&gt;- 40 kg or greater: 80 mg for 1 dose&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;aprepitant Capsule&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;*** mg, oral, once&lt;/p&gt;&lt;p&gt;Administer within 3 hours prior to induction of general anesthesia&lt;/p&gt;</value>
+        <value>&lt;p&gt;80 mg, oral, once&lt;/p&gt;&lt;p&gt;Administer within 3 hours prior to induction of general anesthesia&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~d2d0008a-e463-450c-9061-415b031e363d~NAME~Aprepitant Pediatric Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Aprepitant">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;aprepitant 20 mg/mL liquid oral&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 mg/kg/dose, oral, once&lt;/p&gt;&lt;p&gt;Administer within 3 hours prior to induction of general anesthesia&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Aprepitant">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d7b50cd-5ad4-49bf-afd8-dab5dd5e4e8c" concept_name="PHARM aprepitant Capsule Order" max="1" path="/items" name="aprepitant Capsule"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="991fb7fd-3d4b-40d6-8991-77bc1bfc8b7a" concept_name="PHARM aprepitant 20 mg_mL liquid oral order" max="1" path="/items" name="aprepitant 20 mg/mL liquid oral"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
