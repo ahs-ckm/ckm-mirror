@@ -80,6 +80,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Revision Request - Revise phase of care from &apos;Recovery &amp;amp; On Unit&apos; to &apos;On Unit&apos;&lt;/p&gt;&lt;p&gt;Identify orders that are needed specifically for PACU - tag those as &apos;Recovery Only&apos; or &apos;Recovery &amp;amp; On Unit&apos;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions ; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Positioning Instruction; Remain front or side-lying, avoid sitting and lying on back&apos;]/activities[at0001]">
     <items>
       <item>
@@ -176,6 +184,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; *** mL/hr,  intravenous, continuous&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Add Normal Saline to IV Fluids (vFire 5615683) - pending author review/approval&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; *** mL/hr,  intravenous, continuous&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Add Normal Saline to IV Fluids (vFire 5615683) - pending author review/approval&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics; Recovery &amp; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -257,6 +281,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;May return to Daycare/School/Work when ready&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge - Activity; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge activity; May return to Daycare/School/Work&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -401,6 +433,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Apply polymyxin b sulphate/bacitracin ointment to circumcision after every void/diaper change&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Planning; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -609,8 +649,10 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions; Recovery &amp; On Unit">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM dextrose 5%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.9% infusion; *** mL/hr,  intravenous, continuous"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer_s infusion Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; *** mL/hr,  intravenous, continuous"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; *** mL/hr,  intravenous, continuous"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion; *** mL/hr,  intravenous, continuous"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bec7b024-6d0c-4674-9e62-66a0b64c4e91" concept_name="PHARM potassium chloride 20 mmol in lactated Ringer&apos;s 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in lactated Ringer&apos;s 1000 mL (20 mmol/L) infusion; *** mL/hr,  intravenous, continuous"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection Order" max="1" path="/items" name="potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection; *** mL/hr,  intravenous, continuous"/>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
@@ -623,9 +665,7 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dfc45bed-e343-4ec6-aa9e-6d839b0f214d" concept_name="PHARM bacitracin-polymyxin B Oint 500 unit-10 000 unit/g (Polysporin / Bioderm) Order" max="1" path="/items" name="bacitracin-polymyxin B Oint 500 unit-10 000 unit/g (Polysporin / Bioderm); 1 application , topical"/>
         </Item>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d94e8aaa-4781-4890-8752-80e97893562e" concept_name="Consults Postprocedure Pediatric Order Group" max="1" path="/items" name="Consults Postprocedure Pediatric Order Group"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge - Diet and Nutrition; Post Discharge">
