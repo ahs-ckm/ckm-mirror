@@ -116,6 +116,7 @@
       <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.progress_note.v1" concept_name="Progress note" max="1" path="/items" name="Progress note; EPIC ID 1234"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Reason for Visit">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" max="1" path="/items" name="Reason for encounter; Reason for Encounter 1">
         <Rule path="/data[at0001]/items[at0002]">
           <constraint xsi:type="textConstraint">
@@ -134,8 +135,20 @@
           </constraint>
         </Rule>
       </Item>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" max="1" path="/items" name="Reason for encounter; Reason for Encounter 2"/>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" max="1" path="/items" name="Reason for encounter; Reason for Encounter 2">
+        <Rule path="/data[at0001]/items[at0004]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>HIV Exposure</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1" concept_name="Reason for encounter" path="/items">
+        <Rule path="/data[at0001]/items[at0004]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>HIV Exposure</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Visit Diagnosis">
       <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" path="/items" name="Problem/Diagnosis; Problem 1">
@@ -166,11 +179,11 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.progress_note.v1">
     <digest id="MD5-CAM-1.0.1">253CBA68CBB8D8737F2FB917850F3794</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1">
-    <digest id="MD5-CAM-1.0.1">939CA1C8E62A4DFC74DBA5D777AC40EA</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.reason_for_encounter.v1">
+    <digest id="MD5-CAM-1.0.1">939CA1C8E62A4DFC74DBA5D777AC40EA</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">73FBBDD03A88082C4565A85D7D06356A</digest>
