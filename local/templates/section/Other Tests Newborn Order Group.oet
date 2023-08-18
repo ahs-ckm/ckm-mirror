@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~f0958451-d8d6-4a32-9ea8-8f6dc4e7007d~NAME~Other Tests Newborn Order Group}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -108,11 +116,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT; As needed&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;for any symptomatic or at risk neonate as per Zone or facility guideline.&lt;/p&gt;</value>
+        <value>&lt;p&gt;for any symptomatic or at risk neonate as per Hypoglycemia Identification and Management in the Newborn Less than 72 hours of Age Protocol&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -140,7 +148,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~f0958451-d8d6-4a32-9ea8-8f6dc4e7007d~NAME~Other Tests Newborn Order Group}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Other Tests">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Other Tests">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Bilirubin Investigations - Routine">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -149,7 +157,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3ece78db-190e-470d-9431-6f34fd2746e8" concept_name="LAB Newborn Jaundice Screen POCT Order" max="1" path="/items" name="Newborn Jaundice Screen POCT; Manual"/>
     </Item>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; As needed"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="42391c72-1c4f-4d33-82b5-f3a864d711d3" concept_name="PC Pulse oximetry Order" max="1" path="/items" name="Pulse oximetry: Critical Congenital Heart Disease Screen"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe559d97-2912-41e3-94e9-97b7c7ea16c7" concept_name="PC EHDI Hearing Screening Order" max="1" path="/items" name="EHDI Hearing Screening"/>
   </definition>
