@@ -128,11 +128,23 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Turn Cough Deep Breathe; once&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Incentive Spirometry; Every 1 hour while awake, Until specified&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;strong&gt;Request revising to &apos;every 2 hours&apos;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Request pending for revision to order item to remove &apos;Turn&apos; from &apos;Turn Cough Deep Breathe&apos;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Sept 11/23 - remove preselect&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Turn Cough Deep Breathe; every 2 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;While awake&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;Sept 11/23 - remove preselect,&amp;nbsp;revise frequency to &apos;every 2 hours&apos;, add comment &apos;while awake&apos;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Request pending for revision to order item to remove &apos;Turn&apos; from &apos;Turn Cough Deep Breathe&apos;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -144,7 +156,7 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="Respiratory order/instruction"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9316348-8678-47b9-9022-9c1ce2554592" concept_name="CONS Inpatient Consult to Respiratory Therapy Order" max="1" path="/items" name="Inpatient Consult to Respiratory Therapy; Once"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99654b40-201f-4014-864b-256d0617b2c8" concept_name="PC Incentive Spirometry Order" max="1" path="/items" name="Incentive Spirometry; Every 1 hour while awake, Until specified"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a09f9ba1-ee35-4a24-905e-86679d0d65f3" concept_name="PC Turn Cough Deep Breathe Order" max="1" path="/items" name="Turn Cough Deep Breathe; once"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a09f9ba1-ee35-4a24-905e-86679d0d65f3" concept_name="PC Turn Cough Deep Breathe Order" max="1" path="/items" name="Turn Cough Deep Breathe; every 2 hours"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
