@@ -180,7 +180,7 @@
     <items>
       <item>
         <key>Catalogue Pattern.Configuration Notes</key>
-        <value>&lt;p&gt;Expandable encounter&amp;nbsp;diagnosis codes to associate with the procedure.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Mandatory question;&lt;/p&gt;&lt;p&gt;Expandable encounter&amp;nbsp;diagnosis codes to associate with the procedure.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -372,7 +372,16 @@
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Provider"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Location"/>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Procedure Date"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Patient Class"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Patient Class">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Inpatient</includedValues>
+          <includedValues>Emergency</includedValues>
+          <includedValues>Day Surgery</includedValues>
+          <includedValues>Surgery Admit</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
     <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Panel 1">
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Procedure 1">
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1" concept_name="Adhoc Cluster Heading" max="1" path="/items[at0002]" name="Procedure">
