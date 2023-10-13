@@ -60,47 +60,11 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Microbiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Mycobacteria Culture&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;This order is not currently in the Connect Care Build. &amp;nbsp;Following up to see if appropriate to include&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Microbiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Content Details</key>
+        <key>Transform.Clinical Notes</key>
         <value>&lt;p&gt;Please email Drug Susceptibility testing request to Provincial Lab&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;500 mL (6.25 mL/kg/dose), other - see admin instructions&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Procedure&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;salbutamol Nebule 0.5 mg/mL&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;1 mg/mL nebule 2.5 mg,&lt;br&gt;2.5 mg (0.0313 mg/kg/dose), inhalation&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Prescription Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;AHS Calgary Zone TB program Physicians must authorize&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;This currently does not align with build in connect care. Dose is significantly different than what is listed in spec sheet - investigating&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;¨&amp;nbsp; rifAMPin 10mg/kg mg po daily for __ months&lt;/p&gt;&lt;p&gt;¨&amp;nbsp; rifAMPin 10 mg/kg three times per week for __ months&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -148,14 +112,16 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0114d954-8176-4055-b6dc-3a0784549812" concept_name="RESP DIAG Pulmonary Function Test Order" max="1" path="/items" name="Pulmonary Function Test"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedure">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11651acf-3b92-4684-8535-5a54a7a53ce9" concept_name="PC Initiate airborne isolation Order" max="1" path="/items" name="Initiate airborne isolation"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="514a5dcc-de19-4297-b323-b81b4436b8bf" concept_name="RESP DIAG Sputum Induction - Bedside Order" max="1" path="/items" name="Sputum Induction - Bedside"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ab7ff70-b2b3-40e7-80a6-72177c663a09" concept_name="PHARM salbutamol Nebule 0.5 mg/mL Order" max="1" path="/items" name="salbutamol Nebule 0.5 mg/mL"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Prescription Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="AHS Calgary Zone TB program Physicians must authorize">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b50816fd-9bc0-48d0-beea-1e167345b30d" concept_name="PHARM rifAMPin Capsule Order" max="1" path="/items" name="rifAMPin Capsule"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b50816fd-9bc0-48d0-beea-1e167345b30d" concept_name="PHARM rifAMPin Capsule Order" max="1" path="/items" name="rifAMPin Capsule: 10 mg/kg po daily for __ months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b50816fd-9bc0-48d0-beea-1e167345b30d" concept_name="PHARM rifAMPin Capsule Order" max="1" path="/items" name="rifAMPin Capsule: 10 mg/kg po 3 times per week for __ months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b4a88a2d-31c0-48fe-a2c4-93be31854d9f" concept_name="PHARM rifABUTin Capsule Order" max="1" path="/items" name="rifABUTin Capsule; 300 mg po daily for __ months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5acebc64-0b54-4b17-acfc-5e96e4582afd" concept_name="PHARM ethambutol Tablet Order" max="1" path="/items" name="ethambutol Tablet: 15 mg/kg po daily for __ months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5acebc64-0b54-4b17-acfc-5e96e4582afd" concept_name="PHARM ethambutol Tablet Order" max="1" path="/items" name="ethambutol Tablet: 25 mg/kg po 3 times per week for __ months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8de66474-7e81-4f38-9a6b-fcb36fe89a77" concept_name="PHARM cilazapril Tablet Order" max="1" path="/items" name="cilazapril Tablet **PLACE HOLDER FOR CLOFAZIMINE 100MG PO SPECIAL ACCESS"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Non-Program Medications">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="372c5d60-a44e-4a28-9d6e-8b5a5a41eae4" concept_name="PHARM AZIthromycin Tablet Order" max="1" path="/items" name="AZIthromycin Tablet; 250 mg po daily for __ months"/>
