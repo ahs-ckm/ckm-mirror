@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~b52b74c5-a63b-48a1-8f0a-7e10f1a443cb~NAME~Electrolyte Replacement PICU Order Panel}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intermittent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;magnesium sulfate injection&apos;]/activities[at0001]">
     <items>
       <item>
@@ -104,15 +112,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intermittent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in sterile water for injection 100 mL injection&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Intermittent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 10 mmol in sterile water for injection 100 mL injection&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Max RATE of infusion 1 mmol/Kg/hour up to a maximum of 40 mmol/hour.&lt;br&gt;Max DOSE = 1 mmol/Kg up to 40 mmol.&lt;br&gt;Patient requires cardiac monitoring.&lt;br&gt;Central Line PREFERRED however if not available please refer to Parental Manual for Y SIte Instructions.&lt;/p&gt;</value>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Infuse over 1 - 4&amp;nbsp;hours.&lt;br&gt;Max RATE of infusion 0.5 - 1 mmol/Kg/hour up to a maximum of 40 mmol/hour.&lt;br&gt;Max DOSE = 1 mmol/Kg up to 40 mmol.&lt;/p&gt;</value>
       </item>
       <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Infuse over 1 - 4&amp;nbsp;hours.&lt;br&gt;Central Line PREFERRED&amp;nbsp;&lt;br&gt;Max RATE of infusion 1 mmol/Kg/hour up to a maximum of 40 mmol/hour.&lt;br&gt;Max DOSE = 1 mmol/Kg up to 40 mmol.&lt;/p&gt;</value>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Max RATE of infusion 0.5-1 mmol/kg/hour up to a maximum of 40 mmol/hour.&lt;br&gt;Max DOSE = 1 mmol/kg up to 40 mmol.&lt;br&gt;Patient requires cardiac monitoring.&lt;br&gt;Central Line PREFERRED however if not available please refer to Parental Manual for Y SIte Instructions.&lt;br&gt;Infuse over 1 - 4 hours.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -140,14 +148,14 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~b52b74c5-a63b-48a1-8f0a-7e10f1a443cb~NAME~Electrolyte Replacement PICU Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Electrolyte Replacement PICU Order Panel">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Electrolyte Replacement PICU Order Panel">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intermittent">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2980dc8a-7262-4cd1-a940-8d807a9f00d4" concept_name="PHARM magnesium sulfate injection Order" max="1" path="/items" name="magnesium sulfate injection"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride injection; 100 mg/mL (10%) injection syringe (20 mg/kg/dose,max 1000 mg/dose)"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="96f25ac5-1be7-42e8-88cf-e9226e378f2b" concept_name="PHARM NaCl 3% infusion bolus Order" max="1" path="/items" name="NaCl 3% infusion bolus"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c04d7d63-db05-462b-8a2c-d3ad78b13713" concept_name="PHARM calcium gluconate injection Order" max="1" path="/items" name="calcium gluconate injection; (50 mg/kg/dose, max 3000 mg/dose)"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="71709481-1c80-4f79-aadb-e508167fd0dc" concept_name="PHARM sodium phosphates 15 mmol in D5W 100 mL (0.15 mmol/mL) injection Order" max="1" path="/items" name="sodium phosphates 15 mmol in D5W 100 mL (0.15 mmol/mL) injection"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e86e1ed4-a1a3-46b3-a4b8-ea6732f9a87b" concept_name="PHARM potassium chloride 20 mmol in sterile water for injection 100 mL injection Order" max="1" path="/items" name="potassium chloride 20 mmol in sterile water for injection 100 mL injection"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da51a833-952e-4795-bf64-a8e02b7c09b6" concept_name="PHARM potassium chloride 10 mmol in sterile water for injection 100 mL injection Order" max="1" path="/items" name="potassium chloride 10 mmol in sterile water for injection 100 mL injection"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Continuous">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c11bbede-14b9-4400-a60b-7a465d73f810" concept_name="PHARM calcium chloride 1000 mg in D5W 50 mL (20 mg/mL) infusion Order" max="1" path="/items" name="calcium chloride 1000 mg in D5W 50 mL (20 mg/mL) infusion; (3 to 10 mg/kg/hr)"/>
