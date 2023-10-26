@@ -71,12 +71,8 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Technical Note - smarlinks&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;Requirements link&lt;/strong&gt;&lt;/u&gt; and &lt;u&gt;&lt;strong&gt;Manual: COVID-19 Inpatient Vaccination Orders link&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/ORDERCOVID19IPVACCINE)&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;Documentation link&lt;/strong&gt;&lt;/u&gt; (URL:EpicACT:AHS_IP_ICON_C19IMM_IP_NOTES_SIDEBAR)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Order Set Keywords:&lt;/strong&gt; &lt;strong&gt;___________________&lt;/strong&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;u&gt;&lt;strong&gt;Clinical Decision Support&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;By using this order set, the prescriber affirms that the patient is eligible, fit for, and consenting to hospital administration of COVID-19 vaccine (see Requirements link). A compliance note (use Documentation link) must be completed.&lt;br&gt;&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Manual: COVID-19 Inpatient Vaccination Orders&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;Documentation: Inpatient COVID-19 Vaccination Eligibility&lt;/p&gt;</value>
+        <value>&lt;p&gt;By using this order set, the prescriber affirms that the patient is eligible, fit for, and consenting to hospital administration of COVID-19 vaccine (see Requirements).&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;u&gt;&lt;strong&gt;Manual: COVID-19 Inpatient Vaccination Orders &lt;/strong&gt;&lt;/u&gt;(URL: https://ahsweb.ca/HEE/ORDERCOVID19IPVACCINE)&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;u&gt;&lt;strong&gt;Alberta Health: COVID-19 Vaccine Schedule &lt;/strong&gt;&lt;/u&gt;(https://ahsweb.ca/HEE/COVID19VACCINESCHEDULE)&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -96,23 +92,31 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;This section restricted to patients age 18 years and older&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Please check patient, Connect Care and Netcare Immunization records.&lt;/p&gt;&lt;p&gt;Choose ONE vaccine, if unsure please consult the site pharmacy or public health to check vaccine availability.&lt;/p&gt;&lt;p&gt;Pfizer-BioNTech COVID-19 vaccine is preferentially recommended for individuals 12 years up to and including 29 years of age.&lt;/p&gt;&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Please check patient, Connect Care and Netcare Immunization records.&lt;/p&gt;&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.5 mL (50 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Linked orders&lt;/p&gt;</value>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.5 mL (100 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.5 mL (50 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -120,7 +124,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (12 years and older) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (12 years and older) 30 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (12 years and older) 30 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -128,139 +140,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Second Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Third Dose (if eligible)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVMODmRNABA1) mRNA vaccine (Spikevax Bivalent) injection 0.5 mL; 0.5 mL, intramuscular, during hospitalization&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX4002910&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPBmRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicron BA.4/BA.5) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX4002934&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (12 years and older) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX 4201072&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX&amp;nbsp;4201069&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For individuals less than 65 years old and NOT a resident of a seniors congregate living facility or are NOT immunocompromised&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX&amp;nbsp;4201069&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For individuals less than 65 years old and NOT a resident of a seniors congregate living facility or are NOT immunocompromised&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For individuals who have already received 1 booster dose of Moderna&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX&amp;nbsp;4201069&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;For individuals who have already received 1 booster dose of Moderna&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Adult Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -272,99 +156,51 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Please check patient, Connect Care and Netcare Immunization records.&lt;/p&gt;&lt;p&gt;Choose ONE vaccine, if unsure please consult the site pharmacy or public health to check vaccine availability.&lt;/p&gt;&lt;p&gt;Pfizer-BioNTech COVID-19 vaccine is preferentially recommended for individuals 12 years up to and including 29 years of age.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Please check patient, Connect Care and Netcare Immunization records.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Second Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Third Dose (if eligible)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPBmRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicron BA.4/BA.5) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX4002934&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (12 years and older) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.5 mL (50 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX&amp;nbsp;4201072&lt;/p&gt;</value>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.25 mL (50 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX&amp;nbsp;4201069&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX&amp;nbsp;4201069&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.5 mL (50 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (12 years and older) 30 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (12 years and older) 30 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (30 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 12 - 17 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -376,67 +212,51 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Please check patient, Connect Care and Netcare Immunization records.&lt;/p&gt;&lt;p&gt;Choose ONE vaccine, if unsure please consult the site pharmacy or public health to check vaccine availability.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Please check patient, Connect Care and Netcare Immunization records.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Second Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Third Dose (if eligible)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPB5-11mRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicrom BA.4/BA.5) injection (Peds: 5 to 11 years of age); 0.2 mL (10 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.25 mL (25 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX 4002975&lt;/p&gt;</value>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (Peds: 5 to 11 years of age); 0.2 mL (10 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX 4201097&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Booster Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.25 mL (25 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (peds: 5 to 11 years of age) 10 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (10 mcg), intramuscular, during hospitalization&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (peds: 5 to 11 years of age) 10 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (10 mcg), intramuscular, during hospitalization&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 5 - 11 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -448,47 +268,27 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;First Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Second Dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Third Dose (if eligible)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fourth Dose (if eligible)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX 4002948&amp;nbsp;&lt;/p&gt;</value>
-      </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;em&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Refer to&amp;nbsp;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures&amp;nbsp;&lt;/em&gt;https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
+        <value>&lt;p&gt;Pharmacy/public health will supply vaccine when available and patient threshold met.&lt;br&gt;Refer to Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking&lt;br&gt;Procedures https://ahsweb.ca/HEE/Application_of_Topical_Local_Anesthetic_Procedure&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fourth Dose (if eligible)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Immunizations Age 6 months - less than 5 years&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -660,124 +460,37 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunizations">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Adult Immunizations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="First Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="mRNA Vaccine">
-            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad2b8188-bc9a-4e52-9e4f-d94d49bf589b" concept_name="mRNA Vaccine Adult Order Group" max="1" path="/items" name="mRNA Vaccine Adult"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          </Item>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Second Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad2b8188-bc9a-4e52-9e4f-d94d49bf589b" concept_name="mRNA Vaccine Adult Order Group" max="1" path="/items" name="mRNA Vaccine Adult"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Third Dose (if eligible)">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad2b8188-bc9a-4e52-9e4f-d94d49bf589b" concept_name="mRNA Vaccine Adult Order Group" max="1" path="/items" name="mRNA Vaccine Adult"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Booster Dose">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cf5158ec-844f-431c-9743-037dc6cd7466" concept_name="PHARM COVID-19 (COVMODmRNABA1) mRNA vaccine (Spikevax Bivalent) injection 0.5 mL Order" max="1" path="/items" name="COVID-19 (COVMODmRNABA1) mRNA vaccine (Spikevax Bivalent) injection 0.5 mL; 0.5 mL, intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4d4fa853-ce1d-4690-8b81-4d9e9e4f929b" concept_name="PHARM COVID-19 (COVPBmRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicron BA.4/BA.5) injection Order" max="1" path="/items" name="COVID-19 (COVPBmRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicron BA.4/BA.5) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c4771e3c-d3d5-41bc-956a-6c94dd4a4304" concept_name="PHARM COVID-19_COVPBmRNA_mRNA vaccine_Pfizer_12 years and older_injection Order" max="1" path="/items" name="COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (12 years and older) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c6c1e304-bf97-48c4-abfe-d5be720f1b23" concept_name="PHARM COVID-19_COVMODmRNA_mRNA vaccine_Moderna_injection_Adult_Ped 6 years and older Order" max="1" path="/items" name="COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.5 mL (100 mcg), intramuscular, during hospitalization"/>
-            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For individuals less than 65 years old and NOT a resident of a seniors congregate living facility or are NOT immunocompromised">
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c6c1e304-bf97-48c4-abfe-d5be720f1b23" concept_name="PHARM COVID-19_COVMODmRNA_mRNA vaccine_Moderna_injection_Adult_Ped 6 years and older Order" max="1" path="/items" name="COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.25 mL (50 mcg), intramuscular, during hospitalization"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            </Item>
-            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #3"/>
-            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For individuals who have already received 1 booster dose of Moderna">
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c6c1e304-bf97-48c4-abfe-d5be720f1b23" concept_name="PHARM COVID-19_COVMODmRNA_mRNA vaccine_Moderna_injection_Adult_Ped 6 years and older Order" max="1" path="/items" name="COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.25 mL (50 mcg), intramuscular, during hospitalization"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            </Item>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="mRNA Vaccine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9683508b-c069-4876-bb1a-4500eeae315c" concept_name="PHARM COVMODmRNAXBB_COVID_19 mRNA 1273_mRNA XBB_Spikevax XBB.1.5_injection Order" max="1" path="/items" name="(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.5 mL (50 mcg), intramuscular, during hospitalization"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="&apos;Linked Or&apos; orders"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eb414319-9056-42d0-ac76-22d3c2b057b8" concept_name="PHARM COVPBmRNAXBB_COVID_19 BNT162b2_mRNA XBB_12 years and older_30 mcg_0.3 mL vaccine_Comirnaty Omicron XBB.1.5_Injection order" max="1" path="/items" name="(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (12 years and older) 30 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (30 mcg), intramuscular, during hospitalization"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric Immunizations Age 12 - 17 years">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="First Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ec172c21-9b28-48fb-8dff-c812b6cf882d" concept_name="mRNA Vaccine Pediatric Age 12 - 17 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Age 12 - 17 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Second Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ec172c21-9b28-48fb-8dff-c812b6cf882d" concept_name="mRNA Vaccine Pediatric Age 12 - 17 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Age 12 - 17 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Third Dose (if eligible)">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ec172c21-9b28-48fb-8dff-c812b6cf882d" concept_name="mRNA Vaccine Pediatric Age 12 - 17 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Age 12 - 17 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Booster Dose">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4d4fa853-ce1d-4690-8b81-4d9e9e4f929b" concept_name="PHARM COVID-19 (COVPBmRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicron BA.4/BA.5) injection Order" max="1" path="/items" name="COVID-19 (COVPBmRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicron BA.4/BA.5) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c4771e3c-d3d5-41bc-956a-6c94dd4a4304" concept_name="PHARM COVID-19_COVPBmRNA_mRNA vaccine_Pfizer_12 years and older_injection Order" max="1" path="/items" name="COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (12 years and older) injection; 0.3 mL (30 mcg), intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c6c1e304-bf97-48c4-abfe-d5be720f1b23" concept_name="PHARM COVID-19_COVMODmRNA_mRNA vaccine_Moderna_injection_Adult_Ped 6 years and older Order" max="1" path="/items" name="COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.25 mL (50 mcg), intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For immunocompromised ages 12 to 17 years">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c6c1e304-bf97-48c4-abfe-d5be720f1b23" concept_name="PHARM COVID-19_COVMODmRNA_mRNA vaccine_Moderna_injection_Adult_Ped 6 years and older Order" max="1" path="/items" name="COVID-19 (COVMODmRNA) mRNA vaccine (Moderna) injection (Adult/Ped:6 years and older); 0.5 mL (100 mcg), intramuscular,  during hospitalization"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="mRNA Vaccine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9683508b-c069-4876-bb1a-4500eeae315c" concept_name="PHARM COVMODmRNAXBB_COVID_19 mRNA 1273_mRNA XBB_Spikevax XBB.1.5_injection Order" max="1" path="/items" name="(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.5 mL (50 mcg), intramuscular, during hospitalization"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="&apos;Linked Or&apos; orders"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eb414319-9056-42d0-ac76-22d3c2b057b8" concept_name="PHARM COVPBmRNAXBB_COVID_19 BNT162b2_mRNA XBB_12 years and older_30 mcg_0.3 mL vaccine_Comirnaty Omicron XBB.1.5_Injection order" max="1" path="/items" name="(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (12 years and older) 30 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (30 mcg), intramuscular, during hospitalization"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric Immunizations Age 5 - 11 years">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="First Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d030a41e-09d8-4b00-bcc2-409435e592ac" concept_name="mRNA Vaccine Pediatric Ages 5 - 11 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Ages 5 - 11 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Second Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d030a41e-09d8-4b00-bcc2-409435e592ac" concept_name="mRNA Vaccine Pediatric Ages 5 - 11 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Ages 5 - 11 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Third Dose (if eligible)">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d030a41e-09d8-4b00-bcc2-409435e592ac" concept_name="mRNA Vaccine Pediatric Ages 5 - 11 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Ages 5 - 11 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Booster Dose">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7bbf0513-bd86-4470-85b2-e088ae70a2c8" concept_name="PHARM COVID-19_COVPB5-11mRNABA45_ mRNA vaccine_Comirnaty Original_Omicrom BA.4_BA.5_injection_Peds 5 to 11 years of age_Order" max="1" path="/items" name="COVID-19 (COVPB5-11mRNABA45) mRNA vaccine (Comirnaty Original &amp; Omicrom BA.4/BA.5) injection (Peds: 5 to 11 years of age); 0.2 mL (10 mcg), intramuscular, during hospitalization"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0008132-bbe3-4635-b51d-f6163eae8b66" concept_name="PHARM COVID-19_COVPBmRNA_mRNA vaccine_Pfizer_Peds 5 to 11 years of age Order" max="1" path="/items" name="COVID-19 (COVPBmRNA) mRNA vaccine (Pfizer) (Peds: 5 to 11 years of age); 0.2 mL (10 mcg), intramuscular, during hospitalization"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="mRNA Vaccine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9683508b-c069-4876-bb1a-4500eeae315c" concept_name="PHARM COVMODmRNAXBB_COVID_19 mRNA 1273_mRNA XBB_Spikevax XBB.1.5_injection Order" max="1" path="/items" name="(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.25 mL (25 mcg), intramuscular, during hospitalization"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="&apos;Linked Or&apos; orders"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cee100a4-9cc7-4290-9b81-7ca5e9689aa3" concept_name="PHARM COVPBmRNAXBB_COVID_19 BNT162b2_mRNA XBB_peds 5 to 11 years of age_10 mcg_0.3 mL vaccine_Comirnaty Omicron XBB.1.5_Injection Order" max="1" path="/items" name="(COVPBmRNAXBB) COVID-19 BNT162b2 - mRNA XBB (peds: 5 to 11 years of age) 10 mcg/0.3 mL vaccine (Comirnaty Omicron XBB.1.5) Injection; 0.3 mL (10 mcg), intramuscular, during hospitalization"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric Immunizations Age 6 months - less than 5 years">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="First Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="964d98dc-5ede-40d1-928d-6284a65fc4d0" concept_name="mRNA Vaccine Pediatric Ages 6mo - less than 5 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Ages 6mo - less than 5 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Second Dose">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="964d98dc-5ede-40d1-928d-6284a65fc4d0" concept_name="mRNA Vaccine Pediatric Ages 6mo - less than 5 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Ages 6mo - less than 5 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Third Dose (if eligible)">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="964d98dc-5ede-40d1-928d-6284a65fc4d0" concept_name="mRNA Vaccine Pediatric Ages 6mo - less than 5 years Order Group" max="1" path="/items" name="mRNA Vaccine Pediatric Ages 6mo - less than 5 years"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fourth Dose (if eligible)">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3c2e417c-35d5-4a5c-923d-4df4d76b0c86" concept_name="PHARM COVID-19 (COVPB6m-4ymRNA) mRNA vaccine (Comirnaty) injection Order" max="1" path="/items" name="COVID-19 (COVPB6m-4ymRNA) mRNA vaccine (Comirnaty) injection Order; 0.2 mL (3 mcg), intramuscular, during hospitalization"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="mRNA Vaccine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9683508b-c069-4876-bb1a-4500eeae315c" concept_name="PHARM COVMODmRNAXBB_COVID_19 mRNA 1273_mRNA XBB_Spikevax XBB.1.5_injection Order" max="1" path="/items" name="(COVMODmRNAXBB) COVID-19 mRNA 1273 - mRNA XBB (Spikevax XBB.1.5) injection; 0.25 mL (25 mcg), intramuscular, during hospitalization"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
