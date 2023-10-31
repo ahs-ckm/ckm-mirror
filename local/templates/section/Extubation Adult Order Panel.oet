@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~ee219b1b-c7b9-4f5b-8994-bf351530a656~NAME~Extubation Adult Order Panel}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Extubate&apos;]/activities[at0001]">
     <items>
       <item>
@@ -79,7 +87,7 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;NPO; On Unit&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Clinical Guidance</key>
+        <key>CKT.Content Details</key>
         <value>&lt;p&gt;for 4 hours post-extubation&lt;/p&gt;</value>
       </item>
       <item>
@@ -99,7 +107,7 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Clear Fluids; On Unit&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Clinical Guidance</key>
+        <key>CKT.Content Details</key>
         <value>&lt;p&gt;for 4 hours post-extubation&amp;nbsp;&lt;/p&gt;</value>
       </item>
       <item>
@@ -116,7 +124,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~ee219b1b-c7b9-4f5b-8994-bf351530a656~NAME~Extubation Adult Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Extubation Order Panel">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Extubation Order Panel">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fdb83cbf-055f-44f3-a865-e181b05fbd1d" concept_name="RESP ADULT Extubate Order" max="1" path="/items" name="Extubate"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="NFS NPO Order" max="1" path="/items" name="NPO; On Unit"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="NFS Adult Diet Order" max="1" path="/items" name="Adult Diet; Clear Fluids; On Unit"/>
