@@ -376,14 +376,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis &apos;]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Consider opening and merging VTE prophylaxis order set&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Diabetic Ketoacidosis Adult Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
@@ -612,7 +604,6 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Worker Order" max="1" path="/items" name="Inpatient Consult to Social Worker"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5a00cec0-0189-4b62-9a1a-d7b783f6a076" concept_name="CONS Inpatient Consult to Diabetes Educator Order" max="1" path="/items" name="Inpatient Consult to Diabetes Educator"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e16d1c9-20a3-4ae7-9b48-ffe8f5bfae4e" concept_name="CONS Inpatient Consult to Speech Language Pathology Order" max="1" path="/items" name="Inpatient Consult to Speech Language Pathology"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="27702399-60d3-4d0f-ba67-f4fe3a15a5ad" concept_name="REF Ambulatory Referral to Diabetes Order" max="1" path="/items" name="Ambulatory Referral to Diabetes"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83653a0b-8908-412a-9428-da8f4e0939aa" concept_name="REF Ambulatory Referral to Diabetes Education Order" max="1" path="/items" name="Ambulatory Referral to Diabetes Education"/>
       </Item>
     </Item>
@@ -629,11 +620,11 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
