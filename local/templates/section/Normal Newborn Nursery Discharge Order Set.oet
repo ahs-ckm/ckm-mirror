@@ -91,16 +91,20 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge Follow-Up&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;yes&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Request Public Health nurse to follow-up within 24 - 48 hours of discharge.&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Phase of Care</key>
         <value>&lt;p&gt;Post Discharge&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge Follow-Up&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -144,12 +148,8 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Follow-up with Provider&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge Follow-Up; Provider&apos;]/activities[at0001]">
     <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;yes&lt;/p&gt;</value>
-      </item>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Patient to follow-up with primary care physician or midwife within 4-7 days&lt;/p&gt;</value>
@@ -157,6 +157,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Referral by - INPATIENT, PROJECT TEAM&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge Follow-Up; Provider&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -205,7 +213,7 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication #1"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication #2"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f4d6afd-52d1-4539-badd-385e51852ac7" concept_name="PC Follow-up with Provider Order" max="1" path="/items" name="Follow-up with Provider"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up; Provider"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication #3"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication #4"/>
   </definition>
