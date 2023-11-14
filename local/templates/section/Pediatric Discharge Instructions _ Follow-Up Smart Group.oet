@@ -118,10 +118,10 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pediatric Discharge Instructions / Follow-Up">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Follow-up">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f4d6afd-52d1-4539-badd-385e51852ac7" concept_name="PC Follow-up with Provider Order" max="1" path="/items" name="Follow-up with Provider; Surgeon in 1 to 2 weeks"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f4d6afd-52d1-4539-badd-385e51852ac7" concept_name="PC Follow-up with Provider Order" max="1" path="/items" name="Follow-up with Provider; Surgeon"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1c9d805d-af3b-4194-8630-5a8408bd1844" concept_name="PC Follow-up with Primary Physician Order" max="1" path="/items" name="Follow-up with Primary Physician; post discharge"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up; Provider, Surgeon in 1 to 2 weeks"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up; Provider, Surgeon"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up; Primary Care Provider (PCP), post discharge"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="PC Discharge Follow_up Order" max="1" path="/items" name="Discharge Follow-Up; Department"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a546ccdc-22c0-4dbf-83e4-eada08827731" concept_name="PC Follow-Up Order" max="1" path="/items" name="Follow-Up"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
@@ -139,11 +139,11 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
