@@ -68,19 +68,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Consider if admission less than 7 days AND significant&amp;nbsp;progressive&amp;nbsp;respiratory failure requiring ventilation (invasive or non-invasive) or supplemental oxygen.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;Guidance: Therapeutic Management of Adult Patients with COVID-19&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/Antimicrobial_Immunomodulatory_Therapy_Adult_Patients_COVID_19)&lt;br&gt;&lt;u&gt;&lt;strong&gt;Manual: COVID-19&amp;nbsp;Immunomodulator Orders&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL:&amp;nbsp;https://ahsweb.ca/HEE/GUIDANCETOCILIZUMABCOVID19)&lt;br&gt;&lt;u&gt;&lt;strong&gt;AHS Formulary - Baricitinib&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/ahs_formulary_baricitinib)&lt;br&gt;&lt;u&gt;&lt;strong&gt;AHS Formulary - Sarilumab&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/ahs_formulary_sarilumab)&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;AHS Formulary - Tocilizumab&lt;/strong&gt;&lt;/u&gt; (URL: https://ahsweb.ca/HEE/ahs_formulary_tocilizumab)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;!--StartFragment --&gt;&lt;/p&gt;&lt;p&gt;Consider if admission less than 7 days AND significant&amp;nbsp;progressive&amp;nbsp;respiratory failure requiring ventilation (invasive or non-invasive) or supplemental oxygen.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;Guidance: Therapeutic Management of Adult Patients with COVID-19&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/AHS-COVID-19-Therapies-Summary)&lt;br&gt;&lt;u&gt;&lt;strong&gt;Manual: COVID-19&amp;nbsp;Immunomodulator Orders&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL:&amp;nbsp;https://ahsweb.ca/HEE/GUIDANCETOCILIZUMABCOVID19)&lt;br&gt;&lt;u&gt;&lt;strong&gt;AHS Formulary - Baricitinib&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/ahs_formulary_baricitinib)&lt;br&gt;&lt;u&gt;&lt;strong&gt;AHS Formulary - Sarilumab&lt;/strong&gt;&lt;/u&gt;&amp;nbsp;(URL: https://ahsweb.ca/HEE/ahs_formulary_sarilumab)&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;AHS Formulary - Tocilizumab&lt;/strong&gt;&lt;/u&gt; (URL: https://ahsweb.ca/HEE/ahs_formulary_tocilizumab)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -148,8 +140,15 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Baricitinib OR Sarilumab OR Tocilizumab">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97d91fca-9095-472a-84f5-10f5d7dd77b1" concept_name="PHARM Baricitinib tablet Order" max="1" path="/items" name="baricitinib tablet; 4 mg oral daily for 14 days"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
@@ -173,18 +172,19 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="02090773-b839-4322-9faf-55959041c9c7" concept_name="PHARM tocilizumab injection Order" max="1" path="/items" name="tocilizumab injection; 400 mg, intravenous, once"/>
       </Item>
     </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
-    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
