@@ -68,8 +68,12 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sucrose Oral liquid 24%; 0.2 mL, buccal, once, as needed, for procedural pain as tolerated by the patient&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sucrose Oral liquid 24%; 0.2 mL, buccal, before procedure, for procedural pain as tolerated by the patient. For 50 Doses&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;INC001646543 - change frequency from once to &apos;before procedure&apos;, change doses to 50&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Apply only one drop at a time onto the tongue OR apply drops of the solution onto soother and allow infant non-nutritive sucking on pacifier. Maximum 5 doses per day. Maximum dose only as tolerated by the patient&lt;/p&gt;</value>
@@ -100,11 +104,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Eye drop 0.5%; preservative free&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Eye drop 0.5%; preservative free; 1 drop, BOTH eyes, before procedure, ROP Exam, For 50 Doses. Have available at bedside for Ophthalmology to administer&apos;]/activities[at0001]">
     <items>
       <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;1 drop, BOTH eyes, once, as needed, ROP Exam, Have available at bedside for Ophthalmology to administer&lt;/p&gt;</value>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;INC001646543 - change frequency from once to &apos;before procedure&apos;, change doses to 50&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -127,11 +131,11 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="ROP Screening">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Medications">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1fe398b-f069-4cf4-9680-df004a6cffb3" concept_name="PHARM sucrose Oral liquid 24% Order" max="1" path="/items" name="sucrose Oral liquid 24%; 0.2 mL, buccal, once, as needed, for procedural pain as tolerated by the patient"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1fe398b-f069-4cf4-9680-df004a6cffb3" concept_name="PHARM sucrose Oral liquid 24% Order" max="1" path="/items" name="sucrose Oral liquid 24%; 0.2 mL, buccal, before procedure, for procedural pain as tolerated by the patient. For 50 Doses"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="31af823b-4b69-4c03-bcb1-cb8fd8eff6d1" concept_name="PHARM cyclopentolate-phenylephrine Eye drop 0.2%-1% (Cyclomydril) Order" max="1" path="/items" name="cyclopentolate-phenylephrine Eye drop 0.2%-1% (Cyclomydril); 2 drops"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="31af823b-4b69-4c03-bcb1-cb8fd8eff6d1" concept_name="PHARM cyclopentolate-phenylephrine Eye drop 0.2%-1% (Cyclomydril) Order" max="1" path="/items" name="cyclopentolate-phenylephrine Eye drop 0.2%-1% (Cyclomydril); 3 drops"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM tropicamide Eye drop 1% Order" max="1" path="/items" name="tropicamide Eye drop 1%"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine Eye drop 0.5%; preservative free"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine Eye drop 0.5%; preservative free; 1 drop, BOTH eyes, before procedure, ROP Exam, For 50 Doses. Have available at bedside for Ophthalmology to administer"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="ROP Inpatient Screening Request">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
