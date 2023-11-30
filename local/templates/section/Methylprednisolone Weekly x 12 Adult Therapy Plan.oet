@@ -64,7 +64,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;All orders in this therapy plan should be set as follows:&lt;br&gt;Interval Type = Weekly&lt;br&gt;Specify days = Any day&lt;br&gt;Duration = 12 treatments&lt;/p&gt;&lt;p&gt;Synonyms: Ophthalmology, Optic Neuritis, Thyroid Eye Disease, TED, Grave’s&lt;/p&gt;</value>
+        <value>&lt;p&gt;All orders in this therapy plan should be set as follows (with the exception of methyprednisolone):&lt;br&gt;Interval Type = Weekly&lt;br&gt;Specify days = Any day&lt;br&gt;Duration = 12 treatments&lt;/p&gt;&lt;p&gt;Synonyms: Ophthalmology, Optic Neuritis, Thyroid Eye Disease, TED, Grave’s&lt;/p&gt;</value>
       </item>
       <item>
         <key>Technical.ﻩ Technical Traceability</key>
@@ -92,7 +92,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;In the event the patient starts their therapy plan mid-treatment, The plan can be modifed by reducing the appt request and 500mg duration, and change the defer date of the 250mg order&lt;/p&gt;</value>
+        <value>&lt;p&gt;In the event the patient starts their therapy plan mid-treatment, The plan can be modifed by reducing the number of treatments for the appointment request and 500mg duration, and change the defer date of the 250mg order&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -139,16 +139,40 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;methylPREDNISolone sodium succinate injection; 500 mg, intravenous, once&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Interval Type = Weekly&lt;br&gt;Specify days = Any day&lt;br&gt;Duration = 6 treatments&lt;/p&gt;&lt;p&gt;Give 500 mg intravenous for weeks 1 - 6&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;ERX: 420035&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;methylPREDNISolone sodium succinate injection; 500 mg, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;methylPREDNISolone sodium succinate injection; 250 mg, intravenous, once&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Interval Type = Weekly&lt;br&gt;Specify days = Any day&lt;br&gt;Duration = 6 treatments&lt;/p&gt;&lt;p&gt;Give 250 mg intravenous for weeks 7&amp;nbsp;- 12&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;ERX: 420035&lt;/p&gt;</value>
+        <value>&lt;p&gt;ERX: 420035&lt;/p&gt;&lt;p&gt;Starting S+7 weeks&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;methylPREDNISolone sodium succinate injection; 250 mg, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
