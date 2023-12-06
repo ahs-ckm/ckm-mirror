@@ -63,10 +63,6 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Dec 2/21 - Revisions pending validation&lt;/p&gt;</value>
-      </item>
-      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~bbde3905-d3e8-4a53-8878-1bf14f753d8e~NAME~Analgesics and Antipyretics_Patient Controlled Analgesia Pediatric Order Group}</value>
       </item>
@@ -84,12 +80,16 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:373px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:184px&quot;&gt;&lt;strong&gt;Weight&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;width:188px&quot;&gt;&lt;strong&gt;Morphine PCA Concentration&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:184px&quot;&gt;Greater than 20 kg, up to 40 kg&lt;/td&gt;&lt;td style=&quot;width:188px&quot;&gt;200 mcg/mL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:184px&quot;&gt;Greater than 40 kg&lt;/td&gt;&lt;td style=&quot;width:188px&quot;&gt;1000 mcg/mL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;AHS currently employs the use of the CADD/Solis PCA pump for pediatric PCA, which can only deliver bolus increments of 0.1 mL. To calculate programmable dosing increments, multiply the PCA drug concentration by 0.1.mL. e.g. morphine PCA PED 1000 mcg/mL x 0.1 mL = &amp;nbsp;100 mcg (0.1 mg) increments.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:455px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;strong&gt;Weight&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;width:321px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;strong&gt;morphine PCA Concentration&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;0 kg to 19.9 kg&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:321px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;morphine 50 mcg/mL PCA - see by Proxy&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;20 kg to 39.9 kg&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:321px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;morphine 200 mcg/mL PCA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;40 kg and over&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:321px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;morphine 1000 mcg/mL PCA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;&lt;s&gt;AHS currently employs the use of the CADD/Solis PCA pump for pediatric PCA, which can only deliver bolus increments of 0.1 mL. To calculate programmable dosing increments, multiply the PCA drug concentration by 0.1.mL. e.g. morphine PCA PED 1000 mcg/mL x 0.1 mL = &amp;nbsp;100 mcg (0.1 mg) increments.&lt;/s&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 200 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This section restricted to patients 20 kg to 39.9 kg&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Recommended starting bolus range: 10 to 20 mcg/kg not to exceed 1.2 mg/dose IV .&lt;br&gt;Recommended starting continuous infusion range: 10&amp;nbsp;to 20&amp;nbsp;mcg/kg/hour&lt;/p&gt;</value>
@@ -100,7 +100,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;SmartList (OR Options):&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;2. Continuous infusion&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;/span&gt;&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight band: 20 kg to 39.9 kg.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight-banded concentration is not available in the VIP pump&amp;nbsp;(ASSIST).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;SmartList (OR Options):&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;2. Continuous infusion&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span style=&quot;background-color:null&quot;&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;/span&gt;&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -115,6 +115,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 1000 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This section restricted to patients 40 kg and over&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Recommended starting bolus range: 10 to 20 mcg/kg not to exceed 1.2 mg/dose IV .&lt;br&gt;Recommended starting continuous infusion range: 10&amp;nbsp;to 20&amp;nbsp;mcg/kg/hour&lt;/p&gt;</value>
       </item>
@@ -124,7 +128,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight band: 40 kg and over.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight-banded concentration is not available in the VIP pump&amp;nbsp;(ASSIST).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -148,12 +152,16 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:195px&quot;&gt;&lt;strong&gt;Weight&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;width:187px&quot;&gt;&lt;strong&gt;HYDROmorphone PCA Concentration&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:195px&quot;&gt;Greater than 20 kg, up to 40 kg&lt;/td&gt;&lt;td style=&quot;width:187px&quot;&gt;40 mcg/mL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:195px&quot;&gt;Greater than 40 kg&lt;/td&gt;&lt;td style=&quot;width:187px&quot;&gt;200 mcg/mL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:541px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:133px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;strong&gt;Weight&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;width:405px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;strong&gt;HYDROmorphone PCA Concentration&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:133px&quot;&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;0 kg to 19.9 kg&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:405px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;HYDROmorphone 10 mcg/mL PCA - see by Proxy&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:133px&quot;&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;20 kg to 39.9 kg&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:405px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;HYDROmorphone 40 mcg/mL PCA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:133px&quot;&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;40 kg and over&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:405px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;HYDROmorphone 200 mcg/mL PCA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL PCA&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This section restricted to patients 20 kg to 39.9 kg&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Recommended starting bolus dose: 1 to 4 mcg/kg/dose up to a maximum starting dose of 200 mcg.&lt;br&gt;Recommended starting continuous infusion rate: 1 to 3 mcg/kg/hour&lt;/p&gt;</value>
@@ -164,7 +172,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight band: 20 kg to 39.9 kg.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight-banded concentration is not available in the VIP pump&amp;nbsp;(ASSIST).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -179,6 +187,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 200 mcg/mL PCA&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This section restricted to patients 40 kg and over&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Recommended starting bolus dose: 1 to 4 mcg/kg/dose up to a maximum starting dose of 200 mcg.&lt;br&gt;Recommended starting continuous infusion rate: 1 to 3 mcg/kg/hour&lt;/p&gt;</value>
       </item>
@@ -188,7 +200,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight band: 40 kg and over.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight-banded concentration is not available in the VIP pump&amp;nbsp;(ASSIST).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -212,12 +224,16 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:329px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:163px&quot;&gt;&lt;strong&gt;Weight&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;width:165px&quot;&gt;&lt;strong&gt;Fentanyl Concentration&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:163px&quot;&gt;0 to 30 kg&lt;/td&gt;&lt;td style=&quot;width:165px&quot;&gt;2 mcg/mL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:163px&quot;&gt;Greater than 30 kg&lt;/td&gt;&lt;td style=&quot;width:165px&quot;&gt;10 mcg/mL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; border=&quot;1&quot; style=&quot;width:461px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;width:163px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;strong&gt;Weight&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;width:295px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;strong&gt;fentaNYL Concentration&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:163px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;0 to 29.9 kg&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;width:295px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;fentaNYL 2 mcg/mL PCA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:163px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;30 kg and over&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;width:295px&quot;&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;fentaNYL 10 mcg/mL PCA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice, For use in consultation with Pediatric Acute Pain Service&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 2 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This section restricted to patients 0 kg to 29.9 kg&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Recommend starting bolus of 0.2 to 0.4 mcg/kg,&amp;nbsp;lock out every 6-10 minutes&lt;/p&gt;&lt;p&gt;Recommend starting rate of 0.2 to 0.4 mcg/kg/hr&lt;/p&gt;</value>
@@ -228,7 +244,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight band: 0 kg to 29.9 kg.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight-banded concentration is not available in the VIP pump&amp;nbsp;(ASSIST).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -243,6 +259,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice, For use in consultation with Pediatric Acute Pain Service&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 10 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;This section restricted to patients 30 kg and over&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Recommend starting bolus of 0.2 to 0.4 mcg/kg,&amp;nbsp;lock out every 6-10 minutes&lt;/p&gt;&lt;p&gt;Recommend starting rate of 0.2 to 0.4 mcg/kg/hr&lt;/p&gt;</value>
       </item>
@@ -252,7 +272,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight band: 30 kg and over.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Weight-banded concentration is not available in the VIP pump&amp;nbsp;(ASSIST).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;SmartList (OR Options):&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;1. (Intermittent overnight background) Stop continuous infusion at 0800,&amp;nbsp;restart continuous infusion at 2000&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;2. Continuous infusion&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;3. (Increased overnight background) Increase continuous infusion rate overnight to *** mcg/hr from 2000 to 0800&lt;br&gt;Notify Pediatric Acute Pain Service if 1 hour dose limit exceeded.&lt;br&gt;No opioid boluses by clinician except Pediatric Acute Pain Service.&lt;/em&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -272,7 +292,7 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics - Patient Controlled Analgesia">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics - Patient Controlled Analgesia - Weight Banded Concentration">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
