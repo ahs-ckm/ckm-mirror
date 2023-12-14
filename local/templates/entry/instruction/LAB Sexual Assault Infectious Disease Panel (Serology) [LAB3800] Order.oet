@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>300007f1-f50d-4043-9364-f23fe9e86d54</id><name>LAB Sexual Assault Infectious Disease Panel (Serology) [LAB3800] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Lab Test.Lab Test Record</key><value>&lt;p&gt;1230306602&lt;/p&gt;</value></item><item><key>Lab Test.Authorized Laboratories</key><value>
+						&lt;p&gt;
+						CGY Provincial Lab Southern Alberta Laboratory&lt;br&gt;
+								EDM Provincial Lab Northern Alberta Laboratory
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Default Container</key><value>
+						&lt;p&gt;
+						GOLD SST&lt;br&gt;
+								GOLD SST
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Allowed Containers</key><value>
+						&lt;p&gt;
+						GOLD SST&lt;br&gt;
+								GOLD SST
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Authorized Sections</key><value>
+						&lt;p&gt;
+						CGY PLSA Serology/Virology&lt;br&gt;
+								EDM PLNA Serology/Virology
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Components</key><value>
+						&lt;p&gt;
+						HEPATITIS B VIRUS SURFACE ANTIBODY IU/L&lt;br&gt;
+								HEPATITIS B VIRUS SURFACE ANTIGEN NUMERIC&lt;br&gt;
+								HEPATITIS B VIRUS SURFACE ANTIGEN&lt;br&gt;
+								HEPATITIS C VIRUS ANTIBODY NUMERIC&lt;br&gt;
+								HEPATITIS C VIRUS ANTIBODY&lt;br&gt;
+								HIV 1/2 SEROLOGY NUMERIC&lt;br&gt;
+								HIV-1 AND HIV-2 SEROLOGY&lt;br&gt;
+								SYPHILIS ANTIBODY NUMERIC&lt;br&gt;
+								SYPHILIS ANTIBODY
+						&lt;/p&gt;
+					</value></item><item><key>Catalogue Pattern.Ordering Clinician Instructions</key><value>
+						&lt;p&gt;
+						1231001100&lt;br&gt;
+								1231001100&lt;br&gt;
+								1231001100&lt;br&gt;
+								1231001100
+						&lt;/p&gt;
+					</value></item><item><key>Catalogue Pattern.Synonyms</key><value>
+						&lt;p&gt;
+						SA CASE&lt;br&gt;
+								CSART&lt;br&gt;
+								SEXUAL ASSAULT&lt;br&gt;
+								SEXUAL ASSAULT VIROLOGY&lt;br&gt;
+								CHILD ABUSE&lt;br&gt;
+								HIV&lt;br&gt;
+								HEPATITIS B SURFACE ANTIBODY&lt;br&gt;
+								HBSAB&lt;br&gt;
+								HEPATITIS B SURFACE ANTIGEN&lt;br&gt;
+								HBSAG&lt;br&gt;
+								HEPATITIS C VIRUS SEROLOGY&lt;br&gt;
+								HCV&lt;br&gt;
+								SYPHILIS&lt;br&gt;
+								SYPH&lt;br&gt;
+								SART
+						&lt;/p&gt;
+					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB3800&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~300007f1-f50d-4043-9364-f23fe9e86d54~NAME~LAB Sexual Assault Infectious Disease Panel (Serology) [LAB3800] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Sexual Assault Infectious Disease Panel (Serology)"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="STAT"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]" default="STAT"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Daily Morning</includedValues><includedValues>Timed</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="STAT"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks></template>
