@@ -84,7 +84,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP); IV Diltiazem - if response indadequate 15 minutes after bolus dosing&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); if patient receiving amiodarone infusion and there is a need to reconstitute another bottle. This will allow physician to consider an alternate to IV treatment&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
@@ -392,8 +392,8 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); IV Diltiazem - if response indadequate 15 minutes after bolus dosing"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if patient receiving amiodarone infusion and there is a need to reconstitute another bottle. This will allow physician to consider an alternate to IV treatment"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); IV Diltiazem - if response indadequate 15 minutes after bolus dosing"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); if patient receiving amiodarone infusion and there is a need to reconstitute another bottle. This will allow physician to consider an alternate to IV treatment"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
@@ -461,12 +461,12 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Beta Blockers">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Safety Parameters">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER - Goal heart range: ___ to ___"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; and call MD if heart rate less than 60 bpm"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; and call MD if SBP less than 90 mmHg"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; and call MD if MAP less than 60 mmHg"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; and call MD if heart rate less than ___ bpm"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; and call MD if SBP less than ___ mmHg"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold Medication; and call MD if MAP less than ___ mmHg"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold medication; and call MD if heart rate less than 60 bpm"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold medication; and call MD if SBP less than 90 mmHg"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold medication; and call MD if MAP less than 60 mmHg"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold medication; and call MD if heart rate less than ___ bpm"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold medication; and call MD if SBP less than ___ mmHg"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="PC Hold Medication Order" max="1" path="/items" name="Hold medication; and call MD if MAP less than ___ mmHg"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV MetoPROLOL">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
