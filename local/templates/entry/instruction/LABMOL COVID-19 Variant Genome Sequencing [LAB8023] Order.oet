@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>82c24d42-c00e-4117-b6bb-75536ee708fb</id><name>LABMOL COVID-19 Variant Genome Sequencing [LAB8023] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Lab Test.Lab Test Record</key><value>&lt;p&gt;1230308023&lt;/p&gt;</value></item><item><key>Lab Test.Authorized Laboratories</key><value>
+						&lt;p&gt;
+						CGY Provincial Lab Southern Alberta Laboratory&lt;br&gt;
+								EDM Provincial Lab Northern Alberta Laboratory
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Default Container</key><value>
+						&lt;p&gt;
+						UNIVERSAL TRANSPORT MEDIA&lt;br&gt;
+								UNIVERSAL TRANSPORT MEDIA
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Allowed Containers</key><value>
+						&lt;p&gt;
+						UNIVERSAL TRANSPORT MEDIA;STERILE CONTAINER;FOLLOW SUBMISSION GUIDELINES&lt;br&gt;
+								UNIVERSAL TRANSPORT MEDIA;STERILE CONTAINER;FOLLOW SUBMISSION GUIDELINES
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Authorized Sections</key><value>
+						&lt;p&gt;
+						CGY PLSA Molecular Diagnostic&lt;br&gt;
+								EDM PLNA Molecular Diagnostics
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Components</key><value>
+						&lt;p&gt;
+						EXTRACTION METHOD MM&lt;br&gt;
+								EXTRACTION INSTRUMENT USED-PLSA&lt;br&gt;
+								EXTRACTION KIT LOT-PLSA&lt;br&gt;
+								EXTRACTION INPUT VOLUME MM-PLSA&lt;br&gt;
+								EXTRACTION OUTPUT VOLUME MM-PLSA&lt;br&gt;
+								EXTRACTION INSTRUMENT USED-PLNA&lt;br&gt;
+								EXTRACTION KIT LOT-PLNA&lt;br&gt;
+								EXTRACTION INPUT VOLUME MM-PLNA&lt;br&gt;
+								EXTRACTION OUTPUT VOLUME MM-PLNA&lt;br&gt;
+								EXTRACT ID MM&lt;br&gt;
+								TESTING INSTRUMENT USED&lt;br&gt;
+								SEQUENCING METHOD MM&lt;br&gt;
+								COVID-19 SEQUENCING RESULT LINEAGE&lt;br&gt;
+								COVID-19 VARIANT LINEAGE CONFIRMATION&lt;br&gt;
+								COVID-19 VARIANT SEQUENCING LINEAGE VERSION&lt;br&gt;
+								MM TEST REPEAT REQUIRED&lt;br&gt;
+								EXTRACTION REPEAT REQUIRED&lt;br&gt;
+								READY TO AUTOVERIFY
+						&lt;/p&gt;
+					</value></item><item><key>Catalogue Pattern.Synonyms</key><value>
+						&lt;p&gt;
+						Co19 Variant GSEQ
+						&lt;/p&gt;
+					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB8023&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~82c24d42-c00e-4117-b6bb-75536ee708fb~NAME~LABMOL COVID-19 Variant Genome Sequencing [LAB8023] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="COVID-19 Variant Genome Sequencing"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Once</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks></template>
