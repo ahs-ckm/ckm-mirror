@@ -1,1 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>0768223a-980d-4577-8a8e-5981b63b78a1</id><name>Intermittent Bolus 101777 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;101777&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP DIET INTERMITTENT/BOLUS&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Intermittent/ Bolus:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~0768223a-980d-4577-8a8e-5981b63b78a1~NAME~Intermittent Bolus 101777 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Intermittent Bolus Feeds&lt;/p&gt;											&lt;p&gt;Intermittent Bolus Advancement to Goal&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Intermittent Bolus Feeds&lt;/p&gt;											&lt;p&gt;2. Intermittent Bolus Advancement to Goal&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 101330;101335;102511;101336;102512&lt;/p&gt;											&lt;p&gt;2. 101339;101340;101341;112511;111336;112512&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS IP DIET INTERMITTENT/ BOLUS;AHS IP DIET INTERMITTENT/ BOLUS VOLUME;AHS IP DIET INTERMITTENT/BOLUS FREQUENCY/FEED TIMES;AHS IP DIET INTERMITTENT/ BOLUS LENGTH OF FEED;AHS IP DIET INTERMITTENT/BOLUS GOAL RATE&lt;/p&gt;											&lt;p&gt;2. AHS IP DIET INTERMITTENT/ BOLUS ADVANCE;AHS IP DIET INTERMITTENT/ BOLUS ADVANCE EACH;AHS IP DIET INTERMITTENT/ BOLUS ADVANCE GOAL;AHS IP DIET INTERMITTENT/BOLUS FREQUENCY/FEED TIMES (#2);AHS IP DIET INTERMITTENT/BOLUS LENGTH OF FEED (#2);AHS IP DIET INTERMITTENT/BOLUS GOAL RATE (#2)&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Intermittent/ Bolus:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Intermittent Bolus Feeds</includedValues><includedValues>Intermittent Bolus Advancement to Goal</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="32d011bb-9b06-40a8-a352-c17ac36cdebd" concept_name="Length of Feed (min) 111336 Question" max="1" path="/items[at0002]" name="Length of Feed (min):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="705ddfa1-97ff-4240-a67f-a91367af824a" concept_name="Goal Rate (mL hr) 112512 Question" max="1" path="/items[at0002]" name="Goal Rate (mL/hr):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="630ec6e9-381b-4152-bd93-0885244f05a7" concept_name="Frequency Feed Times 112511 Question" max="1" path="/items[at0002]" name="Frequency/ Feed Times:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="dea7e741-b2b9-4509-9349-ca4795513082" concept_name="Each 101340 Question" max="1" path="/items[at0002]" name="Each:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="12a8dccb-00cb-4cb6-afe5-a660ee0e08ec" concept_name="Intermittent Bolus 101330 Question" max="1" path="/items[at0002]" name="Intermittent/ Bolus:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="32b73779-d4eb-4fc8-ad5d-8d0e4c731525" concept_name="Goal volume per feed (mL) 101341 Question" max="1" path="/items[at0002]" name="Goal volume per feed (mL):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="3b6fd89c-2502-4744-92a0-8d4147232c12" concept_name="Goal Rate (mL hr) 102512 Question" max="1" path="/items[at0002]" name="Goal Rate (mL/hr):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="172c01df-54a4-4928-8a01-8af0b448d9f4" concept_name="Volume per feed (mL) 101335 Question" max="1" path="/items[at0002]" name="Volume per feed (mL):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="aa7ba921-3456-4553-983e-429ab906c262" concept_name="Frequency Feed Times 102511 Question" max="1" path="/items[at0002]" name="Frequency/ Feed Times:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b939b9e3-f7a8-44e7-ae4b-cbb4a7f49f32" concept_name="Length of Feed (min) 101336 Question" max="1" path="/items[at0002]" name="Length of Feed (min):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="3a3424e4-7b70-4b9d-8034-0e2514333d23" concept_name="Advance by (mL) 101339 Question" max="1" path="/items[at0002]" name="Advance by (mL)"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>0768223a-980d-4577-8a8e-5981b63b78a1</id>
+  <name>Intermittent Bolus 101777 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;101777&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS IP DIET INTERMITTENT/BOLUS&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Intermittent/ Bolus:&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~0768223a-980d-4577-8a8e-5981b63b78a1~NAME~Intermittent Bolus 101777 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Intermittent Bolus Feeds&lt;/p&gt;											&lt;p&gt;Intermittent Bolus Advancement to Goal&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Intermittent Bolus Feeds&lt;/p&gt;											&lt;p&gt;2. Intermittent Bolus Advancement to Goal&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 101330;101335;102511;101336;102512&lt;/p&gt;											&lt;p&gt;2. 101339;101340;101341;112511;111336;112512&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS IP DIET INTERMITTENT/ BOLUS;AHS IP DIET INTERMITTENT/ BOLUS VOLUME;AHS IP DIET INTERMITTENT/BOLUS FREQUENCY/FEED TIMES;AHS IP DIET INTERMITTENT/ BOLUS LENGTH OF FEED;AHS IP DIET INTERMITTENT/BOLUS GOAL RATE&lt;/p&gt;											&lt;p&gt;2. AHS IP DIET INTERMITTENT/ BOLUS ADVANCE;AHS IP DIET INTERMITTENT/ BOLUS ADVANCE EACH;AHS IP DIET INTERMITTENT/ BOLUS ADVANCE GOAL;AHS IP DIET INTERMITTENT/BOLUS FREQUENCY/FEED TIMES (#2);AHS IP DIET INTERMITTENT/BOLUS LENGTH OF FEED (#2);AHS IP DIET INTERMITTENT/BOLUS GOAL RATE (#2)&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Intermittent/ Bolus:">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Intermittent Bolus Feeds</includedValues>
+        <includedValues>Intermittent Bolus Advancement to Goal</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="32d011bb-9b06-40a8-a352-c17ac36cdebd" concept_name="Length of Feed (min) 111336 Question" max="1" path="/items[at0002]" name="Length of Feed (min):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="705ddfa1-97ff-4240-a67f-a91367af824a" concept_name="Goal Rate (mL hr) 112512 Question" max="1" path="/items[at0002]" name="Goal Rate (mL/hr):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="630ec6e9-381b-4152-bd93-0885244f05a7" concept_name="Frequency Feed Times 112511 Question" max="1" path="/items[at0002]" name="Frequency/ Feed Times:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="dea7e741-b2b9-4509-9349-ca4795513082" concept_name="Each 101340 Question" max="1" path="/items[at0002]" name="Each:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="12a8dccb-00cb-4cb6-afe5-a660ee0e08ec" concept_name="Intermittent Bolus 101330 Question" max="1" path="/items[at0002]" name="Intermittent/ Bolus:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="32b73779-d4eb-4fc8-ad5d-8d0e4c731525" concept_name="Goal volume per feed (mL) 101341 Question" max="1" path="/items[at0002]" name="Goal volume per feed (mL):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="3b6fd89c-2502-4744-92a0-8d4147232c12" concept_name="Goal Rate (mL hr) 102512 Question" max="1" path="/items[at0002]" name="Goal Rate (mL/hr): #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="172c01df-54a4-4928-8a01-8af0b448d9f4" concept_name="Volume per feed (mL) 101335 Question" max="1" path="/items[at0002]" name="Volume per feed (mL):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="aa7ba921-3456-4553-983e-429ab906c262" concept_name="Frequency Feed Times 102511 Question" max="1" path="/items[at0002]" name="Frequency/ Feed Times: #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b939b9e3-f7a8-44e7-ae4b-cbb4a7f49f32" concept_name="Length of Feed (min) 101336 Question" max="1" path="/items[at0002]" name="Length of Feed (min): #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="3a3424e4-7b70-4b9d-8034-0e2514333d23" concept_name="Advance by (mL) 101339 Question" max="1" path="/items[at0002]" name="Advance by (mL)"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
