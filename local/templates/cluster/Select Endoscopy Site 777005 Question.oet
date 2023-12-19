@@ -1,1 +1,149 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>10604e12-4202-4f55-90a9-913215fbf273</id><name>Select Endoscopy Site 777005 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;777005&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS LUME GI CALGARY ZONE SITES&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Select Endoscopy Site:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~10604e12-4202-4f55-90a9-913215fbf273~NAME~Select Endoscopy Site 777005 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;BAN MSH&lt;/p&gt;											&lt;p&gt;CAN CGH&lt;/p&gt;											&lt;p&gt;CGY ACH&lt;/p&gt;											&lt;p&gt;CGY CCSC&lt;/p&gt;											&lt;p&gt;CGY FMC&lt;/p&gt;											&lt;p&gt;CGY PLC&lt;/p&gt;											&lt;p&gt;CGY RGH&lt;/p&gt;											&lt;p&gt;CGY SHC&lt;/p&gt;											&lt;p&gt;HRI HRGH&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals;Equals;Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;											&lt;p&gt;6. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. BAN MSH;CAN CGH;HRI HRGH&lt;/p&gt;											&lt;p&gt;2. CGY FMC&lt;/p&gt;											&lt;p&gt;3. CGY PLC&lt;/p&gt;											&lt;p&gt;4. CGY RGH&lt;/p&gt;											&lt;p&gt;5. CGY SHC&lt;/p&gt;											&lt;p&gt;6. CGY ACH&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;											&lt;p&gt;6. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 777046&lt;/p&gt;											&lt;p&gt;2. 777103&lt;/p&gt;											&lt;p&gt;3. 108369&lt;/p&gt;											&lt;p&gt;4. 777104&lt;/p&gt;											&lt;p&gt;5. 108369&lt;/p&gt;											&lt;p&gt;6. 777115&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS LUME GI ENDO OR SITE DEPARTMENTS&lt;/p&gt;											&lt;p&gt;2. AHS LUME GI CGY FMC DEPARTMENTS&lt;/p&gt;											&lt;p&gt;3. AHS LUME GI ENDO&amp;#38;BRONCH DEPARTMENTS&lt;/p&gt;											&lt;p&gt;4. AHS LUME GI CGY RGH DEPARTMENTS&lt;/p&gt;											&lt;p&gt;5. AHS LUME GI ENDO&amp;#38;BRONCH DEPARTMENTS&lt;/p&gt;											&lt;p&gt;6. AHS LUME OR SITE ENDO &amp;#38; GI LAB DEPARTMENTS&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Select Endoscopy Site:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>BAN MSH</includedValues><includedValues>CAN CGH</includedValues><includedValues>CGY ACH</includedValues><includedValues>CGY CCSC</includedValues><includedValues>CGY FMC</includedValues><includedValues>CGY PLC</includedValues><includedValues>CGY RGH</includedValues><includedValues>CGY SHC</includedValues><includedValues>HRI HRGH</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="4f842417-1cda-4097-bb65-f00c7fb5b33c" concept_name="Select Department 777046 Question" max="1" path="/items[at0002]" name="Select Department:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="cd55901e-e5ee-4083-96ef-cff94142ad1c" concept_name="Select Department 108369 Question" max="1" path="/items[at0002]" name="Select Department:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="d032fbc5-97b3-4cb5-a890-96faf2debc73" concept_name="Select Department 777104 Question" max="1" path="/items[at0002]" name="Select Department:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="987ab1a2-9e37-4b4e-9a65-2ad5bc86463a" concept_name="Select Department 777115 Question" max="1" path="/items[at0002]" name="Select Department:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="f72c4219-4e76-49ff-9bb3-ce96e8018a11" concept_name="Select Department 777103 Question" max="1" path="/items[at0002]" name="Select Department:"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>10604e12-4202-4f55-90a9-913215fbf273</id>
+  <name>Select Endoscopy Site 777005 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;777005&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS LUME GI CALGARY ZONE SITES&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Select Endoscopy Site:&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~10604e12-4202-4f55-90a9-913215fbf273~NAME~Select Endoscopy Site 777005 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;BAN MSH&lt;/p&gt;											&lt;p&gt;CAN CGH&lt;/p&gt;											&lt;p&gt;CGY ACH&lt;/p&gt;											&lt;p&gt;CGY CCSC&lt;/p&gt;											&lt;p&gt;CGY FMC&lt;/p&gt;											&lt;p&gt;CGY PLC&lt;/p&gt;											&lt;p&gt;CGY RGH&lt;/p&gt;											&lt;p&gt;CGY SHC&lt;/p&gt;											&lt;p&gt;HRI HRGH&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals;Equals;Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;											&lt;p&gt;6. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. BAN MSH;CAN CGH;HRI HRGH&lt;/p&gt;											&lt;p&gt;2. CGY FMC&lt;/p&gt;											&lt;p&gt;3. CGY PLC&lt;/p&gt;											&lt;p&gt;4. CGY RGH&lt;/p&gt;											&lt;p&gt;5. CGY SHC&lt;/p&gt;											&lt;p&gt;6. CGY ACH&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;											&lt;p&gt;6. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 777046&lt;/p&gt;											&lt;p&gt;2. 777103&lt;/p&gt;											&lt;p&gt;3. 108369&lt;/p&gt;											&lt;p&gt;4. 777104&lt;/p&gt;											&lt;p&gt;5. 108369&lt;/p&gt;											&lt;p&gt;6. 777115&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS LUME GI ENDO OR SITE DEPARTMENTS&lt;/p&gt;											&lt;p&gt;2. AHS LUME GI CGY FMC DEPARTMENTS&lt;/p&gt;											&lt;p&gt;3. AHS LUME GI ENDO&amp;#38;BRONCH DEPARTMENTS&lt;/p&gt;											&lt;p&gt;4. AHS LUME GI CGY RGH DEPARTMENTS&lt;/p&gt;											&lt;p&gt;5. AHS LUME GI ENDO&amp;#38;BRONCH DEPARTMENTS&lt;/p&gt;											&lt;p&gt;6. AHS LUME OR SITE ENDO &amp;#38; GI LAB DEPARTMENTS&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Select Endoscopy Site:">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>BAN MSH</includedValues>
+        <includedValues>CAN CGH</includedValues>
+        <includedValues>CGY ACH</includedValues>
+        <includedValues>CGY CCSC</includedValues>
+        <includedValues>CGY FMC</includedValues>
+        <includedValues>CGY PLC</includedValues>
+        <includedValues>CGY RGH</includedValues>
+        <includedValues>CGY SHC</includedValues>
+        <includedValues>HRI HRGH</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="4f842417-1cda-4097-bb65-f00c7fb5b33c" concept_name="Select Department 777046 Question" max="1" path="/items[at0002]" name="Select Department:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="cd55901e-e5ee-4083-96ef-cff94142ad1c" concept_name="Select Department 108369 Question" max="1" path="/items[at0002]" name="Select Department: #1"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="d032fbc5-97b3-4cb5-a890-96faf2debc73" concept_name="Select Department 777104 Question" max="1" path="/items[at0002]" name="Select Department: #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="987ab1a2-9e37-4b4e-9a65-2ad5bc86463a" concept_name="Select Department 777115 Question" max="1" path="/items[at0002]" name="Select Department: #3"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="f72c4219-4e76-49ff-9bb3-ce96e8018a11" concept_name="Select Department 777103 Question" max="1" path="/items[at0002]" name="Select Department: #$"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+</template>
