@@ -1,1 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>7ffb2edd-5b79-4abd-8844-0a9754749a2e</id><name>Zone 132173 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;132173&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS LUME GI PROCEDURE LOCATION&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Zone?&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~7ffb2edd-5b79-4abd-8844-0a9754749a2e~NAME~Zone 132173 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Calgary Zone&lt;/p&gt;											&lt;p&gt;Central Zone&lt;/p&gt;											&lt;p&gt;Edmonton Zone&lt;/p&gt;											&lt;p&gt;North Zone&lt;/p&gt;											&lt;p&gt;South Zone&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Calgary Zone&lt;/p&gt;											&lt;p&gt;2. Edmonton Zone&lt;/p&gt;											&lt;p&gt;3. Central Zone&lt;/p&gt;											&lt;p&gt;4. South Zone&lt;/p&gt;											&lt;p&gt;5. North Zone&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 777005&lt;/p&gt;											&lt;p&gt;2. 777006&lt;/p&gt;											&lt;p&gt;3. 777007&lt;/p&gt;											&lt;p&gt;4. 777009&lt;/p&gt;											&lt;p&gt;5. 777008&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS LUME GI CALGARY ZONE SITES&lt;/p&gt;											&lt;p&gt;2. AHS LUME GI EDMONTON ZONE SITES&lt;/p&gt;											&lt;p&gt;3. AHS LUME GI CENTRAL ZONE SITES&lt;/p&gt;											&lt;p&gt;4. AHS LUME GI SOUTH ZONE SITES&lt;/p&gt;											&lt;p&gt;5. AHS LUME GI NORTH ZONE SITES&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Zone?"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Calgary Zone</includedValues><includedValues>Central Zone</includedValues><includedValues>Edmonton Zone</includedValues><includedValues>North Zone</includedValues><includedValues>South Zone</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6f5f7c9a-7f10-449e-badf-d56bda7e9f86" concept_name="Select Endoscopy Site 777006 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="10604e12-4202-4f55-90a9-913215fbf273" concept_name="Select Endoscopy Site 777005 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="9e79d1d6-f35d-4389-ac98-4fc2e5807475" concept_name="Select Endoscopy Site 777009 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site?"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="77d2c4c0-68e5-4470-85dd-5c6cc4ff19ec" concept_name="Select Endoscopy Site 777008 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="5c527abc-0c22-4dfb-8030-f8c6559a0b08" concept_name="Select Endoscopy Site 777007 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site:"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>7ffb2edd-5b79-4abd-8844-0a9754749a2e</id>
+  <name>Zone 132173 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;132173&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS LUME GI PROCEDURE LOCATION&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Zone?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~7ffb2edd-5b79-4abd-8844-0a9754749a2e~NAME~Zone 132173 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Calgary Zone&lt;/p&gt;											&lt;p&gt;Central Zone&lt;/p&gt;											&lt;p&gt;Edmonton Zone&lt;/p&gt;											&lt;p&gt;North Zone&lt;/p&gt;											&lt;p&gt;South Zone&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Calgary Zone&lt;/p&gt;											&lt;p&gt;2. Edmonton Zone&lt;/p&gt;											&lt;p&gt;3. Central Zone&lt;/p&gt;											&lt;p&gt;4. South Zone&lt;/p&gt;											&lt;p&gt;5. North Zone&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 777005&lt;/p&gt;											&lt;p&gt;2. 777006&lt;/p&gt;											&lt;p&gt;3. 777007&lt;/p&gt;											&lt;p&gt;4. 777009&lt;/p&gt;											&lt;p&gt;5. 777008&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS LUME GI CALGARY ZONE SITES&lt;/p&gt;											&lt;p&gt;2. AHS LUME GI EDMONTON ZONE SITES&lt;/p&gt;											&lt;p&gt;3. AHS LUME GI CENTRAL ZONE SITES&lt;/p&gt;											&lt;p&gt;4. AHS LUME GI SOUTH ZONE SITES&lt;/p&gt;											&lt;p&gt;5. AHS LUME GI NORTH ZONE SITES&lt;/p&gt;					</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="Zone?">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Calgary Zone</includedValues>
+        <includedValues>Central Zone</includedValues>
+        <includedValues>Edmonton Zone</includedValues>
+        <includedValues>North Zone</includedValues>
+        <includedValues>South Zone</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6f5f7c9a-7f10-449e-badf-d56bda7e9f86" concept_name="Select Endoscopy Site 777006 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="10604e12-4202-4f55-90a9-913215fbf273" concept_name="Select Endoscopy Site 777005 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site: #1"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="9e79d1d6-f35d-4389-ac98-4fc2e5807475" concept_name="Select Endoscopy Site 777009 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site? #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="77d2c4c0-68e5-4470-85dd-5c6cc4ff19ec" concept_name="Select Endoscopy Site 777008 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site: #3"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="5c527abc-0c22-4dfb-8030-f8c6559a0b08" concept_name="Select Endoscopy Site 777007 Question" max="1" path="/items[at0002]" name="Select Endoscopy Site: #4"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+</template>
