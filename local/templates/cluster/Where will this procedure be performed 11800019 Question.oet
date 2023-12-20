@@ -1,1 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>6b440aff-80e8-4c13-bfac-00bbffa67cc8</id><name>Where will this procedure be performed 11800019 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;11800019&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS RIS IR WHERE WILL THIS PROCEDURE BE PERFORMED?&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Where will this procedure be performed?&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~6b440aff-80e8-4c13-bfac-00bbffa67cc8~NAME~Where will this procedure be performed 11800019 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Community DI All Zones (Non-AHS)&lt;/p&gt;											&lt;p&gt;Edmonton Zone AHS&lt;/p&gt;											&lt;p&gt;Calgary Zone AHS&lt;/p&gt;											&lt;p&gt;Central Zone AHS&lt;/p&gt;											&lt;p&gt;North Zone AHS&lt;/p&gt;											&lt;p&gt;South Zone AHS&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;											&lt;p&gt;6. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Edmonton Zone AHS&lt;/p&gt;											&lt;p&gt;2. Calgary Zone AHS&lt;/p&gt;											&lt;p&gt;3. North Zone AHS&lt;/p&gt;											&lt;p&gt;4. Central Zone AHS&lt;/p&gt;											&lt;p&gt;5. South Zone AHS&lt;/p&gt;											&lt;p&gt;6. Community DI All Zones (Non-AHS)&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;											&lt;p&gt;6. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 11800020&lt;/p&gt;											&lt;p&gt;2. 11800021&lt;/p&gt;											&lt;p&gt;3. 11800039&lt;/p&gt;											&lt;p&gt;4. 10500022&lt;/p&gt;											&lt;p&gt;5. 11800040&lt;/p&gt;											&lt;p&gt;6. 110224&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS RIS IR PREFERRED SITE - EDMONTON ZONE&lt;/p&gt;											&lt;p&gt;2. AHS RIS IR PREFERRED SITE - CALGARY ZONE&lt;/p&gt;											&lt;p&gt;3. AHS RIS IR PREFERRED SITE - NORTH ZONE&lt;/p&gt;											&lt;p&gt;4. AHS RIS IR PREFERRED SITE - CENTRAL ZONE&lt;/p&gt;											&lt;p&gt;5. AHS RIS IR PREFERRED SITE - SOUTH ZONE&lt;/p&gt;											&lt;p&gt;6. AHS RIS - COMMUNITY DI PAPER REQ&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Where will this procedure be performed?"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Edmonton Zone AHS</includedValues><includedValues>Calgary Zone AHS</includedValues><includedValues>Central Zone AHS</includedValues><includedValues>North Zone AHS</includedValues><includedValues>South Zone AHS</includedValues><includedValues>Community DI All Zones (Non-AHS)</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="d3a67878-dfef-4792-a42e-1156ec7d63b5" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800040 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="ebcdf3b0-6b4a-40f0-a3ef-0690f85a0958" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800021 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="2cf17470-5409-410f-917f-e8e5596aa66a" concept_name="A paper requisition will be auto-printed when this order is signed Please ensure it is faxed to the desired DI location Community DI is not on Connect 110224 Question" max="1" path="/items[at0002]" name="A paper requisition will be auto-printed when this order is signed.  Please ensure it is faxed to the desired DI location.  Community DI is  not on Connect Care so this order will require paper tracking and faxing per existing processes."/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="4c3c6462-5570-4425-9e67-45c66f816776" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800020 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="5278b9a7-c831-4cdf-9c21-2a3873e27b7a" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 10500022 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="09568b37-bf08-433b-b06e-e7078b0c2263" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800039 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>6b440aff-80e8-4c13-bfac-00bbffa67cc8</id>
+  <name>Where will this procedure be performed 11800019 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;11800019&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS RIS IR WHERE WILL THIS PROCEDURE BE PERFORMED?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Where will this procedure be performed?&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~6b440aff-80e8-4c13-bfac-00bbffa67cc8~NAME~Where will this procedure be performed 11800019 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Community DI All Zones (Non-AHS)&lt;/p&gt;											&lt;p&gt;Edmonton Zone AHS&lt;/p&gt;											&lt;p&gt;Calgary Zone AHS&lt;/p&gt;											&lt;p&gt;Central Zone AHS&lt;/p&gt;											&lt;p&gt;North Zone AHS&lt;/p&gt;											&lt;p&gt;South Zone AHS&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;											&lt;p&gt;6. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Edmonton Zone AHS&lt;/p&gt;											&lt;p&gt;2. Calgary Zone AHS&lt;/p&gt;											&lt;p&gt;3. North Zone AHS&lt;/p&gt;											&lt;p&gt;4. Central Zone AHS&lt;/p&gt;											&lt;p&gt;5. South Zone AHS&lt;/p&gt;											&lt;p&gt;6. Community DI All Zones (Non-AHS)&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;											&lt;p&gt;6. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 11800020&lt;/p&gt;											&lt;p&gt;2. 11800021&lt;/p&gt;											&lt;p&gt;3. 11800039&lt;/p&gt;											&lt;p&gt;4. 10500022&lt;/p&gt;											&lt;p&gt;5. 11800040&lt;/p&gt;											&lt;p&gt;6. 110224&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS RIS IR PREFERRED SITE - EDMONTON ZONE&lt;/p&gt;											&lt;p&gt;2. AHS RIS IR PREFERRED SITE - CALGARY ZONE&lt;/p&gt;											&lt;p&gt;3. AHS RIS IR PREFERRED SITE - NORTH ZONE&lt;/p&gt;											&lt;p&gt;4. AHS RIS IR PREFERRED SITE - CENTRAL ZONE&lt;/p&gt;											&lt;p&gt;5. AHS RIS IR PREFERRED SITE - SOUTH ZONE&lt;/p&gt;											&lt;p&gt;6. AHS RIS - COMMUNITY DI PAPER REQ&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Where will this procedure be performed?">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Edmonton Zone AHS</includedValues>
+        <includedValues>Calgary Zone AHS</includedValues>
+        <includedValues>Central Zone AHS</includedValues>
+        <includedValues>North Zone AHS</includedValues>
+        <includedValues>South Zone AHS</includedValues>
+        <includedValues>Community DI All Zones (Non-AHS)</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="d3a67878-dfef-4792-a42e-1156ec7d63b5" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800040 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient."/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="ebcdf3b0-6b4a-40f0-a3ef-0690f85a0958" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800021 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="2cf17470-5409-410f-917f-e8e5596aa66a" concept_name="A paper requisition will be auto-printed when this order is signed Please ensure it is faxed to the desired DI location Community DI is not on Connect 110224 Question" max="1" path="/items[at0002]" name="A paper requisition will be auto-printed when this order is signed.  Please ensure it is faxed to the desired DI location.  Community DI is  not on Connect Care so this order will require paper tracking and faxing per existing processes."/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="4c3c6462-5570-4425-9e67-45c66f816776" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800020 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #3"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="5278b9a7-c831-4cdf-9c21-2a3873e27b7a" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 10500022 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #4"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="09568b37-bf08-433b-b06e-e7078b0c2263" concept_name="Please select one preferred location If the requested procedure exam cannot be performed at the preferred location Imaging staff may schedule at an al 11800039 Question" max="1" path="/items[at0002]" name="Please select one preferred location. If the requested procedure/exam cannot be performed at the preferred location, Imaging staff may schedule at an alternate location and notify both the ordering provider and the patient. #5"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
