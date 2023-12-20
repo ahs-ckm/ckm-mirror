@@ -1,1 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>a8768ffb-a354-415a-b7c7-d3dd2dd05a75</id><name>High Frequency Jet Ventilation 3040000787 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;3040000787&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP RT HIGH FREQUENCY JET&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;High Frequency Jet Ventilation&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a8768ffb-a354-415a-b7c7-d3dd2dd05a75~NAME~High Frequency Jet Ventilation 3040000787 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Yes&lt;/p&gt;											&lt;p&gt;No&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Yes&lt;/p&gt;											&lt;p&gt;2. No&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 3040000814;106019;3040000790;3040000813&lt;/p&gt;											&lt;p&gt;2. 3040000793;3040000815;3040000707;3040000816&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS IP RT HIGH FREQUENCY HFJV;AHS IP RT HIGH FREQUENCY BPM;AHS IP RT HIGH FREQUENCY INSPIRATORY SEC;AHS IP RT HIGH FREQUENCY PIP&lt;/p&gt;											&lt;p&gt;2. AHS IP RT HIGH FREQUENCY VOLUME GUARANTEE;AHS IP RT HIGH FREQUENCY HZ;AHS IP RT HIGH FREQUENCY INSPIRATORY;AHS IP RT HIGH FREQUENCY AMP&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="High Frequency Jet Ventilation"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Yes</includedValues><includedValues>No</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="f26a28c7-9636-4eb6-a6e8-7112d523e7d5" concept_name="Peak Inspiratory Pressure (PIP) (cmH2O) 3040000813 Question" max="1" path="/items[at0002]" name="Peak Inspiratory Pressure (PIP) (cmH2O)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="d8977e08-b3b1-4dbe-91f1-61b4cce1a5c4" concept_name="Amplitude (delta-P cmH2O) 3040000816 Question" max="1" path="/items[at0002]" name="Amplitude (delta-P cmH2O)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="1173dde7-4c9e-44b9-a544-f06cbff16a91" concept_name="Inspiratory Time 3040000790 Question" max="1" path="/items[at0002]" name="Inspiratory Time"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6246c45b-e590-4016-9135-35a2ce4cd8b6" concept_name="Inspiratory Time 3040000707 Question" max="1" path="/items[at0002]" name="Inspiratory Time"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="47417dff-7012-47e3-8cad-4be13ea076c4" concept_name="Back up rate HFJV 3040000814 Question" max="1" path="/items[at0002]" name="Back up rate HFJV"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="144568ec-8a26-4211-bf45-77ffc6041021" concept_name="Frequency (Hz) 3040000815 Question" max="1" path="/items[at0002]" name="Frequency (Hz)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="8bd8222e-3b8d-4865-80cb-21fbcce8b576" concept_name="Volume Guarantee (ml) 3040000793 Question" max="1" path="/items[at0002]" name="Volume Guarantee (ml)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="f5361938-b608-4e81-ac1c-e42726bab32b" concept_name="Breaths per minute 106019 Question" max="1" path="/items[at0002]" name="Breaths per minute"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1"><digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest></integrity_checks></template>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>a8768ffb-a354-415a-b7c7-d3dd2dd05a75</id>
+  <name>High Frequency Jet Ventilation 3040000787 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;3040000787&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS IP RT HIGH FREQUENCY JET&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;High Frequency Jet Ventilation&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~a8768ffb-a354-415a-b7c7-d3dd2dd05a75~NAME~High Frequency Jet Ventilation 3040000787 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Yes&lt;/p&gt;											&lt;p&gt;No&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Yes&lt;/p&gt;											&lt;p&gt;2. No&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 3040000814;106019;3040000790;3040000813&lt;/p&gt;											&lt;p&gt;2. 3040000793;3040000815;3040000707;3040000816&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS IP RT HIGH FREQUENCY HFJV;AHS IP RT HIGH FREQUENCY BPM;AHS IP RT HIGH FREQUENCY INSPIRATORY SEC;AHS IP RT HIGH FREQUENCY PIP&lt;/p&gt;											&lt;p&gt;2. AHS IP RT HIGH FREQUENCY VOLUME GUARANTEE;AHS IP RT HIGH FREQUENCY HZ;AHS IP RT HIGH FREQUENCY INSPIRATORY;AHS IP RT HIGH FREQUENCY AMP&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="High Frequency Jet Ventilation">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="f26a28c7-9636-4eb6-a6e8-7112d523e7d5" concept_name="Peak Inspiratory Pressure (PIP) (cmH2O) 3040000813 Question" max="1" path="/items[at0002]" name="Peak Inspiratory Pressure (PIP) (cmH2O)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="d8977e08-b3b1-4dbe-91f1-61b4cce1a5c4" concept_name="Amplitude (delta-P cmH2O) 3040000816 Question" max="1" path="/items[at0002]" name="Amplitude (delta-P cmH2O)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="1173dde7-4c9e-44b9-a544-f06cbff16a91" concept_name="Inspiratory Time 3040000790 Question" max="1" path="/items[at0002]" name="Inspiratory Time"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6246c45b-e590-4016-9135-35a2ce4cd8b6" concept_name="Inspiratory Time 3040000707 Question" max="1" path="/items[at0002]" name="Inspiratory Time #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="47417dff-7012-47e3-8cad-4be13ea076c4" concept_name="Back up rate HFJV 3040000814 Question" max="1" path="/items[at0002]" name="Back up rate HFJV"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="144568ec-8a26-4211-bf45-77ffc6041021" concept_name="Frequency (Hz) 3040000815 Question" max="1" path="/items[at0002]" name="Frequency (Hz)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="8bd8222e-3b8d-4865-80cb-21fbcce8b576" concept_name="Volume Guarantee (ml) 3040000793 Question" max="1" path="/items[at0002]" name="Volume Guarantee (ml)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="f5361938-b608-4e81-ac1c-e42726bab32b" concept_name="Breaths per minute 106019 Question" max="1" path="/items[at0002]" name="Breaths per minute"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+</template>
