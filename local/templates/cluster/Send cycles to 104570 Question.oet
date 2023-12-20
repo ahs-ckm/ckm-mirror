@@ -1,1 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>3fc8f6bc-6f51-4002-9591-77a718253e78</id><name>Send cycles to 104570 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;104570&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS ONC "SEND TO" GEOGRAPHIC CATEGORY&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Send cycles to&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~3fc8f6bc-6f51-4002-9591-77a718253e78~NAME~Send cycles to 104570 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Community&lt;/p&gt;											&lt;p&gt;Out of Province&lt;/p&gt;											&lt;p&gt;Regional&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Community&lt;/p&gt;											&lt;p&gt;2. Out of Province&lt;/p&gt;											&lt;p&gt;3. Regional&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 101413;104573&lt;/p&gt;											&lt;p&gt;2. 104572;104573&lt;/p&gt;											&lt;p&gt;3. 104571;104573&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS ONC COMMUNITY;AHS ONC CYCLES TO SEND&lt;/p&gt;											&lt;p&gt;2. AHS ONC OUT-OF-PROVINCE;AHS ONC CYCLES TO SEND&lt;/p&gt;											&lt;p&gt;3. AHS ONC REGIONAL;AHS ONC CYCLES TO SEND&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Send cycles to"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Community</includedValues><includedValues>Out of Province</includedValues><includedValues>Regional</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="2ee6632c-883a-4238-8e89-639574e28dad" concept_name="Centre 104571 Question" max="1" path="/items[at0002]" name="Centre"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="5222462b-6795-4c4f-8ce7-60afd1afcfa6" concept_name="Centre 104572 Question" max="1" path="/items[at0002]" name="Centre"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="3137630f-4ab3-41d3-99a5-6af2a6021e14" concept_name="Which cycles days to be sent (inclusive) 104573 Question" max="1" path="/items[at0002]" name="Which cycles/days to be sent? (inclusive)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b1a7eb71-44d7-40f6-a469-d8bfde507433" concept_name="Centre 101413 Question" max="1" path="/items[at0002]" name="Centre"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>3fc8f6bc-6f51-4002-9591-77a718253e78</id>
+  <name>Send cycles to 104570 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;104570&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS ONC &quot;SEND TO&quot; GEOGRAPHIC CATEGORY&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Send cycles to&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~3fc8f6bc-6f51-4002-9591-77a718253e78~NAME~Send cycles to 104570 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Community&lt;/p&gt;											&lt;p&gt;Out of Province&lt;/p&gt;											&lt;p&gt;Regional&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Community&lt;/p&gt;											&lt;p&gt;2. Out of Province&lt;/p&gt;											&lt;p&gt;3. Regional&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 101413;104573&lt;/p&gt;											&lt;p&gt;2. 104572;104573&lt;/p&gt;											&lt;p&gt;3. 104571;104573&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS ONC COMMUNITY;AHS ONC CYCLES TO SEND&lt;/p&gt;											&lt;p&gt;2. AHS ONC OUT-OF-PROVINCE;AHS ONC CYCLES TO SEND&lt;/p&gt;											&lt;p&gt;3. AHS ONC REGIONAL;AHS ONC CYCLES TO SEND&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Send cycles to">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Community</includedValues>
+        <includedValues>Out of Province</includedValues>
+        <includedValues>Regional</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="2ee6632c-883a-4238-8e89-639574e28dad" concept_name="Centre 104571 Question" max="1" path="/items[at0002]" name="Centre"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="5222462b-6795-4c4f-8ce7-60afd1afcfa6" concept_name="Centre 104572 Question" max="1" path="/items[at0002]" name="Centre #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="3137630f-4ab3-41d3-99a5-6af2a6021e14" concept_name="Which cycles days to be sent (inclusive) 104573 Question" max="1" path="/items[at0002]" name="Which cycles/days to be sent? (inclusive)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b1a7eb71-44d7-40f6-a469-d8bfde507433" concept_name="Centre 101413 Question" max="1" path="/items[at0002]" name="Centre #3"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
