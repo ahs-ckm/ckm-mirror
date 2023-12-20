@@ -1,3 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>4a40a67f-39b8-4cdb-ab18-16ea31fd4ad4</id><name>Replacement solution 103485 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;103485&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP DIALYSIS CRRT PEDS REPLACEMENT SOLUTION CITRATE&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Replacement solution:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~4a40a67f-39b8-4cdb-ab18-16ea31fd4ad4~NAME~Replacement solution 103485 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Prism0Cal B22 (standard)&lt;/p&gt;											&lt;p&gt;Prism0Cal&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Prism0Cal B22 (standard)&lt;/p&gt;											&lt;p&gt;2. Prism0Cal&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 111307;109823;109825;109827;110186&lt;/p&gt;											&lt;p&gt;2. 111308;109823;109825;111296;109829&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS IP DIALYSIS CRRT PEDS PRISM0CAL B22 INGREDIENTS - REPLACEMENT;AHS IP PICU CRRT REPLACEMENT KCL ADDITIVE;AHS IP PICU CRRT REPLACEMENT NAPO4 ADDITIVE;AHS IP PICU CRRT REPLACEMENT MGSO4 ADDITIVE B22;AHS IP PICU CRRT HEPARIN REPLACEMENT SODIUM BICARB ADDITIVE&lt;/p&gt;											&lt;p&gt;2. AHS IP DIALYSIS CRRT PEDS PRISM0CAL INGREDIENTS - REPLACEMENT;AHS IP PICU CRRT REPLACEMENT KCL ADDITIVE;AHS IP PICU CRRT REPLACEMENT NAPO4 ADDITIVE;AHS IP PICU CRRT REPLACEMENT MGSO4 ADDITIVE;AHS IP PICU CRRT REPLACEMENT NAHCO3 ADDITIVE&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Replacement solution:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Prism0Cal B22 (standard)</includedValues><includedValues>Prism0Cal</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="a94ed601-f39c-433d-b644-ccfccefbb9c3" concept_name="Potassium Chloride Replacement (KCl mmol L) 109823 Question" max="1" path="/items[at0002]" name="Potassium Chloride Replacement (KCl, mmol/L)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="548e444d-d6d0-4c4a-a113-8622249148bd" concept_name="Magnesium Sulfate Replacement (MgSO4 mmol L) 111296 Question" max="1" path="/items[at0002]" name="Magnesium Sulfate Replacement (MgSO4 , mmol/L)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8fbfaf87-4939-47c6-921c-fabbde4e7c28" concept_name="Sodium Bicarbonate (NaHCO3 mmol L) 110186 Question" max="1" path="/items[at0002]" name="Sodium Bicarbonate (NaHCO3, mmol/L)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b6f1f4b5-4434-4a61-9442-9941d56021f1" concept_name="Sodium Bicarbonate Replacement (NaHCO3 mmol L) 109829 Question" max="1" path="/items[at0002]" name="Sodium Bicarbonate Replacement (NaHCO3, mmol/L)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="74353ce0-2c0d-4b03-9a5f-47171bcc27e1" concept_name="Sodium Phosphate Replacement (NaPO4 mmol L) 109825 Question" max="1" path="/items[at0002]" name="Sodium Phosphate Replacement (NaPO4, mmol/L)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="87d2c578-f4a9-446f-a08b-2db193af6acf" concept_name="Prism0Cal contains 111308 Question" max="1" path="/items[at0002]" name="Prism0Cal contains:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="1fb86193-946f-40f3-ab72-38b610cd1262" concept_name="Prism0Cal B22 contains 111307 Question" max="1" path="/items[at0002]" name="Prism0Cal B22 contains:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8495401a-fcf1-4a54-a29e-39120c8f5749" concept_name="Magnesium Sulfate Replacement (MgSO4 mmol L) 109827 Question" max="1" path="/items[at0002]" name="Magnesium Sulfate Replacement (MgSO4 , mmol/L)"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
-            </integrity_checks></template>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>4a40a67f-39b8-4cdb-ab18-16ea31fd4ad4</id>
+  <name>Replacement solution 103485 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;103485&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS IP DIALYSIS CRRT PEDS REPLACEMENT SOLUTION CITRATE&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Replacement solution:&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~4a40a67f-39b8-4cdb-ab18-16ea31fd4ad4~NAME~Replacement solution 103485 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Prism0Cal B22 (standard)&lt;/p&gt;											&lt;p&gt;Prism0Cal&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Prism0Cal B22 (standard)&lt;/p&gt;											&lt;p&gt;2. Prism0Cal&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 111307;109823;109825;109827;110186&lt;/p&gt;											&lt;p&gt;2. 111308;109823;109825;111296;109829&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS IP DIALYSIS CRRT PEDS PRISM0CAL B22 INGREDIENTS - REPLACEMENT;AHS IP PICU CRRT REPLACEMENT KCL ADDITIVE;AHS IP PICU CRRT REPLACEMENT NAPO4 ADDITIVE;AHS IP PICU CRRT REPLACEMENT MGSO4 ADDITIVE B22;AHS IP PICU CRRT HEPARIN REPLACEMENT SODIUM BICARB ADDITIVE&lt;/p&gt;											&lt;p&gt;2. AHS IP DIALYSIS CRRT PEDS PRISM0CAL INGREDIENTS - REPLACEMENT;AHS IP PICU CRRT REPLACEMENT KCL ADDITIVE;AHS IP PICU CRRT REPLACEMENT NAPO4 ADDITIVE;AHS IP PICU CRRT REPLACEMENT MGSO4 ADDITIVE;AHS IP PICU CRRT REPLACEMENT NAHCO3 ADDITIVE&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Replacement solution:">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Prism0Cal B22 (standard)</includedValues>
+        <includedValues>Prism0Cal</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="a94ed601-f39c-433d-b644-ccfccefbb9c3" concept_name="Potassium Chloride Replacement (KCl mmol L) 109823 Question" max="1" path="/items[at0002]" name="Potassium Chloride Replacement (KCl, mmol/L)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="548e444d-d6d0-4c4a-a113-8622249148bd" concept_name="Magnesium Sulfate Replacement (MgSO4 mmol L) 111296 Question" max="1" path="/items[at0002]" name="Magnesium Sulfate Replacement (MgSO4 , mmol/L)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8fbfaf87-4939-47c6-921c-fabbde4e7c28" concept_name="Sodium Bicarbonate (NaHCO3 mmol L) 110186 Question" max="1" path="/items[at0002]" name="Sodium Bicarbonate (NaHCO3, mmol/L)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b6f1f4b5-4434-4a61-9442-9941d56021f1" concept_name="Sodium Bicarbonate Replacement (NaHCO3 mmol L) 109829 Question" max="1" path="/items[at0002]" name="Sodium Bicarbonate Replacement (NaHCO3, mmol/L)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="74353ce0-2c0d-4b03-9a5f-47171bcc27e1" concept_name="Sodium Phosphate Replacement (NaPO4 mmol L) 109825 Question" max="1" path="/items[at0002]" name="Sodium Phosphate Replacement (NaPO4, mmol/L)"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="87d2c578-f4a9-446f-a08b-2db193af6acf" concept_name="Prism0Cal contains 111308 Question" max="1" path="/items[at0002]" name="Prism0Cal contains:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="1fb86193-946f-40f3-ab72-38b610cd1262" concept_name="Prism0Cal B22 contains 111307 Question" max="1" path="/items[at0002]" name="Prism0Cal B22 contains:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8495401a-fcf1-4a54-a29e-39120c8f5749" concept_name="Magnesium Sulfate Replacement (MgSO4 mmol L) 109827 Question" max="1" path="/items[at0002]" name="Magnesium Sulfate Replacement (MgSO4 , mmol/L) #2"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+</template>
