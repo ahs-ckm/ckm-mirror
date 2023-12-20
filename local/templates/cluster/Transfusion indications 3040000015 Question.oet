@@ -1,1 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>fb30c66b-b2af-41ed-b81c-b88386629a83</id><name>Transfusion indications 3040000015 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;3040000015&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Transfusion indications&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~fb30c66b-b2af-41ed-b81c-b88386629a83~NAME~Transfusion indications 3040000015 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Anemia&lt;/p&gt;											&lt;p&gt;Hemoglobinopathy&lt;/p&gt;											&lt;p&gt;Hemolysis&lt;/p&gt;											&lt;p&gt;ECMO circuit / Bypass prime&lt;/p&gt;											&lt;p&gt;Preprocedural&lt;/p&gt;											&lt;p&gt;Other&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Anemia&lt;/p&gt;											&lt;p&gt;2. Other&lt;/p&gt;											&lt;p&gt;3. Hemoglobinopathy&lt;/p&gt;											&lt;p&gt;4. Hemolysis&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 3047005&lt;/p&gt;											&lt;p&gt;2. 121201&lt;/p&gt;											&lt;p&gt;3. 108138&lt;/p&gt;											&lt;p&gt;4. 108139;108141&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS ANEMIA&lt;/p&gt;											&lt;p&gt;2. BLOOD BANK RBC TRANSFUSION INDICATIONS -- OTHER&lt;/p&gt;											&lt;p&gt;3. AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS HEMOGLOPINOPATHY&lt;/p&gt;											&lt;p&gt;4. AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS HEMOLYSIS &amp;lt; 4 M;AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS HEMOLYSIS&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Transfusion indications"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Anemia</includedValues><includedValues>Hemoglobinopathy</includedValues><includedValues>Hemolysis</includedValues><includedValues>ECMO circuit / Bypass prime</includedValues><includedValues>Preprocedural</includedValues><includedValues>Other</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="26e8d9dc-2ffc-44c2-b1b1-4874d70755bc" concept_name="Hemoglopinopathy and 108138 Question" max="1" path="/items[at0002]" name="Hemoglopinopathy and"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="214f6a78-8d0b-4954-b2ee-ce466b0a239b" concept_name="Hemolysis and 108139 Question" max="1" path="/items[at0002]" name="Hemolysis and"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="09d99517-5620-4b6c-bc12-00663f9d8ac7" concept_name="Specify 121201 Question" max="1" path="/items[at0002]" name="Specify"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b31c7217-54ff-419a-85fd-59884788067c" concept_name="Anemia and 3047005 Question" max="1" path="/items[at0002]" name="Anemia and"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b580ed3c-946b-4929-9403-51ca5a0a8ce6" concept_name="Hemolysis and 108141 Question" max="1" path="/items[at0002]" name="Hemolysis and"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>fb30c66b-b2af-41ed-b81c-b88386629a83</id>
+  <name>Transfusion indications 3040000015 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;3040000015&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Transfusion indications&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~fb30c66b-b2af-41ed-b81c-b88386629a83~NAME~Transfusion indications 3040000015 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Anemia&lt;/p&gt;											&lt;p&gt;Hemoglobinopathy&lt;/p&gt;											&lt;p&gt;Hemolysis&lt;/p&gt;											&lt;p&gt;ECMO circuit / Bypass prime&lt;/p&gt;											&lt;p&gt;Preprocedural&lt;/p&gt;											&lt;p&gt;Other&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Anemia&lt;/p&gt;											&lt;p&gt;2. Other&lt;/p&gt;											&lt;p&gt;3. Hemoglobinopathy&lt;/p&gt;											&lt;p&gt;4. Hemolysis&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 3047005&lt;/p&gt;											&lt;p&gt;2. 121201&lt;/p&gt;											&lt;p&gt;3. 108138&lt;/p&gt;											&lt;p&gt;4. 108139;108141&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS ANEMIA&lt;/p&gt;											&lt;p&gt;2. BLOOD BANK RBC TRANSFUSION INDICATIONS -- OTHER&lt;/p&gt;											&lt;p&gt;3. AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS HEMOGLOPINOPATHY&lt;/p&gt;											&lt;p&gt;4. AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS HEMOLYSIS &amp;lt; 4 M;AHS IP BLOOD BANK RBC TRANSFUSION INDICATIONS HEMOLYSIS&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Transfusion indications">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Anemia</includedValues>
+        <includedValues>Hemoglobinopathy</includedValues>
+        <includedValues>Hemolysis</includedValues>
+        <includedValues>ECMO circuit / Bypass prime</includedValues>
+        <includedValues>Preprocedural</includedValues>
+        <includedValues>Other</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="26e8d9dc-2ffc-44c2-b1b1-4874d70755bc" concept_name="Hemoglopinopathy and 108138 Question" max="1" path="/items[at0002]" name="Hemoglopinopathy and"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="214f6a78-8d0b-4954-b2ee-ce466b0a239b" concept_name="Hemolysis and 108139 Question" max="1" path="/items[at0002]" name="Hemolysis and"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="09d99517-5620-4b6c-bc12-00663f9d8ac7" concept_name="Specify 121201 Question" max="1" path="/items[at0002]" name="Specify"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b31c7217-54ff-419a-85fd-59884788067c" concept_name="Anemia and 3047005 Question" max="1" path="/items[at0002]" name="Anemia and"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b580ed3c-946b-4929-9403-51ca5a0a8ce6" concept_name="Hemolysis and 108141 Question" max="1" path="/items[at0002]" name="Hemolysis and #2"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
