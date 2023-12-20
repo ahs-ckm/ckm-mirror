@@ -1,1 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>10415371-23ee-4b1a-84ab-20b52ebd0396</id><name>Ventilation 3040000863 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;3040000863&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP RT CHRONIC VENTILATOR&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Ventilation:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~10415371-23ee-4b1a-84ab-20b52ebd0396~NAME~Ventilation 3040000863 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Invasive Ventilator&lt;/p&gt;											&lt;p&gt;Non-invasive Ventilation&lt;/p&gt;											&lt;p&gt;CPAP&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Invasive Ventilator&lt;/p&gt;											&lt;p&gt;2. Non-invasive Ventilation&lt;/p&gt;											&lt;p&gt;3. CPAP&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 3040000864;3040000865;3040000866;3040000867;3070000868;3040000869;3040000870;3040000871&lt;/p&gt;											&lt;p&gt;2. 3040000872;3040000873;3040000874;3040000875;3040000876;3040000877;3040000878;3040000879;3040000880;3040000881;3040000882;3040000883;3040000884&lt;/p&gt;											&lt;p&gt;3. 3040000885;3040000888;3040000889&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. AHS IP RT CHRONIC INVASIVE MODE;AHS IP RT CHRONIC INVASIVE PIP;AHS IP RT CHRONIC INVASIVE PRESSURE;AHS IP RT CHRONIC INVASIVE PEEP;AHS IP RT CHRONIC INVASIVE TIDAL;AHS IP RT CHRONIC INVASIVE RATE;AHS IP RT CHRONIC INVASIVE TIME;AHS IP RT CHRONIC INVASIVE BREATH&lt;/p&gt;											&lt;p&gt;2. AHS IP RT CHRONIC NIV MODE;AHS IP RT CHRONIC NIV INSP;AHS IP RT CHRONIC NIV IPAP MIN;AHS IP RT CHRONIC NIV IPAP MAX;AHS IP RT CHRONIC NIV PRESSURE;AHS IP RT CHRONIC NIV EPAP;AHS IP RT CHRONIC NIV EPAP MIN;AHS IP RT CHRONIC NIV EPAP MAX;AHS IP RT CHRONIC NIV TIDAL;AHS IP RT CHRONIC NIV SET RATE;AHS IP RT CHRONIC NIV BACK UP;AHS IP RT CHRONIC NIV ITIME;AHS IP RT CHRONIC NIV RISE&lt;/p&gt;											&lt;p&gt;3. AHS IP RT CHRONIC CPAP TITRATING;AHS IP RT CHRONIC CPAP CPAP;AHS IP RT CHRONIC CPAP RISE&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Ventilation:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Invasive Ventilator</includedValues><includedValues>Non-invasive Ventilation</includedValues><includedValues>CPAP</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="57efa444-13e0-43e6-a963-a0afebce4931" concept_name="EPAP Minimum 3040000878 Question" max="1" path="/items[at0002]" name="EPAP Minimum:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="75ce2a54-7b21-419d-99fd-cab748d5c009" concept_name="EPAP Maximum 3040000879 Question" max="1" path="/items[at0002]" name="EPAP Maximum:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="8bc6ee5d-3534-4189-9e24-29ec18e25d12" concept_name="Pressure support (cmH2O) 3040000876 Question" max="1" path="/items[at0002]" name="Pressure support (cmH2O):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="cedee3ef-51b4-404e-a3ad-03bd651f346a" concept_name="EPAP (cmH2O) 3040000877 Question" max="1" path="/items[at0002]" name="EPAP (cmH2O):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="18dd34cf-45aa-4ebb-9bec-6a81fff41420" concept_name="Set rate (breaths min) 3040000881 Question" max="1" path="/items[at0002]" name="Set rate (breaths/min):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="5ec10291-9755-4282-abb6-467895bd447a" concept_name="Back up rate (breaths min) 3040000882 Question" max="1" path="/items[at0002]" name="Back up rate (breaths/min):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="7d46271f-4ec7-437a-a624-2cb6b9ddee18" concept_name="Tidal volume (mls) 3040000880 Question" max="1" path="/items[at0002]" name="Tidal volume (mls):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="bc529ea9-d6e3-4b02-82e3-d4006e57481a" concept_name="Auto-titrating 3040000885 Question" max="1" path="/items[at0002]" name="Auto-titrating:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="c1c2b13c-97d6-403e-98d4-e5824f7d3ee6" concept_name="Modes 3040000864 Question" max="1" path="/items[at0002]" name="Modes:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="c01cd985-b9f9-4247-b860-9daceda1ca16" concept_name="ITime (sec) 3040000883 Question" max="1" path="/items[at0002]" name="ITime (sec):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="6250d581-d281-4374-ac96-339ea693edc1" concept_name="Rise 3040000884 Question" max="1" path="/items[at0002]" name="Rise:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="476680ad-572c-4517-a329-2b96a0106d51" concept_name="PEEP set (cmH2O) 3040000867 Question" max="1" path="/items[at0002]" name="PEEP set (cmH2O):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="f5c4ef69-b5d3-4859-ad2d-b894d932f9f8" concept_name="Rise 3040000889 Question" max="1" path="/items[at0002]" name="Rise:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="c064cd10-b794-483b-8613-9c68a431a309" concept_name="Inspiratory pressure or PIP (cmH2O) 3040000865 Question" max="1" path="/items[at0002]" name="Inspiratory pressure or PIP (cmH2O):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="19a97b6b-16cc-46b2-9162-4fa4f020401d" concept_name="Pressure support (cmH2O) 3040000866 Question" max="1" path="/items[at0002]" name="Pressure support (cmH2O):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="fe7622e8-61d7-4628-ad20-62b8b0e6792e" concept_name="CPAP (cmH2O) 3040000888 Question" max="1" path="/items[at0002]" name="CPAP (cmH2O):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="d62fc8ed-bb64-431e-82ef-41ee1a28067b" concept_name="Tidal volume (mls) 3070000868 Question" max="1" path="/items[at0002]" name="Tidal volume (mls):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="205da37f-da47-4e20-b972-a05c8d611fb3" concept_name="Set rate (breaths min) 3040000869 Question" max="1" path="/items[at0002]" name="Set rate (breaths/min):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="3b20bf6a-0821-45a9-a4ca-f3e677cf2046" concept_name="I Time 3040000870 Question" max="1" path="/items[at0002]" name="I Time"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="59ae5c80-9586-4830-aa16-41eb33d6318e" concept_name="Breath type 3040000871 Question" max="1" path="/items[at0002]" name="Breath type:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="c717450b-f36b-4187-ad73-a644b791ed89" concept_name="IPAP Minimum 3040000874 Question" max="1" path="/items[at0002]" name="IPAP Minimum:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="60ce73ac-453e-460c-bf07-938175f68f72" concept_name="IPAP Maximum 3040000875 Question" max="1" path="/items[at0002]" name="IPAP Maximum:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="ac5e6a07-a168-4e98-bf03-1d31ce1797c7" concept_name="Mode type 3040000872 Question" max="1" path="/items[at0002]" name="Mode type:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="75c7ddc9-c51b-4bd9-8e77-abf12d1772b4" concept_name="Inspiratory pressure (cmH2O) 3040000873 Question" max="1" path="/items[at0002]" name="Inspiratory pressure (cmH2O):"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1"><digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest></integrity_checks></template>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>10415371-23ee-4b1a-84ab-20b52ebd0396</id>
+  <name>Ventilation 3040000863 Question</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;3040000863&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question Name</key>
+        <value>&lt;p&gt;AHS IP RT CHRONIC VENTILATOR&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Question</key>
+        <value>&lt;p&gt;Ventilation:&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~10415371-23ee-4b1a-84ab-20b52ebd0396~NAME~Ventilation 3040000863 Question}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Answer Button Values</key>
+        <value>						&lt;p&gt;Invasive Ventilator&lt;/p&gt;											&lt;p&gt;Non-invasive Ventilation&lt;/p&gt;											&lt;p&gt;CPAP&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Comparison Operator</key>
+        <value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Value</key>
+        <value>						&lt;p&gt;1. Invasive Ventilator&lt;/p&gt;											&lt;p&gt;2. Non-invasive Ventilation&lt;/p&gt;											&lt;p&gt;3. CPAP&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Condition Comparison</key>
+        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions</key>
+        <value>						&lt;p&gt;1. 3040000864;3040000865;3040000866;3040000867;3070000868;3040000869;3040000870;3040000871&lt;/p&gt;											&lt;p&gt;2. 3040000872;3040000873;3040000874;3040000875;3040000876;3040000877;3040000878;3040000879;3040000880;3040000881;3040000882;3040000883;3040000884&lt;/p&gt;											&lt;p&gt;3. 3040000885;3040000888;3040000889&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Cascading - Questions Record Name</key>
+        <value>						&lt;p&gt;1. AHS IP RT CHRONIC INVASIVE MODE;AHS IP RT CHRONIC INVASIVE PIP;AHS IP RT CHRONIC INVASIVE PRESSURE;AHS IP RT CHRONIC INVASIVE PEEP;AHS IP RT CHRONIC INVASIVE TIDAL;AHS IP RT CHRONIC INVASIVE RATE;AHS IP RT CHRONIC INVASIVE TIME;AHS IP RT CHRONIC INVASIVE BREATH&lt;/p&gt;											&lt;p&gt;2. AHS IP RT CHRONIC NIV MODE;AHS IP RT CHRONIC NIV INSP;AHS IP RT CHRONIC NIV IPAP MIN;AHS IP RT CHRONIC NIV IPAP MAX;AHS IP RT CHRONIC NIV PRESSURE;AHS IP RT CHRONIC NIV EPAP;AHS IP RT CHRONIC NIV EPAP MIN;AHS IP RT CHRONIC NIV EPAP MAX;AHS IP RT CHRONIC NIV TIDAL;AHS IP RT CHRONIC NIV SET RATE;AHS IP RT CHRONIC NIV BACK UP;AHS IP RT CHRONIC NIV ITIME;AHS IP RT CHRONIC NIV RISE&lt;/p&gt;											&lt;p&gt;3. AHS IP RT CHRONIC CPAP TITRATING;AHS IP RT CHRONIC CPAP CPAP;AHS IP RT CHRONIC CPAP RISE&lt;/p&gt;					</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Hide Comments</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Multiple Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Released Flag</key>
+        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Require Response</key>
+        <value>&lt;p&gt;No&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Order Specific Questions.Response Type</key>
+        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Ventilation:">
+    <Rule path="/items[at0001]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Invasive Ventilator</includedValues>
+        <includedValues>Non-invasive Ventilation</includedValues>
+        <includedValues>CPAP</includedValues>
+      </constraint>
+    </Rule>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="57efa444-13e0-43e6-a963-a0afebce4931" concept_name="EPAP Minimum 3040000878 Question" max="1" path="/items[at0002]" name="EPAP Minimum:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="75ce2a54-7b21-419d-99fd-cab748d5c009" concept_name="EPAP Maximum 3040000879 Question" max="1" path="/items[at0002]" name="EPAP Maximum:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="8bc6ee5d-3534-4189-9e24-29ec18e25d12" concept_name="Pressure support (cmH2O) 3040000876 Question" max="1" path="/items[at0002]" name="Pressure support (cmH2O):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="cedee3ef-51b4-404e-a3ad-03bd651f346a" concept_name="EPAP (cmH2O) 3040000877 Question" max="1" path="/items[at0002]" name="EPAP (cmH2O):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="18dd34cf-45aa-4ebb-9bec-6a81fff41420" concept_name="Set rate (breaths min) 3040000881 Question" max="1" path="/items[at0002]" name="Set rate (breaths/min):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="5ec10291-9755-4282-abb6-467895bd447a" concept_name="Back up rate (breaths min) 3040000882 Question" max="1" path="/items[at0002]" name="Back up rate (breaths/min):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="7d46271f-4ec7-437a-a624-2cb6b9ddee18" concept_name="Tidal volume (mls) 3040000880 Question" max="1" path="/items[at0002]" name="Tidal volume (mls):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="bc529ea9-d6e3-4b02-82e3-d4006e57481a" concept_name="Auto-titrating 3040000885 Question" max="1" path="/items[at0002]" name="Auto-titrating:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="c1c2b13c-97d6-403e-98d4-e5824f7d3ee6" concept_name="Modes 3040000864 Question" max="1" path="/items[at0002]" name="Modes:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="c01cd985-b9f9-4247-b860-9daceda1ca16" concept_name="ITime (sec) 3040000883 Question" max="1" path="/items[at0002]" name="ITime (sec):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="6250d581-d281-4374-ac96-339ea693edc1" concept_name="Rise 3040000884 Question" max="1" path="/items[at0002]" name="Rise:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="476680ad-572c-4517-a329-2b96a0106d51" concept_name="PEEP set (cmH2O) 3040000867 Question" max="1" path="/items[at0002]" name="PEEP set (cmH2O):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="f5c4ef69-b5d3-4859-ad2d-b894d932f9f8" concept_name="Rise 3040000889 Question" max="1" path="/items[at0002]" name="Rise: #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="c064cd10-b794-483b-8613-9c68a431a309" concept_name="Inspiratory pressure or PIP (cmH2O) 3040000865 Question" max="1" path="/items[at0002]" name="Inspiratory pressure or PIP (cmH2O):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="19a97b6b-16cc-46b2-9162-4fa4f020401d" concept_name="Pressure support (cmH2O) 3040000866 Question" max="1" path="/items[at0002]" name="Pressure support (cmH2O): #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="fe7622e8-61d7-4628-ad20-62b8b0e6792e" concept_name="CPAP (cmH2O) 3040000888 Question" max="1" path="/items[at0002]" name="CPAP (cmH2O):"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="d62fc8ed-bb64-431e-82ef-41ee1a28067b" concept_name="Tidal volume (mls) 3070000868 Question" max="1" path="/items[at0002]" name="Tidal volume (mls): #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="205da37f-da47-4e20-b972-a05c8d611fb3" concept_name="Set rate (breaths min) 3040000869 Question" max="1" path="/items[at0002]" name="Set rate (breaths/min): #2"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="3b20bf6a-0821-45a9-a4ca-f3e677cf2046" concept_name="I Time 3040000870 Question" max="1" path="/items[at0002]" name="I Time"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="59ae5c80-9586-4830-aa16-41eb33d6318e" concept_name="Breath type 3040000871 Question" max="1" path="/items[at0002]" name="Breath type:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="c717450b-f36b-4187-ad73-a644b791ed89" concept_name="IPAP Minimum 3040000874 Question" max="1" path="/items[at0002]" name="IPAP Minimum:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="60ce73ac-453e-460c-bf07-938175f68f72" concept_name="IPAP Maximum 3040000875 Question" max="1" path="/items[at0002]" name="IPAP Maximum:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="ac5e6a07-a168-4e98-bf03-1d31ce1797c7" concept_name="Mode type 3040000872 Question" max="1" path="/items[at0002]" name="Mode type:"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="75c7ddc9-c51b-4bd9-8e77-abf12d1772b4" concept_name="Inspiratory pressure (cmH2O) 3040000873 Question" max="1" path="/items[at0002]" name="Inspiratory pressure (cmH2O):"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+</template>
