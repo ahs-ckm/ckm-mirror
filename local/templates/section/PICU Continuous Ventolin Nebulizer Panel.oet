@@ -296,6 +296,18 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PICU ONLY Salbutamol Aerogen Syringe Nebulizer  - HFNC, NIV or IMV circuit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;salbutamol inhalation&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Salbutamol delivery via HHHFNC is inadequate at high flow rates. Reduce the HHHFNC flow rate to 0.25 l/kg/min (and increasing FiO2 as required) during Aerogen nebulization into the circuit (PICU only)&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.5mg/mL inhalation liquid (Aerogen syringe) flow rate 12 mL/hr inhalation continuous over 1 - 4 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -390,6 +402,8 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation #1"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation #2"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
