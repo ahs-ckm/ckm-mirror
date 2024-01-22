@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>bda40c92-5142-46b6-9fa2-9d8151cb6fa3</id>
+  <name>Direct Admit Inpatient-modified PRAM Score less than 7 (Moderate) (greater than 20 kg) Order Group</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~bda40c92-5142-46b6-9fa2-9d8151cb6fa3~NAME~Direct Admit Inpatient-modified PRAM Score less than 7 (Moderate) (greater than 20 kg) Order Group}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Tract Agents&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Tract Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;salbutamol Inhaler 100 mcg/actuation; 10 puff, inhalation, every 20 minutes for 3 doses, via MDI/spacer.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Tract Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ipratropium Inhaler 20 mcg/actuation; 4 puff, inhalation, every 20 minutes for 3 doses, via MDI/spacer&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Tract Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;salbutamol Inhaler 100 mcg/actuation; 10 puff, inhalation, every 30 minutes, as needed for Inpatient-modified PRAM scoare greater than 3 at reassessment, Via MDI/spacer&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Give q30-60min PRN if Inpatient-modified PRAM Score greater than 3 at reassessment; if administered q30min notify MD&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Dexamethasone: recommended dose is 0.3 mg/kg/DOSE after aerosol treatment. Max dose 10 mg.&lt;br&gt;PredniSONE/prednisolone: recommended dose is 2 mg/kg/DOSE, Max dose 60 mg&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dexAMETHasone sodium phosphate Oral liquid 1 mg/mL; *** mg (0.3 mg/kg/day, oral, daily with breakfast, Administer after first aerosol treatment. Max dose 10 mg&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Direct Admit Inpatient-modified PRAM Score less than 7 (Moderate) (greater than 20 kg)">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Once, Assess on admission"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Titrate to saturation. Maintain SpO2 at 93%"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education; Asthma, Provide asthma teaching for patient and family prior to discharge."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Refer to highest level of asthma education available"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3bb5aba1-89c1-48b2-8c34-012914a7f692" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR910] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Medication Administration. Notify after first three aerosol treatments."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3bb5aba1-89c1-48b2-8c34-012914a7f692" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR910] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Medication Administration. Notify 4 hours after steroid is administered."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3bb5aba1-89c1-48b2-8c34-012914a7f692" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR910] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Inpatient-modified PRAM Score Monitoring. Notify if Inpatient-modified PRAM score increased by greater than or equal to 3 points."/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Tract Agents">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3da6e611-c8f1-449b-9dc4-e159d52b17a6" concept_name="PHARM salbutamol Inhaler 100 mcg/actuation Order" max="1" path="/items" name="salbutamol Inhaler 100 mcg/actuation; 10 puff, inhalation, every 20 minutes for 3 doses, via MDI/spacer."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4f6e0c52-223d-4c23-aa40-bf141c5e95ba" concept_name="PHARM ipratropium Inhaler 20 mcg/actuation Order" max="1" path="/items" name="ipratropium Inhaler 20 mcg/actuation; 4 puff, inhalation, every 20 minutes for 3 doses, via MDI/spacer"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3da6e611-c8f1-449b-9dc4-e159d52b17a6" concept_name="PHARM salbutamol Inhaler 100 mcg/actuation Order" max="1" path="/items" name="salbutamol Inhaler 100 mcg/actuation; 10 puff, inhalation, every 30 minutes, as needed for Inpatient-modified PRAM scoare greater than 3 at reassessment, Via MDI/spacer"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation; 5 mg, inhalation, every 20 minutes for 3 doses, Via oxygen"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="440adad6-96ec-4d8b-9e65-12f4f5c711bc" concept_name="PHARM ipratropium Nebule 250 mcg/mL Order" max="1" path="/items" name="ipratropium Nebule 250 mcg/mL; 250 mcg, inhalation, every 20 minutes for 3 doses, 250 mcg to be mixed with salbutamol and normal saline. Administer via nebulizer via oxygen."/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7f9cdfd4-acea-4b56-8dda-dec37428686b" concept_name="PHARM dexAMETHasone sodium phosphate Oral liquid 1 mg/mL Order" max="1" path="/items" name="dexAMETHasone sodium phosphate Oral liquid 1 mg/mL; *** mg (0.3 mg/kg/day, oral, daily with breakfast, Administer after first aerosol treatment. Max dose 10 mg"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE Tablet Order" max="1" path="/items" name="predniSONE Tablet; *** mg (2 mg/kg/day), oral, daily with breakfast"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f4d16b11-9632-4abe-85c3-d533ea6bd820" concept_name="PHARM PREDNISONE LIQUID ORAL ORDERABLE [4200889] Order" max="1" path="/items" name="prednisone liquid oral; *** mg (2 mg/kg/day), oral, daily with breakfast"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3543f7f3-765e-40d8-8cba-948dc77d4f56" concept_name="PHARM prednisoLONE sodium phosphate Oral liquid 1 mg/mL Order" max="1" path="/items" name="prednisoLONE sodium phosphate Oral liquid 1 mg/mL; *** mg (2 mg/kg/day), oral, daily"/>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+</template>
