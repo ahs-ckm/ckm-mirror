@@ -80,7 +80,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Consider opening and merging any appropriate diagnosis based order sets:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Alcohol Withdrawal Admission Adult order set&lt;/li&gt;&lt;/ul&gt;</value>
+        <value>&lt;p&gt;Consider opening and merging any appropriate diagnosis based order sets:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Alcohol Withdrawal Admission Adult order set&lt;/li&gt;&lt;li&gt;Buprenorphine-naloxone (Suboxone) Induction order set&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
     </items>
   </annotations>
@@ -156,6 +156,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Is this a future scheduled pre-operative patient testing order? &lt;strong&gt;No&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Repeating&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Therapeutic Drug Monitoring and Toxicology&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -164,51 +180,35 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion; 500 mL intravenous once&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion; 100 mL/hr, intravenous, continuous&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;1000 ml, intravenous, STAT&lt;/p&gt;</value>
+        <value>&lt;p&gt;Convert to saline lock when patient drinking well&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; 500 mL intravenous once&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion; 100 mL/hr, intravenous, continuous&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;1000 ml, intravenous, STAT&lt;/p&gt;</value>
+        <value>&lt;p&gt;Convert to saline lock when patient drinking well&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion; 100 mL/hr, intravenous, continuous&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;125 ml/hr, intravenous,&amp;nbsp;continuous&lt;/p&gt;</value>
+        <value>&lt;p&gt;Convert to saline lock when patient drinking well&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% infusion&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.9% infusion; 100 mL/hr, intravenous, continuous&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;125 ml/hr, intravenous,&amp;nbsp;continuous&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;125 ml/hr, intravenous,&amp;nbsp;continuous&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids and Electrolytes Order Panel&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.9% infusion&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;125 ml/hr, intravenous,&amp;nbsp;continuous&lt;/p&gt;</value>
+        <value>&lt;p&gt;Convert to saline lock when patient drinking well&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -220,11 +220,43 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Formation, Coagulation and Thrombosis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alteplase - Intravenous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Formation, Coagulation and Thrombosis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alteplase - Intravenous&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Formation, Coagulation and Thrombosis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alteplase - Intra-arterial&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Neurovascular Checks; per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;baseline and every 30 minutes for 9 hours, then every 4 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Formation, Coagulation and Thrombosis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alteplase - Intra-arterial&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Neurological Vital Signs; per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;baseline and every 30 minutes for 9 hours, then every 4 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Formation, Coagulation and Thrombosis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Alteplase - Intra-arterial&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Anti-Xa Heparin Level; once, STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;There are different tests for Anti-Xa, which is the correct one?&lt;/p&gt;&lt;p&gt;- Anti-Xa Apixaban&lt;/p&gt;&lt;p&gt;- Anti-Xa Heparin&lt;/p&gt;&lt;p&gt;- Anti-Xa LMWH&lt;/p&gt;&lt;p&gt;- Anti-Xa Rivaroxaban&lt;/p&gt;&lt;p&gt;- Anti-Xa Unfractionated Heparin&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -244,6 +276,62 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vasodilators&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;every 15 mins for 2 hours then every 30 mins for remainder&amp;nbsp;of infusion, then every 4 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Standard Analgesics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1 (ondansetron)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2 (metoclopramide)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3 (dimenhyDRINATE)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Gastrointestinal Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Internal Medicine&apos;]/activities[at0001]">
     <items>
       <item>
@@ -257,6 +345,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Reason for consult: ___&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Allied Health Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Occupational Therapy&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -322,6 +418,9 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a6827f03-6d44-4f31-ae8f-09f11b7256c1" concept_name="LAB Creatine Kinase (CK) [LAB62] Order" max="1" path="/items" name="Creatine Kinase (CK); daily for 3 occurences, starting tomorrow"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="60c9d6c9-bc5c-4b50-ad31-6bd68d3608b9" concept_name="LAB Lactate [LAB95] Order" max="1" path="/items" name="Lactate; daily for 3 occurences, starting tomorrow"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis; daily for 3 occurences, starting tomorrow"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9f99a617-d87d-41e5-9ad7-d0ac73db7245" concept_name="LABPOCT Urinalysis POCT [LAB4164] Order" max="1" path="/items" name="Urinalysis POCT; daily for 3 occurences, starting tomorrow"/>
@@ -364,11 +463,17 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ef574290-2e87-4892-93e1-5d849b5fe565" concept_name="Fluids and Electrolytes Order Panel Order Panel" max="1" path="/items" name="Fluids and Electrolytes Order Panel"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PO Electrolyte Replacement"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Electrolyte Replacement"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer_s infusion Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; 100 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% infusion; 100 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="035b0056-ec67-41b3-929a-5e8da8be6a19" concept_name="PHARM dextrose 5%-sodium chloride 0.45% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.45% infusion; 100 mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM dextrose 5%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.9% infusion; 100 mL/hr, intravenous, continuous"/>
+      </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders"/>
@@ -379,23 +484,43 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation and Thrombosis">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Alteplase (use in conjunction with iloprost for grade 4 frostbite if within less than 24 hours since rewarming)">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Alteplase - Intravenous">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Regular"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed Rest with Exceptions; Bathroom Privileges"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; every 4 hours"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0d2e0d73-5f55-4661-91e6-beed9d1d76c5" concept_name="Alteplase for Frostbite Intravenous Order Group" max="1" path="/items" name="alteplase - intravenous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Alteplase - Intra-arterial">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Strict bed rest, until discontinued"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; every 1 hour, until discontinued"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99bd6a68-2771-4309-8049-8f713ed560c3" concept_name="NURAX Neurovascular Checks [NUR475] IP Order" max="1" path="/items" name="Neurovascular Checks; per protocol"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological Vital Signs; per protocol"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f8b7b7e1-6e8f-4e97-87fb-3b479754cdb2" concept_name="LAB Fibrinogen [LAB314] Order" max="1" path="/items" name="Fibrinogen; First occurrence then every 6 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9e427cd-f516-4097-a4f6-084f78df6c55" concept_name="LAB D-Dimer [LAB313] Order" max="1" path="/items" name="D-Dimer; once, STAT"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="65285052-9df7-4655-b014-a822e92dd3f4" concept_name="LAB Anti-Xa Heparin Level [LAB316] Order" max="1" path="/items" name="Anti-Xa Heparin Level; once, STAT"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1316716a-84c1-4776-9d59-988b2cd52370" concept_name="CONS Inpatient Consult to Interventional Radiology [CON106] IP Order" max="1" path="/items" name="Inpatient Consult to Interventional Radiology"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a752ae63-06d1-4f11-b146-5dea1ec91cdf" concept_name="Alteplase Intra_Arterial Order Group" max="1" path="/items" name="alteplase - intra-arterial"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Alteplase (for stage 4 frostbite if within less than 24 hours since rewarming)"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticoagulants">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c1aadc5e-7cf5-4772-b26a-0e74b8e4dd22" concept_name="Heparin Infusion for Frostbite Adult Order Group" max="1" path="/items" name="Heparin Infusion for Frostbite"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vasodilators">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="712074e9-4038-4198-bfd0-f8ae8c07a72b" concept_name="Iloprost for Frostbite Order Group" max="1" path="/items" name="Iloprost for Frostbite Order Group"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Iloprost">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Regular"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed Rest with Exceptions; Bathroom Privileges"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; per protocol"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="712074e9-4038-4198-bfd0-f8ae8c07a72b" concept_name="Iloprost for Frostbite Order Group" max="1" path="/items" name="Iloprost for Frostbite Order Group"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cac6baa1-ef6e-4971-8809-b20088665e1d" concept_name="Standard Analgesics Adult Order Group" max="1" path="/items" name="Standard Analgesics Adult"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Standard Analgesics">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cac6baa1-ef6e-4971-8809-b20088665e1d" concept_name="Standard Analgesics Adult Order Group" max="1" path="/items" name="Standard Analgesics Adult"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Adjuvant Analgesics">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="898c802f-db27-463e-ae02-9cdc61490229" concept_name="PHARM gabapentin Capsule Order" max="1" path="/items" name="gabapentin Capsule; 100 mg, oral, daily at hs"/>
       </Item>
@@ -406,12 +531,12 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2721c450-89d3-444c-b271-d30a579d120b" concept_name="PRN Antiemetics Adult Order Group" max="1" path="/items" name="PRN Antiemetics Adult Order Group"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Gastrointestinal Agents">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium Enteric-coated tablet; 40 mg, oral, daily, 30 minutes before breakfast"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="35817d20-95fd-4f01-8b26-77dee236814e" concept_name="Bowel Management_Adult Admission Copy Template Order Group" max="1" path="/items" name="Bowel Management"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Smoking Cessation">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="da1f4908-1f6a-481d-88bb-f95bc9f6b170" concept_name="Nicotine Replacement Therapy (NRT) Order Panel" max="1" path="/items" name="Nicotine Replacement Therapy (NRT) Order Panel"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Platelet Inhibitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antihistamines"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antibacterials"/>
