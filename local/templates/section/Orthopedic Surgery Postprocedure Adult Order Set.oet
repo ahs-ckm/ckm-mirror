@@ -116,6 +116,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;VTE Prophylaxis - Surgery Adult&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Prophylaxis Antiemetics Adult Order Group; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1 (ondansetron)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -137,6 +145,14 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;&amp;nbsp;Confirm arrangements for staple removal with patient prior to discharge&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge Follow-Up; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Discharge Follow-Up; Primary care provider (PCP)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;strong&gt;Select who the patient should schedule a follow up with: &lt;/strong&gt;Primary care provider (PCP)&lt;br&gt;&lt;strong&gt;Timeframe:&lt;/strong&gt;&amp;nbsp;14 Days&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -278,7 +294,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ae68c4a4-c359-4499-94da-8bab5edcf887" concept_name="IV Maintenance and Fluids Ortho Postprocedure Adult Order Group" max="1" path="/items" name="IV Maintenance and Fluids Ortho Postprocedure Adult Order Group; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; VTE Prophylaxis - Surgery, Adult, On Unit"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4ba90500-0d03-4762-b37e-c38b4b8eacb1" concept_name="VTE Prophylaxis_Surgery Adult Order Panel" max="1" path="/items" name="VTE Prophylaxis - Surgery Adult"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5a7581aa-d85e-4b50-b205-91d17b530ab0" concept_name="VTE Prophylaxis_Hip Fracture Post Procedure Adult Order Panel" max="1" path="/items" name="VTE Prophylaxis - Hip Fracture Post Procedure Adult"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
@@ -365,8 +381,16 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Suture Removal; , On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Labs/Diagnostic Imaging"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8c7c44cd-ddd8-4939-81c1-79b8c18f17ca" concept_name="Discharge Follow-Up Smart Group" max="1" path="/items" name="Discharge Follow-Up Smart Group; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Follow-Up; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6091848c-2bb0-4d41-b96c-c8f25029b927" concept_name="REF Orthopaedic Internal Appointment Request [APPT121] AMB Order" max="1" path="/items" name="Orthopaedic Internal Appointment Request"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="NURINT Discharge Follow-Up [NUR651] AMB Order" max="1" path="/items" name="Discharge Follow-Up; Surgeon in 1-2 weeks"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="NURINT Discharge Follow-Up [NUR651] AMB Order" max="1" path="/items" name="Discharge Follow-Up; Surgeon"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="NURINT Discharge Follow-Up [NUR651] AMB Order" max="1" path="/items" name="Discharge Follow-Up; Primary care provider (PCP)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="NURINT Discharge Follow-Up [NUR651] AMB Order" max="1" path="/items" name="Discharge Follow-Up; with primary physician (PCP) - Remove Sutures/Staples"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="NURINT Discharge Follow-Up [NUR651] AMB Order" max="1" path="/items" name="Discharge Follow-Up; Department"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4fbb296-f914-40c4-893d-8ea204f7778d" concept_name="NURINT Discharge Follow-Up [NUR651] AMB Order" max="1" path="/items" name="Discharge Follow-Up; Other follow-up"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Referrals">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9af14926-ab3e-47cf-b1eb-6d9d750e8c1c" concept_name="REF Ambulatory Referral to Physical Therapy [REF87] AMB Order" max="1" path="/items" name="Ambulatory Referral to Physical Therapy; Post Discharge"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7261553d-986b-44b8-9598-c91bb7fa0179" concept_name="REF Ambulatory Referral to Virtual Home Hospital [REF191] AMB Order" max="1" path="/items" name="Ambulatory Referral to Virtual Home Hospital; Post Discharge"/>
