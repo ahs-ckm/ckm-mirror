@@ -100,7 +100,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-respiratory Monitoring; with 1:2 nursing to patient ratio; On Unit&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Monitors&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-respiratory Monitoring; with 1:1 nursing to patient ratio; On Unit&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -179,27 +179,27 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68c645dd-33f1-4806-a646-df281eac3217" concept_name="Spinal Precautions Order Panel" max="1" path="/items" name="Spinal Precautions Order Panel; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="30a176e0-2ce1-4c2d-85f1-911c8af5c581" concept_name="Activity Postprocedure Pediatric Smart Group" max="1" path="/items" name="Activity; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; sit in chair as tolerated; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Up in chair, 30 degrees, as tolerated; On Unit"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="30a176e0-2ce1-4c2d-85f1-911c8af5c581" concept_name="Activity Postprocedure Pediatric Order Group" max="1" path="/items" name="Activity; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; sit in chair as tolerated; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Up in chair, 30 degrees, as tolerated; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f5d33ad3-67bc-4d2e-9664-c77a69c7112e" concept_name="Weight Bearing Ortho Ped Post Smart Group" max="1" path="/items" name="Weight Bearing Ortho Ped Post Smart Group; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="04573627-1ab7-4280-a136-bfcb81e4ebb0" concept_name="Vital Signs Postprocedure_Day Surgery Pediatric Smart Group" max="1" path="/items" name="Vital Signs; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="c8440149-4ec4-4b11-896e-aa5feca40d69" concept_name="Neurological Vital Signs - De-escalating frequency smart group" max="1" path="/items" name="Neurological Vital Signs - De-escalating frequency smart group; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3dd4676f-0683-4c06-99e5-503f415fcd40" concept_name="PC Spinal Assessment Order" max="1" path="/items" name="Spinal Assessment; every 2 hours, On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3dd4676f-0683-4c06-99e5-503f415fcd40" concept_name="NURAX Spinal Assessment [NUR842] IP Order" max="1" path="/items" name="Spinal Assessment; every 2 hours, On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a7b2b6aa-3ef5-42b7-b1da-c4429452ab42" concept_name="Monitors Postprocedure Pediatric Smart Group" max="1" path="/items" name="Monitors; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="PC Cardio_Respiratory Monitoring Order" max="1" path="/items" name="Cardio-respiratory Monitoring; with 1:1 nursing to patient ratio; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="PC Cardio_Respiratory Monitoring Order" max="1" path="/items" name="Cardio-respiratory Monitoring; with 1:2 nursing to patient ratio; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="NURAX Cardio-respiratory Monitoring [NUR225] IP Order" max="1" path="/items" name="Cardio-respiratory Monitoring; with 1:1 nursing to patient ratio; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="NURAX Cardio-respiratory Monitoring [NUR225] IP Order" max="1" path="/items" name="Cardio-respiratory Monitoring; with 1:2 nursing to patient ratio; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="PC Intake and Output Order" max="1" path="/items" name="Intake and Output; Each shift; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="NURAX Intake and Output [NUR467] IP Order" max="1" path="/items" name="Intake and Output; Each shift; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="PC Weigh Patient Order" max="1" path="/items" name="Weigh Patient; Daily; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Daily; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
@@ -235,7 +235,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Stool"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Cerebrospinal Fluid"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Therapeutic Drug Monitoring and Toxicology">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level, Pre-Dose Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose; specify prior to which dose; On Unit"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level Pre-Dose [LAB39] IP Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose; specify prior to which dose; On Unit"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Immunology"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Pathology"/>
@@ -244,7 +244,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Blood Gas"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="DI GR Chest 2 Projections Order" max="1" path="/items" name="GR Chest 2 Projections; post chest tube removal; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="IMGGR GR Chest 2 Projections [IMG36] Order" max="1" path="/items" name="GR Chest 2 Projections; post chest tube removal; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="ec14f69a-e67d-4dd9-86e0-9edbea82c012" concept_name="Shoulder X-Rays Smart Group" max="1" path="/items" name="Shoulder X-Rays Smart Group; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="19f28f08-cbed-47b0-97ce-38b464edd422" concept_name="Elbow X-Rays Smart Group" max="1" path="/items" name="Elbow X-Rays Smart Group; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="48618dae-c5c3-4265-901b-0459d0aa5c80" concept_name="Hand_Wrist X-Rays Smart Group" max="1" path="/items" name="Hand/Wrist X-Rays Smart Group; On Unit"/>
@@ -252,7 +252,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="d1a0c42d-0795-47c8-9688-597556421b81" concept_name="Hip_Pelvis X-Rays Smart Group" max="1" path="/items" name="Hip / Pelvis X-Rays; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="dcb5580e-8fc1-4fe3-9b45-e887e408eb51" concept_name="Knee X-Rays Smart Group" max="1" path="/items" name="Knee X-Rays Smart Group; On Unit"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="ac227002-a662-48b1-b249-604496ab124c" concept_name="Foot_Ankle X-Ray Smart Group" max="1" path="/items" name="Foot/Ankle X-Ray Smart Group; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1de2f2fb-71fb-4124-9c4b-9ec03d59f49a" concept_name="DI MR Hips Bilateral Order" max="1" path="/items" name="MR Hips Bilateral; Once; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1de2f2fb-71fb-4124-9c4b-9ec03d59f49a" concept_name="IMGMRI MR Hips Bilateral [IMG3502] Order" max="1" path="/items" name="MR Hips Bilateral; Once; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
@@ -269,7 +269,7 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d2138bd5-8c0f-4085-8671-16b4ad0bffc7" concept_name="CONS Inpatient Consult to KidClot Order" max="1" path="/items" name="Inpatient Consult to KidClot; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d2138bd5-8c0f-4085-8671-16b4ad0bffc7" concept_name="CONS Inpatient Consult to KidClot [CON249] IP Order" max="1" path="/items" name="Inpatient Consult to KidClot; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
@@ -306,7 +306,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e7ab4f8f-58b5-4b00-ba0a-ccf133d9cafc" concept_name="Discharge Wound Care Smart Group" max="1" path="/items" name="Discharge Wound Care; Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ad856e8-02e8-4cd2-9c9a-fdee282d975c" concept_name="PC Dressing Instructions Order" max="1" path="/items" name="Dressing Instructions:; Tensor; Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ad856e8-02e8-4cd2-9c9a-fdee282d975c" concept_name="NURWOU Dressing Instructions [NUR875] IP Order" max="1" path="/items" name="Dressing Instructions:; Tensor; Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge Instructions/Follow Up">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8c7c44cd-ddd8-4939-81c1-79b8c18f17ca" concept_name="Discharge Follow-Up Smart Group" max="1" path="/items" name="Discharge Follow-Up Smart Group; Post Discharge"/>
@@ -339,21 +339,22 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
-	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
-            </integrity_checks></template>
+</template>
