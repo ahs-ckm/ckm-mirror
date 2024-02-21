@@ -168,7 +168,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Select one of the following NSAIDs&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;NSAIDs should be used with caution&amp;nbsp;&lt;/p&gt;&lt;p&gt;Consider adding daily PPI for GI protection for duration of scheduled NSAID therapy&lt;/p&gt;</value>
+        <value>&lt;p&gt;Select one of the following NSAIDs&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;NSAIDs should be used with caution&amp;nbsp;&lt;/p&gt;&lt;p&gt;Routine PPI with NSAID therapy not recommended and could cause harm. If required ensure only ordered for duration of scheduled NSAID&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -570,6 +570,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Infant (less than 6 months old)">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e02fbf78-4a79-4efc-9799-35b3a2e7dc29" concept_name="PHARM morphine Oral liquid 5 mg_mL" max="1" path="/items" name="morphine Oral liquid 5 mg/mL; 0.025-0.05 mg/kg/dose, every 4 hours, as needed, moderate pain"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROmorphone Oral liquid 1 mg/mL Order" max="1" path="/items" name="HYDROmorphone Oral liquid 1 mg/mL; 0.005-0.01 mg/kg/dose, every 4 hours, as needed, moderate pain"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
