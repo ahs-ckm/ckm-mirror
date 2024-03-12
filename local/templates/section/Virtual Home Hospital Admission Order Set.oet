@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~ff1e30ad-aa1c-4b19-87ac-09de8367533e~NAME~Virtual Home Hospital Admission Order Set}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER&apos;]/activities[at0001]">
     <items>
       <item>
@@ -96,7 +104,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Ensure VHH Consent and Equiptment Agreement Signed and Scanned&amp;nbsp;to chart.&lt;/p&gt;</value>
+        <value>&lt;p&gt;Ensure VHH Consent and Equipment Agreement Signed and Scanned&amp;nbsp;to chart.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -128,7 +136,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;alteplase injection&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
@@ -140,11 +148,23 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Oxygen Therapy: All presentations EXCEPT Acute Coronary Syndrome, known CO2 retainers and Carbon Monoxide poisoning. &amp;nbsp;All other presentations (including pregnancy and acute stroke) should adhere to the above Sp02 goals. NOTE: For acute stroke, do not apply supplemental oxygen unless SpO2 is under 90%:&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Oxygen therapy Titrate to Maintain Target Saturation Range: 92 to 96%&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;strong&gt;All Lab Default to:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Status: Standing&amp;nbsp;&lt;/p&gt;&lt;p&gt;Release: Auto&lt;/p&gt;&lt;p&gt;Count: 2&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;strong&gt;All Lab Default to:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Status: Future&lt;/p&gt;&lt;p&gt;Release: Once&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -1124,7 +1144,87 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~ff1e30ad-aa1c-4b19-87ac-09de8367533e~NAME~Virtual Home Hospital Admission Order Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Virtual Home Hospital Admission Order Set">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Cardiology&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;cardiac stabilization/ heart function clinics&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Dietitian&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;counseling patients with respect to:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;2 grams&amp;nbsp;per day sodium restricted diet&lt;/li&gt;&lt;li&gt;Fluid restriction between 1300 to 2000 milliliters per day.&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Continuing Care Access and Home Care; Urinary Catheter Care Management&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Urinary Catheter Care Management&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Continuing Care Access and Home Care; Urinary Catheter Care Management&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Continuing Care Access and Home Care; Wound Care&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Wound Care&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Continuing Care Access and Home Care; Wound Care&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Continuing Care Access and Home Care; Medication Management&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Medication Management&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Ambulatory Referral to Continuing Care Access and Home Care; Medication Management&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Virtual Home Hospital Admission Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER #1"/>
@@ -1147,23 +1247,23 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="190f7f96-fe64-4e8a-80e0-8d4c81a3ced5" concept_name="Adult Central Vascular Access Device Locking Order Group" max="1" path="/items" name="Adult Central Vascular Access Device Locking Order Group"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="effaf25a-52f4-416e-8488-920790ebf4a1" concept_name="PHARM alteplase injection Order" max="1" path="/items" name="alteplase injection"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="938bd580-a4a3-4c91-9bc9-9c7f9da12dda" concept_name="NURIV Start hypodermoclysis [IVT52] Order" max="1" path="/items" name="Start hypodermoclysis"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ba6487d-135f-400b-9e5d-b8289ea12523" concept_name="NURIV Discontinue Hypodermoclysis [IVT105] Order" max="1" path="/items" name="Discontinue Hypodermoclysis"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hypodermoclysis">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="938bd580-a4a3-4c91-9bc9-9c7f9da12dda" concept_name="NURIV Start hypodermoclysis [IVT52] Order" max="1" path="/items" name="Start hypodermoclysis"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ba6487d-135f-400b-9e5d-b8289ea12523" concept_name="NURIV Discontinue Hypodermoclysis [IVT105] Order" max="1" path="/items" name="Discontinue Hypodermoclysis"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Peripheral IV">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="caa36326-57a7-4baf-9185-f109a1b60924" concept_name="IV Maintenance Order Group" max="1" path="/items" name="IV Maintenance"/>
+        </Item>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Indwelling Urinary Catheter Management">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0692dbf7-43b5-4e80-a267-15942ec62bf5" concept_name="NURPOC Irrigation of Bladder POC [PRO130] Order" max="1" path="/items" name="Irrigation of Bladder POC"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d540a9e-dc97-4705-b0cd-25256515357e" concept_name="NURPOC Temp Indwelling Bladder Cath Insertion POC [PRO132] Order" max="1" path="/items" name="Temp Indwelling Bladder Cath Insertion POC"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8da94fd2-62ba-4780-8330-79580af4a799" concept_name="NURPOC Non-Indwelling Bladder Cath Insertion POC [PRO131] Order" max="1" path="/items" name="Non-Indwelling Bladder Cath Insertion POC"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="889a45b3-e142-4907-ab14-6b22c9a40463" concept_name="NURPOC Suprapubic Catheter Insertion POC [PRO129] Order" max="1" path="/items" name="Suprapubic Catheter Insertion POC"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f57074d6-fdcf-4c26-beaa-a1f268731deb" concept_name="NURPOC Wound Care POC [PRO181] Order" max="1" path="/items" name="Wound Care POC"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f8e7f392-ba30-476d-803d-e1c0364a1153" concept_name="NURPOC Laceration Repair POC [PRO83] Order" max="1" path="/items" name="Laceration Repair POC"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2b3bbbd5-e6d8-4c07-b02d-d0f66907b92c" concept_name="NURPOC Suture Staple Removal POC [PRO95] Order" max="1" path="/items" name="Suture/Staple Removal POC"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="41dc0b87-5527-46b2-a919-bbdfc9a9a9c3" concept_name="RT Set-up home oxygen [RT121] IP Order" max="1" path="/items" name="Set-up home oxygen"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="adc04933-b128-4901-9f48-8ffdf35e1924" concept_name="RT Home oxygen [RT30415] IP Order" max="1" path="/items" name="Home oxygen"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="91e617b8-5a35-4b19-97be-adb4b6d40a21" concept_name="SUPDME Oxygen therapy - equipment [EQ60] Order" max="1" path="/items" name="Oxygen therapy - equipment"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy"/>
       </Item>
     </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - STAT">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential"/>
@@ -1232,6 +1332,8 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cardiology">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0a282935-628d-4b33-bcae-140128057235" concept_name="CARECHO Exercise Stress Echocardiogram [ECH07] Order" max="1" path="/items" name="Exercise Stress Echocardiogram"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b903578a-a24a-4049-bb07-4e594ffdc6ed" concept_name="CARSTRESS Exercise Stress Test [STRESS01] Order" max="1" path="/items" name="Exercise Stress Test"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
@@ -1437,16 +1539,28 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="23dbfcfb-2905-41ff-bd15-b6dfe97f5afe" concept_name="PHARM sodium bicarbonate injection Order" max="1" path="/items" name="sodium bicarbonate injection"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c3f6552-bb76-44a9-90b4-ab7161a863a8" concept_name="REF Ambulatory Referral to Occupational Therapy [REF53] AMB Order" max="1" path="/items" name="Ambulatory Referral to Occupational Therapy"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9af14926-ab3e-47cf-b1eb-6d9d750e8c1c" concept_name="REF Ambulatory Referral to Physical Therapy [REF87] AMB Order" max="1" path="/items" name="Ambulatory Referral to Physical Therapy"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ae80659-2221-4e76-9ea6-7a2dabc334ed" concept_name="REF Ambulatory Referral to Social Work [REF98] AMB Order" max="1" path="/items" name="Ambulatory Referral to Social Work"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d726abd-69ce-4904-b8cd-ed8a5f8809dd" concept_name="REF Ambulatory Referral to Pulmonology Respiratory [REF94] AMB Order" max="1" path="/items" name="Ambulatory Referral to Pulmonology / Respiratory"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6960a22c-08ee-43a8-8ff0-bc4291675f29" concept_name="REF Ambulatory Referral to Home Parenteral Therapy Program [REF143] AMB Order" max="1" path="/items" name="Ambulatory Referral to Home Parenteral Therapy Program"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80a68a14-c59b-4ad3-8556-93e273a819b7" concept_name="REF Ambulatory Referral to Chronic Disease Management [REF133] AMB Order" max="1" path="/items" name="Ambulatory Referral to Chronic Disease Management"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17692db8-43ed-4908-8eb5-571a21b02c17" concept_name="REF Ambulatory Referral to Cardiac Rehabilitation [REF147] AMB Order" max="1" path="/items" name="Ambulatory Referral to Cardiac Rehabilitation"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83653a0b-8908-412a-9428-da8f4e0939aa" concept_name="REF Ambulatory Referral to Diabetes Education [REF20] AMB Order" max="1" path="/items" name="Ambulatory Referral to Diabetes Education"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="725d5556-227c-428d-bf1f-f4080fc2ff13" concept_name="REF Ambulatory Referral to Continuing Care Access and Home Care [REF34] AMB Order" max="1" path="/items" name="Ambulatory Referral to Continuing Care Access and Home Care"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9d41165b-1460-4038-8b6c-3345b8080f4b" concept_name="REF Ambulatory Referral to Anticoagulation [REF188] AMB Order" max="1" path="/items" name="Ambulatory Referral to Anticoagulation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ambulatory Referrals">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9d41165b-1460-4038-8b6c-3345b8080f4b" concept_name="REF Ambulatory Referral to Anticoagulation [REF188] AMB Order" max="1" path="/items" name="Ambulatory Referral to Anticoagulation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="83653a0b-8908-412a-9428-da8f4e0939aa" concept_name="REF Ambulatory Referral to Diabetes Education [REF20] AMB Order" max="1" path="/items" name="Ambulatory Referral to Diabetes Education"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17692db8-43ed-4908-8eb5-571a21b02c17" concept_name="REF Ambulatory Referral to Cardiac Rehabilitation [REF147] AMB Order" max="1" path="/items" name="Ambulatory Referral to Cardiac Rehabilitation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80a68a14-c59b-4ad3-8556-93e273a819b7" concept_name="REF Ambulatory Referral to Chronic Disease Management [REF133] AMB Order" max="1" path="/items" name="Ambulatory Referral to Chronic Disease Management"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6960a22c-08ee-43a8-8ff0-bc4291675f29" concept_name="REF Ambulatory Referral to Home Parenteral Therapy Program [REF143] AMB Order" max="1" path="/items" name="Ambulatory Referral to Home Parenteral Therapy Program"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d726abd-69ce-4904-b8cd-ed8a5f8809dd" concept_name="REF Ambulatory Referral to Pulmonology Respiratory [REF94] AMB Order" max="1" path="/items" name="Ambulatory Referral to Pulmonology / Respiratory"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ae80659-2221-4e76-9ea6-7a2dabc334ed" concept_name="REF Ambulatory Referral to Social Work [REF98] AMB Order" max="1" path="/items" name="Ambulatory Referral to Social Work"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9af14926-ab3e-47cf-b1eb-6d9d750e8c1c" concept_name="REF Ambulatory Referral to Physical Therapy [REF87] AMB Order" max="1" path="/items" name="Ambulatory Referral to Physical Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c3f6552-bb76-44a9-90b4-ab7161a863a8" concept_name="REF Ambulatory Referral to Occupational Therapy [REF53] AMB Order" max="1" path="/items" name="Ambulatory Referral to Occupational Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9f04d6a-072c-4bbf-8966-47e2dfd4f0c4" concept_name="REF Ambulatory Referral to Cardiology [REF12] AMB Order" max="1" path="/items" name="Ambulatory Referral to Cardiology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9e833346-6065-40bd-b856-a45e05e70bc2" concept_name="REF Ambulatory Referral to Respiratory Therapy [REF96] AMB Order" max="1" path="/items" name="Ambulatory Referral to Respiratory Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f8a0647-2f95-40b2-ac07-a4e9936555db" concept_name="REF Ambulatory Referral to Physical Medicine Rehab [REF88] AMB Order" max="1" path="/items" name="Ambulatory Referral to Physical Medicine Rehab"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="af35c55d-3a6e-4f8e-a801-41fc3dca1556" concept_name="REF Ambulatory Referral to Dietitian [REF50] AMB Order" max="1" path="/items" name="Ambulatory Referral to Dietitian"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ambulatory Referral to Continuing Care Access and Home Care">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="725d5556-227c-428d-bf1f-f4080fc2ff13" concept_name="REF Ambulatory Referral to Continuing Care Access and Home Care [REF34] AMB Order" max="1" path="/items" name="Ambulatory Referral to Continuing Care Access and Home Care; Urinary Catheter Care Management"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="725d5556-227c-428d-bf1f-f4080fc2ff13" concept_name="REF Ambulatory Referral to Continuing Care Access and Home Care [REF34] AMB Order" max="1" path="/items" name="Ambulatory Referral to Continuing Care Access and Home Care; Wound Care"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="725d5556-227c-428d-bf1f-f4080fc2ff13" concept_name="REF Ambulatory Referral to Continuing Care Access and Home Care [REF34] AMB Order" max="1" path="/items" name="Ambulatory Referral to Continuing Care Access and Home Care; Medication Management"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
@@ -1467,11 +1581,14 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
-    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
     <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
