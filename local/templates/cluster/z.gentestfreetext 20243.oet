@@ -48,8 +48,20 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a95b7319-82c0-403d-91a9-d194ff0e54f4~NAME~z.gentestfreetext 20243}</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="z.gentestfreetext 20243">
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1" template_id="f04fa671-fe1d-4d3b-92f8-d40944434e3d" concept_name="z.gentestdatetime" max="1" path="/items[at0002]" name="z.gentestdatetime"/>
+  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
+    <items>
+      <item>
+        <key>Order Specific Questions.Question ID</key>
+        <value>&lt;p&gt;20243&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~a95b7319-82c0-403d-91a9-d194ff0e54f4~NAME~z.gentestfreetext 20243}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Free text order question" max="1" name="z.gentestfreetext 20243">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1" template_id="f04fa671-fe1d-4d3b-92f8-d40944434e3d" concept_name="z.gentestdatetime 20244" max="1" path="/items[at0002]" name="z.gentestdatetime"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
