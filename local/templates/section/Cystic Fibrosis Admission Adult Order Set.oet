@@ -183,6 +183,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Distal Intestinal Obstruction Syndrome&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;polyethylene glycol 3350 Powder; 4L once, then 250 mL to 1L Q1H until passing bowel movements, then re-assess.&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;4L once, then 250 mL to 1L Q1H until passing bowel movements, then re-assess.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Therapeutic Drug Monitoring for Aminoglycosides&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -321,6 +329,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcdb91d1-acd6-40e3-bad6-0c78a07eee06" concept_name="LABMIC Fungal Culture [LAB1294] Order" max="1" path="/items" name="Fungal Culture"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LABMIC Mycobacteria Culture [LAB877] Order" max="1" path="/items" name="Mycobacteria Culture"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0114d954-8176-4055-b6dc-3a0784549812" concept_name="RTPFT Pulmonary Function Test - Sentry Suite [PFT13] Order" max="1" path="/items" name="Pulmonary Function Test - Sentry Suite"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="75b9a979-9c0b-474f-b985-ca651f5574fe" concept_name="RTPFT Pulmonary Function Test - Ascent [PFT14] Order" max="1" path="/items" name="Pulmonary Function Test - Ascent"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0030be7b-a9bd-4200-b89b-80e43b5dd24f" concept_name="LABMIC Sputum Culture Cystic Fibrosis [LAB4087] Order" max="1" path="/items" name="Sputum Culture, Cystic Fibrosis"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0030be7b-a9bd-4200-b89b-80e43b5dd24f" concept_name="LABMIC Sputum Culture Cystic Fibrosis [LAB4087] Order" max="1" path="/items" name="Sputum Culture, Cystic Fibrosis; Monday; Repeat x 6"/>
@@ -360,9 +369,10 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Bronchodilators/Inhaled Steroids">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Advair">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="52357da2-2a70-4287-b866-8c4853f3ee55" concept_name="PHARM fluticasone propionate-salmeterol Disk 100 mcg-50 mcg/actuation (Advair 100 Diskus) Order" max="1" path="/items" name="fluticasone propionate-salmeterol Disk 100 mcg-50 mcg/actuation (Advair 100 Diskus); *** puff(s) inhaled BID"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="177865c2-0c60-470e-a853-22dc478a7401" concept_name="PHARM fluticasone propionate-salmeterol Inhaler 125 mcg-25 mcg/actuation (Advair 125 MDI) Order" max="1" path="/items" name="fluticasone propionate-salmeterol Inhaler 125 mcg-25 mcg/actuation (Advair 125 MDI); 2 puffs inhaled BID"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="16c5c507-466a-419c-a21b-c323ec06e299" concept_name="PHARM fluticasone propionate-salmeterol Disk 250 mcg-50 mcg/actuation (Advair 250 Diskus) Order" max="1" path="/items" name="fluticasone propionate-salmeterol Disk 250 mcg-50 mcg/actuation (Advair 250 Diskus); *** puff(s) inhaled BID"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="695dca0f-4772-41bf-b6a8-9c5833f5735d" concept_name="PHARM fluticasone propionate-salmeterol Inhaler 250 mcg-25 mcg/actuation (Advair 250 MDI) Order" max="1" path="/items" name="fluticasone propionate-salmeterol Inhaler 250 mcg-25 mcg/actuation (Advair 250 MDI) *** puff(s) inhaled BID"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="86102f5b-cd5a-4664-aeb1-b6f532ffc9fe" concept_name="PHARM fluticasone propionate-salmeterol Disk 500 mcg-50 mcg/actuation (Advair 500 Diskus) Order" max="1" path="/items" name="fluticasone propionate-salmeterol Disk 500 mcg-50 mcg/actuation (Advair 500 Diskus): 1 puff inhaled BID"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Budesonide-Formoterol Turbuhaler">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6483e4ff-8631-45aa-83e6-04b1c2ac6662" concept_name="PHARM budesonide-formoterol Inhaler 100 mcg-6 mcg/actuation (Symbicort Turbuhaler) Order" max="1" path="/items" name="budesonide-formoterol Inhaler 100 mcg-6 mcg/actuation (Symbicort Turbuhaler); 2 puffs inhaled BID"/>
@@ -376,7 +386,7 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b6316488-ecae-451d-83fa-39de143b2e40" concept_name="PHARM FLUTICASONE FUROATE 200 MCG-VILANTEROL 25 MCG DOSE INHALATION POWDER [129483] Order" max="1" path="/items" name="fluticasone furoate-vilanterol inhaler 200 mcg-25 mcg/actuation; 1 Puff Daily"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ventolin by MDI inhaler">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation; 1-2 puffs inhaled TID PRN"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad7a0f9f-cef6-4329-8ee5-949e1190c11f" concept_name="PHARM salbutamol inhalation Order" max="1" path="/items" name="salbutamol inhalation; 1-2 puffs inhaled *** (frequency) PRN"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ventolin by Nebulization">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ab7ff70-b2b3-40e7-80a6-72177c663a09" concept_name="PHARM salbutamol Nebule 0.5 mg/mL Order" max="1" path="/items" name="salbutamol Nebule 0.5 mg/mL; 2.5mg via nebulizer via oxygen QID"/>
@@ -390,8 +400,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inhaled Antibiotoics">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="78855d18-17b0-43bc-a21c-a8a659bde8f2" concept_name="PHARM AZTREONAM LYSINE 75 MG ML SOLUTION FOR NEBULIZATION [100393] Order" max="1" path="/items" name="aztreonam lysine nebule 75 mg/mL; 75 mg via Neb TID"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d1ae1880-2a64-4bfe-bf21-d5e55d12660b" concept_name="PHARM colistin base injection for inhalation use 150 mg Order" max="1" path="/items" name="colistin base injection for inhalation use 150 mg; via nebulizer via oxygen BID"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6378b0e7-15a5-452a-a82b-4df44cd221de" concept_name="PHARM tobramycin Inhalation capsule 28 mg/actuation Order" max="1" path="/items" name="tobramycin Inhalation capsule 28 mg/actuation"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0fd66dbc-156a-41ed-aacf-a4fb74ee9799" concept_name="PHARM tobramycin Inhalation liquid 60 mg/mL Order" max="1" path="/items" name="tobramycin Inhalation liquid 60 mg/mL; 300mg via inhalation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6378b0e7-15a5-452a-a82b-4df44cd221de" concept_name="PHARM tobramycin Inhalation capsule 28 mg/actuation Order" max="1" path="/items" name="tobramycin Inhalation capsule 28 mg/actuation; 112 mg via inhalation BID"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0fd66dbc-156a-41ed-aacf-a4fb74ee9799" concept_name="PHARM tobramycin Inhalation liquid 60 mg/mL Order" max="1" path="/items" name="tobramycin Inhalation liquid 60 mg/mL; 300mg via inhalation via nebulizer BID"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="994265be-6fdc-4551-abd9-16bc8f8d8cbf" concept_name="PHARM levoFLOXacin 50 mg/mL liquid oral Order" max="1" path="/items" name="levoFLOXacin 50 mg/mL liquid oral; 240 mg inhalation BID, patient to take own supply"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Antibiotics">
@@ -417,7 +427,7 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Mucolytics">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0d9719f2-8a3e-45ac-8d17-4ec4f6d3e8c4" concept_name="PHARM dornase alpha Nebule 1mg/mL Order" max="1" path="/items" name="dornase alpha Nebule 1mg/mL; 2.5mg via pari nebulizer via oxygen, Q*** (frequency)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1770ad9-2ff7-467b-a647-fd9aa7f9d922" concept_name="PHARM sodium chloride Inhalation liquid 7% Order" max="1" path="/items" name="sodium chloride Inhalation liquid 7%; 4mL via NEB via O2 TID"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1770ad9-2ff7-467b-a647-fd9aa7f9d922" concept_name="PHARM sodium chloride Inhalation liquid 7% Order" max="1" path="/items" name="sodium chloride Inhalation liquid 7%; 4mL via nebulizer via oxygen Q*** (frequency)"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c3f48a20-6f16-4097-aa4e-fdc6b452b93c" concept_name="PHARM sodium chloride liquid inhalation 3% Order" max="1" path="/items" name="sodium chloride liquid inhalation 3%; 4mL via nebulizer via oxygen, Q*** (frequency)"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Oral Antibiotics">
@@ -490,7 +500,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Distal Intestinal Obstruction Syndrome">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9ae82d72-b202-45f1-a579-d06b2a71b7b2" concept_name="PHARM DIATRIZOATE MEGLUMINE-DIATRIZOATE SODIUM 66 Percent -10 Percent ORAL SOLUTION [9828] Order" max="1" path="/items" name="diatrizoate meglumine-diatrizoate sodium (GASTROGRAFIN) liquid oral 66%-10%; Dilute 100 mL in 400 mL of solution; PO Daily over 5-6 hours"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1a3e444-cad4-4010-b1c8-7c80e7335f7a" concept_name="PHARM picosalax Packet 12 g-3.5 g-10 mg (Pico-Salax) Order" max="1" path="/items" name="picosalax Packet 12 g-3.5 g-10 mg (Pico-Salax); 1 packet, oral, once. Then repeat in 4 hours."/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM polyethylene glycol 3350 Powder Order" max="1" path="/items" name="polyethylene glycol 3350 Powder; 4L once, then 250 mL to 1L Q1H"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM polyethylene glycol 3350 Powder Order" max="1" path="/items" name="polyethylene glycol 3350 Powder; 4L once, then 250 mL to 1L Q1H until passing bowel movements, then re-assess."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="061929d8-4bfe-46a6-8814-ce7238c694ab" concept_name="IMGRF RF Colon Single Contrast [IMG757] Order" max="1" path="/items" name="RF Colon Single Contrast"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring for Aminoglycosides">
@@ -599,7 +609,9 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="22e6753e-a54c-48e9-b7cd-82eafb2f57ca" concept_name="CONS Inpatient Consult to PICC Services [CON240] IP Order" max="1" path="/items" name="Inpatient Consult to PICC Services"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="792b3728-b61b-4a99-98a1-6804a8bcddd9" concept_name="CONS Inpatient Consult to Chronic Ventilation [CON269] IP Order" max="1" path="/items" name="Inpatient Consult to Chronic Ventilation"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Consults"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9e0928ae-3444-4e88-94cb-68be431606d7" concept_name="CONS Enroll Patient in Home Parenteral Therapy Program [CON200] IP Order" max="1" path="/items" name="Enroll Patient in Home Parenteral Therapy Program"/>
+      </Item>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
