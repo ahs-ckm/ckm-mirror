@@ -340,6 +340,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Lid Biopsy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Mycobacteria Culture; Normal, Clinic Collect&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;strong&gt;Specimen Type&lt;/strong&gt;: Biopsy&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Specimen Source:&lt;/strong&gt;&amp;nbsp;Eyelid, Unspecified&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Comment:&lt;/strong&gt;&amp;nbsp;Right Eyelid&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Lid Biopsy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Fungal Culture; Normal, Clinic Collect&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;strong&gt;Specimen Type&lt;/strong&gt;: Biopsy&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Specimen Source:&lt;/strong&gt;&amp;nbsp;Eyelid, Unspecified&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Comment:&lt;/strong&gt;&amp;nbsp;Right Eyelid&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Lid Biopsy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -374,6 +390,7 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Right Eye">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corneal Scraping">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="44ad6b7a-46df-4af8-88f8-93d2de770797" concept_name="OPHMIN Corneal Scraping - Right [OPH848] IP Order" max="1" path="/items" name="Corneal Scraping  - Right; Normal, Clinic Performed"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e8793c4-7ed2-4517-9522-891a7d016de5" concept_name="LABMIC Eye Culture Invasive [LAB4076] Order" max="1" path="/items" name="Eye Culture, Invasive; Normal, Clinic Collect"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcdb91d1-acd6-40e3-bad6-0c78a07eee06" concept_name="LABMIC Fungal Culture [LAB1294] Order" max="1" path="/items" name="Fungal Culture; Normal, Clinic Collect"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cf14fa99-3d7b-43d7-86c6-77a4dfdae292" concept_name="LABMOL Keratitis Conjunctivitis NAT Panel [LAB4156] Order" max="1" path="/items" name="Keratitis / Conjunctivitis NAT Panel; Normal, Clinic Collect"/>
@@ -419,6 +436,8 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0b8b6467-a6e5-45ca-8760-b4582865bda8" concept_name="OPHMIN Biopsy Eyelid - Right [OPH701] IP Order" max="1" path="/items" name="Biopsy Eyelid - Right; Normal, Clinic Performed"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b19021a4-aa66-4d8d-85c8-1f0daf884f30" concept_name="OPHCLIN Biopsy Lid Lesion - Right Eye [OPH149] IP Order" max="1" path="/items" name="Biopsy, Lid Lesion - Right Eye; Normal, Clinic Performed"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="104e8f34-23b8-45a1-ab96-8505760150a9" concept_name="LABAP Surgical Pathology [LAB1126] Order" max="1" path="/items" name="Surgical Pathology; Normal, Clinic Collect"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LABMIC Mycobacteria Culture [LAB877] Order" max="1" path="/items" name="Mycobacteria Culture; Normal, Clinic Collect"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcdb91d1-acd6-40e3-bad6-0c78a07eee06" concept_name="LABMIC Fungal Culture [LAB1294] Order" max="1" path="/items" name="Fungal Culture; Normal, Clinic Collect"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Temporal Artery Biopsy">
