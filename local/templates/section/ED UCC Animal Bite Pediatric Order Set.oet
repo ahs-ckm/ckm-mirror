@@ -401,8 +401,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="PC Vital Signs Order" max="1" path="/items" name="Vital Signs; Once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="PC Neurological Vital Signs Order" max="1" path="/items" name="Neurological vital signs; Every 4 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological vital signs; Every 4 hours"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
@@ -416,19 +416,19 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential; STAT, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; STAT, Once"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) Order" max="1" path="/items" name="C-Reactive Protein (CRP); STAT, Once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin Order" max="1" path="/items" name="Albumin; STAT, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="606f5158-5db6-4741-8014-b82c8bbc0fd7" concept_name="LAB C-Reactive Protein (CRP) [LAB149] Order" max="1" path="/items" name="C-Reactive Protein (CRP); STAT, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin [LAB45] Order" max="1" path="/items" name="Albumin; STAT, Once"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a1353852-a031-4e88-b88a-9aff122bd26e" concept_name="Blood Culture - Pediatric Weight Based Order Panel" max="1" path="/items" name="Blood Culture Panel - Pediatric Weight Based"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddc8db39-d1b0-4dfb-86f6-4de50dec80cf" concept_name="LAB Wound Culture Order" max="1" path="/items" name="Wound Culture; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="51a72851-3b86-4c9b-a245-bda65f8702ad" concept_name="LAB Fluid Culture Routine Order" max="1" path="/items" name="Fluid Culture, Routine; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b7d4bd6a-d250-40cf-9236-c2a7278db0b6" concept_name="LAB Tissue Culture Routine Order" max="1" path="/items" name="Tissue Culture, Routine; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddc8db39-d1b0-4dfb-86f6-4de50dec80cf" concept_name="LABMIC Wound Culture [LAB50301] Order" max="1" path="/items" name="Wound Culture; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="51a72851-3b86-4c9b-a245-bda65f8702ad" concept_name="LABMIC Fluid Culture Routine [LAB269] Order" max="1" path="/items" name="Fluid Culture, Routine; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b7d4bd6a-d250-40cf-9236-c2a7278db0b6" concept_name="LABMIC Tissue Culture Routine [LAB271] Order" max="1" path="/items" name="Tissue Culture, Routine; STAT"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
@@ -440,10 +440,10 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad0c1c7c-4333-4143-8402-573327d62900" concept_name="LAB Blood Gas Capillary POCT Order" max="1" path="/items" name="Blood Gas Capillary POCT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="28a5c9d0-c133-4290-a8c4-b4c0f413a498" concept_name="LAB Blood Gas Capillary Order" max="1" path="/items" name="Blood Gas Capillary"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LAB Blood Gas Venous POCT Order" max="1" path="/items" name="Blood Gas Venous POCT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c1590fc9-3145-498a-9045-f8e19db96d37" concept_name="LAB Blood Gas Venous Order" max="1" path="/items" name="Blood Gas, Venous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad0c1c7c-4333-4143-8402-573327d62900" concept_name="LABPOCT Blood Gas Capillary POCT [POC116] Order" max="1" path="/items" name="Blood Gas Capillary POCT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="28a5c9d0-c133-4290-a8c4-b4c0f413a498" concept_name="LAB Blood Gas Capillary [LAB78] Order" max="1" path="/items" name="Blood Gas Capillary"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LABPOCT Blood Gas Venous POCT [POC115] Order" max="1" path="/items" name="Blood Gas Venous POCT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c1590fc9-3145-498a-9045-f8e19db96d37" concept_name="LAB Blood Gas Venous [LAB79] Order" max="1" path="/items" name="Blood Gas, Venous"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
     </Item>
@@ -578,7 +578,7 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Severe/Limb threatening (single Response)">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ab1712c1-797c-4370-a11b-a2f0c31cfc8d" concept_name="PHARM piperacillin-tazobactam injection Order" max="1" path="/items" name="piperacillin-tazobactam injection; IV, 300 mg/kg/day, every 6 hours, Recommended Duration 10-14 days"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d5b29520-ce88-4c14-a574-9546351b8f8f" concept_name="PHARM PIPERACILLIN-TAZOBACTAM IV ORDERABLE (NEO PED) [4200704] Order" max="1" path="/items" name="piperacillin-tazobactam IV (neo/ped); IV, 300 mg/kg/day, every 6 hours, Recommended Duration 10-14 days"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7a5a7568-b118-4711-8f9e-5159108e0589" concept_name="PHARM imipenem-cilastatin injection Order" max="1" path="/items" name="imipenem-cilastatin injection; IV, 60mg/kg/day, For 30 min every 6 hours, Recommended Duration 10-14 days"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -1100,14 +1100,14 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Specialty Consults">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7958f161-0fb4-4d7c-9e6b-90e468b137b2" concept_name="CONS Inpatient Consult to Pediatric Plastic Surgery Order" max="1" path="/items" name="Inpatient Consult to Pediatric Plastic Surgery - MRHP will contact the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7958f161-0fb4-4d7c-9e6b-90e468b137b2" concept_name="CONS Inpatient Consult to Pediatric Plastic Surgery Order" max="1" path="/items" name="Inpatient Consult to Pediatric Plastic Surgery - MRHP has NOT contacted the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0740d5ed-97bf-4b30-992a-ada48f6eb012" concept_name="CONS Inpatient Consult to Pediatric Infectious Disease Order" max="1" path="/items" name="Inpatient Consult to Pediatric Infectious Disease - MRHP will contact the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0740d5ed-97bf-4b30-992a-ada48f6eb012" concept_name="CONS Inpatient Consult to Pediatric Infectious Disease Order" max="1" path="/items" name="Inpatient Consult to Pediatric Infectious Disease - MRHP has NOT contacted the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f35779d1-5208-4fa0-a91b-0a7bd6420f5b" concept_name="CONS Inpatient Consult to Pediatric General Surgery Order" max="1" path="/items" name="Inpatient Consult to Pediatric General Surgery - MRHP will contact the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f35779d1-5208-4fa0-a91b-0a7bd6420f5b" concept_name="CONS Inpatient Consult to Pediatric General Surgery Order" max="1" path="/items" name="Inpatient Consult to Pediatric General Surgery - MRHP has NOT contacted the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d54a7d1-206a-45ad-9beb-01b38e70b19e" concept_name="CONS Inpatient Consult to Pediatric Inpatient Services_Hospitalist Order" max="1" path="/items" name="Inpatient Consult to Pediatric Inpatient Services/Hospitalist - MRHP will contact the consultant"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d54a7d1-206a-45ad-9beb-01b38e70b19e" concept_name="CONS Inpatient Consult to Pediatric Inpatient Services_Hospitalist Order" max="1" path="/items" name="Inpatient Consult to Pediatric Inpatient Services/Hospitalist - MRHP has NOT contacted the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7958f161-0fb4-4d7c-9e6b-90e468b137b2" concept_name="CONS Inpatient Consult to Pediatric Plastic Surgery [CON212] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Plastic Surgery - MRHP will contact the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7958f161-0fb4-4d7c-9e6b-90e468b137b2" concept_name="CONS Inpatient Consult to Pediatric Plastic Surgery [CON212] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Plastic Surgery - MRHP has NOT contacted the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0740d5ed-97bf-4b30-992a-ada48f6eb012" concept_name="CONS Inpatient Consult to Pediatric Infectious Disease [CON86] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Infectious Disease - MRHP will contact the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0740d5ed-97bf-4b30-992a-ada48f6eb012" concept_name="CONS Inpatient Consult to Pediatric Infectious Disease [CON86] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Infectious Disease - MRHP has NOT contacted the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f35779d1-5208-4fa0-a91b-0a7bd6420f5b" concept_name="CONS Inpatient Consult to Pediatric General Surgery [CON209] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric General Surgery - MRHP will contact the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f35779d1-5208-4fa0-a91b-0a7bd6420f5b" concept_name="CONS Inpatient Consult to Pediatric General Surgery [CON209] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric General Surgery - MRHP has NOT contacted the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d54a7d1-206a-45ad-9beb-01b38e70b19e" concept_name="CONS Inpatient Consult to Pediatrics Inpatient Services Hospitalist [CON15] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Inpatient Services/Hospitalist - MRHP will contact the consultant"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d54a7d1-206a-45ad-9beb-01b38e70b19e" concept_name="CONS Inpatient Consult to Pediatrics Inpatient Services Hospitalist [CON15] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Inpatient Services/Hospitalist - MRHP has NOT contacted the consultant"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Allied Health Consults"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Request for Other Service"/>
@@ -1142,20 +1142,19 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
-	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-            </integrity_checks></template>
+</template>
