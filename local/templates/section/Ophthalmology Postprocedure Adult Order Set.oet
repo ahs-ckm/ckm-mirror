@@ -236,6 +236,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dexAMETHasone injection; 4 mg, intravenous, every 6 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;INC001863249 - requested addition by Dr Weis, approved by Dr Pollock April 5/24&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;moxifloxacin Eye drop 0.5%; 1 drop, 3 times per day, On Unit&apos;]/activities[at0001]">
     <items>
       <item>
@@ -321,12 +329,12 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PACU">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions; Recovery &amp; On Unit">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Lateral Left, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Lateral Right, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Prone, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Supine, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Specify, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="PC Adjust Head of Bed to Order" max="1" path="/items" name="Adjust Head of Bed to:; Specify, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Left, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Right, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Prone, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Supine, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Specify, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; Specify, Until discontinued"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6a64f49d-64d8-49c0-b7f0-9c861a35dd2f" concept_name="Wound Care Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="Wound Care Ophthalmology Postprocedure Adult Order Group; Recovery &amp; On Unit"/>
@@ -338,35 +346,35 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5b3e1da2-8a67-4c6e-a20c-b54e55e0d980" concept_name="Protein/Calorie Dense Oral Nutrition Supplements Order Panel" max="1" path="/items" name="Protein/Calorie Dense Oral Nutrition Supplements Order Panel; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity; On Unit">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; As tolerated, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; No restrictions, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Up with assistance, Until disconitnued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Up in chair, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Strict bed rest, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Bed rest with bedside commode, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Bed rest with bathroom privileges"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="PC Activity Order" max="1" path="/items" name="Activity; Patient may shower"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; As tolerated, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; No restrictions, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Up with assistance, Until disconitnued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Up in chair, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Strict bed rest, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed rest with bedside commode, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed rest with bathroom privileges"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Patient may shower"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="748561f7-490c-40cc-aa6b-7806e39a9273" concept_name="Vital Signs Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="Vital Signs Ophthalmology Postprocedure Adult Order Group; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; On Arrival, Once, On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; 4 times daily; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LAB Glucose Meter POCT Order" max="1" path="/items" name="Glucose Meter POCT; Specify, Once, On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; On Arrival, Once, On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; 4 times daily; On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; Specify, Once, On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions; On Unit">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Lateral Left, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Lateral Right, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Prone, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="PC Positioning Instruction Order" max="1" path="/items" name="Positioning Instruction; Supine, Until discontinued"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="PC Adjust Head of Bed to Order" max="1" path="/items" name="Adjust Head of Bed to:; Specify, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Left, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Right, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Prone, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Supine, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; Specify, Until discontinued"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6a64f49d-64d8-49c0-b7f0-9c861a35dd2f" concept_name="Wound Care Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="Wound Care Ophthalmology Postprocedure Adult Order Group; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); specify, Until discontinued, On Unit"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); specify, Until discontinued, On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="76f55273-344d-4fa3-a58f-6340cda57f5b" concept_name="IV Maintenance and Fluids Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="IV Maintenance and Fluids Ophthalmology Postprocedure Adult Order Group; On Unit"/>
@@ -412,6 +420,7 @@
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ed44d00-d5cf-4a9a-aecc-c55a1e3ae2da" concept_name="PHARM methylPREDNISolone sodium succinate injection Order" max="1" path="/items" name="methylPREDNISolone sodium succinate injection; 250 mg, intravenous, every 6 hours, for 24h; On Unit"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0c9c00c-2757-42de-be79-7e4716a04e95" concept_name="PHARM dexAMETHasone injection Order" max="1" path="/items" name="dexAMETHasone injection; 4 mg, intravenous, every 6 hours"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Endophthalmitis Vitreous Tap Postprocedure Medications">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Eye Drops">
@@ -437,14 +446,14 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8c7c44cd-ddd8-4939-81c1-79b8c18f17ca" concept_name="Discharge Follow-Up Smart Group" max="1" path="/items" name="Discharge Follow-Up Smart Group; Post Discharge"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9a82c4d5-fd59-47c4-afce-5e91a84a5c77" concept_name="NFS Discharge Diet Order" max="1" path="/items" name="Discharge Diet; Return to previous diet, Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9a82c4d5-fd59-47c4-afce-5e91a84a5c77" concept_name="DIETNUR Discharge Diet [DIET26] IP Order" max="1" path="/items" name="Discharge Diet; Return to previous diet, Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6624af52-0d36-4e67-a20a-7f8f31a15df1" concept_name="Discharge Activity Smart Group" max="1" path="/items" name="Discharge Activity; Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hygiene">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May shower, Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="PC Discharge activity Order" max="1" path="/items" name="Discharge activity; May tub bathe, Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] AMB Order" max="1" path="/items" name="Discharge activity; May shower, Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] AMB Order" max="1" path="/items" name="Discharge activity; May tub bathe, Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medication Instructions">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8b0c8006-dc5a-45fa-867c-60040b6e5463" concept_name="Discharge Medication Instructions Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="Discharge Medication Instructions Ophthalmology Postprocedure Adult Order Group; Post Discharge"/>
@@ -477,7 +486,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="75589934-ea8e-4c97-8b70-2166e334c617" concept_name="Anti-Glaucoma Agents Ophthalmology Discharge Adult Order Group" max="1" path="/items" name="Anti-Glaucoma Agents Ophthalmology Discharge Adult Order Group; Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Ophthalmic Agents - Lubricant; Post Discharge">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43532be5-ba21-477c-bd23-3910062bab09" concept_name="PHARM hydroxypropylmethylcellulose Eye drop 0.5% Order" max="1" path="/items" name="ophthalmic lubricant eye drop; 1 drop every 1 hour if needed for up to 30 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43532be5-ba21-477c-bd23-3910062bab09" concept_name="PHARM OPHTHALMIC LUBRICANT EYE DROP (WRAPPER) [408770025] Order" max="1" path="/items" name="ophthalmic lubricant eye drop; 1 drop every 1 hour if needed for up to 30 days"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Nasal Spray; Post Discharge">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e2e056-c89b-48ec-84d4-d5718460fa9c" concept_name="PHARM xylometazoline Nasal spray 0.1% Order" max="1" path="/items" name="xylometazoline Nasal spray 0.1%; Administer 1 spray into each nostril 2 times per day for 30 days"/>
@@ -496,21 +505,22 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
-	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
-            </integrity_checks></template>
+</template>
