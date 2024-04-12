@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~f9bdba24-52c5-41ed-8f56-60a4ad492020~NAME~AMB AMH Bipolar Smart Set}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnosis&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -688,7 +696,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipsychotics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Flupentixol (FLUANXOL)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;flupentixol decanoate Depot injection; 20mg/ml&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipsychotics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Flupentixol (FLUANXOL)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;flupentixol decanoate injection 20 mg/mL&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -1304,7 +1312,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~f9bdba24-52c5-41ed-8f56-60a4ad492020~NAME~AMB AMH Bipolar Smart Set}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="AMB AMH Bipolar SmartSet">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="AMB AMH Bipolar SmartSet">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnosis">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Bipolar Diagnosis">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
@@ -1312,37 +1320,37 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Drug Levels">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47c8c71c-b716-4a50-bc9f-95def453783f" concept_name="LAB Lithium Level Order" max="1" path="/items" name="Lithium Level"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9640be20-9dd3-43ff-862e-f23d142c5df5" concept_name="LAB Carbamazepine Level Order" max="1" path="/items" name="Carbamazepine Level"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0a6dc312-4b3b-44eb-a886-1d5942b5b625" concept_name="LAB Valproate Level Order" max="1" path="/items" name="Valproate Level"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fb5a1a57-b16a-4a68-8fc9-d7bb4d0a53e1" concept_name="LAB Lamotrigine Level Order" max="1" path="/items" name="Lamotrigine Level"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="aa898a41-acd9-4ce9-8308-f907daff42aa" concept_name="LAB Clozapine Level Order" max="1" path="/items" name="Clozapine Level"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="407e1011-590f-4a39-9cad-a8753037469f" concept_name="LAB Urine General Toxicology Panel Order" max="1" path="/items" name="Urine General Toxicology Panel"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47c8c71c-b716-4a50-bc9f-95def453783f" concept_name="LAB Lithium Level [LAB29] IP Order" max="1" path="/items" name="Lithium Level"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9640be20-9dd3-43ff-862e-f23d142c5df5" concept_name="LAB Carbamazepine Level [LAB21] IP Order" max="1" path="/items" name="Carbamazepine Level"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0a6dc312-4b3b-44eb-a886-1d5942b5b625" concept_name="LAB Valproate Level [LAB24] IP Order" max="1" path="/items" name="Valproate Level"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fb5a1a57-b16a-4a68-8fc9-d7bb4d0a53e1" concept_name="LAB Lamotrigine Level [LAB475] IP Order" max="1" path="/items" name="Lamotrigine Level"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="aa898a41-acd9-4ce9-8308-f907daff42aa" concept_name="LAB Clozapine Level [LAB4410] IP Order" max="1" path="/items" name="Clozapine Level"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="407e1011-590f-4a39-9cad-a8753037469f" concept_name="LABUR Urine General Toxicology Panel [LAB11112] Order" max="1" path="/items" name="Urine General Toxicology Panel"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Labs">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential Order" max="1" path="/items" name="CBC and Differential"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="63b4dc18-a256-4e1e-8b6b-dc7ca6f4ef08" concept_name="Liver Panel Lab Order Group" max="1" path="/items" name="Liver Panel Lab Order Group"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR Order" max="1" path="/items" name="INR"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium Order" max="1" path="/items" name="Calcium"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine Order" max="1" path="/items" name="Creatinine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea Order" max="1" path="/items" name="Urea"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c06828a-6ea9-4b2b-ba69-5f8c5945905b" concept_name="LAB Glucose Fasting Order" max="1" path="/items" name="Glucose, Fasting"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c Order" max="1" path="/items" name="Hemoglobin A1c"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dfb0574d-d6cd-49d6-88f6-2a9d08e8706d" concept_name="LAB Lipid Panel Order" max="1" path="/items" name="Lipid Panel"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07892e60-1173-4ead-9e1c-ad7a4c8738fb" concept_name="LAB Thyroid Stimulating Hormone (TSH) Order" max="1" path="/items" name="Thyroid Stimulating Hormone (TSH)"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="643b43c8-1d78-44d0-9b48-4de3c44df284" concept_name="LAB Vitamin B12 Order" max="1" path="/items" name="Vitamin B12"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARDIAC Electrocardiogram 12 Lead Order" max="1" path="/items" name="Electrocardiogram 12 Lead"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium [LAB53] Order" max="1" path="/items" name="Calcium"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c06828a-6ea9-4b2b-ba69-5f8c5945905b" concept_name="LAB Glucose Fasting [LAB81] Order" max="1" path="/items" name="Glucose, Fasting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c [LAB90] Order" max="1" path="/items" name="Hemoglobin A1c"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dfb0574d-d6cd-49d6-88f6-2a9d08e8706d" concept_name="LAB Lipid Panel [LAB18] Order" max="1" path="/items" name="Lipid Panel"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07892e60-1173-4ead-9e1c-ad7a4c8738fb" concept_name="LAB Thyroid Stimulating Hormone (TSH) [LAB129] Order" max="1" path="/items" name="Thyroid Stimulating Hormone (TSH)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="643b43c8-1d78-44d0-9b48-4de3c44df284" concept_name="LAB Vitamin B12 [LAB67] Order" max="1" path="/items" name="Vitamin B12"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referrals">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f96504e4-6b40-4b87-ad55-40b5a5059792" concept_name="REF Ambulatory Referral to Child and Adolescent Addiction and Mental Health Order" max="1" path="/items" name="Ambulatory Referral to Child and Adolescent Addiction and Mental Health"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9718f8f-a3f5-43bd-b347-03a982a2992f" concept_name="REF Ambulatory Referral to Psychiatry Order" max="1" path="/items" name="Ambulatory Referral to Psychiatry"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eff96f93-107d-4975-a48b-c438a618a185" concept_name="REF Ambulatory Referral to Pediatric Psychology Order" max="1" path="/items" name="Ambulatory Referral to Pediatric Psychology"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ccb5f7-c264-4d57-afad-35f458dac2b0" concept_name="REF Ambulatory Referral to Adult Addiction and Mental Health Order" max="1" path="/items" name="Ambulatory Referral to Adult Addiction and Mental Health"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9718f8f-a3f5-43bd-b347-03a982a2992f" concept_name="REF Ambulatory Referral to Psychiatry Order" max="1" path="/items" name="Ambulatory Referral to Psychiatry #1"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe703fcf-bd28-4bd0-977e-361141cef6e4" concept_name="REF Ambulatory Referral to Psychology Order" max="1" path="/items" name="Ambulatory Referral to Psychology"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="23f46e5c-1742-4594-adf8-9b1361bac2b8" concept_name="REF Ambulatory Referral to Geriatric Addiction and Mental Health Order" max="1" path="/items" name="Ambulatory Referral to Geriatric Addiction and Mental Health"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f96504e4-6b40-4b87-ad55-40b5a5059792" concept_name="REF Ambulatory Referral to Child and Adolescent Addiction and Mental Health [REF80] AMB Order" max="1" path="/items" name="Ambulatory Referral to Child and Adolescent Addiction and Mental Health"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9718f8f-a3f5-43bd-b347-03a982a2992f" concept_name="REF Ambulatory Referral to Psychiatry [REF91] AMB Order" max="1" path="/items" name="Ambulatory Referral to Psychiatry"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eff96f93-107d-4975-a48b-c438a618a185" concept_name="REF Ambulatory Referral to Pediatric Psychology [REF81] AMB Order" max="1" path="/items" name="Ambulatory Referral to Pediatric Psychology"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ccb5f7-c264-4d57-afad-35f458dac2b0" concept_name="REF Ambulatory Referral to Adult Addiction and Mental Health [REF15] AMB Order" max="1" path="/items" name="Ambulatory Referral to Adult Addiction and Mental Health"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e9718f8f-a3f5-43bd-b347-03a982a2992f" concept_name="REF Ambulatory Referral to Psychiatry [REF91] AMB Order" max="1" path="/items" name="Ambulatory Referral to Psychiatry #1"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe703fcf-bd28-4bd0-977e-361141cef6e4" concept_name="REF Ambulatory Referral to Psychology [REF92] AMB Order" max="1" path="/items" name="Ambulatory Referral to Psychology"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="23f46e5c-1742-4594-adf8-9b1361bac2b8" concept_name="REF Ambulatory Referral to Geriatric Addiction and Mental Health [REF154] AMB Order" max="1" path="/items" name="Ambulatory Referral to Geriatric Addiction and Mental Health"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anxiolytics">
@@ -1455,7 +1463,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Flupentixol (FLUANXOL)">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8c6b32a-7956-4cf1-8543-e18684e70607" concept_name="PHARM flupentixol Tablet Order" max="1" path="/items" name="flupentixol Tablet; 3mg"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8c6b32a-7956-4cf1-8543-e18684e70607" concept_name="PHARM flupentixol Tablet Order" max="1" path="/items" name="flupentixol Tablet; 0.5mg"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e21af02b-7452-449d-a534-7ddd60b75a63" concept_name="PHARM flupentixol decanoate Depot injection Order" max="1" path="/items" name="flupentixol decanoate Depot injection; 20mg/ml"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc3a66a9-1590-449e-b90e-e71cfe959afc" concept_name="PHARM FLUPENTIXOL DECANOATE 20 MG ML (1 ML) INTRAMUSCULAR SOLUTION [166357] Order" max="1" path="/items" name="flupentixol decanoate injection 20 mg/mL"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e21af02b-7452-449d-a534-7ddd60b75a63" concept_name="PHARM flupentixol decanoate Depot injection Order" max="1" path="/items" name="flupentixol decanoate Depot injection; 100mg/ml"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Haloperidol (HALDOL)">
@@ -1531,10 +1539,10 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de331c64-88cc-451f-bb5e-36807f17e1ef" concept_name="PHARM ARIPiprazole monohydrate injection Order" max="1" path="/items" name="ARIPiprazole monohydrate injection; 400mg"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="TRINZA">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA)" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 175mg"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA)" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 263mg"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA)" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 350mg"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA)" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 525mg"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA) Order" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 175mg"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA) Order" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 263mg"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA) Order" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 350mg"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca130cac-d172-432f-a76c-98b024397ede" concept_name="PHARM paliperidone injection (INVEGA TRINZA) Order" max="1" path="/items" name="PHARM paliperidone injection (INVEGA TRINZA); 525mg"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="SUSTENNA">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc509b6e-7db5-40ce-a4d7-0e5f8f8f6f34" concept_name="PHARM paliperidone (Invega Sustenna) Depot injection Order" max="1" path="/items" name="paliperidone (Invega Sustenna) Depot injection; 50mg"/>
@@ -1586,11 +1594,14 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
@@ -1598,10 +1609,10 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
-            </integrity_checks>	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-            </integrity_checks></template>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+</template>
