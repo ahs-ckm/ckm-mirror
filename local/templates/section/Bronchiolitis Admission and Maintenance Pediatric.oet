@@ -708,6 +708,18 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; Insert&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;INC001862479: Add new gastric tube care order&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Type of tube: NG tube&lt;/p&gt;&lt;p&gt;Action: Insert&lt;/p&gt;&lt;p&gt;Comments: For tube feeds&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Bronchiolitis Deterioration&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Diet Instructions to Nursing; Tube Feed only&apos;]/activities[at0001]">
     <items>
       <item>
@@ -784,7 +796,7 @@
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Titrate to Maintain Target Saturation Range: 90-98%&lt;/p&gt;&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements: Heated humidified high flow&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;Alert physician if oxygen levels go below 90%. Follow local policy and procedure for heated humified high flow oxygen.&amp;nbsp;&lt;br&gt;If no improvement in WOB and oxygenation in 2 hours consider patient a nonresponder to heated humified high flow; consider PICU consultation for bipap, CPAP or invasive ventilation.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Start patients at the following flow rates:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;12 kg or less&amp;nbsp;– 2 L/kg/min&lt;/li&gt;&lt;li&gt;13-15 kg – 25-30 L/min&lt;/li&gt;&lt;li&gt;16-30 kg – 35 L/min&lt;/li&gt;&lt;li&gt;31-50 kg – 40 L/min&lt;/li&gt;&lt;li&gt;Greater than 50 kg – 50 L/min&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Titrate to Maintain Target Saturation Range: 90-98%&lt;/p&gt;&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements: Heated humidified high flow.&lt;/p&gt;&lt;p&gt;Comments: Alert physician if oxygen levels go below 90%. Follow local policy and procedure for heated humidified high flow oxygen. If no improvement in WOB and oxygenation in 2 hours consider patient a nonresponder to heated humidified high flow; consider PICU consultation for bipap, CPAP or invasive ventilation.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Start patients at the following flow rates:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;12 kg or less - 2 L/kg/min&lt;/li&gt;&lt;li&gt;13-15 kg - 25-30 L/min&lt;/li&gt;&lt;li&gt;16-30 kg - 35 L/min&lt;/li&gt;&lt;li&gt;31-50 kg - 40 L/min&lt;/li&gt;&lt;li&gt;Greater than 50 kg - 50 L/min&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -1103,6 +1115,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Tube Feed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="NURINT Gastric Tube Care [NUR336] IP Order" max="1" path="/items" name="Gastric Tube Care; Insert"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Tube Feed only"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Breast Feed"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Bottle Feed"/>
