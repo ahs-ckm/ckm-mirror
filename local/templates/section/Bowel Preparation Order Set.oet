@@ -156,15 +156,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure (Inpatient)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anti-Infective Agents; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure (Inpatient)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anti-Infectives; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;Ordering Neomycin:&lt;/strong&gt;&lt;br&gt;&amp;nbsp;&lt;br&gt;Neomycin is a compounded product that is not available via AHS pharmacies. If an inpatient requires this medication you can place an order for a prescription in the Discharge Navigator (Important: delete the auto-populated discharge order prior to submitting your orders). Community pharmacies may require a few business days to obtain neomycin or may refer the patient to a compounding pharmacy. AHS is unable to assist in obtaining this medication for outpatient or inpatient use. The patient is required to obtain the medication and bring it into hospital.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure (Inpatient)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anti-Infective Agents; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure (Inpatient)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Anti-Infectives; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -185,7 +185,11 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fccf041b-3936-48f2-a605-f0e8bdca4c87" concept_name="Diet and Nutrition Bowel Preparation Order Group" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ce2c69e4-1fad-45c8-bd63-d701733e50e0" concept_name="Gastrointestinal Agents Bowel Preparation PAC Order Group" max="1" path="/items" name="Gastrointestinal Agents; Preprocedure/Day Surgery"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ab809870-601c-4c58-8b31-b576c3decf74" concept_name="Anti-Infective Agents Bowel Preparation PAC Order Group" max="1" path="/items" name="Anti-Infective Agents; Preprocedure/Day Surgery"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infectives; Preprocedure/Day Surgery">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8ab917b-ce56-4ada-867b-aaf09c7be2ea" concept_name="PHARM metroNIDAZOLE Tablet Order" max="1" path="/items" name="metroNIDAZOLE Tablet; 1,000 mg, oral, 3 times per day, for 1 day, Take ONE day prior to procedure at 1pm, 3pm and 8pm."/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
       </Item>
     </Item>
   </definition>
@@ -198,15 +202,13 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-	<integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
-                <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
-            </integrity_checks></template>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
