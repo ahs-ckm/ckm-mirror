@@ -156,6 +156,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;INC001898583 - Pending Approval (May 3/24)&lt;/p&gt;&lt;p&gt;Anti-Infective Agents - Ruptured Globe&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory Agents with Corticosteroids&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
@@ -236,7 +244,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dexAMETHasone injection; 4 mg, intravenous, every 6 hours&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dexAMETHasone injection; 4 mg, intravenous, every 6 hours, for 24 hours&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
@@ -386,6 +394,8 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="419f795b-3aad-4a85-9c0d-a3097a549640" concept_name="PRN Antiemetics Postprocedure Order Group" max="1" path="/items" name="PRN Antiemetics Postprocedure Order Group; On Unit"/>
         </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f0269ddd-d669-4672-8d61-47e98b2e58d7" concept_name="AHS OGR ADULT OPH Anti-Infectives" max="1" path="/items" name="Anti-Infective Agents - Ruptured Globe"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Anti-Glaucoma Agents">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="52d98052-8d15-454a-aa4c-5e9aed27d42e" concept_name="Anti-Glaucoma Agents Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="Anti-Glaucoma Agents; On Unit"/>
         </Item>
@@ -420,7 +430,7 @@
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ed44d00-d5cf-4a9a-aecc-c55a1e3ae2da" concept_name="PHARM methylPREDNISolone sodium succinate injection Order" max="1" path="/items" name="methylPREDNISolone sodium succinate injection; 250 mg, intravenous, every 6 hours, for 24h; On Unit"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0c9c00c-2757-42de-be79-7e4716a04e95" concept_name="PHARM dexAMETHasone injection Order" max="1" path="/items" name="dexAMETHasone injection; 4 mg, intravenous, every 6 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0c9c00c-2757-42de-be79-7e4716a04e95" concept_name="PHARM dexAMETHasone injection Order" max="1" path="/items" name="dexAMETHasone injection; 4 mg, intravenous, every 6 hours, for 24 hours"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Endophthalmitis Vitreous Tap Postprocedure Medications">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Eye Drops">
@@ -452,8 +462,8 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6624af52-0d36-4e67-a20a-7f8f31a15df1" concept_name="Discharge Activity Smart Group" max="1" path="/items" name="Discharge Activity; Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hygiene">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] AMB Order" max="1" path="/items" name="Discharge activity; May shower, Post Discharge"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] AMB Order" max="1" path="/items" name="Discharge activity; May tub bathe, Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] Order" max="1" path="/items" name="Discharge activity; May shower, Post Discharge"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] Order" max="1" path="/items" name="Discharge activity; May tub bathe, Post Discharge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medication Instructions">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8b0c8006-dc5a-45fa-867c-60040b6e5463" concept_name="Discharge Medication Instructions Ophthalmology Postprocedure Adult Order Group" max="1" path="/items" name="Discharge Medication Instructions Ophthalmology Postprocedure Adult Order Group; Post Discharge"/>
