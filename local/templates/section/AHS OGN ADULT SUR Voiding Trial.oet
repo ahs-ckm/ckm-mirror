@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>c15d995e-9ef4-45c8-9913-5266f9ede756</id>
+  <name>AHS OGN ADULT SUR Voiding Trial</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Post-surgery bladder protocol, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;- Measure voided volume and post-void residual volume (PVR) - specify number of times&lt;br&gt;- If voided volume &amp;gt;***ml and PVR &amp;lt; *** ml, patient may go home&lt;br&gt;- If PVR &amp;gt; 150 ml, repeat.&lt;br&gt;- If PVR &amp;gt; 150 ml x 2 then choose one of:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; &amp;nbsp;If patient can self-catheterize (prior experience or able to demonstrate proficiency) then send home with self-catheterization protocol below.&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; &amp;nbsp;If required, teach patient to self-catheterize prior to discharge from unit, and send home with self-catheterization protocolo&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; &amp;nbsp;If patient cannot self-catheterize, insert 14 F Foley catheter and send home to straight drainage and arrange for Home Care to visit the patient the next day.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~c15d995e-9ef4-45c8-9913-5266f9ede756~NAME~AHS OGN ADULT SUR Voiding Trial}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Voiding Trial">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Measure voided volume and post-void residual volume (PVR), Until discontinued, specify number of times"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Post-surgery bladder protocol, Until discontinued"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a658bdac-902a-45d6-8b4e-b570d1f23f5a" concept_name="NURINT Urinary catheter care [NUR375] IP Order" max="1" path="/items" name="Urinary catheter care; Prior to removal, fill bladder with 300 mL Normal Saline solution, clamp catheter and then remove, Until discontinued"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a658bdac-902a-45d6-8b4e-b570d1f23f5a" concept_name="NURINT Urinary catheter care [NUR375] IP Order" max="1" path="/items" name="Urinary catheter care; re-insert similar catheter if patient unable to void or voids frank blood/clots, Until discontinued"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
