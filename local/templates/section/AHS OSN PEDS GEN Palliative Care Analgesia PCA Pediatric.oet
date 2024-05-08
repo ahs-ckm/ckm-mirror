@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>17735e70-30b0-44b3-83ad-b574ce39299b</id>
+  <name>AHS OSN PEDS GEN Palliative Care Analgesia PCA Pediatric</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~17735e70-30b0-44b3-83ad-b574ce39299b~NAME~AHS OSN PEDS GEN Palliative Care Analgesia PCA Pediatric}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;Order Set Keywords:&amp;nbsp;&lt;/strong&gt;pediatric, pain, patient controlled analgesia, hydromorphone PCA,&amp;nbsp;morphine PCA, fentanyl PCA, PCA, palliative care, end of life, custom&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;This PCA Pediatric order set is restricted to use by &lt;strong&gt;Pediatric Palliative Care&lt;/strong&gt;&amp;nbsp;ONLY&lt;/p&gt;&lt;p&gt;Health Care Professionals may only order Patient Controlled Analgesia within the boundaries of their professional regulations and/or scope of practice or as directed by institution policy and procedure.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Prior to utilizing this order set, ensure all previous opioid orders have been reviewed and discontinued if appropriate.&lt;/p&gt;&lt;p&gt;Provider to reassess symptom management frequently, and at least every 24 hours.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Continuous oximetry and cardio-respiratory monitoring may be indicated while receiving opioid analgesic infusion or PCA&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Respiratory Rate and Depth, Oxygen Saturation and Sedation Score, Until Specified&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Comments: Frequency to be determined by ordering provider&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Respiratory Rate and Depth, Oxygen Saturation and Sedation Score, Until Specified&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pain Score; Monitoring, Per protocol, Every 2 hours while awake and every 4 hours while asleep for duration of opioid therapy&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Respiratory Rate and Depth, Oxygen Saturation and Sedation Score, Per protocol, Every 15 minutes x 4 occurrences, following administration of single bolus dose of opioid analgesic (excludes PCA doses)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Continuous pulse oximetry; Until discontinued&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-Respiratory Monitoring; Continuous, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Can the patient be off monitoring for tests and activities (including therapy, ambulation, off-unit procedures, showers, bathroom)? &lt;strong&gt;***&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-Respiratory Monitoring; Continuous, Until discontinued&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Initiate teaching prior to start of PCA infusion and then reinforce prn.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; Titrate to comfort; Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Titrate to Maintain Target Satuation Range: Other range&amp;nbsp;&lt;/p&gt;&lt;p&gt;Target saturation Min: 88&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; Titrate to comfort; Routine&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Titrate to Maintain Target Satuation Range: Other range&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; Routine&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Insert and Maintain IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Insert peripheral IV; Once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;apply topical anesthetic as per the Application of Topical Local Anesthetic protocol&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Insert and Maintain IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Maintain IV Access; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Comments: Maintain infusion line, site, and pharmacy bags per institution policy&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Insert and Maintain IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Maintain IV Access; Until discontinued&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Insert and Maintain IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Start hypodermoclysis; Subcutaneous Cannula; Once Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Comments: Maintain infusion line, site, and pharmacy bags per institution policy&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Insert and Maintain IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Start hypodermoclysis; Subcutaneous Cannula; Once Routine&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE Oral liquid 1.25 mg/mL; 0.5 mg/kg/dose, oral, every 6 hours, as needed, itchiness&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;em&gt;Use with caution if patient is receiving dimenhyDRINATE&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE Oral liquid 1.25 mg/mL; 0.5 mg/kg/dose, oral, every 6 hours, as needed, itchiness&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE Capsule; 0.5 mg/kg/dose, oral, every 6 hours, as needed, itchiness&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;em&gt;Use with caution if patient is receiving dimenhyDRINATE&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE Capsule; 0.5 mg/kg/dose, oral, every 6 hours, as needed, itchiness&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE injection; 0.5 mg/kg/dose, intravenous, every 6 hours, as needed, itchiness&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;em&gt;Use with caution if patient is receiving dimenhyDRINATE&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;diphenhydrAMINE injection; 0.5 mg/kg/dose, intravenous, every 6 hours, as needed, itchiness&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;diphenhydrAMINE PO or IV&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cetirizine PO&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Recommended dosing for cetirizine:&lt;br&gt;2 to 5 years of age: 5 mg&lt;br&gt;Greater than 5 years of age: 10 mg&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cetirizine PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cetirizine Tablet; 5 mg, oral, every 24 hours, as needed, allergies, itchiness&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cetirizine PO&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cetirizine Oral liquid 1 mg/mL; 5 mg, oral, every 24 hours, as needed, allergies, itchiness&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cetirizine PO&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;nalbuphine&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;For pruritis recommended maximum 5 mg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;nalbuphine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipruritics&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;nalbuphine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Health Care Professionals may only order Patient Controlled Analgesia within the boundaries of their professional regulations and/or scope of practice or as directed by institution policy and procedure.&lt;/p&gt;&lt;p&gt;For neuroatypical or age less than 7 years, consider By Proxy as per site practice.&lt;br&gt;&amp;nbsp;&lt;br&gt;***Order restricted to Pediatric Palliative Care ONLY***&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;AHS currently employs the use of the CADD Solis PCA pump for pediatric PCA, which can deliver bolus increments of 0.1 mL. To calculate programmable dosing increments, multiply the PCA drug concentration by 0.1 mL. e.g. morphine PCA PED 1000 mcg/mL x 0.1 mL = 100 mcg (0.1 mg) increments.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 50 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 50 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 50 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 200 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 200 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 1000 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 1000 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL PCA&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL PCA&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL PCA&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL PCA&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 200 mcg/mL PCA&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 200 mcg/mL PCA&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 2 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 2 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 10 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 10 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 50 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: *** Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 50 mcg/mL PCA infusion&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL; Should not be first line agent of choice&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Health Care Professionals may only order Patient Controlled Analgesia within the boundaries of their professional regulations and/or scope of practice or as directed by institution policy and procedure.&lt;br&gt;&amp;nbsp;&lt;br&gt;***Order restricted to Pediatric Palliative Care&lt;span style=&quot;background-color:null&quot;&gt; &lt;/span&gt;ONLY***&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;Recommended lockout of 15 min for all by proxy orders&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 50 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 50 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 200 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 200 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 1000 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine 1000 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL PCA - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL PCA - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 200 mcg/mL PCA - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone 200 mcg/mL PCA - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 2 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 2 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 10 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 10 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 50 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Patient Bolus Dose: *** mcg/kg/dose&lt;/p&gt;&lt;p&gt;Lockout Interval: 15 Minutes&lt;/p&gt;&lt;p&gt;Continuous Infusion Rate: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;One Hour Dose Limit: *** mcg&lt;/p&gt;&lt;p&gt;intravenous, continuous&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics - PCA Options - BY PROXY&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL - By Proxy&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;fentaNYL 50 mcg/mL PCA infusion - By Proxy&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Precautions and Safety&apos;]">
+    <items>
+      <item>
+        <key>Transform.Expanded by Default</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Precautions and Safety&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Notify&apos;]">
+    <items>
+      <item>
+        <key>Transform.Expanded by Default</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Patient less than 6 months of age: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Until discontinued&lt;/p&gt;&lt;p&gt;Respiratory Rate Less Than (breaths per min): 20&lt;/p&gt;&lt;p&gt;SpO2 Less Than (%): 90&lt;/p&gt;&lt;p&gt;Other: Sedation Score greater than or equal to 3&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Patient less than 6 months to 2 years of age: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following #1&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Until discontinued&lt;/p&gt;&lt;p&gt;Respiratory Rate Less Than (breaths per min): 20&lt;/p&gt;&lt;p&gt;SpO2 Less Than (%): 90&lt;/p&gt;&lt;p&gt;Other: Sedation Score greater than or equal to 3&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Patient ages 2 to 10 years: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Until discontinued&lt;/p&gt;&lt;p&gt;Respiratory Rate Less Than (breaths per min): 20&lt;/p&gt;&lt;p&gt;SpO2 Less Than (%): 90&lt;/p&gt;&lt;p&gt;Other: Sedation Score greater than or equal to 3&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Patient greater than 10 years of age: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Until discontinued&lt;/p&gt;&lt;p&gt;Respiratory Rate Less Than (breaths per min): 20&lt;/p&gt;&lt;p&gt;SpO2 Less Than (%): 90&lt;/p&gt;&lt;p&gt;Other: Sedation Score greater than or equal to 3&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;naloxone&apos;]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Expanded by Default</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;naloxone&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Recommended dosing for naloxone - reversal of opioid-induced respiratory depression&lt;br&gt;2 to 14.9 kg: 0.02 mg/dose&lt;br&gt;15 to 29.9 kg: 0.04 mg/dose&lt;br&gt;Greater than or equal to 30 kg: 0.08 mg/dose&lt;br&gt;Yields 0.003 to 0.01 mg/kg/dose, max 0.4 mg/dose, rounded to facilitate rapid nursing preparation&lt;br&gt;Maximum 0.4 mg/dose.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;naloxone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Direct IV every 1 to 2 minutes PRN for respiratory rate less than *** per minute and sedation score equal to or greater than 3. Maximum 4 doses. Give first dose STAT.&lt;/p&gt;&lt;p&gt;Naloxone preparation instructions:&amp;nbsp;&lt;br&gt;1.&amp;nbsp;&amp;nbsp; &amp;nbsp;Dilute naloxone: Mix 0.4 mg (1 mL of 0.4 mg/mL ampule) of naloxone with 9 mL of 0.9% NaCl to yield 0.04 mg/mL solution&lt;br&gt;2.&amp;nbsp;&amp;nbsp; &amp;nbsp;Using diluted 0.04 mg/mL naloxone solution, administer naloxone IV direct until respirations improve:&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Weight 2 to 14.9 kg: 0.02 mg IV direct (0.5 mL)&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Weight 15 to 29.9 kg: 0.04 mg IV direct (1 mL)&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Weight greater than or equal to 30 kg: 0.08 mg IV direct (2 mL)&lt;br&gt;(Yields 0.003 to 0.01 mg/kg/dose, max 0.4 mg/dose, rounded to facilitate rapid nursing preparation)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;naloxone&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Naloxone&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pediatric Palliative Care Analgesia PCA">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfer"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticipated Date of Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Legal Status"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consent"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Visitation Status"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Family Conference"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Assistive Devices"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inpatient Specialty Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="448f47f1-3138-40eb-8590-a1193d01df42" concept_name="CONS Inpatient Consult to Pediatric Acute Pain Services [CON264] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Palliative Care"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inpatient Allied Health Consults"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Request for Other Service"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Respiratory Rate and Depth, Oxygen Saturation and Sedation Score, Until Specified"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bd9d9b96-d198-499a-8ade-963106ad04b2" concept_name="NURAX Pain Score [NUR847] IP Order" max="1" path="/items" name="Pain Score; Monitoring, Per protocol, Every 2 hours while awake and every 4 hours while asleep for duration of opioid therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Respiratory Rate and Depth, Oxygen Saturation and Sedation Score, Per protocol, Every 15 minutes x 4 occurrences, following administration of single bolus dose of opioid analgesic (excludes PCA doses)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Respiratory Rate and Depth, Oxygen Saturation and Sedation Score, Per protocol, Every 15 minutes x 4 occurrences, following administration of single bolus dose of sedative medication (includes dimenhyDRINATE and diphenhydrAMINE)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c95ed23e-7578-492a-93b9-39c75abd31b1" concept_name="NURAX Continuous Pulse Oximetry [NUR586] IP Order" max="1" path="/items" name="Continuous pulse oximetry; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="NURAX Cardio-respiratory Monitoring [NUR225] IP Order" max="1" path="/items" name="Cardio-Respiratory Monitoring; Continuous, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Daily"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; If patient controlled analgesia (PCA) ordered, record PCA total every 4 hours on PCA record."/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education (Specify); Complete PCA education, Daily PRN"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Titrate to comfort; Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Notify Pediatric Palliative Care if:"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PO Electrolyte Replacement"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Electrolyte Replacement"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Insert and Maintain IV">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV; Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="edc6d443-87da-40da-9326-33d7653b0129" concept_name="NURCOM Maintain IV Access [NUR562] IP Order" max="1" path="/items" name="Maintain IV Access; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="938bd580-a4a3-4c91-9bc9-9c7f9da12dda" concept_name="NURIV Start hypodermoclysis [IVT52] Order" max="1" path="/items" name="Start hypodermoclysis; Subcutaneous Cannula; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antipruritics">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="diphenhydrAMINE PO or IV">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Recommended dosing for diphenhydrAMINE: 0.5 to 1 mg/kg/dose. Max 50 mg/dose."/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="577ce76d-eb5e-4b83-9620-3b6590e9f619" concept_name="PHARM diphenhydrAMINE Oral liquid 1.25 mg/mL Order" max="1" path="/items" name="diphenhydrAMINE Oral liquid 1.25 mg/mL; 0.5 mg/kg/dose, oral, every 6 hours, as needed, itchiness"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE Capsule Order" max="1" path="/items" name="diphenhydrAMINE Capsule; 0.5 mg/kg/dose, oral, every 6 hours, as needed, itchiness"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order) #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE injection; 0.5 mg/kg/dose, intravenous, every 6 hours, as needed, itchiness"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cetirizine PO">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03598775-beba-4039-87cd-db82b478f155" concept_name="PHARM cetirizine Tablet Order" max="1" path="/items" name="cetirizine Tablet; 5 mg, oral, every 24 hours, as needed, allergies, itchiness"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e291a7f8-304b-4996-bae4-bd0898744b91" concept_name="PHARM cetirizine Oral liquid 1 mg/mL Order" max="1" path="/items" name="cetirizine Oral liquid 1 mg/mL; 5 mg, oral, every 24 hours, as needed, allergies, itchiness"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="nalbuphine">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a10737b8-610b-4e26-a6e2-7e89a5c80ee4" concept_name="PHARM nalbuphine injection Order" max="1" path="/items" name="nalbuphine 10 mg/mL injection; 0.1 mg/kg/dose, intravenous, every 4 hours, as needed, opioid-induced pruritis"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65874a6-fa48-4905-bc66-25d1ad63271f" concept_name="PHARM naltrexone 1 mg_mL Liquid Oral Order" max="1" path="/items" name="naltrexone 1 mg_mL Liquid Oral; 0.05 mg/kg/dose, oral, every 12 hours, as needed, opioid-induced pruritis"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics - PCA Options">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine 50 mcg/mL PCA infusion">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="57d616f8-86cb-49c7-997e-67ba71019fe5" concept_name="PHARM morphine 500 mg in NaCl 0.9% 100 mL (5 mg/mL) PCA infusion Order" max="1" path="/items" name="morphine 500 mg in NaCl 0.9% 100 mL (5 mg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine 200 mcg/mL PCA infusion">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="acacd48e-12c0-40b2-ad90-ff2de70bd205" concept_name="PHARM morphine 20 mg in NaCL 0.9% 100 mL (200 mcg/mL) PCA infusion Order" max="1" path="/items" name="morphine 20 mg in NaCL 0.9% 100 mL (200 mcg/mL) PCA infusion; morphine 200 mcg/mL PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine 1000 mcg/mL PCA infusion">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295d2463-1b3b-4977-a7a6-963192010745" concept_name="PHARM morphine 100 mg in NaCl 0.9% 100 mL (1 mg/mL) PCA infusion Order" max="1" path="/items" name="morphine 100 mg in NaCl 0.9% 100 mL (1 mg/mL) PCA infusion; morphine 1000 mcg/mL PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone 10 mcg/mL PCA">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; HYDROmorphone 1000 mcg in D5W 100 mL (10 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone 40 mcg/mL PCA">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; HYDROmorphone 4000 mcg in D5W 100 mL (40 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone 200 mcg/mL PCA">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; HYDROmorphone 20 000 mcg in D5W 100 mL (200 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL; Should not be first line agent of choice">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL 2 mcg/mL PCA infusion">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8a249de9-5397-40e3-a515-6c0d14266b32" concept_name="PHARM fentaNYL 200 mcg in NaCl 0.9% 100 mL (2 mcg/mL) PCA infusion Order" max="1" path="/items" name="fentaNYL 200 mcg in NaCl 0.9% 100 mL (2 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL 10 mcg/mL PCA infusion">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d67d699-eafb-43bd-bf6f-24c349511284" concept_name="PHARM FENTANYL PCA PED 10 MCG ML (1000 MCG) IN NACL 0 9 Percent 100 ML MFG [6000628] Order" max="1" path="/items" name="fentaNYL 1000 mcg in NaCl 0.9% 100 mL (10 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL 50 mcg/mL PCA infusion">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fa74afc-15e6-4306-82fc-0533dc477ebe" concept_name="PHARM FENTANYL PCA PED 50 MCG ML (5000 MCG) IN 100 ML (PHARM)(MFG) [6001044] Order" max="1" path="/items" name="fentaNYL 5,000 mcg in 100 mL (50 mcg/mL) PCA (PHARM)"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics - PCA Options - BY PROXY">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine - By Proxy">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine 50 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8ec4cb98-98c9-419c-893e-eec893a28054" concept_name="PHARM morphine 5 mg in NaCl 0.9% 100 mL (50 mcg/mL) PCA infusion Order" max="1" path="/items" name="morphine 5 mg in NaCl 0.9% 100 mL (50 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine 200 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="acacd48e-12c0-40b2-ad90-ff2de70bd205" concept_name="PHARM morphine 20 mg in NaCL 0.9% 100 mL (200 mcg/mL) PCA infusion Order" max="1" path="/items" name="morphine 20 mg in NaCL 0.9% 100 mL (200 mcg/mL) PCA infusion; morphine 200 mcg/mL PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine 1000 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295d2463-1b3b-4977-a7a6-963192010745" concept_name="PHARM morphine 100 mg in NaCl 0.9% 100 mL (1 mg/mL) PCA infusion Order" max="1" path="/items" name="morphine 100 mg in NaCl 0.9% 100 mL (1 mg/mL) PCA infusion; morphine 1000 mcg/mL PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone - By Proxy">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone 10 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; HYDROmorphone 1000 mcg in D5W 1000 mL (10 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone 40 mcg/mL PCA - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; HYDROmorphone 4000 mcg in D5W 100 mL (40 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone 200 mcg/mL PCA - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; HYDROmorphone 20 000 mcg in D5W 100 mL (200 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL - By Proxy">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL 2 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8a249de9-5397-40e3-a515-6c0d14266b32" concept_name="PHARM fentaNYL 200 mcg in NaCl 0.9% 100 mL (2 mcg/mL) PCA infusion Order" max="1" path="/items" name="fentaNYL 200 mcg in NaCl 0.9% 100 mL (2 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL 10 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d67d699-eafb-43bd-bf6f-24c349511284" concept_name="PHARM FENTANYL PCA PED 10 MCG ML (1000 MCG) IN NACL 0 9 Percent 100 ML MFG [6000628] Order" max="1" path="/items" name="fentaNYL 1000 mcg in NaCl 0.9% 100 mL (10 mcg/mL) PCA infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fentaNYL 50 mcg/mL PCA infusion - By Proxy">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fa74afc-15e6-4306-82fc-0533dc477ebe" concept_name="PHARM FENTANYL PCA PED 50 MCG ML (5000 MCG) IN 100 ML (PHARM)(MFG) [6001044] Order" max="1" path="/items" name="fentaNYL 5,000 mcg in 100 mL (50 mcg/mL) PCA (PHARM)"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naloxone">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Precautions and Safety">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17543adf-583d-46d4-8b33-46db069480cf" concept_name="NURCOM At Bedside [NUR803] Order" max="1" path="/items" name="At Bedside; Until discontinued, Ensure Emergency Reaction Kit is at bedside"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Have naloxone (narcan) immediately available on unit"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Notify">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Patient less than 6 months of age: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Patient less than 6 months to 2 years of age: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following #1"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Patient ages 2 to 10 years: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #2"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Patient greater than 10 years of age: Notify Most Responsible Health practioner/Pediatric Palliative Care STAT if patient meets any one of the following"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="naloxone">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="63f47fa1-0b8a-4624-8769-9ec68ce14421" concept_name="PHARM naloxone injection Order" max="1" path="/items" name="naloxone injection; 0.02-0.04 mg, intravenous, every 1 minute, as needed, Severe opioid related respiratory depression and/or sedation, For 4 doses"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+</template>
