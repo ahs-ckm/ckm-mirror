@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~4ed99202-0a53-4624-aff9-7da63a3ff241~NAME~AHS OSN ADULT CDEP Transfusion Medicine Adult}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
     <items>
       <item>
@@ -100,7 +108,111 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~4ed99202-0a53-4624-aff9-7da63a3ff241~NAME~AHS OSN ADULT CDEP Transfusion Medicine Adult}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Transfusion Medicine Adult">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Restrictors/sub OSQs built to ensure products will only display in the order set if available at that site. Included here is the full list (for inpatient build)&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;&lt;u&gt;If you require blood products immediately a call to Transfusion Medicine is required. Also consider using the emergent blood products orders in this scenario.&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Downtime&lt;/u&gt;&amp;nbsp;&lt;br&gt;During a WellSky Downtime use the emergent transfusion orders as well and call blood bank to request products.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Prepare orders&lt;/u&gt;&amp;nbsp;&lt;br&gt;Prepare replaces ‘cross match’ and is the recommended order for patient with a greater than 10% likelihood of needing a transfusion. The transfuse order captures the nurses administration of the product/component. &amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Indications for Special Blood Product Processing&lt;/u&gt;&lt;br&gt;&lt;strong&gt;Irradiated cellular blood components:&lt;/strong&gt; (see link below for more information)&lt;br&gt;&lt;strong&gt;Washed cellular blood components:&lt;/strong&gt; Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&lt;strong&gt;Volume-reduced blood products: &lt;/strong&gt;Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&lt;strong&gt;Plasma reduction of platelets:&lt;/strong&gt; Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Irradiated cellular blood components (hyperlink to:&amp;nbsp;https://www.albertahealthservices.ca/assets/wf/lab/wf-lab-clin-tm-irradiated-use.pdf)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;The emergent orders are intended for documentation of the transfusion and do not generate a transfusion medicine product request.&lt;br&gt;&amp;nbsp;&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;For Emergent or Urgent Transfusion Call the Blood Bank to Request Products.&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;During a WellSky Downtime use the emergent transfusion orders as well and call blood bank to request products.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Red Blood Cells; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Transfuse: *** units&lt;/p&gt;&lt;p&gt;Transfusion duration per unit (hrs): ASAP&lt;/p&gt;&lt;p&gt;Comments:&amp;nbsp;If this request requires unmatched units, I acknowledge that in my opinion, this patient&apos;s clinical situation is sufficiently acute to justify the transfusion of red cells for which compatibility testing is incomplete.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Platelets; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Transfuse: *** units&lt;/p&gt;&lt;p&gt;Transfusion duration per unit (hrs): ASAP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Plasma; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Transfuse: *** units&lt;/p&gt;&lt;p&gt;Transfusion duration per unit (hrs): ASAP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Cryoprecipitate; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Transfuse: *** units&lt;/p&gt;&lt;p&gt;Transfusion rate (ml/min): ASAP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prothrombin Complex; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: ***&lt;/p&gt;&lt;p&gt;Units: *** (mL/Units)&lt;/p&gt;&lt;p&gt;Route: intravenous&lt;/p&gt;&lt;p&gt;Frequency: once&lt;/p&gt;&lt;p&gt;Indication: *** (must choose from below):&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Reversal of warfarin or vitamin K deficiency&lt;/li&gt;&lt;li&gt;Patient is on DOFX inhibitor&lt;/li&gt;&lt;li&gt;Other&lt;ul&gt;&lt;li&gt;Specify: ***&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Current literature does not support a role for pre-medications in the avoidance or reduction of &amp;nbsp;transfusion reactions.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;furosemide injection; furosemide IV - during transfusion; 20 mg, intravenous, once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Admin instructions: During transfusion&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;furosemide injection; furosemide IV - between transfusions; 20 mg, intravenous, once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Admin instructions:&amp;nbsp;After first unit of blood and prior to initiation of second unit of blood&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;furosemide injection; furosemide IV - following transfusion; 20 mg, intravenous, once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Admin Instructions: Following transfusion&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Priority: Routine&lt;/p&gt;&lt;p&gt;Reason for Consult?: ***&lt;/p&gt;&lt;p&gt;Did you contact the consultant?: No&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Transfusion Medicine Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
@@ -113,12 +225,45 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Suspected Transfusion Reaction Management"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3bb5aba1-89c1-48b2-8c34-012914a7f692" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR910] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP)"/>
     </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="3ebaebfc-d720-48db-86be-8f46db11d10d" concept_name="AHS OGR MULTI CDEP Blood Administration Red Blood Cells Units" max="1" path="/items" name="Blood Administration - Red Blood Cells"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9cbbe560-7cf2-436a-ac5b-3bc85fc88a36" concept_name="AHS OGR MULTI CDEP Blood Administration Platelets Units" max="1" path="/items" name="Blood Administration - Platelets"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9fcf6841-1e2c-4c57-a338-a05ddf22a3be" concept_name="AHS OGR MULTI CDEP Blood Administration Plasma Units" max="1" path="/items" name="Blood Administration - Plasma"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a9937101-ce91-4a15-a98f-5b1f9788eea9" concept_name="AHS OGR MULTI CDEP Blood Administration Cryoprecipitate Units" max="1" path="/items" name="Blood Administration - Cryoprecipitate"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="788718be-7cbc-43e8-86b2-2c2527662222" concept_name="AHS OGR MULTI CDEP Blood Administration Fibrinogen" max="1" path="/items" name="Blood Administration - Fibrinogen"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4d6ac587-8f51-4931-91e1-e8e81efc33a7" concept_name="AHS OGR MULTI CDEP Blood Administration Granulocytes" max="1" path="/items" name="Blood Administration - Granulocytes: *Requires TM Approval Contact Blood Bank*"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders - Emergent">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3a108db-52aa-4ee6-97cb-857b5a0ee16b" concept_name="TMASK STACEY Transfuse Emergent Red Blood Cells [NUR649] IP Order" max="1" path="/items" name="Transfuse Emergent Red Blood Cells; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="40439826-2acf-4b23-9cad-059c1fb2704e" concept_name="TMASK STACEY Transfuse Emergent Platelets [NUR30402] IP Order" max="1" path="/items" name="Transfuse Emergent Platelets; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5274a8f4-0acd-43a5-b3e6-c918cfd69f59" concept_name="TMASK STACEY Transfuse Emergent Plasma [NUR30403] IP Order" max="1" path="/items" name="Transfuse Emergent Plasma; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80a6acdb-f4a6-40f2-8d83-782c55ad930a" concept_name="TMASK STACEY Transfuse Emergent Cryoprecipitate [NUR30404] IP Order" max="1" path="/items" name="Transfuse Emergent Cryoprecipitate; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4030bd45-eb31-4916-8420-cff551143e09" concept_name="PHARM Prothrombin Complex Order" max="1" path="/items" name="Prothrombin Complex; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e9a5cef0-5ff1-4d48-b3d3-b1a6c610ca5c" concept_name="AHS OGN MULTI CDEP Intravenous Immune Globulin" max="1" path="/items" name="Intravenous Immune Globulin"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6748a278-c85e-4d51-a1a2-2a7391ea7512" concept_name="AHS OGN MULTI CDEP Blood Admnistration Reconstituted Whole Blood (mL) " max="1" path="/items" name="Blood Administration - Blood Administration - Reconstituted Whole Blood (mL); *Requires TM Approval Contact Blood Bank* (mL); *Requires TM Approval Contact Blood Bank*"/>
+    </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - Routine">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c1ddd85d-a3c0-4236-9def-98790200ff60" concept_name="AHS OGR MULTI CDEP Transfusion Medicine Labs" max="1" path="/items" name="Transfusion Medicine"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="542fc026-e9d3-466f-951a-0b33accc8056" concept_name="AHS OGR MULTI CDEP Pre Transfusion Labs" max="1" path="/items" name="Pre-Transfusion Labs"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dd8c9206-642c-455c-b320-49aeb4abd1eb" concept_name="AHS OGR MULTI CDEP Post Transfusion Labs" max="1" path="/items" name="Post-Transfusion Labs"/>
     </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders - Diuretics">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="400f8f77-b59c-4c9c-8bbe-b6328627fbb6" concept_name="PHARM furosemide injection Order" max="1" path="/items" name="furosemide injection; furosemide IV - during transfusion; 20 mg, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="400f8f77-b59c-4c9c-8bbe-b6328627fbb6" concept_name="PHARM furosemide injection Order" max="1" path="/items" name="furosemide injection; furosemide IV - between transfusions; 20 mg, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="400f8f77-b59c-4c9c-8bbe-b6328627fbb6" concept_name="PHARM furosemide injection Order" max="1" path="/items" name="furosemide injection; furosemide IV - following transfusion; 20 mg, intravenous, once"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Specialty Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="14ac3aa1-cdfa-43a7-8113-18bbf9acf75d" concept_name="CONS Inpatient Consult to Transfusion Medicine [CON161] IP Order" max="1" path="/items" name="Inpatient Consult to Transfusion Medicine"/>
+      </Item>
+    </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
@@ -137,6 +282,12 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
+    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
