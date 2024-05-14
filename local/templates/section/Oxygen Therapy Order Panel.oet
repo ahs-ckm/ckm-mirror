@@ -76,7 +76,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; High flow, High Percentage O2 Therapy Required (e.g. Carbon Monoxide Poisoning)&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; Acute Coronary Syndroms (ACS)&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -84,12 +84,20 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oxygen therapy; High flow, High Percentage O2 Therapy Required (e.g. Carbon Monoxide Poisoning)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Treat with high flow, high percent oxygen, preferably 100% by partial non-rebreather mask&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Oxygen Therapy Order Panel">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen therapy; Default, Titrate to Maintain Target Saturation Range: 92 to 96%, including Pregnancy and Acute Stroke:"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen therapy; Known CO2 retainer (Sp02 88% to 92%)"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen therapy; Acute Coronary Syndroms (ACS)"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RESP ADULT Oxygen Therapy Order" max="1" path="/items" name="Oxygen therapy; High flow, High Percentage O2 Therapy Required (e.g. Carbon Monoxide Poisoning)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Default, Titrate to Maintain Target Saturation Range: 92 to 96%, including Pregnancy and Acute Stroke:"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Known CO2 retainer (Sp02 88% to 92%)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Acute Coronary Syndroms (ACS)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; High flow, High Percentage O2 Therapy Required (e.g. Carbon Monoxide Poisoning)"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
