@@ -76,7 +76,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Intake goal 500 mL on POD 0&lt;/p&gt;</value>
+        <value>&lt;p&gt;Until discontinued, Intake goal 500 mL on POD 0&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -88,11 +88,31 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Post-Surgical Transition Diet: Start on POD 0, Now or Specify Date/Time&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Post-Surgical Transition Diet: Start on POD 0, Now or Specify Date/Time, For 24 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Standard Diet: Regular&lt;/p&gt;&lt;p&gt;GI/GI Surgery: Post Surgical Transition&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Post-Surgical Transition Diet: Start on POD 0, Now or Specify Date/Time, For 24 hours&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Regular: Start on POD 1, Now or Specify Date/Time&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1 day&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Standard Diet: Regular&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -104,9 +124,21 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Diabetic - Adult: start on POD 1, Now or Specify Date/Time&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1 day&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Standard Diet: Regular&lt;/p&gt;&lt;p&gt;Diabetes/ Heart Healthy: Diabetic Medium (1600-1800 kcal)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Enhanced Recovery After Surgery Diet">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Offer Patient Oral Fluids"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Post-Surgical Transition Diet: Start on POD 0, Now or Specify Date/Time"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Post-Surgical Transition Diet: Start on POD 0, Now or Specify Date/Time, For 24 hours"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Regular: Start on POD 1, Now or Specify Date/Time"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Diabetic - Adult: start on POD 1, Now or Specify Date/Time"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
