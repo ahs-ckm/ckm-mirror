@@ -66,7 +66,59 @@
         <key>Transform.Clinical Notes</key>
         <value>&lt;p&gt;Technical Note: Hard Stop if selected. Choose One.&amp;nbsp;&lt;/p&gt;</value>
       </item>
-    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~96c09fa3-aeb2-49db-aab2-b0d0986f8784~NAME~AHS OG R ADULT ONC Filgrastim Order Panel}</value></item></items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~96c09fa3-aeb2-49db-aab2-b0d0986f8784~NAME~AHS OG R ADULT ONC Filgrastim Order Panel}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight less than 60 kg&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;300 mcg, subcutaneous, daily&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Discontinue when absolute neutrophil count (ANC) greater or equal to 1 for 24 hours.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight less than 60 kg&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;nr&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight 60 to 90 kg&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;480 mcg, subcutaneous, daily&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Discontinue when absolute neutrophil count (ANC) greater or equal to 1 for 24 hours.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight 60 to 90 kg&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;nr&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight greater than 80 kg&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;600 mcg, subcutaneous, daily&lt;/p&gt;&lt;p&gt;Admin Instructions:&amp;nbsp;Discontinue when absolute neutrophil count (ANC) greater or equal to 1 for 24 hours.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight greater than 80 kg&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;nr&lt;/p&gt;</value>
+      </item>
+    </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
@@ -77,10 +129,16 @@
     </items>
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Filgrastim Order Panel">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a08f44c7-1f10-493e-ad77-e6c177872be7" concept_name="PHARM FILGRASTIM (NEUPOGEN OR NIVESTYM OR GRASTOFIL) INJECTION ORDERABLE [420056] Order" max="1" path="/items" name="filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight less than 60 kg"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a08f44c7-1f10-493e-ad77-e6c177872be7" concept_name="PHARM FILGRASTIM (NEUPOGEN OR NIVESTYM OR GRASTOFIL) INJECTION ORDERABLE [420056] Order" max="1" path="/items" name="filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight 60 to 90 kg"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a08f44c7-1f10-493e-ad77-e6c177872be7" concept_name="PHARM FILGRASTIM (NEUPOGEN OR NIVESTYM OR GRASTOFIL) INJECTION ORDERABLE [420056] Order" max="1" path="/items" name="filgrastim (Neupogen or Nivestym or Grastofil) injection orderable; for patient weight greater than 80 kg"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
