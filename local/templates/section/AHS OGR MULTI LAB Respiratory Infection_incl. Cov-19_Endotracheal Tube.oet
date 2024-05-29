@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>614cdc6c-62b3-48a3-9855-7dc145075c1d</id>
+  <name>AHS OGR MULTI LAB Respiratory Infection_incl. Cov-19_Endotracheal Tube</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~614cdc6c-62b3-48a3-9855-7dc145075c1d~NAME~AHS OGR MULTI LAB Respiratory Infection_incl. Cov-19_Endotracheal Tube}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: STAT&lt;/p&gt;&lt;p&gt;Specimen Type: &lt;strong&gt;Aspirate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Specimen Source (hard stop): Nasopharynx;&amp;nbsp;&lt;strong&gt;Endotracheal Tube&lt;/strong&gt;;&amp;nbsp;Bronchus, Left; Bronchus, Right&lt;/p&gt;&lt;p&gt;Reason for Testing (hard stop):&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; Symptomatic (if selected choose from below);&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;o &amp;nbsp; Admitted or ED patient likely to be admitted;&amp;nbsp;&lt;strong&gt;Rapid Covid-19 PCR&lt;/strong&gt;; Flu/RSV; Respiratory Pathogen Panel&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; ED patient to be discharged;&amp;nbsp;&lt;strong&gt;Rapid Covid-19 PCR&lt;/strong&gt;; Flu/RSV; Respiratory Pathogen Panel&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; Outbreak screen requested by Infection Control;&amp;nbsp;&lt;strong&gt;Rapid Covid-19 PCR&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; Pre-transplant patient screen;&amp;nbsp;&lt;strong&gt;Rapid Covid-19 PCR&lt;/strong&gt;; Respiratory Pathogen Panel&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;o&amp;nbsp;&amp;nbsp; Other; &lt;strong&gt;Specify (hard stop): ***,&amp;nbsp;&lt;/strong&gt;&lt;strong&gt;Rapid Covid-19 PCR&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Respiratory Infection (incl. Cov-19) -- Endotracheal Tube">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9213cc4b-7183-465d-bf5d-daf91606ab39" concept_name="LABMOL Respiratory Infection (incl. Cov-19) [LAB13073] Order" max="1" path="/items" name="Respiratory Infection (incl. Cov-19)"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+</template>
