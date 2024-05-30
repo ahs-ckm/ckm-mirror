@@ -204,6 +204,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Microbiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER; Herpes Simplex (HSV) and Varicella Zoster (VZV) Virus NAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;proc panel 421954&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Urinalysis&apos;]/activities[at0001]">
     <items>
       <item>
@@ -1378,7 +1386,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="de207412-5a52-4a61-a702-da025f14db52" concept_name="AHS OGR MULTI GEN Respiratory Infection_incl. Cov-19_Nasopharynx" max="1" path="/items" name="Respiratory Infection (incl. Cov-19) -- Nasopharynx"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LABMIC Mycobacteria Culture [LAB877] Order" max="1" path="/items" name="Mycobacteria Culture"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddc8db39-d1b0-4dfb-86f6-4de50dec80cf" concept_name="LABMIC Wound Culture [LAB50301] Order" max="1" path="/items" name="Wound Culture"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ce36efc2-24ab-4f3c-8379-ed3c5c6afd11" concept_name="AHS OGN MULTI LAB Herpes Simplex HSV and Varicella Zoster VZV Virus NAT" max="1" path="/items" name="Herpes Simplex (HSV) and Varicella Zoster (VZV) Virus NAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; Herpes Simplex (HSV) and Varicella Zoster (VZV) Virus NAT"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis"/>
@@ -1469,7 +1477,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; VTE Prophylaxis Cancer Adult"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5cf34712-0133-40e7-ac3e-7cd7e05fd2b0" concept_name="AHS OGN ADULT CDEP VTE Prophylaxis Cancer Adult" max="1" path="/items" name="VTE Prophylaxis-Cancer, Adult"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Formation, Coagulation and Thrombosis">
@@ -1712,8 +1720,5 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.adhoc_cluster_heading.v1">
-    <digest id="MD5-CAM-1.0.1">B87630C57A2DB1AE21050E1105EDE18B</digest>
   </integrity_checks>
 </template>
