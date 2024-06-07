@@ -76,15 +76,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet/Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet/Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Enteral Feeding&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Enteral Feeding (Breast, Bottle and Tube Feed)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -154,21 +146,18 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Expires: 12 Months, Routine, Ancillary Performed"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fcea1682-2ab9-4739-ab14-18e20cab83f4" concept_name="AHS OGR PEDS SUR PAC Topical Anesthetic Agents CT" max="1" path="/items" name="PAC Topical Anesthetic Agents; Pre-Admission Clinic"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0da60693-01f6-4521-a090-779852fa9222" concept_name="Referrals PAC Pediatric Smart Group" max="1" path="/items" name="PAC Referrals; Pre-Admission Clinic"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0da60693-01f6-4521-a090-779852fa9222" concept_name="AHS OGR PEDS SUR PAC Referrals" max="1" path="/items" name="PAC Referrals; Pre-Admission Clinic"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Before Day of Procedure">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet/Nutrition">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="36a16306-688a-4fc5-863e-b9325c1385cb" concept_name="Diet and Nutrition Pediatric Order Group" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d0c7272a-100f-4d32-b786-e97c71733849" concept_name="AHS OGR PEDS CH Pediatric Diet" max="1" path="/items" name="Pediatric Diet"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad683da7-0256-43c2-8f6d-f3abd76053f1" concept_name="AHS OGR PEDS CH Enteral Feeding Breast Bottle and Tube Feed" max="1" path="/items" name="Enteral Feeding (Breast, Bottle and Tube Feed)"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="Safety Precautions - Latex; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety; Preprocedure/Day Surgery">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcb47384-9730-40cb-9ad7-f5bc81d6f2f1" concept_name="PRE Safety precautions [PRE9] IP Order" max="1" path="/items" name="Safety precautions; Latex precautions"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d4232f0b-e75d-4653-93e8-2cbec90c5755" concept_name="Activity Preprocedure Pediatric Smart Group" max="1" path="/items" name="Activity Preprocedure Pediatric Smart Group; Preprocedure/Day Surgery"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9a1aaae0-55b5-4a18-ab1b-ec68547e810a" concept_name="Vital Signs Before Day of Procedure Pediatric Smart Group" max="1" path="/items" name="Vital Signs Before Day of Procedure Pediatric Smart Group; Preprocedure/Day Surgery"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d4232f0b-e75d-4653-93e8-2cbec90c5755" concept_name="AHS OGR PEDS SUR Activity Preprocedure CT" max="1" path="/items" name="Activity; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9a1aaae0-55b5-4a18-ab1b-ec68547e810a" concept_name="AHS OGR PEDS SUR Vital Signs Preprocedure CT" max="1" path="/items" name="Vital Signs; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose"/>
@@ -179,25 +168,21 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology; Preprocedure/Day Surgery">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="57f092a4-e3e2-4f40-95db-e6a30475a30a" concept_name="AHS OGR PEDS SUR Chemistry Preprocedure" max="1" path="/items" name="Labs - Chemistry; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation; Preprocedure/Day Surgery">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Transfusion Medicine; Preprocedure/Day Surgery">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="67b87e0f-a6e7-4870-bc58-7bd924542dd1" concept_name="Urine Preprocedure Pediatric Order Group" max="1" path="/items" name="Labs - Urine; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once; Preprocedure/Day Surgery"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="57f092a4-e3e2-4f40-95db-e6a30475a30a" concept_name="Chemistry Surgery Preprocedure Pediatric Smart Group" max="1" path="/items" name="Chemistry Surgery Preprocedure Pediatric Smart Group"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once; Preprocedure/Day Surgery"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Transfusion Medicine">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once; Preprocedure/Day Surgery"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Microbiology">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LABMIC Urine Culture Routine [LAB239] Order" max="1" path="/items" name="Urine Culture, Routine; Once; Preprocedure/Day Surgery"/>
-        </Item>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Urine">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="67b87e0f-a6e7-4870-bc58-7bd924542dd1" concept_name="Urine Preprocedure Pediatric Order Group" max="1" path="/items" name="Urine Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
-        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Microbiology"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Urine"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Stool"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Cerebrospinal Fluid"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Therapeutic Drug Monitoring and Toxicology"/>
@@ -208,8 +193,8 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Once, Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests; Preprocedure/Day Surgery">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance"/>
@@ -222,16 +207,19 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laxatives"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8bbeea2f-ee5f-44cb-87e5-f1d533a09687" concept_name="Consults Before Day of Procedure Surgery Preprocedure Pediatric Order Group" max="1" path="/items" name="Consults Before Day of Procedure Surgery Preprocedure Pediatric Order Group"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8f911f0c-627a-43c2-a50b-efd831149118" concept_name="CONS Inpatient Consult to Pediatric Anesthesia [CON141] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Anesthesia; Reason for Consult (hard stop)? ***"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="62d1a5c4-71cf-424f-ba7a-c43947129d60" concept_name="CONS Inpatient Consult to Child Life Specialist [CON218] IP Order" max="1" path="/items" name="Inpatient Consult to Child Life Specialist; Reason for Consult (hard stop)? ***"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Dietitian [CON34] IP Order" max="1" path="/items" name="Inpatient Consult to Dietitian; Reason for Consult (hard stop)? ***"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da7f8b58-fb42-4578-9dc8-4de38fbda558" concept_name="CONS Inpatient Consult to Ostomy Care Wound Care [CON158] IP Order" max="1" path="/items" name="Inpatient Consult to Ostomy Care/Wound Care; Reason for Consult (hard stop)? ***"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Day of Procedure">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cc55283a-753e-4782-94a6-c2bc171a3c26" concept_name="Diet and Nutrition Day of Procedure Pediatric Order Group" max="1" min="1" path="/items" name="Diet and Nutrition Day of Procedure Pediatric Order Group; Preprocedure/Day Surgery"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cc55283a-753e-4782-94a6-c2bc171a3c26" concept_name="Diet and Nutrition Day of Procedure Pediatric Order Group" max="1" min="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d4232f0b-e75d-4653-93e8-2cbec90c5755" concept_name="Activity Preprocedure Pediatric Smart Group" max="1" path="/items" name="Activity Preprocedure Pediatric Smart Group; Preprocedure/Day Surgery"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d4232f0b-e75d-4653-93e8-2cbec90c5755" concept_name="AHS OGR PEDS SUR Activity Preprocedure CT" max="1" path="/items" name="Activity; Preprocedure/Day Surgery"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Per unit protocol; Preprocedure/Day Surgery"/>
@@ -254,7 +242,7 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once, Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="57f092a4-e3e2-4f40-95db-e6a30475a30a" concept_name="Chemistry Surgery Preprocedure Pediatric Smart Group" max="1" path="/items" name="Chemistry Surgery Preprocedure Pediatric Smart Group; Preprocedure/Day Surgery"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="57f092a4-e3e2-4f40-95db-e6a30475a30a" concept_name="AHS OGR PEDS SUR Chemistry Preprocedure" max="1" path="/items" name="Labs - Chemistry; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once, Preprocedure/Day Surgery"/>
