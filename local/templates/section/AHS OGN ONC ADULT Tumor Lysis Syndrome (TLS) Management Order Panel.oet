@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~b3eea377-43b3-4be6-ae97-6e7b3799e691~NAME~AHS OGN ONC ADULT Tumor Lysis Syndrome (TLS) Management Order Panel}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
@@ -220,19 +228,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Tumor Lysis Syndrome Prophylaxis&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Tumor Lysis Syndrome Prophylaxis&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;allopurinol tablet&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;allopurinol&amp;nbsp;300 mg, oral, daily, &amp;nbsp;for 7 days, starting on Day 1; Authorized prescriber to reassess on Day 8&lt;/p&gt;</value>
+        <value>&lt;p&gt;300 mg, oral, daily, &amp;nbsp;for 7 days, starting on Day 1; Authorized prescriber to reassess on Day 8&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Tumor Lysis Syndrome Prophylaxis&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER #1&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Tumor Lysis Syndrome Prophylaxis&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;rasburicase IV&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;6 mg, intravenous, once, Authorized prescriber to assess need for additional doses&lt;/p&gt;&lt;p&gt;rasburicase 6 mg, intravenous, once, Authorized prescriber to assess need for additional doses&lt;/p&gt;</value>
+        <value>&lt;p&gt;6 mg, intravenous, once, Authorized prescriber to assess need for additional doses&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -260,7 +268,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~b3eea377-43b3-4be6-ae97-6e7b3799e691~NAME~AHS OGN ONC ADULT Tumor Lysis Syndrome (TLS) Management Order Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Tumor Lysis Syndrome (TLS) Management">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Tumor Lysis Syndrome (TLS) Management">
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication"/>
@@ -277,8 +285,8 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Tumor Lysis Syndrome Prophylaxis">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER #1"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6c0f722-7968-43f0-9820-b7256c23f78e" concept_name="PHARM allopurinol tablet Compiled Order" max="1" path="/items" name="allopurinol tablet"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32afb13a-6b81-46e1-be27-1c43757d7e32" concept_name="PHARM RASBURICASE IV ORDERABLE [4200340] Order" max="1" path="/items" name="rasburicase IV"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Fluid (if required for tumor lysis or renal risk)">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
