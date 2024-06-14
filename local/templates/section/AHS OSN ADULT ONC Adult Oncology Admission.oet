@@ -376,19 +376,19 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;NG panel&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;Comments:&amp;nbsp;Please describe in detail, the reason for referral or the clinical question you would like answered: &amp;nbsp;&lt;br&gt;{***}&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PLACEHOLDER&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Oxygen Therapy Order Panel&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Oxygen panel&lt;/span&gt;&lt;/p&gt;</value>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Incentive Spirometry&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -668,14 +668,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology/BMT Admission Orders&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;span style=&quot;color:#c0392b&quot;&gt;Other Hematology/BMT Laboratory Investigation - ONCE&lt;br&gt;Hematology Laboratory Investigations - REPEATING: DAILY/TWICE WEEKLY&lt;br&gt;Hematology Laboratory Investigations - REPEATING: TWICE WEEKLY&lt;br&gt;Hematology Laboratory Investigations - REPEATING: WEEKLY&lt;br&gt;BMT Laboratory Investigation - REPEATING&lt;/span&gt;&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hematology/BMT Admission Orders&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Clinical Communication&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); if temperature&apos;]/activities[at0001]">
     <items>
       <item>
@@ -811,11 +803,12 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="abc23d77-9055-4921-ab4c-e12ef6618283" concept_name="AHS OGR ADULT ONC NG Feeding Tube Insertion and Management" max="1" path="/items" name="NG Feeding Tube Insertion and Management"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="69b3ef76-c3d5-4ba1-9411-4b6aba02735e" concept_name="REF Ambulatory Referral to Home Nutrition Support Program [REF185] AMB Order" max="1" path="/items" name="Ambulatory Referral to Home Nutrition Support Program"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="867de78f-4506-47cb-8628-79a13d4b1e5b" concept_name="AHS OGR ADULT ONC Oxygen Therapy Order Panel" max="1" path="/items" name="Oxygen Therapy Order Panel"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99654b40-201f-4014-864b-256d0617b2c8" concept_name="NURINT Incentive Spirometry [NUR352] IP Order" max="1" path="/items" name="Incentive Spirometry"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c84aa003-692e-437f-a3b9-4c59d8980962" concept_name="Oxygen Therapy Arterial Blood Gas Order Panel" max="1" path="/items" name="Oxygen Therapy Arterial Blood Gas Order Panel"/>
       </Item>
@@ -1054,10 +1047,14 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology/BMT Admission Orders">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0b0de2cc-3610-4a6a-bd9c-bd6b991e2933" concept_name="AHS OGN ADULT ONC Hematology Laboratory Investigations - ONCE" max="1" path="/items" name="Hematology Laboratory Investigations - ONCE"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ca4f3b75-8274-43e8-b292-ed86813889af" concept_name="AHS OGN ADULT ONC BMT Laboratory Investigation - ONCE" max="1" path="/items" name="BMT Laboratory Investigation - ONCE"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f0c2a12e-e107-49d6-98b9-74b333016701" concept_name="AHS OGN ADULT ONC Other Hematology_BMT Laboratory Investigation - ONCE" max="1" path="/items" name="Other Hematology/BMT Laboratory Investigation - ONCE"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="899e9b82-ca47-4610-9def-65b7d10d34af" concept_name="AHS OGN ADULT ONC Hematology Laboratory Investigations - REPEATING_DAILY_TWICE WEEKLY" max="1" path="/items" name="Hematology Laboratory Investigations - REPEATING: DAILY/TWICE WEEKLY"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d03fe5e1-48a9-4cff-9c41-2311c8d0c00c" concept_name="AHS OGN ADULT ONC Hematology Laboratory Investigations - REPEATING_TWICE WEEKLY" max="1" path="/items" name="Hematology Laboratory Investigations - REPEATING: TWICE WEEKLY"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8c1965a3-a272-4ba4-a798-afce507d09f8" concept_name="AHS OGN ADULT ONC Hematology Laboratory Investigations - REPEATING_WEEKLY" max="1" path="/items" name="Hematology Laboratory Investigations - REPEATING: WEEKLY"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c77b8c7d-43de-4cec-890f-6f4d219fb642" concept_name="AHS OGN ADULT ONC BMT Laboratory Investigation - REPEATING" max="1" path="/items" name="BMT Laboratory Investigation - REPEATING"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Communication">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3bb5aba1-89c1-48b2-8c34-012914a7f692" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR910] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); if temperature"/>
