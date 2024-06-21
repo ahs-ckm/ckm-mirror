@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>e757dc20-c52b-448f-bf6f-37cdc42594c5</id><name>Reason for request 114389 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;114389&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP CANCER CARE WAITLIST REASON FOR REQUEST&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Reason for request&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~e757dc20-c52b-448f-bf6f-37cdc42594c5~NAME~Reason for request 114389 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Straight Admit&lt;/p&gt;
+					
+						&lt;p&gt;Further Investigation&lt;/p&gt;
+					
+						&lt;p&gt;Cellular Therapy Product&lt;/p&gt;
+					
+						&lt;p&gt;OR Post Op&lt;/p&gt;
+					
+						&lt;p&gt;Symptom Mgmt&lt;/p&gt;
+					
+						&lt;p&gt;Systemic Therapy&lt;/p&gt;
+					
+						&lt;p&gt;Clinical Trials&lt;/p&gt;
+					
+						&lt;p&gt;Radiation&lt;/p&gt;
+					
+						&lt;p&gt;Other&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					
+						&lt;p&gt;3. Equals&lt;/p&gt;
+					
+						&lt;p&gt;4. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Other&lt;/p&gt;
+					
+						&lt;p&gt;2. Systemic Therapy&lt;/p&gt;
+					
+						&lt;p&gt;3. Radiation&lt;/p&gt;
+					
+						&lt;p&gt;4. Symptom Mgmt&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					
+						&lt;p&gt;3. Or&lt;/p&gt;
+					
+						&lt;p&gt;4. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 114443&lt;/p&gt;
+					
+						&lt;p&gt;2. 114440&lt;/p&gt;
+					
+						&lt;p&gt;3. 114442&lt;/p&gt;
+					
+						&lt;p&gt;4. 114486&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS IP CANCER CARE OTHER&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS IP CANCER CARE OTHER SYSTEMIC THERAPY&lt;/p&gt;
+					
+						&lt;p&gt;3. AHS IP CANCER CARE OTHER RADIATION&lt;/p&gt;
+					
+						&lt;p&gt;4. AHS IP CANCER CARE SYMPTOM MANAGEMENT&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Reason for request"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Straight Admit</includedValues><includedValues>Further Investigation</includedValues><includedValues>Cellular Therapy Product</includedValues><includedValues>OR Post Op</includedValues><includedValues>Symptom Mgmt</includedValues><includedValues>Systemic Therapy</includedValues><includedValues>Clinical Trials</includedValues><includedValues>Radiation</includedValues><includedValues>Other</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b8adbc61-0479-4ed2-8945-e99344a11019" concept_name="Sytemic Therapy (specify) 114440 Question" max="1" path="/items[at0002]" name="Sytemic Therapy (specify)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="b9e0c78f-13a0-4b77-9be8-0790ca6a22b1" concept_name="Radiation (specify) 114442 Question" max="1" path="/items[at0002]" name="Radiation (specify)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="0dbbd22d-972d-4815-afd9-34ecbbf3e2af" concept_name="Other (specify) 114443 Question" max="1" path="/items[at0002]" name="Other (specify)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="f1f6c430-72a6-4ce8-9cd2-96594f5f995b" concept_name="Symptom Management (specify) 114486 Question" max="1" path="/items[at0002]" name="Symptom Management (specify):"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
