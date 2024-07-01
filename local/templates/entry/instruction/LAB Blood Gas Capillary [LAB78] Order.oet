@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>28a5c9d0-c133-4290-a8c4-b4c0f413a498</id><name>LAB Blood Gas Capillary [LAB78] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Lab Test.Lab Test Record</key><value>&lt;p&gt;1230100405&lt;/p&gt;</value></item><item><key>Lab Test.Authorized Laboratories</key><value>
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>28a5c9d0-c133-4290-a8c4-b4c0f413a498</id><name>LAB Blood Gas Capillary [LAB78] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Lab Test.Lab Test Record</key><value>&lt;p&gt;1230100405&lt;/p&gt;</value></item><item><key>Lab Test.Authorized Laboratories</key><value>
 						&lt;p&gt;
 						BAN Banff - Mineral Springs Hospital Laboratory&lt;br&gt;
 								BRO Brooks Health Centre Laboratory&lt;br&gt;
@@ -21,13 +21,12 @@
 								DID Didsbury District Health Services Building Laboratory&lt;br&gt;
 								SWP Strathcona Community Hospital Laboratory&lt;br&gt;
 								RMH Rocky Mountain House Health Centre Laboratory&lt;br&gt;
-								STP St. Therese - St. Paul Healthcare Centre Laboratory&lt;br&gt;
+								WHI Whitecourt Healthcare Centre Laboratory&lt;br&gt;
 								LED Leduc Community Hospital Laboratory&lt;br&gt;
-								GRP Grande Prairie Regional Hospital Laboratory&lt;br&gt;
 								EDM East Edmonton Health Centre Laboratory&lt;br&gt;
 								HAN Hanna Health Centre Laboratory&lt;br&gt;
 								SYL Sylvan Lake Community Health Centre Laboratory&lt;br&gt;
-								OLD Olds Hospital and Care Centre&lt;br&gt;
+								OLD Olds Hospital and Care Centre Laboratory&lt;br&gt;
 								DAY Daysland Health Centre Laboratory&lt;br&gt;
 								HAR Hardisty Health Centre Laboratory&lt;br&gt;
 								KIL Killam Health Care Centre Laboratory&lt;br&gt;
@@ -35,7 +34,8 @@
 								PRO Provost Health Centre Laboratory&lt;br&gt;
 								TOF Tofield Health Centre Laboratory&lt;br&gt;
 								TWO Two Hills Health Centre Laboratory&lt;br&gt;
-								VEG St. Joseph&amp;#39;s ...
+								VEG St. Joseph&amp;#39;s General Hospital Laboratory&lt;br&gt;
+								VER Vermilion Health ...
 						&lt;/p&gt;
 					</value></item><item><key>Lab Test.Default Container</key><value>
 						&lt;p&gt;
@@ -60,8 +60,7 @@
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
-								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
-								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
+								HEPARINIZED SYRINGE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
@@ -102,8 +101,7 @@
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
-								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
-								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
+								HEPARINIZED SYRINGE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
 								HEPARINIZED CAPILLARY TUBE&lt;br&gt;
@@ -144,9 +142,8 @@
 								DID DDHS Chemistry&lt;br&gt;
 								SWP SCCH Chemistry&lt;br&gt;
 								RMH RMHC Chemistry&lt;br&gt;
-								STP SPHC Chemistry&lt;br&gt;
+								WHI WHC Chemistry&lt;br&gt;
 								LED LCH Chemistry&lt;br&gt;
-								GRP GPRH Chemistry&lt;br&gt;
 								EDM EEHC Chemistry&lt;br&gt;
 								HAN HHC Chemistry&lt;br&gt;
 								SYL SLCHC Chemistry&lt;br&gt;
@@ -200,4 +197,4 @@
 						CBG&lt;br&gt;
 								GASES
 						&lt;/p&gt;
-					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB78&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~28a5c9d0-c133-4290-a8c4-b4c0f413a498~NAME~LAB Blood Gas Capillary [LAB78] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Blood Gas Capillary"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Daily Morning</includedValues><includedValues>Timed</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks></template>
+					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB78&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~28a5c9d0-c133-4290-a8c4-b4c0f413a498~NAME~LAB Blood Gas Capillary [LAB78] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Blood Gas Capillary"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Daily Morning</includedValues><includedValues>Timed</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood, Capillary</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (AMB)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (AMB)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks></template>
