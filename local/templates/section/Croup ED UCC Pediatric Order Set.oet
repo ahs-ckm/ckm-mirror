@@ -215,6 +215,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inhaled Medications&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Systemic administration (PO/IM/IV) of steroids is the preferred treatment for croup. Inhaled budesonide can be considered in severe cases (i.e. impending airway obstruction/requiring repeated doses of epinephrine) OR in children who cannot receive or tolerate systemic steroids.&lt;br&gt;&amp;nbsp;&lt;br&gt;Children with croup should not require nebulized epinephrine to treat stridor unless stridor is occurring at rest AND accompanied by perceived distress or discomfort or increased work of breathing.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;Nebulized EPINEPHrine&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;Nebulization should be used in children with impending respiratory failure as evidenced by low room air saturation and/or abnormal mental status.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;May be repeated back to back in children with severe distress/ near respiratory failure but requires frequent re-evaluation.&amp;nbsp;&lt;br&gt;&lt;strong&gt;Contraindications&lt;/strong&gt;: Caution should be exercised when used in children with narrow angle glaucoma or cardiac abnormalities (consider cardiorespiratory monitor during administration).&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;&lt;strong&gt;Budesonide&lt;/strong&gt;&lt;/u&gt;&lt;br&gt;Consider in a child with severe croup, or child with persistent vomiting.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;Inhaled budesonide is a consideration in severe cases (i.e. repeated doses of epinephrine and ongoing stridor) and/or no ability/access to provide systemic steroid.&lt;br&gt;More commonly causes agitation than oral administration and more expensive than dexamethasone. Budesonide may be mixed with epinephrine and administered simultaneously.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dexamethasone - Preferred Treatment; Single Select&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
     <items>
       <item>
@@ -257,7 +265,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 1 Hour"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
@@ -282,7 +290,17 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5db13963-d77a-43d8-ac09-d3831abb8285" concept_name="ED Analgesics and Antipyretics Pediatric Order Group" max="1" path="/items" name="ED Analgesics and Antipyretics Pediatric Order Group"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6d863530-4ff7-4177-8e3f-9ba49cf1b2a3" concept_name="Inhaled Medications Croup Pediatric ED UCC Order Group" max="1" path="/items" name="Inhaled Medications"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inhaled Medications">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Nebulized EPINEPHrine1">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="48cfca84-31a2-40e5-ab72-2e13238f525a" concept_name="PHARM EPINEPHrine injection for inhalation use 1 mg/mL Order" max="1" path="/items" name="EPINEPHrine injection for inhalation use 1 mg/mL; 5mg inhalation, once"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Budesonide: Consider in child with severe croup, or child with persistent vomiting1">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="13ea8e21-4d93-4e03-9488-26e4eaf57433" concept_name="PHARM budesonide Nebule 0.5 mg/mL Order" max="1" path="/items" name="budesonide Nebule 0.5 mg/mL; 2mg, inhalation, daily"/>
+        </Item>
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Dexamethasone - Preferred Treatment; Single Select">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd0fbb33-49cc-44e8-9cda-658f8bad7174" concept_name="PHARM DEXAMETHASONE ORAL LIQUID ORDERABLE [4200755] Order" max="1" path="/items" name="dexAMETHasone oral liquid; 1 mg/mL, 0.6 mg/kg/dose, oral, once"/>
