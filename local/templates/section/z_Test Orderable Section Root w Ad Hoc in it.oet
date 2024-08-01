@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <id>2eea5708-bd44-4642-a8bc-203fb997cbe7</id>
   <name>z_Test Orderable Section Root w Ad Hoc in it</name>
   <description>
@@ -60,7 +59,7 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -68,7 +67,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -76,31 +75,28 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~2eea5708-bd44-4642-a8bc-203fb997cbe7~NAME~z_Test Orderable Section Root w Ad Hoc in it}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="z_Test Orderable Section Root w Ad Hoc in it">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="027b239b-2033-4a11-9175-cee0d83badb1" concept_name="z.1122testOI" max="1" path="/items" name="z.1122testOI"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" path="/items">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a5929dd6-0d18-49b4-9f3b-d3a4ed6b1e1b" concept_name="z.1.12.2testOI" max="1" path="/items" name="z.1.12.2testOI"/>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~2eea5708-bd44-4642-a8bc-203fb997cbe7~NAME~z_Test Orderable Section Root w Ad Hoc in it}</value></item></items></annotations><definition archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="z_Test Orderable Section Root w Ad Hoc in it" xsi:type="SECTION">
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" xsi:type="SECTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="z.1122testOI" max="1" name="z.1122testOI" path="/items" template_id="027b239b-2033-4a11-9175-cee0d83badb1" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" path="/items" xsi:type="SECTION">
+      <Item archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" xsi:type="INSTRUCTION"/>
+      <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="z.1.12.2testOI" max="1" name="z.1.12.2testOI" path="/items" template_id="a5929dd6-0d18-49b4-9f3b-d3a4ed6b1e1b" xsi:type="INSTRUCTION"/>
     </Item>
   </definition>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  <integrity_checks archetype_id="openEHR-EHR-SECTION.adhoc.v1" xsi:type="ArchetypeIntegrity">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+  <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+  <integrity_checks archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+  <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+  <integrity_checks archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
-    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
   </integrity_checks>
 </template>
