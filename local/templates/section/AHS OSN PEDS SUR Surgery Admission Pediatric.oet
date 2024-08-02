@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>395b3ec0-f6f9-4546-b1f8-945a54678dea</id>
+  <name>AHS OSN PEDS SUR Surgery Admission Pediatric</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~395b3ec0-f6f9-4546-b1f8-945a54678dea~NAME~AHS OSN PEDS SUR Surgery Admission Pediatric}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;Order Set Keywords: &lt;/strong&gt;Admission, Admit, FS, pediatric , surgery, AHS&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Enteral Feeding (Breast, Bottle and Tube Feed)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Activity Level: No Activity Restrictions&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;YR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Activity Level: Strict Bed Rest&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Activity Level: Bed Rest With Exceptions: Bathroom Privileges&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Activity Level: Bed Rest With Exceptions: Ambulate with Assistance&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Activity Level: Bed Rest With Exceptions: Up in Chair&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Weight Bearing&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;These orders appear to be ambulatory orders &apos;clinic performed&apos; - should update to IP orders&lt;/p&gt;&lt;p&gt;OSQ&amp;nbsp;206300&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-respiratory Monitoring; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Can the patient be off monitoring for tests and activities (including therapy, ambulation, off-unit procedures, showers, bathroom) (hard stop)? Yes, No&lt;/p&gt;&lt;p&gt;If the alarms are not set, nursing will follow unit protocol.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Chest Tube Maintenance; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Instructions for: All Chest Tubes&lt;br&gt;Drainage system type: Closed Drainage (Pleurovac)&lt;br&gt;Suction Level (cmH2O): Underwater Seal&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Type of tube: NG tube&lt;/p&gt;&lt;p&gt;Action (hard stop): Insert, Remove, Clamp, Maintain, Other (Specify)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Standard Age based Vital Sign parameters&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Temperature Greater Than (°C): 38.5&lt;br&gt;SpO2 Less Than (%): 90&lt;br&gt;Notify Most Responsible Health Practitioner (MRHP) - Standard Age based Vital Sign parameters&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Is this a future scheduled pre-operative patient testing order (hard stop)? Yes&lt;br&gt;Has the patient been transfused outside Alberta in the last 90 days (hard stop)? Yes, No, Unknown&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Urine Culture, Routine; Once Routine, Urine, Urine, Midstream&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Indication (hard stop): ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ultrasound&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;US Pelvis Male; Once Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for exam/clinical question to be answered (hard stop): ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ultrasound&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;US Pelvis Female; Once Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for exam/clinical question to be answered (hard stop): ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Insert peripheral IV; Once Routine&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Maintain IV Access; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove (Not required) - Approved by Dr Dicken Jan 7, 2021&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine Gel 4%; topical, once, Apply 1/2 tube directly over vein and cover with occlusive dressing for 30 to 45 minutes pre-procedure&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove (Not Required as Provincial Nursing Protocol approved - CCT&amp;nbsp;&lt;em&gt;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures - &lt;/em&gt;Approved by Dr Dicken Jan 8, 2021&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lidocaine-prilocaine Cream 2.5%-2.5% (Emla); topical, once, Apply directly over vein and cover with occlusive dressing for 45 to 60 minutes pre-procedure&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove (Not Required as Provincial Nursing Protocol approved - CCT&amp;nbsp;&lt;em&gt;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures - &lt;/em&gt;Approved by Dr Dicken Jan 8, 2021&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lidocaine, liposomal Cream 4%; topical, Once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove (Not Required as Provincial Nursing Protocol approved - CCT&amp;nbsp;&lt;em&gt;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures - &lt;/em&gt;Approved by Dr Dicken Jan 8, 2021&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;May be applied to two sites and covered with an occlusive dressing for 30 minutes prior to procedure.&lt;br&gt;DOSE: For neonates to 3 years old, use 1/5th tube or 2 cm length of cream per site (equals 1 gram per site).&lt;br&gt;For 4 years and OLDER, use 1/2 tube of cream per site (equals 2.5 grams per site).&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Maintenance&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sucrose Oral liquid 24%; 2 mL, oral, once, as needed, procedural pain&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove (Not Required as Provincial Nursing Protocol approved - CCT&amp;nbsp;&lt;em&gt;Application of Topical Local Anesthetic for Potentially Painful Skin-Breaking Procedures - &lt;/em&gt;Approved by Dr Dicken Jan 8, 2021&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Apply only one drop at a time onto the tongue OR apply drops of the solution onto soother and allow infant non-nutritive sucking on pacifier. Maximum 5 doses per day.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s bolus; 10 mL/kg/dose, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s bolus; 20 mL/kg/dose, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% bolus; 10 mL/kg/dose, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Boluses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% bolus; 20 mL/kg/dose, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.9% infusion; *** mL/hr, intravenous, continuous&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion; *** mL/hr, intravenous, continuous&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion; *** mL/hr, intravenous, continuous&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Choose ONE antibiotic option for treatment of Complicated Appendicitis/Non-operative Management of Late Perforated Appendicitis with Phlegmonous Mass or Abscess&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cefTRIAXone and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;cefTRIAXone recommended dosage is 50 to 75 mg/kg/dose q24h&lt;br&gt;metroNIDAZOLE recommended dosage is 30 mg/kg/day divided q12h&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cefTRIAXone and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cefTRIAXone injection; *** mg (50 mg/kg/dose), intravenous, every 24 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cefTRIAXone and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cefTRIAXone and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ampicillin, gentamicin, and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;ampicillin recommended dosage is 200 mg/kg/day divided q6h&lt;br&gt;gentamicin recommended dosage is 2.5 mg/kg/dose&amp;nbsp;&lt;br&gt;metroNIDAZOLE recommended dosage is 30 mg/kg/day divided q12h&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ampicillin, gentamicin, and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ampicillin injection; *** mg (200 mg/kg/day), intravenous, every 6 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ampicillin, gentamicin, and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ampicillin, gentamicin, and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ampicillin, gentamicin, and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2 : piperacillin/tazobactam - Reserved for patients with signs and symptoms of severe sepsis&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Dosed as piperacillin component: &amp;nbsp;300 mg piperacillin/kg/day divided q8h&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2 : piperacillin/tazobactam - Reserved for patients with signs and symptoms of severe sepsis&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2 : piperacillin/tazobactam - Reserved for patients with signs and symptoms of severe sepsis&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;clindamycin, recommended dosage is 40 mg/kg/day divided q8h&lt;br&gt;gentamicin, recommended dosage 2.5 mg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;clindamycin injection; *** mg (40 mg/kg/day), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Complicated Infections - Anti-Infectives&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: ceFAZolin and metroNIDAZOLE&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;ceFAZolin recommended dosage is 90 mg/kg/day divided q8h&lt;br&gt;metroNIDAZOLE recommended dosage is 30 mg/kg/day divided q12h&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: ceFAZolin and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ceFAZolin injection; *** mg (90 mg/kg/day), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: ceFAZolin and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 1: ceFAZolin and metroNIDAZOLE&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;clindamycin, recommended dosage is 40 mg/kg/day divided q8h&lt;br&gt;gentamicin, recommended dosage 2.5 mg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;clindamycin injection; *** mg (40 mg/kg/day), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 2: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: metroNIDAZOLE and gentamicin&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Due to known side effects and significant increased gram negative resistance, ciprofloxacin and other fluoroquinolones in combination with metronidazole or clindamycin are reserved for when there is no other reasonable alternative. Review of local antibiograms should be considered.&lt;br&gt;&amp;nbsp;&lt;br&gt;metroNIDAZOLE recommended dosage is 30 mg/kg/day divided q12h&lt;br&gt;gentamicin, recommended dosage is 2.5 mg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: metroNIDAZOLE and gentamicin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: metroNIDAZOLE and gentamicin&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Simple Infections Anti-Infective&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Option 3: metroNIDAZOLE and gentamicin&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Topical Agents&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Must be ordered for all patients over one month of age undergoing skin breaking procedures. Suggested maximum 2 tubes/day.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Surgery Admission Pediatric">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="00313ac4-46aa-4eb9-8663-c89adb67dd70" concept_name="AHS OGR PEDS CH Pediatric Admission" max="1" path="/items" name="Pediatric Admission"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="970cd722-5a0b-4065-a0c6-86afdb408177" concept_name="AHS OGN PEDS CH Isolation Panel Pediatric" max="1" path="/items" name="Isolation Panel Pediatric"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d0c7272a-100f-4d32-b786-e97c71733849" concept_name="AHS OGR PEDS CH Pediatric Diet" max="1" path="/items" name="Pediatric Diet"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad683da7-0256-43c2-8f6d-f3abd76053f1" concept_name="AHS OGR PEDS CH Enteral Feeding Breast Bottle and Tube Feed" max="1" path="/items" name="Enteral Feeding (Breast, Bottle and Tube Feed)"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="da13559d-90f6-41a4-88fc-fb49dab8faa4" concept_name="AHS OGR MULT SUR Positioning" max="1" path="/items" name="Positioning"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Activity Level: No Activity Restrictions"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Activity Level: Strict Bed Rest"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Activity Level: Bed Rest With Exceptions: Bathroom Privileges"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Activity Level: Bed Rest With Exceptions: Ambulate with Assistance"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Activity Level: Bed Rest With Exceptions: Up in Chair"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Weight Bearing">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dada0a35-1622-4b65-b34f-1c024669ff3b" concept_name="NURAX Weight Bearing [NUR138] IP Order" max="1" path="/items" name="Weight Bearing; Non-weight bearing"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dada0a35-1622-4b65-b34f-1c024669ff3b" concept_name="NURAX Weight Bearing [NUR138] IP Order" max="1" path="/items" name="Weight Bearing; Full"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dada0a35-1622-4b65-b34f-1c024669ff3b" concept_name="NURAX Weight Bearing [NUR138] IP Order" max="1" path="/items" name="Weight Bearing; Partial"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dada0a35-1622-4b65-b34f-1c024669ff3b" concept_name="NURAX Weight Bearing [NUR138] IP Order" max="1" path="/items" name="Weight Bearing; Toe Touch"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dada0a35-1622-4b65-b34f-1c024669ff3b" concept_name="NURAX Weight Bearing [NUR138] IP Order" max="1" path="/items" name="Weight Bearing; As tolerated"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological Vital Signs; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99bd6a68-2771-4309-8049-8f713ed560c3" concept_name="NURAX Neurovascular Checks [NUR475] IP Order" max="1" path="/items" name="Neurovascular Checks; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bd9d9b96-d198-499a-8ade-963106ad04b2" concept_name="NURAX Pain Score [NUR847] IP Order" max="1" path="/items" name="Pain Score; Pain Score and Nausea; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c95ed23e-7578-492a-93b9-39c75abd31b1" concept_name="NURAX Continuous Pulse Oximetry [NUR586] IP Order" max="1" path="/items" name="Continuous Pulse Oximetry; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="NURAX Cardio-respiratory Monitoring [NUR225] IP Order" max="1" path="/items" name="Cardio-respiratory Monitoring; Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Daily"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="NURAX Measure Height or Length [NUR616] IP Order" max="1" path="/items" name="Measure Height or Length; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d53319ae-f4d7-4d6f-b909-b61ff27b2531" concept_name="NURINT Chest Tube Maintenance [NUR825] IP Order" max="1" path="/items" name="Chest Tube Maintenance; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="NURINT Gastric Tube Care [NUR336] IP Order" max="1" path="/items" name="Gastric Tube Care; Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c9cea756-230f-4b9a-9ba2-8db2c8272883" concept_name="AHS OGR PEDS CH Respiratory Interventions" max="1" path="/items" name="Respiratory Interventions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Standard Age based Vital Sign parameters"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Specify"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Urine output less than 1 mL/kg/hr over 8 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP; If increased or unresolved pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); If saturated dressing or excessive bleeding at wound site"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="18d47f5a-9a31-4da9-b3fa-40148a6b1a31" concept_name="AHS OGR PEDS SUR Chemistry Surgery Admission Pediatric" max="1" path="/items" name="Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a1353852-a031-4e88-b88a-9aff122bd26e" concept_name="AHS OGN PEDS CH Blood Culture - Pediatric Weight Based Order Panel" max="1" path="/items" name="Blood Culture Panel - Pediatric Weight Based"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LABMIC Urine Culture Routine [LAB239] Order" max="1" path="/items" name="Urine Culture, Routine; Once Routine, Urine, Urine, Midstream"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis; Once Routine, Urine, Urine, Midstream"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4aa8cf90-0563-4146-b50d-cfb2e912dcad" concept_name="LABUR Pregnancy Test Urine [LAB437] Order" max="1" path="/items" name="Pregnancy Test, Urine; Once Routine, Urine, Urine, Midstream"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34fd84e4-0ab2-4743-998e-892958eb37e4" concept_name="LABPOCT Blood Gas Arterial POCT [POC114] Order" max="1" path="/items" name="Blood Gas Arterial POCT; Once Routine"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="797c3e1b-1aa0-4ad8-8d4f-7fd4cd6214f2" concept_name="AHS OGR PEDS CH General Radiology" max="1" path="/items" name="General Radiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ultrasound">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="74d129f1-0e78-43b6-830f-ba06274a391d" concept_name="NURPOC Abdominal Ultrasound POC [PRO161] Order" max="1" path="/items" name="Abdominal Ultrasound POC; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0401cccb-4be5-4dc0-a7a1-9e11ab8f48d5" concept_name="IMGUS US Pelvis Male [IMG3416] Order" max="1" path="/items" name="US Pelvis Male; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="af5c3844-84ed-4e31-b1d1-d9cb27b520e1" concept_name="IMGUS US Pelvis Female [IMG3415] Order" max="1" path="/items" name="US Pelvis Female; Once Routine"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="edc6d443-87da-40da-9326-33d7653b0129" concept_name="NURCOM Maintain IV Access [NUR562] IP Order" max="1" path="/items" name="Maintain IV Access; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride, lock solution; 1-3 mL, intravenous, every 8 hours, as needed, maintenance of line patency, following intermittent administration of fluid, medication or blood products"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="NURIV Convert to saline lock IV [IVT11] Order" max="1" path="/items" name="Convert to saline lock IV; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e29f686-4c87-405d-9d45-3d98c85c6f47" concept_name="PHARM tetracaine Gel 4% Order" max="1" path="/items" name="tetracaine Gel 4%; topical, once, Apply 1/2 tube directly over vein and cover with occlusive dressing for 30 to 45 minutes pre-procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de239ed9-bf2c-4b0d-8e94-3c8f8419b5ce" concept_name="PHARM lidocaine-prilocaine Cream 2.5%-2.5% (Emla) Order" max="1" path="/items" name="lidocaine-prilocaine Cream 2.5%-2.5% (Emla); topical, once, Apply directly over vein and cover with occlusive dressing for 45 to 60 minutes pre-procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM lidocaine, liposomal Cream 4% Order" max="1" path="/items" name="lidocaine, liposomal Cream 4%; topical, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1fe398b-f069-4cf4-9680-df004a6cffb3" concept_name="PHARM sucrose Oral liquid 24% Order" max="1" path="/items" name="sucrose Oral liquid 24%; 2 mL, oral, once, as needed, procedural pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a1ba19c-a383-455f-81d6-eda4517485ed" concept_name="PHARM lactated Ringer_s bolus order" max="1" path="/items" name="lactated Ringer&apos;s bolus; 10 mL/kg/dose, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a1ba19c-a383-455f-81d6-eda4517485ed" concept_name="PHARM lactated Ringer_s bolus order" max="1" path="/items" name="lactated Ringer&apos;s bolus; 20 mL/kg/dose, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad170dc-0168-4a5e-b18d-b84496da37b8" concept_name="PHARM sodium chloride 0.9% bolus order" max="1" path="/items" name="sodium chloride 0.9% bolus; 10 mL/kg/dose, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad170dc-0168-4a5e-b18d-b84496da37b8" concept_name="PHARM sodium chloride 0.9% bolus order" max="1" path="/items" name="sodium chloride 0.9% bolus; 20 mL/kg/dose, intravenous, once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM dextrose 5%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.9% infusion; *** mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion; *** mL/hr, intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer_s infusion Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; *** mL/hr, intravenous, continuous"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Complicated Infections - Anti-Infectives">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Option 1: cefTRIAXone and metroNIDAZOLE OR ampicillin, gentamicin and metroNIDAZOLE">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cefTRIAXone and metroNIDAZOLE">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="46facdb5-2f39-40f1-9c04-7f66e4c25df5" concept_name="PHARM cefTRIAXone injection Order" max="1" path="/items" name="cefTRIAXone injection; *** mg (50 mg/kg/dose), intravenous, every 24 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" concept_name="PHARM metroNIDAZOLE injection Order" max="1" path="/items" name="metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ampicillin, gentamicin, and metroNIDAZOLE">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="efb7f546-10b0-4aad-a930-97faaf58e5e2" concept_name="PHARM ampicillin injection Order" max="1" path="/items" name="ampicillin injection; *** mg (200 mg/kg/day), intravenous, every 6 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" concept_name="PHARM metroNIDAZOLE injection Order" max="1" path="/items" name="metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Option 2 : piperacillin/tazobactam - Reserved for patients with signs and symptoms of severe sepsis">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ab1712c1-797c-4370-a11b-a2f0c31cfc8d" concept_name="PHARM piperacillin-tazobactam injection Order" max="1" path="/items" name="piperacillin-tazobactam injection; *** mg (300 mg/kg/day), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Option 3: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eae3d03c-57f0-4341-8e81-0577dfab869f" concept_name="PHARM clindamycin injection Order" max="1" path="/items" name="clindamycin injection; *** mg (40 mg/kg/day), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Simple Infections Anti-Infective">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Option 1: ceFAZolin and metroNIDAZOLE">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM ceFAZolin injection Order" max="1" path="/items" name="ceFAZolin injection; *** mg (90 mg/kg/day), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" concept_name="PHARM metroNIDAZOLE injection Order" max="1" path="/items" name="metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Option 2: clindamycin and gentamicin - for patients with ceFAZolin allergy or severe non-IgE mediated reaction to any B-lactam">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eae3d03c-57f0-4341-8e81-0577dfab869f" concept_name="PHARM clindamycin injection Order" max="1" path="/items" name="clindamycin injection; *** mg (40 mg/kg/day), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Option 3: metroNIDAZOLE and gentamicin">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" concept_name="PHARM metroNIDAZOLE injection Order" max="1" path="/items" name="metroNIDAZOLE injection; *** mg (30 mg/kg/day), intravenous, every 12 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c64035f-72ac-454d-bf7b-60d73c421c66" concept_name="PHARM gentamicin injection Order" max="1" path="/items" name="gentamicin injection; *** mg (2.5 mg/kg/dose), intravenous, every 8 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4335d9ca-0656-4e30-8d1d-6bfd140c6ffc" concept_name="AHS OGR PEDS CH Analgesics and Antipyretics Acute Pain Pediatric" max="1" path="/items" name="Analgesics and Antipyretics Preprocedure Pediatric Order Group"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fed5d751-e5cb-4490-8299-ffda3c5a4fa5" concept_name="AHS OGR PEDS CH Antiemetics Acute Pain" max="1" path="/items" name="Antiemetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7c1f7bee-e636-48b3-b0f7-eca1de841c58" concept_name="AHS OGR PEDS CH Laxatives Acute Pain" max="1" path="/items" name="Laxatives"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dbd46959-5fa8-4337-a458-bfd73a13edcc" concept_name="AHS OGR PEDS CH Antiulcer Agents and Acid Suppressants Acute Pain" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Topical Agents">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e29f686-4c87-405d-9d45-3d98c85c6f47" concept_name="PHARM tetracaine Gel 4% Order" max="1" path="/items" name="tetracaine Gel 4%; topical, once, 30-45 min prior to procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM lidocaine, liposomal Cream 4% Order" max="1" path="/items" name="lidocaine, liposomal Cream 4%topical, once, 30-45 min prior to procedure"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7632d22a-00e2-4c90-9fa2-284384be42b0" concept_name="AHS OGR PEDS SUR Antipruritics Surgery Admission Pediatric" max="1" path="/items" name="Antipruritics"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inpatient Specialty Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="448f47f1-3138-40eb-8590-a1193d01df42" concept_name="CONS Inpatient Consult to Pediatric Acute Pain Services [CON264] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Acute Pain Services"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="62d1a5c4-71cf-424f-ba7a-c43947129d60" concept_name="CONS Inpatient Consult to Child Life Specialist [CON218] IP Order" max="1" path="/items" name="Inpatient Consult to Child Life Specialist"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8dd4f7bd-97f4-4d0f-9bbd-4c3cd40cfdf8" concept_name="CONS Inpatient Consult to Indigenous Health [CON118] IP Order" max="1" path="/items" name="Inpatient Consult to Indigenous Health"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="09978e1d-51dd-49d1-80e4-e5872b83a1f1" concept_name="CONS Inpatient Consult to Dietitian [CON34] IP Order" max="1" path="/items" name="Inpatient Consult to Dietitian"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy [CON201] IP Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Work [CON65] IP Order" max="1" path="/items" name="Inpatient Consult to Social Work"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da7f8b58-fb42-4578-9dc8-4de38fbda558" concept_name="CONS Inpatient Consult to Ostomy Care Wound Care [CON158] IP Order" max="1" path="/items" name="Inpatient Consult to Ostomy Care/Wound Care"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8c20d566-da8f-4bf9-820a-3158caf6a9f1" concept_name="CONS Inpatient Consult to Pediatric Home Nutrition Support Program [CON267] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Home Nutrition Support Program; For home enteral therapy."/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+</template>
