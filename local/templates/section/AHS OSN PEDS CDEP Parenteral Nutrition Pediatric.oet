@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>3dcd5ffa-dad3-4bd7-8b53-963070c9eec4</id>
+  <name>AHS OSN PEDS CDEP Parenteral Nutrition Pediatric</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <keywords>
+        <item>xyz</item>
+      </keywords>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~3dcd5ffa-dad3-4bd7-8b53-963070c9eec4~NAME~AHS OSN PEDS CDEP Parenteral Nutrition Pediatric}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider opening and merging the following order sets if appropriate:&lt;br&gt;Pediatric Enteral Nutrition&lt;br&gt;Any appropriate diagnosis based order sets&lt;/p&gt;&lt;p&gt;Parenteral Nutrition Management (links to https://extranet.ahsnet.ca/teams/policydocuments/1/clp-parenteral-nutrition-management-hcs-217.pdf)&lt;/p&gt;&lt;p&gt;Parenteral Nutrition Insite (links to&amp;nbsp;https://insite.albertahealthservices.ca/pmmc/Page17184.aspx)&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Oral Nutrition Supplements Pediatric&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;POCT Glucose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Glucose Meter POCT; Once Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Display name for this order in this order set is &quot;Blood Glucose Monitoring - POCT&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;POCT Glucose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Page MD if glucose outside of specified range&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: Until discontinued&lt;/p&gt;&lt;p&gt;Comments: Page MD if glucose outside of specified range&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Height and Weight&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Measure Height or Length; Per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Every Three Months (Standard for pediatrics)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Height and Weight&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Weigh Patient; 3 times per week (Once per day on Monday Wednesday Friday)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Comments:&amp;nbsp;Standard for less than 2 years of age&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Height and Weight&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Weigh Patient; 2 times per week (Once per day on Monday Thursday)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Comments:&amp;nbsp;Standard for 2 years of age or older&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;For children less than 2 years of age:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Measure Body Area; Measure Head Circumference - Monthly (Full Term Children up to 2 Years Old)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: Monthly (Every 28 days)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Choose One:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Compounded 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mL/kg/day&lt;/li&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;amino acids (Primene):&lt;/strong&gt;&amp;nbsp;*** g/kg/dose&lt;/li&gt;&lt;li&gt;amino acids (Travasol)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;*** g/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width:561px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:193px&quot;&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:152px&quot;&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:193px&quot;&gt;&lt;p&gt;2-5 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:152px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:193px&quot;&gt;&lt;p&gt;2-4 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:152px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:193px&quot;&gt;&lt;p&gt;0.25-2 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:152px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp; mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:193px&quot;&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;0.15-0.25 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td style=&quot;width:152px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp; mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:193px&quot;&gt;&lt;p&gt;0.5-2 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:152px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp; mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:131px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Compounded 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Primene 2.5% Standard 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mL/kg/day&lt;/li&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;amino acids (Primene):&lt;/strong&gt;&amp;nbsp;2.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;10%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width:426px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:79px&quot;&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:134px&quot;&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:122px&quot;&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:79px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:134px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;30&amp;nbsp; mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:122px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:79px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:134px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;20 &amp;nbsp;mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:122px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:79px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:134px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;10 &amp;nbsp; mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:122px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:79px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:134px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3 &amp;nbsp; mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:122px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:79px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:134px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;10&amp;nbsp; &amp;nbsp;mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:122px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Primene 2.5% Standard 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Travasol 3.5% Standard 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mL/kg/day&lt;/li&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;amino acids (Travasol):&lt;/strong&gt; 3.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;10%&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width:468px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:77px&quot;&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:129px&quot;&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:147px&quot;&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:77px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:129px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;30 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:147px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:77px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:129px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;20 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:147px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:77px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:129px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:147px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:77px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:129px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:147px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:77px&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td style=&quot;width:129px&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5 mmol/L&lt;/td&gt;&lt;td style=&quot;width:147px&quot;&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Travasol 3.5% Standard 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Clinimix Standard Cyclic 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;amino acid 8%-dextrose 10% (Clinimix) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;amino acid 8%-dextrose 14% (Clinimix) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;amino acid 8%-dextrose 10%- electrolytes (Clinimix E) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;amino acid 8%-dextrose 14%- electrolytes&amp;nbsp;(Clinimix E) *** mL/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;*** g/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width:595px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:202px&quot;&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:175px&quot;&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:202px&quot;&gt;&lt;p&gt;2-5 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:175px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:202px&quot;&gt;&lt;p&gt;2-4 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:175px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:202px&quot;&gt;&lt;p&gt;0.25-2 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:175px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:202px&quot;&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;0.15-0.25 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td style=&quot;width:175px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:202px&quot;&gt;&lt;p&gt;0.5-2 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot;width:175px&quot;&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Clinimix Standard Cyclic 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Compounded 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;Dose: *** mL/kg/day&lt;/li&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;amino acids (Primene):&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;amino acids (Travasol):&amp;nbsp;&lt;/strong&gt;*** g/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;*** g/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;1-2&amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;2-4 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;5-10 mmol&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp; mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;5-15 mmol&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp; mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;10-40 mmol&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp; mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Compounded 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Primene 2.5% Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Order Elements&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Content Details&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Dose: *** mL/kg/day&lt;/li&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;amino acids (Primene):&lt;/strong&gt;&amp;nbsp;2.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;10%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;30&amp;nbsp; mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;20 &amp;nbsp;mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;10 &amp;nbsp; mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3 &amp;nbsp; mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;10&amp;nbsp; &amp;nbsp;mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Primene 2.5% Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Travasol 3.5% Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Order Elements&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Content Details&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Dose: *** mL/kg/day&lt;/li&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;amino acids (Travasol):&lt;/strong&gt;&amp;nbsp;3.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;10%&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;30 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;20 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3 mmol/L&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5 mmol/L&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Travasol 3.5% Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Clinimix Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;ul&gt;&lt;li&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Weight: Recorded Weight;&amp;nbsp;&lt;strong&gt;Order Specific Weight&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Infusion Site:&amp;nbsp;***&lt;/li&gt;&lt;li&gt;Indication&amp;nbsp;(hard stop):&amp;nbsp;Partially functioning GI tract; Non-functioning GI tract; Intestinal failure; Poor GI perfusion; Chyle leak; ECMO; Pre-post surgery; Chemotherapy side effects; Other (specify)&lt;/li&gt;&lt;li&gt;Priority:&amp;nbsp;&lt;strong&gt;Routine;&amp;nbsp;&lt;/strong&gt;STAT&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Amino Acids:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;amino acid 8%-dextrose 10% (Clinimix) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;amino acid 8%-dextrose 14% (Clinimix) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;amino acid 8%-dextrose 10%- electrolytes (Clinimix E) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;amino acid 8%-dextrose 14%- electrolytes&amp;nbsp;(Clinimix E) *** mL/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Dextrose:&lt;/em&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;dextrose 70% in water:&lt;/strong&gt;&amp;nbsp;*** g/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;QS Base:&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sterile water:&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Electrolytes:&lt;/em&gt;&lt;/p&gt;&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ion&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Range&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Ordered Amount&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Calculated Amount&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sodium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;1-2&amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Potassium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;2-4 mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Calcium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;5-10 mmol&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Magnesium&lt;/p&gt;&lt;/td&gt;&lt;td&gt;5-15 mmol&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Phosphate&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td&gt;10-40&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*** &amp;nbsp;mmol/kg/dose&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;&amp;nbsp;(system calculates)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;ul&gt;&lt;li&gt;Chloride: Acetate Ratio: Maximize Chloride&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Medications&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Not preselected&lt;/p&gt;&lt;ul&gt;&lt;li&gt;heparin 0.5 units/mL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Additives:&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Options include (not preselected)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;multivitamin, child (MULTI-12/K1) 5 mL&amp;nbsp;&lt;/li&gt;&lt;li&gt;trace elements, neo/ped (AHS PHARMACY) *** mL/kg/dose&lt;/li&gt;&lt;li&gt;zinc sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;copper sulfate *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;selenium *** mcg/kg/dose&lt;/li&gt;&lt;li&gt;levOCARNitine *** mg/kg/dose&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric Clinimix Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Cycled&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Cycled&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 2-in-1 Parenteral Nutrition Solutions - Cycled&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Lipids&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 3-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;PeriOlimel use in Pediatrics is approved for off-label use only at sites that do not have access to a compounder.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 3-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient up to 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 3-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient GREATER than 40 kg&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 3-in-1 Parenteral Nutrition Solutions - Continuous&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 3-in-1 Parenteral Nutrition Solutions - Cycled&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;PeriOlimel use in Pediatrics is approved for off-label use only at sites that do not have access to a compounder.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric 3-in-1 Parenteral Nutrition Solutions - Cycled&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Home Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Select only if patient meets criteria outlined in the Parenteral Nutrition Management Policy.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Home Parenteral Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Transfers on Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Patients admitted or transferred from another site on parenteral nutrition require a copy of the PN order as part of medication reconciliation as per Parenteral Nutrition Management Policy.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Parenteral Nutrition&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Transfers on Parenteral Nutrition&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Parenteral Nutrition Pediatric">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="434c1e3b-d48a-4136-9e8b-2ef8348fb1a7" concept_name="DIETNUR Oral Nutrition Supplements Pediatric [DNS12] Order" max="1" path="/items" name="Oral Nutrition Supplements Pediatric"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99c54c05-8a24-4ea6-a32c-b0bf7e3fc670" concept_name="NURINT Total Fluid Intake (TFI) Pediatric [138903] IP Order" max="1" path="/items" name="Total Fluid Intake (TFI) Pediatric; Until discontinued"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d0c7272a-100f-4d32-b786-e97c71733849" concept_name="AHS OGR PEDS CH Pediatric Diet" max="1" path="/items" name="Pediatric Diet"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ad683da7-0256-43c2-8f6d-f3abd76053f1" concept_name="AHS OGR PEDS CH Enteral Feeding Breast Bottle and Tube Feed" max="1" path="/items" name="Enteral Feeding (Breast, Bottle and Tube Feed)"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Page MD if glucose outside of specified range"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="NURAX Measure Height or Length [NUR616] IP Order" max="1" path="/items" name="Measure Height or Length; Weekly"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="NURAX Measure Height or Length [NUR616] IP Order" max="1" path="/items" name="Measure Height or Length; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="NURAX Measure Height or Length [NUR616] IP Order" max="1" path="/items" name="Measure Height or Length; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Daily"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; 3 times per week (Once per day on Monday Wednesday Friday)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; 2 times per week (Once per day on Monday Thursday)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Daily #1"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4c2277-d73c-453b-a498-f55bee859781" concept_name="NURAX Measure Body Area [NUR483] IP Order" max="1" path="/items" name="Measure Body Area; Measure Head Circumference - Weekly"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d4c2277-d73c-453b-a498-f55bee859781" concept_name="NURAX Measure Body Area [NUR483] IP Order" max="1" path="/items" name="Measure Body Area; Measure Head Circumference - Monthly (Full Term Children up to 2 Years Old)"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Parenteral Nutrition">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric 2-in-1 Parenteral Nutrition Solutions - Continuous">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient up to 40 kg">
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6b0e572e-fcb8-4408-aed3-b26889803551" concept_name="PHARM PEDIATRIC COMPOUNDED 2-IN-1 PN (UP TO 40 KG) [400517] Order" max="1" path="/items" name="Pediatric Compounded 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="755803a1-1d50-4e93-a272-fdd2f875d422" concept_name="PHARM PEDIATRIC PRIMENE 2.5 Percent STANDARD 2-IN-1 PN (UP TO 40 KG) [6000487] Order" max="1" path="/items" name="Pediatric Primene 2.5% Standard 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ffcd40b3-54f1-4dd5-bcf7-14629ce7346f" concept_name="PHARM PEDIATRIC TRAVASOL 3.5 Percent STANDARD 2-IN-1 PN (UP TO 40 KG) [6000488] Order" max="1" path="/items" name="Pediatric Travasol 3.5% Standard 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="41542e22-d891-4a85-9deb-e918ba15a004" concept_name="PHARM PEDIATRIC CLINIMIX STANDARD CYCLIC 2-IN-1 PN (UP TO 40 KG) [6001952] Order" max="1" path="/items" name="Pediatric Clinimix Standard Cyclic 2-in-1 PN (up to 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient GREATER than 40 kg">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c7c266ad-b1e0-4755-b2f2-53306c9205a1" concept_name="PHARM PEDIATRIC COMPOUNDED 2-IN-1 PN (GREATER THAN 40 KG) [6000913] Order" max="1" path="/items" name="Pediatric Compounded 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8c7627c5-5847-4e05-9d6c-e8f682f5141e" concept_name="PHARM PEDIATRIC PRIMENE 2.5 Percent STANDARD 2-IN-1 PN (GREATER THAN 40 KG) [6001472] Order" max="1" path="/items" name="Pediatric Primene 2.5% Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d3b0a41d-307b-40f2-b144-99f22879ae48" concept_name="PHARM PEDIATRIC TRAVASOL 3.5 Percent STANDARD 2-IN-1 PN (GREATER THAN 40 KG) [6001473] Order" max="1" path="/items" name="Pediatric Travasol 3.5% Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a854de9a-d7fc-4ef7-bbfa-51999989578f" concept_name="PHARM PEDIATRIC CLINIMIX STANDARD 2-IN-1 PN (GREATER THAN 40 KG) [6001470] Order" max="1" path="/items" name="Pediatric Clinimix Standard 2-in-1 PN (greater than 40 kg); intravenous, Administer over 24 hours, continuous PN"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric 2-in-1 Parenteral Nutrition Solutions - Cycled">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient up to 40 kg">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient GREATER than 40 kg">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Lipids">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric 3-in-1 Parenteral Nutrition Solutions - Continuous">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient up to 40 kg">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient GREATER than 40 kg">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric 3-in-1 Parenteral Nutrition Solutions - Cycled">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient up to 40 kg"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient GREATER than 40 kg"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Home Parenteral Nutrition">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Transfers on Parenteral Nutrition">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Insert and Maintain IV"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Replacement of GI Losses"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - PN Initiation">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - PN Stabilization Labs Day 2, 3, and 4">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - PN Weekly Labs">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - PN Long Term Monitoring Monthly">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cerebrospinal Fluid"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pathology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Labs"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Specialty Consults"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Allied Health Consults"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Request for Other Service"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Follow-Up"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referrals"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Education/Teaching"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Equipment and Devices"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hygiene"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Lab Ordering Guidance"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Labs - Hematology"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Labs - Chemistry"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Labs - Coagulation"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Diagnostic Imaging"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Non-Medication Prescriptions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medication Instructions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications"/>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+</template>
