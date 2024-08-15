@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>e98dba2e-8ec7-4668-ba48-5c76414a44c5</id>
+  <name>AHS OGR PEDS CH Bronchiolitis Deterioration Respiratory Interventions</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;INC001862479 - New section: Respiratory Intervention&lt;/span&gt;s&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;ok to have this as a sepate section or should this and the oxygen orders be under the same header?&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~e98dba2e-8ec7-4668-ba48-5c76414a44c5~NAME~AHS OGR PEDS CH Bronchiolitis Deterioration Respiratory Interventions}</value></item></items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Respiratory suction - pediatric; As needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Nasal Suctioning with every feed and prn&lt;br&gt;- Intermittent superficial (e.g. mushroom tip nasal aspirator) nasal suctioning prior to feeding and as needed.&lt;br&gt;- Nasopharyngeal suction can be considered if patient is not improving or worsening.&lt;br&gt;- Repetitive nasopharyngeal suctioning should be avoided as it has been shown to worsen symptoms by causing trauma to nose worsening the obstructive symptoms.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Respiratory suction - pediatric; As needed&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride Nasal drop 0.9%; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Respiratory Interventions">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="66ccecba-989a-482d-8f48-6fac399112b0" concept_name="RT Respiratory suction - pediatric [RT85] IP Order" max="1" path="/items" name="Respiratory suction - pediatric; As needed"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5babd97b-e40b-4f5f-80ac-1fb0441c5815" concept_name="PHARM sodium chloride Nasal drop 0.9% Order" max="1" path="/items" name="sodium chloride Nasal drop 0.9%; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
