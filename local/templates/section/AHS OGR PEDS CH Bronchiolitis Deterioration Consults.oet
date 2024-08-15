@@ -60,19 +60,23 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#27ae60&quot;&gt;have added pneumothorax - is the wording ok?&lt;/span&gt;&lt;/p&gt;</value>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~2381be92-c374-438a-aca0-9062d2aded1f~NAME~AHS OGR PEDS CH Bronchiolitis Deterioration Consults}</value>
       </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
       <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;INC001862479: Update guidance text&lt;/span&gt;&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&lt;s&gt;In an otherwise well infant recovering from bronchiolitis with a persistently low oxygen saturation, consider consult to Pulmonology for consideration of home oxygen therapy if available at your site.&amp;nbsp;&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;For centers without inpatient pediatric units that can support HHHFNC, RAAPID should be consulted at initiation for all patients requiring HHHFNC to determine safe disposition.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;For centers with inpatient pediatric units that can support HHHFNC, the pediatric MRHP should consider consultation to Critical Care at initiation of HHHFNC for those patients with a higher risk of deterioration requiring elevated levels of care. This includes:&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Corrected gestational age &amp;lt;44 weeks&amp;nbsp;&lt;/li&gt;&lt;li&gt;Significant comorbidities (ie. Congenital heart disease, severe hypotonia)&amp;nbsp;&lt;/li&gt;&lt;li&gt;Signs of substantial atelectasis or major lobar collapse if a chest X-ray was obtained,&amp;nbsp;&lt;/li&gt;&lt;li&gt;pCO2 &amp;gt;=50 mm Hg ,if a capillary/venous blood gas was performed,&amp;nbsp;&lt;/li&gt;&lt;li&gt;Patients with other concurrent diagnoses such as pneumonia, asthma&amp;nbsp;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;and/or pneumothorax&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;take out pneumothorax - not appropriate for this document.. Chris will close the loops&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;s&gt;In an otherwise well infant recovering from bronchiolitis with a persistently low oxygen saturation, consider consult to Pulmonology for consideration of home oxygen therapy if available at your site.&amp;nbsp;&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;For centers without inpatient pediatric units that can support HHHFNC, RAAPID should be consulted at initiation for all patients requiring HHHFNC to determine safe disposition.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;For centers with inpatient pediatric units that can support HHHFNC, the pediatric MRHP should consider consultation to Critical Care at initiation of HHHFNC for those patients with a higher risk of deterioration requiring elevated levels of care. This includes:&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Corrected gestational age &amp;lt;44 weeks&amp;nbsp;&lt;/li&gt;&lt;li&gt;Significant comorbidities (ie. Congenital heart disease, severe hypotonia)&amp;nbsp;&lt;/li&gt;&lt;li&gt;Signs of substantial atelectasis or major lobar collapse if a chest X-ray was obtained,&amp;nbsp;&lt;/li&gt;&lt;li&gt;pCO2 &amp;gt;=50 mm Hg ,if a capillary/venous blood gas was performed,&amp;nbsp;&lt;/li&gt;&lt;li&gt;Patients with other concurrent diagnoses such as pneumonia and/or&amp;nbsp;asthma.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -96,7 +100,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~2381be92-c374-438a-aca0-9062d2aded1f~NAME~AHS OGR PEDS CH Bronchiolitis Deterioration Consults}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Consults">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Consults">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10f13f4b-08db-486b-82ff-d934fdcde962" concept_name="CONS Inpatient Consult to Pediatric Critical Care Medicine [CON143] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Critical Care Medicine"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a2d0f88a-06db-4793-96b7-8ea2fd6bb6a7" concept_name="ADT RAAPID (Referral Access Advice Placement Information and Destination) Service Request [ADT20] Order" max="1" path="/items" name="RAAPID (Referral, Access, Advice, Placement, Information &amp; Destination) Service Request"/>
