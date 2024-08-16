@@ -716,7 +716,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad170dc-0168-4a5e-b18d-b84496da37b8" concept_name="PHARM sodium chloride 0.9% bolus order" max="1" path="/items" name="sodium chloride 0.9% bolus; 20 mL/kg/dose, intravenous, once"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="38385979-e2ab-4d77-aed7-a1b51519a42d" concept_name="PHARM dextrose 10% in water infusion Order" max="1" path="/items" name="D10W infusion bag; 10 mL/kg/dose, intravenous, once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79850dd3-2a36-4b51-b054-5722b01e7c83" concept_name="PHARM dextrose 25% in water infusion Order" max="1" path="/items" name="dextrose 25% in water infusion; 2 mL/kg/dose, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79850dd3-2a36-4b51-b054-5722b01e7c83" concept_name="PHARM dextrose 25% in water infusion Order" max="1" path="/items" name="dextrose infusion (neo/ped); 2 mL/kg/dose, intravenous, once"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Maintenance fluid without potassium chloride">
@@ -758,7 +758,7 @@
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="calcium">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c04d7d63-db05-462b-8a2c-d3ad78b13713" concept_name="PHARM calcium gluconate injection Order" max="1" path="/items" name="calcium gluconate injection; 60 mg/kg/dose, intravenous, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c04d7d63-db05-462b-8a2c-d3ad78b13713" concept_name="PHARM calcium gluconate injection Order" max="1" path="/items" name="calcium gluconate IV; 60 mg/kg/dose, intravenous, once"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride IV; reserved for unstable patients; 20 mg/kg/dose, intravenous, once, Max dose: 60 mg/kg/dose"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="glucagon">
@@ -778,14 +778,14 @@
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="high dextrose solutions">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d15ef01-bd27-472b-b4d7-44c15c4a92f3" concept_name="PHARM dextrose 12.5% in water infusion Order" max="1" path="/items" name="dextrose 12.5% in water infusion; *** mL/hour, intravenous, continuous"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d15ef01-bd27-472b-b4d7-44c15c4a92f3" concept_name="PHARM dextrose 12.5% in water infusion Order" max="1" path="/items" name="dextrose 12.5% in water infusion (PHARM); *** mL/hour, intravenous, continuous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b276d502-e05a-4dd6-a096-dc2ce908cc78" concept_name="PHARM dextrose 12.5%-sodium chloride 0.45% infusion Order" max="1" path="/items" name="dextrose 12.5%-NaCl 0.45% infusion bag; *** mL/hour, intravenous, continuous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="594d8263-4c78-42c4-a214-4c000874c4c2" concept_name="PHARM dextrose 12.5%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="dextrose 12.5%-NaCl 0.9% infusion bag; *** mL/hour, intravenous, continuous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad54ad44-d810-4729-8955-6d3f2c593da1" concept_name="PHARM dextrose 10%-sodium chloride 0.2% infusion Order" max="1" path="/items" name="dextrose 10%-sodium chloride 0.2% infusion; *** mL/hour, intravenous, continuous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ebdd6f84-b1df-4f16-a941-31364386e37c" concept_name="PHARM dextrose 10%-sodium chloride 0.45% infusion Order" max="1" path="/items" name="dextrose 10%-sodium chloride 0.45% infusion; *** mL/hour, intravenous, continuous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d245a4fe-23d0-4a9f-90de-6afda3777b94" concept_name="PHARM dextrose 10%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="D10-NaCl 0.9% bag; *** mL/hour, intravenous, continuous"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a05ed44b-4c1d-4c32-8413-32a02ca1dba7" concept_name="PHARM dextrose 15% in water infusion Order" max="1" path="/items" name="dextrose 15% infusion mfg; *** mL/hour, intravenous, continuous"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79850dd3-2a36-4b51-b054-5722b01e7c83" concept_name="PHARM dextrose 25% in water infusion Order" max="1" path="/items" name="dextrose 25% in water infusion; *** mL/hour, intravenous, continuous"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="79850dd3-2a36-4b51-b054-5722b01e7c83" concept_name="PHARM dextrose 25% in water infusion Order" max="1" path="/items" name="dextrose infusion (neo/ped); *** mL/hour, intravenous, continuous"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="fomepizole">
