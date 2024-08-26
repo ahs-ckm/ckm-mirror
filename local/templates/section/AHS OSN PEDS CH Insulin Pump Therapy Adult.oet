@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>dd294e99-42c2-4a40-ada1-2da87e5b7b73</id>
+  <name>AHS OSN PEDS CH Insulin Pump Therapy Adult</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Use this Order Set only if the Most Responsible Health Provider (MRHP) has determined that the patient meets criteria, and patient (guardian/caregiver, if under age 18) agrees to the self-management of insulin pump in hospital responsibilities.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;-Insulin Pump In-Hospital Therapy (URL:&amp;nbsp;www.ipumpit.ca)&lt;/p&gt;&lt;p&gt;-Clinical Knowledge Topic (URL: https://extranet.ahsnet.ca/teams/policydocuments/1/klink/et-klink-ckv-insulin-pump-therapy-pediatric-and-adult-acute-care.pdf)&lt;br&gt;-Insulin Pump Information Sheet (URL: https://www.albertahealthservices.ca/frm-20114.pdf)&lt;br&gt;-Insulin Pump Therapy Bedside Logbook (URL: https://www.albertahealthservices.ca/frm-20189.pdf)&lt;br&gt;-Patient Agreement to Self-Manage Insulin Pump In- Hospital (URL: https://www.albertahealthservices.ca/frm-20369.pdf)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~dd294e99-42c2-4a40-ada1-2da87e5b7b73~NAME~AHS OSN PEDS CH Insulin Pump Therapy Adult}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Insulin Pump Therapy Adult">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a8fbe147-d60c-4f21-a9ba-f3df25c776f1" concept_name="AHS OGR MULTI MED Patient Care for Insulin Pump Therapy" max="1" path="/items" name="Patient Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="3f324e28-57c8-469c-9b88-317a00cd03de" concept_name="AHS OGR MULTI MED Laboratory Investigations Routine for Insulin Pump Therapy" max="1" path="/items" name="Laboratory Investigations - Routine"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="61bc94d4-037f-4e1a-9cb0-5aad856e37e8" concept_name="AHS OGR MULTI MED Insulin For Use In Insulin Pump Therapy" max="1" path="/items" name="Medications"/>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+</template>
