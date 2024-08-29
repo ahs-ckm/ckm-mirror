@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>69c77f28-82a0-4599-9e9a-1a89300ea7b9</id><name>What program are you referring to 115074 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;115074&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS AMB PPH RFL GENERAL PROGRAM QUESTION&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;What program are you referring to?&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~69c77f28-82a0-4599-9e9a-1a89300ea7b9~NAME~What program are you referring to 115074 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Community health representiatives (CHR)&lt;/p&gt;
+					
+						&lt;p&gt;Immunization&lt;/p&gt;
+					
+						&lt;p&gt;Sexual reproductive health (SRH)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					
+						&lt;p&gt;3. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Immunization&lt;/p&gt;
+					
+						&lt;p&gt;2. Sexual reproductive health (SRH)&lt;/p&gt;
+					
+						&lt;p&gt;3. Community health representiatives (CHR)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					
+						&lt;p&gt;3. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 115056;115057&lt;/p&gt;
+					
+						&lt;p&gt;2. 115073&lt;/p&gt;
+					
+						&lt;p&gt;3. 115958;115959&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS AMB PPH RFL IMM REASONS FOR IMMUNIZATION;AHS AMB PPH RFL IMM LIVE VACCINE&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS AMB PPH RFL SRH CRITERIA QUESTION&lt;/p&gt;
+					
+						&lt;p&gt;3. AHS AMB PPH RFL CHR DIRECTION QUESTION;AHS AMB PPH RFL CHR REFERRAL INFORMATION&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="What program are you referring to?"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Immunization</includedValues><includedValues>Sexual reproductive health (SRH)</includedValues><includedValues>Community health representiatives (CHR)</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8960d97c-1f4a-4bcb-a1ba-84048e007686" concept_name="Reason for immunization 115056 Question" max="1" path="/items[at0002]" name="Reason for immunization:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1" template_id="21cc56e7-83dd-41d2-8523-a152b4d6e16f" concept_name="Can client have live vaccine 115057 Question" max="1" path="/items[at0002]" name="Can client have live vaccine?"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="fedcc8b9-51cf-4630-a5cf-a40010d265b6" concept_name="Patients must meet at least one of the following criteria. Please select all that apply 115073 Question" max="1" path="/items[at0002]" name="Patients must meet at least one of the following criteria.  Please select all that apply:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="337d9621-aae2-48bb-9370-fbbbb0489531" concept_name="This service only accepts Low German (Plautdietsch) speaking clients 115958 Question" max="1" path="/items[at0002]" name="This service only accepts Low German (Plautdietsch) speaking clients"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="05b11889-da20-41cc-843f-facf3dec8077" concept_name="Please provider Further infromation around the referral 115959 Question" max="1" path="/items[at0002]" name="Please provider Further infromation around the referral:"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1"><digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
