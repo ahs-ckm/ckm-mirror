@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>bb5fbcbc-eb89-42a0-8567-e8e8dec11599</id><name>Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply) 3040000653 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;3040000653&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP RT OXYGEN THERAPY BY FLOW&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply)&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~bb5fbcbc-eb89-42a0-8567-e8e8dec11599~NAME~Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply) 3040000653 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Nasal cannula&lt;/p&gt;
+					
+						&lt;p&gt;High Flow nasal cannula&lt;/p&gt;
+					
+						&lt;p&gt;Reservoir mask&lt;/p&gt;
+					
+						&lt;p&gt;Heated humidified high flow&lt;/p&gt;
+					
+						&lt;p&gt;Other (Specify)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals;Equals;Equals;Equals&lt;/p&gt;
+					
+						&lt;p&gt;3. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Other (Specify)&lt;/p&gt;
+					
+						&lt;p&gt;2. Nasal cannula;High Flow nasal cannula;Reservoir mask;Other (Specify)&lt;/p&gt;
+					
+						&lt;p&gt;3. Heated humidified high flow&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					
+						&lt;p&gt;3. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 3040000901&lt;/p&gt;
+					
+						&lt;p&gt;2. 3040000902&lt;/p&gt;
+					
+						&lt;p&gt;3. 3040000902;3040001902&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS IP RT OXYGEN THERAPY DEVICE OTHER&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS IP RT OXYGEN THERAPY LPM&lt;/p&gt;
+					
+						&lt;p&gt;3. AHS IP RT OXYGEN THERAPY LPM;AHS IP RT PED OXYGEN THERAPY L/KG/MIN&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Oxygen Therapy by Flow. As needed based on patient Oxygen requirements (Select all that apply)"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Nasal cannula</includedValues><includedValues>High Flow nasal cannula</includedValues><includedValues>Reservoir mask</includedValues><includedValues>Heated humidified high flow</includedValues><includedValues>Other (Specify)</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="c10db788-41cc-4d4d-835c-aec6c8f69ccd" concept_name="Other 3040000901 Question" max="1" path="/items[at0002]" name="Other:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="26d60d64-5834-4308-a388-4b7d2d387be1" concept_name="Litres per minute 3040000902 Question" max="1" path="/items[at0002]" name="Litres per minute:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="aee92448-2544-4a5f-92f0-81e8416e7b64" concept_name="(For pediatric use only) L kg min 3040001902 Question" max="1" path="/items[at0002]" name="(For pediatric use only) L/kg/min:"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1"><digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest></integrity_checks></template>
