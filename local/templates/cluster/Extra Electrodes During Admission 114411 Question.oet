@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>e89a2a58-709b-4e73-b5e5-ea4a6f360cc3</id><name>Extra Electrodes During Admission 114411 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;114411&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP SMU PEDS ELECTRODES&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Extra Electrodes During Admission:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~e89a2a58-709b-4e73-b5e5-ea4a6f360cc3~NAME~Extra Electrodes During Admission 114411 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
-						&lt;p&gt;AED decrease&lt;/p&gt;
+						&lt;p&gt;10/10 system&lt;/p&gt;
 					
-						&lt;p&gt;HV&lt;/p&gt;
+						&lt;p&gt;EMG&lt;/p&gt;
 					
-						&lt;p&gt;PS&lt;/p&gt;
+						&lt;p&gt;Breathing Sensor&lt;/p&gt;
 					
-						&lt;p&gt;Startle&lt;/p&gt;
-					
-						&lt;p&gt;Sleep Deprivation&lt;/p&gt;
-					
-						&lt;p&gt;Reverse Sleep Cycle&lt;/p&gt;
-					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Extra Electrodes During Admission:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>AED decrease</includedValues><includedValues>HV</includedValues><includedValues>PS</includedValues><includedValues>Startle</includedValues><includedValues>Sleep Deprivation</includedValues><includedValues>Reverse Sleep Cycle</includedValues></constraint></Rule></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+						&lt;p&gt;Other (specify)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Other (specify)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 140209&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS IP SMU PEDS ELECTRODES OTHER&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Extra Electrodes During Admission:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>10/10 system</includedValues><includedValues>EMG</includedValues><includedValues>Breathing Sensor</includedValues><includedValues>Other (specify)</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="a1aa0574-ae00-425f-8ee5-fd58b3c4a956" concept_name="Other (Specify) 140209 Question" max="1" path="/items[at0002]" name="Other (Specify):"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
