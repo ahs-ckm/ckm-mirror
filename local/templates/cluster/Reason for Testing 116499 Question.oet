@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>b97e8e54-ebac-44d5-8f7b-f398d70419fc</id><name>Reason for Testing 116499 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;116499&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;LAB RESP INPATIENT REASON FOR TESTING&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Reason for Testing:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~b97e8e54-ebac-44d5-8f7b-f398d70419fc~NAME~Reason for Testing 116499 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Symptomatic&lt;/p&gt;
+					
+						&lt;p&gt;Outbreak screen requested by Infection Control&lt;/p&gt;
+					
+						&lt;p&gt;Pre-transplant patient screen&lt;/p&gt;
+					
+						&lt;p&gt;Other&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					
+						&lt;p&gt;3. Equals;Equals&lt;/p&gt;
+					
+						&lt;p&gt;4. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Pre-transplant patient screen&lt;/p&gt;
+					
+						&lt;p&gt;2. Other&lt;/p&gt;
+					
+						&lt;p&gt;3. Outbreak screen requested by Infection Control;Other&lt;/p&gt;
+					
+						&lt;p&gt;4. Symptomatic&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					
+						&lt;p&gt;3. Or&lt;/p&gt;
+					
+						&lt;p&gt;4. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 116496&lt;/p&gt;
+					
+						&lt;p&gt;2. 116930&lt;/p&gt;
+					
+						&lt;p&gt;3. 116494&lt;/p&gt;
+					
+						&lt;p&gt;4. 116509&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. LAB RESP TRANSPLANT TESTING REQUIRED&lt;/p&gt;
+					
+						&lt;p&gt;2. LAB RESP OTHER SPECIFY&lt;/p&gt;
+					
+						&lt;p&gt;3. LAB RESP COVID TESTING REQUIRED&lt;/p&gt;
+					
+						&lt;p&gt;4. LAB RESP PATIENT LOCATION&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Reason for Testing:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Symptomatic</includedValues><includedValues>Outbreak screen requested by Infection Control</includedValues><includedValues>Pre-transplant patient screen</includedValues><includedValues>Other</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="e568ad62-bd58-43d5-9f16-5eadbc0ac262" concept_name="Testing Required 116494 Question" max="1" path="/items[at0002]" name="Testing Required:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="17954fbe-d63a-43b3-abcc-bbab9fe1cc14" concept_name="Testing Required 116496 Question" max="1" path="/items[at0002]" name="Testing Required: #1"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="d7d16030-6598-4f40-b49e-b64351ff33dc" concept_name="Patient Location 116509 Question" max="1" path="/items[at0002]" name="Patient Location:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="7d0da2ea-5bfe-4a5f-901e-17d83254c260" concept_name="Specify Reason for Testing 116930 Question" max="1" path="/items[at0002]" name="Specify Reason for Testing:"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
