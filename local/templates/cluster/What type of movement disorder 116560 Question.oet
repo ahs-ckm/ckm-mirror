@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>d78c82e1-734d-4d30-a510-bc10c16a15fa</id><name>What type of movement disorder 116560 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;116560&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS AMB NEURO MOVE DIS TYPE&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;What type of movement disorder?&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~d78c82e1-734d-4d30-a510-bc10c16a15fa~NAME~What type of movement disorder 116560 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Parkinsonism&lt;/p&gt;
+					
+						&lt;p&gt;Tremor&lt;/p&gt;
+					
+						&lt;p&gt;Dystonia&lt;/p&gt;
+					
+						&lt;p&gt;Other&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Parkinsonism&lt;/p&gt;
+					
+						&lt;p&gt;2. Tremor&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 116557;116558&lt;/p&gt;
+					
+						&lt;p&gt;2. 116551;116553&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS AMB NEURO MOVE DIS PARKIN REF YES;AHS AMB NEURO MOVE DIS PARK ADLS&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS AMB NEURO MOVE DIS TREMOR REFERRAL YES;AHS AMB NEURO MOVE DIS TREMOR MEDS&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="What type of movement disorder?"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Parkinsonism</includedValues><includedValues>Tremor</includedValues><includedValues>Dystonia</includedValues><includedValues>Other</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="04569d8f-07e1-425a-96b2-0875d9a613ce" concept_name="Type of tremor 116551 Question" max="1" path="/items[at0002]" name="Type of tremor:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1" template_id="1785d850-100b-4a2e-9a2d-659dd04f4de8" concept_name="Medications tried for tremor 116553 Question" max="1" path="/items[at0002]" name="Medications tried for tremor?"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="1ca3a1cf-e331-496d-b644-588bd7c42a28" concept_name="Does the patient have 116557 Question" max="1" path="/items[at0002]" name="Does the patient have:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1" template_id="ab061e27-138b-476d-b017-91713377ec3d" concept_name="Are the symptoms interfering with the patients ADLs 116558 Question" max="1" path="/items[at0002]" name="Are the symptoms interfering with the patient&apos;s ADLs?"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1"><digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
