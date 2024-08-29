@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>10e8f164-c2b6-488c-a9bf-c01e828a837f</id><name>Daily Fluid Balance Target 140932 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;140932&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP DIALYSIS CRRT PEDS DAILY FLUID BALANCE&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Daily Fluid Balance Target&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~10e8f164-c2b6-488c-a9bf-c01e828a837f~NAME~Daily Fluid Balance Target 140932 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Neutral&lt;/p&gt;
+					
+						&lt;p&gt;Negative&lt;/p&gt;
+					
+						&lt;p&gt;Positive&lt;/p&gt;
+					
+						&lt;p&gt;Range&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					
+						&lt;p&gt;3. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Negative&lt;/p&gt;
+					
+						&lt;p&gt;2. Positive&lt;/p&gt;
+					
+						&lt;p&gt;3. Range&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					
+						&lt;p&gt;3. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 140933&lt;/p&gt;
+					
+						&lt;p&gt;2. 140934&lt;/p&gt;
+					
+						&lt;p&gt;3. 140936;140937&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS IP DIALYSIS CRRT PEDS DAILY FLUID BALANCE NEGATIVE&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS IP DIALYSIS CRRT PEDS DAILY FLUID BALANCE POSITIVE&lt;/p&gt;
+					
+						&lt;p&gt;3. AHS IP DIALYSIS CRRT PEDS DAILY FLUID BALANCE RANGE FROM;AHS IP DIALYSIS CRRT PEDS DAILY FLUID BALANCE RANGE TO&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Daily Fluid Balance Target"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Neutral</includedValues><includedValues>Negative</includedValues><includedValues>Positive</includedValues><includedValues>Range</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="3280368e-ad95-4851-9160-a1e1482da9fd" concept_name="Negative Fluid Balance (mL) 140933 Question" max="1" path="/items[at0002]" name="Negative Fluid Balance (mL)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="39cd1d72-b892-4e52-8375-fafad1982cf3" concept_name="Positive Fluid Balance (mL) 140934 Question" max="1" path="/items[at0002]" name="Positive Fluid Balance (mL)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="48fc7ddc-4b5b-407e-bc8f-4987adb47a45" concept_name="From (mL) 140936 Question" max="1" path="/items[at0002]" name="From (mL)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="d08df118-324c-433d-90da-3351567845f9" concept_name="to (mL) 140937 Question" max="1" path="/items[at0002]" name="to (mL)"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1"><digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest></integrity_checks></template>
