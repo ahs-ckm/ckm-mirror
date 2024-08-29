@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>fe64c60f-9f30-4dac-8824-aebf20f11de2</id><name>This patient requires 141198 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;141198&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP CHS MEDICAL HEALTH ALERT EQUIPMENT&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;This patient requires&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~fe64c60f-9f30-4dac-8824-aebf20f11de2~NAME~This patient requires 141198 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;lower bunk&lt;/p&gt;
+					
+						&lt;p&gt;medical devices (specify)&lt;/p&gt;
+					
+						&lt;p&gt;other&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. medical devices (specify)&lt;/p&gt;
+					
+						&lt;p&gt;2. other&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 141199&lt;/p&gt;
+					
+						&lt;p&gt;2. 141200&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS IP CHS MEDICAL HEALTH ALERT EQUIPMENT SPECIFY&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS IP CHS MEDICAL HEALTH ALERT EQUIPMENT OTHER&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="This patient requires"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>lower bunk</includedValues><includedValues>medical devices (specify)</includedValues><includedValues>other</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="f597bfc9-0498-444a-a2a3-85b59b01cf86" concept_name="Medical devices 141199 Question" max="1" path="/items[at0002]" name="Medical devices"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="588fd03b-52d8-4f28-ab84-3aa002425d7d" concept_name="Other equipment 141200 Question" max="1" path="/items[at0002]" name="Other equipment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
