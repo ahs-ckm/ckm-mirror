@@ -72,7 +72,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Respiratory suction - pediatric; As needed&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;This is a shared panel, however it is:&lt;br&gt;&amp;nbsp;&lt;br&gt;Pre-selected within:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Bronchiolitis Deterioration and Heated Humidified High Flow Nasal Cannula&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;Not pre-selected within:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Bronchiolitis ED/UCC Pediatrics and Bronchiolitis Admission and Maintenance Pediatrics&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Respiratory suction - pediatric; As needed&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -80,7 +88,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Respiratory suction - pediatric; As needed&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Respiratory suction - pediatric; As needed&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -88,17 +96,28 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% nasal drops; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% nasal drops; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Respiratory Interventions">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="66ccecba-989a-482d-8f48-6fac399112b0" concept_name="RT Respiratory suction - pediatric [RT85] IP Order" max="1" path="/items" name="Respiratory suction - pediatric; As needed"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5babd97b-e40b-4f5f-80ac-1fb0441c5815" concept_name="PHARM sodium chloride Nasal drop 0.9% Order" max="1" path="/items" name="sodium chloride 0.9% nasal drops; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Suction Pediatric">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="66ccecba-989a-482d-8f48-6fac399112b0" concept_name="RT Respiratory suction - pediatric [RT85] IP Order" max="1" path="/items" name="Respiratory suction - pediatric; As needed"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5babd97b-e40b-4f5f-80ac-1fb0441c5815" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent NASAL DROPS ORDERABLE [4201139] Order" max="1" path="/items" name="sodium chloride 0.9% nasal drops; 1 drop to BOTH nostrils every 2 hours, as needed for congestion. Intilled into both nostrils prior to suctioning"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
@@ -108,5 +127,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
