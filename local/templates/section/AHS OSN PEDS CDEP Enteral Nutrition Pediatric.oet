@@ -216,6 +216,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;CCCIR-18147. &amp;nbsp;There is provinicial guidance that is being worked on for the Lab orders for EN. &amp;nbsp;This is a separate initiative from the CHAC Sprint that was already in progress before the spring began. &amp;nbsp;If we make any changes now, it&apos;s likely that we will need to return to them at a later date. I&apos;m going to bring this up at the Prescribers meeting to see what that groups thinks about not making any changes to the labs now, and revising them once the provincial guidance document is complete.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;The only change right now is to remove the sentence &quot;Recommended as weekly labs for a period of 1 month if labs not completed recently&quot; form the Weekly EN Labs section&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Dietitian&apos;]/activities[at0001]">
     <items>
       <item>
@@ -295,7 +303,9 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d0efcf6c-e876-4bd0-b04a-4de95a4b739d" concept_name="AHS OGN PEDS CDEP Enteral Nutrition Labs Pediatric" max="1" path="/items" name="Enteral Nutrition Labs Pediatric"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER"/>
+      </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="882bf48f-8d29-4a86-80c9-7128a3022517" concept_name="AHS OGN PEDS CDEP Enteral Tube Unclogging Pediatric" max="1" path="/items" name="Enteral Tube Unclogging Pediatric"/>
