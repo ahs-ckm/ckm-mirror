@@ -60,8 +60,561 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~a9fa7728-df28-4f18-ae79-77361ae9280f~NAME~Analgesics and Antipyretics_Continuous Opioid Infusion Pediatric_Non Weight Band_Fluid Restrict Concentration Order Group }</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics - Opioid Continuous Infusion - Non - Weight Band / Fluid Restrict Concentration"/>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~a9fa7728-df28-4f18-ae79-77361ae9280f~NAME~Analgesics and Antipyretics_Continuous Opioid Infusion Pediatric_Non Weight Band_Fluid Restrict Concentration Order Group }</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;IF alternate concentration is desired, please select the concentration from the list below&amp;nbsp;NOT from speed buttons within the order itself.&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 50 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;u&gt;Recommended dosage for continuous morphine infusion:&lt;/u&gt;&lt;br&gt;&lt;strong&gt;Less than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 15 mcg/kg/hour; may increase after 6 hours, upon patient reassessment.&lt;br&gt;&lt;strong&gt;Age greater than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 40 mcg/kg/hour; may titrate dose within dosing range by 5 mcg/kg/hour every hour as needed.&lt;br&gt;&amp;nbsp;&lt;br&gt;Morphine Clinician Bolus: 20 mcg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 50 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine infusion (ped); morphine 50 mcg/mL infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, continuous, Concentration: 50 mcg/mL&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 50 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine infusion (ped); morphine 50 mcg/mL infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 50 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine bolus from bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;20 mcg/kg/dose, intravenous, every 60 minutes, as needed, severe pain&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump once per hour PRN prior to each rate increase. Administer bolus over 15 minutes.&lt;br&gt;Up to maximum *** doses/24 hours (not recommended to exceed 12 doses/24 hours)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 50 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine bolus from bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 50 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 200 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;u&gt;Recommended dosage for continuous morphine infusion:&lt;/u&gt;&lt;br&gt;&lt;strong&gt;Less than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 15 mcg/kg/hour; may increase after 6 hours, upon patient reassessment.&lt;br&gt;&lt;strong&gt;Age greater than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 40 mcg/kg/hour; may titrate dose within dosing range by 5 mcg/kg/hour every hour as needed.&lt;br&gt;&amp;nbsp;&lt;br&gt;Morphine Clinician Bolus: 20 mcg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 200 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine infusion (ped); morphine 200 mcg/mL infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, continuous, Concentration: 200 mcg/mL&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 200 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine infusion (ped); morphine 200 mcg/mL infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 200 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine bolus from bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;20 mcg/kg/dose, intravenous, every 60 minutes, as needed, severe pain&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump once per hour PRN prior to each rate increase. Administer bolus over 15 minutes.&lt;br&gt;Up to maximum *** doses/24 hours (not recommended to exceed 12 doses/24 hours)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 200 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine bolus from bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 200 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;u&gt;Recommended dosage for continuous morphine infusion:&lt;/u&gt;&lt;br&gt;&lt;strong&gt;Less than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 15 mcg/kg/hour; may increase after 6 hours, upon patient reassessment.&lt;br&gt;&lt;strong&gt;Age greater than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 40 mcg/kg/hour; may titrate dose within dosing range by 5 mcg/kg/hour every hour as needed.&lt;br&gt;&amp;nbsp;&lt;br&gt;Morphine Clinician Bolus: 20 mcg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine infusion (ped); morphine 1000 mcg/mL infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: ***mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, continuous, Concentration: 1,000 mcg/mL&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine infusion (ped); morphine 1000 mcg/mL infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;And&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Recommended starting bolus dose: 20 mcg/kg up to maximum 1.2 mg/dose IV .&lt;br&gt;Recommended starting continuous infusion rate: 5 to 15 mcg/kg/hour&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine bolus from bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;20 mcg/kg/dose, intravenous, every 60 minutes, as needed, severe pain&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump once per hour PRN prior to each rate increase. Administer bolus over 15 minutes.&lt;br&gt;Up to maximum *** doses/24 hours (not recommended to exceed 12 doses/24 hours)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;morphine bolus from bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine 1000 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;IF alternate concentration is desired, please select the concentration from the list below&amp;nbsp;NOT from speed buttons within the order itself.&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Aug 24/21 - Content approved by Meggie Livingstone, pending PTOC approval&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;u&gt;Recommended dosing for continuous hydromorphone infusion:&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Less than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 3 mcg/kg/hour; may increase after 6 hours, upon patient reassessment.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Greater than 3 months of age:&amp;nbsp;&lt;/strong&gt;2 to 8 mcg/kg/hour; may titrate dose within dosing range by 1 mcg/kg/hour every hour as needed.&lt;/p&gt;&lt;p&gt;HYDROmorphone Clinician Bolus: 4 mcg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone IV infusion (neo/ped); HYDROmorphone 10 mcg/mL infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, continuous, Concentration: 10 mcg/mL&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone IV infusion (neo/ped); HYDROmorphone 10 mcg/mL infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone  bolus from bag (Ped)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;4 mcg/kg/dose, intravenous, every 60 minutes, as needed, severe pain&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump once per hour PRN prior to each rate increase. Administer bolus over 15 minutes.&lt;br&gt;Up to maximum *** doses/24 hours (not recommended to exceed 12 doses/24 hours)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone  bolus from bag (Ped)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;u&gt;Recommended dosing for continuous hydromorphone infusion:&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Less than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 3 mcg/kg/hour; may increase after 6 hours, upon patient reassessment.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Greater than 3 months of age:&amp;nbsp;&lt;/strong&gt;2 to 8 mcg/kg/hour; may titrate dose within dosing range by 1 mcg/kg/hour every hour as needed.&lt;/p&gt;&lt;p&gt;HYDROmorphone Clinician Bolus: 4 mcg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone IV infusion (neo/ped); HYDROmorphone 40 mcg/mL infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Dose: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, continuous, Concentration: 40 mcg/mL&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone IV infusion (neo/ped); HYDROmorphone 40 mcg/mL infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone  bolus from bag (Ped)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;4 mcg/kg/dose, intravenous, every 60 minutes, as needed, severe pain&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump once per hour PRN prior to each rate increase. Administer bolus over 15 minutes.&lt;br&gt;Up to maximum *** doses/24 hours (not recommended to exceed 12 doses/24 hours)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone  bolus from bag (Ped)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 40 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 250 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;u&gt;Recommended dosing for continuous hydromorphone infusion:&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Less than 3 months of age:&lt;/strong&gt;&amp;nbsp;0 to 3 mcg/kg/hour; may increase after 6 hours, upon patient reassessment.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Greater than 3 months of age:&amp;nbsp;&lt;/strong&gt;2 to 8 mcg/kg/hour; may titrate dose within dosing range by 1 mcg/kg/hour every hour as needed.&lt;/p&gt;&lt;p&gt;HYDROmorphone Clinician Bolus: 4 mcg/kg/dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 250 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone IV infusion (neo/ped); HYDROmorphone 250 mcg/mL infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: *** mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, continuous, Concentration: 250 mcg/mL&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 250 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone IV infusion (neo/ped); HYDROmorphone 250 mcg/mL infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 250 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone  bolus from bag (Ped)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;4 mcg/kg/dose, intravenous, every 60 minutes, as needed, severe pain&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump once per hour PRN prior to each rate increase. Administer bolus over 15 minutes.&lt;br&gt;Up to maximum *** doses/24 hours (not recommended to exceed 12 doses/24 hours)&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 250 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;HYDROmorphone  bolus from bag (Ped)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone 250 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Aug 24/21 - Addition of fentaNYL section pending author/KL approval&lt;/p&gt;&lt;p&gt;Content approved by Meggie Livingstone&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Should NOT be first line agent of choice&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Health Care Professionals may only order fentanyl infusions within the boundaries of their professional regulations and/or scope of practice or as directed by institution policy and procedure.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 2 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Recommended dosing for continuous fentanyl infusion 0.2 to 0.6 mcg/kg/hour&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 2 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL 100 mcg in NaCl 0.9% 50 mL (2 mcg/mL) syringe&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: 0.2-0.6 mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, titrated&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 2 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL 100 mcg in NaCl 0.9% 50 mL (2 mcg/mL) syringe&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 2 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL bolus from bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: 0.2 mcg/kg/dose&lt;/p&gt;&lt;p&gt;intravenous, every 60 minutes, as needed&lt;/p&gt;&lt;p&gt;PRN Reasons: severe pain&amp;nbsp;&lt;/p&gt;&lt;p&gt;PRN Comment: uncontrolled pain&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Administer over 15 minutes&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 2 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL bolus from bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 2 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Recommended dosing for continuous fentanyl infusion 0.2 to 0.6 mcg/kg/hour&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL 500 mcg in NaCl 0.9% 50 mL (10 mcg/mL) syringe&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: 0.2-0.6 mcg/kg/hr&lt;/p&gt;&lt;p&gt;intravenous, titrated&lt;/p&gt;&lt;p&gt;&lt;em&gt;Initiate infusion rate at *** mcg/kg/hour&lt;br&gt;May titrate rate by *** mcg/kg/hour&lt;br&gt;For patients less than 3 months of age, may titrate dose within prescribed range after 6 hours, upon patient reassessment.&lt;br&gt;For patients greater than 3 months of age, may titrate dose within dosing range every hour as needed.&lt;br&gt;Do not increase the infusion rate more than once hourly.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL 500 mcg in NaCl 0.9% 50 mL (10 mcg/mL) syringe&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL bolus from bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dose: 0.2 mcg/kg/dose&lt;/p&gt;&lt;p&gt;intravenous, every 60 minutes, as needed&lt;/p&gt;&lt;p&gt;PRN Reasons: severe pain&amp;nbsp;&lt;/p&gt;&lt;p&gt;PRN Comment: uncontrolled pain&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Administer over 15 minutes&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If analgesia inadequate/patient experiencing uncontrolled pain, may administer bolus dose per infusion pump.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;fentaNYL bolus from bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL 10 mcg/mL infusion with Clinician Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;fentaNYL - Recommended consultation with Pediatric Acute Pain Services&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Analgesics and Antipyretics - Opioid Continuous Infusion - Non - Weight Band / Fluid Restrict Concentration">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="morphine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="morphine 50 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2dbe3dd0-1af5-436e-b463-4e82c2e12d20" concept_name="PHARM MORPHINE INFUSION ORDERABLE (PED) [4200648] Order" max="1" path="/items" name="morphine infusion (ped); morphine 50 mcg/mL infusion"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03b87d9b-e55f-4f86-abb8-57ea3d08b123" concept_name="PHARM MORPHINE BOLUS FROM BAG [6001053] Order" max="1" path="/items" name="morphine bolus from bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="morphine 200 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2dbe3dd0-1af5-436e-b463-4e82c2e12d20" concept_name="PHARM MORPHINE INFUSION ORDERABLE (PED) [4200648] Order" max="1" path="/items" name="morphine infusion (ped); morphine 200 mcg/mL infusion"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03b87d9b-e55f-4f86-abb8-57ea3d08b123" concept_name="PHARM MORPHINE BOLUS FROM BAG [6001053] Order" max="1" path="/items" name="morphine bolus from bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="morphine 1000 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2dbe3dd0-1af5-436e-b463-4e82c2e12d20" concept_name="PHARM MORPHINE INFUSION ORDERABLE (PED) [4200648] Order" max="1" path="/items" name="morphine infusion (ped); morphine 1000 mcg/mL infusion"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03b87d9b-e55f-4f86-abb8-57ea3d08b123" concept_name="PHARM MORPHINE BOLUS FROM BAG [6001053] Order" max="1" path="/items" name="morphine bolus from bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="HYDROmorphone">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="HYDROmorphone 10 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88628722-a455-4a43-a07f-6b62e1a3dd7d" concept_name="PHARM HYDROMORPHONE IV INFUSION ORDERABLE (NEO PED) [420077] Order" max="1" path="/items" name="HYDROmorphone IV infusion (neo/ped); HYDROmorphone 10 mcg/mL infusion"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97cb32b8-e03c-4237-b308-547a79d38186" concept_name="PHARM HYDROMORPHONE BOLUS FROM BAG (PED) [6004238] Order" max="1" path="/items" name="HYDROmorphone  bolus from bag (Ped)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="HYDROmorphone 40 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88628722-a455-4a43-a07f-6b62e1a3dd7d" concept_name="PHARM HYDROMORPHONE IV INFUSION ORDERABLE (NEO PED) [420077] Order" max="1" path="/items" name="HYDROmorphone IV infusion (neo/ped); HYDROmorphone 40 mcg/mL infusion"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97cb32b8-e03c-4237-b308-547a79d38186" concept_name="PHARM HYDROMORPHONE BOLUS FROM BAG (PED) [6004238] Order" max="1" path="/items" name="HYDROmorphone  bolus from bag (Ped)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="HYDROmorphone 250 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88628722-a455-4a43-a07f-6b62e1a3dd7d" concept_name="PHARM HYDROMORPHONE IV INFUSION ORDERABLE (NEO PED) [420077] Order" max="1" path="/items" name="HYDROmorphone IV infusion (neo/ped); HYDROmorphone 250 mcg/mL infusion"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97cb32b8-e03c-4237-b308-547a79d38186" concept_name="PHARM HYDROMORPHONE BOLUS FROM BAG (PED) [6004238] Order" max="1" path="/items" name="HYDROmorphone  bolus from bag (Ped)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="fentaNYL - Recommended consultation with Pediatric Acute Pain Services">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="fentaNYL 2 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5027b5b-4610-494b-a9bb-69763824bd26" concept_name="PHARM FENTANYL 2 MCG ML (100 MCG) IN NACL 0.9 Percent 50 ML SYRINGE MFG [6001963] Order" max="1" path="/items" name="fentaNYL 100 mcg in NaCl 0.9% 50 mL (2 mcg/mL) syringe"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b51a3802-7aeb-4200-aa04-ca9ff005d7e2" concept_name="PHARM FENTANYL BOLUS FROM BAG [6001052] Order" max="1" path="/items" name="fentaNYL bolus from bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="fentaNYL 10 mcg/mL infusion with Clinician Bolus">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="27b14884-2158-4a6e-928a-fa471a1acd53" concept_name="PHARM FENTANYL 10 MCG ML (500 MCG) IN NACL 0.9 Percent 50 ML SYRINGE MFG [6001964] Order" max="1" path="/items" name="fentaNYL 500 mcg in NaCl 0.9% 50 mL (10 mcg/mL) syringe"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b51a3802-7aeb-4200-aa04-ca9ff005d7e2" concept_name="PHARM FENTANYL BOLUS FROM BAG [6001052] Order" max="1" path="/items" name="fentaNYL bolus from bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
