@@ -1,1 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>df874f98-3a12-4820-8306-28868e79750c</id><name>Enter Intervention 777022 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;777022&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS LUME GI EUS-Y INTERVENTIONS OPTIONS&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Enter Intervention:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~df874f98-3a12-4820-8306-28868e79750c~NAME~Enter Intervention 777022 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Needle Biopsy&lt;/p&gt;											&lt;p&gt;Injection&lt;/p&gt;											&lt;p&gt;FNA&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Enter Intervention:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Needle Biopsy</includedValues><includedValues>Injection</includedValues><includedValues>FNA</includedValues></constraint></Rule></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>df874f98-3a12-4820-8306-28868e79750c</id><name>Enter Intervention 777022 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;777022&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS LUME EUS-A INTERVENTIONS&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Enter Intervention:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~df874f98-3a12-4820-8306-28868e79750c~NAME~Enter Intervention 777022 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Needle Biopsy&lt;/p&gt;
+					
+						&lt;p&gt;Injection&lt;/p&gt;
+					
+						&lt;p&gt;FNA&lt;/p&gt;
+					
+						&lt;p&gt;Celiac Plexus Block&lt;/p&gt;
+					
+						&lt;p&gt;Stent&lt;/p&gt;
+					
+						&lt;p&gt;Fiducial Marker Placement&lt;/p&gt;
+					
+						&lt;p&gt;Portosystemic Pressure Gradient&lt;/p&gt;
+					
+						&lt;p&gt;Gastric Variceal Coil and/or Gluing&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Needle Biopsy&lt;/p&gt;
+					
+						&lt;p&gt;2. Stent&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 777067&lt;/p&gt;
+					
+						&lt;p&gt;2. 777068&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. AHS LUME EUS-A BIOPSY LOCATION&lt;/p&gt;
+					
+						&lt;p&gt;2. AHS LUME EUS-A STENT TYPE&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Enter Intervention:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Needle Biopsy</includedValues><includedValues>Injection</includedValues><includedValues>FNA</includedValues><includedValues>Celiac Plexus Block</includedValues><includedValues>Stent</includedValues><includedValues>Fiducial Marker Placement</includedValues><includedValues>Portosystemic Pressure Gradient</includedValues><includedValues>Gastric Variceal Coil and/or Gluing</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="00542412-f845-4436-ad00-33f3e562ad1d" concept_name="Biopsy Location 777067 Question" max="1" path="/items[at0002]" name="Biopsy Location:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="33680bc7-02d2-4d87-adf9-660b41b9b294" concept_name="Stent Type 777068 Question" max="1" path="/items[at0002]" name="Stent Type:"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
