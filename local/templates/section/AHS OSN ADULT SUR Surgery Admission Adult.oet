@@ -148,6 +148,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Neurological Vital Signs; Every 4 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Neurological vital signs include: Glasgow Coma Scale, gross motor power x 4 and pupillary assessment&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Coagulation&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;PTT Heparin Neutralization; Once Routine&apos;]/activities[at0001]">
     <items>
       <item>
@@ -157,6 +165,14 @@
       <item>
         <key>Transform.Clinical Notes</key>
         <value>&lt;p&gt;Is this the incorrect test? Potentially should be&amp;nbsp;Partial Thromboplastin Time (PTT) [LAB325]&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Stool&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider Ova and Parasites if recent travel or camping.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -420,6 +436,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Acute Pain Services&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Inpatient Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Respirology; Pulmonology&apos;]/activities[at0001]">
     <items>
       <item>
@@ -448,7 +472,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? Ostomy Care; Wound Care; PT/OT Wound Care; Other&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -456,7 +480,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? Enteral Nutrition (EN); Parenteral Nutrition (PN); Malnutrition; Poor Intake; Nutrition Education (Specify); Feeding/Swallowing Difficulties; Growth Faltering; Risk of Malnutrition; Other&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -464,7 +488,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? Abuse/Domestic Violence; Social/Emotional Support; Legal Documents/Issues; Housing/Placement; Decision Making Capacity; Additctions/Mental Health; Benefits/Resources; Other&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -513,22 +537,23 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ca078d37-bd7c-4346-b96b-01f31a2d76b0" concept_name="AHS OGR ADULT SUR Diet and Nutrition Admission" max="1" path="/items" name="Diet and Nutrition"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Preoperative Fasting Guidelines">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Screen for Nutrition Risk: use Canadian Nutrition Screening Tool"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Screen for Nutrition Risk: use Canadian Nutrition Screening Tool"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0a81827a-b6e8-4584-be88-4c604e8fe88c" concept_name="AHS OGR ADULT SUR Pre-operative Eating and Drinking" max="1" path="/items" name="Pre-operative Eating and Drinking"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f8889b0e-34e2-430f-93bf-c70cc45d6bfa" concept_name="AHS OGR ADULT SUR Pre-operative Carbohydrate Loading" max="1" path="/items" name="Pre-operative Carbohydrate Loading"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Mobilize by:">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Mobilize Patient:">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339a8148-d792-4add-bdf2-644fe6f9ca03" concept_name="NURINT Ambulate [NUR11] IP Order" max="1" path="/items" name="Ambulate; 3 times daily, Mobilize by ambulating at least daily progressing to at least 3 times daily in hallway"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; No Activity Restrictions: Up in Chair TID with Meals"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Notify physiotherapist if prehospital mobility concerns or if patient requires more than one-person assist"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Notify physiotherapist if prehospital mobility concerns or if patient requires more than one-person assist"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Activity as tolerated"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed Rest"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Other activity Instructions (specify)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="496c39f1-1f66-4036-a659-a69edf68376a" concept_name="NURINT Elevate Extremity [NUR52] IP Order" max="1" path="/items" name="Elevate Extremity; Until discontinued"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Per protocol, for 8 hours, Every 2 hours for 8 hours, THEN every 4 hours"/>
@@ -536,7 +561,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 4 hours while awake"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 8 hours while awake"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 12 hours while awake"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological Vital Signs; Every 4 hours, Neurological vital signs include: Glasgow Coma Scale, gross motor power x 4 and pupillary assessment"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological Vital Signs; Every 4 hours"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99bd6a68-2771-4309-8049-8f713ed560c3" concept_name="NURAX Neurovascular Checks [NUR475] IP Order" max="1" path="/items" name="Neurovascular Checks; Every 4 hours"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
@@ -599,6 +624,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9213cc4b-7183-465d-bf5d-daf91606ab39" concept_name="LABMOL Respiratory Infection (incl. Cov-19) [LAB13073] Order" max="1" path="/items" name="Respiratory Infection (incl. Cov-19); Once Routine, Swab, Nasopharynx"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Stool">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4bcb7c9f-03f7-4f59-83f3-f21c5e3395b2" concept_name="LABMIC C difficile Test [LAB253] Order" max="1" path="/items" name="C. difficile Test; Once Routine, Stool"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8d92656-9e50-4d07-9a73-afea2b28079d" concept_name="LABMIC Bacterial Enteric Panel [LAB223] Order" max="1" path="/items" name="Bacterial Enteric Panel; Stool Culture, Routine; Once Routine, Stool"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c774617-2cb9-438b-a30c-fe4ef37fa681" concept_name="LABMIC Stool Parasite Screen [LAB258] Order" max="1" path="/items" name="Stool Parasite Screen; Once Routine, Stool"/>
@@ -670,16 +696,16 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0404fb03-ad6b-47d5-a56e-46cd0d636847" concept_name="PHARM POTASSIUM CHLORIDE ORAL LIQUID ORDERABLE [4201019] Order" max="1" path="/items" name="potassium chloride oral liquid; 20 mmol, oral, once"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Electrolyte Replacement">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da51a833-952e-4795-bf64-a8e02b7c09b6" concept_name="PHARM potassium chloride 10 mmol in sterile water for injection 100 mL injection Order" max="1" path="/items" name="potassium chloride 10 mmol in sterile water for injection 100 mL; 10 mmol, intravenous, once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c3add0b5-1532-4a89-af91-0d2a5b2a7240" concept_name="PHARM sodium phosphates 15 mmol in D5W 250 mL (0.06 mmol/mL) injection Order" max="1" path="/items" name="sodium phosphates 15 mmol in D5W 250 mL (0.06 mmoL/mL) bag; 15 mmol of phosphate, intravenous, once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2980dc8a-7262-4cd1-a940-8d807a9f00d4" concept_name="PHARM magnesium sulfate injection Order" max="1" path="/items" name="magnesium sulfate injection; 2 g, intravenous, once"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2980dc8a-7262-4cd1-a940-8d807a9f00d4" concept_name="PHARM magnesium sulfate injection Order" max="1" path="/items" name="magnesium sulfate injection; 4 g, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da51a833-952e-4795-bf64-a8e02b7c09b6" concept_name="PHARM POTASSIUM CHLORIDE IN STERILE WATER 10 MMOL 100 ML INTRAVEN PIGGYBACK [11074] Order" max="1" path="/items" name="potassium chloride 10 mmol in sterile water for injection 100 mL; 10 mmol, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c3add0b5-1532-4a89-af91-0d2a5b2a7240" concept_name="PHARM SODIUM PHOSPHATES 0.06 MMOL ML (15 MMOL) IN D5W 250 ML BAG [6003518] Order" max="1" path="/items" name="sodium phosphates 15 mmol in D5W 250 mL (0.06 mmoL/mL) bag; 15 mmol of phosphate, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2980dc8a-7262-4cd1-a940-8d807a9f00d4" concept_name="PHARM MAGNESIUM SULFATE INJECTION ORDERABLE [420218] Order" max="1" path="/items" name="magnesium sulfate injection; 2 g, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2980dc8a-7262-4cd1-a940-8d807a9f00d4" concept_name="PHARM MAGNESIUM SULFATE INJECTION ORDERABLE [420218] Order" max="1" path="/items" name="magnesium sulfate injection; 4 g, intravenous, once"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c7835654-ab4c-40be-b6e2-7d416b14b422" concept_name="AHS OGR MULTI GEN IV Maintenance" max="1" path="/items" name="IV Maintenance"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="97fbe5b6-cd68-4029-8f47-100d02453acb" concept_name="AHS OGR ADULT GEN IV Fluid Boluses" max="1" path="/items" name="IV Fluid Boluses"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6fbcf8ab-ba83-4741-921a-d0a15d39e19a" concept_name="AHS OGR ADULT GEN IV Fluid Infusions" max="1" path="/items" name="IV Fluid Infusions"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="NG Loss Replacement">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.45% 1000 mL bag; 0-1,000 mL, intravenous, every 8 hours, Replace NG Losses 1:1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.45 Percent SODIUM CHLORIDE IV SOLUTION [9801] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.45% 1000 mL bag; 0-1,000 mL, intravenous, every 8 hours, Replace NG Losses 1:1"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis">
@@ -688,24 +714,24 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen tablet; 975 mg, oral, every 6 hours, as needed, mild pain, pain"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35a11d27-b54e-4a3d-9e96-8988f1f0a13f" concept_name="PHARM acetaminophen liquid oral Order" max="1" path="/items" name="acetaminophen liquid oral; 975 mg, oral, every 6 hours, as needed, mild pain"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen Tablet Order" max="1" path="/items" name="ibuprofen tablet; 400 mg, oral, every 6 hours, as needed, pain"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="495d0d90-a746-40af-badb-6f8e715c5371" concept_name="PHARM celecoxib Capsule Order" max="1" path="/items" name="celecoxib capsule; 200 mg, oral, 2 times per day, as needed, mild pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; 975 mg, oral, every 6 hours, as needed, mild pain, pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35a11d27-b54e-4a3d-9e96-8988f1f0a13f" concept_name="PHARM ACETAMINOPHEN LIQUID ORDERABLE [420066] Order" max="1" path="/items" name="acetaminophen liquid oral; 975 mg, oral, every 6 hours, as needed, mild pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen tablet Compiled Order" max="1" path="/items" name="ibuprofen tablet; 400 mg, oral, every 6 hours, as needed, pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="495d0d90-a746-40af-badb-6f8e715c5371" concept_name="PHARM celecoxib capsule Compiled Order" max="1" path="/items" name="celecoxib capsule; 200 mg, oral, 2 times per day, as needed, mild pain"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Opioids Oral">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting Tablet Order" max="1" path="/items" name="morphine, short acting tablet; 5-10 mg, oral, every 4 hours, as needed, pain, for pain not controlled by non-opioid analgesia"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting Tablet Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; 1-2 mg, oral, every 4 hours, as needed, for pain not controlled by non-opioid analgesia"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting tablet; 5 mg, oral, every 4 hours, as needed, for pain not controlled by non-opioid analgesia"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3b49ad20-da9b-4ddb-b0cb-d78dc25eb242" concept_name="PHARM traMADol-acetaminophen Tablet 37.5 mg-325 mg (Tramacet) Order" max="1" path="/items" name="traMADol-acetaminophen tablet 37.5 mg-325 mg; 1-2 tablet, oral, every 6 hours, as needed, for pain not controlled by non-opioid analgesia, Maximum of 4000 mg acetaminophen in 24 hours from all sources"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet; 5-10 mg, oral, every 4 hours, as needed, pain, for pain not controlled by non-opioid analgesia"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; 1-2 mg, oral, every 4 hours, as needed, for pain not controlled by non-opioid analgesia"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE short acting tablet Compiled Order" max="1" path="/items" name="oxyCODONE, short acting tablet; 5 mg, oral, every 4 hours, as needed, for pain not controlled by non-opioid analgesia"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3b49ad20-da9b-4ddb-b0cb-d78dc25eb242" concept_name="PHARM TRAMADOL 37.5 MG-ACETAMINOPHEN 325 MG TABLET [31288] Order" max="1" path="/items" name="traMADol-acetaminophen tablet 37.5 mg-325 mg; 1-2 tablet, oral, every 6 hours, as needed, for pain not controlled by non-opioid analgesia, Maximum of 4000 mg acetaminophen in 24 hours from all sources"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Opioids IV">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine IV/SC">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; 5 mg, intravenous, every 4 hours, as needed, severe pain, for pain not controlled by oral opioids"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM MORPHINE INJECTION ORDERABLE [420065] Order" max="1" path="/items" name="morphine injection; 5 mg, intravenous, every 4 hours, as needed, severe pain, for pain not controlled by oral opioids"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; 5 mg, subcutaneous, every 4 hours, as needed, severe pain,  for pain not controlled by oral opioids"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM MORPHINE INJECTION ORDERABLE [420065] Order" max="1" path="/items" name="morphine injection; 5 mg, subcutaneous, every 4 hours, as needed, severe pain,  for pain not controlled by oral opioids"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone IV/SC">
@@ -721,15 +747,15 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d515db9e-47e6-476d-8416-71531184d646" concept_name="AHS OGR ADULT MED Antiemetics Admission CT" max="1" path="/items" name="Antiemetics"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="35817d20-95fd-4f01-8b26-77dee236814e" concept_name="AHS OGR ADULT MED Bowel Management Admission CT" max="1" path="/items" name="Bowel Management"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium tablet enteric-coated; 40 mg, oral, daily, with breakfast, first dose tomorrow at 08:00"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a50383f2-2468-43f0-9868-2a26bbd0a054" concept_name="PHARM famotidine injection Order" max="1" path="/items" name="famotidine injection; 20 mg, intravenous, every 12 hours"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine Tablet Order" max="1" path="/items" name="raNITIdine tablet; 150 mg, oral, 2 times per day, with breakfast and at bedtime"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM PANTOPRAZOLE MAGNESIUM 40 MG TABLETDELAYED RELEASE [163115] Order" max="1" path="/items" name="pantoprazole magnesium tablet enteric-coated; 40 mg, oral, daily, with breakfast, first dose tomorrow at 08:00"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a50383f2-2468-43f0-9868-2a26bbd0a054" concept_name="PHARM FAMOTIDINE INJECTION ORDERABLE [420210] Order" max="1" path="/items" name="famotidine injection; 20 mg, intravenous, every 12 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine tablet Compiled Order" max="1" path="/items" name="raNITIdine tablet; 150 mg, oral, 2 times per day, with breakfast and at bedtime"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Sedative and Hypnotics">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9605575f-0743-46c5-b7f1-70302015c570" concept_name="PHARM zopiclone Tablet Order" max="1" path="/items" name="zopiclone tablet; 3.75 mg, oral, daily, at bedtime as needed, insomnia, for sleep promotion"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="140d43f0-65b4-4046-95fd-c717db3804a6" concept_name="PHARM QUEtiapine Tablet Order" max="1" path="/items" name="QUEtiapine tablet; 25 mg, oral, daily, at bedtime as needed, for sleep promotion"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3246df5e-d901-4c6c-8075-94a053c3839e" concept_name="PHARM traZODone Tablet Order" max="1" path="/items" name="traZODone tablet; 25 mg, oral, daily, at bedtime as needed, insomnia, for sleep promotion"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9605575f-0743-46c5-b7f1-70302015c570" concept_name="PHARM zopiclone tablet Compiled Order" max="1" path="/items" name="zopiclone tablet; 3.75 mg, oral, daily, at bedtime as needed, insomnia, for sleep promotion"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="140d43f0-65b4-4046-95fd-c717db3804a6" concept_name="PHARM QUEtiapine tablet Compiled Order" max="1" path="/items" name="QUEtiapine tablet; 25 mg, oral, daily, at bedtime as needed, for sleep promotion"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3246df5e-d901-4c6c-8075-94a053c3839e" concept_name="PHARM traZODone tablet Compiled Order" max="1" path="/items" name="traZODone tablet; 25 mg, oral, daily, at bedtime as needed, insomnia, for sleep promotion"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Smoking Cessation">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ac52192d-fad6-4567-9334-1fbe92092482" concept_name="AHS OGN ADULT CDEP Nicotine Replacement Therapy - Inpatient" max="1" path="/items" name="Nicotine Replacement Therapy Panel Adult"/>
@@ -738,11 +764,12 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Inpatient Specialty Consults">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3c28ad9-8430-467f-8055-d7a26480f2b3" concept_name="CONS Inpatient Consult to Anesthesiology [CON36] IP Order" max="1" path="/items" name="Inpatient Consult to Anesthesiology"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d8517b9-f68d-419a-a77b-bf0f138ea586" concept_name="CONS Inpatient Consult to Cardiology [CON43] Order" max="1" path="/items" name="Inpatient Consult to Cardiology"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="39faf4af-c225-46b3-8c39-a79261b45c18" concept_name="CONS Inpatient Consult to Critical Care Medicine (Intensivist) [CON6] Order" max="1" path="/items" name="Inpatient Consult to Critical Care Medicine (Intensivist)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d8517b9-f68d-419a-a77b-bf0f138ea586" concept_name="CONS Inpatient Consult to Cardiology [CON43] IP Order" max="1" path="/items" name="Inpatient Consult to Cardiology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="39faf4af-c225-46b3-8c39-a79261b45c18" concept_name="CONS Inpatient Consult to Critical Care Medicine (Intensivist) [CON6] IP Order" max="1" path="/items" name="Inpatient Consult to Critical Care Medicine (Intensivist)"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10323cf0-19f2-43cc-b986-28785b081372" concept_name="CONS Inpatient Consult to Internal Medicine [CON62] IP Order" max="1" path="/items" name="Inpatient Consult to Internal Medicine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7b362cae-0f00-4124-93d8-ca5d2d028074" concept_name="CONS Inpatient Consult to Dentistry [CON58] Order" max="1" path="/items" name="Inpatient Consult to Dentistry"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7b362cae-0f00-4124-93d8-ca5d2d028074" concept_name="CONS Inpatient Consult to Dentistry [CON58] IP Order" max="1" path="/items" name="Inpatient Consult to Dentistry"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24ea3195-c84d-4f40-9196-50b7c556aa91" concept_name="CONS Inpatient Consult to Nephrology [CON8] IP Order" max="1" path="/items" name="Inpatient Consult to Nephrology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="afe72e28-a55a-4d01-8c77-fe5f97bca8f5" concept_name="CONS Inpatient Consult to Acute Pain Services [CON119] IP Order" max="1" path="/items" name="Inpatient Consult to Acute Pain Services"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="65500c79-897e-43d0-9c66-a51e230cf2c3" concept_name="CONS Inpatient Consult to Respirology [CON54] IP Order" max="1" path="/items" name="Inpatient Consult to Respirology; Pulmonology"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e031209b-d007-4523-b75f-e45ca0c36e5d" concept_name="CONS Inpatient Consult to Endocrinology [CON60] IP Order" max="1" path="/items" name="Inpatient Consult to Endocrinology"/>
       </Item>
@@ -754,7 +781,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a99e370c-d849-4585-b382-c30d0a08a894" concept_name="CONS Inpatient Consult to Occupational Therapy [CON205] IP Order" max="1" path="/items" name="Inpatient Consult to Occupational Therapy"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77b34c04-4d1f-4944-88ba-7b3089d3c38e" concept_name="CONS Inpatient Consult to Physical Therapy [CON201] IP Order" max="1" path="/items" name="Inpatient Consult to Physical Therapy"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e16d1c9-20a3-4ae7-9b48-ffe8f5bfae4e" concept_name="CONS Inpatient Consult to Speech Language Therapy [CON204] IP Order" max="1" path="/items" name="Inpatient Consult to Speech Language Therapy"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b1ca72-23ee-4714-a1ff-b6689b55ee0f" concept_name="CONS Inpatient Consult to Discharge Planning Transition Services [CON163] Order" max="1" path="/items" name="Inpatient Consult to Discharge Planning/Transition Services"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b1ca72-23ee-4714-a1ff-b6689b55ee0f" concept_name="CONS Inpatient Consult to Discharge Planning Transition Services [CON163] IP Order" max="1" path="/items" name="Inpatient Consult to Discharge Planning/Transition Services"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
