@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>fee9deff-9fb7-4655-a45b-bfb07998a5ae</id>
+  <name>AHS OSN ADULT SUR Burn Resuscitation Adult</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~a50063b1-d9bf-4af3-abd9-4e684590a8a7~NAME~Adult Admission Copy Template}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Consider opening and merging the following order sets if appropriate:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Enteral Nutrition Order Set&lt;/li&gt;&lt;li&gt;Parenteral Nutrition Order Set&lt;/li&gt;&lt;li&gt;PCA Order Sets&lt;/li&gt;&lt;li&gt;ICU Admission&lt;/li&gt;&lt;li&gt;Isolation/ARO Screening, Adult Order Set&amp;nbsp;&lt;/li&gt;&lt;li&gt;Burn Wound Management Adult&lt;/li&gt;&lt;li&gt;Any appropriate diagnosis based order sets&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;This order set is not to be used alone. &amp;nbsp;This order set should accompany an ICU admission order set.&lt;/strong&gt; &amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;span style="font-size:12px"&gt;&lt;strong&gt;Order Set Keywords:&lt;/strong&gt;&amp;nbsp;Chemical Burn, Electrical Burn, Fluid Resuscitation, Burn Resuscitation Adult&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Consider opening and merging any appropriate diagnosis based order sets&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Isolation']/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;table border="1" cellspacing="0" cellpadding="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td colspan="5" style="vertical-align:top"&gt;&lt;p&gt;Required Isolation Type&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Suspected or Known:&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Airborne&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Airborne &amp;amp; Contact&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Contact&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Contact &amp;amp; Droplet&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Droplet&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Antibiotic Resistant Organism (ARO) (e.g. MRSA, VRE, CPO)&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&lt;em&gt;C. difficile&lt;/em&gt; infection&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Chickenpox&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Gastroenteritis – infectious, no vomiting&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Gastroenteritis – infectious, vomiting&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Group A &lt;em&gt;Streptococcus&lt;/em&gt;, invasive infection&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Influenza-like illness&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Measles&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Meningitis – Bacterial or cause unknown&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&lt;em&gt;Meningococcus&lt;/em&gt;, invasive infection&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Mumps&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&lt;em&gt;Mycobacterium tuberculosis&lt;/em&gt; (pulmonary)&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&lt;em&gt;Mycoplasma pneumoniae&lt;/em&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Pertussis&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Respiratory tract infection, viral&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Rubella (German measles)&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;Shingles - Disseminated&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;X&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;td style="vertical-align:top"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Safety and Precautions - Refer to Infection Prevention and Control (IPC) guidelines (URL:&amp;nbsp;https://www.albertahealthservices.ca/assets/healthinfo/ipc/hi-ipc-resource-manual-main-document.pdf)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Isolation']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Initiate Airborne Isolation']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Confirmed or suspected reason for airborne isolation (select all that apply):&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Isolation']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Initiate Airborne and Contact Isolation']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Confirmed or suspected reason for airborne &amp;amp; contact isolation (select all that apply):&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Isolation']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Initiate Contact Isolation']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Confirmed or suspected reason for contact isolation (select all that apply):&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Isolation']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Initiate Contact and Droplet Isolation']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Confirmed or suspected reason for contact &amp;amp; droplet isolation (select all that apply):&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='General']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Isolation']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Initiate Droplet Isolation']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Confirmed or suspected reason for droplet isolation (select all that apply):&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care Interventions']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Measure Bladder Pressure; Every 8 hours']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Monitoring Type: Intermittent&lt;br&gt;Notify Physician if Pressure &amp;gt; (mmHg): 20&lt;br&gt;if TBSA is greater than 40%&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care Interventions']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Nursing Communication; Review with MRHP; Until discontinued']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Review the following with MRHP 8 to 12 hours after burn injury:&lt;br&gt;o&amp;nbsp;&amp;nbsp; &amp;nbsp;sedation and analgesia&amp;nbsp;&lt;br&gt;o&amp;nbsp;&amp;nbsp; &amp;nbsp;Nutrition&lt;br&gt;o&amp;nbsp;&amp;nbsp; &amp;nbsp;Intraabdominal bladder pressures&lt;br&gt;o&amp;nbsp;&amp;nbsp; &amp;nbsp;Neurovascular checks&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Wound Care']/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Initial Wound Care:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Wound Care']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Elevate Extremity; Until discontinued']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Elevate limbs with burn wounds. Check pulses q1h&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Wound Care']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Wound Care POC; Once Routine']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Cover wound with clean dry sterile sheets until burn dressings performed by Burn RN&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Notify Physician']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Notify Most Responsible Health Practitioner (MRHP); Until discontinued']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Systolic Blood Pressure Less Than (mmHg): 90&lt;br&gt;Diastolic Blood Pressure Less Than (mmHg): 60&lt;br&gt;Heart Rate Greater Than (bpm): 140&lt;br&gt;Heart Rate Less Than (bpm): 60&lt;br&gt;SpO2 Less Than (%): 90&lt;br&gt;Other: If urine output less than: 15mL/hr, Urine output greater than 200mL/hr, Mean Arterial pressure (MAP) less than 65, If Vitals unstable at any point&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Patient Care']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Notify Physician']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Notify Most Responsible Health Practitioner (MRHP); Until discontinued #1']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Urine output less than 15 mLs over last hour, or greater than 200 mLs per hour for greater than 2 hours despite decreasing IV rate according to algorithm&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations Routine']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Microbiology - If intubated or if catheter in place:']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Urine Culture, Routine; Every Monday (Every Monday), Catheter, Indwelling']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Indications (hard stop): ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations Routine']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Microbiology - Routine Burn Admission Screening']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Acute Pharyngitis Screen; Once Routine']/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations Routine']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Microbiology - Routine Burn Admission Screening']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Staphylococcus aureus Carrier Culture; Once Routine']/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Laboratory Investigations Routine']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Blood Gases - if urine output less than 15 mL/hour OR urine output greater than 200 mL x 2 hours']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='Blood Gas Arterial POCT; Conditional PRN, if urine output less than 15mL/hour OR urine output greater than 200 mL/hour for 2 hours Ensure RT is paged for awareness.']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Oxygen Level (hard stop): On Current Therapy; On Room Air; On Specified Therapy (Oxygen/Ventilation)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Fluids/Electrolytes']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Initiate Burn Resuscitation Protocol in patients with GREATER THAN 20% TBSA&lt;br&gt;&amp;nbsp;&lt;br&gt;Fluid Requirements for First 24 Hours = &lt;strong&gt;2 mL x patient weight x %TBSA&lt;/strong&gt;&lt;br&gt;½ total fluid requirement administered in the first 8 hours AND adjusted as per urine output guideline&lt;br&gt;&amp;nbsp;&lt;br&gt;and then&lt;br&gt;½ total fluid requirement administered in the second 16 hours AND adjusted as per urine output guideline&lt;br&gt;&amp;nbsp;&lt;br&gt;*Note fluid boluses and fluid received by EMS should be subtracted from the total fluid amount&lt;br&gt;&amp;nbsp;&lt;br&gt;Patients with electrical burns, delayed resuscitation and inhalational injuries may have additional fluid requirements.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Fluids/Electrolytes']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='IV Fluid Infusions - Burn Resuscitation - FIRST 8 hours']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Monitor urine output every 1 hour and adjust IV fluid rate according to the following guideline beginning at 1 hour post initial IV fluid initiation. Notify MRHP of changes in IV fluid rate:&lt;br&gt;- Urine output less than 15 mL/hr (increase IV rate by 200 mL/hr)&lt;br&gt;- Urine output 15-30 mL/hr (increase IV rate by 100 mL/hr)&lt;br&gt;- Urine output 30-50 mL/hr (maintain current IV rate)&lt;br&gt;- Urine output 50-200 mL/hr (decrease IV rate by 100 mL/hr)&lt;br&gt;- Urine output greater than 200mL/hr (decrease IV rate by 100 mL/hr and re-measure urine output at 30 min)&lt;/p&gt;&lt;p&gt;Notify MRHP to reassess fluid status/rate if HR greater than 140 bpm, Blood pressure less than 90/60, or Oxygen saturation less than 90%&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Fluids/Electrolytes']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='IV Fluid Infusions - Burn Resuscitation - FIRST 8 hours']/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Fluids/Electrolytes']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='IV Fluid Infusions - Burn Resuscitation - After 8 hours']/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Monitor urine output every 1 hour and adjust IV fluid rate according to the following guideline beginning at 1 hour post initial IV fluid initiation. Notify MRHP of changes in IV fluid rate:&lt;br&gt;- Urine output less than 15 mL/hr (increase IV rate by 200 mL/hr)&lt;br&gt;- Urine output 15-30 mL/hr (increase IV rate by 100 mL/hr)&lt;br&gt;- Urine output 30-50 mL/hr (maintain current IV rate)&lt;br&gt;- Urine output 50-200 mL/hr (decrease IV rate by 100 mL/hr)&lt;br&gt;- Urine output greater than 200mL/hr (decrease IV rate by 100 mL/hr and re-measure urine output at 30 min)&lt;/p&gt;&lt;p&gt;Notify MRHP to reassess fluid status/rate if HR greater than 140 bpm, Blood pressure less than 90/60, or Oxygen saturation less than 90%&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting H+8 Hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Fluids/Electrolytes']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='IV Fluid Infusions - Burn Resuscitation - After 8 hours']/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medications']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Albumin']/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Assess fluid resuscitation status at approximately 8 - 12 hours after burn injury.&amp;nbsp;&lt;br&gt;Determine total volume of crystalloid given since injury &amp;amp; current crystalloid infusion rate (mL/hr). If current infusion rate continues for the 12 - 16 hours (i.e. 24 hours total), calculate TOTAL amount of crystalloid predicted to be administered:&lt;br&gt;&amp;nbsp;&lt;br&gt;Total amount given since injury + (current infusion mL/hr x remaining hours to complete 24 hrs since burn injury) = Volume (mL)&lt;br&gt;Above Volume (mL) DIVIDED BY body weight in kg DIVIDED BY % TBSA=___ mL/kg/%TBSA.&lt;br&gt;&amp;nbsp;&lt;br&gt;IF THIS VALUE EXCEEDS 6 mL/kg/%TBSA (or consider if exceeds 4 mL/kg/%TBSA): Institute ALBUMIN PROTOCOL:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;If % TBSA less than 50%, infuse 0.3 mL/kg IV = mL/hr 5% Albumin IV&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;If % TBSA 50 - 69% 0.4 mL/kg IV = mL/hr 5% Albumin IV &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;If % TBSA greater than 70% 0.5 mL/kg IV = mL/hr 5% Albumin IV&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medications']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Albumin']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medications']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medications']/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;At greater than 8 hours after burn injury, consider IV norephinephrine if equal to or greater than 6cc/kg/%TBSA of fluid is exceeded and mean arterial pressure is less than 65mmHg&lt;br&gt;Choose hydroxycobalamin for suspected cyanide toxicity. Consider hydroxycobalamin in cases of significant burns or smoke exposure associated with elevated lactate, and/or cardiovascular collapse. Intensivist to be notified if ordered&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medications']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medications']/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value='norepinephrine infusion (adult); if equal to or greater than 8 hours after burn injury; 0-0.05 mcg/kg/min, intravenous, continuous']/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Concentration (hard stop): 16 mcg/mL; 64 mcg/mL; 128 mcg/mL&lt;/p&gt;&lt;p&gt;Initiate at ***, titrate to ***.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Immunizations']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Burn Resuscitation Adult">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" />
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission" />
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11651acf-3b92-4684-8535-5a54a7a53ce9" concept_name="ISO Initiate Airborne Isolation [ISO4] IP Order" max="1" path="/items" name="Initiate Airborne Isolation" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f70f05b5-8bd8-4b2e-b421-a6e24e596a7e" concept_name="ISO Initiate Airborne and Contact Isolation [ISO5] IP Order" max="1" path="/items" name="Initiate Airborne and Contact Isolation" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bb4da1-7d1b-40ea-94c9-ad9b92cd1e40" concept_name="ISO Initiate Contact Isolation [ISO1] IP Order" max="1" path="/items" name="Initiate Contact Isolation" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11afb2d3-2d4c-4ae8-8bef-9aa4d567abdc" concept_name="ISO Initiate Contact and Droplet Isolation [ISO6] IP Order" max="1" path="/items" name="Initiate Contact and Droplet Isolation" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e005e3c0-01ab-4b8d-81e4-c3723fb68cc0" concept_name="ISO Initiate Droplet Isolation [ISO2] IP Order" max="1" path="/items" name="Initiate Droplet Isolation" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="747b4fff-8133-4d9e-a493-f3532f414896" concept_name="ISO Discontinue Isolation [ISO7] IP Order" max="1" path="/items" name="Discontinue Isolation" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Minor Precautions (for burns less than or equal to 10%TBSA); Until discontinued" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Major precautions (for burns greater than 10% TBSA); Until discontinued" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" />
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 4 hours" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99bd6a68-2771-4309-8049-8f713ed560c3" concept_name="NURAX Neurovascular Checks [NUR475] IP Order" max="1" path="/items" name="Neurovascular Checks; Every 4 hours" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="NURAX Intake and Output [NUR467] IP Order" max="1" path="/items" name="Intake and Output; Every 1 Hour" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3e6bcf81-4db1-46d0-b2ec-cffe161383a2" concept_name="NURAX Measure Bladder Pressure [NUR580] IP Order" max="1" path="/items" name="Measure Bladder Pressure; Every 8 hours" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Review with MRHP; Until discontinued" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e95ea712-0d4b-4a39-a4e4-48e966137a82" concept_name="NURAX Pulse [NUR582] IP Order" max="1" path="/items" name="Pulse; Every 1 Hour, measure and document pulses distal to extremity burns" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="42391c72-1c4f-4d33-82b5-f3a864d711d3" concept_name="NURAX Pulse Oximetry [NUR585] IP Order" max="1" path="/items" name="Pulse Oximetry; Every 1 Hour, Measure and document pulse oximetry on *** fingers and toes distal to circumferential burns. Site:  ***; Notify MRHP for SpO2 values less than 90%" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="496c39f1-1f66-4036-a659-a69edf68376a" concept_name="NURINT Elevate Extremity [NUR52] IP Order" max="1" path="/items" name="Elevate Extremity; Until discontinued" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f57074d6-fdcf-4c26-beaa-a1f268731deb" concept_name="NURPOC Wound Care POC [PRO181] Order" max="1" path="/items" name="Wound Care POC; Once Routine" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify Physician">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Until discontinued" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Until discontinued #1" />
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology - If intubated or if catheter in place:">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c02f7522-9862-4567-b40a-aab7b0336fd0" concept_name="LABMIC Sputum Culture Routine [LAB900] Order" max="1" path="/items" name="Sputum Culture, Routine; Every Mon/Thurs (Once per day on Monday Thursday), Endotracheal Tube" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de3c9d83-396a-42b1-9574-e07a1e3d156d" concept_name="LABMIC Urine Culture Routine [LAB239] Order" max="1" path="/items" name="Urine Culture, Routine; Every Monday (Every Monday), Catheter, Indwelling" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology - Routine Burn Admission Screening">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1f90db19-1a73-4a75-838c-e8a8d6f61259" concept_name="LABMIC Acute Pharyngitis Screen [LAB228] Order" max="1" path="/items" name="Acute Pharyngitis Screen; Once Routine" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05fa816c-abd5-4433-8837-733eae01c34d" concept_name="LABMIC Staphylococcus aureus Carrier Culture [LAB229] Order" max="1" path="/items" name="Staphylococcus aureus Carrier Culture; Once Routine" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gases - if urine output less than 15 mL/hour OR urine output greater than 200 mL x 2 hours">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LABPOCT Blood Gas Venous POCT [POC115] Order" max="1" path="/items" name="Blood Gas Venous POCT; Conditional PRN, if urine output less than 15mL/hour OR urine output greater than 200 mL/hour for 2 hours Ensure RT is paged for awareness." />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34fd84e4-0ab2-4743-998e-892958eb37e4" concept_name="LABPOCT Blood Gas Arterial POCT [POC114] Order" max="1" path="/items" name="Blood Gas Arterial POCT; Conditional PRN, if urine output less than 15mL/hour OR urine output greater than 200 mL/hour for 2 hours Ensure RT is paged for awareness." />
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Burn Resuscitation Protocol">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" />
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions - Burn Resuscitation - FIRST 8 hours">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM LACTATED RINGERS INTRAVENOUS SOLUTION [4318] Order" max="1" path="/items" name="lactated Ringer's infusion; (1/2 x total fluid requirement / 8 hours); intravenous, continuous,  for 8 hours" />
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" />
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions - Burn Resuscitation - After 8 hours">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM LACTATED RINGERS INTRAVENOUS SOLUTION [4318] Order" max="1" path="/items" name="lactated Ringer's infusion; (1/2 x total fluid requirement / 16 hours); *** mL/hr, intravenous, continuous, for 16 hours" />
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" />
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" />
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Albumin">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" />
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="02a61393-900e-47ff-9578-04e9189e3c0f" concept_name="Plasma Protein Product Albumin 5% Panel Order Group" max="1" path="/items" name="Plasma Protein Product Albumin 5% Panel" />
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3251fa5d-9303-4aef-9a1f-5431836f0764" concept_name="PHARM NOREPINEPHRINE INFUSION ORDERABLE (ADULT) [420082] Order" max="1" path="/items" name="norepinephrine infusion (adult); if equal to or greater than 8 hours after burn injury; 0-0.05 mcg/kg/min, intravenous, continuous" />
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="53b3120c-20f0-4369-8e28-b4391007ba1b" concept_name="PHARM HYDROXOCOBALAMIN IV ORDERABLE [4200567] Order" max="1" path="/items" name="hydroxocobalamin IV; for suspected cyanide poisoning; 5 g, intravenous, Administer over 20 Minutes, once, Notify Intensivist if ordered" />
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunizations">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunizations">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ffd35c82-0494-471c-ac12-bdf84498c62d" concept_name="AHS OGN MULTI PPH Tetanus-Prone Wounds" max="1" path="/items" name="Tetanus-Prone Wounds" />
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+</template>
