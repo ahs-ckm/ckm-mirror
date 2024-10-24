@@ -1,140 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-  <id>12270ea9-7d17-41c3-86a5-b2d4cfb15c90</id>
-  <name>Anticoagulation type 103487 Question</name>
-  <description>
-    <lifecycle_state>Initial</lifecycle_state>
-    <details>
-      <purpose/>
-      <use/>
-      <misuse/>
-    </details>
-    <other_details>
-      <item>
-        <key>MetaDataSet:Build</key>
-        <value>Build details</value>
-      </item>
-      <item>
-        <key>Acknowledgemet</key>
-        <value/>
-      </item>
-      <item>
-        <key>Analyst</key>
-        <value/>
-      </item>
-      <item>
-        <key>Attachments regarding build</key>
-        <value/>
-      </item>
-      <item>
-        <key>Build complete date</key>
-        <value/>
-      </item>
-      <item>
-        <key>Build team</key>
-        <value/>
-      </item>
-      <item>
-        <key>Comments</key>
-        <value/>
-      </item>
-      <item>
-        <key>Record name</key>
-        <value/>
-      </item>
-      <item>
-        <key>To ananlyst date</key>
-        <value/>
-      </item>
-    </other_details>
-  </description>
-  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]">
-    <items>
-      <item>
-        <key>Order Specific Questions.Question ID</key>
-        <value>&lt;p&gt;103487&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Question Name</key>
-        <value>&lt;p&gt;AHS IP DIALYSIS CRRT PEDS ANTICOAGULATION TYPE CVVHD&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Question</key>
-        <value>&lt;p&gt;Anticoagulation type:&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Technical.ﻩ Technical Traceability</key>
-        <value>{~AHSID~12270ea9-7d17-41c3-86a5-b2d4cfb15c90~NAME~Anticoagulation type 103487 Question}</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]">
-    <items>
-      <item>
-        <key>Order Specific Questions.Answer Button Values</key>
-        <value>						&lt;p&gt;No anticoagulation&lt;/p&gt;											&lt;p&gt;Heparin&lt;/p&gt;											&lt;p&gt;Citrate&lt;/p&gt;					</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Cascading - Comparison Operator</key>
-        <value>						&lt;p&gt;1. Equals;Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;					</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Cascading - Condition Value</key>
-        <value>						&lt;p&gt;1. No anticoagulation;Heparin&lt;/p&gt;											&lt;p&gt;2. Citrate&lt;/p&gt;					</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Cascading - Condition Comparison</key>
-        <value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;					</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Cascading - Questions</key>
-        <value>						&lt;p&gt;1. 101781;102096;101809;103482;101818&lt;/p&gt;											&lt;p&gt;2. 101781;102096;101809;103483;101818&lt;/p&gt;					</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Cascading - Questions Record Name</key>
-        <value>						&lt;p&gt;1. DIALYSIS - CRRT - PRISMAFLEX FILTER SET PEDS;AHS IP DIALYSIS - PATIENT WEIGHT;AHS IP DIALYSIS - CRRT - BLOOD FLOW RANGE FREE TEXT;AHS IP DIALYSIS CRRT PEDS DIALYSATE SOLUTION;AHS IP DIALYSIS - CRRT - DIALYSATE FLOW RATE OTHER&lt;/p&gt;											&lt;p&gt;2. DIALYSIS - CRRT - PRISMAFLEX FILTER SET PEDS;AHS IP DIALYSIS - PATIENT WEIGHT;AHS IP DIALYSIS - CRRT - BLOOD FLOW RANGE FREE TEXT;AHS IP DIALYSIS CRRT PEDS DIALYSATE SOLUTION CITRATE;AHS IP DIALYSIS - CRRT - DIALYSATE FLOW RATE OTHER&lt;/p&gt;					</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Hide Comments</key>
-        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Multiple Comments and Duplicate Answers</key>
-        <value>&lt;p&gt;No&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Released Flag</key>
-        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Require Response</key>
-        <value>&lt;p&gt;Yes&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Order Specific Questions.Response Type</key>
-        <value>&lt;p&gt;Custom List&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Anticoagulation type:">
-    <Rule path="/items[at0001]">
-      <constraint xsi:type="textConstraint">
-        <includedValues>No anticoagulation</includedValues>
-        <includedValues>Heparin</includedValues>
-        <includedValues>Citrate</includedValues>
-      </constraint>
-    </Rule>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="276af62d-a7c2-4b6f-b61e-1f4018510020" concept_name="Dialysate solution 103483 Question" max="1" path="/items[at0002]" name="Dialysate solution:"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="4d21bc9b-4e70-4191-b054-eddda42b3ef4" concept_name="Patient weight (kg) 102096 Question" max="1" path="/items[at0002]" name="Patient weight (kg)"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="99c70792-27a9-4ba5-9942-57a6dbfbe8aa" concept_name="Dialysate solution 103482 Question" max="1" path="/items[at0002]" name="Dialysate solution: #2"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="785b89b9-a46c-411b-86c8-1ab463d60a3d" concept_name="Dialysate flow rate (mL h) 101818 Question" max="1" path="/items[at0002]" name="Dialysate flow rate (mL/h)"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8cbab4e5-37f0-46bf-aa0b-59088adcc0a6" concept_name="Prismaflex filter set 101781 Question" max="1" path="/items[at0002]" name="Prismaflex filter set"/>
-    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="bf03db16-c107-4ec1-9f8a-805a2415e3eb" concept_name="Blood flow range (mL min) 101809 Question" max="1" path="/items[at0002]" name="Blood flow range (mL/min)"/>
-  </definition>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
-    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
-    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
-  </integrity_checks>
-</template>
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>12270ea9-7d17-41c3-86a5-b2d4cfb15c90</id><name>Anticoagulation type 103487 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;103487&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;AHS IP DIALYSIS CRRT PEDS ANTICOAGULATION TYPE CVVHD&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Anticoagulation type:&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~12270ea9-7d17-41c3-86a5-b2d4cfb15c90~NAME~Anticoagulation type 103487 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;No anticoagulation&lt;/p&gt;
+					
+						&lt;p&gt;Heparin&lt;/p&gt;
+					
+						&lt;p&gt;Citrate&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals;Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. No anticoagulation;Heparin&lt;/p&gt;
+					
+						&lt;p&gt;2. Citrate&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 101781;102096;101809;103482;101818&lt;/p&gt;
+					
+						&lt;p&gt;2. 101781;102096;101809;103483;101818&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. DIALYSIS - CRRT - PRISMAFLEX FILTER SET PEDS;AHS IP DIALYSIS - PATIENT WEIGHT;AHS IP DIALYSIS - CRRT - BLOOD FLOW RANGE FREE TEXT;AHS IP DIALYSIS CRRT PEDS DIALYSATE SOLUTION;AHS IP DIALYSIS - CRRT - DIALYSATE FLOW RATE OTHER&lt;/p&gt;
+					
+						&lt;p&gt;2. DIALYSIS - CRRT - PRISMAFLEX FILTER SET PEDS;AHS IP DIALYSIS - PATIENT WEIGHT;AHS IP DIALYSIS - CRRT - BLOOD FLOW RANGE FREE TEXT;AHS IP DIALYSIS CRRT PEDS DIALYSATE SOLUTION CITRATE;AHS IP DIALYSIS - CRRT - DIALYSATE FLOW RATE OTHER&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Anticoagulation type:"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>No anticoagulation</includedValues><includedValues>Heparin</includedValues><includedValues>Citrate</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="8cbab4e5-37f0-46bf-aa0b-59088adcc0a6" concept_name="Prismaflex filter set 101781 Question" max="1" path="/items[at0002]" name="Prismaflex filter set"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="bf03db16-c107-4ec1-9f8a-805a2415e3eb" concept_name="Blood flow range (mL min) 101809 Question" max="1" path="/items[at0002]" name="Blood flow range (mL/min)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="785b89b9-a46c-411b-86c8-1ab463d60a3d" concept_name="Dialysate flow rate (mL h) 101818 Question" max="1" path="/items[at0002]" name="Dialysate flow rate (mL/h)"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1" template_id="4d21bc9b-4e70-4191-b054-eddda42b3ef4" concept_name="Patient weight (kg) 102096 Question" max="1" path="/items[at0002]" name="Patient weight (kg):"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="99c70792-27a9-4ba5-9942-57a6dbfbe8aa" concept_name="Dialysate solution 103482 Question" max="1" path="/items[at0002]" name="Dialysate solution:"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="276af62d-a7c2-4b6f-b61e-1f4018510020" concept_name="Dialysate solution 103483 Question" max="1" path="/items[at0002]" name="Dialysate solution: #1"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1"><digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest></integrity_checks></template>
