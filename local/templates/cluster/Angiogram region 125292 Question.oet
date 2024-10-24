@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template"><id>bd734422-6836-43f0-a1db-d608bd31d4e3</id><name>Angiogram region 125292 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;125292&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;RIS IR ANGIOGRAM REGION&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Angiogram region&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~bd734422-6836-43f0-a1db-d608bd31d4e3~NAME~Angiogram region 125292 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>						&lt;p&gt;Abdomen/Pelvis&lt;/p&gt;											&lt;p&gt;Chest&lt;/p&gt;											&lt;p&gt;Extremity&lt;/p&gt;											&lt;p&gt;Neuro&lt;/p&gt;											&lt;p&gt;Other (comment)&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>						&lt;p&gt;1. Equals&lt;/p&gt;											&lt;p&gt;2. Equals&lt;/p&gt;											&lt;p&gt;3. Equals&lt;/p&gt;											&lt;p&gt;4. Equals&lt;/p&gt;											&lt;p&gt;5. Equals&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>						&lt;p&gt;1. Neuro&lt;/p&gt;											&lt;p&gt;2. Chest&lt;/p&gt;											&lt;p&gt;3. Abdomen/Pelvis&lt;/p&gt;											&lt;p&gt;4. Extremity&lt;/p&gt;											&lt;p&gt;5. Other (comment)&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>						&lt;p&gt;1. Or&lt;/p&gt;											&lt;p&gt;2. Or&lt;/p&gt;											&lt;p&gt;3. Or&lt;/p&gt;											&lt;p&gt;4. Or&lt;/p&gt;											&lt;p&gt;5. Or&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>						&lt;p&gt;1. 125295&lt;/p&gt;											&lt;p&gt;2. 125293&lt;/p&gt;											&lt;p&gt;3. 125328&lt;/p&gt;											&lt;p&gt;4. 125293;125491&lt;/p&gt;											&lt;p&gt;5. 131579&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>						&lt;p&gt;1. RIS IR ANGIOGRAM NEURO&lt;/p&gt;											&lt;p&gt;2. RIS IR LATERALITY&lt;/p&gt;											&lt;p&gt;3. RIS IR ANGIOGRAM ABDOMEN/PELVIS&lt;/p&gt;											&lt;p&gt;4. RIS IR LATERALITY;RIS IR EXTREMITY UPPER/LOWER&lt;/p&gt;											&lt;p&gt;5. RIS FREE TEXT COMMENT&lt;/p&gt;					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Angiogram region"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Extremity</includedValues><includedValues>Neuro</includedValues><includedValues>Chest</includedValues><includedValues>Abdomen/Pelvis</includedValues><includedValues>Other (comment)</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="35aec316-9564-4541-9d98-17e19405890e" concept_name="Abdomen pelvis angiogram type 125328 Question" max="1" path="/items[at0002]" name="Abdomen/pelvis angiogram type"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="f877d5b1-2939-40c3-9e92-45c55d946223" concept_name="Comment 131579 Question" max="1" path="/items[at0002]" name="Comment"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="54045396-5c1d-4db4-a20b-f92752b234e7" concept_name="Type of neuro angiogram 125295 Question" max="1" path="/items[at0002]" name="Type of neuro angiogram"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="94284059-dbd1-47ef-a228-4b3458962a03" concept_name="Laterality 125293 Question" max="1" path="/items[at0002]" name="Laterality"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6abea7c5-ece7-402c-8ff8-af34a7aad991" concept_name="Upper or lower extremity 125491 Question" max="1" path="/items[at0002]" name="Upper or lower extremity"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>bd734422-6836-43f0-a1db-d608bd31d4e3</id><name>Angiogram region 125292 Question</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]"><items><item><key>Order Specific Questions.Question ID</key><value>&lt;p&gt;125292&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question Name</key><value>&lt;p&gt;RIS IR ANGIOGRAM REGION&lt;/p&gt;</value></item><item><key>Order Specific Questions.Question</key><value>&lt;p&gt;Angiogram region&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~bd734422-6836-43f0-a1db-d608bd31d4e3~NAME~Angiogram region 125292 Question}</value></item></items></annotations><annotations path="[openEHR-EHR-CLUSTER.freetextorderquestion.v1]/items[at0001]"><items><item><key>Order Specific Questions.Answer Button Values</key><value>
+						&lt;p&gt;Abdomen/Pelvis&lt;/p&gt;
+					
+						&lt;p&gt;Chest&lt;/p&gt;
+					
+						&lt;p&gt;Extremity&lt;/p&gt;
+					
+						&lt;p&gt;Neuro&lt;/p&gt;
+					
+						&lt;p&gt;Other (comment)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Comparison Operator</key><value>
+						&lt;p&gt;1. Equals&lt;/p&gt;
+					
+						&lt;p&gt;2. Equals&lt;/p&gt;
+					
+						&lt;p&gt;3. Equals&lt;/p&gt;
+					
+						&lt;p&gt;4. Equals&lt;/p&gt;
+					
+						&lt;p&gt;5. Equals&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Value</key><value>
+						&lt;p&gt;1. Neuro&lt;/p&gt;
+					
+						&lt;p&gt;2. Chest&lt;/p&gt;
+					
+						&lt;p&gt;3. Abdomen/Pelvis&lt;/p&gt;
+					
+						&lt;p&gt;4. Extremity&lt;/p&gt;
+					
+						&lt;p&gt;5. Other (comment)&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Condition Comparison</key><value>
+						&lt;p&gt;1. Or&lt;/p&gt;
+					
+						&lt;p&gt;2. Or&lt;/p&gt;
+					
+						&lt;p&gt;3. Or&lt;/p&gt;
+					
+						&lt;p&gt;4. Or&lt;/p&gt;
+					
+						&lt;p&gt;5. Or&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions</key><value>
+						&lt;p&gt;1. 125295&lt;/p&gt;
+					
+						&lt;p&gt;2. 125293&lt;/p&gt;
+					
+						&lt;p&gt;3. 125328&lt;/p&gt;
+					
+						&lt;p&gt;4. 125293;125491&lt;/p&gt;
+					
+						&lt;p&gt;5. 131579&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Cascading - Questions Record Name</key><value>
+						&lt;p&gt;1. RIS IR ANGIOGRAM NEURO&lt;/p&gt;
+					
+						&lt;p&gt;2. RIS IR LATERALITY&lt;/p&gt;
+					
+						&lt;p&gt;3. RIS IR ANGIOGRAM ABDOMEN/PELVIS&lt;/p&gt;
+					
+						&lt;p&gt;4. RIS IR LATERALITY;RIS IR EXTREMITY UPPER/LOWER&lt;/p&gt;
+					
+						&lt;p&gt;5. RIS FREE TEXT COMMENT&lt;/p&gt;
+					</value></item><item><key>Order Specific Questions.Hide Comments</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Comments and Duplicate Answers</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Multiple Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Released Flag</key><value>&lt;p&gt;Yes&lt;/p&gt;</value></item><item><key>Order Specific Questions.Require Response</key><value>&lt;p&gt;No&lt;/p&gt;</value></item><item><key>Order Specific Questions.Response Type</key><value>&lt;p&gt;Custom List&lt;/p&gt;</value></item></items></annotations><definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" concept_name="Freetextorderquestion" max="1" name="Angiogram region"><Rule path="/items[at0001]"><constraint xsi:type="textConstraint"><includedValues>Extremity</includedValues><includedValues>Neuro</includedValues><includedValues>Chest</includedValues><includedValues>Abdomen/Pelvis</includedValues><includedValues>Other (comment)</includedValues></constraint></Rule><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="94284059-dbd1-47ef-a228-4b3458962a03" concept_name="Laterality 125293 Question" max="1" path="/items[at0002]" name="Laterality"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="54045396-5c1d-4db4-a20b-f92752b234e7" concept_name="Type of neuro angiogram 125295 Question" max="1" path="/items[at0002]" name="Type of neuro angiogram"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="35aec316-9564-4541-9d98-17e19405890e" concept_name="Abdomen pelvis angiogram type 125328 Question" max="1" path="/items[at0002]" name="Abdomen/pelvis angiogram type"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6abea7c5-ece7-402c-8ff8-af34a7aad991" concept_name="Upper or lower extremity 125491 Question" max="1" path="/items[at0002]" name="Upper or lower extremity"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="f877d5b1-2939-40c3-9e92-45c55d946223" concept_name="Comment 131579 Question" max="1" path="/items[at0002]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
