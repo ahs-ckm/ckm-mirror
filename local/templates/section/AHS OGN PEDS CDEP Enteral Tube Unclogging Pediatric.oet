@@ -64,19 +64,11 @@
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;CCCIR-18127 - the panel that is currently within this order set will become it&apos;s own panel availible to find on it&apos;s own outside of the order set&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;Name: Enteral Tube Unclogging Pediatric&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;Synonyms: NG, OG, NJ, Nasogastric, Naso gastric,&amp;nbsp;Orogastric, Oro gastric, Nasojejunal, Naso jejunal, GT, GJ, Gastrostomy, Gastrojejunal, G-Tube,&amp;nbsp;Tube Feed,&amp;nbsp;feeding,&amp;nbsp;unclogging, un clog, declogging, de clog&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;Name: Enteral Tube Unclogging Pediatric&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:null&quot;&gt;Synonyms: NG, OG, NJ, Nasogastric, Naso gastric,&amp;nbsp;Orogastric, Oro gastric, Nasojejunal, Naso jejunal, GT, GJ, Gastrostomy, Gastrojejunal, G-Tube,&amp;nbsp;Tube Feed,&amp;nbsp;feeding,&amp;nbsp;unclogging, un clog, declogging, de clog, ND, Nasoduodenal, naso duodenal,&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
       </item>
       <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~882bf48f-8d29-4a86-80c9-7128a3022517~NAME~AHS OGN PEDS CDEP Enteral Tube Unclogging Pediatric}</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#2ecc71&quot;&gt;CCCIR-18127 - update route and PRN reason for both medication orders&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -88,12 +80,28 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lipase-amylase-protease (COTAZYM) capsule 10000 unit-40000 unit-35000 unit; 1 capsule, other - see admin instructions, every 30 minutes, as needed for feeding tube unclogging, For 3 Doses&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dissolve one crushed sodium bicarbonate tablet in 5-10mL sterile water. Add the contents of 1 opened enzyme capsule to the mixture. Allow to completely dissolve for 5-10 minutes. Instill mixture into the feeding tube. Clamp the tube for 30 minutes. If the clog is not cleared within 30 minutes, the solution should be removed and replaced with a fresh mixture. Flush with warm water until clear. Repeat twice if needed.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium bicarbonate tablet; 500 mg, other - see admin instructions, every 30 minutes, as needed, for feeding tube unclogging, For 3 Doses&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Dissolve one crushed sodium bicarbonate tablet in 5-10mL sterile water. Add the contents of 1 opened enzyme capsule to the mixture. Allow to completely dissolve for 5-10 minutes. Instill mixture into the feeding tube. Clamp the tube for 30 minutes. If the clog is not cleared within 30 minutes, the solution should be removed and replaced with a fresh mixture. Flush with warm water until clear. Repeat twice if needed.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Enteral Tube Unclogging Pediatric">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="lipase-amylase-protease 10000 unit-40000 unit-35000 unit capsule AND sodium bicarbonate 500 mg tablet">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c4030921-934b-429f-ba6e-2b575e9f5bbb" concept_name="PHARM LIPASE 10000 UNIT-PROTEASE 35000 UNIT-AMYLASE 40000 UNIT CAPSULE [167428] Order" max="1" path="/items" name="lipase-amylase-protease (COTAZYM) capsule 10000 unit-40000 unit-35000 unit; 1 capsule, other - see admin instructions, once, as needed for feeding tube unclogging"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="AND (linked order)"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="19148b67-cf2b-4821-9a86-2597a8d923b1" concept_name="PHARM sodium bicarbonate tablet Compiled Order" max="1" path="/items" name="sodium bicarbonate tablet; 500 mg, other - see admin instructions, once, as needed, for feeding tube unclogging"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c4030921-934b-429f-ba6e-2b575e9f5bbb" concept_name="PHARM LIPASE 10000 UNIT-PROTEASE 35000 UNIT-AMYLASE 40000 UNIT CAPSULE [167428] Order" max="1" path="/items" name="lipase-amylase-protease (COTAZYM) capsule 10000 unit-40000 unit-35000 unit; 1 capsule, other - see admin instructions, every 30 minutes, as needed for feeding tube unclogging, For 3 Doses"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="AND (linked order)"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="19148b67-cf2b-4821-9a86-2597a8d923b1" concept_name="PHARM sodium bicarbonate tablet Compiled Order" max="1" path="/items" name="sodium bicarbonate tablet; 500 mg, other - see admin instructions, every 30 minutes, as needed, for feeding tube unclogging, For 3 Doses"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
@@ -104,5 +112,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
   </integrity_checks>
 </template>
