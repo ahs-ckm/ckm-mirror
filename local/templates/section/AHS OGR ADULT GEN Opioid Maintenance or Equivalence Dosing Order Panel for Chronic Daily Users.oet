@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>327166a7-4562-41a6-8239-b617de89a5ba</id>
+  <name>AHS OGR ADULT GEN Opioid Maintenance or Equivalence Dosing Order Panel for Chronic Daily Users</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;OSQ&amp;nbsp;189873&lt;/p&gt;</value>
+      </item>
+    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~327166a7-4562-41a6-8239-b617de89a5ba~NAME~AHS OGR ADULT GEN Opioid Maintenance or Equivalence Dosing Order Panel for Chronic Daily Users}</value></item></items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Opioid Analgesics – Maintenance of Home/Preadmission Therapy&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Addiction Services&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Opioid Maintenance or Equivalence Dosing Order Panel for Chronic Daily Users">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="96a96c73-34c2-49c6-9592-e56a9233bb0e" concept_name="PHARM OXYCODONE ER 10 MG TABLETCRUSH RESISTANTEXTENDED RELEASE 12 HR [122363] Order" max="1" path="/items" name="oxyCODONE, long acting tablet; 10 mg, oral, every 8 hours, scheduled"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="28736ee7-17a1-419d-8be2-bff9bbba9485" concept_name="PHARM HYDROMORPHONE 1 MG TABLET [162966] Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; 2 mg, oral, every 6 hours, scheduled"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0efae710-216c-4542-8b14-ee0d1aa196be" concept_name="PHARM HYDROMORPHONE CR 3 MG CAPSULEEXTENDED RELEASE 12 HR [162972] Order" max="1" path="/items" name="HYDROmorphone, long acting capsule; 3 mg, oral, every 12 hours"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b0cb62bd-b2c6-47c3-8880-71c807b431ac" concept_name="PHARM MORPHINE SULFATE 5 MG IMMEDIATE RELEASE TABLET [163067] Order" max="1" path="/items" name="morphine, short acting tablet; 10 mg, oral, every 6 hours, scheduled"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd294b06-1453-4a73-b2a8-4e4fac644a1a" concept_name="PHARM MORPHINE SULFATE ER 10 MG CAPSULEEXTENDED REL PELLETS12 HR [163057] Order" max="1" path="/items" name="morphine, long acting 12 hour capsule; 30 mg, oral, every 12 hours, scheduled"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="308116fc-81a2-4b0d-b489-20524706b24f" concept_name="PHARM METHADONE 1 MG TABLET [163029] Order" max="1" path="/items" name="methadone tablet; continue home dosing; *** mg, oral"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; continue home dosing; 2 tablet, sublingual, daily"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77094098-f0a6-407d-bd6a-bdcab90abaa8" concept_name="PHARM BUPRENORPHINE 8 MG-NALOXONE 2 MG SUBLINGUAL TABLET [34714] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 8 mg-2 mg; continue home dosing; 1 tablet, sublingual, daily"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98ff5f4e-62f6-4180-8bdd-a349bfc6b625" concept_name="PHARM BUPRENORPHINE 5 MCG HOUR WEEKLY TRANSDERMAL PATCH [107660] Order" max="1" path="/items" name="buprenorphine 5 mcg/hour patch; continue home dosing; 1 patch, transdermal, Administer over: 7 Days, weekly"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9499d9d-e303-427e-948e-ccf6c08b9ef2" concept_name="PHARM BUPRENORPHINE 10 MCG HOUR WEEKLY TRANSDERMAL PATCH [107661] Order" max="1" path="/items" name="buprenorphine 10 mcg/hour patch; continue home dosing; 1 patch, transdermal, Administer over: 7 Days, weekly"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b21dcb37-5770-430b-948d-838dd1014f34" concept_name="CONS Inpatient Consult to Addiction Services [CON72] IP Order" max="1" path="/items" name="Inpatient Consult to Addiction Services"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
