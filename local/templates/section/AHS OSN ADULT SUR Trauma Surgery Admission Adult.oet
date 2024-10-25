@@ -140,6 +140,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions; Until discontinued&apos;]/activities[at0001]">
     <items>
       <item>
@@ -710,7 +718,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9f6694c9-7e2f-4d54-b74a-eb9f668d36a4" concept_name="AHS OGR ADULT GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ef152e9a-eb88-498e-9c38-2e59fd91a68c" concept_name="Diet and Nutrition Admission Adult Order Group" max="1" path="/items" name="Diet and Nutrition"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ef152e9a-eb88-498e-9c38-2e59fd91a68c" concept_name="AHS OGR ADULT MED Diet and Nutrition Admission Adult" max="1" path="/items" name="Diet and Nutrition"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68c645dd-33f1-4806-a646-df281eac3217" concept_name="AHS OGN MULTI SUR Spinal Precautions" max="1" path="/items" name="Spinal Precautions"/>
@@ -723,7 +731,7 @@
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fbccd357-0ef5-4bf1-a646-9a597c6bb371" concept_name="Mobilize Patient Order Panel" max="1" path="/items" name="Mobilize Patient"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fbccd357-0ef5-4bf1-a646-9a597c6bb371" concept_name="AHS OGR ADULT MED Mobilize Patient" max="1" path="/items" name="Mobilize Patient"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; No Activity Restrictions; Until discontinued"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed Rest With Exceptions; Until discontinued"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Strict Bed Rest; Until discontinued"/>
@@ -741,8 +749,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Do Not Record Vital Signs; Until discontinued"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c95ed23e-7578-492a-93b9-39c75abd31b1" concept_name="NURAX Continuous Pulse Oximetry [NUR586] IP Order" max="1" path="/items" name="Continuous Pulse Oximetry; Until discontinued"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b37419ae-0f45-4bc4-b6c2-e5f31e26ba34" concept_name="Cardiac Monitoring Order Panel" max="1" path="/items" name="Monitors"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b37419ae-0f45-4bc4-b6c2-e5f31e26ba34" concept_name="AHS OGR ADULT GEN Cardiac Monitoring" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d50535a8-977a-41b5-9942-a3beff464cb3" concept_name="AHS OGR ADULT GEN Intake and Output" max="1" path="/items" name="Intake and Output"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; 4 times daily before meals and at bedtime"/>
