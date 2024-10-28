@@ -60,6 +60,14 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~c5834c00-80b1-402f-989f-ae57db2d6b13~NAME~AHS OGN PEDS CDEP Parenteral Nutrition Pediatric Labs}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Initiation&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -89,6 +97,54 @@
       <item>
         <key>CKT.Clinical Guidance</key>
         <value>&lt;p&gt;Repeat daily for three days, starting the day after Parenteral Nutrition initiation.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Weekly Labs&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Per CCCIR-18158 - Add ALT, ALP, AST, and GGT to Weekly Labs. We might need to add Bilirubin as well - Melissa will let us know&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Weekly Labs&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Weekly Labs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alanine Aminotransferase (ALT); Weekly, For 3 Occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Added per CCCIR-18158&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Weekly Labs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Alkaline Phosphatase (ALP); Weekly, For 3 Occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Added per CCCIR-18158&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Weekly Labs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Aspartate Aminotransferase (AST); Weekly, For 3 Occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Added per CCCIR-18158&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - PN Weekly Labs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gamma Glutamyl Transferase (GGT); Weekly, For 3 Occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Added per CCCIR-18158&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -148,7 +204,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~c5834c00-80b1-402f-989f-ae57db2d6b13~NAME~AHS OGN PEDS CDEP Parenteral Nutrition Pediatric Labs}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Parenteral Nutrition Pediatric Labs">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Parenteral Nutrition Pediatric Labs">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - PN Initiation">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
@@ -188,6 +244,7 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c3f25e2-0dec-4b31-9cce-0faa3773371b" concept_name="LAB Triglycerides [LAB134] Order" max="1" path="/items" name="Triglycerides; Daily Morning, For 3 Occurrences"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - PN Weekly Labs">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random [LAB82] Order" max="1" path="/items" name="Glucose, Random; Weekly, For 3 Occurrences"/>
@@ -197,6 +254,10 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate [LAB113] Order" max="1" path="/items" name="Phosphate; Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea; Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Weekly, For 3 Occurrences"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); Weekly, For 3 Occurrences"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); Weekly, For 3 Occurrences"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) [LAB131] Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); Weekly, For 3 Occurrences"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) [LAB85] Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT); Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c3f25e2-0dec-4b31-9cce-0faa3773371b" concept_name="LAB Triglycerides [LAB134] Order" max="1" path="/items" name="Triglycerides; Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="53bb4f40-3449-4c57-ab1e-d260b1ab02fb" concept_name="LAB Prealbumin [LAB115] Order" max="1" path="/items" name="Prealbumin; Weekly, For 3 Occurrences"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2c6afe38-0e28-4406-9cf5-1268b186d33e" concept_name="LAB Albumin [LAB45] Order" max="1" path="/items" name="Albumin; Weekly, For 3 Occurrences"/>
