@@ -84,11 +84,35 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Diet Instructions to Nursing - Tube feed only&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Diet Instructions to Nursing; Tube feed only&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Nothing by mouth, tube feed only&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Infant Formula; 1 feed, enteral, with feeds, as per enteral feeding order&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;If Breastmilk is ordered feed Breastmilk first. Mix the above feeds to make up the Total Feeding Volume ordered&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Infant Formula (Continuous); enteral, continuous&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;If Breastmilk is ordered feed Breastmilk first. Mix the above feeds to make up the Total Feeding Volume ordered&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -97,23 +121,23 @@
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="DIETNUR Enteral Feeding with Tray NB Inf Ped [304DIET2101] IP Order" max="1" path="/items" name="Enteral Feeding with Tray NB/Inf/Ped; Newborn/Infant; Breast Feed"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="DIETNUR Enteral Feeding with Tray NB Inf Ped [304DIET2101] IP Order" max="1" path="/items" name="Enteral Feeding with Tray NB/Inf/Ped; Newborn/Infant; Bottle Feed"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="DIETNUR Enteral Feeding with Tray NB Inf Ped [304DIET2101] IP Order" max="1" path="/items" name="Enteral Feeding with Tray NB/Inf/Ped; Newborn/Infant; Tube Feed"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="DIETNUR Enteral Feeding with Tray NB Inf Ped [304DIET2101] IP Order" max="1" path="/items" name="Enteral Feeding with Tray NB/Inf/Ped #3"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0c204318-b8dc-4aa0-aa1b-c7f4a608246b" concept_name="DIETNUR Enteral Feeding with Tray NB Inf Ped [304DIET2101] IP Order" max="1" path="/items" name="Enteral Feeding with Tray NB/Inf/Ped; Pediatric"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Newborn/Infant; Breast Feed"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Newborn/Infant; Bottle Feed"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Newborn/Infant; Tube Feed"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped #3"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="321159e3-47b2-4387-b4ff-ed70ee4f9967" concept_name="DIET Enteral Feeding without Tray NB Inf Ped [304DIET2001] Order" max="1" path="/items" name="Enteral Feeding without Tray NB/Inf/Ped; Pediatric"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5136cbe0-cb23-40cb-844c-a50f4556a025" concept_name="DIET Enteral Feeding Safe Start Pediatric [304DIET2103] IP Order" max="1" path="/items" name="Enteral Feeding Safe Start Pediatric"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99c54c05-8a24-4ea6-a32c-b0bf7e3fc670" concept_name="NURINT Total Fluid Intake (TFI) Pediatric [138903] IP Order" max="1" path="/items" name="Total Fluid Intake (TFI) Pediatric"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Diet Instructions to Nursing - Tube feed only"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Enteral Feed Label Orders">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="92e4d1ad-3786-4774-bd24-fc064304226b" concept_name="Breastmilk 1 Feed Label Order" max="1" path="/items" name="Breastmilk;  enteral, with feeds, as per enteral feeding order"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2e469b82-dfc3-4553-9887-da27b77dbcd2" concept_name="Breastmilk Continuous Label Order" max="1" path="/items" name="Breastmilk (Continuous); enteral, continuous"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b72ffd08-4aa0-4ecf-82eb-3e964ff39620" concept_name="Pasteurized Donor Human Milk 1 Feed Label Order" max="1" path="/items" name="Pasteurized Donor Human Milk; enteral, with feeds, as per enteral feeding order"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3a76b671-5528-4da5-9e3c-9e35fafdb915" concept_name="Pasteurized Donor Human Milk Continuous Label Order" max="1" path="/items" name="Pasteurized Donor Human Milk (Continuous), enteral continuous"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f0f6e992-edbf-4550-9750-b4a580f1ccb7" concept_name="Infant Formula 1 Feed Label Order" max="1" path="/items" name="Infant Formula; enteral, with feeds, as per enteral feeding order"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca63cc5d-cf5d-46d0-ac92-30aecdee454b" concept_name="Infant Formula Continuous Label Order" max="1" path="/items" name="Infant Formula (Continuous); enteral, continuous"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b756b903-d456-4aaa-ab89-d9bad0824583" concept_name="Shared Breastmilk 1 Feed Label Order" max="1" path="/items" name="Shared Breastmilk; enteral, with feeds, as per enteral feeding order"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae262692-c993-43e2-a5e5-395f8ff45f8a" concept_name="Shared Breastmilk Continuous Label Order" max="1" path="/items" name="Shared Breastmilk (Continuous), enteral, continuous"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Tube feed only"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Enteral Feed Label Orders">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="92e4d1ad-3786-4774-bd24-fc064304226b" concept_name="PHARM BREASTMILK [3080000011] Order" max="1" path="/items" name="Breastmilk; 1 feed, enteral, with feeds, as per enteral feeding order"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2e469b82-dfc3-4553-9887-da27b77dbcd2" concept_name="PHARM BREASTMILK CONTINUOUS [4002537] Order" max="1" path="/items" name="Breastmilk (Continuous); enteral, continuous"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b72ffd08-4aa0-4ecf-82eb-3e964ff39620" concept_name="PHARM PASTEURIZED DONOR HUMAN MILK [4001596] Order" max="1" path="/items" name="Pasteurized Donor Human Milk; 1 feed, enteral, with feeds, as per enteral feeding order"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3a76b671-5528-4da5-9e3c-9e35fafdb915" concept_name="PHARM PASTEURIZED DONOR HUMAN MILK CONTINUOUS [4002539] Order" max="1" path="/items" name="Pasteurized Donor Human Milk (Continuous), enteral continuous"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f0f6e992-edbf-4550-9750-b4a580f1ccb7" concept_name="PHARM INFANT FORMULA [4002561] Order" max="1" path="/items" name="Infant Formula; 1 feed, enteral, with feeds, as per enteral feeding order"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca63cc5d-cf5d-46d0-ac92-30aecdee454b" concept_name="PHARM INFANT FORMULA CONTINUOUS [4002540] Order" max="1" path="/items" name="Infant Formula (Continuous); enteral, continuous"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b756b903-d456-4aaa-ab89-d9bad0824583" concept_name="PHARM SHARED BREASTMILK [4001595] Order" max="1" path="/items" name="Shared Breastmilk; 1 feed, enteral, with feeds, as per enteral feeding order"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae262692-c993-43e2-a5e5-395f8ff45f8a" concept_name="PHARM SHARED BREASTMILK CONTINUOUS [4002538] Order" max="1" path="/items" name="Shared Breastmilk (Continuous), enteral, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -138,9 +162,6 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
