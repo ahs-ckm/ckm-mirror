@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>62f324f3-0b9f-4116-ba35-9ba4c1daff85</id>
+  <name>AHS OSN PEDS SUR Trauma Surgery Admission Pediatric</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~62f324f3-0b9f-4116-ba35-9ba4c1daff85~NAME~AHS OSN PEDS SUR Trauma Surgery Admission Pediatric}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;AHS IP SUR TRAUMA SURGERY ADMISSION PEDS [304000331304]&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;Order Set Keywords: &lt;/strong&gt;Admission, Admit, trauma, Trauma Surgery Admission, Pediatric&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Consider opening and merging the following order sets if appropriate:&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Parenteral Nutrition Order Set&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Any appropriate diagnosis based order sets&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Pediatric continuous morphine infusion order set&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Pediatric Naloxone Order Set&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Transfusion Medicine, Pediatrics Order Set&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;Provincial Acute Pain Pediatrics Inpatient Order Set&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Precautions and Safety&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No Activity Restrictions; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Activity Level: No Activity Restrictions&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Bedrest with Exceptions, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Activity Level: No Activity Restrictions&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Strict Bed Rest; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Synonym(s)</key>
+        <value>&lt;p&gt;Activity Level: Strict Bed Rest&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Weight Bearing; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Type of Weight Bearing (hard stop): Full; Partial; Feather; Non&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adjust Head of Bed to:; ; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Head of bed adjustment (hard stop): 30 degrees; 45 degrees; 60 degrees; Flat; Reverse Trendelenburg; Other&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Once Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Include: Heart Rate Respiratory Rate Blood Pressure Temperature SpO2 Central Capillary Refill Assessment Respiratory Effort Assessment Oxygen Delivery Rate Documentation&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Neurological Vital Signs; Every 4 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Neurological vital signs include: Glasgow Coma Scale, gross motor power x 4 and pupillary assessment&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-respiratory Monitoring; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Can the patient be off monitoring for tests and activities (including therapy, ambulation, off-unit procedures, showers, bathroom) (hard stop)? Yes; No; Other (specify)&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Maintain&lt;br&gt;Connect to: Low intermittent wall suction&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Gastric Tube Care; NG Flush 2mL Normal Saline 2mL; Every shift&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Type of tube: NG tube&lt;br&gt;Action: Maintain&lt;br&gt;Flush with: Other (specify in comment)&lt;br&gt;Flush with Normal Saline 2mL every shift and prn.&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Urinary catheter care; Foley; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Ensure foley is connected to straight drainage. Notify MRHP if urine output less than *** mL/kg/hr&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Chest Tube Maintenance; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Instructions for: Chest Tube #1&lt;br&gt;Drainage system type: Closed Drainage (Pleurovac)&lt;br&gt;Suction Level (cmH2O): -20&lt;br&gt;Suction instructions: Continuous suction, Off suction for ambulation/procedures&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 1 or 2 Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Stable hemoglobin is defined as no decrease equal to or greater than a 5 g/L decrease&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 1 or 2 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Pediatric diet; Clear Fluids; Now or Specify Date/Time&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Standard Diet: Clear Fluids&lt;br&gt;If hemoglobin stable, change diet to &quot;regular&quot; in AM&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 1 or 2 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Bed Rest with Bathroom Privileges; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Activity Level: Bed Rest With Exceptions&lt;br&gt;Bathroom Exceptions: Bathroom Privileges&lt;br&gt;Other Instructions: If hemoglobin stable in morning, change activity to &quot;No Restrictions&quot;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 1 or 2 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Every 4 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Assess: Blood Pressure, Pulse, Respirations, Oxygen Saturation, and Temperature&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 1 or 2 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;NPO Diet; Now or Specify Date/Time&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reassess in AM&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Bed Rest; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Activity Level: Strict Bed Rest&lt;br&gt;Other Instructions: Assess in AM for Bathroom Privilages&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; q2h x 4, then q4h; Per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Assess: Blood Pressure, Pulse, Respirations, Oxygen Saturation, and Temperature &amp;nbsp;q2h x 4, then q4h.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-respiratory Monitoring; Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Can the patient be off monitoring for tests and activities (including therapy, ambulation, off-unit procedures, showers, bathroom) (hard stop)? Yes; No; Other (specify)&lt;/p&gt;&lt;p&gt;Monitor for hemodynamic instability, reassess after 24 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Type and Screen; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Is this a future scheduled pre-operative patient testing order (hard stop)? Yes; No&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hemoglobin; First occurrence then every 6 hours, For 2 occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hemoglobin; First occurrence then every 12 hours, For 3 occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting H+18 hours&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hemoglobin; First occurrence then every 12 hours, For 3 occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Solid Organ Injuries&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric Grade 3, 4 or 5 Solid Organ Injuries&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Other: As per local PEWS policy&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Specimen Type: Urine&lt;/p&gt;&lt;p&gt;Specimen Source: Urine, Midstream&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Tomorrow AM&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Urine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Specimen Type: Urine&lt;/p&gt;&lt;p&gt;Specimen Source: Urine, Midstream&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 1 Projection; Once, Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Mobile exam: Yes&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Abdomen 1 Projection; Once, Routine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Mobile exam: Yes&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Immunizations&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Cardiac Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Critical Care Medicine&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Dentistry&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric General Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Infectious Disease&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatrics Inpatient Services/Hospitalist&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Neurological Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Ophthalmology&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Oral Maxillofacial Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Orthopaedics&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric ENT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Physical Medicine Rehab&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Plastic Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Psychiatry&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Spinal Surgery&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Pediatric Urology&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Consults/Referrals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IP Specialty Consults&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Inpatient Consult to Suspected Child Abuse and Neglect&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Reason for Consult (hard stop)? ***&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Trauma Surgery Admission Pediatric">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="970cd722-5a0b-4065-a0c6-86afdb408177" concept_name="AHS OGN PEDS CH Isolation Panel Pediatric" max="1" path="/items" name="Isolation Panel Pediatric"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e7387c04-3474-4cf1-bbc9-5535d5b082dd" concept_name="AHS OGR PEDS SUR Trauma Surgery Admission Pediatric Diet and Nutrition" max="1" path="/items" name="Diet and Nutrition"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="52cd8191-5333-4cf4-ba72-84c2ec8056db" concept_name="PRE Seizure precautions [PRE2] IP Order" max="1" path="/items" name="Seizure precautions"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68c645dd-33f1-4806-a646-df281eac3217" concept_name="AHS OGN MULTI SUR Spinal Precautions" max="1" path="/items" name="Spinal Precautions"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; No Activity Restrictions; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bedrest with Exceptions, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Strict Bed Rest; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dada0a35-1622-4b65-b34f-1c024669ff3b" concept_name="NURAX Weight Bearing [NUR138] IP Order" max="1" path="/items" name="Weight Bearing; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; ; Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological Vital Signs; Every 4 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c95ed23e-7578-492a-93b9-39c75abd31b1" concept_name="NURAX Continuous Pulse Oximetry [NUR586] IP Order" max="1" path="/items" name="Continuous Pulse Oximetry; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="NURAX Cardio-respiratory Monitoring [NUR225] IP Order" max="1" path="/items" name="Cardio-respiratory Monitoring; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99bd6a68-2771-4309-8049-8f713ed560c3" concept_name="NURAX Neurovascular Checks [NUR475] IP Order" max="1" path="/items" name="Neurovascular Checks; Every 1 Hour"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="NURAX Intake and Output [NUR467] IP Order" max="1" path="/items" name="Intake and Output; Every shift"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99c54c05-8a24-4ea6-a32c-b0bf7e3fc670" concept_name="NURINT Total Fluid Intake (TFI) Pediatric [138903] IP Order" max="1" path="/items" name="Total Fluid Intake (TFI) Pediatric; Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="NURAX Measure Height or Length [NUR616] IP Order" max="1" path="/items" name="Measure Height or Length; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="NURINT Gastric Tube Care [NUR336] IP Order" max="1" path="/items" name="Gastric Tube Care; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="NURINT Gastric Tube Care [NUR336] IP Order" max="1" path="/items" name="Gastric Tube Care; NG Flush 2mL Normal Saline 2mL; Every shift"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a658bdac-902a-45d6-8b4e-b570d1f23f5a" concept_name="NURINT Urinary catheter care [NUR375] IP Order" max="1" path="/items" name="Urinary catheter care; Foley; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d53319ae-f4d7-4d6f-b909-b61ff27b2531" concept_name="NURINT Chest Tube Maintenance [NUR825] IP Order" max="1" path="/items" name="Chest Tube Maintenance; Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Solid Organ Injuries">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric Grade 1 or 2 Solid Organ Injuries">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="519e6cd8-a774-4226-b5ad-7d9ea53cf374" concept_name="DIET Pediatric diet [DIET25] Order" max="1" path="/items" name="Pediatric diet; Clear Fluids; Now or Specify Date/Time"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed Rest with Bathroom Privileges; Until discontinued"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 4 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34ddfbf6-ae7e-4fd5-a124-ef02d499858e" concept_name="LAB Hemoglobin [LAB291] Order" max="1" path="/items" name="Hemoglobin; Once Routine, tomorrow at 06:00"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric Grade 3, 4 or 5 Solid Organ Injuries">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet; Now or Specify Date/Time"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed Rest; Until discontinued"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; q2h x 4, then q4h; Per protocol"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4e04fb8-68ce-46ce-a2c1-85186c0b4c5d" concept_name="NURAX Cardio-respiratory Monitoring [NUR225] IP Order" max="1" path="/items" name="Cardio-respiratory Monitoring; Until discontinued"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; STAT"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hemoglobin q6h for 2 occurrences, then q12h for 3 occurrences">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34ddfbf6-ae7e-4fd5-a124-ef02d499858e" concept_name="LAB Hemoglobin [LAB291] Order" max="1" path="/items" name="Hemoglobin; First occurrence then every 6 hours, For 2 occurrences"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34ddfbf6-ae7e-4fd5-a124-ef02d499858e" concept_name="LAB Hemoglobin [LAB291] Order" max="1" path="/items" name="Hemoglobin; First occurrence then every 12 hours, For 3 occurrences"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          </Item>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c9cea756-230f-4b9a-9ba2-8db2c8272883" concept_name="AHS OGR PEDS CH Respiratory Interventions" max="1" path="/items" name="Respiratory Interventions"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP)"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Stat">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random [LAB82] Order" max="1" path="/items" name="Glucose, Random; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) [LAB131] Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated [LAB168] Order" max="1" path="/items" name="Bilirubin, Total and Conjugated; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase [LAB99] Order" max="1" path="/items" name="Lipase; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbdc630e-847e-466a-a859-3299451363c4" concept_name="LAB Beta hCG Quantitative [LAB143] Order" max="1" path="/items" name="Beta hCG, Quantitative; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) [LAB325] Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f8b7b7e1-6e8f-4e97-87fb-3b479754cdb2" concept_name="LAB Fibrinogen [LAB314] Order" max="1" path="/items" name="Fibrinogen; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis; STAT"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Routine">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random [LAB82] Order" max="1" path="/items" name="Glucose, Random; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) [LAB131] Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated [LAB168] Order" max="1" path="/items" name="Bilirubin, Total and Conjugated; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase [LAB99] Order" max="1" path="/items" name="Lipase; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) [LAB325] Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis; Once Routine"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="407e1011-590f-4a39-9cad-a8753037469f" concept_name="LABUR Urine General Toxicology Panel [LAB11112] Order" max="1" path="/items" name="Urine General Toxicology Panel; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e436b476-5668-4d62-adae-3c5c888cc19b" concept_name="LAB Ethanol Level [LAB46] Order" max="1" path="/items" name="Ethanol Level; Once Routine"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Tomorrow AM">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random [LAB82] Order" max="1" path="/items" name="Glucose, Random; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) [LAB131] Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated [LAB168] Order" max="1" path="/items" name="Bilirubin, Total and Conjugated; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase [LAB99] Order" max="1" path="/items" name="Lipase; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 1 occurrence"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) [LAB325] Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 1 occurrence"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Urine">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Repeating">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34ddfbf6-ae7e-4fd5-a124-ef02d499858e" concept_name="LAB Hemoglobin [LAB291] Order" max="1" path="/items" name="Hemoglobin; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random [LAB82] Order" max="1" path="/items" name="Glucose, Random; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) [LAB131] Order" max="1" path="/items" name="Aspartate Aminotransferase (AST); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6a84102-272d-436d-8f44-a66fe48cec02" concept_name="LAB Bilirubin Total and Conjugated [LAB168] Order" max="1" path="/items" name="Bilirubin, Total and Conjugated; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase [LAB99] Order" max="1" path="/items" name="Lipase; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) [LAB325] Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); Daily Morning (Daily), First occurrence tomorrow at 06:00, For 3 occurrences"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="IMGGR GR Chest 2 Projections [IMG36] Order" max="1" path="/items" name="GR Chest 2 Projections; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b4e73b9a-0263-4998-9a6a-740da9ec3f0c" concept_name="IMGGR GR Abdomen 2 Projections [IMG156] Order" max="1" path="/items" name="GR Abdomen 2 Projections; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a58c3be-c2ab-4e47-9bdd-95028c436cf0" concept_name="IMGGR GR Chest 1 Projection [IMG1259] Order" max="1" path="/items" name="GR Chest 1 Projection; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9cfd4a1-6247-46b7-9c5c-ee56776035bf" concept_name="IMGGR GR Abdomen 1 Projection [IMG154] Order" max="1" path="/items" name="GR Abdomen 1 Projection; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3cff7d41-2e53-4d24-9eb2-72088940cdac" concept_name="IMGGR GR Pelvis [IMG1286] Order" max="1" path="/items" name="GR Pelvis; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="db64f6f9-9161-4fb9-abec-75610691f63a" concept_name="IMGGR GR Cervical Spine [IMG56] Order" max="1" path="/items" name="GR Cervical Spine; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76d9d81a-6d16-4f61-b690-9e9892671a56" concept_name="IMGGR GR Thoracic Spine [IMG61] Order" max="1" path="/items" name="GR Thoracic Spine; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d5f6cfc5-4f2a-4f22-a185-1995ca9b4df6" concept_name="IMGGR GR Lumbar Spine [IMG66] Order" max="1" path="/items" name="GR Lumbar Spine; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="599d8a2a-1284-4d72-a649-e9e8cfd294f9" concept_name="IMGGR GR Lower Extremity Pediatric Left [IMG139] Order" max="1" path="/items" name="GR Lower Extremity Pediatric Left; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="571e6535-d758-4112-acc8-e1b985b3b210" concept_name="IMGGR GR Lower Extremity Pediatric Right [IMG140] Order" max="1" path="/items" name="GR Lower Extremity Pediatric Right; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f9ef2b88-5183-48eb-9575-86ae4f787987" concept_name="IMGGR GR Lower Extremity Pediatric Bilateral [IMG1533] Order" max="1" path="/items" name="GR Lower Extremity Pediatric Bilateral; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="75f9f303-e74e-4b05-9e1a-d5edb1909193" concept_name="IMGGR GR Upper Extremity Pediatric Left [IMG98] Order" max="1" path="/items" name="GR Upper Extremity Pediatric Left; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="74313e18-edec-49e5-ac68-b4c7602cb38b" concept_name="IMGGR GR Upper Extremity Pediatric Right [IMG99] Order" max="1" path="/items" name="GR Upper Extremity Pediatric Right; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Computed Tomography">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e5da8c5-1df2-439f-82a5-1dcd1ab8e113" concept_name="IMGCT CT Head [IMG181] Order" max="1" path="/items" name="CT Head; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="244f11bb-2037-489a-96be-f66802373631" concept_name="IMGCT CT Chest [IMG200] Order" max="1" path="/items" name="CT Chest; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9c44dec8-17c5-4bd8-9109-6d5bfc5bd4cc" concept_name="IMGCT CT Abdomen [IMG785] Order" max="1" path="/items" name="CT Abdomen; Once, Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1cfa791c-c8e0-4ce3-8cfb-3af7fcc50a09" concept_name="IMGCT CT Pelvis [IMG217] Order" max="1" path="/items" name="CT Pelvis; Once, Routine"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Insert and Maintain IV">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="502aaa32-e20f-4bd1-8e2f-cd0c9aa7a9a9" concept_name="AHS OGR PEDS SUR IV Maintenance Preprocedure" max="1" path="/items" name="IV Maintenance"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad170dc-0168-4a5e-b18d-b84496da37b8" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent IV BOLUS [400291] Order" max="1" path="/items" name="sodium chloride 0.9 % bolus; *** mL (10 mL/kg/dose), intravenous, once, As fast as possible"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad170dc-0168-4a5e-b18d-b84496da37b8" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent IV BOLUS [400291] Order" max="1" path="/items" name="sodium chloride 0.9 % bolus; *** mL (20 mL/kg/dose), intravenous, once, As fast as possible"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a1ba19c-a383-455f-81d6-eda4517485ed" concept_name="PHARM LACTATED RINGERS IV BOLUS [400296] Order" max="1" path="/items" name="lactated Ringer&apos;s bolus; *** mL (10 mL/kg/dose), intravenous, once, As fast as possible"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a1ba19c-a383-455f-81d6-eda4517485ed" concept_name="PHARM LACTATED RINGERS IV BOLUS [400296] Order" max="1" path="/items" name="lactated Ringer&apos;s bolus; *** mL (20 mL/kg/dose), intravenous, once, As fast as possible"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM DEXTROSE 5 Percent AND 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9815] Order" max="1" path="/items" name="D5-NaCl 0.9% infusion bag; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.9 Percent SODIUM CHLORIDE IV SOLUTION [9795] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.9% 1000 mL bag; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLN [11081] Order" max="1" path="/items" name="potassium chloride 20 mmol in NaCl 0.9% 1000 mL bag; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d245a4fe-23d0-4a9f-90de-6afda3777b94" concept_name="PHARM DEXTROSE 10 Percent AND 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9810] Order" max="1" path="/items" name="D10-NaCl 0.9% bag; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d560ffd-da2d-4fc9-9e79-b85501f26c62" concept_name="PHARM POTASSIUM CHLORIDE 0.02 MMOL ML (20 MMOL) IN D10-NACL 0.9 Percent 1000 ML INFUSION ORDERABLE [4201105] Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.9% 1,000 mL (0.02 mmol/mL) Infusion; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM LACTATED RINGERS INTRAVENOUS SOLUTION [4318] Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; *** mL; intravenous, continuous"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bec7b024-6d0c-4674-9e62-66a0b64c4e91" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN LACTATE RINGER INTRAVENOUS SOLUTION [165078] Order" max="1" path="/items" name="potassium chloride 20 mmol in LR 1000 mL infusion; *** mL; intravenous, continuous"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="NG Loss Replacement">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag; 0-300 mL, intravenous, continuous, Replace NG losses 1:1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLN [11081] Order" max="1" path="/items" name="potassium chloride 20 mmol in NaCl 0.9% 1000 mL bag; 0-300 mL, intravenous, continuous, Replace NG losses 1:1"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM CEFAZOLIN IV IM ORDERABLE [420006] Order" max="1" path="/items" name="ceFAZolin IV/IM; *** mg (90 mg/kg/day), intravenous, every 8 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" concept_name="PHARM METRONIDAZOLE IV ORDERABLE [420507] Order" max="1" path="/items" name="metroNIDAZOLE IV; *** mg (30 mg/kg/day), intravenous, every 8 hours"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2d09aca5-e7e3-4da0-bedf-f5834c77e23b" concept_name="AHS OGR PEDS CH Analgesics and Antipyretics Acute Pain" max="1" path="/items" name="Analgesics and Antipyretics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fed5d751-e5cb-4490-8299-ffda3c5a4fa5" concept_name="AHS OGR PEDS CH Antiemetics Acute Pain" max="1" path="/items" name="Antiemetics"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7c1f7bee-e636-48b3-b0f7-eca1de841c58" concept_name="AHS OGR PEDS CH Laxatives Acute Pain" max="1" path="/items" name="Laxatives"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dbd46959-5fa8-4337-a458-bfd73a13edcc" concept_name="AHS OGR PEDS CH Antiulcer Agents and Acid Suppressants Acute Pain" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b9b5ed29-3d7c-4199-bba5-e6c386e4e13a" concept_name="AHS OGR PEDS CH Topical Agents Acute Pain" max="1" path="/items" name="Topical Agents"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0b8e2d84-a044-4f95-b83c-46e3070909af" concept_name="AHS OGR PEDS CH Antipruritic Acute Pain" max="1" path="/items" name="Antipruritic"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immunizations">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ffd35c82-0494-471c-ac12-bdf84498c62d" concept_name="AHS OGN MULTI PPH Tetanus-Prone Wounds" max="1" path="/items" name="Tetanus-Prone Wounds"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IP Specialty Consults">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d7bc384-1709-49d1-ab9f-f789d5401de0" concept_name="CONS Inpatient Consult to Pediatric Cardiac Surgery [CON213] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Cardiac Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10f13f4b-08db-486b-82ff-d934fdcde962" concept_name="CONS Inpatient Consult to Pediatric Critical Care Medicine [CON143] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Critical Care Medicine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0914b66a-2b18-4612-a735-892a6e00baba" concept_name="CONS Inpatient Consult to Pediatric Dentistry [CON79] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Dentistry"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f35779d1-5208-4fa0-a91b-0a7bd6420f5b" concept_name="CONS Inpatient Consult to Pediatric General Surgery [CON209] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric General Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0740d5ed-97bf-4b30-992a-ada48f6eb012" concept_name="CONS Inpatient Consult to Pediatric Infectious Disease [CON86] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Infectious Disease"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d54a7d1-206a-45ad-9beb-01b38e70b19e" concept_name="CONS Inpatient Consult to Pediatrics Inpatient Services Hospitalist [CON15] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatrics Inpatient Services/Hospitalist"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="58f98210-57cb-4dd1-8c98-3d51b9729021" concept_name="CONS Inpatient Consult to Pediatric Neurological Surgery [CON208] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Neurological Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d85e0089-434c-4f37-a1ce-d08fe044a130" concept_name="CONS Inpatient Consult to Pediatric Ophthalmology [CON146] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Ophthalmology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1301f213-1a8b-485c-bc52-6879e7f88881" concept_name="CONS Inpatient Consult to Oral Maxillofacial Surgery [CON11] IP Order" max="1" path="/items" name="Inpatient Consult to Oral Maxillofacial Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8cb73350-707b-4866-86b6-b98d0d516a08" concept_name="CONS Inpatient Consult to Pediatric Orthopaedics [CON89] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Orthopaedics"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="00f2881f-fbe1-4990-8c55-69eb12de7832" concept_name="CONS Inpatient Consult to Pediatric ENT [CON82] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric ENT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc0448ff-6803-4456-8250-7818df94d82a" concept_name="CONS Inpatient Consult to Pediatric Physical Medicine Rehab [CON117] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Physical Medicine Rehab"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7958f161-0fb4-4d7c-9e6b-90e468b137b2" concept_name="CONS Inpatient Consult to Pediatric Plastic Surgery [CON212] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Plastic Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="afbc4bb5-8f51-4b5b-b576-a147d4473712" concept_name="CONS Inpatient Consult to Pediatric Psychiatry [CON90] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Psychiatry"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5ba4054b-c902-4395-aa00-cf386f0a63f6" concept_name="CONS Inpatient Consult to Spinal Surgery [CON154] IP Order" max="1" path="/items" name="Inpatient Consult to Spinal Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11d55327-05a0-40a7-87b0-eda4ac06c453" concept_name="CONS Inpatient Consult to Pediatric Urology [CON98] IP Order" max="1" path="/items" name="Inpatient Consult to Pediatric Urology"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d80ff1f4-7dc9-40e1-81ee-eb7a50f11d39" concept_name="CONS Inpatient Consult to Suspected Child Abuse and Neglect [CON257] IP Order" max="1" path="/items" name="Inpatient Consult to Suspected Child Abuse and Neglect"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="076c9948-58c7-4ed2-ae56-fd8c26d75d60" concept_name="AHS OGR PEDS SUR IP Allied Health Consults Trauma Surgery Admission Pediatric" max="1" path="/items" name="IP Allied Health Consults"/>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+</template>
