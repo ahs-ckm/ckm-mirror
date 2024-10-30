@@ -90,15 +90,9 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eceb359a-3bca-4bfe-8b5d-db6da9f411c1" concept_name="SURCASE Case Request Operating Room [SUR1] Order" max="1" path="/items" name="Case Request Operating Room"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Preadmission Testing Screening"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="970cd722-5a0b-4065-a0c6-86afdb408177" concept_name="AHS OGN PEDS CH Isolation Panel Pediatric" max="1" path="/items" name="Isolation Panel Pediatric"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="322cf878-eede-4282-bcc5-a4a46d4f4d19" concept_name="AHS OGR PEDS GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre Admission Clinic (PAC)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Diet and Nutrition">
@@ -211,29 +205,29 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="502aaa32-e20f-4bd1-8e2f-cd0c9aa7a9a9" concept_name="IV Maintenance Preprocedure Pediatric Order Group" max="1" path="/items" name="IV Maintenance; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="502aaa32-e20f-4bd1-8e2f-cd0c9aa7a9a9" concept_name="AHS OGR PEDS SUR IV Maintenance Preprocedure" max="1" path="/items" name="IV Maintenance; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ea833f72-9df0-41be-9b45-88dfb5a26f54" concept_name="IV Fluids Preprocedure Pediatric Order Group" max="1" path="/items" name="IV Fluids Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4335d9ca-0656-4e30-8d1d-6bfd140c6ffc" concept_name="Analgesics and Antipyretics Preprocedure Pediatric Order Group" max="1" path="/items" name="Analgesics and Antipyretics Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4335d9ca-0656-4e30-8d1d-6bfd140c6ffc" concept_name="AHS OGR PEDS CH Analgesics and Antipyretics Acute Pain Pediatric" max="1" path="/items" name="Analgesics and Antipyretics Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Standard Analgesics"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Adjuvant Analgesics"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naloxone"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antipyretics"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="547f4722-6689-4e22-a53e-3879019edf1f" concept_name="Antiemetics Preprocedure Pediatric Order Group" max="1" path="/items" name="Antiemetics ; Preprocedure/Day Surgery"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="547f4722-6689-4e22-a53e-3879019edf1f" concept_name="AHS OGR PEDS SUR Antiemetics Preprocedure" max="1" path="/items" name="Antiemetics ; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antipuritics">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8928ee0c-adeb-4f70-a036-d9e2a2b3366e" concept_name="Antipruritics Preprocedure Pediatric Order Group" max="1" path="/items" name="Antipruritics; Preprocedure/Day Surgery"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8928ee0c-adeb-4f70-a036-d9e2a2b3366e" concept_name="AHS OGR PEDS SUR Antipruritics" max="1" path="/items" name="Antipruritics; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d66a5d1c-b5dd-4e6c-9bf9-59094ab82e4f" concept_name="Antiulcer Agents and Acid Suppressants Preprocedure Pediatric Order Group" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laxatives">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ec879fc3-df81-4b6c-84cd-c09b7e89c496" concept_name="Laxatives Preprocedure Pediatric Order Group" max="1" path="/items" name="Laxatives; Preprocedure/Day Surgery"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ec879fc3-df81-4b6c-84cd-c09b7e89c496" concept_name="AHS OGR PEDS SUR Laxatives Preprocedure" max="1" path="/items" name="Laxatives; Preprocedure/Day Surgery"/>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fadfcd97-21da-45a2-993f-029e5968ad42" concept_name="Consults Preprocedure Pediatric Order Group" max="1" path="/items" name="Consults Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
@@ -277,7 +271,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="502aaa32-e20f-4bd1-8e2f-cd0c9aa7a9a9" concept_name="IV Maintenance Preprocedure Pediatric Order Group" max="1" path="/items" name="IV Maintenance; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="502aaa32-e20f-4bd1-8e2f-cd0c9aa7a9a9" concept_name="AHS OGR PEDS SUR IV Maintenance Preprocedure" max="1" path="/items" name="IV Maintenance; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ea833f72-9df0-41be-9b45-88dfb5a26f54" concept_name="IV Fluids Preprocedure Pediatric Order Group" max="1" path="/items" name="IV Fluids Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions"/>
@@ -286,7 +280,7 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f6436d4a-b126-4167-8ef7-ab190bff8d1a" concept_name="Antibiotic Prophylaxis Preprocedure Pediatric Order Group" max="1" path="/items" name="Antibiotic Prophylaxis Preprocedure Pediatric Order Group; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b51ef46e-7e16-45bc-aad4-9745de927816" concept_name="Acetaminophen Elective Surgery Preprocedure Pediatric Order Group" max="1" path="/items" name="Acetaminophen for Elective Procedures; Preprocedure/Day Surgery"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b51ef46e-7e16-45bc-aad4-9745de927816" concept_name="AHS OGR PEDS SUR Acetaminophen for Elective Procedures" max="1" path="/items" name="Acetaminophen for Elective Procedures; Preprocedure/Day Surgery"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Standard Analgesics"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Adjuvant Analgesics"/>
@@ -323,10 +317,10 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
 </template>
