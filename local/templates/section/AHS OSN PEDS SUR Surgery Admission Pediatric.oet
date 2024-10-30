@@ -132,6 +132,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Vital Signs; Per protocol&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Cardio-respiratory Monitoring; Until discontinued&apos;]/activities[at0001]">
     <items>
       <item>
@@ -164,11 +172,27 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify Physician&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP); Standard Age based Vital Sign parameters&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Is this a future scheduled pre-operative patient testing order (hard stop)? Yes&lt;br&gt;Has the patient been transfused outside Alberta in the last 90 days (hard stop)? Yes, No, Unknown&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Microbiology&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -301,6 +325,22 @@
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion; *** mL/hr, intravenous, continuous&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;NG Loss Replacement&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in D5-NaCl 0.45% 1000 mL bag; 0-500 mL/hr, intravenous, every 12 hours, Replace NG losses 1:1&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;NG Loss Replacement&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;potassium chloride 20 mmol in D5-NaCl 0.9% 1000 mL bag; 0-500 mL, intravenous, every 12 hours, Replace NG losses 1:1&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -660,6 +700,11 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM DEXTROSE 5 Percent AND 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9815] Order" max="1" path="/items" name="D5-NaCl 0.9% infusion bag; *** mL/hr, intravenous, continuous"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.9 Percent SODIUM CHLORIDE IV SOLUTION [9795] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.9% 1000 mL bag; *** mL/hr, intravenous, continuous"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM LACTATED RINGERS INTRAVENOUS SOLUTION [4318] Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; *** mL/hr, intravenous, continuous"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="NG Loss Replacement">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.45 Percent SODIUM CHLORIDE IV SOLUTION [9801] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.45% 1000 mL bag; 0-500 mL/hr, intravenous, every 12 hours, Replace NG losses 1:1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.9 Percent SODIUM CHLORIDE IV SOLUTION [9795] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.9% 1000 mL bag; 0-500 mL, intravenous, every 12 hours, Replace NG losses 1:1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
