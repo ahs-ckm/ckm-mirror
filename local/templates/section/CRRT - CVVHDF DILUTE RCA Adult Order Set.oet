@@ -76,12 +76,22 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Citrate Toxicity&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Calculate total calcium to ionized calcium ratio daily or BID as per unit protocol.&lt;br&gt;Notify attending physician or critical care fellow if greater than 2.5&lt;/p&gt;&lt;p&gt;It is important to monitor for citrate toxicity, particularly in patients with liver dysfunction. Citrate accumulation in its most severe form is recognized by the development of severe ionized hypocalcemia and progressive hypotension&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="CRRT - CVVHDF DILUTE RCA Adult Order Set">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6d16f272-50e1-4e14-a1b6-89d8e26450ca" concept_name="CVVHDF Dilute RCA Adult Order Group" max="1" path="/items" name="CVVHDF Dilute RCA"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Supplementary Bicarbonate Infusion (if necessary)">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c409230-cd57-420f-a990-b72db6dd4afb" concept_name="PHARM sodium bicarbonate infusion Order" max="1" path="/items" name="sodium bicarbonate infusion (adult); 25 mmol/hr, intravenous, continuous"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5c409230-cd57-420f-a990-b72db6dd4afb" concept_name="PHARM SODIUM BICARBONATE INFUSION ORDERABLE (ADULT) [4200611] Order" max="1" path="/items" name="sodium bicarbonate infusion (adult); 25 mmol/hr, intravenous, continuous"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); if total calcium to ionized calcium ratio is greater than 2.5"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Citrate Toxicity"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="752c3c3d-a9c3-450b-b7f8-257319cacc71" concept_name="Citrate Titration Order Group" max="1" path="/items" name="Citrate Titration"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8fd38bd6-ae32-4fef-b3d5-bdf132c8450f" concept_name="Calcium Replacement Dilute RCA Adult Order Group" max="1" path="/items" name="Calcium Replacement"/>
   </definition>
@@ -105,5 +115,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
   </integrity_checks>
 </template>
