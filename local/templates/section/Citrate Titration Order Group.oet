@@ -116,7 +116,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;The blood flow rate should be maintained at 150 mL/min. If CRRT Regiocit&amp;nbsp;Blood Flow Rate (BFR) is changed, recheck post-filter ionized calcium 1 hour after the BFR change and follow nomogram&lt;/p&gt;</value>
+        <value>&lt;p&gt;&amp;nbsp;The blood flow rate should be maintained at 125&amp;nbsp;mL/min. If CRRT Regiocit&amp;nbsp;Blood Flow Rate (BFR) is changed, recheck post-filter ionized calcium 1 hour after the BFR change and follow nomogram&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -136,7 +136,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CRRT - Post Filter Ionized Calcium POCT; as needed, Arterial post-filter 1 hour after initiating CRRT and adjust citrate infusion as per nomogram&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CRRT - Post Filter Ionized Calcium POCT; as needed, post-filter 1 hour after initiating CRRT and adjust citrate infusion as per nomogram&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -146,11 +146,11 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Citrate Titration">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Regiocit titration"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Pre Blood Pump"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="PC Nursing Communication Order" max="1" path="/items" name="Nursing Communication; Regiocit Blood Flow Rate"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="PC Notify Most Responsible Health practioner(MRHP) Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Notify MD if target Regiocit dose greater than 4.5 mmol/L blood flow"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e2a53353-4f70-46c2-a7d2-7ce755baa384" concept_name="LAB CRRT - Post Filter Ionized Calcium POCT Order" max="1" path="/items" name="CRRT - Post Filter Ionized Calcium POCT; as needed, Arterial post-filter 1 hour after initiating CRRT and adjust citrate infusion as per nomogram"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Regiocit titration"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Pre Blood Pump"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Regiocit Blood Flow Rate"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP); Notify MD if target Regiocit dose greater than 4.5 mmol/L blood flow"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e2a53353-4f70-46c2-a7d2-7ce755baa384" concept_name="LABPOCT CRRT - Post Filter Ionized Calcium POCT [LAB4176] Order" max="1" path="/items" name="CRRT - Post Filter Ionized Calcium POCT; as needed, post-filter 1 hour after initiating CRRT and adjust citrate infusion as per nomogram"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
