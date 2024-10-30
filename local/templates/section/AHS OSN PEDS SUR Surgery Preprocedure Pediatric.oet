@@ -650,15 +650,9 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eceb359a-3bca-4bfe-8b5d-db6da9f411c1" concept_name="SURCASE Case Request Operating Room [SUR1] Order" max="1" path="/items" name="Case Request Operating Room"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Preadmission Testing Screening"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="970cd722-5a0b-4065-a0c6-86afdb408177" concept_name="AHS OGN PEDS CH Isolation Panel Pediatric" max="1" path="/items" name="Isolation Panel Pediatric"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="322cf878-eede-4282-bcc5-a4a46d4f4d19" concept_name="AHS OGR PEDS GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre Admission Clinic (PAC)">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0958d320-e660-4c88-bb0c-95c5d393be3b" concept_name="AHS OGR PEDS SUR PAC Diet and Nutrition CT" max="1" path="/items" name="PAC Diet and Nutrition; Pre-Admission Clinic"/>
@@ -809,24 +803,24 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Acetaminophen PO/PR Panel Scheduled">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM acetaminophen ORAL liquid 80 mg/mL Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order) #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen Chewable tablet Order" max="1" path="/items" name="acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order) #2"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen Suppository Order" max="1" path="/items" name="acetaminophen suppository; *** mg (15 mg/kg/dose), rectal, every 6 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository; *** mg (15 mg/kg/dose), rectal, every 6 hours"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Acetaminophen PO/PR Panel PRN">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM acetaminophen ORAL liquid 80 mg/mL Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen Chewable tablet Order" max="1" path="/items" name="acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order) #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order) #2"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen Suppository Order" max="1" path="/items" name="acetaminophen suppository; *** mg (15 mg/kg/dose), rectal, every 6 hours, as needed, mild pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository; *** mg (15 mg/kg/dose), rectal, every 6 hours, as needed, mild pain"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -836,16 +830,16 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ibuprofen">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ibuprofen PO Scheduled">
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM ibuprofen Oral liquid 40 mg/mL Order" max="1" path="/items" name="ibuprofen liquid oral 40 mg/mL; *** mg (10 mg/kg/dose), oral, every 6 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM IBUPROFEN LIQUID ORAL 40 MG ML (WRAPPER) [408770008] Order" max="1" path="/items" name="ibuprofen liquid oral 40 mg/mL; *** mg (10 mg/kg/dose), oral, every 6 hours"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen Tablet Order" max="1" path="/items" name="ibuprofen tablet; *** mg (10 mg/kg/dose), oral, every 6 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen tablet Compiled Order" max="1" path="/items" name="ibuprofen tablet; *** mg (10 mg/kg/dose), oral, every 6 hours"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ibuprofen PO PRN">
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM ibuprofen Oral liquid 40 mg/mL Order" max="1" path="/items" name="ibuprofen liquid oral 40 mg/mL; *** mg (10 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM IBUPROFEN LIQUID ORAL 40 MG ML (WRAPPER) [408770008] Order" max="1" path="/items" name="ibuprofen liquid oral 40 mg/mL; *** mg (10 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen Tablet Order" max="1" path="/items" name="ibuprofen tablet; *** mg (10 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen tablet Compiled Order" max="1" path="/items" name="ibuprofen tablet; *** mg (10 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Ibuprofen PO PRN"/>
@@ -854,24 +848,24 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="naproxen">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naproxen PO Scheduled">
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM naproxen Oral liquid 25 mg/mL Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg; *** mg (20 mg/kg/day), oral, every 12 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM NAPROXEN 25 MG ML IN MEDISCA MIX LIQUID ORAL MFG [6002476] Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg; *** mg (20 mg/kg/day), oral, every 12 hours"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen Tablet Order" max="1" path="/items" name="naproxen tablet; *** mg (10 mg/kg/day), oral, every 12 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen tablet Compiled Order" max="1" path="/items" name="naproxen tablet; *** mg (10 mg/kg/day), oral, every 12 hours"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naproxen PO PRN">
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM naproxen Oral liquid 25 mg/mL Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg ; *** mg (20 mg/kg/day), oral, every 12 hours, as needed, mild pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM NAPROXEN 25 MG ML IN MEDISCA MIX LIQUID ORAL MFG [6002476] Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg ; *** mg (20 mg/kg/day), oral, every 12 hours, as needed, mild pain"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen Tablet Order" max="1" path="/items" name="naproxen tablet; *** mg (10 mg/kg/day), oral, every 12 hours, as needed, mild pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen tablet Compiled Order" max="1" path="/items" name="naproxen tablet; *** mg (10 mg/kg/day), oral, every 12 hours, as needed, mild pain"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ketorolac">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="856e1810-6754-4158-9a74-811d23b3b39c" concept_name="PHARM ketorolac injection Order" max="1" path="/items" name="ketorolac injection; *** mg (0.3 mg/kg/dose), intravenous, every 6 hours, For 2 days. Scheduled ketorolac dosing should be reassessed every 48 to 72 hrs."/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="856e1810-6754-4158-9a74-811d23b3b39c" concept_name="PHARM ketorolac injection Order" max="1" path="/items" name="ketorolac injection; *** mg (0.3 mg/kg/dose), intravenous, every 6 hours, as needed, mild pain, For 2 days"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="856e1810-6754-4158-9a74-811d23b3b39c" concept_name="PHARM KETOROLAC INJECTION ORDERABLE [420074] Order" max="1" path="/items" name="ketorolac injection; *** mg (0.3 mg/kg/dose), intravenous, every 6 hours, For 2 days. Scheduled ketorolac dosing should be reassessed every 48 to 72 hrs."/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="856e1810-6754-4158-9a74-811d23b3b39c" concept_name="PHARM KETOROLAC INJECTION ORDERABLE [420074] Order" max="1" path="/items" name="ketorolac injection; *** mg (0.3 mg/kg/dose), intravenous, every 6 hours, as needed, mild pain, For 2 days"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -881,59 +875,59 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release morphine">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release morphine - scheduled">
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting Tablet Order" max="1" path="/items" name="morphine, short acting tablet; *** mg (0.15 mg/kg/dose), oral, every 4 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet; *** mg (0.15 mg/kg/dose), oral, every 4 hours"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10030683-9048-4c96-ac2c-6d1468d315ae" concept_name="PHARM morphine Oral liquid 1 mg/mL Order" max="1" path="/items" name="morphine liquid oral 1 mg/mL; *** mg (0.15 mg/kg/dose), oral, every 4 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10030683-9048-4c96-ac2c-6d1468d315ae" concept_name="PHARM MORPHINE HCL 1 MG ML ORAL SYRUP [164784] Order" max="1" path="/items" name="morphine liquid oral 1 mg/mL; *** mg (0.15 mg/kg/dose), oral, every 4 hours"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release morphine - PRN">
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting Tablet Order" max="1" path="/items" name="morphine, short acting tablet; *** mg (0.15 mg/kg/dose), oral, every 4 hours, as needed, pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet; *** mg (0.15 mg/kg/dose), oral, every 4 hours, as needed, pain"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10030683-9048-4c96-ac2c-6d1468d315ae" concept_name="PHARM morphine Oral liquid 1 mg/mL Order" max="1" path="/items" name="morphine liquid oral 1 mg/mL; *** mg (0.15 mg/kg/dose), oral, every 4 hours, as needed, pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="10030683-9048-4c96-ac2c-6d1468d315ae" concept_name="PHARM MORPHINE HCL 1 MG ML ORAL SYRUP [164784] Order" max="1" path="/items" name="morphine liquid oral 1 mg/mL; *** mg (0.15 mg/kg/dose), oral, every 4 hours, as needed, pain"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Controlled Release morphine">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35b90384-db8f-4feb-a520-892000c1c6bc" concept_name="PHARM morphine, long acting 12 hour Capsule Order" max="1" path="/items" name="morphine, long acting 12 hour capsule; *** mg (0.15 mg/kg/dose), oral, every 12 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35b90384-db8f-4feb-a520-892000c1c6bc" concept_name="PHARM morphine long acting 12 hour capsule Compiled Order" max="1" path="/items" name="morphine, long acting 12 hour capsule; *** mg (0.15 mg/kg/dose), oral, every 12 hours"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous morphine">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM morphine injection Order" max="1" path="/items" name="morphine injection; preservative free; *** mg (0.05 mg/kg/dose), intravenous, every 2 hours, as needed, moderate pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM MORPHINE INJECTION ORDERABLE [420065] Order" max="1" path="/items" name="morphine injection; preservative free; *** mg (0.05 mg/kg/dose), intravenous, every 2 hours, as needed, moderate pain"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release oxyCODONE">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting tablet; *** mg (0.1 mg/kg/dose), oral, every 4 hours"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting tablet; *** mg (0.1 mg/kg/dose), oral, every 4 hours, as needed, moderate pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE short acting tablet Compiled Order" max="1" path="/items" name="oxyCODONE, short acting tablet; *** mg (0.1 mg/kg/dose), oral, every 4 hours"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE short acting tablet Compiled Order" max="1" path="/items" name="oxyCODONE, short acting tablet; *** mg (0.1 mg/kg/dose), oral, every 4 hours, as needed, moderate pain"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release HYDROmorphone">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release HYDROmorphone - Scheduled">
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting Tablet Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; *** mg (0.03 mg/kg/dose), oral, Every 4 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; *** mg (0.03 mg/kg/dose), oral, Every 4 hours"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROmorphone Oral liquid 1 mg/mL Order" max="1" path="/items" name="HYDROmorphone liquid oral; *** mg (0.03 mg/kg/dose), oral, Every 4 hours"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROMORPHONE LIQUID ORAL ORDERABLE [4201017] Order" max="1" path="/items" name="HYDROmorphone liquid oral; *** mg (0.03 mg/kg/dose), oral, Every 4 hours"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release HYDROmorphone - PRN">
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting Tablet Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; *** mg (0.03 mg/kg/dose), oral, Every 4 hours, as needed, moderate pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet; *** mg (0.03 mg/kg/dose), oral, Every 4 hours, as needed, moderate pain"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked order)"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROmorphone Oral liquid 1 mg/mL Order" max="1" path="/items" name="HYDROmorphone liquid oral; *** mg (0.03 mg/kg/dose), oral, Every 4 hours, as needed, moderate pain"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROMORPHONE LIQUID ORAL ORDERABLE [4201017] Order" max="1" path="/items" name="HYDROmorphone liquid oral; *** mg (0.03 mg/kg/dose), oral, Every 4 hours, as needed, moderate pain"/>
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             </Item>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous HYDROmorphone">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROmorphone, preservative free injection Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; *** mcg (15 mcg/kg/dose), intravenous, every 2 hours, as needed, moderate pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE IV IM SC ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; *** mcg (15 mcg/kg/dose), intravenous, every 2 hours, as needed, moderate pain"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous fentaNYL">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8126298b-b859-4cac-98f9-553c43529deb" concept_name="PHARM fentaNYL injection Order" max="1" path="/items" name="fentaNYL injection; preservative free; *** mcg (0.5 mcg/kg/dose), intravenous, every 2 hours, as needed, moderate pain"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8126298b-b859-4cac-98f9-553c43529deb" concept_name="PHARM FENTANYL INJECTION ORDERABLE [4200164] Order" max="1" path="/items" name="fentaNYL injection; preservative free; *** mcg (0.5 mcg/kg/dose), intravenous, every 2 hours, as needed, moderate pain"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -982,10 +976,10 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
 </template>
