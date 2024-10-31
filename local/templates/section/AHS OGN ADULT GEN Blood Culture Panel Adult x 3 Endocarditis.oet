@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <id>d7d02de7-be38-456a-99ee-55631ec29dd2</id>
   <name>AHS OGN ADULT GEN Blood Culture Panel Adult x 3 Endocarditis</name>
   <description>
@@ -60,7 +59,7 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
         <key>Technical.ﻩ Technical Traceability</key>
@@ -68,7 +67,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Culture, Routine, Once&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Culture, Routine, Once&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -76,7 +75,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Culture, Routine, Once #1&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Culture, Routine, Once #1&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -84,7 +83,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Culture, Routine; Once&apos;]/activities[at0156]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Culture, Routine; Once&apos;]/activities[at0156]">
     <items>
       <item>
         <key>Transform.Preselected</key>
@@ -92,30 +91,30 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Blood Culture Panel - Adult x 3 (Endocarditis)">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" concept_name="LABMIC Blood Culture Routine [LAB462] Order" max="1" path="/items" name="Blood Culture, Routine, Once"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" concept_name="LABMIC Blood Culture Routine [LAB462] Order" max="1" path="/items" name="Blood Culture, Routine, Once #1"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And #1"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" concept_name="LABMIC Blood Culture Routine [LAB462] Order" max="1" path="/items" name="Blood Culture, Routine; Once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  <definition archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Blood Culture Panel - Adult x 3 (Endocarditis)" xsi:type="SECTION">
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="LABMIC Blood Culture Routine [LAB462] IP Order" max="1" name="Blood Culture, Routine, Once" path="/items" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" name="And" path="/items" xsi:type="SECTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="LABMIC Blood Culture Routine [LAB462] IP Order" max="1" name="Blood Culture, Routine, Once #1" path="/items" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" name="And #1" path="/items" xsi:type="SECTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="LABMIC Blood Culture Routine [LAB462] IP Order" max="1" name="Blood Culture, Routine; Once" path="/items" template_id="d6025919-b5f3-4b0e-bf16-f2684645dbf3" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" xsi:type="INSTRUCTION"/>
   </definition>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  <integrity_checks archetype_id="openEHR-EHR-SECTION.adhoc.v1" xsi:type="ArchetypeIntegrity">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+  <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+  <integrity_checks archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+  <integrity_checks archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+  <integrity_checks archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+  <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
