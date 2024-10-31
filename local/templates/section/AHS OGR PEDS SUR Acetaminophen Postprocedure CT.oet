@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>9bc7e133-8262-48a6-9e4e-65ec53a31a9a</id>
+  <name>AHS OGR PEDS SUR Acetaminophen Postprocedure CT</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 333768&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~9bc7e133-8262-48a6-9e4e-65ec53a31a9a~NAME~AHS OGR PEDS SUR Acetaminophen Postprocedure CT}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;em&gt;Ensure maximum daily dose is not exceeded when ordering acetaminophen either alone, different routes of administration or as combination product. Avoid combination opioid-acetaminophen products as the acetaminophen content may be a limiting factor in upward dose titration of the combination. &lt;/em&gt;&lt;/p&gt;&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;em&gt;Consider reducing maximum dose to 60 mg/kg/day if used on scheduled basis for 72 hours or more. &lt;/em&gt;&lt;/p&gt;&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;em&gt;For infants Gestational Age 33 to 37 weeks or term neonates less than 10 days: 10 to 15 mg/kg/dose every 6 hours; maximum daily dose: 60 mg/kg/day &lt;/em&gt;&lt;/p&gt;&lt;p&gt;·&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;em&gt;For term neonates greater than or equal to 10 days: 10 to 15 mg/kg/dose every 4 to 6 hours; maximum daily dose: 75 mg/kg/day&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Acetaminophen dosing should be adjusted based on ideal body weight for obese children when used on scheduled basis. Oral route is preferred over rectal suppository. Rectal absorption is slow with variable uptake and lower bioavailability compared to oral route.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;15 mg/kg/dose recommended. Max 75 mg/kg/day to a limit of 4000 mg/day&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen suppository; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen suppository; *** mg (15 mg/kg/dose), oral, every 6 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel Scheduled&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;15 mg/kg/dose recommended. Max 75 mg/kg/day to a limit of 4000 mg/day&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen suppository; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Do not give within 6 hours of Preprocedure dose&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen suppository; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Acetaminophen PO/PR Panel PRN&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Acetaminophen">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Acetaminophen PO/PR Panel Scheduled">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders)"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders) #1"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders) #2"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository; *** mg (15 mg/kg/dose), oral, every 6 hours"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Acetaminophen PO/PR Panel PRN">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders)"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders) #1"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders) #2"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository; *** mg (15 mg/kg/dose), oral, every 6 hours, as needed, mild pain"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
