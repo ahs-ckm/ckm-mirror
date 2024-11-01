@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <id>5277d4ac-b9e7-47f1-a623-c7cbf876cd3d</id>
   <name>Anti-Infective Agents Spine Post Ped Order Group</name>
   <description>
@@ -60,7 +59,7 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
@@ -72,7 +71,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ceFAZolin IV/IM #1&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ceFAZolin injection #1&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -80,7 +79,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;clindamycin injection&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;clindamycin injection&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -88,7 +87,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE IV&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metroNIDAZOLE injection&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -96,7 +95,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin IV&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;vancomycin injection&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -104,7 +103,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.orderable_section.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tobramycin conventional dosing&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tobramycin conventional dosing&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -112,24 +111,24 @@
       </item>
     </items>
   </annotations>
-  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" name="Anti-Infective Agents">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM ceFAZolin injection Order" max="1" path="/items" name="ceFAZolin IV/IM #1"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eae3d03c-57f0-4341-8e81-0577dfab869f" concept_name="PHARM clindamycin injection Order" max="1" path="/items" name="clindamycin injection"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" concept_name="PHARM metroNIDAZOLE injection Order" max="1" path="/items" name="metroNIDAZOLE IV"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin IV"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6493039a-ab9e-43c8-a5c5-94816661399d" concept_name="PHARM TOBRAMYCIN CONVENTIONAL DOSING ORDERABLE [420023] Order" max="1" path="/items" name="tobramycin conventional dosing"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  <definition archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Anti-Infective Agents" xsi:type="SECTION">
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="PHARM ceFAZolin injection Order" max="1" name="ceFAZolin injection #1" path="/items" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="PHARM clindamycin injection Order" max="1" name="clindamycin injection" path="/items" template_id="eae3d03c-57f0-4341-8e81-0577dfab869f" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="PHARM metroNIDAZOLE injection Order" max="1" name="metroNIDAZOLE injection" path="/items" template_id="646c8a3d-efb3-4d4e-889a-0b5b5b614ee8" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="PHARM vancomycin injection Order" max="1" name="vancomycin injection" path="/items" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="PHARM TOBRAMYCIN CONVENTIONAL DOSING ORDERABLE [420023] Order" max="1" name="tobramycin conventional dosing" path="/items" template_id="6493039a-ab9e-43c8-a5c5-94816661399d" xsi:type="INSTRUCTION"/>
+    <Item archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items" xsi:type="INSTRUCTION"/>
   </definition>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  <integrity_checks archetype_id="openEHR-EHR-SECTION.adhoc.v1" xsi:type="ArchetypeIntegrity">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+  <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+  <integrity_checks archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+  <integrity_checks archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" xsi:type="ArchetypeIntegrity">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
