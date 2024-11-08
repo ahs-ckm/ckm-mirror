@@ -64,11 +64,19 @@
     <items>
       <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;I think we need to remove the mandatory field to choose insulin - if they use a non standard insulin they will order it from outside of the order set.&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;INC000689151- I think we need to remove the mandatory field to choose insulin - if they use a non standard insulin they will order it from outside of the order set.&lt;/span&gt;&lt;/p&gt;</value>
       </item>
       <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~61bc94d4-037f-4e1a-9cb0-5aad856e37e8~NAME~AHS OGR MULTI MED Insulin Pump Therapy Medications}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f39c12&quot;&gt;INC000689151 - remove the 2 existing insulin cartridges with the vials listed below&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -80,11 +88,45 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;insulin lispro (HumaLOG) injection 100 unit/mL; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Follow predetermined settings from patient&apos;s insulin pump.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;insulin lispro (Admelog) injection; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Follow predetermined settings from patient&apos;s insulin pump.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;insulin aspart (NOVORAPID) injection 100 unit/mL; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Follow predetermined settings from patient&apos;s insulin pump.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;insulin aspart (Trurapi) 100 unit/mL injection; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Follow predetermined settings from patient&apos;s insulin pump.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Medications">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Insulin for use in pump">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32b625cb-e5e6-4384-beb9-211f6d6c9891" concept_name="PHARM INSULIN LISPRO INJECTION ORDERABLE [4200330] Order" max="1" path="/items" name="insulin lispro injection; insulin lispro (HumaLOG) 100 unit/mL injection cartridge (DISP); 300 units, subcutaneous, continuous as needed for high blood sugar, for subcutaneous insulin pump only, Follow predetermined settings from patient&apos;s insulin p"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="63ce1f1b-eb1f-427e-a61d-ecef28889777" concept_name="PHARM INSULIN ASPART (NOVORAPID) 100 UNIT ML INJECTION CARTRIDGE [4002906] Order" max="1" path="/items" name="insulin aspart (NOVORAPID) injection 100 unit/mL; 300 units, subcutaneous, continuous as needed for high blood sugar, for subcutaneous insulin pump only, Follow predetermined settings from patient&apos;s insulin pump."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5f7682d-4a33-4ed0-a228-af590b77ffa7" concept_name="PHARM INSULIN LISPRO (HUMALOG) 100 UNIT ML INJECTION VIAL [4002882] Order" max="1" path="/items" name="insulin lispro (HumaLOG) injection 100 unit/mL; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d1471bf2-44e5-4006-9873-ac89ec07dfea" concept_name="PHARM INSULIN LISPRO (ADMELOG) INJECTION VIAL [4002722] Order" max="1" path="/items" name="insulin lispro (Admelog) injection; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9373406b-733c-40af-83d4-0e08088698ac" concept_name="PHARM INSULIN ASPART (NOVORAPID) 100 UNIT ML INJECTION VIAL [4002911] Order" max="1" path="/items" name="insulin aspart (NOVORAPID) injection 100 unit/mL; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="950b63c5-f9bb-4440-9a8a-bbfcd5ed9d8d" concept_name="PHARM INSULIN ASPART (TRURAPI) 100 UNIT ML INJECTION VIAL [4003001] Order" max="1" path="/items" name="insulin aspart (Trurapi) 100 unit/mL injection; 300 units, subcutaneous, continuous as needed, for subcutaneous insulin pump only"/>
     </Item>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
