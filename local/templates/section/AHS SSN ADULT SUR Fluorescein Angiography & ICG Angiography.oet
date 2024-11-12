@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>e0ee240a-de1c-4401-9428-6f5f6a1e6b6a</id>
+  <name>AHS SSN ADULT SUR Fluorescein Angiography &amp; ICG Angiography</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;PRL: 13910000001&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~e0ee240a-de1c-4401-9428-6f5f6a1e6b6a~NAME~AHS SSN ADULT SUR Fluorescein Angiography &amp; ICG Angiography}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Fluorescein Angiography &amp; ICG Angiography">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IVFA and ICG Procedures">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5a4481a2-658c-47f9-bca8-128544c6b1ce" concept_name="OPHPHO Fluorescein Angiography - Bilateral [OPH31] IP Order" max="1" path="/items" name="Fluorescein Angiography - Bilateral"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cf222c30-debb-4f44-b722-3061e6aca353" concept_name="OPHPHO ICG Angiography - Bilateral [OPH278] IP Order" max="1" path="/items" name="ICG Angiography - Bilateral"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Fluorescein Angiography">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Fluorescein Angiography">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="631ee63c-3330-46f2-baf3-7b6bec522277" concept_name="PHARM FLUORESCEIN 500 MG 5 ML (10 Percent) INTRAVENOUS SOLUTION [137870] Order" max="1" path="/items" name="fluorescein sodium injection 10%; (10%) CAM order; 300 mg, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="631ee63c-3330-46f2-baf3-7b6bec522277" concept_name="PHARM FLUORESCEIN 500 MG 5 ML (10 Percent) INTRAVENOUS SOLUTION [137870] Order" max="1" path="/items" name="fluorescein sodium injection 10%; (10%) CAM order; 500 mg, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f72eaa61-8e69-4196-8e1d-588ddf17236d" concept_name="NURIV Insert saline lock IV [IVT50] Order" max="1" path="/items" name="Insert saline lock IV; once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="NURIV Remove Peripheral IV [IVT10] Order" max="1" path="/items" name="Remove Peripheral IV; once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="952c0e34-0849-4bcd-ab7c-3760160ff215" concept_name="PHARM PHENYLEPHRINE (PF) 2.5 Percent EYE DROPS IN A DROPPERETTE [166033] Order" max="1" path="/items" name="PHENYLephrine, preservative free drop eye 2.5%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="952c0e34-0849-4bcd-ab7c-3760160ff215" concept_name="PHARM PHENYLEPHRINE (PF) 2.5 Percent EYE DROPS IN A DROPPERETTE [166033] Order" max="1" path="/items" name="PHENYLephrine, preservative free drop eye 2.5%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM DIMENHYDRINATE 50 MG TABLET [2485] Order" max="1" path="/items" name="dimenhyDRINATE tablet; CAM order; 25 - 50 mg, oral, once, as needed, nausea, vomitting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM DIMENHYDRINATE INJECTION ORDERABLE [4200101] Order" max="1" path="/items" name="dimenhyDRINATE IV/IM; CAM order; 25 - 50 mg, intramuscular, once, as needed, nausea, vomitting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE capsule Compiled Order" max="1" path="/items" name="diphenhydrAMINE capsule; CAM order; 25 - 50 mg, oral, once, as needed, allergies"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM DIPHENHYDRAMINE INJECTION ORDERABLE [420208] Order" max="1" path="/items" name="diphenhydrAMINE IV/IM; CAM order; 25 - 50 mg, intramuscular, once, as needed, allergies"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Indocyanine Greeen (ICG) Angiography">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Indocyanine Greeen (ICG) Angiography">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b806469c-24c9-46f7-8d8b-dc196a48a07f" concept_name="PHARM INDOCYANINE GREEN 25 MG SOLUTION FOR INJECTION [10266] Order" max="1" path="/items" name="indocyanine green injection 25 mg; CAM order; 25 mg, intravenous, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f72eaa61-8e69-4196-8e1d-588ddf17236d" concept_name="NURIV Insert saline lock IV [IVT50] Order" max="1" path="/items" name="Insert saline lock IV; once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="NURIV Remove Peripheral IV [IVT10] Order" max="1" path="/items" name="Remove Peripheral IV; once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="952c0e34-0849-4bcd-ab7c-3760160ff215" concept_name="PHARM PHENYLEPHRINE (PF) 2.5 Percent EYE DROPS IN A DROPPERETTE [166033] Order" max="1" path="/items" name="PHENYLephrine, preservative free drop eye 2.5%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="952c0e34-0849-4bcd-ab7c-3760160ff215" concept_name="PHARM PHENYLEPHRINE (PF) 2.5 Percent EYE DROPS IN A DROPPERETTE [166033] Order" max="1" path="/items" name="PHENYLephrine, preservative free drop eye 2.5%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM DIMENHYDRINATE 50 MG TABLET [2485] Order" max="1" path="/items" name="dimenhyDRINATE tablet; CAM order; 25 - 50 mg, oral, once, as needed, nausea, vomitting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM DIMENHYDRINATE INJECTION ORDERABLE [4200101] Order" max="1" path="/items" name="dimenhyDRINATE IV/IM; CAM order; 25 - 50 mg, intramuscular, once, as needed, nausea, vomitting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE capsule Compiled Order" max="1" path="/items" name="diphenhydrAMINE capsule; CAM order; 25 - 50 mg, oral, once, as needed, allergies"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM DIPHENHYDRAMINE INJECTION ORDERABLE [420208] Order" max="1" path="/items" name="diphenhydrAMINE IV/IM; CAM order; 25 - 50 mg, intramuscular, once, as needed, allergies"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Screening">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Screening">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6d30824-653c-4c12-bced-b7c6f0859e1d" concept_name="PHARM PROPARACAINE 0.5 Percent EYE DROPS [6644] Order" max="1" path="/items" name="proparacaine drop eye 0.5%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM TETRACAINE HCL (PF) 0.5 Percent EYE DROPS IN A DROPPERETTE [166728] Order" max="1" path="/items" name="tetracaine, preservative free drop eye 0.5%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="952c0e34-0849-4bcd-ab7c-3760160ff215" concept_name="PHARM PHENYLEPHRINE (PF) 2.5 Percent EYE DROPS IN A DROPPERETTE [166033] Order" max="1" path="/items" name="PHENYLephrine, preservative free drop eye 2.5%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="952c0e34-0849-4bcd-ab7c-3760160ff215" concept_name="PHARM PHENYLEPHRINE (PF) 2.5 Percent EYE DROPS IN A DROPPERETTE [166033] Order" max="1" path="/items" name="PHENYLephrine, preservative free drop eye 2.5%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; preservative free; CAM order; 1 drop, BOTH eyes, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
