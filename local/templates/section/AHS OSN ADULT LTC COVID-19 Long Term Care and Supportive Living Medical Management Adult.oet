@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>dc66aa8d-faca-47ab-9378-7527ba53fec1</id>
+  <name>AHS OSN ADULT LTC COVID-19 Long Term Care and Supportive Living Medical Management Adult</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~dc66aa8d-faca-47ab-9378-7527ba53fec1~NAME~AHS OSN ADULT LTC COVID-19 Long Term Care and Supportive Living Medical Management Adult}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Clinical Decision Support and Reference Links&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Signs and symptoms are similar to those of a typical Influenza-like Illness. Importantly though, clinically significant disease &lt;strong&gt;usually presents as a lower-respiratory tract infection&lt;/strong&gt; with dyspnea and cough; upper-respiratory tract symptoms (pharyngitis, rhinorrhea) are uncommon. Fever, although almost universal at some point during the illness may not be seen on presentation. &lt;strong&gt;Absence of fever does not exclude the diagnosis.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;There are no specific physical exam findings. &lt;strong&gt;Hypoxemia on pulse oximetry may be the only abnormality.&lt;/strong&gt; The remainder of the exam may be normal: crackles, wheeze, or other pathological breath sounds if present could be due to a concomitant disorder.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Treatment is generally supportive.&lt;/strong&gt; Strict isolation precautions in keeping with AHS IPC guidelines are to be maintained. Conservative intravenous fluid management strategies are recommended. &lt;strong&gt;Patients currently stabilized on ACEIs/ARBs are recommended to be continued on that therapy unless a contraindication is present (e.g. acute kidney injury).&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Bacterial co‐infection in patients with early COVID‐19 is uncommon.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Do not routinely add antibacterials unless bacterial infection is strongly suspected. If empiric antibacterials are indicated, reassess within the first 3 days and de‐escalate on the basis of clinical review, microbiology results, and laboratory and imaging findings. Give empiric antimicrobials within 1 hour of initial patient assessment for patients with sepsis. Continue empiric antibiotics for no more than 5 days.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Glucocorticoids are not routinely recommended&lt;/strong&gt;&amp;nbsp;in the absence of other concomitant conditions, expert consultation advised.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:null&quot;&gt;&lt;strong&gt;&amp;nbsp;- AHS COVID-19 Insite Page&lt;/strong&gt;&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;https://ahsweb.ca/HEE/INSITECOVID19&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calculators&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;span style=&quot;color:null&quot;&gt;&lt;strong&gt;&amp;nbsp;-&amp;nbsp;Sequential Organ Failure Assessment (SOFA) Score&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:null&quot;&gt;http://ahsweb.ca/HEE/Sequential_Organ_Failure_Assessment&lt;br&gt;&lt;strong&gt;&amp;nbsp;-&amp;nbsp;Clinical Frailty Scale (CFS)&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:null&quot;&gt;https://ahsweb.ca/HEE/Clinical_Frailty_Scale&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;&amp;nbsp;Assess vital signs every 8 hours and prn, reassess in 48 hours. Assessment includes: BP, HR, Temp, RR, SpO2&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Vital Signs&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;If Supportive Living patients require supplemental oxygen, and Oximetry by a regulated healthcare professional showing SpO2 less than or equal to 89% throughout a 3 minute monitoring period, then patient may qualify for ‘Exceptional Oxygen funding’ through Alberta Activities for Daily Living (AADL).&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP); if oxygen flow increases by greater than 2L/min from previous to maintain the same level of oxygenation, or if there is a progressive increase in the work of breathing&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP);  If a new change to Oxygen Flow of 6L/min or Higher to maintain same level of oxygenation&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Respiratory Interventions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; the use of humidified hi-flow oxygen (HHHFO) over conventional oxygen delivery is not recommended in routine practice&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Subcutaneous Cannula (HDC) Maintenance&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Reassess need for hypodermoclysis (HDC) daily and monitor for volume status (watch fluid overload).&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Subcutaneous Cannula (HDC) Fluid Infusions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Administer via: Subcutaneous Cannula (HDC) Reassess need for HDC daily and monitor for volume status (watch for fluid overload).&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Clinical Decision Support&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Bacterial co-infection at initial COVID-19 presentation is rare and the vast majority of patients do not require antibacterials. If needed, antibacterials can be ordered independently of the COVID-19 order set.&amp;nbsp;&lt;br&gt;Updated COVID-19 antimicrobial and immunomodulatory guidance is available via the links below, while specific medication guidance is provided alongside individual medication orders.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:null&quot;&gt;&lt;strong&gt;- Guidance: Antimicrobial Management of Adult Hospitalized Patients with COVID-19&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:null&quot;&gt;https://ahsweb.ca/HEE/AHS-COVID-19-Management-Guide&lt;br&gt;&lt;strong&gt;- Guidance: Antimicrobial and Immunomodulatory Therapy in Adult Patients with COVID-19&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color:null&quot;&gt;https://ahsweb.ca/HEE/AHS-COVID-19-Therapies-Summary&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Autonomic Agents&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Consider stopping current nebulized meds and order alternative.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;dimenhyDRINATE PO/SC&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Avoid dimenhyDRINATE in patients 65 years of age or older due to increased risk of side effects including delirium. Suggest 25 mg for mild/moderate nausea, 50 mg for moderate/severe nausea.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;dimenhyDRINATE PO/SC&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dimenhyDRINATE tablet; 25-50 mg, oral, every 8 hours, as needed, nausea, vomiting&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;dimenhyDRINATE PO/SC&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dimenhyDRINATE IV/IM;  25-50 mg, subcutaneous, every 8 hours, as needed, nausea, vomiting&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;metoclopramide PO/SC&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;PO administration is preferred for metoclopramide to reduce the risk of akathisia.&amp;nbsp; Suggest 5 mg for mild/moderate nausea or if CrCl less than 40 mL/min; 10 mg for moderate/severe nausea, and CrCl over 40 mL/min.&amp;nbsp; Avoid in Parkinson’s patients – may exacerbate symptoms. &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Use lowest dose required due to the high risk of side effects in this population.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;metoclopramide PO/SC&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metoclopramide tablet; 5-10 mg, oral, 3 times per day, as needed, nausea, vomiting, reassess after 48 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-SECTION.orderable_section.v1 and name/value=&apos;metoclopramide PO/SC&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;metoclopramide IV/IM/SC; 5-10 mg, oral, 3 times per day, as needed, nausea, vomiting, reassess after 48 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipsychotics&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;If haloperidol not effective after 3-4 consecutive doses or 8 mg per 24 hours, then consider methotrimeprazine.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antipsychotics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;methotrimeprazine injection; IF extreme agitation: methotrimeprazine SC; 6.25 - 25 mg subcutaneous every 8 hours PRN for extreme agitation&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;DO NOT let drug stand in syringe longer than 15 minutes, as drug may absorb to the plastic&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antivirals&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Oseltamivir can be used for Influenza (suspected or confirmed) without ID consult and should ideally be started within 48 hours of symptom onset. Consider adjustment for renal function. &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If CrCl greater than 60: recommend 75 mg twice daily&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If CrCl greater than 30 but less than 60: recommend 30 mg twice daily&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If CrCl 10 to 30: recommend 30 mg once daily&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;If not recent CrCl, can give one dose of 75 mg prior to results if no recent labs AND no history of end stage renal failure&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antivirals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;nirmatrelvir- ritonavir (Paxlovid)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antivirals&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;remdesivir - Early COVID-19 - ages 12 and greater&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Discontinue all vital signs orders and all oral medications. Use local site End of Life care pathway.&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; If any end of life PRN medication used more than 2 times in 24 hours, review with physician to consider scheduling&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Respiratory Order/Instruction; oxygen therapy may be used for comfort (no 02 sat titration parameters required)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Pain and/or Dyspnea&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;morphine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Pain and/or Dyspnea&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;HYDROmorphone&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Pain and/or Dyspnea&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Agitation&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1 and name/value=&apos;Clinical Guidance #1&apos;]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;If haloperidol not effective after 3 to&amp;nbsp;4 consecutive doses or 8 mg per 24 hours, then consider methotrimeprazine&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Agitation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Agitation&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Distressing Respiratory Secretions&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Distressing Respiratory Secretions&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;End of Life Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Management of Distressing Respiratory Secretions&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" min="1" name="COVID-19 Long Term Care and Supportive Living Medical Management Adult">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Decision Support and Reference Links">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calculators">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Complete the Clinical Frail Scale or Edmonton Frail Scale- Acute Care (EFS-AC)"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="292e20ca-c39d-4d64-af2a-88dd96de4e82" concept_name="Isolation COVID-19 Admission1 Order Group " max="1" path="/items" name="Isolation COVID-19 Admission Order Group"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Every 8 hours"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Indwelling Urinary Catheter">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="72710a92-e133-41c2-8c5f-23acadb3ef5b" concept_name="AHS OGR ADULT MED Indwelling Urinary Catheter Management CT" max="1" path="/items" name="Indwelling Urinary Catheter Management"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Titrate Oxygen to maintain Saturation range of 90 to 96%"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="be4b8a6b-a79a-4e0b-8735-fb7e017b9225" concept_name="RT Oxygen therapy [RT73] IP Order" max="1" path="/items" name="Oxygen therapy; Known CO2 Retainer, 88-92%"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); if oxygen flow increases by greater than 2L/min from previous to maintain the same level of oxygenation, or if there is a progressive increase in the work of breathing"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP);  If a new change to Oxygen Flow of 6L/min or Higher to maintain same level of oxygenation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; the use of humidified hi-flow oxygen (HHHFO) over conventional oxygen delivery is not recommended in routine practice"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Hold CPAP"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - STAT">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Virology">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="de207412-5a52-4a61-a702-da025f14db52" concept_name="AHS OGR MULTI GEN Respiratory Infection_incl. Cov-19_Nasopharynx" max="1" path="/items" name="Respiratory Infection (incl. Cov-19) -- Nasopharynx"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Subcutaneous Cannula (HDC) Maintenance">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="938bd580-a4a3-4c91-9bc9-9c7f9da12dda" concept_name="NURIV Start hypodermoclysis [IVT52] Order" max="1" path="/items" name="Start hypodermoclysis; Once, Insert Subcutaneous Cannula: Hypodermoclysis (HDC) Cannula"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; HDC Guidance, use site procedure manual for HDC if available."/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Subcutaneous Cannula (HDC) Fluid Infusions">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag; 30 - 75 mL/hour, subcutaneous, continuous"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="29489ca4-6fe9-4254-ac8d-620b68c344d7" concept_name="AHS OGN ADULT CDEP VTE Prophylaxis - Medicine Adult" max="1" path="/items" name="VTE Prophylaxis - Medicine, Adult"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Clinical Decision Support">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Autonomic Agents">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3da6e611-c8f1-449b-9dc4-e159d52b17a6" concept_name="PHARM SALBUTAMOL SULFATE HFA 100 MCG ACTUATION AEROSOL INHALER [165945] Order" max="1" path="/items" name="salbutamol inhaler 100 mcg/actuation; 100 mcg/dose MDI, 2-4 puffs, every hour, Consider administration via spacer"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3da6e611-c8f1-449b-9dc4-e159d52b17a6" concept_name="PHARM SALBUTAMOL SULFATE HFA 100 MCG ACTUATION AEROSOL INHALER [165945] Order" max="1" path="/items" name="salbutamol inhaler 100 mcg/actuation; 100 mcg/dose MDI, 2-4 puffs, every hour, as needed, bronchospasm, Consider administration via spacer"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4f6e0c52-223d-4c23-aa40-bf141c5e95ba" concept_name="PHARM IPRATROPIUM BROMIDE 20 MCG ACTUATION HFA AEROSOL INHALER [166271] Order" max="1" path="/items" name="ipratropium inhaler 20 mcg; 20 mcg/dose MDI, 2 puffs, every 6 hours, Administer through spacer"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4f6e0c52-223d-4c23-aa40-bf141c5e95ba" concept_name="PHARM IPRATROPIUM BROMIDE 20 MCG ACTUATION HFA AEROSOL INHALER [166271] Order" max="1" path="/items" name="ipratropium inhaler 20 mcg; 20 mcg/dose MDI, 2 puffs, every 6 hours, as needed, bronchospasm, Administer through spacer"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; 500-1000 mg oral, 3 times per day for mild pain or fever, reassess after 72 hours"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository; 650 mg rectal 3 times per day for mild pain or fever, reassess after 48 hours (may hold at RN discretion)"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="dimenhyDRINATE PO/SC">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM DIMENHYDRINATE 50 MG TABLET [2485] Order" max="1" path="/items" name="dimenhyDRINATE tablet; 25-50 mg, oral, every 8 hours, as needed, nausea, vomiting"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM DIMENHYDRINATE INJECTION ORDERABLE [4200101] Order" max="1" path="/items" name="dimenhyDRINATE IV/IM;  25-50 mg, subcutaneous, every 8 hours, as needed, nausea, vomiting"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="metoclopramide PO/SC">
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05b202cc-0015-412c-9c83-ed0c7727d1f0" concept_name="PHARM metoclopramide tablet Compiled Order" max="1" path="/items" name="metoclopramide tablet; 5-10 mg, oral, 3 times per day, as needed, nausea, vomiting, reassess after 48 hours"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9b485b3-6681-44f9-b0fb-1949efbd6d85" concept_name="PHARM METOCLOPRAMIDE INJECTION ORDERABLE [4200105] Order" max="1" path="/items" name="metoclopramide IV/IM/SC; 5-10 mg, oral, 3 times per day, as needed, nausea, vomiting, reassess after 48 hours"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antipsychotics">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2d22d5b2-02b0-42ed-9870-188ce381b761" concept_name="PHARM HALOPERIDOL INJECTION ORDERABLE [4200502] Order" max="1" path="/items" name="haloperidol injection; amp 0.5 - 1 mg subcutaneous, every 60 minutes, as needed, agitation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1941460d-469a-4cd1-b597-9e7ba8cb3711" concept_name="PHARM METHOTREMPRAZINE INJECTION ORDERABLE [4200565] Order" max="1" path="/items" name="methotrimeprazine injection; IF extreme agitation: methotrimeprazine SC; 6.25 - 25 mg subcutaneous every 8 hours PRN for extreme agitation"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antivirals">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="37a2bc22-d381-4eba-9127-aa480dd65f8e" concept_name="PHARM oseltamivir capsule Compiled Order" max="1" path="/items" name="oseltamivir capsule; (if normal renal function) 75 mg oral, 2 times per day x 5 days, discontinue if influenza RPP negative"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7a75c399-1d5a-42fe-aa16-05853190759e" concept_name="AHS OGR MULTI GEN paxlovid" max="1" path="/items" name="nirmatrelvir- ritonavir (Paxlovid)"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="be46a742-4600-42fa-aa68-b955edf87df1" concept_name="AHS OGR MULTI GEN remdesivir COVID-19 Early" max="1" path="/items" name="remdesivir - Early COVID-19 - ages 12 and greater"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="End of Life Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; If any end of life PRN medication used more than 2 times in 24 hours, review with physician to consider scheduling"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Respiratory Order/Instruction; oxygen therapy may be used for comfort (no 02 sat titration parameters required)"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Management of Pain and/or Dyspnea">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="morphine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM MORPHINE INJECTION ORDERABLE [420065] Order" max="1" path="/items" name="morphine injection; preservative free, 2.5 mg subcutaneous, every 6 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="67565029-6e61-4591-8677-1c12a114619d" concept_name="PHARM MORPHINE INJECTION ORDERABLE [420065] Order" max="1" path="/items" name="morphine injection; preservative free, 2.5 mg, subcutaneous, every 60 minutes, as needed, pain and/or dyspnea"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE IV IM SC ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; 0.5 mg, subcutaneous, every 6 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE IV IM SC ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone, preservative free injection; 0.5-1 mg, subcutaneous, every 60 minutes, as needed, pain, and/or dyspnea"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Management of Agitation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a303131-9a71-41ff-ba2e-991d423d3ca1" concept_name="PHARM LORazepam tablet sublingual Compiled Order" max="1" path="/items" name="LORazepam tablet sublingual; 0.5-1 mg, sublingual, every 2 hours, as needed, anxiety, max 2 mg  in 24 hours for associated distressing anxiety - call MD if max reached"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2d22d5b2-02b0-42ed-9870-188ce381b761" concept_name="PHARM HALOPERIDOL INJECTION ORDERABLE [4200502] Order" max="1" path="/items" name="haloperidol injection; 0.5- 1 mg, subcutaneous, every 60 minutes, as needed, agitation"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="IF extreme agitation:"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IF the patient is experiencing extreme agitation:">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1941460d-469a-4cd1-b597-9e7ba8cb3711" concept_name="PHARM METHOTREMPRAZINE INJECTION ORDERABLE [4200565] Order" max="1" path="/items" name="methotrimeprazine injection; 6.25-25 mg, subcutaneous, every 8 hours, as needed, for extreme agitation"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e8443d3-a1d0-42b3-b9b2-b80bf7d202de" concept_name="PHARM MIDAZOLAM INJECTION ORDERABLE [4200215] Order" max="1" path="/items" name="midazolam injection; 2-5 mg, subcutaneous, every 6 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e8443d3-a1d0-42b3-b9b2-b80bf7d202de" concept_name="PHARM MIDAZOLAM INJECTION ORDERABLE [4200215] Order" max="1" path="/items" name="midazolam injection; 2-5 mg, subcutaneous, every 60 minutes, as needed, for respiratory distress not relieved by hydromorphone, or for delirium not responsive to haloperidol/methotrimeprazine"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Management of Distressing Respiratory Secretions">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="atropine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="465eb440-7e2b-49aa-8ae2-b417d7e8abef" concept_name="PHARM ATROPINE INJECTION ORDERABLE [420067] Order" max="1" path="/items" name="atropine injection; 0.6 mg, subcutaneous, every 6 hours, as needed, for distressing pulmonary secretions"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6744f0a5-2f1a-47cd-a07a-c89c97923543" concept_name="PHARM ATROPINE 1 Percent EYE DROPS [736] Order" max="1" path="/items" name="atropine 1% eye drop; 2 drop, sublingual, 3 times per day, as needed, for distressing pulmonary secretions"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #1"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Notify of worsening delirium"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+</template>
