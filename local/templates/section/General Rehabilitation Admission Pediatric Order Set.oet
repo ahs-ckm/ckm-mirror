@@ -1721,10 +1721,10 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="970cd722-5a0b-4065-a0c6-86afdb408177" concept_name="Isolation Pediatric Order Panel" max="1" path="/items" name="Isolation Panel Pediatric"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="970cd722-5a0b-4065-a0c6-86afdb408177" concept_name="AHS OGN PEDS CH Isolation Panel Pediatric" max="1" path="/items" name="Isolation Panel Pediatric"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
@@ -1757,20 +1757,20 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Tube Feed only"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Enteral Feed Label Orders">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="92e4d1ad-3786-4774-bd24-fc064304226b" concept_name="Breastmilk 1 Feed Label Order" max="1" path="/items" name="Breastmilk"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2e469b82-dfc3-4553-9887-da27b77dbcd2" concept_name="Breastmilk Continuous Label Order" max="1" path="/items" name="Breastmilk (Continuous)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b72ffd08-4aa0-4ecf-82eb-3e964ff39620" concept_name="Pasteurized Donor Human Milk 1 Feed Label Order" max="1" path="/items" name="Pasteurized Donor Human Milk"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3a76b671-5528-4da5-9e3c-9e35fafdb915" concept_name="Pasteurized Donor Human Milk Continuous Label Order" max="1" path="/items" name="Pasteurized Donor Human Milk (Continuous)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f0f6e992-edbf-4550-9750-b4a580f1ccb7" concept_name="Infant Formula 1 Feed Label Order" max="1" path="/items" name="Infant Formula"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca63cc5d-cf5d-46d0-ac92-30aecdee454b" concept_name="Infant Formula Continuous Label Order" max="1" path="/items" name="Infant Formula (Continuous)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b756b903-d456-4aaa-ab89-d9bad0824583" concept_name="Shared Breastmilk 1 Feed Label Order" max="1" path="/items" name="Shared Breastmilk"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae262692-c993-43e2-a5e5-395f8ff45f8a" concept_name="Shared Breastmilk Continuous Label Order" max="1" path="/items" name="Shared Breastmilk (Continuous)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="92e4d1ad-3786-4774-bd24-fc064304226b" concept_name="PHARM BREASTMILK [3080000011] Order" max="1" path="/items" name="Breastmilk"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2e469b82-dfc3-4553-9887-da27b77dbcd2" concept_name="PHARM BREASTMILK CONTINUOUS [4002537] Order" max="1" path="/items" name="Breastmilk (Continuous)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b72ffd08-4aa0-4ecf-82eb-3e964ff39620" concept_name="PHARM PASTEURIZED DONOR HUMAN MILK [4001596] Order" max="1" path="/items" name="Pasteurized Donor Human Milk"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3a76b671-5528-4da5-9e3c-9e35fafdb915" concept_name="PHARM PASTEURIZED DONOR HUMAN MILK CONTINUOUS [4002539] Order" max="1" path="/items" name="Pasteurized Donor Human Milk (Continuous)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f0f6e992-edbf-4550-9750-b4a580f1ccb7" concept_name="PHARM INFANT FORMULA [4002561] Order" max="1" path="/items" name="Infant Formula"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ca63cc5d-cf5d-46d0-ac92-30aecdee454b" concept_name="PHARM INFANT FORMULA CONTINUOUS [4002540] Order" max="1" path="/items" name="Infant Formula (Continuous)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b756b903-d456-4aaa-ab89-d9bad0824583" concept_name="PHARM SHARED BREASTMILK [4001595] Order" max="1" path="/items" name="Shared Breastmilk"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae262692-c993-43e2-a5e5-395f8ff45f8a" concept_name="PHARM SHARED BREASTMILK CONTINUOUS [4002538] Order" max="1" path="/items" name="Shared Breastmilk (Continuous)"/>
         </Item>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68c645dd-33f1-4806-a646-df281eac3217" concept_name="Spinal Precautions Order Panel" max="1" path="/items" name="Spinal Precautions"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68c645dd-33f1-4806-a646-df281eac3217" concept_name="AHS OGN MULTI SUR Spinal Precautions" max="1" path="/items" name="Spinal Precautions"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity">
@@ -1781,11 +1781,11 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Abduction Wedge"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activities of Daily Living">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; ADL Dressing"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; ADL for Eating"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; ADL Ambulation"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; ADL Toileting"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; ADL Hygiene"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; ADL Dressing"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; ADL for Eating"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; ADL Ambulation"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; ADL Toileting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; ADL Hygiene"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs"/>
@@ -1823,7 +1823,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5ed4a464-db26-4f78-a74b-749e0d3d753a" concept_name="DIETNUR Calorie Count [NUR577] IP Order" max="1" path="/items" name="Calorie count"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c9cea756-230f-4b9a-9ba2-8db2c8272883" concept_name="Pediatric Respiratory Therapy Smart Group" max="1" path="/items" name="Respiratory Interventions"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c9cea756-230f-4b9a-9ba2-8db2c8272883" concept_name="AHS OGR PEDS CH Respiratory Interventions" max="1" path="/items" name="Respiratory Interventions"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP)"/>
@@ -1861,8 +1861,8 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="384a2bd0-a6cd-4355-a421-a87822e31f2a" concept_name="LABUR Urinalysis [LAB347] Order" max="1" path="/items" name="Urinalysis"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Therapeutic Drug Monitoring and Toxicology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level Pre-Dose [LAB39] IP Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="162ada28-98e7-40bf-a0fa-c232bea8b035" concept_name="LAB Vancomycin Level Other [LAB40] IP Order" max="1" path="/items" name="Vancomycin Level, Other"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level Pre-Dose [LAB39] Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="162ada28-98e7-40bf-a0fa-c232bea8b035" concept_name="LAB Vancomycin Level Other [LAB40] Order" max="1" path="/items" name="Vancomycin Level, Other"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
@@ -1891,15 +1891,15 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="edc6d443-87da-40da-9326-33d7653b0129" concept_name="NURCOM Maintain IV Access [NUR562] IP Order" max="1" path="/items" name="Maintain IV Access"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="NURIV Convert to saline lock IV [IVT11] Order" max="1" path="/items" name="Convert to saline lock IV"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM sodium chloride, lock solution Order" max="1" path="/items" name="sodium chloride 0.9 % flush solution; Flush 0.9%"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e29f686-4c87-405d-9d45-3d98c85c6f47" concept_name="PHARM tetracaine Gel 4% Order" max="1" path="/items" name="tetracaine gel 4%; For ages 1 month of age and up"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de239ed9-bf2c-4b0d-8e94-3c8f8419b5ce" concept_name="PHARM lidocaine-prilocaine Cream 2.5%-2.5% (Emla) Order" max="1" path="/items" name="lidocaine-prilocaine cream 2.5%-2.5%"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM lidocaine, liposomal Cream 4% Order" max="1" path="/items" name="lidocaine cream 4%; For infants 1 months to 3 years of age"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM lidocaine, liposomal Cream 4% Order" max="1" path="/items" name="lidocaine cream 4%; For children age 4 years and up"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1fe398b-f069-4cf4-9680-df004a6cffb3" concept_name="PHARM sucrose Oral liquid 24% Order" max="1" path="/items" name="sucrose liquid oral 24%; For ages 0 to four months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9efec5ac-aa78-4647-877e-e663205973e6" concept_name="PHARM SODIUM CHLORIDE FLUSH 0.9 Percent IV SOLN [40899901] Order" max="1" path="/items" name="sodium chloride 0.9 % flush solution; Flush 0.9%"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e29f686-4c87-405d-9d45-3d98c85c6f47" concept_name="PHARM TETRACAINE HCL 4 Percent TOPICAL GEL [163221] Order" max="1" path="/items" name="tetracaine gel 4%; For ages 1 month of age and up"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de239ed9-bf2c-4b0d-8e94-3c8f8419b5ce" concept_name="PHARM LIDOCAINE-PRILOCAINE 2.5 Percent -2.5 Percent TOPICAL CREAM [10434] Order" max="1" path="/items" name="lidocaine-prilocaine cream 2.5%-2.5%"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM LIDOCAINE 4 Percent TOPICAL CREAM [23461] Order" max="1" path="/items" name="lidocaine cream 4%; For infants 1 months to 3 years of age"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM LIDOCAINE 4 Percent TOPICAL CREAM [23461] Order" max="1" path="/items" name="lidocaine cream 4%; For children age 4 years and up"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a1fe398b-f069-4cf4-9680-df004a6cffb3" concept_name="PHARM SUCROSE 24 Percent ORAL SOLUTION [40840035] Order" max="1" path="/items" name="sucrose liquid oral 24%; For ages 0 to four months"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Boluses">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7ecaad42-c212-4815-aeb9-074017108643" concept_name="Pediatric IV Boluses Copy Template Order Group" max="1" path="/items" name="IV Boluses"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7ecaad42-c212-4815-aeb9-074017108643" concept_name="AHS OGR PEDS CH IV Boluses" max="1" path="/items" name="IV Boluses"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusions">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Solutions with NaCl 0.9%">
@@ -1907,20 +1907,20 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Solutions with D5">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM dextrose 5%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="D5-NaCl 0.9% infusion bag"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.9% 1000 mL bag"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bd5dbf2d-d3b6-4b15-8558-9a0fce74a7ab" concept_name="PHARM potassium chloride 40 mmol in dextrose 5%-sodium chloride 0.9% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in D5-NaCl 0.9% 1000 mL bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM DEXTROSE 5 Percent AND 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9815] Order" max="1" path="/items" name="D5-NaCl 0.9% infusion bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fd4babdb-0d6f-4e0e-bf77-327cc6b9bb47" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.9 Percent SODIUM CHLORIDE IV SOLUTION [9795] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.9% 1000 mL bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8f14b133-99e8-4498-a942-8c5f0a1c041b" concept_name="PHARM POTASSIUM CHLORIDE 40 MMOL (0.04 MMOL ML) IN D5-NACL 0.9 Percent 1000 ML INFUSION ORDERABLE [4201061] Order" max="1" path="/items" name="potassium chloride 40 mmol in D5-NaCl 0.9% 1000 mL infusion"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Non-dextrose Solutions">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" max="1" path="/items" name="Section supporting context #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% bag"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM potassium chloride 20 mmol in sodium chloride 0.9% 1000 mL (20 mmol/L) injection Order" max="1" path="/items" name="potassium chloride 20 mmol in NaCl 0.9% 1000 mL bag"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c5c6f74-fdfb-4000-913e-7874b69dba06" concept_name="PHARM potassium chloride 40 mmol in sodium chloride 0.9% 1000 mL (40 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 40 mmol in NaCl 0.9% 1000 mL bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5f5cec5c-826e-4e02-b318-850480b60756" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLN [11081] Order" max="1" path="/items" name="potassium chloride 20 mmol in NaCl 0.9% 1000 mL bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7c5c6f74-fdfb-4000-913e-7874b69dba06" concept_name="PHARM POTASSIUM CHLORIDE 40 MMOL L IN 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLN [11082] Order" max="1" path="/items" name="potassium chloride 40 mmol in NaCl 0.9% 1000 mL bag"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Solutions with D10">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d245a4fe-23d0-4a9f-90de-6afda3777b94" concept_name="PHARM dextrose 10%-sodium chloride 0.9% infusion Order" max="1" path="/items" name="D10-NaCl 0.9% bag"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d560ffd-da2d-4fc9-9e79-b85501f26c62" concept_name="PHARM potassium chloride 20 mmol in dextrose 10%-sodium chloride 0.9% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.9% 1,000 mL (0.02 mmol/mL) Infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d245a4fe-23d0-4a9f-90de-6afda3777b94" concept_name="PHARM DEXTROSE 10 Percent AND 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9810] Order" max="1" path="/items" name="D10-NaCl 0.9% bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d560ffd-da2d-4fc9-9e79-b85501f26c62" concept_name="PHARM POTASSIUM CHLORIDE 0.02 MMOL ML (20 MMOL) IN D10-NACL 0.9 Percent 1000 ML INFUSION ORDERABLE [4201105] Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.9% 1,000 mL (0.02 mmol/mL) Infusion"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hypotonic Solutions with NaCl 0.45%">
@@ -1928,20 +1928,20 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Solutions with D5">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="035b0056-ec67-41b3-929a-5e8da8be6a19" concept_name="PHARM dextrose 5%-sodium chloride 0.45% infusion Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.45% infusion"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM potassium chloride 20 mmol in dextrose 5%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.45% 1000 mL bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="035b0056-ec67-41b3-929a-5e8da8be6a19" concept_name="PHARM DEXTROSE 5 Percent AND 0.45 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9814] Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.45% infusion"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29500468-946b-4641-aa3a-6f93dd0134d9" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D5-0.45 Percent SODIUM CHLORIDE IV SOLUTION [9801] Order" max="1" path="/items" name="potassium chloride 20 mmol in D5-NaCl 0.45% 1000 mL bag"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Non-dextrose Solutions">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="745a84d0-3022-4aaf-8316-7a4cfbc6a520" concept_name="PHARM sodium chloride 0.45% infusion Order" max="1" path="/items" name="sodium chloride 0.45% bag"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ced87e8-ef9e-4144-81a5-32d3ae6c5312" concept_name="PHARM potassium chloride 20 mmol in dextrose 10%-sodium chloride 0.45% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.45% 1,000 mL (0.02 mmol/mL) infusion (PHARM)"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="745a84d0-3022-4aaf-8316-7a4cfbc6a520" concept_name="PHARM SODIUM CHLORIDE 0.45 Percent INTRAVENOUS SOLUTION [7318] Order" max="1" path="/items" name="sodium chloride 0.45% bag"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ced87e8-ef9e-4144-81a5-32d3ae6c5312" concept_name="PHARM POTASSIUM CHLORIDE 0.02 MMOL ML (20 MMOL) IN D10-NACL 0.45 Percent 1000 ML INFUSION BAG (PHARM)(MFG) [6004278] Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.45% 1,000 mL (0.02 mmol/mL) infusion (PHARM)"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hypotonic Solutions with NaCl 0.2%">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad54ad44-d810-4729-8955-6d3f2c593da1" concept_name="PHARM dextrose 10%-sodium chloride 0.2% infusion Order" max="1" path="/items" name="dextrose 10%-sodium chloride 0.2% infusion"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d98bc36-6b6e-42b0-b441-dd64229644e9" concept_name="PHARM potassium chloride 20 mmol in dextrose 10%-sodium chloride 0.2% 1000 mL (20 mmol/L) infusion Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.2% 1000 mL bag (PHARM)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad54ad44-d810-4729-8955-6d3f2c593da1" concept_name="PHARM DEXTROSE 10 Percent -SODIUM CHLORIDE 0.2 Percent INFUSION ORDERABLE [4201107] Order" max="1" path="/items" name="dextrose 10%-sodium chloride 0.2% infusion"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d98bc36-6b6e-42b0-b441-dd64229644e9" concept_name="PHARM POTASSIUM CHLORIDE 20 MMOL L IN D10-NACL 0.2 Percent 1000 ML BAG (PHARM) [6000209] Order" max="1" path="/items" name="potassium chloride 20 mmol in D10-NaCl 0.2% 1000 mL bag (PHARM)"/>
         </Item>
       </Item>
     </Item>
@@ -1953,24 +1953,24 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Acetaminophen PO/PR Panel Scheduled">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM acetaminophen ORAL liquid 80 mg/mL Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen Chewable tablet Order" max="1" path="/items" name="acetaminophen chewable tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #2"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen tablet; half tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; half tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #3"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen Suppository Order" max="1" path="/items" name="acetaminophen suppository"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Acetaminophen PO/PR Panel PRN">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM acetaminophen ORAL liquid 80 mg/mL Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen Chewable tablet Order" max="1" path="/items" name="acetaminophen chewable tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #2"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #3"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen Suppository Order" max="1" path="/items" name="acetaminophen suppository"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b84c4212-a9b9-4fe2-877e-7661ffd1c4e5" concept_name="PHARM acetaminophen suppository Compiled Order" max="1" path="/items" name="acetaminophen suppository"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="NSAIDs">
@@ -1981,9 +1981,9 @@
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ibuprofen PO Scheduled">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM ibuprofen Oral liquid 40 mg/mL Order" max="1" path="/items" name="ibuprofen liquid oral 40 mg/mL"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6aecf0e-116e-4490-b523-58ed006d864c" concept_name="PHARM IBUPROFEN LIQUID ORAL 40 MG ML (WRAPPER) [408770008] Order" max="1" path="/items" name="ibuprofen liquid oral 40 mg/mL"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen Tablet Order" max="1" path="/items" name="ibuprofen tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b65d69fd-b397-4934-9e04-fa563817b625" concept_name="PHARM ibuprofen tablet Compiled Order" max="1" path="/items" name="ibuprofen tablet"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ibuprofen PO PRN">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -1996,16 +1996,16 @@
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naproxen PO Scheduled">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM naproxen Oral liquid 25 mg/mL Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM NAPROXEN 25 MG ML IN MEDISCA MIX LIQUID ORAL MFG [6002476] Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen Tablet Order" max="1" path="/items" name="naproxen tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen tablet Compiled Order" max="1" path="/items" name="naproxen tablet"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naproxen PO PRN">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM naproxen Oral liquid 25 mg/mL Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b547cb97-3316-47c9-aeec-a34e40a9340b" concept_name="PHARM NAPROXEN 25 MG ML IN MEDISCA MIX LIQUID ORAL MFG [6002476] Order" max="1" path="/items" name="naproxen liquid oral 25 mg/mL mfg"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen Tablet Order" max="1" path="/items" name="naproxen tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8934bb49-213e-44f3-84c7-86c4edbbda47" concept_name="PHARM naproxen tablet Compiled Order" max="1" path="/items" name="naproxen tablet"/>
             </Item>
           </Item>
         </Item>
@@ -2017,42 +2017,42 @@
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release Morphine - Scheduled">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting Tablet Order" max="1" path="/items" name="morphine, short acting tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e02fbf78-4a79-4efc-9799-35b3a2e7dc29" concept_name="PHARM morphine Oral liquid 5 mg_mL" max="1" path="/items" name="morphine liquid oral 5 mg/mL"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e02fbf78-4a79-4efc-9799-35b3a2e7dc29" concept_name="PHARM MORPHINE HCL 5 MG ML ORAL SYRUP [164783] Order" max="1" path="/items" name="morphine liquid oral 5 mg/mL"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release Morphine - PRN">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting Tablet Order" max="1" path="/items" name="morphine, short acting tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e02fbf78-4a79-4efc-9799-35b3a2e7dc29" concept_name="PHARM morphine Oral liquid 5 mg_mL" max="1" path="/items" name="morphine liquid oral 5 mg/mL"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e02fbf78-4a79-4efc-9799-35b3a2e7dc29" concept_name="PHARM MORPHINE HCL 5 MG ML ORAL SYRUP [164783] Order" max="1" path="/items" name="morphine liquid oral 5 mg/mL"/>
             </Item>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Controlled Release Morphine">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35b90384-db8f-4feb-a520-892000c1c6bc" concept_name="PHARM morphine, long acting 12 hour Capsule Order" max="1" path="/items" name="morphine, long acting 12 hour capsule; 10 mg"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="35b90384-db8f-4feb-a520-892000c1c6bc" concept_name="PHARM morphine long acting 12 hour capsule Compiled Order" max="1" path="/items" name="morphine, long acting 12 hour capsule; 10 mg"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release oxyCODONE">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting tablet"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE, short acting Tablet Order" max="1" path="/items" name="oxyCODONE, short acting tablet #1"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE short acting tablet Compiled Order" max="1" path="/items" name="oxyCODONE, short acting tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="760cbafb-ca4e-4322-a162-d0d22644cf19" concept_name="PHARM oxyCODONE short acting tablet Compiled Order" max="1" path="/items" name="oxyCODONE, short acting tablet #1"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release HYDROmorphone">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release HYDROmoprhone - Scheduled">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting Tablet Order" max="1" path="/items" name="HYDROmorphone, short acting tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROmorphone Oral liquid 1 mg/mL Order" max="1" path="/items" name="HYDROmorphone liquid oral"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROMORPHONE LIQUID ORAL ORDERABLE [4201017] Order" max="1" path="/items" name="HYDROmorphone liquid oral"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Immediate Release HYDROmoprhone - PRN">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting Tablet Order" max="1" path="/items" name="HYDROmorphone, short acting tablet"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROmorphone Oral liquid 1 mg/mL Order" max="1" path="/items" name="HYDROmorphone liquid oral"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe82dfd3-3456-4002-be4c-444b9df39c6a" concept_name="PHARM HYDROMORPHONE LIQUID ORAL ORDERABLE [4201017] Order" max="1" path="/items" name="HYDROmorphone liquid oral"/>
             </Item>
           </Item>
         </Item>
@@ -2063,19 +2063,19 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ondansetron -Scheduled">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87878269-d8fc-4410-93ed-5d6495a412a3" concept_name="PHARM ondansetron, preservative free Injection Order" max="1" path="/items" name="ondansetron, preservative free injection 2 mg/mL"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87878269-d8fc-4410-93ed-5d6495a412a3" concept_name="PHARM ONDANSETRON HCL (PF) 2 MG ML INTRAVENOUS SOLUTION [164850] Order" max="1" path="/items" name="ondansetron, preservative free injection 2 mg/mL"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron tablet Compiled Order" max="1" path="/items" name="ondansetron tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ondansetron Oral liquid 0.8 mg/mL Order" max="1" path="/items" name="ondansetron liquid oral 0.8 mg/mL mfg"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ONDANSETRON 0.8 MG ML LIQUID ORAL MFG [6002288] Order" max="1" path="/items" name="ondansetron liquid oral 0.8 mg/mL mfg"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ondansetron - PRN">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87878269-d8fc-4410-93ed-5d6495a412a3" concept_name="PHARM ondansetron, preservative free Injection Order" max="1" path="/items" name="ondansetron, preservative free injection 2 mg/mL"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87878269-d8fc-4410-93ed-5d6495a412a3" concept_name="PHARM ONDANSETRON HCL (PF) 2 MG ML INTRAVENOUS SOLUTION [164850] Order" max="1" path="/items" name="ondansetron, preservative free injection 2 mg/mL"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron tablet Compiled Order" max="1" path="/items" name="ondansetron tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ondansetron Oral liquid 0.8 mg/mL Order" max="1" path="/items" name="ondansetron liquid oral 0.8 mg/mL mfg"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ONDANSETRON 0.8 MG ML LIQUID ORAL MFG [6002288] Order" max="1" path="/items" name="ondansetron liquid oral 0.8 mg/mL mfg"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="dimenhyDRINATE">
@@ -2083,62 +2083,62 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="dimenhydrinate - Scheduled">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE IV/IM"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM DIMENHYDRINATE INJECTION ORDERABLE [4200101] Order" max="1" path="/items" name="dimenhyDRINATE IV/IM"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="907f470f-caf1-432f-8f59-6720d969177d" concept_name="PHARM dimenhyDRINATE Oral liquid 3 mg/mL Order" max="1" path="/items" name="dimenhyDRINATE liquid oral 3 mg/mL"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="907f470f-caf1-432f-8f59-6720d969177d" concept_name="PHARM DIMENHYDRINATE 15 MG 5 ML ORAL LIQUID [162894] Order" max="1" path="/items" name="dimenhyDRINATE liquid oral 3 mg/mL"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM dimenhyDRINATE Tablet Order" max="1" path="/items" name="dimenhyDRINATE tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM DIMENHYDRINATE 50 MG TABLET [2485] Order" max="1" path="/items" name="dimenhyDRINATE tablet"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="dimenhydrinate-PRN">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM dimenhyDRINATE injection Order" max="1" path="/items" name="dimenhyDRINATE IV/IM"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM DIMENHYDRINATE INJECTION ORDERABLE [4200101] Order" max="1" path="/items" name="dimenhyDRINATE IV/IM"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="907f470f-caf1-432f-8f59-6720d969177d" concept_name="PHARM dimenhyDRINATE Oral liquid 3 mg/mL Order" max="1" path="/items" name="dimenhyDRINATE liquid oral 3 mg/mL"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="907f470f-caf1-432f-8f59-6720d969177d" concept_name="PHARM DIMENHYDRINATE 15 MG 5 ML ORAL LIQUID [162894] Order" max="1" path="/items" name="dimenhyDRINATE liquid oral 3 mg/mL"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM dimenhyDRINATE Tablet Order" max="1" path="/items" name="dimenhyDRINATE tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM DIMENHYDRINATE 50 MG TABLET [2485] Order" max="1" path="/items" name="dimenhyDRINATE tablet"/>
           </Item>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laxatives">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM polyethylene glycol 3350 Powder Order" max="1" path="/items" name="polyethylene glycol 3350 powder"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM POLYETHYLENE GLYCOL 3350 POWDER ORDERABLE [4201136] Order" max="1" path="/items" name="polyethylene glycol 3350 powder"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="bisaCODyl">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM bisaCODyl Tablet Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM bisaCODyl Tablet Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated #1"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24613f73-baa5-4bae-a910-8b793e4de18f" concept_name="PHARM bisaCODyl Suppository 5 mg Order" max="1" path="/items" name="bisaCODyl suppository"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM bisaCODyl Tablet Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated #2"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM BISACODYL 5 MG TABLETDELAYED RELEASE [1079] Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM BISACODYL 5 MG TABLETDELAYED RELEASE [1079] Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24613f73-baa5-4bae-a910-8b793e4de18f" concept_name="PHARM BISACODYL 5 MG RECTAL SUPPOSITORY [162525] Order" max="1" path="/items" name="bisaCODyl suppository"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM BISACODYL 5 MG TABLETDELAYED RELEASE [1079] Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated #2"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Lactulose">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c67adad-7403-4f0b-881e-1a44ddac56a1" concept_name="PHARM lactulose Oral liquid 667 mg/mL Order" max="1" path="/items" name="lactulose Oral liquid 667 mg/mL"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c67adad-7403-4f0b-881e-1a44ddac56a1" concept_name="PHARM lactulose Oral liquid 667 mg/mL Order" max="1" path="/items" name="lactulose Oral liquid 667 mg/mL #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c67adad-7403-4f0b-881e-1a44ddac56a1" concept_name="PHARM LACTULOSE 10 GRAM 15 ML ORAL SOLUTION [38245] Order" max="1" path="/items" name="lactulose Oral liquid 667 mg/mL"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c67adad-7403-4f0b-881e-1a44ddac56a1" concept_name="PHARM LACTULOSE 10 GRAM 15 ML ORAL SOLUTION [38245] Order" max="1" path="/items" name="lactulose Oral liquid 667 mg/mL #1"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Sennosides">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM sennosides Oral liquid 1.7 mg/mL Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM sennosides Oral liquid 1.7 mg/mL Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM SENNOSIDES 8.5 MG 5 ML ORAL LIQUID [167258] Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM SENNOSIDES 8.5 MG 5 ML ORAL LIQUID [167258] Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL #1"/>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Topical Agents">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e29f686-4c87-405d-9d45-3d98c85c6f47" concept_name="PHARM tetracaine Gel 4% Order" max="1" path="/items" name="tetracaine gel 4%"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM lidocaine, liposomal Cream 4% Order" max="1" path="/items" name="lidocaine cream 4%"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="81a9a6cc-ecda-490d-9fd9-5c79b20c607c" concept_name="PHARM hydrocortisone Oint 1% Order" max="1" path="/items" name="hydrocortisone ointment 1%;"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0e29f686-4c87-405d-9d45-3d98c85c6f47" concept_name="PHARM TETRACAINE HCL 4 Percent TOPICAL GEL [163221] Order" max="1" path="/items" name="tetracaine gel 4%"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7ccf14a3-fddd-4ca6-b3ee-ccaff2c335d2" concept_name="PHARM LIDOCAINE 4 Percent TOPICAL CREAM [23461] Order" max="1" path="/items" name="lidocaine cream 4%"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="81a9a6cc-ecda-490d-9fd9-5c79b20c607c" concept_name="PHARM HYDROCORTISONE 1 Percent TOPICAL OINTMENT [3731] Order" max="1" path="/items" name="hydrocortisone ointment 1%;"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antipruritic">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a10737b8-610b-4e26-a6e2-7e89a5c80ee4" concept_name="PHARM nalbuphine injection Order" max="1" path="/items" name="nalbuphine IV/IM/SC"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a10737b8-610b-4e26-a6e2-7e89a5c80ee4" concept_name="PHARM NALBUPHINE IV IM SC ORDERABLE [4200345] Order" max="1" path="/items" name="nalbuphine IV/IM/SC"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="diphenhyDRAMINE">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE Capsule Order" max="1" path="/items" name="diphenhydrAMINE capsule"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE capsule Compiled Order" max="1" path="/items" name="diphenhydrAMINE capsule"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #1"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM diphenhydrAMINE injection Order" max="1" path="/items" name="diphenhydrAMINE IV/IM"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df7f878b-85c0-47ce-a50e-531ca3963b40" concept_name="PHARM DIPHENHYDRAMINE INJECTION ORDERABLE [420208] Order" max="1" path="/items" name="diphenhydrAMINE IV/IM"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Clinical Guidance #2"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="577ce76d-eb5e-4b83-9620-3b6590e9f619" concept_name="PHARM diphenhydrAMINE Oral liquid 1.25 mg/mL Order" max="1" path="/items" name="diphenhydrAMINE liquid oral 1.25 mg/mL"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="577ce76d-eb5e-4b83-9620-3b6590e9f619" concept_name="PHARM DIPHENHYDRAMINE 6.25 MG 5 ML ORAL LIQUID [13002] Order" max="1" path="/items" name="diphenhydrAMINE liquid oral 1.25 mg/mL"/>
         </Item>
       </Item>
     </Item>
