@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>40c25140-cadb-4247-9900-81e9aaac79b7</id>
+<name>criteria.cl result lvef less than 40</name>  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item><key>MetaDataSet:Sample Set </key><value>Template metadata sample set </value></item>
+      <item><key>Acknowledgements</key><value/></item>
+      <item><key>Business Process Level</key><value/></item>
+      <item><key>Care setting</key><value/></item>
+      <item><key>Client group</key><value/></item>
+      <item><key>Clinical Record Element</key><value/></item>
+      <item><key>Copyright</key><value/></item>
+      <item><key>Issues</key><value/></item>
+      <item><key>Owner</key><value/></item>
+      <item><key>Sign off</key><value/></item>
+      <item><key>Speciality</key><value/></item>
+      <item><key>User roles</key><value/></item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item><key>Technical.EPIC ID</key><value>&lt;p&gt;262&lt;/p&gt;</value></item>
+      <item><key>Transform.Technical Notes</key><value>&lt;p&gt;Criteria&lt;/p&gt;</value></item>
+    <item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~40c25140-cadb-4247-9900-81e9aaac79b7~NAME~criteria.cl result lvef less than 40}</value></item></items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="cl result lvef less than 40%">
+    
+    
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="bbc0f403-93b5-4990-8af7-114a9cc9bdf1" concept_name="lrr.ejection fraction" max="1" path="/items" name="ejection fraction"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8f60ba81-a5f3-4393-a106-e9246435ba19" concept_name="lrr.ejection fraction (1)" max="1" path="/items" name="ejection fraction (1)"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="fe32d0c6-8226-4aaf-a1a5-01f626ba027a" concept_name="lrr.lv ejection fraction" max="1" path="/items" name="lv ejection fraction"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e8c6aa57-57c7-46fb-a786-8fda598e1cc1" concept_name="lrr.echo 3d ejection fraction" max="1" path="/items" name="echo 3d ejection fraction"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cb8f9f28-88bc-435c-96af-6a14c9e4ccdf" concept_name="lrr.muga ejection fraction" max="1" path="/items" name="muga ejection fraction"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+</template>
