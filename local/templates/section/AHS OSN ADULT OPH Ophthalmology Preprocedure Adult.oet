@@ -558,7 +558,7 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Ophthalmology Preprocedure Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedure Planning">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eceb359a-3bca-4bfe-8b5d-db6da9f411c1" concept_name="SURCASE Case Request Operating Room [SUR1] Order" max="1" path="/items" name="Case Request Operating Room"/>
       </Item>
@@ -567,9 +567,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0ac6e392-4e13-45c4-b1ee-27da7ab645ce" concept_name="Isolation Adult Order Panel" max="1" path="/items" name="Isolation"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9f6694c9-7e2f-4d54-b74a-eb9f668d36a4" concept_name="AHS OGR ADULT GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre-Admission Clinic">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Diet/Nutrition; Pre-Admission Clinic">
@@ -596,10 +594,10 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Patient Care Interventions; Pre-Admission Clinic">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Hold Medication - Patient Instructions re: Diabetic Medications"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Eye Prep"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Discharge Instructions"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Hold Medication - Patient Instructions re: Diabetic Medications"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Eye Prep"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Discharge Instructions"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions"/>
@@ -689,12 +687,12 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Anti-Infective Agents - Ophthalmic; Pre-Admission Clinic">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM moxifloxacin Eye drop 0.5% Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM MOXIFLOXACIN 0.5 Percent EYE DROPS [35699] Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Anti-Inflammatory Agents - Opthalmic; Pre-Admission Clinic">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a034866-6743-4185-850f-3d72971e0659" concept_name="PHARM ketorolac Eye drop 0.5% Order" max="1" path="/items" name="ketorolac drop eye 0.5%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM dexAMETHasone-tobramycin Eye drop 0.1%-0.3% (Tobradex) Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM prednisoLONE acetate Eye drop 1% Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a034866-6743-4185-850f-3d72971e0659" concept_name="PHARM KETOROLAC 0.5 Percent EYE DROPS [19733] Order" max="1" path="/items" name="ketorolac drop eye 0.5%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM TOBRAMYCIN 0.3 Percent -DEXAMETHASONE 0.1 Percent EYE DROPSSUSPENSION [11567] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM PREDNISOLONE ACETATE 1 Percent EYE DROPSSUSPENSION [6487] Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referrals"/>
     </Item>
@@ -725,7 +723,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry; Preprocedure/Day Surgery">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level Pre-Dose [LAB39] IP Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose; Per Medication Dosing, Prior to *** dose"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3883821f-01ac-409a-a43d-c581f89f6927" concept_name="LAB Vancomycin Level Pre-Dose [LAB39] Order" max="1" path="/items" name="Vancomycin Level, Pre-Dose; Per Medication Dosing, Prior to *** dose"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Transfusion Medicine"/>
@@ -757,7 +755,7 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Day of Procedure">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cf5fd466-2e89-4b28-8444-91ef52299beb" concept_name="Diet and Nutrition Day of Procedure Smart Group" max="1" path="/items" name="Diet and Nutrition"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cf5fd466-2e89-4b28-8444-91ef52299beb" concept_name="AHS OGR ADULT SUR Diet and Nutrition Day of Procedure CT" max="1" path="/items" name="Diet and Nutrition"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
@@ -800,72 +798,72 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="IV Maintenance Preprocedure Adult Order Group" max="1" path="/items" name="IV Maintenance"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="AHS OGR ADULT SUR IV Maintenance Preprocedure" max="1" path="/items" name="IV Maintenance"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anxiolytics; Preprocedure/Day Surgery">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a303131-9a71-41ff-ba2e-991d423d3ca1" concept_name="PHARM LORazepam Sublingual tablet Order" max="1" path="/items" name="LORazepam tablet sublingual; 0.5 mg, sublingual, once, as needed, anxiety"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a303131-9a71-41ff-ba2e-991d423d3ca1" concept_name="PHARM LORazepam tablet sublingual Compiled Order" max="1" path="/items" name="LORazepam tablet sublingual; 0.5 mg, sublingual, once, as needed, anxiety"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a303131-9a71-41ff-ba2e-991d423d3ca1" concept_name="PHARM LORazepam Sublingual tablet Order" max="1" path="/items" name="LORazepam tablet sublingual; 1 mg, sublingual, once, as needed, anxiety"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a303131-9a71-41ff-ba2e-991d423d3ca1" concept_name="PHARM LORazepam tablet sublingual Compiled Order" max="1" path="/items" name="LORazepam tablet sublingual; 1 mg, sublingual, once, as needed, anxiety"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f0269ddd-d669-4672-8d61-47e98b2e58d7" concept_name="AHS OGR ADULT OPH Anti-Infectives" max="1" path="/items" name="Anti-Infective Agents - Ruptured Globe; Preprocedure/Day Surgery"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Anti-Infective; Preprocedure/Day Surgery">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4cb8ef27-f801-4138-be02-343d8f355311" concept_name="PHARM CIPROFLOXACIN 0 3 Percent EYE DROPS [9610] Order" max="1" path="/items" name="ciprofloxacin drop eye 0.3%; 1 drop, every 5 minutes, for 3 doses, Start 30 minutes pre-op"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e30510e1-9444-4226-aeeb-7be184f13135" concept_name="PHARM erythromycin Eye oint 5 mg/g Order" max="1" path="/items" name="erythromycin ointment eye 5 mg/g; Once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM moxifloxacin Eye drop 0.5% Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="52230355-87f1-499d-9a01-dbfcb29a7109" concept_name="PHARM ofloxacin Eye drop 0.3% Order" max="1" path="/items" name="ofloxacin drop eye 0.3%; 1 drop, once, Give 30 minutes pre-op"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e30510e1-9444-4226-aeeb-7be184f13135" concept_name="PHARM ERYTHROMYCIN 5 MG GRAM (0.5 Percent) EYE OINTMENT [2888] Order" max="1" path="/items" name="erythromycin ointment eye 5 mg/g; Once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM MOXIFLOXACIN 0.5 Percent EYE DROPS [35699] Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="52230355-87f1-499d-9a01-dbfcb29a7109" concept_name="PHARM OFLOXACIN 0.3 Percent EYE DROPS [19746] Order" max="1" path="/items" name="ofloxacin drop eye 0.3%; 1 drop, once, Give 30 minutes pre-op"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cdc13da1-d04f-4cc2-ad95-cdd101aab5cb" concept_name="Ophthalmic Agents Dilating Adult Preprocedure Order Group" max="1" path="/items" name="Ophthalmic Agents - Dilating; Preprocedure/Day Surgery"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Anti-Inflammatory; Preprocedure/Day Surgery">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="733930cb-c241-41eb-9cc3-de8d3449edcd" concept_name="PHARM dexAMETHasone Eye drop 0.1% Order" max="1" path="/items" name="dexAMETHasone drop eye 0.1%; 1 drop, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e048bee6-610a-47c5-a128-34b60e7e8da1" concept_name="PHARM dexAMETHasone Eye oint 0.1% Order" max="1" path="/items" name="dexAMETHasone ointment eye 0.1%; 1 application, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fac9b47-6508-4b77-ac00-4b2e657217ea" concept_name="PHARM dexAMETHasone-neomycin-polymyxin B Eye drop 1 mg-3.5 mg-6000 unit/mL (Maxitrol) Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B drop eye 1 mg-3.5 mg-6000 unit/g; 1 drop, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="597f4804-8124-4866-ba10-9b454d140f70" concept_name="PHARM dexAMETHasone-neomycin-polymyxin B Eye oint 1 mg-3.5 mg-6000 unit/g (Maxitrol) Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B ointment eye 1 mg-3.5 mg-6000 unit/g; 1 application, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM dexAMETHasone-tobramycin Eye drop 0.1%-0.3% (Tobradex) Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ebea1d4-cf3f-4101-9b3b-b5f2f3014822" concept_name="PHARM dexAMETHasone-tobramycin Eye oint 0.1%-0.3% (Tobradex) Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye ointment; 1 application, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="733930cb-c241-41eb-9cc3-de8d3449edcd" concept_name="PHARM DEXAMETHASONE 0.1 Percent EYE DROPSSUSPENSION [19596] Order" max="1" path="/items" name="dexAMETHasone drop eye 0.1%; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e048bee6-610a-47c5-a128-34b60e7e8da1" concept_name="PHARM DEXAMETHASONE 0.1 Percent EYE OINTMENT [166200] Order" max="1" path="/items" name="dexAMETHasone ointment eye 0.1%; 1 application, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fac9b47-6508-4b77-ac00-4b2e657217ea" concept_name="PHARM NEOMYCIN 3.5 MG-POLYMYXINB 6000 UNIT ML-DEXAMETH 0.1 Percent EYE DROPSSUSP [166093] Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B drop eye 1 mg-3.5 mg-6000 unit/g; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="597f4804-8124-4866-ba10-9b454d140f70" concept_name="PHARM NEOMYCIN 3.5 MG-POLYMYXIN B 6000 UNIT-DEXAMETH 1 MG GRAM EYE OINTMENT [166042] Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B ointment eye 1 mg-3.5 mg-6000 unit/g; 1 application, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM TOBRAMYCIN 0.3 Percent -DEXAMETHASONE 0.1 Percent EYE DROPSSUSPENSION [11567] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ebea1d4-cf3f-4101-9b3b-b5f2f3014822" concept_name="PHARM TOBRAMYCIN-DEXAMETHASONE 0.3 Percent -0.1 Percent EYE OINTMENT [11566] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye ointment; 1 application, once"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ketorolac eye drop">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dd9e059d-058b-4695-8096-282b3d6db21a" concept_name="PHARM ketorolac Eye drop 0.45% Order" max="1" path="/items" name="ketorolac, preservative free drop eye 0.45%; dropperette; 1 drop, every 10 minutes, for 2 doses, Start 60 minutes pre-op"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dd9e059d-058b-4695-8096-282b3d6db21a" concept_name="PHARM KETOROLAC (PF) 0.45 Percent EYE DROPS IN A DROPPERETTE [98439] Order" max="1" path="/items" name="ketorolac, preservative free drop eye 0.45%; dropperette; 1 drop, every 10 minutes, for 2 doses, Start 60 minutes pre-op"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a034866-6743-4185-850f-3d72971e0659" concept_name="PHARM ketorolac Eye drop 0.5% Order" max="1" path="/items" name="ketorolac drop eye 0.5%; 1 drop, every 10 minutes, for 2 doses, Start 60 minutes pre-op"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a034866-6743-4185-850f-3d72971e0659" concept_name="PHARM KETOROLAC 0.5 Percent EYE DROPS [19733] Order" max="1" path="/items" name="ketorolac drop eye 0.5%; 1 drop, every 10 minutes, for 2 doses, Start 60 minutes pre-op"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM prednisoLONE acetate Eye drop 1% Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, once"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1afba274-6923-45a3-87f2-9e099601240f" concept_name="PHARM prednisoLONE sodium phosphate Eye drop 0.5% Order" max="1" path="/items" name="prednisoLONE sodium phosphate drop eye 0.5%; dropperette; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM PREDNISOLONE ACETATE 1 Percent EYE DROPSSUSPENSION [6487] Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, once"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1afba274-6923-45a3-87f2-9e099601240f" concept_name="PHARM PREDNISOLONE SODIUM PHOSPHATE 0.5 Percent EYE DROPS IN A DROPPERETTE [166510] Order" max="1" path="/items" name="prednisoLONE sodium phosphate drop eye 0.5%; dropperette; 1 drop, once"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="diclofenac 0.1% eye drop">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4ca23cb-18d2-4713-b424-ea4073a2fa9b" concept_name="PHARM diclofenac Eye drop 0.1% Order" max="1" path="/items" name="diclofenac drop eye 0.1%; dropperette; 1 drop, once"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4ca23cb-18d2-4713-b424-ea4073a2fa9b" concept_name="PHARM DICLOFENAC 0.1 Percent EYE DROPS [19714] Order" max="1" path="/items" name="diclofenac drop eye 0.1%; dropperette; 1 drop, once"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4ca23cb-18d2-4713-b424-ea4073a2fa9b" concept_name="PHARM diclofenac Eye drop 0.1% Order" max="1" path="/items" name="diclofenac drop eye 0.1%; 1 drop, once"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d4ca23cb-18d2-4713-b424-ea4073a2fa9b" concept_name="PHARM DICLOFENAC 0.1 Percent EYE DROPS [19714] Order" max="1" path="/items" name="diclofenac drop eye 0.1%; 1 drop, once"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b591632d-9220-41ab-b10e-dee9ba2e3085" concept_name="Anti-Glaucoma Agents Ophthalmology Preprocedure Adult Order Group" max="1" path="/items" name="Ophthalmic Agents - Antiglaucoma; Preprocedure/Day Surgery"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Constricting; Preprocedure/Day Surgery">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="pilocarpine 2% eye drop, 1 drop, every 5 minutes, for 2 doses">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine drop eye 2%; dropperette; 1 drop, every 5 minutes, for 2 doses"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM PILOCARPINE 2 Percent EYE DROPS [6280] Order" max="1" path="/items" name="pilocarpine drop eye 2%; dropperette; 1 drop, every 5 minutes, for 2 doses"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine drop eye 2%; 1 drop, every 5 minutes, for 2 doses"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM PILOCARPINE 2 Percent EYE DROPS [6280] Order" max="1" path="/items" name="pilocarpine drop eye 2%; 1 drop, every 5 minutes, for 2 doses"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="pilocarpine 2% eye drop, 1 drop, once">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine drop eye 2%; dropperette; 1 drop, once"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM PILOCARPINE 2 Percent EYE DROPS [6280] Order" max="1" path="/items" name="pilocarpine drop eye 2%; dropperette; 1 drop, once"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM pilocarpine Eye drop 2% Order" max="1" path="/items" name="pilocarpine drop eye 2%; 1 drop, once"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8beb5735-c9e2-4ac4-bc05-5b5a592860ae" concept_name="PHARM PILOCARPINE 2 Percent EYE DROPS [6280] Order" max="1" path="/items" name="pilocarpine drop eye 2%; 1 drop, once"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Local Anesthetics; Preprocedure/Day Surgery">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de239ed9-bf2c-4b0d-8e94-3c8f8419b5ce" concept_name="PHARM lidocaine-prilocaine Cream 2.5%-2.5% (Emla) Order" max="1" path="/items" name="lidocaine-prilocaine cream 2.5%-2.5%; 1 application, once, Apply below affected eye"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae96afb4-5941-46be-a473-5a8e07ee0f2a" concept_name="PHARM lidocaine Jelly 20 mg/mL Order" max="1" path="/items" name="lidocaine jelly 20 mg/mL; 1 applicaiton, toical, once, Apply to ***"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de239ed9-bf2c-4b0d-8e94-3c8f8419b5ce" concept_name="PHARM LIDOCAINE-PRILOCAINE 2.5 Percent -2.5 Percent TOPICAL CREAM [10434] Order" max="1" path="/items" name="lidocaine-prilocaine cream 2.5%-2.5%; 1 application, once, Apply below affected eye"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae96afb4-5941-46be-a473-5a8e07ee0f2a" concept_name="PHARM LIDOCAINE HCL 2 Percent MUCOSAL JELLY [4448] Order" max="1" path="/items" name="lidocaine jelly 20 mg/mL; 1 applicaiton, toical, once, Apply to ***"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="tetracaine or proparacaine 0.5% eye drop, 1 drop, once, on arrival">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine, preservative free drop eye 0.5%; dropperette; 1 drop, once, On arrival.  Apply to operative eye."/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM TETRACAINE HCL (PF) 0.5 Percent EYE DROPS IN A DROPPERETTE [166728] Order" max="1" path="/items" name="tetracaine, preservative free drop eye 0.5%; dropperette; 1 drop, once, On arrival.  Apply to operative eye."/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6d30824-653c-4c12-bced-b7c6f0859e1d" concept_name="PHARM proparacaine Eye drop 0.5% Order" max="1" path="/items" name="proparacaine drop eye 0.5%; 1 drop, once, On arrival. Apply to operative eye"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6d30824-653c-4c12-bced-b7c6f0859e1d" concept_name="PHARM PROPARACAINE 0.5 Percent EYE DROPS [6644] Order" max="1" path="/items" name="proparacaine drop eye 0.5%; 1 drop, once, On arrival. Apply to operative eye"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="tetracaine or proparacaine 0.5% eye drop, 1 drop, once, On call to OR">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM tetracaine Eye drop 0.5% Order" max="1" path="/items" name="tetracaine, preservative free drop eye 0.5%; dropperette; 1 drop, once, On call to OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM TETRACAINE HCL (PF) 0.5 Percent EYE DROPS IN A DROPPERETTE [166728] Order" max="1" path="/items" name="tetracaine, preservative free drop eye 0.5%; dropperette; 1 drop, once, On call to OR"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6d30824-653c-4c12-bced-b7c6f0859e1d" concept_name="PHARM proparacaine Eye drop 0.5% Order" max="1" path="/items" name="proparacaine drop eye 0.5%; 1 drop, once, On call to OR"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f6d30824-653c-4c12-bced-b7c6f0859e1d" concept_name="PHARM PROPARACAINE 0.5 Percent EYE DROPS [6644] Order" max="1" path="/items" name="proparacaine drop eye 0.5%; 1 drop, once, On call to OR"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
         </Item>
@@ -878,7 +876,7 @@
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Nasal Agents; Preprocedure/Day Surgery">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e2e056-c89b-48ec-84d4-d5718460fa9c" concept_name="PHARM xylometazoline Nasal spray 0.1% Order" max="1" path="/items" name="xylometazoline spray nasal 0.1%; 2 spray, once, Administer 10 minutes prior to surgery."/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e2e056-c89b-48ec-84d4-d5718460fa9c" concept_name="PHARM XYLOMETAZOLINE 0.1 Percent NASAL SPRAY [11681] Order" max="1" path="/items" name="xylometazoline spray nasal 0.1%; 2 spray, once, Administer 10 minutes prior to surgery."/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="1d30a360-a452-452f-a71a-020b2dc9ebe1" concept_name="AHS OGR ADULT OPH Intraprocedure Medications Adult" max="1" path="/items" name="Intraprocedure Medications; Intraprocedure"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="12172a0d-d071-4e01-bf83-50d6ad45d691" concept_name="Ophthalmology Surgical Admission Intraprocedure Medications Adult Order Group" max="1" path="/items" name="Surgical Admission Intraprocedure Medications; Intraprocedure"/>
@@ -910,10 +908,10 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
-    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
   </integrity_checks>
 </template>
