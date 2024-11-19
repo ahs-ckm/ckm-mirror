@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>7145bcdd-7dd9-4c19-9b4b-f8201ebb6cea</id>
+  <name>AHS OGR ADULT SUR GI Agents Post CT</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ&amp;nbsp;338323&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~7145bcdd-7dd9-4c19-9b4b-f8201ebb6cea~NAME~AHS OGR ADULT SUR GI Agents Post CT}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;magnesium gluconate tablet; 1,000 mg, oral, 2 times per day, start on POD 1 and discontinue after first bowel movement&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1 day&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;magnesium hydroxide (as elemental) liquid oral 33 mg/mL; 30 mL, oral, 2 times per day, start on POD 1 and discontinue after first bowel movement&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+1 day&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sennosides tablet;  8.6-17.2 mg, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sennosides liquid oral 1.7 mg/mL;  5-10 mL, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation.&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Gastrointestinal Agents">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Gum; Chew gum 3 times daily (minimum 30 minutes each time), as tolerated"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM POLYETHYLENE GLYCOL 3350 POWDER ORDERABLE [4201136] Order" max="1" path="/items" name="polyethylene glycol 3350 powder; 17 g, oral, daily"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="30b15c20-20e1-4167-a8f4-b0bad74abe6c" concept_name="PHARM PSYLLIUM HUSK (ASPARTAME) 3.4 GRAM ORAL POWDER PACKET [11218] Order" max="1" path="/items" name="psyllium mucilloid, sugar reduced packet 3.4 g; 3.4 g, oral, daily"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e877db0-adfb-4ef1-853e-75235bb89fbb" concept_name="PHARM MAGNESIUM GLUCONATE 500 MG TABLET [16041] Order" max="1" path="/items" name="magnesium gluconate tablet; 1,000 mg, oral, 2 times per day, start on POD 1 and discontinue after first bowel movement"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="635b9d53-75dd-44cc-9b3b-87189679b526" concept_name="PHARM MAGNESIUM HYDROXIDE 400 MG 5 ML ORAL SUSPENSION [28836] Order" max="1" path="/items" name="magnesium hydroxide (as elemental) liquid oral 33 mg/mL; 30 mL, oral, 2 times per day, start on POD 1 and discontinue after first bowel movement"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="sennosides (Senna) tablet or liquid">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3097b98-bb4b-4ff0-8d67-c0d87fa81362" concept_name="PHARM SENNOSIDES 8.6 MG TABLET [11349] Order" max="1" path="/items" name="sennosides tablet;  8.6-17.2 mg, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation."/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR (linked orders)"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM SENNOSIDES 8.5 MG 5 ML ORAL LIQUID [167258] Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL;  5-10 mL, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM BISACODYL 5 MG TABLETDELAYED RELEASE [1079] Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated;  5 mg, oral, daily as needed, constipation"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b7a7e48f-eb4a-47e2-82f9-c191ebd189f1" concept_name="PHARM BISACODYL 10 MG RECTAL SUPPOSITORY [1080] Order" max="1" path="/items" name="bisaCODyl (DULCOLAX) suppository; 10 mg, rectal, daily as needed, constipation"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dcf76c57-1916-41f8-bbab-c862a52c4f0c" concept_name="PHARM GLYCERIN SUPPOSITORY ORDERABLE [4201004] Order" max="1" path="/items" name="glycerin suppository;  1 suppository, rectal, daily as needed, constipation"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4c67adad-7403-4f0b-881e-1a44ddac56a1" concept_name="PHARM LACTULOSE 10 GRAM 15 ML ORAL SOLUTION [38245] Order" max="1" path="/items" name="lactulose Oral liquid 667 mg/mL; 30 mL, oral, daily as needed, constipation"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="18500f35-ae09-4cc5-a8c6-78ce43aee714" concept_name="PHARM SODIUM PHOSPHATES 19.2 GRAM-7.2 GRAM 120 ML ENEMA [169223] Order" max="1" path="/items" name="sodium phosphate enema 130 mL;  1 enema, rectal, once, as needed, for constipation"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
