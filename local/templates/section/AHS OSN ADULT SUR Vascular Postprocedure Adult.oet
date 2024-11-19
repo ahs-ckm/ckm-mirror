@@ -501,7 +501,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Hematology; Recovery (only)">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once, STAT"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dcf694ea-75b9-49d7-b219-4eec5749ba3f" concept_name="Chemistry Vascular PACU Labs Order Group" max="1" path="/items" name="Chemistry Vascular PACU Labs Order Group; Recovery (only)"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="dcf694ea-75b9-49d7-b219-4eec5749ba3f" concept_name="Chemistry Vascular PACU Labs Order Group" max="1" path="/items" name="Labs - Chemistry; Recovery (only)"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Coagulation; Recovery (only)">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once, STAT"/>
       </Item>
@@ -547,8 +547,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology - Repeating; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Daily morning, for 2 days"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68257069-b16d-4f0c-bad2-67a4bfcf2a9b" concept_name="Chemistry Vascular Postprocedure Tomorrow AM Labs Order Group" max="1" path="/items" name="Chemistry Vascular Postprocedure Tomorrow AM Labs Order Group"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="12f37e46-3c97-4614-89df-f10c66ef3b23" concept_name="Chemistry Vascular Postprocedure Repeating Labs Order Group" max="1" path="/items" name="Chemistry Vascular Postprocedure Repeating Labs Order Group"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68257069-b16d-4f0c-bad2-67a4bfcf2a9b" concept_name="Chemistry Vascular Postprocedure Tomorrow AM Labs Order Group" max="1" path="/items" name="Chemistry - Tomorrow AM"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="12f37e46-3c97-4614-89df-f10c66ef3b23" concept_name="Chemistry Vascular Postprocedure Repeating Labs Order Group" max="1" path="/items" name="Chemistry - Repeating"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation - Tomorrow AM; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once Routine, tomorrow at 0600"/>
       </Item>
@@ -582,7 +582,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="805d105f-04f9-4002-85e9-d1d8e9bf23a1" concept_name="PHARM HEPARIN INFUSION ORDERABLE [420508] Order" max="1" path="/items" name="heparin infusion - units/kg/hr; 5 units/kg/hr, intravenous, continuous"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5cf4d96e-110c-4314-a45d-a62c3c9003e7" concept_name="AHS OGR ADULT SUR Antihistamines" max="1" path="/items" name="Antihistamines; On Unit"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="653db57c-eae5-413c-869d-42c35f3a426e" concept_name="Anti-Infective Agents Vascular Postprocedure Adult Order Group" max="1" path="/items" name="Anti-Infective Agents Vascular Postprocedure Adult Order Group; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="653db57c-eae5-413c-869d-42c35f3a426e" concept_name="Anti-Infective Agents Vascular Postprocedure Adult Order Group" max="1" path="/items" name="Anti-Infective Agents; On Unit"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Autonomic Agents; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4f6e0c52-223d-4c23-aa40-bf141c5e95ba" concept_name="PHARM IPRATROPIUM BROMIDE 20 MCG ACTUATION HFA AEROSOL INHALER [166271] Order" max="1" path="/items" name="ipratropium inhaler 20 mcg; 2 puff, inhalation, every 4 hours, as needed, for bronchospasm"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3da6e611-c8f1-449b-9dc4-e159d52b17a6" concept_name="PHARM SALBUTAMOL SULFATE HFA 100 MCG ACTUATION AEROSOL INHALER [165945] Order" max="1" path="/items" name="salbutamol inhaler 100 mcg/actuation; 2 puff, inhalation, every 4 hours, as needed, bronchospasm"/>
