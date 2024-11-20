@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>00e655f8-f9c0-40ad-9113-179d537a968a</id>
+  <name>AHS OGR ADULT CDEP heparin infusion with loading dose for VTE and Anti-Xa monitoring</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ&amp;nbsp;607651&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~00e655f8-f9c0-40ad-9113-179d537a968a~NAME~AHS OGR ADULT CDEP heparin infusion with loading dose for VTE and Anti-Xa monitoring}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Notify MRHP if:&lt;br&gt;- Heparin infusion is reaching 45 units/kg/hr to assess for potential heparin resistance OR;&lt;br&gt;- PTT remains Very Low for more than 12 hours while on heparin protocol OR;&lt;br&gt;- Heparin infusion is interrupted for greater than 2 hours for non-protocol reason &amp;amp; PTT remains Very Low&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Avoid IM injections during heparin therapy, Until discontinued&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Anti-Xa Heparin Level; First occurrence then every 6 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;At baseline before initiating heparin (including loading dose) and then at 6 hours after the start of the continuous infusion. Repeat every 6 hours after each change in heparin infusion dose.&lt;br&gt;Continue until at least 2 consecutive therapeutic results achieved. Order can then be modified to be drawn daily in am as per MRHP.&lt;br&gt;Only modify the timing of the existing q6h Anti-Xa lab order if the time from the heparin infusion dose adjustment to the next Anti-Xa is less than 4 hours.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Anti-Xa Heparin Level; First occurrence then every 6 hours&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;CBC No Differential&apos;]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 615101&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;CBC No Differential&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential; Daily Morning, For 3 Occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Daily for 3 days, platelet monitoring of HIT in patients at higher risk, including cardiovascular, ICU and trauma&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;CBC No Differential&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential; Daily Morning, For 3 Occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;CBC No Differential&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential; Every 3 days, Starting S+4 at 06:00, For 3 Occurrences&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Starting S+4 at 06:00&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Every 3 days platelet monitoring of HIT in patients at higher risk, including cardiovascular, ICU and trauma&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;CBC No Differential&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential; Every 3 days, Starting S+4 at 06:00, For 3 Occurrences&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;CBC No Differential&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;heparin infusion with loading dose for VTE (Anti-Xa monitoring)&apos;]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 607653&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;heparin infusion with loading dose for VTE (Anti-Xa monitoring)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;heparin 25,000 unit in Dextrose 5% 250 mL (100 unit/mL) bolus from bag (Anti-Xa protocol) - Loading Dose; 80 units/kg/dose, intravenous, once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Heparin Protocol for VTE Treatment&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;heparin infusion with loading dose for VTE (Anti-Xa monitoring)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;heparin 25,000 unit in Dextrose 5% 250 mL (100 unit/mL) bolus from bag (Anti-Xa protocol) - Loading Dose; 80 units/kg/dose, intravenous, once&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;heparin infusion with loading dose for VTE (Anti-Xa monitoring)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;heparin infusion (anti-Xa monitoring) - units/kg/hr; 0-45 units/kg/hr, intravenous, titrated&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Heparin Protocol for VTE Treatment&lt;/p&gt;&lt;p&gt;When anti-Xa level is 0.35-0.7 units/mL after 2 consecutive results, discontinue anti-Xa level every 6 hours and enter daily anti-Xa levels.&lt;br&gt;When anti-Xa level is less than 0.35 units/mL or greater than 0.7 units/mL, discontinue anti-Xa level daily and enter anti-Xa levels every 6 hours.&lt;/p&gt;&lt;p&gt;Heparin Anti-Xa level ===&amp;gt; Repeat Heparin Anti-Xa Level Post Dose Change&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; (units/mL)&lt;/p&gt;&lt;p&gt;Less than 0.20 ========&amp;gt; 6 hours&lt;br&gt;0.20-0.34 ============&amp;gt; 6 hours&lt;br&gt;0.35-0.70 ============&amp;gt; Daily after at least 2 consecutive therapeutic results&lt;br&gt;0.71-0.80 ============&amp;gt; 6 hours&lt;br&gt;0.81-0.90 ============&amp;gt; 6 hours&lt;br&gt;Greater than 0.90 ======&amp;gt; 6 hours&lt;/p&gt;&lt;p&gt;Only modify the existing q6h Anti-Xa lab order if the time from the heparin infusion rate adjustment to the next Anti-Xa is less than 4 hours.&lt;br&gt;Initial infusion dose (units/kg/hr): 18&lt;br&gt;Anti-Xa below 0.2 - Increase current infusion by (units/kg/hr): +4&lt;br&gt;Anti-Xa below 0.2 - Bolus heparin IV (units/kg): No re-bolus&lt;br&gt;Anti-Xa 0.2-0.34 - Increase current infusion by (units/kg/hr): +2&lt;br&gt;Anti-Xa 0.35-0.7 - At goal. Continue current infusion. 0&lt;br&gt;Anti-Xa 0.71-0.8 - Decrease current infusion by (units/kg/hr): -1&lt;br&gt;Anti-Xa 0.81-0.9 - Decrease current infusion by (units/kg/hr): -2&lt;br&gt;Anti-Xa 0.81-0.9 - Hold infusion: Hold infusion for 30 minutes&lt;br&gt;Restart heparin infusion after hold: Restart at new dose after hold&lt;br&gt;Anti-Xa above 0.9 - Decrease current infusion by (units/kg/hr): -3&lt;br&gt;Anti-Xa above 0.9 - Hold infusion: Hold infusion for 60 minutes&lt;br&gt;Restart heparin infusion after hold: Restart at new dose after hold&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;heparin infusion with loading dose for VTE (Anti-Xa monitoring)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;heparin infusion (anti-Xa monitoring) - units/kg/hr; 0-45 units/kg/hr, intravenous, titrated&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;heparin infusion with loading dose for VTE (Anti-Xa monitoring)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="heparin infusion with loading dose for VTE and Anti-Xa monitoring">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3bb5aba1-89c1-48b2-8c34-012914a7f692" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR910] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP)"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Avoid IM injections during heparin therapy, Until discontinued"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="65285052-9df7-4655-b014-a822e92dd3f4" concept_name="LAB Anti-Xa Heparin Level [LAB316] Order" max="1" path="/items" name="Anti-Xa Heparin Level; First occurrence then every 6 hours"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="CBC No Differential">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; Daily Morning, For 3 Occurrences"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="And"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; Every 3 days, Starting S+4 at 06:00, For 3 Occurrences"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="heparin infusion with loading dose for VTE (Anti-Xa monitoring)">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8cf6d5c3-8d63-4c50-b9cb-f9ea8e2e5201" concept_name="PHARM HEPARIN 100 UNIT ML (25000 UNIT) IN DEXTROSE 5 Percent 250 ML BOLUS FROM BAG (ANTI-XA PROTOCOL) - LOADING DOSE [4002891] Order" max="1" path="/items" name="heparin 25,000 unit in Dextrose 5% 250 mL (100 unit/mL) bolus from bag (Anti-Xa protocol) - Loading Dose; 80 units/kg/dose, intravenous, once"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="AND"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="aedf1917-2dc9-43f7-b1dc-d532131331c4" concept_name="PHARM HEPARIN INFUSION ORDERABLE - ANTI-XA CALCULATOR [4084205082] Order" max="1" path="/items" name="heparin infusion (anti-Xa monitoring) - units/kg/hr; 0-45 units/kg/hr, intravenous, titrated"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+    </Item>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
