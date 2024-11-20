@@ -1,20 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>0fe6d2d4-d683-4e2d-b073-e1340eec51b6</id><name>LABMOL Epstein-Barr Virus NAT (Pathology Lab) [LAB8002] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Lab Test.Lab Test Record</key><value>&lt;p&gt;1230308002&lt;/p&gt;</value></item><item><key>Lab Test.Authorized Laboratories</key><value>
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>0fe6d2d4-d683-4e2d-b073-e1340eec51b6</id>
+  <name>LABMOL Epstein-Barr Virus NAT (Pathology Lab) [LAB8002] Order</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Build</key>
+        <value>Build details</value>
+      </item>
+      <item>
+        <key>Acknowledgemet</key>
+        <value/>
+      </item>
+      <item>
+        <key>Analyst</key>
+        <value/>
+      </item>
+      <item>
+        <key>Attachments regarding build</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build complete date</key>
+        <value/>
+      </item>
+      <item>
+        <key>Build team</key>
+        <value/>
+      </item>
+      <item>
+        <key>Comments</key>
+        <value/>
+      </item>
+      <item>
+        <key>Record name</key>
+        <value/>
+      </item>
+      <item>
+        <key>To ananlyst date</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
+    <items>
+      <item>
+        <key>Lab Test.Lab Test Record</key>
+        <value>&lt;p&gt;1230308002&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Lab Test.Authorized Laboratories</key>
+        <value>
 						&lt;p&gt;
 						CGY Arthur J.E. Child Comprehensive Cancer Centre Laboratory
 						&lt;/p&gt;
-					</value></item><item><key>Lab Test.Default Container</key><value>
+					</value>
+      </item>
+      <item>
+        <key>Lab Test.Default Container</key>
+        <value>
 						&lt;p&gt;
 						TISSUE BLOCK
 						&lt;/p&gt;
-					</value></item><item><key>Lab Test.Allowed Containers</key><value>
+					</value>
+      </item>
+      <item>
+        <key>Lab Test.Allowed Containers</key>
+        <value>
 						&lt;p&gt;
 						TISSUE BLOCK
 						&lt;/p&gt;
-					</value></item><item><key>Lab Test.Authorized Sections</key><value>
+					</value>
+      </item>
+      <item>
+        <key>Lab Test.Authorized Sections</key>
+        <value>
 						&lt;p&gt;
 						CGY ACC Molecular Pathology
 						&lt;/p&gt;
-					</value></item><item><key>Lab Test.Components</key><value>
+					</value>
+      </item>
+      <item>
+        <key>Lab Test.Components</key>
+        <value>
 						&lt;p&gt;
 						PARAFFIN BLOCK NUMBER&lt;br&gt;
 								DNA CONCENTRATION (NG/UL) MH&lt;br&gt;
@@ -23,8 +97,253 @@
 								EBV NAT PATHOLOGY ASSAY DESCRIPTION&lt;br&gt;
 								SIGNED OUT BY
 						&lt;/p&gt;
-					</value></item><item><key>Catalogue Pattern.Synonyms</key><value>
+					</value>
+      </item>
+      <item>
+        <key>Catalogue Pattern.Synonyms</key>
+        <value>
 						&lt;p&gt;
 						EPSTEIN-BARR VIRUS NAT ON FIXED TISSUE
 						&lt;/p&gt;
-					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB8002&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~0fe6d2d4-d683-4e2d-b073-e1340eec51b6~NAME~LABMOL Epstein-Barr Virus NAT (Pathology Lab) [LAB8002] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Epstein-Barr Virus NAT (Pathology Lab)"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Once Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues><includedValues>Amniotic Fluid</includedValues><includedValues>Pleural Fluid</includedValues><includedValues>Swab</includedValues><includedValues>Cerebrospinal Fluid</includedValues><includedValues>Tissue</includedValues><includedValues>Fine Needle Aspirate</includedValues><includedValues>Urine</includedValues><includedValues>Other Body Fluid</includedValues><includedValues>Bone Marrow</includedValues><includedValues>Cyst, Fluid</includedValues><includedValues>DNA, In-House</includedValues><includedValues>DNA, Referred In</includedValues><includedValues>Other</includedValues><includedValues>Saliva</includedValues><includedValues>Cell Pellet</includedValues><includedValues>Amputation</includedValues><includedValues>Aspirate</includedValues><includedValues>Biopsy</includedValues><includedValues>Calculus</includedValues><includedValues>Capsule</includedValues><includedValues>Clipping</includedValues><includedValues>Completion Resection</includedValues><includedValues>Contents</includedValues><includedValues>Core Biopsy</includedValues><includedValues>Curettings</includedValues><includedValues>Enucleation</includedValues><includedValues>Evisceration</includedValues><includedValues>Excision</includedValues><includedValues>Exenteration</includedValues><includedValues>Explanted Organ Tissue</includedValues><includedValues>LEEP/CONE</includedValues><includedValues>Lumpectomy</includedValues><includedValues>Mammatome/VA Biopsy</includedValues><includedValues>Mastectomy with axilla</includedValues><includedValues>Mastectomy no axilla</includedValues><includedValues>Medical Device/Prosthesis</includedValues><includedValues>Partial Resection</includedValues><includedValues>Polyp</includedValues><includedValues>Punch biopsy</includedValues><includedValues>Reamings</includedValues><includedValues>Reduction</includedValues><includedValues>Re-excision</includedValues><includedValues>Removal</includedValues><includedValues>Resection</includedValues><includedValues>Scrapings</includedValues><includedValues>Segmental</includedValues><includedValues>Shave Biopsy</includedValues><includedValues>Tag</includedValues><includedValues>Total Mesorectal Excision</includedValues><includedValues>Total Resection</includedValues><includedValues>Transurethral Resection</includedValues><includedValues>Cyst</includedValues><includedValues>Surgical Pathology</includedValues><includedValues>Brush</includedValues><includedValues>Lymphoma Protocol</includedValues><includedValues>Fusion Core Biopsy - Prostate</includedValues><includedValues>Wash</includedValues><includedValues>Synovial Fluid</includedValues><includedValues>Pericardial Fluid</includedValues><includedValues>Peritoneal Fluid</includedValues><includedValues>Sputum</includedValues><includedValues>Lavage</includedValues><includedValues>Non-gyne Cytology</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues><includedValues>Bone Marrow Biopsy</includedValues><includedValues>Amniotic Sac</includedValues><includedValues>Pleural Cavity, Left</includedValues><includedValues>Pleural Cavity, Right</includedValues><includedValues>Other</includedValues><includedValues>Buccal Mucosa</includedValues><includedValues>Mouth</includedValues><includedValues>Skin</includedValues><includedValues>Placenta</includedValues><includedValues>Heart</includedValues><includedValues>Fetus</includedValues><includedValues>Lung, Left</includedValues><includedValues>Lung, Right</includedValues><includedValues>Lung, Unspecified</includedValues><includedValues>Kidney, Left</includedValues><includedValues>Kidney, Right</includedValues><includedValues>Kidney</includedValues><includedValues>Liver</includedValues><includedValues>Spleen</includedValues><includedValues>Thymus</includedValues><includedValues>Thyroid</includedValues><includedValues>Umbilical Cord</includedValues><includedValues>Breast, Right</includedValues><includedValues>Breast, Left</includedValues><includedValues>Breast, Unspecified</includedValues><includedValues>Lymph Node Regional</includedValues><includedValues>Lymph Node - Specify</includedValues><includedValues>Arm, Right</includedValues><includedValues>Arm, Left</includedValues><includedValues>Arm, Unspecified</includedValues><includedValues>Hand, Left</includedValues><includedValues>Hand, Right</includedValues><includedValues>Hand, Unspecified</includedValues><includedValues>Chest, Left</includedValues><includedValues>Chest, Right</includedValues><includedValues>Chest, Unspecified</includedValues><includedValues>Back</includedValues><includedValues>Foot, Unspecified</includedValues><includedValues>Foot, Left</includedValues><includedValues>Foot, Right</includedValues><includedValues>Leg, Left</includedValues><includedValues>Leg, Right</includedValues><includedValues>Leg, Unspecified</includedValues><includedValues>Ear, External Unspecified</includedValues><includedValues>Ear, External Left</includedValues><includedValues>Ear, External Right</includedValues><includedValues>Cheek, Unspecified</includedValues><includedValues>Forehead</includedValues><includedValues>Head</includedValues><includedValues>Nose</includedValues><includedValues>Chin</includedValues><includedValues>Neck</includedValues><includedValues>Blood, Umbilical Cord</includedValues><includedValues>Products of Conception</includedValues><includedValues>Brain</includedValues><includedValues>Bone - Specify</includedValues><includedValues>Blood, Umbilical-Mixed</includedValues><includedValues>Bronchus, Right</includedValues><includedValues>Bursa</includedValues><includedValues>Capillary</includedValues><includedValues>Carpal tunnel</includedValues><includedValues>Cornea</includedValues><includedValues>Digit, Hand Right</includedValues><includedValues>Gallbladder</includedValues><includedValues>Adipose Tissue</includedValues><includedValues>Adrenal Gland, Left</includedValues><includedValues>Adrenal Gland, Right</includedValues><includedValues>Anus</includedValues><includedValues>Aortic Valve</includedValues><includedValues>Appendix</includedValues><includedValues>Artery</includedValues><includedValues>Bartholin&amp;#39;s Gland, Left</includedValues><includedValues>Bartholin&amp;#39;s Gland, Right</includedValues><includedValues>Bile Duct</includedValues><includedValues>Bladder</includedValues><includedValues>Blood, Clot</includedValues><includedValues>Bone, Left (Specify)</includedValues><includedValues>Bone, Right (Specify)</includedValues><includedValues>Branchial Cleft</includedValues><includedValues>Bronchus, Left</includedValues><includedValues>Cartilage</includedValues><includedValues>Cervix</includedValues><includedValues>Colon</includedValues><includedValues>Conjunctiva</includedValues><includedValues>Digit, Foot Left</includedValues><includedValues>Digit, Foot Right</includedValues><includedValues>Digit, Hand Left</includedValues><includedValues>Ear, Middle / Inner Left</includedValues><includedValues>Ear, Middle / Inner Right</includedValues><includedValues>Ectocervix</includedValues><includedValues>Endocervix</includedValues><includedValues>Endometrium</includedValues><includedValues>Epididymis, Left</includedValues><includedValues>Epididymis, Right</includedValues><includedValues>Epiglottis</includedValues><includedValues>Esophagus</includedValues><includedValues>Eye, Left</includedValues><includedValues>Eye, Right</includedValues><includedValues>Fallopian Tube, Left</includedValues><includedValues>Fallopian Tube, Right</includedValues><includedValues>Fallopian Tube, Unspecified</includedValues><includedValues>Fascia</includedValues><includedValues>Foreign Body</includedValues><includedValues>Foreskin</includedValues><includedValues>Gastroesophageal junction</includedValues><includedValues>Gingiva</includedValues><includedValues>Pineal Gland</includedValues><includedValues>Hair</includedValues><includedValues>Hernia Sac</includedValues><includedValues>Interverteb...</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6d57cf1e-1967-4ea7-a077-e0b1717a799c" concept_name="Additional Clinical History Information 101670 Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional Clinical History/Information"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="583db868-ef61-4d0c-a534-bdd785d71f49" concept_name="For paraffin embedded tissue what surgical Number and block Number should be used (block selection must be done by a pathologist) 102391 Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="For paraffin embedded tissue, what surgical # and block # should be used (block selection must be done by a pathologist)?"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1"><digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest></integrity_checks></template>
+					</value>
+      </item>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;LAB8002&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~0fe6d2d4-d683-4e2d-b073-e1340eec51b6~NAME~LABMOL Epstein-Barr Virus NAT (Pathology Lab) [LAB8002] Order}</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Epstein-Barr Virus NAT (Pathology Lab)">
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)">
+      <Rule path="/items[at0002]" default="Routine">
+        <constraint xsi:type="textConstraint">
+          <includedValues>STAT</includedValues>
+          <includedValues>Routine</includedValues>
+          <includedValues>Timed</includedValues>
+          <includedValues>Add-On</includedValues>
+          <includedValues>Today</includedValues>
+          <includedValues>Urgent</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Once Routine</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (IP)">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Blood</includedValues>
+          <includedValues>Amniotic Fluid</includedValues>
+          <includedValues>Pleural Fluid</includedValues>
+          <includedValues>Swab</includedValues>
+          <includedValues>Cerebrospinal Fluid</includedValues>
+          <includedValues>Tissue</includedValues>
+          <includedValues>Fine Needle Aspirate</includedValues>
+          <includedValues>Urine</includedValues>
+          <includedValues>Other Body Fluid</includedValues>
+          <includedValues>Bone Marrow</includedValues>
+          <includedValues>Cyst, Fluid</includedValues>
+          <includedValues>DNA, In-House</includedValues>
+          <includedValues>DNA, Referred In</includedValues>
+          <includedValues>Other</includedValues>
+          <includedValues>Saliva</includedValues>
+          <includedValues>Cell Pellet</includedValues>
+          <includedValues>Amputation</includedValues>
+          <includedValues>Aspirate</includedValues>
+          <includedValues>Biopsy</includedValues>
+          <includedValues>Calculus</includedValues>
+          <includedValues>Capsule</includedValues>
+          <includedValues>Clipping</includedValues>
+          <includedValues>Completion Resection</includedValues>
+          <includedValues>Contents</includedValues>
+          <includedValues>Core Biopsy</includedValues>
+          <includedValues>Curettings</includedValues>
+          <includedValues>Enucleation</includedValues>
+          <includedValues>Evisceration</includedValues>
+          <includedValues>Excision</includedValues>
+          <includedValues>Exenteration</includedValues>
+          <includedValues>Explanted Organ Tissue</includedValues>
+          <includedValues>LEEP/CONE</includedValues>
+          <includedValues>Lumpectomy</includedValues>
+          <includedValues>Mammatome/VA Biopsy</includedValues>
+          <includedValues>Mastectomy with axilla</includedValues>
+          <includedValues>Mastectomy no axilla</includedValues>
+          <includedValues>Medical Device/Prosthesis</includedValues>
+          <includedValues>Partial Resection</includedValues>
+          <includedValues>Polyp</includedValues>
+          <includedValues>Punch biopsy</includedValues>
+          <includedValues>Reamings</includedValues>
+          <includedValues>Reduction</includedValues>
+          <includedValues>Re-excision</includedValues>
+          <includedValues>Removal</includedValues>
+          <includedValues>Resection</includedValues>
+          <includedValues>Scrapings</includedValues>
+          <includedValues>Segmental</includedValues>
+          <includedValues>Shave Biopsy</includedValues>
+          <includedValues>Tag</includedValues>
+          <includedValues>Total Mesorectal Excision</includedValues>
+          <includedValues>Total Resection</includedValues>
+          <includedValues>Transurethral Resection</includedValues>
+          <includedValues>Cyst</includedValues>
+          <includedValues>Surgical Pathology</includedValues>
+          <includedValues>Brush</includedValues>
+          <includedValues>Lymphoma Protocol</includedValues>
+          <includedValues>Fusion Core Biopsy - Prostate</includedValues>
+          <includedValues>Wash</includedValues>
+          <includedValues>Synovial Fluid</includedValues>
+          <includedValues>Pericardial Fluid</includedValues>
+          <includedValues>Peritoneal Fluid</includedValues>
+          <includedValues>Sputum</includedValues>
+          <includedValues>Lavage</includedValues>
+          <includedValues>Non-gyne Cytology</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (IP)">
+      <Rule path="/items[at0002]">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Blood</includedValues>
+          <includedValues>Bone Marrow Biopsy</includedValues>
+          <includedValues>Amniotic Sac</includedValues>
+          <includedValues>Pleural Cavity, Left</includedValues>
+          <includedValues>Pleural Cavity, Right</includedValues>
+          <includedValues>Other</includedValues>
+          <includedValues>Buccal Mucosa</includedValues>
+          <includedValues>Mouth</includedValues>
+          <includedValues>Skin</includedValues>
+          <includedValues>Placenta</includedValues>
+          <includedValues>Heart</includedValues>
+          <includedValues>Fetus</includedValues>
+          <includedValues>Lung, Left</includedValues>
+          <includedValues>Lung, Right</includedValues>
+          <includedValues>Lung, Unspecified</includedValues>
+          <includedValues>Kidney, Left</includedValues>
+          <includedValues>Kidney, Right</includedValues>
+          <includedValues>Kidney</includedValues>
+          <includedValues>Liver</includedValues>
+          <includedValues>Spleen</includedValues>
+          <includedValues>Thymus</includedValues>
+          <includedValues>Thyroid</includedValues>
+          <includedValues>Umbilical Cord</includedValues>
+          <includedValues>Breast, Right</includedValues>
+          <includedValues>Breast, Left</includedValues>
+          <includedValues>Breast, Unspecified</includedValues>
+          <includedValues>Lymph Node Regional</includedValues>
+          <includedValues>Lymph Node - Specify</includedValues>
+          <includedValues>Arm, Right</includedValues>
+          <includedValues>Arm, Left</includedValues>
+          <includedValues>Arm, Unspecified</includedValues>
+          <includedValues>Hand, Left</includedValues>
+          <includedValues>Hand, Right</includedValues>
+          <includedValues>Hand, Unspecified</includedValues>
+          <includedValues>Chest, Left</includedValues>
+          <includedValues>Chest, Right</includedValues>
+          <includedValues>Chest, Unspecified</includedValues>
+          <includedValues>Back</includedValues>
+          <includedValues>Foot, Unspecified</includedValues>
+          <includedValues>Foot, Left</includedValues>
+          <includedValues>Foot, Right</includedValues>
+          <includedValues>Leg, Left</includedValues>
+          <includedValues>Leg, Right</includedValues>
+          <includedValues>Leg, Unspecified</includedValues>
+          <includedValues>Ear, External Unspecified</includedValues>
+          <includedValues>Ear, External Left</includedValues>
+          <includedValues>Ear, External Right</includedValues>
+          <includedValues>Cheek, Unspecified</includedValues>
+          <includedValues>Forehead</includedValues>
+          <includedValues>Head</includedValues>
+          <includedValues>Nose</includedValues>
+          <includedValues>Chin</includedValues>
+          <includedValues>Neck</includedValues>
+          <includedValues>Blood, Umbilical Cord</includedValues>
+          <includedValues>Products of Conception</includedValues>
+          <includedValues>Brain</includedValues>
+          <includedValues>Bone - Specify</includedValues>
+          <includedValues>Blood, Umbilical-Mixed</includedValues>
+          <includedValues>Bronchus, Right</includedValues>
+          <includedValues>Bursa</includedValues>
+          <includedValues>Capillary</includedValues>
+          <includedValues>Carpal tunnel</includedValues>
+          <includedValues>Cornea</includedValues>
+          <includedValues>Digit, Hand Right</includedValues>
+          <includedValues>Gallbladder</includedValues>
+          <includedValues>Adipose Tissue</includedValues>
+          <includedValues>Adrenal Gland, Left</includedValues>
+          <includedValues>Adrenal Gland, Right</includedValues>
+          <includedValues>Anus</includedValues>
+          <includedValues>Aortic Valve</includedValues>
+          <includedValues>Appendix</includedValues>
+          <includedValues>Artery</includedValues>
+          <includedValues>Bartholin&amp;#39;s Gland, Left</includedValues>
+          <includedValues>Bartholin&amp;#39;s Gland, Right</includedValues>
+          <includedValues>Bile Duct</includedValues>
+          <includedValues>Bladder</includedValues>
+          <includedValues>Blood, Clot</includedValues>
+          <includedValues>Bone, Left (Specify)</includedValues>
+          <includedValues>Bone, Right (Specify)</includedValues>
+          <includedValues>Branchial Cleft</includedValues>
+          <includedValues>Bronchus, Left</includedValues>
+          <includedValues>Cartilage</includedValues>
+          <includedValues>Cervix</includedValues>
+          <includedValues>Colon</includedValues>
+          <includedValues>Conjunctiva</includedValues>
+          <includedValues>Digit, Foot Left</includedValues>
+          <includedValues>Digit, Foot Right</includedValues>
+          <includedValues>Digit, Hand Left</includedValues>
+          <includedValues>Ear, Middle / Inner Left</includedValues>
+          <includedValues>Ear, Middle / Inner Right</includedValues>
+          <includedValues>Ectocervix</includedValues>
+          <includedValues>Endocervix</includedValues>
+          <includedValues>Endometrium</includedValues>
+          <includedValues>Epididymis, Left</includedValues>
+          <includedValues>Epididymis, Right</includedValues>
+          <includedValues>Epiglottis</includedValues>
+          <includedValues>Esophagus</includedValues>
+          <includedValues>Eye, Left</includedValues>
+          <includedValues>Eye, Right</includedValues>
+          <includedValues>Fallopian Tube, Left</includedValues>
+          <includedValues>Fallopian Tube, Right</includedValues>
+          <includedValues>Fallopian Tube, Unspecified</includedValues>
+          <includedValues>Fascia</includedValues>
+          <includedValues>Foreign Body</includedValues>
+          <includedValues>Foreskin</includedValues>
+          <includedValues>Gastroesophageal junction</includedValues>
+          <includedValues>Gingiva</includedValues>
+          <includedValues>Pineal Gland</includedValues>
+          <includedValues>Hair</includedValues>
+          <includedValues>Hernia Sac</includedValues>
+          <includedValues>Interverteb...</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)">
+      <Rule path="/items[at0002]" default="Routine">
+        <constraint xsi:type="textConstraint">
+          <includedValues>STAT</includedValues>
+          <includedValues>Today</includedValues>
+          <includedValues>Routine</includedValues>
+        </constraint>
+      </Rule>
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="6d57cf1e-1967-4ea7-a077-e0b1717a799c" concept_name="Additional Clinical History Information 101670 Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Additional Clinical History/Information"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1" template_id="583db868-ef61-4d0c-a534-bdd785d71f49" concept_name="For paraffin embedded tissue what surgical Number and block Number should be used (block selection must be done by a pathologist) 102391 Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="For paraffin embedded tissue, what surgical # and block # should be used (block selection must be done by a pathologist)?"/>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
