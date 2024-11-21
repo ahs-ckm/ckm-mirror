@@ -204,22 +204,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;zzz.RT; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;zzz.RT; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Incision site care; Every 8 hours, Assess surgical incision every 8 hours and PRN&apos;]/activities[at0156]">
     <items>
       <item>
@@ -328,11 +312,11 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="53e75d80-9828-4e56-af48-67242601a350" concept_name="Postprocedure ADT Order Group" max="1" path="/items" name="Postprocedure ADT Smart Group"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="53e75d80-9828-4e56-af48-67242601a350" concept_name="AHS OGR MULTI SUR Admission Postprocedure CT" max="1" path="/items" name="Postprocedure ADT Smart Group"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticipated Date of Discharge"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="Goals of Care Designation Order Panel" max="1" path="/items" name="Goals of Care"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation"/>
     </Item>
@@ -354,19 +338,19 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Postprocedure Care">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4f7fe773-54fb-46a1-a61b-9b4bea342d01" concept_name="ERAS Diet and Nutrition Postprocedure Adult Order Group" max="1" path="/items" name="Enhanced Recovery After Surgery Diet; On Unit"/>
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5b3e1da2-8a67-4c6e-a20c-b54e55e0d980" concept_name="Protein/Calorie Dense Oral Nutrition Supplements Order Panel" max="1" path="/items" name="Protein/Calorie Dense Oral Nutrition Supplements; On Unit"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4f7fe773-54fb-46a1-a61b-9b4bea342d01" concept_name="AHS OGR ADULT SUR ERAS Diet and Nutrition Post CT" max="1" path="/items" name="Enhanced Recovery After Surgery Diet; On Unit"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5b3e1da2-8a67-4c6e-a20c-b54e55e0d980" concept_name="AHS OGR ADULT SUR Protein_Calorie Dense Oral Nutrition Supplements" max="1" path="/items" name="Protein/Calorie Dense Oral Nutrition Supplements; On Unit"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; Until discontinued, elevate to at least 30 degrees while patient on opioids or epidural"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; Other"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a3394b0b-5b79-4917-875a-8b0892a3a5f0" concept_name="ERAS Activity Postprocedure Smart Group" max="1" path="/items" name="ERAS Activity Post-procedure"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Notify physiotherapist if pre-operative mobility concerns or if patient requires more than one-person assist"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a3394b0b-5b79-4917-875a-8b0892a3a5f0" concept_name="AHS OGR ADULT SUR ERAS Activity Postprocedure" max="1" path="/items" name="ERAS Activity Post-procedure"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Notify physiotherapist if pre-operative mobility concerns or if patient requires more than one-person assist"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="184a4cce-134c-4164-a4a7-7140fa7a07a7" concept_name="Vital Signs Postprocedure Order Group" max="1" path="/items" name="Vital Signs"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="184a4cce-134c-4164-a4a7-7140fa7a07a7" concept_name="AHS OGR ADULT SUR Vital Signs Post CT" max="1" path="/items" name="Vital Signs"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output; On Unit">
@@ -386,7 +370,7 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f3671c4f-f435-48b2-92c3-17d2c4362242" concept_name="Respiratory Interventions Oxygen Therapy Order Group" max="1" path="/items" name="zzz.RT"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f3671c4f-f435-48b2-92c3-17d2c4362242" concept_name="zzz.RT" max="1" path="/items" name="zzz.RT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99654b40-201f-4014-864b-256d0617b2c8" concept_name="NURINT Incentive Spirometry [NUR352] IP Order" max="1" path="/items" name="Incentive Spirometry; every 1 hour, while awake"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care; On Unit">
@@ -397,8 +381,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations; On Unit">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; Once For 1 Occurrences, Blood; On Unit"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; every 3 days for 5 occurrences, start on POD 1 in AM"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once For 1 Occurrences, Blood; On Unit"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; every 3 days for 5 occurrences, start on POD 1 in AM"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Once, starting tomorrow at 0600, on POD 1 in AM"/>
@@ -420,38 +404,38 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes; On Unit">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM lactated Ringer_s infusion Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; 50 mL/hr, intravenous, continuous, if patient not tolerating oral fluid intake, lock when patient tolerating oral fluid intake"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM LACTATED RINGERS INTRAVENOUS SOLUTION [4318] Order" max="1" path="/items" name="lactated Ringer&apos;s infusion; 50 mL/hr, intravenous, continuous, if patient not tolerating oral fluid intake, lock when patient tolerating oral fluid intake"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="NURIV Convert to saline lock IV [IVT11] Order" max="1" path="/items" name="Convert to saline lock IV; when patient tolerating oral fluid intake"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b94ffdff-f186-4c05-864a-82d6970db121" concept_name="VTE Prophylaxis_ERAS Adult Order Panel" max="1" path="/items" name="VTE Prophylaxis - ERAS, Adult"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b94ffdff-f186-4c05-864a-82d6970db121" concept_name="AHS OGN ADULT CDEP VTE Prophylaxis_ERAS Adult" max="1" path="/items" name="VTE Prophylaxis - ERAS, Adult"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cac6baa1-ef6e-4971-8809-b20088665e1d" concept_name="Standard Analgesics Adult Order Group" max="1" path="/items" name="Standard Analgesics Adult"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cac6baa1-ef6e-4971-8809-b20088665e1d" concept_name="AHS OGN ADULT CDEP Standard Analgesics Adult" max="1" path="/items" name="Standard Analgesics Adult"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naloxone">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f9cefb1f-13ec-4641-be98-1c73336aa9a6" concept_name="Naloxone Adult Order Group" max="1" path="/items" name="Naloxone for Opioid Reversal"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f9cefb1f-13ec-4641-be98-1c73336aa9a6" concept_name="AHS OGN ADULT GEN Naloxone" max="1" path="/items" name="Naloxone for Opioid Reversal"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6586f6da-7734-4ab6-a57f-977dc2dc9e58" concept_name="Prophylaxis Antiemetics Adult Order Group" max="1" path="/items" name="Prophylaxis Antiemetics; On Unit"/>
-          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="419f795b-3aad-4a85-9c0d-a3097a549640" concept_name="PRN Antiemetics Postprocedure Order Group" max="1" path="/items" name="PRN Antiemetics; On Unit"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6586f6da-7734-4ab6-a57f-977dc2dc9e58" concept_name="AHS OGR ADULT SUR Prophylaxis Antiemetics Postprocedure" max="1" path="/items" name="Prophylaxis Antiemetics; On Unit"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="419f795b-3aad-4a85-9c0d-a3097a549640" concept_name="AHS OGR ADULT SUR PRN Antiemetics Postprocedure" max="1" path="/items" name="PRN Antiemetics; On Unit"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants (Single Response); On Unit">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine Tablet Order" max="1" path="/items" name="raNITIdine tablet; 150 mg, oral, 2 times per day, until discharge"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium tablet enteric-coated; 40 mg, oral, daily before breakfast, until discharge"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine tablet Compiled Order" max="1" path="/items" name="raNITIdine tablet; 150 mg, oral, 2 times per day, until discharge"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM PANTOPRAZOLE MAGNESIUM 40 MG TABLETDELAYED RELEASE [163115] Order" max="1" path="/items" name="pantoprazole magnesium tablet enteric-coated; 40 mg, oral, daily before breakfast, until discharge"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Gastrointestinal Agents; On Unit">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Until discontinued, Chew gum 3 times daily (minimum 30 minutes each time), as tolerated"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM polyethylene glycol 3350 Powder Order" max="1" path="/items" name="polyethylene glycol 3350 powder; 17 g, oral, daily until discharge, start on POD 1, Bowel Regimen - for prevention of constipation."/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d48b2f1-3f85-465b-8e2f-00039a0b31b6" concept_name="PHARM POLYETHYLENE GLYCOL 3350 POWDER ORDERABLE [4201136] Order" max="1" path="/items" name="polyethylene glycol 3350 powder; 17 g, oral, daily until discharge, start on POD 1, Bowel Regimen - for prevention of constipation."/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" concept_name="Orderable Section" max="1" path="/items" name="Sennosides (Senna) tablet or liquid (linked orders)">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3097b98-bb4b-4ff0-8d67-c0d87fa81362" concept_name="PHARM sennosides Tablet Order" max="1" path="/items" name="sennosides tablet; 8.6 mg, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation."/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3097b98-bb4b-4ff0-8d67-c0d87fa81362" concept_name="PHARM SENNOSIDES 8.6 MG TABLET [11349] Order" max="1" path="/items" name="sennosides tablet; 8.6 mg, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation."/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM sennosides Oral liquid 1.7 mg/mL Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL; 5 mL, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation."/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM SENNOSIDES 8.5 MG 5 ML ORAL LIQUID [167258] Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL; 5 mL, oral, daily, at bedtime, Bowel Regimen - for prevention of constipation."/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Bowel Stimulant Medication - Choose One:">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e877db0-adfb-4ef1-853e-75235bb89fbb" concept_name="PHARM magnesium gluconate Tablet Order" max="1" path="/items" name="magnesium gluconate tablet; 1,000 mg, oral, 2 times per day, start on POD 1, Discontinue after first bowel movement"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6e877db0-adfb-4ef1-853e-75235bb89fbb" concept_name="PHARM MAGNESIUM GLUCONATE 500 MG TABLET [16041] Order" max="1" path="/items" name="magnesium gluconate tablet; 1,000 mg, oral, 2 times per day, start on POD 1, Discontinue after first bowel movement"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="635b9d53-75dd-44cc-9b3b-87189679b526" concept_name="PHARM magnesium hydroxide (as elemental) Oral liquid 33 mg/mL Order" max="1" path="/items" name="magnesium hydroxide (as elemental) liquid oral 33 mg/mL; 30 mL, oral, 2 times per day, start on POD 1, Discontinue after first bowel movement"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="635b9d53-75dd-44cc-9b3b-87189679b526" concept_name="PHARM MAGNESIUM HYDROXIDE 400 MG 5 ML ORAL SUSPENSION [28836] Order" max="1" path="/items" name="magnesium hydroxide (as elemental) liquid oral 33 mg/mL; 30 mL, oral, 2 times per day, start on POD 1, Discontinue after first bowel movement"/>
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           </Item>
         </Item>
