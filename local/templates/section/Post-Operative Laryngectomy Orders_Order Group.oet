@@ -171,8 +171,8 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ionized Calcium Management Medications - Post-Operative Laryngectomy">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride IV; 1,000 mg, intravenous, once, as needed, for ionized calcium level less than 0.9 mmol/L"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="412feb43-8c95-4b90-994f-f0a6a7551140" concept_name="PHARM calcium carbonate (as elemental) Tablet Order" max="1" path="/items" name="calcium carbonate (as elemental) tablet; 1,000 mg, nasogastric tube, 2 times per day"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM CALCIUM CHLORIDE IV ORDERABLE [420251] Order" max="1" path="/items" name="calcium chloride IV; 1,000 mg, intravenous, once, as needed, for ionized calcium level less than 0.9 mmol/L"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="412feb43-8c95-4b90-994f-f0a6a7551140" concept_name="PHARM CALCIUM CARBONATE 500 MG CALCIUM (1250 MG) TABLET [1300] Order" max="1" path="/items" name="calcium carbonate (as elemental) tablet; 1,000 mg, nasogastric tube, 2 times per day"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
   </definition>
@@ -193,6 +193,9 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
