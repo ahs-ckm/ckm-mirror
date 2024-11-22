@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>c2c52417-514c-421b-beff-66dc513d548b</id>
+  <name>AHS OGR ADULT SUR Discharge Notify Hand Post</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 201635&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~c2c52417-514c-421b-beff-66dc513d548b~NAME~AHS OGR ADULT SUR Discharge Notify Hand Post}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Patient should call a provider for help if they experience:&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Discharge Notify">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Persistent diarrhea"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Difficulty breathing, headache, or visual disturbances"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Extreme fatigue"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Hives"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Persistent dizziness or light headedness"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Persistent nausea or vomiting"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Redness, tenderness, pain, swelling, odor or green/yellow discharge around incision site"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Severe uncontrolled pain"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner (MRHP); Temperature greater than 38 degrees Celsius"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+</template>
