@@ -1,79 +1,10 @@
-<?xml version="1.0"?>
-<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
-  <id>bade7cc3-e66b-47c4-83bc-86efe6d0cce6</id>
-  <name>LAB Activation Panel MHP [LAB44444] Order</name>
-  <description>
-    <lifecycle_state>Initial</lifecycle_state>
-    <details>
-      <purpose/>
-      <use/>
-      <misuse/>
-    </details>
-    <other_details>
-      <item>
-        <key>MetaDataSet:Sample Set </key>
-        <value>Template metadata sample set </value>
-      </item>
-      <item>
-        <key>Acknowledgements</key>
-        <value/>
-      </item>
-      <item>
-        <key>Business Process Level</key>
-        <value/>
-      </item>
-      <item>
-        <key>Care setting</key>
-        <value/>
-      </item>
-      <item>
-        <key>Client group</key>
-        <value/>
-      </item>
-      <item>
-        <key>Clinical Record Element</key>
-        <value/>
-      </item>
-      <item>
-        <key>Copyright</key>
-        <value/>
-      </item>
-      <item>
-        <key>Issues</key>
-        <value/>
-      </item>
-      <item>
-        <key>Owner</key>
-        <value/>
-      </item>
-      <item>
-        <key>Sign off</key>
-        <value/>
-      </item>
-      <item>
-        <key>Speciality</key>
-        <value/>
-      </item>
-      <item>
-        <key>User roles</key>
-        <value/>
-      </item>
-    </other_details>
-  </description>
-  <annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]">
-    <items>
-      <item>
-        <key>Technical.EPIC ID</key>
-        <value>&lt;p&gt;LAB44444&lt;/p&gt;</value>
-      </item>
-      <item>
-        <key>Technical.ﻩ Technical Traceability</key>
-        <value>{~AHSID~bade7cc3-e66b-47c4-83bc-86efe6d0cce6~NAME~LAB Activation Panel MHP [LAB44444] Order}</value>
-      </item>
-    </items>
-  </annotations>
-  <definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Activation Panel MHP"/>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
-    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-  </integrity_checks>
-</template>
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>bade7cc3-e66b-47c4-83bc-86efe6d0cce6</id><name>LAB Activation Panel MHP [LAB44444] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Catalogue Pattern.Synonyms</key><value>
+						&lt;p&gt;
+						MTP&lt;br&gt;
+								MHP&lt;br&gt;
+								BLOOD&lt;br&gt;
+								TRANSFUSE&lt;br&gt;
+								EXSANGUINATION&lt;br&gt;
+								TRANSFUSION
+						&lt;/p&gt;
+					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB44444&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~bade7cc3-e66b-47c4-83bc-86efe6d0cce6~NAME~LAB Activation Panel MHP [LAB44444] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Activation Panel MHP"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="STAT"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]" default="STAT"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Daily Morning</includedValues><includedValues>Timed Once</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues><includedValues>Blood, ECMO</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="STAT"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (AMB)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (AMB)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Blood</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1" template_id="29bdd4b2-7c95-4fe2-8f58-032cd3aa9f85" concept_name="Is this for a Public Health service 140265 Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is this for a Public Health service?"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1"><digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest></integrity_checks></template>
