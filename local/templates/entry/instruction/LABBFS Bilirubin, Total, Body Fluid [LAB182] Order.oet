@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><id>e0ae66f1-37cd-4c71-b4a0-c7b7a9642cc9</id><name>LABBFS Bilirubin, Total, Body Fluid [LAB182] Order</name><description><lifecycle_state>Initial</lifecycle_state><details><purpose/><use/><misuse/></details><other_details><item><key>MetaDataSet:Build</key><value>Build details</value></item><item><key>Acknowledgemet</key><value/></item><item><key>Analyst</key><value/></item><item><key>Attachments regarding build</key><value/></item><item><key>Build complete date</key><value/></item><item><key>Build team</key><value/></item><item><key>Comments</key><value/></item><item><key>Record name</key><value/></item><item><key>To ananlyst date</key><value/></item></other_details></description><annotations path="[openEHR-EHR-INSTRUCTION.service_request.v1]"><items><item><key>Lab Test.Lab Test Record</key><value>&lt;p&gt;1230100089&lt;/p&gt;</value></item><item><key>Lab Test.Authorized Laboratories</key><value>
+						&lt;p&gt;
+						CGY Alberta Children&amp;#39;s Hospital Laboratory&lt;br&gt;
+								CGY Foothills Medical Centre Laboratory&lt;br&gt;
+								CGY Peter Lougheed Centre Laboratory&lt;br&gt;
+								CGY Rockyview General Hospital Laboratory&lt;br&gt;
+								CGY South Health Campus Laboratory&lt;br&gt;
+								EDM Edmonton Base Laboratory&lt;br&gt;
+								EDM University of Alberta Hospital Laboratory&lt;br&gt;
+								LET Chinook Regional Hospital Laboratory&lt;br&gt;
+								RED Red Deer Regional Hospital Centre Laboratory&lt;br&gt;
+								CGY APL Diagnostic and Scientific Centre Laboratory
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Default Container</key><value>
+						&lt;p&gt;
+						STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER&lt;br&gt;
+								RED&lt;br&gt;
+								RED&lt;br&gt;
+								STERILE CONTAINER
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Allowed Containers</key><value>
+						&lt;p&gt;
+						GOLD SST;MINT LIHEP PST;RED;STERILE CONTAINER&lt;br&gt;
+								MINT LIHEP PST;GOLD SST;RED;STERILE CONTAINER&lt;br&gt;
+								GOLD SST;MINT LIHEP PST;RED;STERILE CONTAINER&lt;br&gt;
+								GOLD SST;MINT LIHEP PST;RED;STERILE CONTAINER&lt;br&gt;
+								GOLD SST;MINT LIHEP PST;RED;STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER;RED;GOLD SST&lt;br&gt;
+								STERILE CONTAINER;RED&lt;br&gt;
+								STERILE CONTAINER;RED&lt;br&gt;
+								RED;STERILE CONTAINER&lt;br&gt;
+								STERILE CONTAINER;RED;GOLD SST;MINT LIHEP PST
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Authorized Sections</key><value>
+						&lt;p&gt;
+						CGY ACH Chemistry&lt;br&gt;
+								CGY FMC Chemistry&lt;br&gt;
+								CGY PLC Chemistry&lt;br&gt;
+								CGY RGH Chemistry&lt;br&gt;
+								CGY SHC Chemistry&lt;br&gt;
+								EDM DLH Chemistry&lt;br&gt;
+								EDM UAH Chemistry&lt;br&gt;
+								LET CRH Chemistry&lt;br&gt;
+								RED RDHC Chemistry&lt;br&gt;
+								CGY DSC Chemistry
+						&lt;/p&gt;
+					</value></item><item><key>Lab Test.Components</key><value>
+						&lt;p&gt;
+						BILIRUBIN TOTAL (UMOL/L) IN BODY FLUID
+						&lt;/p&gt;
+					</value></item><item><key>Catalogue Pattern.Synonyms</key><value>
+						&lt;p&gt;
+						Tbil, Body Fluid
+						&lt;/p&gt;
+					</value></item><item><key>Technical.EPIC ID</key><value>&lt;p&gt;LAB182&lt;/p&gt;</value></item><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~e0ae66f1-37cd-4c71-b4a0-c7b7a9642cc9~NAME~LABBFS Bilirubin, Total, Body Fluid [LAB182] Order}</value></item></items></annotations><definition xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" concept_name="Service request" max="1" name="Bilirubin, Total, Body Fluid"><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (IP)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Routine</includedValues><includedValues>Timed</includedValues><includedValues>Add-On</includedValues><includedValues>Today</includedValues><includedValues>Urgent</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Frequency"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Once Routine</includedValues><includedValues>STAT</includedValues><includedValues>As needed</includedValues><includedValues>Timed Once</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Other Body Fluid</includedValues><includedValues>Peritoneal Fluid</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Source (IP)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Peritoneum</includedValues><includedValues>Jackson-Pratt Catheter</includedValues><includedValues>J Tube</includedValues><includedValues>Other Drain</includedValues><includedValues>Other</includedValues><includedValues>Amniotic Fluid</includedValues><includedValues>Bronchus, Pooled</includedValues><includedValues>Bronchoalveolar</includedValues><includedValues>Bronchus, Left</includedValues><includedValues>Bronchus, Right</includedValues><includedValues>Bursa</includedValues><includedValues>Dialysate</includedValues><includedValues>Stomach</includedValues><includedValues>Gastroesophageal junction</includedValues><includedValues>Other</includedValues><includedValues>Pericardium</includedValues><includedValues>Peritoneal Catheter</includedValues><includedValues>Peritonsilar</includedValues><includedValues>Peritoneum</includedValues><includedValues>Pleural Cavity, Left</includedValues><includedValues>Pleural Cavity, Right</includedValues><includedValues>Pleural Drain Catheter</includedValues><includedValues>Synovium</includedValues><includedValues>Knee, Left</includedValues><includedValues>Knee, Right</includedValues><includedValues>Knee, Unspecified</includedValues><includedValues>Abdomen</includedValues><includedValues>Breast, Left</includedValues><includedValues>Breast, Left Central</includedValues><includedValues>Breast, Right</includedValues><includedValues>Breast, Right Central</includedValues><includedValues>Breast, Unspecified</includedValues><includedValues>Breast Milk</includedValues><includedValues>Chest, Left</includedValues><includedValues>Chest, Right</includedValues><includedValues>Chest Tube, Unspecified</includedValues><includedValues>Chest, Unspecified</includedValues><includedValues>Other Drain</includedValues><includedValues>Small Bowel</includedValues><includedValues>Emesis</includedValues><includedValues>Eye, Left</includedValues><includedValues>Eye, Right</includedValues><includedValues>Eye Socket</includedValues><includedValues>Eye, Unspecified</includedValues><includedValues>Eyelid, Left</includedValues><includedValues>Eyelid, Right</includedValues><includedValues>Eyelid, Unspecified</includedValues><includedValues>Hemovac</includedValues><includedValues>Stoma</includedValues><includedValues>Heart</includedValues><includedValues>Pancreas</includedValues><includedValues>Pelvis</includedValues><includedValues>Pharmaceutical Product</includedValues><includedValues>Vitreous Fluid</includedValues><includedValues>Chest Tube, Unspecified</includedValues><includedValues>Pericardium</includedValues><includedValues>Peritoneal Washings</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Priority (AMB)"><Rule path="/items[at0002]" default="Routine"><constraint xsi:type="textConstraint"><includedValues>STAT</includedValues><includedValues>Today</includedValues><includedValues>Routine</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Specimen Type (AMB)"><Rule path="/items[at0002]"><constraint xsi:type="textConstraint"><includedValues>Cerebrospinal Fluid</includedValues><includedValues>Stool</includedValues></constraint></Rule></Items><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1" template_id="29bdd4b2-7c95-4fe2-8f58-032cd3aa9f85" concept_name="Is this for a Public Health service 140265 Question" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Is this for a Public Health service?"/><Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1" concept_name="Service request information" max="1" path="/activities[at0001]/description[at0009]/items[at0132]" name="Comment"/></definition><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1"><digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1"><digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest></integrity_checks><integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1"><digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest></integrity_checks></template>
