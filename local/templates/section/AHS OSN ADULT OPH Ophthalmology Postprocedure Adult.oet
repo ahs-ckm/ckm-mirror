@@ -1,0 +1,598 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>864b6b97-758c-4f36-955f-73e4af513c08</id>
+  <name>AHS OSN ADULT OPH Ophthalmology Postprocedure Adult</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~864b6b97-758c-4f36-955f-73e4af513c08~NAME~AHS OSN ADULT OPH Ophthalmology Postprocedure Adult}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;strong&gt;Order Set Keywords:&lt;/strong&gt; Post-op, Post op, Post operative, retina, cornea, glaucoma, oculoplastics, strabismus, ocular oncology, ocular, par plana vitrectomy, vitrectomy, laser, Ophthalmology Adult Postprocedure&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Consider opening and merging the following order sets, if appropriate:&lt;br&gt;-Parenteral Nutrition&lt;br&gt;-Perioperative Management of Diabetes&lt;br&gt;-Any appropriate diagnosis based order sets&lt;/em&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Regular&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Renal&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Renal Hemodialysis, Renal Peritoneal Dialysis, Renal No Dialysis, Potassium Low&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; As tolerated, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: No Activity Restrictions&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; As tolerated, Until discontinued&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; No restrictions, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: No Activity Restrictions&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Up with assistance, Until disconitnued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: Bed Rest with Exceptions&lt;/p&gt;&lt;p&gt;Other Exceptions: Up with Assistance&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Up in chair, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: Bed Rest with Exceptions&lt;/p&gt;&lt;p&gt;Other Exceptions: Up in Chair&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Strict bed rest, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: Strict Bed Rest&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Bed rest with bedside commode, Until discontinued&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: Bed Rest with Exceptions&lt;/p&gt;&lt;p&gt;Bathroom Exceptions: Bedside Commode&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Bed rest with bathroom privileges&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: Bed Rest with Exceptions&lt;/p&gt;&lt;p&gt;Bathroom Exceptions: Bathroom Privileges&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Activity; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Activity; Patient may shower&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;&amp;nbsp;Activity Level: Bed Rest with Exceptions&lt;/p&gt;&lt;p&gt;Bathroom Exceptions: May Shower or Bathe Unassisted&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory Agents with Corticosteroids; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 166510&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory Agents with Corticosteroids; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cyclopentolate drop eye 1%; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 2025&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;atropine 1% eye drop; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 736&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tropicamide drop eye 1%; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 8250&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cyclopentolate drop eye 1%; dropperette; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX&amp;nbsp;166001&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;atropine 1% eye drop; dropperette; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX&amp;nbsp;166009&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tropicamide drop eye 1%; dropperette; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX&amp;nbsp;166029&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Dilating; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dexAMETHasone Injection; 4 mg, intravenous, every 6 hours, for 24 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;INC001863249 - requested addition by Dr Weis, approved by Dr Pollock April 5/24&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;moxifloxacin drop eye 0.5%; 1 drop, 3 times per day&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 35699&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;prednisoLONE acetate drop eye 1%; 1 drop, every 2 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 6487&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;atropine 1% eye drop; 1 drop, every 12 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX 736&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Eye Drops&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;prednisoLONE sodium phosphate drop eye 0.5%; dropperette; 1 drop, every 2 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX&amp;nbsp;166510&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;atropine 1% eye drop; dropperette; 1 drop, every 12 hours&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;ERX&amp;nbsp;166009&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Dropperettes&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Oral Tablets&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Remove at Bedtime; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Other&lt;/p&gt;&lt;p&gt;Specify:&amp;nbsp;Keep eye patched until bedtime tonight. Do not replace patch if it is removed&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Remove tomorrow at 8:00 AM; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Other&lt;/p&gt;&lt;p&gt;Specify:&amp;nbsp;Remove at 8:00 AM&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Remain covered at all times; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Other&lt;/p&gt;&lt;p&gt;Specify:&amp;nbsp;Keep surgical eye covered with eye patch and dhield at all times. Avoid eye pressure or trauma.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Do not remove prior to follow up; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Other&lt;/p&gt;&lt;p&gt;Specify:&amp;nbsp;Please keep eye patched until follow up appointment. Patch is to be removed by the surgeon only.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Apply Shield when sleeping; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Apply&lt;/p&gt;&lt;p&gt;Specify:&amp;nbsp;Eye Shield&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Tape eyelid shut; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Action: Apply&lt;/p&gt;&lt;p&gt;Specify:&amp;nbsp;Tedaderm, Medpore, or other medical tape. Except during exams or when giving drops.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Wound Care POC; Routine, Clinic Performed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Explanatory comment:&amp;nbsp;Keep dry for 24 hours. After 24 hours wash gently with soap and water daily, keep dry between washings, cover with gauze or bandage, a provider will remove stiches/staples/sutures.&lt;/p&gt;&lt;p&gt;Comments: Your *** will remove stiches/staples/sutures.&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Discharge&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diet and Nutrition; Post Discharge&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" min="1" name="Ophthalmology Postprocedure Adult">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="53e75d80-9828-4e56-af48-67242601a350" concept_name="AHS OGR MULTI SUR Admission Postprocedure CT" max="1" path="/items" name="Admission"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2b63fa99-3c08-4d1e-ae25-82996261d976" concept_name="AHS OGR MULTI SUR Admission Help Text Postprocedure CT" max="1" path="/items" name="Patient Movement Guidance"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PACU">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions; Recovery &amp; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Left, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Right, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Prone, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Supine, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Specify, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; Specify, Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6a64f49d-64d8-49c0-b7f0-9c861a35dd2f" concept_name="AHS OGR ADULT OPH PACU Wound Care Ophthalmology Post Adult" max="1" path="/items" name="Wound Care; Recovery &amp; On Unit"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Postprocedure Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Regular"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Clear Fluid"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Pureed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Diabetic"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet; Renal"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="55c69bb8-807e-4742-8df1-8751b9d3b726" concept_name="NURINT Total Fluid Intake (TFI) [138902] IP Order" max="1" path="/items" name="Total Fluid Intake (TFI)"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5b3e1da2-8a67-4c6e-a20c-b54e55e0d980" concept_name="AHS OGR ADULT SUR Protein_Calorie Dense Oral Nutrition Supplements" max="1" path="/items" name="Protein/Calorie Dense Oral Nutrition Supplements"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; As tolerated, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; No restrictions, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Up with assistance, Until disconitnued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Up in chair, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Strict bed rest, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed rest with bedside commode, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Bed rest with bathroom privileges"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Patient may shower"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="748561f7-490c-40cc-aa6b-7806e39a9273" concept_name="AHS OGR ADULT OPH Vital Signs Ophthalmology Post Adult" max="1" path="/items" name="Vital Signs; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; On Arrival, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; 4 times daily"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; Specify, Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Left, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Lateral Right, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Prone, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; Supine, Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="61ac6025-7efc-4b23-9b2f-0b4eaeef4c82" concept_name="NURINT Adjust Head of Bed to [NUR51] IP Order" max="1" path="/items" name="Adjust Head of Bed to:; Specify, Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6a64f49d-64d8-49c0-b7f0-9c861a35dd2f" concept_name="AHS OGR ADULT OPH PACU Wound Care Ophthalmology Post Adult" max="1" path="/items" name="Wound Care; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); specify, Until discontinued"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Maintenance; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="edc6d443-87da-40da-9326-33d7653b0129" concept_name="NURCOM Maintain IV Access [NUR562] IP Order" max="1" path="/items" name="Maintain IV Access; Until discontinued"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad10f620-8ffd-4016-a401-373d291a8fc5" concept_name="NURIV Remove Peripheral IV [IVT10] Order" max="1" path="/items" name="Remove Peripheral IV; When drinking well, Once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="NURIV Convert to saline lock IV [IVT11] Order" max="1" path="/items" name="Convert to saline lock IV; Once"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="76f55273-344d-4fa3-a58f-6340cda57f5b" concept_name="AHS OGR ADULT OPH IV Fluid Infusions Ophthalmology Post" max="1" path="/items" name="IV Fluid Infusions; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d777085c-8a75-46ac-ab5b-803ab4f4aa66" concept_name="AHS OGR ADULT OPH Analgesics and Antipyretics Ophthalmology Post Adult" max="1" path="/items" name="Analgesics and Antipyretics; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="419f795b-3aad-4a85-9c0d-a3097a549640" concept_name="AHS OGR ADULT SUR PRN Antiemetics Post CT" max="1" path="/items" name="PRN Antiemetics; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f0269ddd-d669-4672-8d61-47e98b2e58d7" concept_name="AHS OGR ADULT OPH Anti-Infectives" max="1" path="/items" name="Anti-Infective Agents - Ruptured Globe; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="52d98052-8d15-454a-aa4c-5e9aed27d42e" concept_name="AHS OGR ADULT OPH Anti-Glaucoma Agents Ophthalmology Post Adult" max="1" path="/items" name="Ophthalmic Agents - Anti-Glaucoma Agents; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Anti-Infective Agents; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM MOXIFLOXACIN 0.5 Percent EYE DROPS [35699] Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, 4 times per day"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d96c3e3d-e08d-4568-86d6-8c96ed7baba4" concept_name="PHARM TOBRAMYCIN 0.3 Percent EYE DROPS [124422] Order" max="1" path="/items" name="tobramycin drop eye 0.3%; 1 drop, 4 times per day"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc06de44-a1e5-4d73-9cdd-d359df03950c" concept_name="PHARM TOBRAMYCIN 0.3 Percent EYE OINTMENT [125508] Order" max="1" path="/items" name="tobramycin ointment eye 0.3%; 4 times per day"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Anti-Inflammatory Agents with Corticosteroids; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM PREDNISOLONE ACETATE 1 Percent EYE DROPSSUSPENSION [6487] Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, 4 times per day"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fac9b47-6508-4b77-ac00-4b2e657217ea" concept_name="PHARM NEOMYCIN 3.5 MG-POLYMYXINB 6000 UNIT ML-DEXAMETH 0.1 Percent EYE DROPSSUSP [166093] Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B drop eye 1 mg-3.5 mg-6000 unit/g; 1 drop, 4 times per day"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM TOBRAMYCIN 0.3 Percent -DEXAMETHASONE 0.1 Percent EYE DROPSSUSPENSION [11567] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop, BOTH Eyes, every 4 hours, while awake"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ebea1d4-cf3f-4101-9b3b-b5f2f3014822" concept_name="PHARM TOBRAMYCIN-DEXAMETHASONE 0.3 Percent -0.1 Percent EYE OINTMENT [11566] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye ointment; BOTH Eyes, 3 times per day"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Dropperettes">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1afba274-6923-45a3-87f2-9e099601240f" concept_name="PHARM PREDNISOLONE SODIUM PHOSPHATE 0.5 Percent EYE DROPS IN A DROPPERETTE [166510] Order" max="1" path="/items" name="prednisoLONE sodium phosphate drop eye 0.5%; 1 drop, 4 times per day, On Unit"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents - Dilating; On Unit">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Eye Drops">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7fea915-1fde-4e48-9ef1-9d71e3e079ca" concept_name="PHARM CYCLOPENTOLATE 1 Percent EYE DROPS [2025] Order" max="1" path="/items" name="cyclopentolate drop eye 1%; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6744f0a5-2f1a-47cd-a07a-c89c97923543" concept_name="PHARM ATROPINE 1 Percent EYE DROPS [736] Order" max="1" path="/items" name="atropine 1% eye drop; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Dropperettes">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7fea915-1fde-4e48-9ef1-9d71e3e079ca" concept_name="PHARM CYCLOPENTOLATE 1 Percent EYE DROPS [2025] Order" max="1" path="/items" name="cyclopentolate drop eye 1%; dropperette; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6744f0a5-2f1a-47cd-a07a-c89c97923543" concept_name="PHARM ATROPINE 1 Percent EYE DROPS [736] Order" max="1" path="/items" name="atropine 1% eye drop; dropperette; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; dropperette; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Corticosteroids; On Unit">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ed44d00-d5cf-4a9a-aecc-c55a1e3ae2da" concept_name="PHARM METHYLPREDNISOLONE INJECTION ORDERABLE [420035] Order" max="1" path="/items" name="methylPREDNISolone sodium succinate IV/IM; 250 mg, intravenous, every 6 hours, for 24h"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d0c9c00c-2757-42de-be79-7e4716a04e95" concept_name="PHARM DEXAMETHASONE INJECTION ORDERABLE [420206] Order" max="1" path="/items" name="dexAMETHasone Injection; 4 mg, intravenous, every 6 hours, for 24 hours"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Endophthalmitis Vitreous Tap Postprocedure Medications; On Unit">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Eye Drops">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM MOXIFLOXACIN 0.5 Percent EYE DROPS [35699] Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, 3 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM PREDNISOLONE ACETATE 1 Percent EYE DROPSSUSPENSION [6487] Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, every 2 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6744f0a5-2f1a-47cd-a07a-c89c97923543" concept_name="PHARM ATROPINE 1 Percent EYE DROPS [736] Order" max="1" path="/items" name="atropine 1% eye drop; 1 drop, every 12 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Dropperettes">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1afba274-6923-45a3-87f2-9e099601240f" concept_name="PHARM PREDNISOLONE SODIUM PHOSPHATE 0.5 Percent EYE DROPS IN A DROPPERETTE [166510] Order" max="1" path="/items" name="prednisoLONE sodium phosphate drop eye 0.5%; dropperette; 1 drop, every 2 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6744f0a5-2f1a-47cd-a07a-c89c97923543" concept_name="PHARM ATROPINE 1 Percent EYE DROPS [736] Order" max="1" path="/items" name="atropine 1% eye drop; dropperette; 1 drop, every 12 hours"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Oral Tablets">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="aa4c20bb-5d80-4726-9ce7-2a979e32d4f2" concept_name="PHARM dexAMETHasone tablet Compiled Order" max="1" path="/items" name="dexAMETHasone tablet; 4 mg, oral, 2 times per day"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE tablet Compiled Order" max="1" path="/items" name="predniSONE tablet; 5 mg, oral, daily, with breakfast"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Discharge">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8c7c44cd-ddd8-4939-81c1-79b8c18f17ca" concept_name="AHS OGR ADULT SUR Discharge Follow-Up" max="1" path="/items" name="Discharge Follow-Up; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Specify; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Remove at Bedtime; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Remove tomorrow at 8:00 AM; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Remain covered at all times; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Do not remove prior to follow up; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Apply Shield when sleeping; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Tape eyelid shut; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f57074d6-fdcf-4c26-beaa-a1f268731deb" concept_name="NURPOC Wound Care POC [PRO181] Order" max="1" path="/items" name="Wound Care POC; Routine, Clinic Performed"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9bf0303a-ce36-46f7-8130-d1ce54dc6c6a" concept_name="NURWOU Dressing Instructions [NUR402] Order" max="1" path="/items" name="Dressing Instructions:; Specify; Routine, Clinic Performed #1"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9a82c4d5-fd59-47c4-afce-5e91a84a5c77" concept_name="DIETNUR Discharge Diet [DIET26] IP Order" max="1" path="/items" name="Discharge Diet; Return to previous diet"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="6624af52-0d36-4e67-a20a-7f8f31a15df1" concept_name="AHS OGR ADULT SUR Discharge Activity" max="1" path="/items" name="Discharge Activity; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hygiene; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] AMB Order" max="1" path="/items" name="Discharge activity; May shower"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a4066b92-bf1d-46a8-9802-d8a62ee534a5" concept_name="NURAX Discharge Activity [NUR652] AMB Order" max="1" path="/items" name="Discharge activity; May tub bathe"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8b0c8006-dc5a-45fa-867c-60040b6e5463" concept_name="AHS OGR ADULT OPH Discharge Medication Instructions Ophthalmology Post Adult" max="1" path="/items" name="Medication Instructions; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b5e2fa08-e63b-4cb1-8eea-7a410a15f288" concept_name="AHS OGR ADULT OPH Outpatient Medications - Analgesics and Antipyretics Ophthalmology Post Adult" max="1" path="/items" name="Outpatient Medications - Analgesics and Antipyretics; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Anti-Inflammatory and Corticosteroids; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="733930cb-c241-41eb-9cc3-de8d3449edcd" concept_name="PHARM DEXAMETHASONE 0.1 Percent EYE DROPSSUSPENSION [19596] Order" max="1" path="/items" name="dexAMETHasone drop eye 0.1%; 1 drop 2 times per day for 10 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e048bee6-610a-47c5-a128-34b60e7e8da1" concept_name="PHARM DEXAMETHASONE 0.1 Percent EYE OINTMENT [166200] Order" max="1" path="/items" name="dexAMETHasone ointment eye 0.1%; Apply 1 application to both eyes 1 time per day at bedtime for 30 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fac9b47-6508-4b77-ac00-4b2e657217ea" concept_name="PHARM NEOMYCIN 3.5 MG-POLYMYXINB 6000 UNIT ML-DEXAMETH 0.1 Percent EYE DROPSSUSP [166093] Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B drop eye 1 mg-3.5 mg-6000 unit/g; *** drop every 6 hours for 30 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="597f4804-8124-4866-ba10-9b454d140f70" concept_name="PHARM NEOMYCIN 3.5 MG-POLYMYXIN B 6000 UNIT-DEXAMETH 1 MG GRAM EYE OINTMENT [166042] Order" max="1" path="/items" name="dexAMETHasone-neomycin-polymyxin B ointment eye 1 mg-3.5 mg-6000 unit/g; Apply to both eyes 4 times per day for 30 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM TOBRAMYCIN 0.3 Percent -DEXAMETHASONE 0.1 Percent EYE DROPSSUSPENSION [11567] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop every 4 hours while awake for 10 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ebea1d4-cf3f-4101-9b3b-b5f2f3014822" concept_name="PHARM TOBRAMYCIN-DEXAMETHASONE 0.3 Percent -0.1 Percent EYE OINTMENT [11566] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye ointment; 3 times per day for 10 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2a034866-6743-4185-850f-3d72971e0659" concept_name="PHARM KETOROLAC 0.5 Percent EYE DROPS [19733] Order" max="1" path="/items" name="ketorolac drop eye 0.5%; 1 drop 3 times per day for 28 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM PREDNISOLONE ACETATE 1 Percent EYE DROPSSUSPENSION [6487] Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop 4 times per day for 10 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ed859f75-e62d-4e33-91d8-c3c591f89101" concept_name="PHARM predniSONE tablet Compiled Order" max="1" path="/items" name="predniSONE tablet; Take 3 tablests (15 mg total) by mouth 2 times per day (with breakfast and supper) for 10 days"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Anti-Infectives; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM MOXIFLOXACIN 0.5 Percent EYE DROPS [35699] Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop 4 times per day for 10 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d96c3e3d-e08d-4568-86d6-8c96ed7baba4" concept_name="PHARM TOBRAMYCIN 0.3 Percent EYE DROPS [124422] Order" max="1" path="/items" name="tobramycin drop eye 0.3%; 1 drop 4 times per day for 14 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc06de44-a1e5-4d73-9cdd-d359df03950c" concept_name="PHARM TOBRAMYCIN 0.3 Percent EYE OINTMENT [125508] Order" max="1" path="/items" name="tobramycin ointment eye 0.3%; 4 times per day for 14 days"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Ophthalmic Agents - Dilating; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6744f0a5-2f1a-47cd-a07a-c89c97923543" concept_name="PHARM ATROPINE 1 Percent EYE DROPS [736] Order" max="1" path="/items" name="atropine 1% eye drop; 1 drop 3 times per day for 30 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7fea915-1fde-4e48-9ef1-9d71e3e079ca" concept_name="PHARM CYCLOPENTOLATE 1 Percent EYE DROPS [2025] Order" max="1" path="/items" name="cyclopentolate drop eye 1%; 1 drop 3 times per day for 10 days"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="47818180-9ab3-4a3d-a257-72098df89a33" concept_name="PHARM TROPICAMIDE 1 Percent EYE DROPS [8250] Order" max="1" path="/items" name="tropicamide drop eye 1%; 1 drop 3 times per day for 3 days"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="75589934-ea8e-4c97-8b70-2166e334c617" concept_name="AHS OGR ADULT OPH Outpatient Medications - Anti-Glaucoma Agents Ophthalmology Post Adult" max="1" path="/items" name="Outpatient Medications - Anti-Glaucoma Agents; Post Discharge"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Ophthalmic Agents - Lubricant; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="43532be5-ba21-477c-bd23-3910062bab09" concept_name="PHARM OPHTHALMIC LUBRICANT EYE DROP (WRAPPER) [408770025] Order" max="1" path="/items" name="ophthalmic lubricant eye drop; 1 drop every 1 hour if needed for up to 30 days"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Outpatient Medications - Nasal Spray; Post Discharge">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e2e056-c89b-48ec-84d4-d5718460fa9c" concept_name="PHARM XYLOMETAZOLINE 0.1 Percent NASAL SPRAY [11681] Order" max="1" path="/items" name="xylometazoline spray nasal 0.1%; Administer 1 spray into each nostril 2 times per day for 30 days"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+</template>
