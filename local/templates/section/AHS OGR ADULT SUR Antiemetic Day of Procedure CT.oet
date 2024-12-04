@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64</id>
+  <name>AHS OGR ADULT SUR Antiemetic Day of Procedure CT</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 169858&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64~NAME~AHS OGR ADULT SUR Antiemetic Day of Procedure CT}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;&lt;em&gt;Assess patient to determine their risk of post-operative nausea and vomiting (PONV)&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Risk factors include:&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;female gender&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;non-smoker&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;history of PONV or motion sickness&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;post-operative use of opioids&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Consider aprepitant If patient has &lt;strong&gt;3 or greater risk factors AND surgery is performed under general anesthesia (&lt;/strong&gt;&lt;/em&gt;&lt;em&gt;comprised of volatile anesthetics and opioids)&lt;strong&gt; AND patient meets one of the following criteria:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;High risk of developing PONV within 24 hours after surgery AND history of being refractory to other antiemetic treatments or combination antiemetic therapy used for PONV&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Risk of medical sequelae of vomiting (i.e. jaw wiring, neurosurgery, upper gastrointestinal surgery)&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Antiemetics">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7d7b50cd-5ad4-49bf-afd8-dab5dd5e4e8c" concept_name="PHARM aprepitant capsule Compiled Order" max="1" path="/items" name="aprepitant capsule; 80 mg, oral, once, 1 hour prior to surgery"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
