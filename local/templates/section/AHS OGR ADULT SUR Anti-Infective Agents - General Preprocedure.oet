@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 190284&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~07929a9d-e034-4a96-b95b-5e344dd1479b~NAME~AHS OGR ADULT SUR Anti-Infective Agents - General Preprocedure}</value>
       </item>
@@ -86,8 +90,8 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Anti-Infective Agents - General">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM ceFAZolin injection Order" max="1" path="/items" name="ceFAZolin IV/IM; 2 g, intravenous, on call to surgical suite, to be given within 60 minutes prior to incision"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b9e42b52-2039-4411-b3df-53a1efb9a496" concept_name="PHARM chlorhexidine gluconate Mouthwash 0.12% Order" max="1" path="/items" name="chlorhexidine gluconate mouthwash 0.12%; 20 mL, swish and spit, once, swish for 1 to 5 minutes and spit, 1 hour before surgery"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d8ff3407-9c0a-4e65-9cc2-b91041b4451a" concept_name="PHARM CEFAZOLIN IV IM ORDERABLE [420006] Order" max="1" path="/items" name="ceFAZolin IV/IM; 2 g, intravenous, on call to surgical suite, to be given within 60 minutes prior to incision"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b9e42b52-2039-4411-b3df-53a1efb9a496" concept_name="PHARM CHLORHEXIDINE GLUCONATE 0.12 Percent MOUTHWASH ORDERABLE [4200769] Order" max="1" path="/items" name="chlorhexidine gluconate mouthwash 0.12%; 20 mL, swish and spit, once, swish for 1 to 5 minutes and spit, 1 hour before surgery"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
@@ -98,9 +102,6 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
