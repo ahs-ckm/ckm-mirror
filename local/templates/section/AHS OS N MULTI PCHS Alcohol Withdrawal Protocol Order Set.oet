@@ -72,7 +72,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;A patient specific order from the authorized prescriber is required to implement this protocol. This order authorizes the administration of medications and interventions within this Protocol. &amp;nbsp;&lt;br&gt;Early initiation of this protocol is encouraged to ensure that all patients benefit from the timely administration of medication to avoid progression of symptoms.&lt;br&gt;Alcohol withdrawal symptoms may not overtly be present upon initial assessment. Patient history and clinical judgment should always be used when initiating this Protocol.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Put in new URL (create smart Link) - not availble till january 6&lt;/span&gt;&lt;/p&gt;</value>
+        <value>&lt;p&gt;A patient specific order from the authorized prescriber is required to implement this protocol. This order authorizes the administration of medications and interventions within this Protocol. &amp;nbsp;&lt;br&gt;Early initiation of this protocol is encouraged to ensure that all patients benefit from the timely administration of medication to avoid progression of symptoms.&lt;br&gt;Alcohol withdrawal symptoms may not overtly be present upon initial assessment. Patient history and clinical judgment should always be used when initiating this Protocol.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Put in new URL (create smart Link) - new protocol not being released&amp;nbsp;till january 6 - so unable to get new url before release.&lt;/span&gt;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -112,7 +112,15 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;125 mL/hr, intravenous, continuous&lt;/p&gt;</value>
+        <value>&lt;p&gt;125 mL/hr, intravenous, continuous, to a max of 2 Litres&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluids/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -183,11 +191,11 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For all Patients regardless of CIWA-Ar Score">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Thiamine">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d249280-a91c-4de9-9565-324dab6fe94e" concept_name="PHARM VITAMIN B1 (THIAMINE) 100 MG TABLET (WRAPPER) [408770038] Order" max="1" path="/items" name="vitamin B1 (thiamine) Tablet; 300mg po daily for 7 days"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5d249280-a91c-4de9-9565-324dab6fe94e" concept_name="PHARM VITAMIN B1 (THIAMINE) 100 MG TABLET (WRAPPER) [408770038] Order" max="1" path="/items" name="vitamin B1 (thiamine) Tablet; 300 mg po daily for 5 days"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d285e213-fe9a-4dbc-af89-687c2f59c1a1" concept_name="PHARM VITAMIN B1 (THIAMINE) IV IM ORDERABLE [4200252] Order" max="1" path="/items" name="vitamin B1 (thiamine) IM; 300mg IM daily for 7 days"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d285e213-fe9a-4dbc-af89-687c2f59c1a1" concept_name="PHARM VITAMIN B1 (THIAMINE) IV IM ORDERABLE [4200252] Order" max="1" path="/items" name="vitamin B1 (thiamine) IM; 300 mg IM daily for 5 days"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d285e213-fe9a-4dbc-af89-687c2f59c1a1" concept_name="PHARM VITAMIN B1 (THIAMINE) IV IM ORDERABLE [4200252] Order" max="1" path="/items" name="vitamin B1 (thiamine) IV; 30mg IV daily for 7 days"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d285e213-fe9a-4dbc-af89-687c2f59c1a1" concept_name="PHARM VITAMIN B1 (THIAMINE) IV IM ORDERABLE [4200252] Order" max="1" path="/items" name="vitamin B1 (thiamine) IV; 300 mg IV daily for 5 days"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Multivitamin">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="df74176c-9f3b-490c-8acd-d54251397768" concept_name="PHARM MULTIVITAMIN, ADULT TABLET (WRAPPER) [4001765] Order" max="1" path="/items" name="multivitamin, adult tablet; 1 tab po daily for 30 days"/>
