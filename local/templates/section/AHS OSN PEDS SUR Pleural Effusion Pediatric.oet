@@ -112,14 +112,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations Routine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Blood Gas&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Blood Gas Arterial POCT; Once Routine&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Oxygen Level (hard stop): On Current Therapy, On Room Air, On Specified Therapy (Oxygen/Ventilation)&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Diagnostic Imaging&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General Radiology&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;GR Chest 2 Projections; Once Routine&apos;]/activities[at0001]">
     <items>
       <item>
@@ -404,11 +396,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="39725054-c67b-4fab-b905-6b2b40959b1d" concept_name="AHS OGN MULTI SUR Pleural Fluid Analysis - Left Pleural Cavity" max="1" path="/items" name="Pleural Fluid Analysis - Left Pleural Cavity"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4460ec3d-f1cb-4674-b661-14fa13f5e454" concept_name="AHS OGN MULTI SUR Pleural Fluid Analysis - Right Pleural Cavity" max="1" path="/items" name="Pleural Fluid Analysis - Right Pleural Cavity"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ad0c1c7c-4333-4143-8402-573327d62900" concept_name="LABPOCT Blood Gas Capillary POCT [POC116] Order" max="1" path="/items" name="Blood Gas Capillary POCT; Once Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="078392c1-caca-40e6-84cd-22a1ad210a0e" concept_name="LABPOCT Blood Gas Venous POCT [POC115] Order" max="1" path="/items" name="Blood Gas Venous POCT; Once Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="34fd84e4-0ab2-4743-998e-892958eb37e4" concept_name="LABPOCT Blood Gas Arterial POCT [POC114] Order" max="1" path="/items" name="Blood Gas Arterial POCT; Once Routine"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="823f6362-7194-4aee-88b7-3f3f5d473a43" concept_name="AHS OGR PEDS CH Pediatric STAT Blood Gas CT" max="1" path="/items" name="Blood Gas"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General Radiology">
