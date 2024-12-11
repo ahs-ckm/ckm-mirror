@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Technical.EPIC ID</key>
+        <value>&lt;p&gt;OSQ 202584&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~e44af349-91f4-4c5a-ba33-560271ed21d1~NAME~AHS OGR PEDS SUR Anxiolytics Preprocedure}</value>
       </item>
@@ -101,10 +105,10 @@
     </items>
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Anxiolytics">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d3bc8bc7-5a6a-48dc-9d2c-9f6ad2f060b9" concept_name="PHARM midazolam Oral liquid 2 mg/mL Order" max="1" path="/items" name="midazolam liquid oral 2 mg/mL; *** mg (0.25 mg/kg/dose), oral, once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d3bc8bc7-5a6a-48dc-9d2c-9f6ad2f060b9" concept_name="PHARM midazolam Oral liquid 2 mg/mL Order" max="1" path="/items" name="midazolam liquid oral 2 mg/mL; *** mg (0.5 mg/kg/dose), oral, once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c192e01-5dec-4b36-9dae-00bd5266eb23" concept_name="PHARM midazolam injection for nasal use 5 mg/mL Order" max="1" path="/items" name="midazolam injection for nasal use 5 mg/mL; May consider if resists oral syrup and no IV access; *** mg (0.2 mg/kg/dose), intranasal, once, For nasal administration"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c192e01-5dec-4b36-9dae-00bd5266eb23" concept_name="PHARM midazolam injection for nasal use 5 mg/mL Order" max="1" path="/items" name="midazolam injection for nasal use 5 mg/mL; May consider if resists oral syrup and no IV access; *** mg (0.3 mg/kg/dose), intranasal, once, For nasal administration"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d3bc8bc7-5a6a-48dc-9d2c-9f6ad2f060b9" concept_name="PHARM MIDAZOLAM ORAL SOLUTION (PREPARED WITH INJECTION) NOTE STRENGTH 2 MG ML (COMPOUND) MFG [6002440] Order" max="1" path="/items" name="midazolam liquid oral 2 mg/mL; *** mg (0.25 mg/kg/dose), oral, once"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d3bc8bc7-5a6a-48dc-9d2c-9f6ad2f060b9" concept_name="PHARM MIDAZOLAM ORAL SOLUTION (PREPARED WITH INJECTION) NOTE STRENGTH 2 MG ML (COMPOUND) MFG [6002440] Order" max="1" path="/items" name="midazolam liquid oral 2 mg/mL; *** mg (0.5 mg/kg/dose), oral, once"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c192e01-5dec-4b36-9dae-00bd5266eb23" concept_name="PHARM MIDAZOLAM 5 MG ML INJECTION SOLUTION (FOR NASAL USE) [4002431] Order" max="1" path="/items" name="midazolam injection for nasal use 5 mg/mL; May consider if resists oral syrup and no IV access; *** mg (0.2 mg/kg/dose), intranasal, once, For nasal administration"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c192e01-5dec-4b36-9dae-00bd5266eb23" concept_name="PHARM MIDAZOLAM 5 MG ML INJECTION SOLUTION (FOR NASAL USE) [4002431] Order" max="1" path="/items" name="midazolam injection for nasal use 5 mg/mL; May consider if resists oral syrup and no IV access; *** mg (0.3 mg/kg/dose), intranasal, once, For nasal administration"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
@@ -112,9 +116,6 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
