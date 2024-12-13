@@ -72,22 +72,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Insert peripheral IV; Preoperative&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Apply saline lock, once&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Insert peripheral IV; Intraoperative&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Once&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -105,11 +89,7 @@
     </items>
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="IV Maintenance">
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Insert and Maintain IV">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV; Preoperative"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="97c832cb-cfa5-421b-a871-473a0f5fcae6" concept_name="NURIV Insert peripheral IV [IVT3] Order" max="1" path="/items" name="Insert peripheral IV; Intraoperative"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="08ee31dc-f763-402e-90bb-a4dd0e7d1b53" concept_name="AHS OGR ADULT SUR Insert and Maintain IV Preprocedure CT" max="1" path="/items" name="Insert and Maintain IV"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c0fdd864-44e6-4259-ba70-d6bbd36a382c" concept_name="NURIV Convert to saline lock IV [IVT11] Order" max="1" path="/items" name="Convert to saline lock IV"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
