@@ -260,11 +260,31 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;POCT Glucose; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health practioner(MRHP); Blood Glucose Targets ; On Unit&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Urinary Catheter - Discontinue; Once Routine, tomorrow, Remove indwelling urinary catheter on AM of  POD 1&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;S+1 day&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Interventions; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;In and Out Catheter; Conditional, PRN, May release conditional prn order if patient is unable to void&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Blood glucose greater than: 18&lt;/p&gt;&lt;p&gt;Blood glucose less than: 4&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Comments: Do not hold insulin without prescriber order. Intitate appropriate AHS Glycemic Management Protocol when targets are not met and call MRHP&lt;/p&gt;</value>
+        <value>&lt;p&gt;Catheter Size (French): 16&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Postprocedure Care (Floor/On Unit)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Wound Care; On Unit&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Dressing Instructions:; Removable Rigid Dressing&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Dec. 13/24 - INC002212839 - Request approved by author, Vascular representatives from EZ and CZ and Ortho representatives provincially&lt;/p&gt;</value>
+      </item>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;3 times daily&lt;/p&gt;&lt;p&gt;Action: Other&lt;/p&gt;&lt;p&gt;Specify: Removable Rigid Dressing in place: Remove straps and leave dressing open 3 times daily for 15-20 minutes at a time to allow for wound assessment, dressing changes, exercises and airing of limb. Reapply and re-adjust to limb.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -891,9 +911,8 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" min="1" name="Amputation Postprocedure Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="53e75d80-9828-4e56-af48-67242601a350" concept_name="AHS OGR MULTI SUR Admission Postprocedure CT" max="1" path="/items" name="Postprocedure ADT Smart Group"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="53e75d80-9828-4e56-af48-67242601a350" concept_name="AHS OGR MULTI SUR Admission Postprocedure CT" max="1" path="/items" name="Admission"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2b63fa99-3c08-4d1e-ae25-82996261d976" concept_name="AHS OGR MULTI SUR Admission Help Text Postprocedure CT" max="1" path="/items" name="Patient Movement Guidance"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Isolation"/>
     </Item>
@@ -982,18 +1001,19 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         </Item>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose; On Unit">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT; 4 times daily; On Unit"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health practioner(MRHP); Blood Glucose Targets ; On Unit"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="336130d1-ef44-4aeb-bce1-51a9ed572945" concept_name="AHS OGR ADULT SUR POCT Glucose Post CT" max="1" path="/items" name="POCT Glucose; On Unit"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9b505eeb-ce72-4817-9a29-f6a668ed1544" concept_name="AHS OGR ADULT SUR Urinary Catheter Post CT" max="1" path="/items" name="Urinary Catheter"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ea7de312-dae7-4211-a219-9dd48522fcf1" concept_name="NURINT Urinary Catheter - Discontinue [NUR378] IP Order" max="1" path="/items" name="Urinary Catheter - Discontinue; Once Routine, tomorrow, Remove indwelling urinary catheter on AM of  POD 1"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="48ff0c90-ec5b-4ed3-a524-3f1727f6421f" concept_name="NURINT In and Out Catheter [NUR385] IP Order" max="1" path="/items" name="In and Out Catheter; Conditional, PRN, May release conditional prn order if patient is unable to void"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fc216c0-a423-45c5-a3c2-5868c429b624" concept_name="NURINT Insert Indwelling Urinary Catheter [NUR380] IP Order" max="1" path="/items" name="Insert Indwelling Urinary Catheter; Once Routine, Catheter Type: Regular Foley"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ea7de312-dae7-4211-a219-9dd48522fcf1" concept_name="NURINT Urinary Catheter - Discontinue [NUR378] IP Order" max="1" path="/items" name="Urinary Catheter - Discontinue; Once Routine, WHEN patient able to stand or 1 person assist"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="1872f54e-a73d-4a8e-9ddb-10728be61b3e" concept_name="AHS OGR ADULT SUR Tube Care Postprocedure CT" max="1" path="/items" name="Tube Care"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a143e1ac-8acf-46ab-bfa1-a963a76297b1" concept_name="AHS OGR ADULT SUR Respiratory Assessments Post CT" max="1" path="/items" name="Respiratory Assessments; On Unit"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f3671c4f-f435-48b2-92c3-17d2c4362242" concept_name="zzz.RT" max="1" path="/items" name="zzz.RT; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="47e4ef97-8262-48d1-b98f-a992db71852c" concept_name="AHS OGR ADULT SUR Respiratory Interventions Post CT" max="1" path="/items" name="Respiratory Interventions; On Unit"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Wound Care; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ad856e8-02e8-4cd2-9c9a-fdee282d975c" concept_name="NURWOU Dressing Instructions [NUR875] Order" max="1" path="/items" name="Dressing Instructions:; Daily"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ad856e8-02e8-4cd2-9c9a-fdee282d975c" concept_name="NURWOU Dressing Instructions [NUR875] Order" max="1" path="/items" name="Dressing Instructions:; Removable Rigid Dressing"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8b033a1e-412b-4283-ab00-7935e5557f3b" concept_name="NURWOU Remove Dressing [NUR543] Order" max="1" path="/items" name="Remove Dressing; Frequency (hard stop): ***"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dc0b0295-eceb-4b17-8acc-e2fefaccdf3c" concept_name="NURWOU Incision site care [WOU4] Order" max="1" path="/items" name="Incision site care; Daily"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b8ee9653-797e-4a8f-8341-37bb5bc711de" concept_name="NURWOU Apply Adhesive Closure Strips [NUR395] Order" max="1" path="/items" name="Apply Adhesive Closure Strips; Frequency (hard stop): ***"/>
@@ -1049,10 +1069,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Once Routine, POD 1"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes; On Unit">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="213ee8e5-cbb2-45c1-b7a5-90a5a2fe21aa" concept_name="AHS OGR ADULT SUR IV Maintenance Post CT" max="1" path="/items" name="IV Maintenance"/>
-      </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e5b12e2d-3d37-42d9-a1cf-e4ab452dc889" concept_name="zzz.FI" max="1" path="/items" name="zzz.FI; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="213ee8e5-cbb2-45c1-b7a5-90a5a2fe21aa" concept_name="AHS OGR ADULT SUR IV Maintenance Post CT" max="1" path="/items" name="IV Maintenance; On Unit"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="1977d71d-3ea2-44ff-b239-caf9eb28232a" concept_name="AHS OGR ADULT SUR IV Fluid Infusions Post CT" max="1" path="/items" name="IV Fluid Infusions; On Unit"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Electrolyte Replacement; On Unit">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; potassium: Maintain serum potassium level greater than 3.5 mmol/L and less than 5 mmol/L"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; phosphate; Maintain serum phosphate level between 0.8 to 1.45 mmol/L"/>
