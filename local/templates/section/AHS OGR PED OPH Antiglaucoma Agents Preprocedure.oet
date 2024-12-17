@@ -72,48 +72,20 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaZOLAMIDE tablet; 10 mg/kg/dose, oral, once&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Maximum 1000 mg/day&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaZOLamide liquid oral; 10 mg/kg/dose, oral, once&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Maximum 1000 mg/day&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaZOLAMIDE IV; 10 mg/kg/dose, IV, once&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Maximum 1000 mg/day&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;mannitol IV (PED)&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;p&gt;(2 g/kg/dose) &amp;nbsp;IV over 30 to 60 minutes, administered 1 to 1.5 hours prior to surgery&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Ophthalmic Agents Antiglaucoma">
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8aea1e43-38a5-4fb0-bf27-88584a63e94b" concept_name="PHARM ACETAZOLAMIDE 250 MG TABLET [113] Order" max="1" path="/items" name="acetaZOLAMIDE tablet; 10 mg/kg/dose, oral, once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="78c4bf08-b93b-4dd5-9d6b-b7a23d8447df" concept_name="PHARM ACETAZOLAMIDE LIQUID ORAL ORDERABLE [4200783] Order" max="1" path="/items" name="acetaZOLamide liquid oral; 10 mg/kg/dose, oral, once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b6694cd7-579c-4ea1-9592-a586cbda8fd3" concept_name="PHARM ACETAZOLAMIDE IV ORDERABLE [420091] Order" max="1" path="/items" name="acetaZOLAMIDE IV; 10 mg/kg/dose, IV, once"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11e56a3b-e1ff-4c86-9a26-b73664d2e11b" concept_name="PHARM MANNITOL IV ORDERABLE (PED) [4200367] Order" max="1" path="/items" name="mannitol IV (PED)"/>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Antiglaucoma Agents">
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8aea1e43-38a5-4fb0-bf27-88584a63e94b" concept_name="PHARM ACETAZOLAMIDE 250 MG TABLET [113] Order" max="1" path="/items" name="acetaZOLAMIDE tablet; *** mg (10 mg/kg/dose), oral, once, Maximum 1000 mg/day"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="78c4bf08-b93b-4dd5-9d6b-b7a23d8447df" concept_name="PHARM ACETAZOLAMIDE LIQUID ORAL ORDERABLE [4200783] Order" max="1" path="/items" name="acetaZOLamide liquid oral; *** mg (10 mg/kg/dose), oral, once, Maximum 1000 mg/day"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b6694cd7-579c-4ea1-9592-a586cbda8fd3" concept_name="PHARM ACETAZOLAMIDE IV ORDERABLE [420091] Order" max="1" path="/items" name="acetaZOLAMIDE IV; *** mg (10 mg/kg/dose), IV, once, Maximum 1000 mg/day"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1a77aae4-ae39-4eb2-abf5-922bfb9356a9" concept_name="PHARM MANNITOL 20 Percent INTRAVENOUS SOLUTION [4749] Order" max="1" path="/items" name="mannitol bag 200 mg/mL; *** g, (2 g/kg/dose), intravenous, over 30 to 60 minutes, administered 1 to 1.5 hours prior to surgery"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
