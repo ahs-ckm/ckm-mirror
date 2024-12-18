@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="openEHR/v1/Template">
+  <id>7e6e87f1-b650-447a-aebb-55192e3b6ed7</id>
+  <name>AHS OSN MULTI PCHS Opioid Withdrawal Management </name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose/>
+      <use/>
+      <misuse/>
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value/>
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value/>
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value/>
+      </item>
+      <item>
+        <key>Client group</key>
+        <value/>
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value/>
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value/>
+      </item>
+      <item>
+        <key>Issues</key>
+        <value/>
+      </item>
+      <item>
+        <key>Owner</key>
+        <value/>
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value/>
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value/>
+      </item>
+      <item>
+        <key>User roles</key>
+        <value/>
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;OPIOID WITHDRAWAL MANAGEMENT procedure HCS-242-01&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;CREATE HEE LINK&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Monitor Withdrawl; Per Protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Substance:&amp;nbsp;&lt;br&gt;Complete Clinical Opiate Withdrawal Scale (COWS) score, on initial assessment and at minimum each shift, any time clinical judgement suggests worsening opioid withdrawal, and monitor for precipitated withdrawal as follows for patients who are initiated on buprenorphine-naloxone:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;30 - 60 minutes after the first dose of buprenorphine-naloxone&lt;/li&gt;&lt;li&gt;Then, at minimum each shift and any time clinical judgement suggests worsening opioid withdrawal&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Monitor Withdrawl; Per Protocol&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication;  Discontinue COWS score&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Until discontinued, Starting today&lt;br&gt;Discontinue COWS score and opioid withdrawal monitoring when 3 consecutive COWS scores are equal to or less than 7 within a 24 hour period.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication;  Discontinue COWS score&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Signs and Symptoms of Opioid overdose&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Until discontinued, Starting today&lt;br&gt;Monitor the patient for signs and symptoms of opioid overdose, which include but are not limited to the following: altered mental status, breathing problems, or extreme fatigue&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care Assessments&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Signs and Symptoms of Opioid overdose&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Monitor Withdrawl; Per protocol&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Substance:&amp;nbsp;&lt;br&gt;Complete Clinical Opiate Withdrawal Scale (COWS) score, on initial assessment and at minimum each shift, any time clinical judgement suggests worsening opioid withdrawal, and monitor for precipitated withdrawal as follows for patients who are initiated on buprenorphine-naloxone:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;30 - 60 minutes after the first dose of buprenorphine-naloxone&lt;/li&gt;&lt;li&gt;Then, at minimum each shift and any time clinical judgement suggests worsening opioid withdrawal&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Monitor Withdrawl; Per protocol&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Until discontinued, Starting today&lt;br&gt;Temperature Greater Than (°C):&amp;nbsp;&lt;br&gt;Temperature Less Than (°C):&amp;nbsp;&lt;br&gt;Systolic Blood Pressure Greater Than (mmHg):&amp;nbsp;&lt;br&gt;Systolic Blood Pressure Less Than (mmHg):&amp;nbsp;&lt;br&gt;Diastolic Blood Pressure Greater Than (mmHg):&amp;nbsp;&lt;br&gt;Diastolic Blood Pressure Less Than (mmHg):&amp;nbsp;&lt;br&gt;Heart Rate Greater Than (bpm):&amp;nbsp;&lt;br&gt;Heart Rate Less Than (bpm):&amp;nbsp;&lt;br&gt;Respiratory Rate Greater Than (breaths per min):&amp;nbsp;&lt;br&gt;Respiratory Rate Less Than (breaths per min):&amp;nbsp;&lt;br&gt;SpO2 Less Than (%):&amp;nbsp;&lt;br&gt;Blood Glucose Greater Than (mmol/L):&amp;nbsp;&lt;br&gt;Blood Glucose Less Than (mmol/L):&amp;nbsp;&lt;br&gt;Urine Output Less Than (mL/hr):&amp;nbsp;&lt;br&gt;Drain Output Greater Than (mL/hr):&amp;nbsp;&lt;br&gt;Other:&amp;nbsp;&lt;br&gt;Notify MRHP if any of the following:&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Decrease or change in level of consciousness.&lt;/li&gt;&lt;li&gt;Signs and symptoms of dehydration.&lt;/li&gt;&lt;li&gt;Suspicion of seizure activity, and/or&amp;nbsp;&lt;/li&gt;&lt;li&gt;Presence or suspicion of hallucination.&lt;/li&gt;&lt;li&gt;COWS score of 13 or greater, either during initial or subsequent COWS score assessments.&amp;nbsp;&lt;/li&gt;&lt;li&gt;COWs score increases by 2 or more following the initial dose of buprenorphine-naloxone or if the patient is complaining of significant increase in withdrawal symptoms .&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Patient Care&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Notify&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Notify Most Responsible Health Practitioner (MRHP)&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s bolus; 500 mL, IV x 1 dose; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;500 mL, intravenous, once, For 1 Doses&lt;br&gt;STAT&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s bolus; 500 mL, IV x 1 dose; STAT&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9 % bolus; 500 mL, IV x 1 dose; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;500 mL, intravenous, once, For 1 Doses&lt;br&gt;STAT&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9 % bolus; 500 mL, IV x 1 dose; STAT&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45 % bolus; 500 mL, IV X 1 dose; STAT&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;500 mL, intravenous, once, For 1 Doses&lt;br&gt;STAT&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Bolus&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45 % bolus; 500 mL, IV X 1 dose; STAT&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.9% bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;lactated Ringer&apos;s infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45% bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;sodium chloride 0.45% bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;D5-NaCl 0.9% infusion bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;D5-NaCl 0.9% infusion bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5%-sodium chloride 0.45% infusion&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in lactated Ringer&apos;s bag&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;intravenous, continuous&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Fluid/Electrolytes&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;IV Fluid Infusion&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dextrose 5% in lactated Ringer&apos;s bag&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;When the patient&apos;s COWs score is equal or greater than 13 and the patient consents to receiving OAT&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 1 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 1 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; Once&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, once, For 1 Doses&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 1 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; Q1H PRN&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, every hour, as needed, withdrawal, For 2 Doses&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 2 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 2 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 24 hours after first dose on Day 1&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, daily, Starting tomorrow, For 1 Days&lt;br&gt;To be given 24 hours after the first dose was given on Day 1&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 2 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; Q1H PRN x 2 doses&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, every hour, as needed, withdrawal, Starting tomorrow at 13:04, For 2 Doses&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 3 to 7 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;buprenorphine-nalxone Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;DAY 3 to 7 - buprenorphine-naloxone dose&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, daily, Starting 20/12/2024, For 5 Days&lt;br&gt;Administer total dose buprenorphine-naloxone from Day 2&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antihistamines&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antihistamines&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;25-50 mg, oral, 3 times per day, as needed, anxiety, dysphoria, lacrimation, insomnia and/or rhinorrhea, For 8 Days&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;acetaminophen tablet; 325-650 mg, oral, every 4 hours, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;325-650 mg, oral, every 4 hours, as needed, mild pain, myalgia, For 8 Days&lt;br&gt;Use in place of naproxen if nausea and/or vomiting&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Analgesics and Antipyretics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;naproxen tablet; 500 mg, oral, 2 times per day, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;500 mg, oral, 2 times per day, as needed, mild pain, myalgia, For 8 Days&lt;br&gt;Take with food.&amp;nbsp;&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dimenhyDRINATE tablet; 50-100 mg, oral, every 4 hours, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50-100 mg, oral, every 4 hours, as needed, nausea, vomiting, For 8 Days&lt;br&gt;This is a restricted drug. What is the indication for this order?&amp;nbsp;&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiemetics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;dimenhyDRINATE; 50-100 mg, intramuscular, every 4 hours, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50-100 mg, intramuscular, every 4 hours, as needed, vomiting, nausea, For 8 Days&lt;br&gt;This is a restricted drug. What is the indication for this order?&amp;nbsp;&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antidiarrhea Agents&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antidiarrhea Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;loperamide tablet; 4 mg, oral, once, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;4 mg, oral, once, as needed, diarrhea, For initial diarrhea experienced while on buprenorphine-naloxone protocol, For 8 Days&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antidiarrhea Agents&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;loperamide tablet; 2 mg, oral, every hour, as needed&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 mg, oral, every hour, as needed, diarrhea, For 8 Days&lt;br&gt;Following each loose bowel movement. Maximum dose 16 mg in 24 hours.&lt;br&gt;Routin&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Use cloNIDine for restlessness, hot flashes or sweating&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine test doses&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine test doses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cloNIDine tablet; 0.05 mg, oral, once, For 1 Doses&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.05 mg, oral, once, For 1 Doses&lt;br&gt;Test dose&lt;br&gt;If systolic BP is equal to or greater than 90 mmHg and diastolic BP is equal to or greater than 60 mmHg, give clonidine test dose&lt;br&gt;Check Blood Pressure 30 minutes after test dose.&amp;nbsp;&lt;br&gt;If dose tolerated (systolic BP remains equal to or greater than 90 mmHg, diastolic BP remains equal to or greater than 60 mmHg and patient is asymptomatic of hypotension), commence clonidine taper.&amp;nbsp;&lt;br&gt;If the dose is not tolerated (systolic BP is lower than 90 mmHg and/or diastolic BP is lower than 60 mmHg or patient is symptomatic of hypotension), wait a minimum of 4 hours and repeat test dose&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine test doses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cloNIDine tablet; 0.05 mg, oral, once, as needed,&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.05 mg, oral, once, as needed, hypertension, opioid withdrawal, For 1 Doses&lt;br&gt;Repeat test dose if needed.&amp;nbsp;&lt;br&gt;To be given at minimum 4 hours after first test dose if first test dose not tolerated (systolic BP is lower than 90 mmHg and/or diastolic BP is lower than 60 mmHg or patient is symptomatic of hypotension).&amp;nbsp;&lt;br&gt;If Repeat Test Dose tolerated (systolic BP remains equal to or greater than 90 mmHg, diastolic BP remains equal to or greater than 60 mmHg and patient is asymptomatic of hypotension), commence clonidine taper&lt;br&gt;If Repeat Test Dose not tolerated (systolic BP is lower than 90 mmHg and/or diastolic BP is lower than 60 mmHg or patient is symptomatic of hypotension), contact the authorized prescriber.&amp;nbsp;&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine taper&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine taper&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cloNIDine tablet; 0.1 mg, oral, 4 times per day, For 4 Days (Days 1-4)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.1 mg, oral, 4 times per day, For 4 Days&lt;br&gt;Clonidine taper Days 1-4.&amp;nbsp;&lt;br&gt;Check blood pressure prior to each dose and hold dose if systolic BP is less than 90 and/or diastolic BP is less than 60 mmHg and/or pulse is less than 60 beats per minutes (bpm)&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine taper&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cloNIDine tablet; 0.1 mg, oral, 3 times per day, For 1 Days (Day 5)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.1 mg, oral, 3 times per day, For 1 Days&lt;br&gt;Clonidine taper Day 5.&amp;nbsp;&lt;br&gt;Check blood pressure prior to administering dose and hold dose if systolic BP is less than 90 and/or diastolic BP is less than 60 mmHg and/or pulse is less than 60 beats per minutes (bpm)&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine taper&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cloNIDine tablet; 0.1 mg, oral, 2 times per day, For 1 Days (Day 6)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.1 mg, oral, 2 times per day, For 1 Days&lt;br&gt;Clonidine taper Day 6.&amp;nbsp;&lt;br&gt;Check blood pressure prior to administering dose and hold dose if systolic BP is less than 90 and/or diastolic BP is less than 60 mmHg and/or pulse is less than 60 beats per minutes (bpm)&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;cloNIDine taper&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;cloNIDine tablet; 0.1 mg, oral, daily, For 1 Days (Day 7)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;0.1 mg, oral, daily, For 1 Days&lt;br&gt;Clonidine taper Day 7&lt;br&gt;Check blood pressure prior to administering dose and hold dose if systolic BP is less than 90 and/or diastolic BP is less than 60 mmHg and/or pulse is less than 60 beats per minutes (bpm)&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sedative and Hypnotics&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Initiation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Sedative and Hypnotics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;50-100 mg, oral, daily, at bedtime as needed, insomnia, For 8 Days&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+    <items>
+      <item>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;When the patient&apos;s COWs score is equal or greater than 13 and the patient consents to receiving OAT&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 2 tablet, sublingual, every 24 hours, Starting today, For 1 Doses (Day 1)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, every 24 hours, Starting today, For 1 Doses&lt;br&gt;Buprenorphine-naloxone taper Day 1&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 8 mg-2 mg; 1 tablet, sublingual, every 24 hours, For 2 Days (Day 2 and 3)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;1 tablet, sublingual, every 24 hours, For 2 Days&lt;br&gt;Buprenorphine-naloxone taper Day 2 and 3&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 3 tablet, sublingual, every 24 hours, For 1 Days (Day 4)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;3 tablet, sublingual, every 24 hours, For 1 Days&lt;br&gt;Buprenorphine-naloxone taper Day 4&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 2 tablet, sublingual, every 24 hours, For 1 Days (Day 5)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, every 24 hours, For 1 Days&lt;br&gt;Buprenorphine-naloxone taper Day 5&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 1 tablet, sublingual, every 24 hours, For 1 Days (Day 6)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;1 tablet, sublingual, every 24 hours, For 1 Days&lt;br&gt;Buprenorphine-naloxone taper Day 6&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 1 tablet, sublingual, every 24 hours, For 1 Days (Day 7)&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;1 tablet, sublingual, every 24 hours, For 1 Days&lt;br&gt;Buprenorphine-naloxone taper Day 7.&lt;br&gt;After this dose, discontinue buprenorphine-naloxone&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;2 tablet, sublingual, once, as needed, withdrawal, continued symptoms of opioid withdrawal., Starting H+1 Hours, For 1 Doses&lt;br&gt;To be given 1 hour after initial dose. Buprenorphine-naloxone taper Day 1 additional dose if needed.&lt;br&gt;Routine&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Opioid Agonist Therapy (OAT) Taper and Discontinuation&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;n&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~7e6e87f1-b650-447a-aebb-55192e3b6ed7~NAME~AHS OSN MULTI PCHS Opioid Withdrawal Management }</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="PCHS Opioid Withdrawal Management">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="75788def-81cf-45ce-8f99-3d1d170a8148" concept_name="NURAX Monitor Withdrawl [NUR851] IP Order" max="1" path="/items" name="Monitor Withdrawl; Per Protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication;  Discontinue COWS score"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Signs and Symptoms of Opioid overdose"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="75788def-81cf-45ce-8f99-3d1d170a8148" concept_name="NURAX Monitor Withdrawl [NUR851] IP Order" max="1" path="/items" name="Monitor Withdrawl; Per protocol"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP)"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluid/Electrolytes">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Bolus">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4a1ba19c-a383-455f-81d6-eda4517485ed" concept_name="PHARM LACTATED RINGERS IV BOLUS [400296] Order" max="1" path="/items" name="lactated Ringer&apos;s bolus; 500 mL, IV x 1 dose; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ad170dc-0168-4a5e-b18d-b84496da37b8" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent IV BOLUS [400291] Order" max="1" path="/items" name="sodium chloride 0.9 % bolus; 500 mL, IV x 1 dose; STAT"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="18917acc-7675-4c2b-80c7-30bc2183b378" concept_name="PHARM SODIUM CHLORIDE 0.45 Percent IV BOLUS [400292] Order" max="1" path="/items" name="sodium chloride 0.45 % bolus; 500 mL, IV X 1 dose; STAT"/>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="IV Fluid Infusion">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="295a233b-429a-4871-864a-37589a4d16ee" concept_name="PHARM LACTATED RINGERS INTRAVENOUS SOLUTION [4318] Order" max="1" path="/items" name="lactated Ringer&apos;s infusion"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="745a84d0-3022-4aaf-8316-7a4cfbc6a520" concept_name="PHARM SODIUM CHLORIDE 0.45 Percent INTRAVENOUS SOLUTION [7318] Order" max="1" path="/items" name="sodium chloride 0.45% bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fc5d56-95fe-4de8-8ce0-e439da2e7acc" concept_name="PHARM DEXTROSE 5 Percent AND 0.9 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9815] Order" max="1" path="/items" name="D5-NaCl 0.9% infusion bag"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="035b0056-ec67-41b3-929a-5e8da8be6a19" concept_name="PHARM DEXTROSE 5 Percent AND 0.45 Percent SODIUM CHLORIDE INTRAVENOUS SOLUTION [9814] Order" max="1" path="/items" name="dextrose 5%-sodium chloride 0.45% infusion"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e6c2f7d6-521f-48e8-a779-591cfc76a637" concept_name="PHARM DEXTROSE 5 Percent AND LACTATED RINGERS INTRAVENOUS SOLUTION [9788] Order" max="1" path="/items" name="dextrose 5% in lactated Ringer&apos;s bag"/>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Opioid Agonist Therapy (OAT) Initiation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="buprenorphine-nalxone Initiation">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="DAY 1 - buprenorphine-naloxone dose">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; Once"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; Q1H PRN"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="DAY 2 - buprenorphine-naloxone dose">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 24 hours after first dose on Day 1"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; Q1H PRN x 2 doses"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="DAY 3 to 7 - buprenorphine-naloxone dose">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 2 tabs SL DAILY x 5 days."/>
+          </Item>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antihistamines">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="191e4ec6-188c-4ed3-878c-48df0e7a04cb" concept_name="PHARM HYDROXYZINE HCL 10 MG CAPSULE [162976] Order" max="1" path="/items" name="hydrOXYzine capsule; 25-50 mg, oral, 3 times per day, as needed"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics and Antipyretics">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1e33a863-91f4-4252-81d6-f1ebc705d032" concept_name="PHARM ACETAMINOPHEN 325 MG TABLET [101] Order" max="1" path="/items" name="acetaminophen tablet; 325-650 mg, oral, every 4 hours, as needed"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7e8b5fd2-b117-4a2e-af88-577adbf1aba0" concept_name="PHARM NAPROXEN 250 MG TABLET [5391] Order" max="1" path="/items" name="naproxen tablet; 500 mg, oral, 2 times per day, as needed"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="518ff2cd-715c-4eff-99e5-6678da8a95ac" concept_name="PHARM DIMENHYDRINATE 50 MG TABLET [2485] Order" max="1" path="/items" name="dimenhyDRINATE tablet; 50-100 mg, oral, every 4 hours, as needed"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="or"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b3470f1f-dbbe-484a-a690-f8a12001c2f8" concept_name="PHARM DIMENHYDRINATE INJECTION ORDERABLE [4200101] Order" max="1" path="/items" name="dimenhyDRINATE; 50-100 mg, intramuscular, every 4 hours, as needed"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antidiarrhea Agents">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a8c620a9-20a0-454c-b9d9-b54c3068c271" concept_name="PHARM LOPERAMIDE 2 MG TABLET [4562] Order" max="1" path="/items" name="loperamide tablet; 4 mg, oral, once, as needed"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="followed by"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a8c620a9-20a0-454c-b9d9-b54c3068c271" concept_name="PHARM LOPERAMIDE 2 MG TABLET [4562] Order" max="1" path="/items" name="loperamide tablet; 2 mg, oral, every hour, as needed"/>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cloNIDine">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cloNIDine test doses">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9d11eaf-a91d-4494-bad6-bd6ea78f56fc" concept_name="PHARM CLONIDINE HCL 0.025 MG TABLET [162836] Order" max="1" path="/items" name="cloNIDine tablet; 0.05 mg, oral, once, For 1 Doses"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9d11eaf-a91d-4494-bad6-bd6ea78f56fc" concept_name="PHARM CLONIDINE HCL 0.025 MG TABLET [162836] Order" max="1" path="/items" name="cloNIDine tablet; 0.05 mg, oral, once, as needed,"/>
+          </Item>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="cloNIDine taper">
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9d11eaf-a91d-4494-bad6-bd6ea78f56fc" concept_name="PHARM CLONIDINE HCL 0.025 MG TABLET [162836] Order" max="1" path="/items" name="cloNIDine tablet; 0.1 mg, oral, 4 times per day, For 4 Days (Days 1-4)"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9d11eaf-a91d-4494-bad6-bd6ea78f56fc" concept_name="PHARM CLONIDINE HCL 0.025 MG TABLET [162836] Order" max="1" path="/items" name="cloNIDine tablet; 0.1 mg, oral, 3 times per day, For 1 Days (Day 5)"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by #1"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9d11eaf-a91d-4494-bad6-bd6ea78f56fc" concept_name="PHARM CLONIDINE HCL 0.025 MG TABLET [162836] Order" max="1" path="/items" name="cloNIDine tablet; 0.1 mg, oral, 2 times per day, For 1 Days (Day 6)"/>
+            <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by #2"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d9d11eaf-a91d-4494-bad6-bd6ea78f56fc" concept_name="PHARM CLONIDINE HCL 0.025 MG TABLET [162836] Order" max="1" path="/items" name="cloNIDine tablet; 0.1 mg, oral, daily, For 1 Days (Day 7)"/>
+          </Item>
+        </Item>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Sedative and Hypnotics">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8b1adcea-e266-4a85-a422-dc0afb4bead9" concept_name="PHARM TRAZODONE 50 MG TABLET [8085] Order" max="1" path="/items" name="traZODone tablet; 50-100 mg, oral, daily, at bedtime as needed"/>
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Opioid Agonist Therapy (OAT) Taper and Discontinuation">
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="buprenorphine-naloxone taper">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 2 tablet, sublingual, every 24 hours, Starting today, For 1 Doses (Day 1)"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="77094098-f0a6-407d-bd6a-bdcab90abaa8" concept_name="PHARM BUPRENORPHINE 8 MG-NALOXONE 2 MG SUBLINGUAL TABLET [34714] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 8 mg-2 mg; 1 tablet, sublingual, every 24 hours, For 2 Days (Day 2 and 3)"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by #1"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 3 tablet, sublingual, every 24 hours, For 1 Days (Day 4)"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by #2"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 2 tablet, sublingual, every 24 hours, For 1 Days (Day 5)"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by #3"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 1 tablet, sublingual, every 24 hours, For 1 Days (Day 6)"/>
+          <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="followed by #4"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 1 tablet, sublingual, every 24 hours, For 1 Days (Day 7)"/>
+        </Item>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1d550761-3f22-48e3-94ea-5a9379b3b534" concept_name="PHARM BUPRENORPHINE 2 MG-NALOXONE 0.5 MG SUBLINGUAL TABLET [34713] Order" max="1" path="/items" name="buprenorphine-naloxone tablet sublingual 2 mg-0.5 mg; 2 tablet, sublingual, once, as needed (Day 1 additional dose)"/>
+      </Item>
+    </Item>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">8AE70853975A75254E6D39A8DE3652AF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1">
+    <digest id="MD5-CAM-1.0.1">4B2F0F6CD593E442DA9C30277A3EA9CF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
+    <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
+    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.freetextorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">5DC6E2FC9E91ADD05E7C5B3E06F83D23</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+</template>
