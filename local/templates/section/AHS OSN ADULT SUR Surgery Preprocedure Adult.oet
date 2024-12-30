@@ -196,15 +196,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Chemistry; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Order Hemoglobin A1C &amp;nbsp;if it has not been performed in the past 3 months&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Chemistry; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Beta hCG, Quantitative; Human Chorionic Gonadotropin (hCG), Beta Subunit, collect within 72 hours prior to surgery; Once Routine&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Chemistry; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
@@ -628,15 +620,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Chemistry; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
-    <items>
-      <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Order Hemoglobin A1C &amp;nbsp;if it has not been performed in the past 3 months&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Chemistry; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Beta hCG, Quantitative; Once Routine&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Labs-Chemistry; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
@@ -1041,10 +1025,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Once Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Once Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c [LAB90] Order" max="1" path="/items" name="Hemoglobin A1c; Once Routine"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b8e2b536-e0ae-46e6-8c61-23ab6d5ef161" concept_name="AHS OGR ADULT SUR Chemistry Preprocedure CT" max="1" path="/items" name="Labs - Chemistry"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbdc630e-847e-466a-a859-3299451363c4" concept_name="LAB Beta hCG, Quantitative [LAB143] Order" max="1" path="/items" name="Beta hCG, Quantitative; Human Chorionic Gonadotropin (hCG), Beta Subunit, collect within 72 hours prior to surgery; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation; Preprocedure/Day Surgery">
@@ -1054,7 +1035,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Urine; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="200f1f97-1136-4f57-b64e-c1f9ba0e5eb7" concept_name="AHS OGR MULTI SUR Labs Urine Preprocedure" max="1" path="/items" name="Urine"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="200f1f97-1136-4f57-b64e-c1f9ba0e5eb7" concept_name="AHS OGR MULTI SUR Labs Urine Preprocedure CT" max="1" path="/items" name="Urine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Point of Care Testing (Non Glucose); Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="Pregnancy Test Urine POCT Manual; Once Routine"/>
@@ -1101,8 +1082,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0a81827a-b6e8-4584-be88-4c604e8fe88c" concept_name="AHS OGR ADULT SUR Pre-operative Eating and Drinking CT" max="1" path="/items" name="Pre-operative Eating and Drinking"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f8889b0e-34e2-430f-93bf-c70cc45d6bfa" concept_name="AHS OGR ADULT SUR Pre-operative Carbohydrate Loading CT" max="1" path="/items" name="Pre-operative Carbohydrate Loading"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet; Effective Midnight"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cf5fd466-2e89-4b28-8444-91ef52299beb" concept_name="AHS OGR ADULT SUR Diet and Nutrition Day of Procedure CT" max="1" path="/items" name="Diet and Nutrition"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety; Preprocedure/Day Surgery">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="68c645dd-33f1-4806-a646-df281eac3217" concept_name="AHS OGN MULTI SUR Spinal Precautions" max="1" path="/items" name="Spinal Precautions"/>
@@ -1112,7 +1092,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Monitors"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9b3b7503-21ee-4520-aea5-16a1bfd2126f" concept_name="AHS OGR ADULT SUR POCT Glucose Preprocedure CT" max="1" path="/items" name="POCT Glucose; Preprocedure/Day Surgery"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="83e527c1-1ede-4e3e-a110-32f736a64833" concept_name="Height and Weight Preprocedure Adult Smart Group" max="1" path="/items" name="Height and Weight; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="83e527c1-1ede-4e3e-a110-32f736a64833" concept_name="AHS OGR ADULT SUR Height and Weight Preprocedure CT" max="1" path="/items" name="Height and Weight; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; For patients having a Distal Pancreatectomy or Total Pancreatectomy"/>
       </Item>
@@ -1128,10 +1108,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap); Once Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine; Once Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="deaddbbb-447b-4e92-b547-9c4c735a631c" concept_name="LAB Hemoglobin A1c [LAB90] Order" max="1" path="/items" name="Hemoglobin A1c; Once Routine"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b8e2b536-e0ae-46e6-8c61-23ab6d5ef161" concept_name="AHS OGR ADULT SUR Chemistry Preprocedure CT" max="1" path="/items" name="Labs - Chemistry"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbdc630e-847e-466a-a859-3299451363c4" concept_name="LAB Beta hCG, Quantitative [LAB143] Order" max="1" path="/items" name="Beta hCG, Quantitative; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation">
@@ -1141,7 +1118,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Urine; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="200f1f97-1136-4f57-b64e-c1f9ba0e5eb7" concept_name="AHS OGR MULTI SUR Labs Urine Preprocedure" max="1" path="/items" name="Urine"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="200f1f97-1136-4f57-b64e-c1f9ba0e5eb7" concept_name="AHS OGR MULTI SUR Labs Urine Preprocedure CT" max="1" path="/items" name="Urine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Point of Care Testing (Non Glucose); Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e7136855-e966-442e-b200-65215d6de885" concept_name="LABPOCT Pregnancy Test Urine POCT [LAB6108] Order" max="1" path="/items" name="Pregnancy Test Urine POCT; Once Routine"/>
@@ -1183,11 +1160,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="898c802f-db27-463e-ae02-9cdc61490229" concept_name="PHARM gabapentin capsule Compiled Order" max="1" path="/items" name="gabapentin capsule; 1200 mg, oral, once, 1 hour prior to surgery"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64" concept_name="AHS OGR ADULT SUR Antiemetic Day of Procedure CT" max="1" path="/items" name="Antiemetics; Preprocedure/Day Surgery"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants; Preprocedure/Day Surgery">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine tablet Compiled Order" max="1" path="/items" name="raNITIdine tablet; 150 mg, oral, once, For aspiration risk 2 hours prior to surgery"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="05b202cc-0015-412c-9c83-ed0c7727d1f0" concept_name="PHARM metoclopramide tablet Compiled Order" max="1" path="/items" name="metoclopramide tablet; 10 mg, oral, once, For aspiration risk"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="2f146082-249a-4e51-8df8-0f94c0a5d2fc" concept_name="PHARM SODIUM CITRATE-CITRIC ACID 500 MG-334 MG 5 ML ORAL SOLUTION [11394] Order" max="1" path="/items" name="sodium citrate-citric acid liquid oral 100 mg-66.8 mg/mL; 30 mL, oral, once, For aspiration risk On call to operating room"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ef9a449c-b4da-40e9-b9f2-d46526581f46" concept_name="AHS OGR ADULT SUR Antiulcer Agents and Acid Suppressants Surgery Preprocedure" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other; Preprocedure/Day Surgery">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
