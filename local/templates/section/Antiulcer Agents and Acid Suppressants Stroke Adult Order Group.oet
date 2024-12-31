@@ -80,11 +80,19 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;famotidine tablet; 20 mg, oral, 2 times per day, with breakfast and at bedtime, Discontinue when patient resumes feeding&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;INC002323210 - Ranitidine removed from AHS formulary/product list replaced with famotidine tablet effective Feb 25/25&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Antacids">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM pantoprazole magnesium Enteric-coated tablet Order" max="1" path="/items" name="pantoprazole magnesium tablet enteric-coated; 40 mg, oral, daily, Discontinue when patient resumes feeding"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine Tablet Order" max="1" path="/items" name="raNITIdine tablet; 150 mg, oral, 2 times per day, with breakfast and at bedtime, Discontinue when patient resumes feeding"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a50383f2-2468-43f0-9868-2a26bbd0a054" concept_name="PHARM famotidine injection Order" max="1" path="/items" name="famotidine injection; 20mg, intravenous, every 12 hours, scheduled, Discontinue when patient resumes feeding"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f5df0026-4c75-406d-bb2e-4773e1c528b2" concept_name="PHARM PANTOPRAZOLE MAGNESIUM 40 MG TABLET,DELAYED RELEASE [163115] Order" max="1" path="/items" name="pantoprazole magnesium tablet enteric-coated; 40 mg, oral, daily, Discontinue when patient resumes feeding"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ce3988e-a439-4ab8-820c-f91f76f03341" concept_name="PHARM FAMOTIDINE 20 MG TABLET [10011] Order" max="1" path="/items" name="famotidine tablet; 20 mg, oral, 2 times per day, with breakfast and at bedtime, Discontinue when patient resumes feeding"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a50383f2-2468-43f0-9868-2a26bbd0a054" concept_name="PHARM FAMOTIDINE INJECTION ORDERABLE [420210] Order" max="1" path="/items" name="famotidine injection; 20mg, intravenous, every 12 hours, scheduled, Discontinue when patient resumes feeding"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
