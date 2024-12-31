@@ -716,11 +716,15 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiulcer Agents and Acid Suppressants&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;raNITIdine tablet&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Antiulcer Agents and Acid Suppressants&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;famotidine tablet&apos;]/activities[at0001]">
     <items>
       <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;INC002323210 - Ranitidine removed from AHS formulary/product list replaced with famotidine tablet effective Feb 25/25&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;150 mg, oral, once, For aspiration risk 2 hours prior to surgery&lt;/p&gt;</value>
+        <value>&lt;p&gt;20 mg, oral, once, For aspiration risk 2 hours prior to surgery&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -778,7 +782,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Admission">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="98601317-e4fc-4e6f-8b6b-0f750f0f094c" concept_name="ADT Admit to Inpatient [ADT1] Order" max="1" path="/items" name="Admit to Inpatient; Admit to ___; Under ___; Admitting Diagnosis ___"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Notify Primary Care physician and other clinicians in the active circle of care regarding patient admission"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Notify Primary Care physician and other clinicians in the active circle of care regarding patient admission"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfer"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticipated Date of Discharge"/>
@@ -795,9 +799,9 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Assistive Devices"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0a81827a-b6e8-4584-be88-4c604e8fe88c" concept_name="AHS OGR ADULT SUR Pre-operative Eating and Drinking" max="1" path="/items" name="Pre-operative Eating and Drinking"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0a81827a-b6e8-4584-be88-4c604e8fe88c" concept_name="AHS OGR ADULT SUR Pre-operative Eating and Drinking CT" max="1" path="/items" name="Pre-operative Eating and Drinking"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f8889b0e-34e2-430f-93bf-c70cc45d6bfa" concept_name="AHS OGR ADULT SUR Pre-operative Carbohydrate Loading" max="1" path="/items" name="Pre-operative Carbohydrate Loading"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f8889b0e-34e2-430f-93bf-c70cc45d6bfa" concept_name="AHS OGR ADULT SUR Pre-operative Carbohydrate Loading CT" max="1" path="/items" name="Pre-operative Carbohydrate Loading"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet; effective now"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cd63555b-f980-4be5-919a-d084217b1ee1" concept_name="DIET Adult Diet [DIET24] Order" max="1" path="/items" name="Adult Diet"/>
     </Item>
@@ -825,7 +829,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8301d0e3-ce93-46c1-b620-fdd564acff15" concept_name="NURAX Measure Height or Length [NUR616] IP Order" max="1" path="/items" name="Measure Height or Length"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25bf98f2-28e6-4d31-840d-678c497b5053" concept_name="NURINT Gastric Tube Care [NUR336] IP Order" max="1" path="/items" name="Gastric Tube Care"/>
@@ -833,20 +837,20 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="47e4ef97-8262-48d1-b98f-a992db71852c" concept_name="Respiratory Interventions Oxygen Therapy Order Panel" max="1" path="/items" name="Respiratory Interventions"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="47e4ef97-8262-48d1-b98f-a992db71852c" concept_name="AHS OGR ADULT SUR Respiratory Interventions Post CT" max="1" path="/items" name="Respiratory Interventions"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Tomorrow AM">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; tomorrow AM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; tomorrow AM"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel; tomorrow AM"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel; tomorrow AM"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Liver Investigations (ALP, ALT, Bili, GGT, LD, Lipase) Panel">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); tomorrow AM"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); tomorrow AM"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; tomorrow AM"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin, Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; tomorrow AM"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase [LAB99] Order" max="1" path="/items" name="Lipase; tomorrow AM"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) [LAB85] Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT); tomorrow AM"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) [LAB96] Order" max="1" path="/items" name="Lactate Dehydrogenase (LD); tomorrow AM"/>
@@ -869,15 +873,15 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations Repeating">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hematology">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; daily; for 3 occurences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; daily; for 3 occurences"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel; daily; for 3 occurences"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel; daily; for 3 occurences"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Liver Investigations (ALP, ALT, Bili, GGT, LD, Lipase) Panel">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT); daily for 3 occurences"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de86cc5a-bd49-4c74-9c52-a05eea0aa482" concept_name="LAB Alkaline Phosphatase (ALP) [LAB112] Order" max="1" path="/items" name="Alkaline Phosphatase (ALP); daily for 3 occurences"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; daily for 3 occurences"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin, Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total; daily for 3 occurences"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="312cb709-e836-41ec-9d69-3a51e5e52b16" concept_name="LAB Lipase [LAB99] Order" max="1" path="/items" name="Lipase; daily for 3 occurences"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fe96c45e-fd90-4e6c-82f5-94229430659e" concept_name="LAB Gamma Glutamyl Transferase (GGT) [LAB85] Order" max="1" path="/items" name="Gamma Glutamyl Transferase (GGT); daily for 3 occurences"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) [LAB96] Order" max="1" path="/items" name="Lactate Dehydrogenase (LD); daily for 3 occurences"/>
@@ -930,8 +934,8 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone or morphine">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet"/>
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="50b56831-0738-4764-9120-bee1ec804fc8" concept_name="PHARM HYDROmorphone, short acting tablet Compiled Order" max="1" path="/items" name="HYDROmorphone, short acting tablet"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0f57fb7d-059a-4be4-9290-b8398ab42fc8" concept_name="PHARM morphine, short acting tablet Compiled Order" max="1" path="/items" name="morphine, short acting tablet"/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Naloxone Protocol Adult">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f9cefb1f-13ec-4641-be98-1c73336aa9a6" concept_name="AHS OGN ADULT GEN Naloxone" max="1" path="/items" name="Naloxone for Opioid Reversal"/>
@@ -942,9 +946,9 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone or morphine">
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="HYDROmorphone">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE IV IM SC ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone injection"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE INJECTION ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone injection"/>
               <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR &lt;LINKED&gt;"/>
-              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE IV IM SC ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone injection #1"/>
+              <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6ef07925-c8d8-403c-a888-184693860553" concept_name="PHARM HYDROMORPHONE INJECTION ORDERABLE [4200241] Order" max="1" path="/items" name="HYDROmorphone injection #1"/>
             </Item>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Morphine">
               <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
@@ -973,12 +977,12 @@
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR &lt;LINKED&gt;"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="89747e8b-2e7e-403e-88ca-59d112fcc1c9" concept_name="PHARM SENNOSIDES 8.5 MG 5 ML ORAL LIQUID [167258] Order" max="1" path="/items" name="sennosides liquid oral 1.7 mg/mL"/>
         </Item>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM BISACODYL 5 MG TABLETDELAYED RELEASE [1079] Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1071327b-42fc-4918-80d7-5580f593434a" concept_name="PHARM BISACODYL 5 MG TABLET,DELAYED RELEASE [1079] Order" max="1" path="/items" name="bisaCODyl tablet enteric-coated"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b7a7e48f-eb4a-47e2-82f9-c191ebd189f1" concept_name="PHARM BISACODYL 10 MG RECTAL SUPPOSITORY [1080] Order" max="1" path="/items" name="bisaCODyl (DULCOLAX) suppository"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiulcer Agents and Acid Suppressants">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c8e60c0b-e28c-475c-83c5-2d3e7186edb0" concept_name="PHARM raNITIdine tablet Compiled Order" max="1" path="/items" name="raNITIdine tablet"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29979e39-c694-41b4-a79b-3b25e273e89d" concept_name="PHARM pantoprazole sodium delayed release tablet Compiled Order" max="1" path="/items" name="pantoprazole sodium, delayed release tablet"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ce3988e-a439-4ab8-820c-f91f76f03341" concept_name="PHARM FAMOTIDINE 20 MG TABLET [10011] Order" max="1" path="/items" name="famotidine tablet"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29979e39-c694-41b4-a79b-3b25e273e89d" concept_name="PHARM pantoprazole sodium, delayed release tablet Compiled Order" max="1" path="/items" name="pantoprazole sodium, delayed release tablet"/>
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Consults/Referrals">
