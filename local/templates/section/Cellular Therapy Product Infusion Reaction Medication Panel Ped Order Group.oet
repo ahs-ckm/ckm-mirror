@@ -364,6 +364,62 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;famotidine oral&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;INC002323210 - Ranitidine removed from AHS formulary/product list replaced with famotidine effective Feb 25/25&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;famotidine oral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;famotidine liquid oral&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;*** mg (1 mg/kg/dose), oral, 2 times per day, as needed, anaphylaxis&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;famotidine oral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;famotidine liquid oral&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;famotidine oral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;famotidine tablet&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;*** mg (1 mg/kg/dose), oral, 2 times per day, as needed, anaphylaxis&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;famotidine oral&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;famotidine tablet&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;famotidine oral&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ranitidine oral&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;INC002323210 - Ranitidine removed from AHS formulary/product list replaced with famotidine effective Feb 25/25&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;ranitidine oral&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -554,12 +610,18 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Linked with &quot;OR&quot; #1"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ec2e26f3-d7a6-4824-993e-425902bce4a0" concept_name="PHARM diphenhydrAMINE capsule Compiled Order" max="1" path="/items" name="diphenhydrAMINE capsule"/>
     </Item>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76895ec7-b7e8-40b5-8ae3-28eb3b739e7c" concept_name="PHARM HYDROCORTISONE SODIUM SUCCINATE IV ORDERABLE [420214] Order" max="1" path="/items" name="hydrocortisone sodium succinate injection"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ed44d00-d5cf-4a9a-aecc-c55a1e3ae2da" concept_name="PHARM METHYLPREDNISOLONE INJECTION ORDERABLE [420035] Order" max="1" path="/items" name="methylPREDNISolone sodium succinate injection"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76895ec7-b7e8-40b5-8ae3-28eb3b739e7c" concept_name="PHARM HYDROCORTISONE SODIUM SUCCINATE INJECTION ORDERABLE [420214] Order" max="1" path="/items" name="hydrocortisone sodium succinate injection"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="0ed44d00-d5cf-4a9a-aecc-c55a1e3ae2da" concept_name="PHARM METHYLPREDNISOLONE SODIUM SUCCINATE INJECTION ORDERABLE [420035] Order" max="1" path="/items" name="methylPREDNISolone sodium succinate injection"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="famotidine injection">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a50383f2-2468-43f0-9868-2a26bbd0a054" concept_name="PHARM FAMOTIDINE INJECTION ORDERABLE [420210] Order" max="1" path="/items" name="famotidine injection"/>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="famotidine oral">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fed587f5-4374-44ee-b99e-ff37e2ee6932" concept_name="PHARM FAMOTIDINE LIQUID ORAL ORDERABLE [4200828] Order" max="1" path="/items" name="famotidine liquid oral"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Linked with &quot;OR&quot;"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4ce3988e-a439-4ab8-820c-f91f76f03341" concept_name="PHARM FAMOTIDINE 20 MG TABLET [10011] Order" max="1" path="/items" name="famotidine tablet"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="ranitidine oral">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
