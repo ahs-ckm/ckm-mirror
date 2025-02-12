@@ -299,8 +299,8 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Electrolytic, Caloric and Water balance&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Calcium Gluconate&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pediatric dose (patients under 50 kg)&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
     <items>
       <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Aug 19 - awaiting links to calcium protocols that could be referenced for more specific information&lt;/p&gt;</value>
+        <key>CKT.Clinical Guidance</key>
+        <value>&lt;p&gt;Link to:&amp;nbsp;https://insite.albertahealthservices.ca/Main/assets/tms/rs/tms-rs-akcn-pdd-apheresis-calcium-infusion-protocol-for-pediatrics.pdf#search=Calcium%20Infusion%20Protocol%20for%20Pediatrics&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -312,7 +312,7 @@
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Aug 19 - awaiting links to calcium protocols that could be referenced for more specific information&lt;/p&gt;</value>
+        <value>&lt;p&gt;Link to&amp;nbsp;Calcium Infusion Protocol for Adults&lt;/p&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -381,11 +381,11 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="29e480cb-309e-41c4-a2a2-0280133e301c" concept_name="LAB Hemoglobin F and S Quantitation [LAB4951] Order" max="1" path="/items" name="Hemoglobin F and S Quantitation"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium Ionized [LAB54] Order" max="1" path="/items" name="Calcium, Ionized"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium, Ionized [LAB54] Order" max="1" path="/items" name="Calcium, Ionized"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium [LAB103] Order" max="1" path="/items" name="Magnesium"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) [LAB96] Order" max="1" path="/items" name="Lactate Dehydrogenase (LD)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin, Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="134a5623-814e-4cc7-8079-5650fb98bf61" concept_name="LAB Aspartate Aminotransferase (AST) [LAB131] Order" max="1" path="/items" name="Aspartate Aminotransferase (AST)"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="25f47bf0-23bc-4bad-9122-847f839ca10d" concept_name="LAB Alanine Aminotransferase (ALT) [LAB132] Order" max="1" path="/items" name="Alanine Aminotransferase (ALT)"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine"/>
@@ -403,7 +403,7 @@
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="During Transfusion Labs">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium Ionized [LAB54] Order" max="1" path="/items" name="Calcium, Ionized"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium, Ionized [LAB54] Order" max="1" path="/items" name="Calcium, Ionized"/>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Post Transfusion Labs">
@@ -414,14 +414,14 @@
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbf4a251-314e-47f5-bf4d-d9fe30bea419" concept_name="LABBBT Direct Antiglobulin Test [LAB41779] Order" max="1" path="/items" name="Direct Antiglobulin Test"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Chemistry #1">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na K Cl CO2 Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose Random [LAB82] Order" max="1" path="/items" name="Glucose, Random"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium Ionized [LAB54] Order" max="1" path="/items" name="Calcium, Ionized"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d46e2ac6-cc78-46ed-bb55-3e9eef1bd55a" concept_name="LAB Electrolyte Panel (Na, K, Cl, CO2, Anion Gap) [LAB16] Order" max="1" path="/items" name="Electrolyte Panel (Na, K, Cl, CO2, Anion Gap)"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="24fff237-ddc3-4d9d-9f45-8b45bb506486" concept_name="LAB Glucose, Random [LAB82] Order" max="1" path="/items" name="Glucose, Random"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e1d289ae-1943-48d7-99f3-0126f974fb6b" concept_name="LAB Calcium, Ionized [LAB54] Order" max="1" path="/items" name="Calcium, Ionized"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1318381c-0ef3-41c6-8fd0-32cfca866727" concept_name="LAB Magnesium [LAB103] Order" max="1" path="/items" name="Magnesium"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1ef469fe-549f-423f-aad5-51e073a25aef" concept_name="LAB Phosphate [LAB113] Order" max="1" path="/items" name="Phosphate"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff3fbde8-2635-4dcd-9b7b-e3e3db07514b" concept_name="LAB Creatinine [LAB383] Order" max="1" path="/items" name="Creatinine"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3904f72b-698d-4c85-9c5e-b17cac188d47" concept_name="LAB Urea [LAB140] Order" max="1" path="/items" name="Urea"/>
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7592e4e0-2356-414b-86d6-4abcfd9c18de" concept_name="LAB Bilirubin, Total [LAB50] Order" max="1" path="/items" name="Bilirubin, Total"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a7b8a395-03d5-406e-8da6-8a1cfdf23955" concept_name="LAB Lactate Dehydrogenase (LD) [LAB96] Order" max="1" path="/items" name="Lactate Dehydrogenase (LD)"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Coagulation #1">
@@ -435,9 +435,9 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% bag; 250 mL, intravenous, bolus, once. Administer over 30 minutes. Bolus pre red blood cell exchange."/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM sodium chloride 0.9% infusion Order" max="1" path="/items" name="sodium chloride 0.9% bag; 250 mL, intravenous, bolus, once. Bolus midway through red blood cell exchange procedure"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM electrolyte solution (Plasma-Lyte A) injection Order" max="1" path="/items" name="electrolyte solution (PLASMA-LYTE A) bag; *** mL, intravenous, bolus, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag; 250 mL, intravenous, bolus, once. Administer over 30 minutes. Bolus pre red blood cell exchange."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag; 250 mL, intravenous, bolus, once. Bolus midway through red blood cell exchange procedure"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="33c120d1-58b1-4cf7-bd5e-f81fad5849b8" concept_name="PHARM ELECTROLYTE-A INTRAVENOUS SOLUTION [6331] Order" max="1" path="/items" name="electrolyte solution (PLASMA-LYTE A) bag; *** mL, intravenous, bolus, once"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
@@ -445,59 +445,59 @@
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anticoagulants">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8b184d5-7460-4b2e-b1e6-bed7584fe1ab" concept_name="PHARM anticoagulant citrate dextrose solution formula-A injection Order" max="1" path="/items" name="anticoagulant citrate dextrose solution formula-A; 750 mL, extracorporeal, once"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8b184d5-7460-4b2e-b1e6-bed7584fe1ab" concept_name="PHARM DEXTROSE 2.45 GRAM-SOD CITRATE 2.2 GRAM-CITRIC AC 730 MG 100 ML SOLN [124768] Order" max="1" path="/items" name="anticoagulant citrate dextrose solution formula-A; 750 mL, extracorporeal, once"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antihistamine">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e291a7f8-304b-4996-bae4-bd0898744b91" concept_name="PHARM cetirizine Oral liquid 1 mg/mL Order" max="1" path="/items" name="cetirizine liquid oral 1 mg/mL; 5 mg PO once as needed for allergic reaction"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e291a7f8-304b-4996-bae4-bd0898744b91" concept_name="PHARM CETIRIZINE 5 MG 5 ML ORAL SYRUP [162588] Order" max="1" path="/items" name="cetirizine liquid oral 1 mg/mL; 5 mg PO once as needed for allergic reaction"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03598775-beba-4039-87cd-db82b478f155" concept_name="PHARM cetirizine Tablet Order" max="1" path="/items" name="cetirizine tablet; 5 mg PO once as needed for allergic reaction"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="03598775-beba-4039-87cd-db82b478f155" concept_name="PHARM cetirizine tablet Compiled Order" max="1" path="/items" name="cetirizine tablet; 5 mg PO once as needed for allergic reaction"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Analgesics/Antipyretics">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM acetaminophen ORAL liquid 80 mg/mL Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6c2f394d-320e-40c4-9c76-55f6437dd0fb" concept_name="PHARM ACETAMINOPHEN 80 MG ML ORAL DROPS (WRAPPER) [408770001] Order" max="1" path="/items" name="acetaminophen liquid oral 80 mg/mL; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR">
-          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen Chewable tablet Order" max="1" path="/items" name="acetaminophen chewable tablet; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6306a2ca-b6d3-4a1e-8388-b74a25d739db" concept_name="PHARM acetaminophen chewable tablet Compiled Order" max="1" path="/items" name="acetaminophen chewable tablet; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR #1"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen Tablet Order" max="1" path="/items" name="acetaminophen tablet; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="17eeb736-36ac-4e6f-81eb-b4969ac1e465" concept_name="PHARM acetaminophen tablet Compiled Order" max="1" path="/items" name="acetaminophen tablet; 15 mg/kg/dose, PO, every 6 hours, as needed, mild pain"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antiemetics">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ondansetron Oral liquid 0.8 mg/mL Order" max="1" path="/items" name="ondansetron liquid oral 0.8 mg/mL mfg; 4 mg PO every 8 hours as needed for nausea, vomiting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="11f7a892-e0e9-4c35-b3b6-29f67917b8c8" concept_name="PHARM ONDANSETRON 0.8 MG ML LIQUID ORAL MFG [6002288] Order" max="1" path="/items" name="ondansetron liquid oral 0.8 mg/mL mfg; 4 mg PO every 8 hours as needed for nausea, vomiting"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="OR"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron Tablet Order" max="1" path="/items" name="ondansetron tablet; 4 mg PO every 8 hours as needed for nausea, vomiting"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceb70162-69de-42da-b231-05ff8dbc8eae" concept_name="PHARM ondansetron tablet Compiled Order" max="1" path="/items" name="ondansetron tablet; 4 mg PO every 8 hours as needed for nausea, vomiting"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Electrolytic, Caloric and Water balance">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium Carbonate">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For patients less than 12 years:">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88262e5e-d31d-44a9-81e0-e3e6624b570c" concept_name="PHARM calcium carbonate (as elemental) Chewable tablet Order" max="1" path="/items" name="calcium carbonate (as elemental) tablet chewable; 2 tabs PO, once PRN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88262e5e-d31d-44a9-81e0-e3e6624b570c" concept_name="PHARM calcium carbonate (as elemental) tablet chewable Compiled Order" max="1" path="/items" name="calcium carbonate (as elemental) tablet chewable; 2 tabs PO, once PRN"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="For patients 12 years or older:">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88262e5e-d31d-44a9-81e0-e3e6624b570c" concept_name="PHARM calcium carbonate (as elemental) Chewable tablet Order" max="1" path="/items" name="calcium carbonate (as elemental) tablet chewable; 4 tabs PO, once PRN"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="88262e5e-d31d-44a9-81e0-e3e6624b570c" concept_name="PHARM calcium carbonate (as elemental) tablet chewable Compiled Order" max="1" path="/items" name="calcium carbonate (as elemental) tablet chewable; 4 tabs PO, once PRN"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium Gluconate">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pediatric dose (patients under 50 kg)">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a604efde-e1e5-4afd-adb5-7454b394e232" concept_name="PHARM calcium gluconate infusion Order" max="1" path="/items" name="calcium gluconate infusion (ped); 5,000 mg, intravenous, continuous"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a604efde-e1e5-4afd-adb5-7454b394e232" concept_name="PHARM CALCIUM GLUCONATE INFUSION ORDERABLE (PED) [4200625] Order" max="1" path="/items" name="calcium gluconate infusion (ped); 5,000 mg, intravenous, continuous"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Adult dose (patients 50 kg or over)">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a604efde-e1e5-4afd-adb5-7454b394e232" concept_name="PHARM calcium gluconate infusion Order" max="1" path="/items" name="calcium gluconate infusion (ped); 5,000 mg, intravenous, continuous"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a604efde-e1e5-4afd-adb5-7454b394e232" concept_name="PHARM CALCIUM GLUCONATE INFUSION ORDERABLE (PED) [4200625] Order" max="1" path="/items" name="calcium gluconate infusion (ped); 5,000 mg, intravenous, continuous"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Emergency Dose">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c04d7d63-db05-462b-8a2c-d3ad78b13713" concept_name="PHARM calcium gluconate injection Order" max="1" path="/items" name="calcium gluconate IV; 50 mg/kg/dose, intravenous, once as needed"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c04d7d63-db05-462b-8a2c-d3ad78b13713" concept_name="PHARM CALCIUM GLUCONATE IV ORDERABLE [420202] Order" max="1" path="/items" name="calcium gluconate IV; 50 mg/kg/dose, intravenous, once as needed"/>
           </Item>
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium Chloride">
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Less than 45 kg">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride IV; 10 mg/kg/hour, intravenous, continuous"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM CALCIUM CHLORIDE IV ORDERABLE [420251] Order" max="1" path="/items" name="calcium chloride IV; 10 mg/kg/hour, intravenous, continuous"/>
           </Item>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="45 kg or over">
-            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM calcium chloride injection Order" max="1" path="/items" name="calcium chloride IV; 500 mg/hr (50 mL/hr), intravenous, continuous"/>
+            <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="dbcb536c-a2be-4828-9d7f-93cf33141ee0" concept_name="PHARM CALCIUM CHLORIDE IV ORDERABLE [420251] Order" max="1" path="/items" name="calcium chloride IV; 500 mg/hr (50 mL/hr), intravenous, continuous"/>
           </Item>
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="841e131f-3f17-4587-97ee-e11286b50532" concept_name="Anaphylaxis Management Inpatient Pediatric Order Group" max="1" path="/items" name="Anaphylaxis Management"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="98e7f2ef-778b-45aa-bca4-cae6b3ec3431" concept_name="Hematology Femoral Line Insertion and Removal Inpatient Pediatric Order Panel" max="1" path="/items" name="Femoral Line Insertion and Removal Panel"/>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="83cbaf81-7a86-4bbf-9e0e-f2ef6a407b4a" concept_name="Pediatric Central Catheter Care Smart Group" max="1" path="/items" name="Pediatric Central Catheter Care"/>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="83cbaf81-7a86-4bbf-9e0e-f2ef6a407b4a" concept_name="AHS OGR PEDS CH Pediatric Central Catheter Care" max="1" path="/items" name="Pediatric Central Catheter Care"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="82e7d5e2-4b09-4c0a-b91f-e92e8099e3e3" concept_name="Hematology Vortex Dual Port Care Pediatric Inpatient Order Panel" max="1" path="/items" name="Vortex Dual Port Care"/>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
