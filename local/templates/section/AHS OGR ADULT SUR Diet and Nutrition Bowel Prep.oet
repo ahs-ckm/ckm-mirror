@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;DRAFT content:&lt;/p&gt;&lt;p&gt;- make orders single-select&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
+      </item>
+      <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;OSQ&amp;nbsp;173822&lt;/p&gt;</value>
       </item>
@@ -80,11 +84,27 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;NPO; Diet effective midnight, Starting tomorrow at 0000, Initiate at midnight prior to procedure&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Clear Fluids; Now or Specify Date/Time&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Standard Diet: Clear Fluids&lt;br&gt;Initiate 24 hours prior to procedure&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Adult Diet; Clear Fluids; Now or Specify Date/Time&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;NR&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
