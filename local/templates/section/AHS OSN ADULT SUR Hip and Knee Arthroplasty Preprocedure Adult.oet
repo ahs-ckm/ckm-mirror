@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;This order set is currently under review with updates expected Oct. 21, 2025&lt;br&gt;&lt;strong&gt;For content currently available in PRD refer to rev. 110 in CKM&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~9a9b400a-7977-409e-bc24-de55c902e8f1~NAME~AHS OSN ADULT SUR Hip and Knee Arthroplasty Preprocedure Adult}</value>
       </item>
@@ -80,7 +84,23 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic (PAC)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Education; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Medication Instructions&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;/p&gt;&lt;p&gt;-&amp;nbsp;Addition of Prehab Program - referral to Prehab&lt;br&gt;- update Admission order group to include option for &apos;Observation bed request order&apos;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic (PAC)&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Remove PAC Diet and Nutrition order group, replace with Standard PAC Diet Adult order group&lt;/p&gt;&lt;p&gt;- Update Nursing Communication orders to Patient Education orders in PAC Patient Education section&lt;br&gt;- Addition of PAC Pregnancy Testing Preprocedure order group&lt;br&gt;- Removed PAC Referrals (Nursing communication orders), replaced with new PAC Appointment Request order&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic (PAC)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Education; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education; Medication Instructions&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -88,7 +108,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic (PAC)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Education; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Preoperative Teaching&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic (PAC)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Education; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education; Preoperative Teaching&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -141,6 +161,14 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;N&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Remove Diet and Nutrition order group, replace with Standard Diet Adult order group&lt;br&gt;- Remove POCT Glucose order group, replace with Standard POCT Glucose order group&lt;br&gt;- Addition of&amp;nbsp;Pregnancy Testing Preprocedure order group&lt;br&gt;- Added inpatient consult to Dentistry and Social Work&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -414,18 +442,17 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eceb359a-3bca-4bfe-8b5d-db6da9f411c1" concept_name="SURCASE Case Request Operating Room [SUR1] Order" max="1" path="/items" name="Case Request Operating Room"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="92b00a0e-2bd3-4bbc-9d0c-65d875dc12ce" concept_name="AHS OGR ADULT SUR Prehab Referral" max="1" path="/items" name="Prehab Program; Case Scheduling/ADT"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8b86f221-6cd2-4298-a66a-b60799aea4b1" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure_DRAFT" max="1" path="/items" name="Admission"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Preadmission Testing Screening"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9f6694c9-7e2f-4d54-b74a-eb9f668d36a4" concept_name="AHS OGR ADULT GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre-Admission Clinic (PAC)">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Diet and Nutrition; Pre-Admission Clinic">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="48b5386c-83f4-43d6-9a7c-425c8dbc9026" concept_name="AHS OGR ADULT SUR Preoperative Eating and Drinking Hip and Knee Arthroplasty" max="1" path="/items" name="Preoperative Eating and Drinking; Future, Expires: 12 Months"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="104a9df0-4117-447b-9c34-b5af38bd17a1" concept_name="AHS OGR ADULT SUR PAC Diet and Nutrition Preprocedure CT_DRAFT" max="1" path="/items" name="PAC Diet and Nutrition; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Patient Education; Pre-Admission Clinic">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Medication Instructions"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Preoperative Teaching"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education; Medication Instructions"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education; Preoperative Teaching"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="da54b5aa-9a57-41a3-84cd-5943fccdf266" concept_name="AHS OGR ADULT SUR PAC Height and Weight Preprocedure CT" max="1" path="/items" name="PAC Height and Weight; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Lab Ordering Guidance; Pre-Admission Clinic">
@@ -446,6 +473,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Labs - Coagulation; Pre-Admission Clinic">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Lab Collect, Expires: 1 Year"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="36ed916c-bad2-4690-924c-4e3519f33f53" concept_name="AHS OGN MULTI SUR PAC Pregnancy Testing Preprocedure" max="1" path="/items" name="PAC - Pregnancy Testing Preprocedure; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Diagnostic Imaging; Pre-Admission Clinic">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9de9d579-aa64-4e6e-9cf4-5ed9c48783b2" concept_name="IMGGR GR Chest 2 Projections [IMG36] Order" max="1" path="/items" name="GR Chest 2 Projections; Ancillary Performed, Expires: 1 Year"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="db64f6f9-9161-4fb9-abec-75610691f63a" concept_name="IMGGR GR Cervical Spine [IMG56] Order" max="1" path="/items" name="GR Cervical Spine; Ancillary Performed, Expires: 1 Year"/>
@@ -471,7 +499,6 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Cardiology; Pre-Admission Clinic">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Expires: 12 Months"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="7cfb47e4-4342-40fa-a1d9-1cad271015bb" concept_name="AHS OGR ADULT SUR PAC Referrals Hip and Knee Arthroplasty Preprocedure Adult" max="1" path="/items" name="PAC Referrals; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hemodialysis"/>
@@ -538,6 +565,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Antidotes"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c28b8557-f7c5-413d-96d4-d4f48eff651d" concept_name="AHS OGR MULTI SUR PAC Referrals" max="1" path="/items" name="PAC Referrals; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referrals"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Day of Procedure">
@@ -576,6 +604,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2c9f81b4-8a69-4652-9209-68efc8d49938" concept_name="AHS OGN MULTI SUR Pregnancy Testing Preprocedure" max="1" path="/items" name="Pregnancy Testing Preprocedure; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry"/>
@@ -639,6 +668,8 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="afe72e28-a55a-4d01-8c77-fe5f97bca8f5" concept_name="CONS Inpatient Consult to Acute Pain Services [CON119] IP Order" max="1" path="/items" name="Inpatient Consult to Acute Pain Services"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="76f9cb07-110b-46b2-927c-581c85b8ae3c" concept_name="CONS Inpatient Consult to Pharmacy [304CON10001] IP Order" max="1" path="/items" name="Inpatient Consult to Pharmacy"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7b362cae-0f00-4124-93d8-ca5d2d028074" concept_name="CONS Inpatient Consult to Dentistry [CON58] IP Order" max="1" path="/items" name="Inpatient Consult to Dentistry"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f553a088-185b-449f-b30c-578870db7117" concept_name="CONS Inpatient Consult to Social Work [CON65] IP Order" max="1" path="/items" name="Inpatient Consult to Social Work"/>
       </Item>
     </Item>
   </definition>
