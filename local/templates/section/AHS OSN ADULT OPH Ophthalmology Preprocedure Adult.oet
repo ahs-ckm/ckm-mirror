@@ -63,6 +63,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;This order set is currently under review with updates expected Oct. 21, 2025&lt;br&gt;&lt;strong&gt;For content currently available in PRD refer to rev. 149 in CKM&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~9a8364df-1cab-42a3-9818-08d7ae471de3~NAME~AHS OSN ADULT OPH Ophthalmology Preprocedure Adult}</value>
       </item>
@@ -76,11 +80,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Diet/Nutrition; Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]">
     <items>
       <item>
-        <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Refer to AHS Pre-Operative Fasting and Carbohydrate Loading for Adult Patients Undergoing Surgical Interventions Requiring Anesthesia Care Guideline (link to be added once available).&lt;br&gt;The minimum duration of pre-operative fasting prior to the administration of anesthesia should be 8 hours after a meal that includes meat or fried or fatty foods, 6 hours after a light meal (such as toast and a clear fluid), 2 hours after clear fluids.&lt;br&gt;-&amp;nbsp;Canadian Nutrition Screening Tool (CNST)&lt;/p&gt;&lt;p&gt;URL: https://www.albertahealthservices.ca/frm-21101.pdf&amp;nbsp;&lt;/p&gt;</value>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- update Admission order group to include option for &apos;Observation bed request order&apos;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Remove PAC Diet and Nutrition order group, replace with Standard PAC Diet Adult order group&lt;br&gt;- Update Nursing Communication orders to Patient Education orders in PAC Patient Education section&lt;br&gt;- Addition of CBC, no diff, BNP, PTH&lt;br&gt;- Consolidation of Pregnancy testing into PAC Pregnancy Testing Preprocedure order group&lt;br&gt;- Removed PAC Referrals (Nursing communication orders), replaced with new PAC Appointment Request order&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -108,7 +120,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Care Interventions; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Hold medication; Patient Instructions re: Diabetic Medications; Future, Expires: 12 Months&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Care Interventions; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education; Patient Instructions re: Diabetic Medications; Future, Expires: 12 Months&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -124,7 +136,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Care Interventions; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Discharge Instructions; Future, Expires: 12 Months&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Care Interventions; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education; Discharge Instructions; Future, Expires: 12 Months&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -132,19 +144,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Care Interventions; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Nursing Communication; Future, Expires: 12 Months&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Patient Care Interventions; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Patient Education; Hold Medication; Future, Expires: 12 Months&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;&amp;nbsp;Instruct patient to hold *** medication *** days prior to scheduled surgery&lt;/p&gt;</value>
+        <value>&lt;p&gt;Instruct patient to hold *** medication *** days prior to scheduled surgery&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Pre-Admission Clinic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PAC Anti-Inflammatory Agents - Opthalmic; Pre-Admission Clinic&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ketorolac drop eye 0.5%; 1 drop, 4 times per day, Start 3 days prior to procedure&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]">
     <items>
       <item>
         <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;&amp;nbsp;Travis - should this be 0.45%?&lt;/p&gt;</value>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Remove POCT Glucose order group, replace with Standard POCT Glucose order group&lt;/p&gt;&lt;p&gt;- Addition of Pregnancy Testing Preprocedure order group&lt;br&gt;- Addition of PRN Antiemetics&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -169,14 +181,6 @@
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Specimen Type: ***&lt;/p&gt;&lt;p&gt;Specimen Source: ***&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;PRN Antiemetics; Preprocedure/Day Surgery&apos;]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;INC001898583 - Pending Approval (May 3/24)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -210,10 +214,6 @@
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;ERX&amp;nbsp;166510&lt;/p&gt;</value>
       </item>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;INC001294006 - request to add dropperettes&lt;/p&gt;</value>
-      </item>
     </items>
   </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Surgical Admission Medications; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Corticosteroids - Ophthalmic&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
@@ -221,14 +221,6 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Before Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Surgical Admission Medications; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Mydriatics - Ophthalmic&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;INC001711417 - revise to linked orders (PF and bottle)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
       </item>
     </items>
   </annotations>
@@ -296,6 +288,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Remove Diet and Nutrition order group, replace with Standard Diet Adult order group&lt;br&gt;- Remove POCT Glucose order group, replace with Standard POCT Glucose order group&lt;br&gt;- Update Notify order group - Urine output adjusted to 0.5 mL/kg/hr&lt;br&gt;- Addition of CBC, no diff, ALT, Bilirubin total, ALP, PTH&lt;br&gt;- Addition of Pregnancy Testing Preprocedure order group&lt;br&gt;- Addition of Anti-Infective Agents - Ruptured Globe&lt;br&gt;- Remove Non-formulary therapeutic interchange medications from Ophthalmic Agents - Antiglaucoma&lt;br&gt;- Addition of lidocaine jelly to Local Anesthetics section&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Height and Weight; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Weigh Patient; Once&apos;]/activities[at0001]">
     <items>
       <item>
@@ -352,27 +352,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;ketorolac, preservative free drop eye 0.45%; dropperette; 1 drop, every 10 minutes, for 2 doses, Start 60 minutes pre-op&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;prednisoLONE sodium phosphate drop eye 0.5%; dropperette; 1 drop, once&apos;]/activities[at0001]">
     <items>
       <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;ERX&amp;nbsp;166510&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Anti-Inflammatory; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;INC001711417 - revise to linked orders (PF and bottle)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -416,14 +400,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Constricting; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;pilocarpine 2% eye drop, 1 drop, every 5 minutes, for 2 doses&apos;]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;INC001711417 - revise to linked orders (PF and bottle)&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Constricting; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;pilocarpine 2% eye drop, 1 drop, every 5 minutes, for 2 doses&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;pilocarpine drop eye 2%; dropperette; 1 drop, every 5 minutes, for 2 doses&apos;]/activities[at0001]">
     <items>
       <item>
@@ -461,14 +437,6 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Ophthalmic Agents - Constricting; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;pilocarpine 2% eye drop, 1 drop, once&apos;]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;INC001711417 - revise to linked orders (PF and bottle)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -512,22 +480,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Local Anesthetics; Preprocedure/Day Surgery&apos;]">
-    <items>
-      <item>
-        <key>Transform.Clinical Notes</key>
-        <value>&lt;p&gt;Effective Feb 25/25 Lidocaine 4% Topical Cream - Maxilene and Lidocaine-Prilocaine 2.5%-2.5% Topical Cream - EMLA no longer available in AHS, replaced with Lidocaine 5% Topical Cream - Zensa&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Local Anesthetics; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;tetracaine or proparacaine 0.5% eye drop, 1 drop, once, on arrival&apos;]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;INC001711417 - revise to linked orders (PF and bottle)&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Local Anesthetics; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;tetracaine or proparacaine 0.5% eye drop, 1 drop, once, on arrival&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;tetracaine, preservative free drop eye 0.5%; dropperette; 1 drop, once, On arrival.  Apply to operative eye.&apos;]/activities[at0001]">
     <items>
       <item>
@@ -565,14 +517,6 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Medications&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Local Anesthetics; Preprocedure/Day Surgery&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;tetracaine or proparacaine 0.5% eye drop, 1 drop, once, On call to OR&apos;]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;INC001711417 - revise to linked orders (PF and bottle)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -643,23 +587,16 @@
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Ophthalmology Preprocedure Adult">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Preadmission Testing Screening"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Goals of Care"/>
-    </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedure Planning">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eceb359a-3bca-4bfe-8b5d-db6da9f411c1" concept_name="SURCASE Case Request Operating Room [SUR1] Order" max="1" path="/items" name="Case Request Operating Room"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Preadmission Testing Screening"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8b86f221-6cd2-4298-a66a-b60799aea4b1" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure_DRAFT" max="1" path="/items" name="Admission"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9f6694c9-7e2f-4d54-b74a-eb9f668d36a4" concept_name="AHS OGR ADULT GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Pre-Admission Clinic">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Diet/Nutrition; Pre-Admission Clinic">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Instruct patient to be NPO after midnight prior to surgery"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3d08255-931f-4fd2-be9e-14d59ecc6d54" concept_name="DIETNUR Diet Instructions to Nursing [NUR512] Order" max="1" path="/items" name="Diet Instructions to Nursing; Instruct patient to take only Clear Liquids 24 hours prior to surgery"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="104a9df0-4117-447b-9c34-b5af38bd17a1" concept_name="AHS OGR ADULT SUR PAC Diet and Nutrition Preprocedure CT_DRAFT" max="1" path="/items" name="PAC Diet and Nutrition; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Education"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Vital Signs; Pre-Admission Clinic">
@@ -677,10 +614,10 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Height and Weight"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PAC Patient Care Interventions; Pre-Admission Clinic">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="de05cd1b-de73-42ce-8f75-a4994ce7ce4d" concept_name="NURCOM Hold medication [NUR793] IP Order" max="1" path="/items" name="Hold medication; Patient Instructions re: Diabetic Medications; Future, Expires: 12 Months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education; Patient Instructions re: Diabetic Medications; Future, Expires: 12 Months"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Eye Prep; Future, Expires: 12 Months"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Discharge Instructions; Future, Expires: 12 Months"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Future, Expires: 12 Months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education; Discharge Instructions; Future, Expires: 12 Months"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07af740c-f7eb-4017-9aa2-c688f984867b" concept_name="NUREDU Patient Education [NUR593] Order" max="1" path="/items" name="Patient Education; Hold Medication; Future, Expires: 12 Months"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Assessments"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Respiratory Interventions"/>
@@ -701,6 +638,7 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Genetics"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Blood Gas"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="36ed916c-bad2-4690-924c-4e3519f33f53" concept_name="AHS OGN MULTI SUR PAC Pregnancy Testing Preprocedure" max="1" path="/items" name="PAC - Pregnancy Testing Preprocedure; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diagnostic Imaging"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Procedures"/>
@@ -777,13 +715,12 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b209bea4-6213-4877-9696-d6bf9062d01c" concept_name="PHARM TOBRAMYCIN 0.3 Percent -DEXAMETHASONE 0.1 Percent EYE DROPS,SUSPENSION [11567] Order" max="1" path="/items" name="dexAMETHasone-tobramycin 0.1%-0.3% eye drop; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ecba7cad-75a6-46d7-b0f9-abb2c0ef4998" concept_name="PHARM PREDNISOLONE ACETATE 1 Percent EYE DROPS,SUSPENSION [6487] Order" max="1" path="/items" name="prednisoLONE acetate drop eye 1%; 1 drop, 4 times per day, Start 3 days prior to procedure"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c7fdc123-db65-414f-9c33-16fb89ae6e80" concept_name="AHS OGR ADULT SUR PAC Referrals CT" max="1" path="/items" name="PAC Referrals; Pre-Admission Clinic"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="c28b8557-f7c5-413d-96d4-d4f48eff651d" concept_name="AHS OGR MULTI SUR PAC Referrals" max="1" path="/items" name="PAC Referrals; Pre-Admission Clinic"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Referrals"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Before Day of Procedure">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet/Nutrition; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0df1efd3-abee-4abe-bc17-e629682ec314" concept_name="AHS OGR ADULT SUR Diet and Nutrition Before Day of Procedure CT" max="1" path="/items" name="Diet and Nutrition"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0df1efd3-abee-4abe-bc17-e629682ec314" concept_name="AHS OGR ADULT SUR Diet and Nutrition Before Day of Procedure CT" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet/Nutrition"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; lateral (left)"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d788864b-f86f-41e4-b41b-efd0f19a82d1" concept_name="NURCOM Positioning Instruction [NUR100] Order" max="1" path="/items" name="Positioning Instruction; lateral (right)"/>
@@ -812,6 +749,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e8793c4-7ed2-4517-9522-891a7d016de5" concept_name="LABMIC Eye Culture, Invasive [LAB4076] Order" max="1" path="/items" name="Eye Culture, Invasive; Once"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="339b632b-6338-4676-ab86-d232d51b39eb" concept_name="LABMIC Mycobacteria Culture [LAB877] Order" max="1" path="/items" name="Mycobacteria Culture; Once"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2c9f81b4-8a69-4652-9209-68efc8d49938" concept_name="AHS OGN MULTI SUR Pregnancy Testing Preprocedure" max="1" path="/items" name="Pregnancy Testing Preprocedure"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation"/>
@@ -827,9 +765,8 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Glycemic Management"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis"/>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PRN Antiemetics; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2721c450-89d3-444c-b271-d30a579d120b" concept_name="AHS OGR ADULT SUR PRN Antiemetics" max="1" path="/items" name="PRN Antiemetics; Preprocedure/Day Surgery"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2721c450-89d3-444c-b271-d30a579d120b" concept_name="AHS OGR ADULT SUR PRN Antiemetics" max="1" path="/items" name="PRN Antiemetics; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="PRN Antiemetics"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Surgical Admission; Preprocedure/Day Surgery">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4b26d247-8d30-4f36-907c-d6dc48d4b6cf" concept_name="DIET NPO Diet [DIET41] Order" max="1" path="/items" name="NPO Diet"/>
@@ -888,14 +825,12 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Day of Procedure">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="cf5fd466-2e89-4b28-8444-91ef52299beb" concept_name="AHS OGR ADULT SUR Diet and Nutrition Day of Procedure CT" max="1" path="/items" name="Diet and Nutrition"/>
-      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="def775de-ba15-4cc2-bbc8-89f5b7594c5b" concept_name="AHS OGR ADULT SUR Diet and Nutrition Day of Procedure CT_DRAFT" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Precautions and Safety"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Vital Signs; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; Per protocol"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; AM of Surgery; Once Routine, tomorrow at 08:00, Assess once on the AM of Surgery"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3075bff7-28dd-4e96-816d-4cfddd0ee1d5" concept_name="NURAX Vital Signs [NUR490] IP Order" max="1" path="/items" name="Vital Signs; AM of Surgery; Once Routine, Assess once on the AM of Surgery"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="42391c72-1c4f-4d33-82b5-f3a864d711d3" concept_name="NURAX Pulse Oximetry [NUR585] IP Order" max="1" path="/items" name="Pulse Oximetry; Per protocol"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="99bd6a68-2771-4309-8049-8f713ed560c3" concept_name="NURAX Neurovascular Checks [NUR475] IP Order" max="1" path="/items" name="Neurovascular Checks; Per protocol"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="87b7c3e2-681c-4068-939f-9d19411a14ea" concept_name="NURAX Neurological Vital Signs [NUR609] IP Order" max="1" path="/items" name="Neurological Vital Signs; Per protocol"/>
@@ -917,6 +852,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Coagulation; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; Once for 1 occurrences, Blood"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2c9f81b4-8a69-4652-9209-68efc8d49938" concept_name="AHS OGN MULTI SUR Pregnancy Testing Preprocedure" max="1" path="/items" name="Pregnancy Testing Preprocedure; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Chemistry"/>
@@ -936,7 +872,7 @@
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="a9ef28ba-22e1-4bac-aa9a-e6b3a4172eff" concept_name="PHARM SODIUM CHLORIDE 0.9 Percent INTRAVENOUS SOLUTION [27838] Order" max="1" path="/items" name="sodium chloride 0.9% bag; 75 mL/hr, intravenous, continuous"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Medications">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64" concept_name="AHS OGR ADULT SUR Antiemetic Day of Procedure CT" max="1" path="/items" name="Antiemetics"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ac1ea48e-9b47-4178-8ab4-4c0acb7c4f64" concept_name="AHS OGR ADULT SUR Antiemetic Day of Procedure CT" max="1" path="/items" name="Antiemetics; Preprocedure/Day Surgery"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anxiolytics; Preprocedure/Day Surgery">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7b989f64-65e2-49d8-af73-d21c9e196404" concept_name="PHARM LORAZEPAM ORAL TABLET ORDERABLE [4200767] Order" max="1" path="/items" name="LORazepam tablet; 0.5 mg, sublingual, once, as needed, anxiety"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="7b989f64-65e2-49d8-af73-d21c9e196404" concept_name="PHARM LORAZEPAM ORAL TABLET ORDERABLE [4200767] Order" max="1" path="/items" name="LORazepam tablet; 1 mg, sublingual, once, as needed, anxiety"/>
@@ -983,6 +919,7 @@
         </Item>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Local Anesthetics; Preprocedure/Day Surgery">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07965185-b481-4ba1-ad67-9fc5d0d30a58" concept_name="PHARM LIDOCAINE 5 Percent TOPICAL CREAM [23460] Order" max="1" path="/items" name="lidocaine 5% Cream; 1 application , once, Apply below affected eye"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="814d174b-d7df-45ab-95c1-e6f30e687b50" concept_name="PHARM LIDOCAINE 20 MG ML (2 Percent) JELLY ORDERABLE [4200754] Order" max="1" path="/items" name="lidocaine 2% Topical; 1 application , once, Apply to ***"/>
           <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="tetracaine or proparacaine 0.5% eye drop, 1 drop, once, on arrival">
             <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9aada1ad-6dd6-43fe-a647-b2ca357f6b85" concept_name="PHARM TETRACAINE HCL (PF) 0.5 Percent EYE DROPS IN A DROPPERETTE [166728] Order" max="1" path="/items" name="tetracaine, preservative free drop eye 0.5%; dropperette; 1 drop, once, On arrival.  Apply to operative eye."/>
             <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Or (linked order)"/>
@@ -1031,11 +968,11 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
-    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.quantityorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">22AFA84E6D7935A3623EDFA7C2EB6D65</digest>
