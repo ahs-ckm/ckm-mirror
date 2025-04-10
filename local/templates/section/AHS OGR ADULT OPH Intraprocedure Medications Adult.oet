@@ -156,6 +156,14 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Other&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;onabotulinumtoxinA (Botox) 50 unit Injection; 50 units, intraocular, once, Send to OR&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;This is a Formulary Restricted drug. The restriction criteria are listed at the top of the order composer. Does the patient meet these criteria? &lt;strong&gt;Yes&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Other&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -172,56 +180,36 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Viscoelastics&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0001]">
-    <items>
-      <item>
-        <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Awaiting provincial pharmacy standardization and ERX build or EAP build&lt;/p&gt;&lt;p&gt;Either VISCOAT or DISCOVISC&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Viscoelastics&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Intraprocedure Medications">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Anti-Infective Agents - Ophthalmic">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM moxifloxacin Eye drop 0.5% Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, Both eyes, Once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3784debb-f8eb-4797-811c-695e2fccfead" concept_name="PHARM MOXIFLOXACIN 0.5 Percent EYE DROPS [35699] Order" max="1" path="/items" name="moxifloxacin drop eye 0.5%; 1 drop, Both eyes, Once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ophthalmic Agents">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="920bfdea-88ad-4030-9b8f-e5c56cb4c546" concept_name="PHARM cefTAZidime injection Order" max="1" path="/items" name="cefTAZidime IV/IM; (2.25 mg/0.1 mL); intravitreal, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5de941f7-f84a-411e-9c3c-c79178edd993" concept_name="PHARM ganciclovir injection Order" max="1" path="/items" name="ganciclovir IV; 800 mcg/0.1 mL ; 800 mcg, intravitreal, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM vancomycin injection Order" max="1" path="/items" name="vancomycin IV; (1 mg / 0.1 mL); intravitreal, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="127d7162-1a85-44d2-a98f-d996a32628a9" concept_name="PHARM mitoMYcin injection Order" max="1" path="/items" name="mitoMYcin injection; 50 mcg in NaCl 0.9% 0.5 mL (100 mcg/mL) injection; 100 mcg, subconjunctival, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="127d7162-1a85-44d2-a98f-d996a32628a9" concept_name="PHARM mitoMYcin injection Order" max="1" path="/items" name="mitoMYcin injection; 100 mcg in NaCl 0.9% 0.5 mL (200 mcg/mL) injection; 200 mcg, subconjunctival, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="127d7162-1a85-44d2-a98f-d996a32628a9" concept_name="PHARM mitoMYcin injection Order" max="1" path="/items" name="mitoMYcin injection; 150 mcg in NaCl 0.9% 0.5 mL (300 mcg/mL) injection; 300 mcg, subconjunctival, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="baf4cbce-c387-4065-a002-3edc50f39a6c" concept_name="PHARM fluorouracil 50 mg/mL in syringe injection Order" max="1" path="/items" name="fluorouracil 50 mg/mL syringe (PHARM); 5 mg/0.1 mL injection; 5 mg, subconjunctival, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="baf4cbce-c387-4065-a002-3edc50f39a6c" concept_name="PHARM fluorouracil 50 mg/mL in syringe injection Order" max="1" path="/items" name="fluorouracil 50 mg/mL syringe (PHARM); 50 mg, other - see med instructions, for ophthalmic soak"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="920bfdea-88ad-4030-9b8f-e5c56cb4c546" concept_name="PHARM CEFTAZIDIME IV IM ORDERABLE [420007] Order" max="1" path="/items" name="cefTAZidime IV/IM; (2.25 mg/0.1 mL); intravitreal, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5de941f7-f84a-411e-9c3c-c79178edd993" concept_name="PHARM GANCICLOVIR IV ORDERABLE [420212] Order" max="1" path="/items" name="ganciclovir IV; 800 mcg/0.1 mL ; 800 mcg, intravitreal, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="84e61dc2-1c30-4dfe-951a-b67f1fd9a910" concept_name="PHARM VANCOMYCIN IV ORDERABLE [420024] Order" max="1" path="/items" name="vancomycin IV; (1 mg / 0.1 mL); intravitreal, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="127d7162-1a85-44d2-a98f-d996a32628a9" concept_name="PHARM MITOMYCIN INJECTION ORDERABLE [4200013] Order" max="1" path="/items" name="mitoMYcin injection; 50 mcg in NaCl 0.9% 0.5 mL (100 mcg/mL) injection; 100 mcg, subconjunctival, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="127d7162-1a85-44d2-a98f-d996a32628a9" concept_name="PHARM MITOMYCIN INJECTION ORDERABLE [4200013] Order" max="1" path="/items" name="mitoMYcin injection; 100 mcg in NaCl 0.9% 0.5 mL (200 mcg/mL) injection; 200 mcg, subconjunctival, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="127d7162-1a85-44d2-a98f-d996a32628a9" concept_name="PHARM MITOMYCIN INJECTION ORDERABLE [4200013] Order" max="1" path="/items" name="mitoMYcin injection; 150 mcg in NaCl 0.9% 0.5 mL (300 mcg/mL) injection; 300 mcg, subconjunctival, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="baf4cbce-c387-4065-a002-3edc50f39a6c" concept_name="PHARM FLUOROURACIL 50 MG ML IN SYRINGE (PHARM) [6000578] Order" max="1" path="/items" name="fluorouracil 50 mg/mL syringe (PHARM); 5 mg/0.1 mL injection; 5 mg, subconjunctival, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="baf4cbce-c387-4065-a002-3edc50f39a6c" concept_name="PHARM FLUOROURACIL 50 MG ML IN SYRINGE (PHARM) [6000578] Order" max="1" path="/items" name="fluorouracil 50 mg/mL syringe (PHARM); 50 mg, other - see med instructions, for ophthalmic soak"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Local Anesthetic">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae96afb4-5941-46be-a473-5a8e07ee0f2a" concept_name="PHARM lidocaine Jelly 20 mg/mL Order" max="1" path="/items" name="lidocaine jelly 20 mg/mL; 1 application , topical, once, Apply to ***."/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ae96afb4-5941-46be-a473-5a8e07ee0f2a" concept_name="PHARM LIDOCAINE HCL 2 Percent MUCOSAL JELLY [4448] Order" max="1" path="/items" name="lidocaine jelly 20 mg/mL; 1 application , topical, once, Apply to ***."/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32b339d9-02e1-4ddf-89d4-dac86369dc37" concept_name="PHARM fluorescein sodium Strip 1 mg Order" max="1" path="/items" name="fluorescein strip 1 mg; 1 strip, BOTH eyes, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="631ee63c-3330-46f2-baf3-7b6bec522277" concept_name="PHARM fluorescein sodium injection Order" max="1" path="/items" name="fluorescein sodium injection 10%; 15 mg/kg/dose, intravenous, once"/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; botulinum toxin type A injection 50 units; 50 units, intramuscular, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="32b339d9-02e1-4ddf-89d4-dac86369dc37" concept_name="PHARM FLUORESCEIN 1 MG EYE STRIPS [27663] Order" max="1" path="/items" name="fluorescein strip 1 mg; 1 strip, BOTH eyes, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="631ee63c-3330-46f2-baf3-7b6bec522277" concept_name="PHARM FLUORESCEIN 500 MG 5 ML (10 Percent) INTRAVENOUS SOLUTION [137870] Order" max="1" path="/items" name="fluorescein sodium injection 10%; 15 mg/kg/dose, intravenous, once"/>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="9992e068-4d0a-421a-b272-60e598572fbf" concept_name="PHARM ONABOTULINUMTOXINA 50 UNIT SOLUTION FOR INJECTION [4000263] Order" max="1" path="/items" name="onabotulinumtoxinA (Botox) 50 unit Injection; 50 units, intraocular, once, Send to OR"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="bevacizumab (AVASTIN)">
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6761a67e-4240-4590-8101-a4d029a57543" concept_name="PHARM BEVACIZUMAB (AVASTIN) INTRAVITREAL ORDERABLE (ADULT) [4201081] Order" max="1" path="/items" name="bevacizumab (Avastin) intravitreal (adult); 1.25 mg/0.05 mL syringe, intravitreal, once, Intraprocedure, LEFT eye"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="6761a67e-4240-4590-8101-a4d029a57543" concept_name="PHARM BEVACIZUMAB (AVASTIN) INTRAVITREAL ORDERABLE (ADULT) [4201081] Order" max="1" path="/items" name="bevacizumab (Avastin) intravitreal (adult);  1.25 mg/0.05 mL syringe, intravitreal, once, Intraprocedure, RIGHT eye"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8cc8dd9c-464e-4c24-81ec-efe65d93c0f1" concept_name="PHARM BEVACIZUMAB, PRESERVATIVE FREE (AVASTIN) 5 MG 0.2 ML INJECTION OPHTHALMIC SYRINGE (PHARM)(MFG) [4002278] Order" max="1" path="/items" name="bevacizumab, preservative free (Avastin) 2.5 mg/0.1 mL injection (PHARM); 1.25 mg/0.05 mL syringe, intravitreal, once, Intraprocedure, LEFT eye"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8cc8dd9c-464e-4c24-81ec-efe65d93c0f1" concept_name="PHARM BEVACIZUMAB, PRESERVATIVE FREE (AVASTIN) 5 MG 0.2 ML INJECTION OPHTHALMIC SYRINGE (PHARM)(MFG) [4002278] Order" max="1" path="/items" name="bevacizumab, preservative free (Avastin) 2.5 mg/0.1 mL injection (PHARM);  1.25 mg/0.05 mL syringe, intravitreal, once, Intraprocedure, RIGHT eye"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       </Item>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Viscoelastics">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fa80ca89-b938-4053-b4ab-6eaf57409b6f" concept_name="PLACEHOLDER Order Item" max="1" path="/items" name="PLACEHOLDER; sodium chondroitin sulfate-sodium hyaluronidate injection; *** mg, intracameral, once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
   </definition>
@@ -233,9 +221,6 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1">
     <digest id="MD5-CAM-1.0.1">AD8DFB192E67715F0D9E11E95E674AD0</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
-    <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
