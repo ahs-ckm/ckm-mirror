@@ -63,8 +63,20 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;This order set is currently under review with updates expected Oct. 21, 2025&lt;br&gt;&lt;strong&gt;For content currently available in PRD refer to rev. 203 in CKM&lt;/strong&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Technical.ﻩ Technical Traceability</key>
         <value>{~AHSID~e6879fb3-ffb5-4a53-8e7a-0f74dcf5ac68~NAME~AHS OSN ADULT SUR Hip Fracture Preprocedure Adult}</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;General&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Updates names of suggested order sets for merge&lt;br&gt;- update Admission order group to include option for &apos;Observation bed request order&apos;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -72,7 +84,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Order Set Keywords:&amp;nbsp;Pre-op, Pre op, Pre operative, pre procedure, pac, surgery, prep, procedure&lt;br&gt;&lt;br&gt;Consider opening and merging the following order sets if appropriate:&lt;br&gt;- Parenteral Nutrition Order Set&lt;br&gt;- Enteral Nutrition Order Set&lt;br&gt;- Pressure Injury/Ulcer Prevention, Adult&lt;br&gt;- Delirium, Adults&lt;br&gt;- Perioperative Management of Diabetes Adult&lt;br&gt;- Any appropriate diagnosis based order sets&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;- Choosing Wisely Tool Kit&lt;/strong&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp; (URL: https://ahsweb.ca/HEE/Choosing_Wisely_Pre_Op_Tool_Kit)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;u&gt;&lt;strong&gt;- Provincial Hip Fracture Care Pathway Toolkit&lt;/strong&gt;&lt;/u&gt;&amp;nbsp; (URL: https://ahsweb.ca/HEE/Hip_Fracture_Care_Pathway_Toolkit)&lt;/p&gt;</value>
+        <value>&lt;p&gt;Order Set Keywords:&amp;nbsp;Pre-op, Pre op, Pre operative, pre procedure, pac, surgery, prep, procedure&lt;br&gt;&lt;br&gt;Consider opening and merging the following order sets if appropriate:&lt;br&gt;- Parenteral Nutrition Adult Order Set&lt;br&gt;- Enteral Nutrition Adult Order Set&lt;br&gt;- Pressure Injury/Ulcer Prevention Adult Order Set&lt;br&gt;- Delirium Investigation and Management for Older Adult Order Set&lt;br&gt;-&amp;nbsp;Delirium Prevention for Older Adult Order Set&lt;/p&gt;&lt;p&gt;- Preprocedure Management of Patients with Diabetes Mellitus Adult Order Set&lt;br&gt;- Any appropriate diagnosis based order sets&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;strong&gt;- Choosing Wisely Tool Kit&lt;/strong&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp; (URL: https://ahsweb.ca/HEE/Choosing_Wisely_Pre_Op_Tool_Kit)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;u&gt;&lt;strong&gt;- Provincial Hip Fracture Care Pathway Toolkit&lt;/strong&gt;&lt;/u&gt;&amp;nbsp; (URL: https://ahsweb.ca/HEE/Hip_Fracture_Care_Pathway_Toolkit)&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -81,6 +93,14 @@
       <item>
         <key>CKT.Phase of Care</key>
         <value>&lt;p&gt;Case Scheduling / ADT&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Day of Procedure&apos;]">
+    <items>
+      <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;DRAFT Content:&lt;br&gt;- Remove Diet and Nutrition order group, replace with Standard Diet Adult order group&lt;br&gt;- Update Patient Care Assessments - Nursing Communication: CAM to Delirium Assessment: CAM order&lt;/p&gt;&lt;p&gt;- Addition of Standard POCT Glucose order group&lt;br&gt;- Addition of Pregnancy Testing Preprocedure order group&lt;br&gt;- Addition of inpatient consult to Dentistry and Social Work&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -202,12 +222,12 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Case Request">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="eceb359a-3bca-4bfe-8b5d-db6da9f411c1" concept_name="SURCASE Case Request Operating Room [SUR1] Order" max="1" path="/items" name="Case Request Operating Room"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e2545031-b204-4455-a4be-7247869ca8d9" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure" max="1" path="/items" name="Admission"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="8b86f221-6cd2-4298-a66a-b60799aea4b1" concept_name="AHS OGR MULTI SUR Admission ADT Preprocedure_DRAFT" max="1" path="/items" name="Admission"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ee59d121-2fbf-49fc-9bd6-0fa798162b4d" concept_name="AHS OGR MULTI GEN Goals of Care Designation" max="1" path="/items" name="Goals of Care"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="9f6694c9-7e2f-4d54-b74a-eb9f668d36a4" concept_name="AHS OGR ADULT GEN Isolation" max="1" path="/items" name="Isolation"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Day of Procedure">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="b17b50df-0e5c-43e1-9574-a2c4f475c29f" concept_name="AHS OGR ADULT SUR Diet and Nutrition Hip Fracture Preprocedure" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="def775de-ba15-4cc2-bbc8-89f5b7594c5b" concept_name="AHS OGR ADULT SUR Diet and Nutrition Day of Procedure CT_DRAFT" max="1" path="/items" name="Diet and Nutrition; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Activity; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="8e8fff02-2546-4d47-871c-04a80a00bab8" concept_name="NURINT Activity [NUR145] IP Order" max="1" path="/items" name="Activity; Strict Bedrest, Until discontinued"/>
       </Item>
@@ -215,6 +235,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intake and Output; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="c25dee98-440d-4a0f-8b2b-e1615b375cd7" concept_name="NURAX Intake and Output [NUR467] IP Order" max="1" path="/items" name="Intake and Output; Every shift"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="36a50845-a3f4-4818-8798-5464b6f9f12e" concept_name="AHS OGR ADULT SUR POCT Glucose Preprocedure CT_DRAFT" max="1" path="/items" name="POCT Glucose; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="POCT Glucose"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Height and Weight; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="953440f6-200d-4867-888c-5f8be9806323" concept_name="NURAX Weigh Patient [NUR450] IP Order" max="1" path="/items" name="Weigh Patient; Once Routine"/>
@@ -222,7 +243,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="ea07e26e-3369-4ada-a286-33852f6b4a66" concept_name="AHS OGR ADULT SUR Patient Care Assessments Hip Fracture Preprocedure" max="1" path="/items" name="Patient Care Assessments; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care Interventions; Preprocedure/Day Surgery">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] Order" max="1" path="/items" name="Nursing Communication; Void"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ddd49576-2a7e-42d7-b258-bcb0b9b1a420" concept_name="NURCOM Nursing Communication [NUR193] IP Order" max="1" path="/items" name="Nursing Communication; Void"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="48ff0c90-ec5b-4ed3-a524-3f1727f6421f" concept_name="NURINT In and Out Catheter [NUR385] IP Order" max="1" path="/items" name="In and Out Catheter; As needed"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="1fc216c0-a423-45c5-a3c2-5868c429b624" concept_name="NURINT Insert Indwelling Urinary Catheter [NUR380] IP Order" max="1" path="/items" name="Insert Indwelling Urinary Catheter; Once Routine"/>
       </Item>
@@ -230,7 +251,7 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="16d39428-16d5-47f0-a3af-1eb6a95616e8" concept_name="AHS OGR ADULT SUR Notify Hip Fracture" max="1" path="/items" name="Notify; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Hematology; Preprocedure/Day Surgery">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; Once Routine"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="f8d62df0-c64a-4b4d-bc4b-0a35a386d100" concept_name="AHS OGR ADULT SUR Chemistry Hip Fracture Preprocedure" max="1" path="/items" name="Labs - Chemistry; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs-Coagulation; Preprocedure/Day Surgery">
@@ -240,12 +261,13 @@
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Labs - Transfusion Medicine; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen; Once Routine"/>
       </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="2c9f81b4-8a69-4652-9209-68efc8d49938" concept_name="AHS OGN MULTI SUR Pregnancy Testing Preprocedure" max="1" path="/items" name="Pregnancy Testing Preprocedure; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="a0a5aae8-f91d-4500-92d0-56fff87fb5ad" concept_name="AHS OGR ADULT SUR Diagnostic Imaging Hip Fracture Preprocedure" max="1" path="/items" name="Diagnostic Imaging; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Other Tests; Preprocedure/Day Surgery">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="365525e1-4aab-44bf-a8fa-256a46714aa1" concept_name="CARECG Electrocardiogram 12 Lead [ECG1] IP Order" max="1" path="/items" name="Electrocardiogram 12 Lead; Once Routine"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Fluids/Electrolytes; Preprocedure/Day Surgery">
-        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="AHS OGR ADULT SUR IV Maintenance Preprocedure" max="1" path="/items" name="IV Maintenance"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="5fd1ccdb-92ec-4799-822e-d7ad0539e860" concept_name="AHS OGR ADULT SUR IV Maintenance Day of Procedure Preprocedure CT" max="1" path="/items" name="IV Maintenance"/>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="0342b2cf-c7b0-415f-9d2e-de04f4b30b52" concept_name="AHS OGR ADULT SUR IV Fluids Hip Fracture Preprocedure" max="1" path="/items" name="Fluid Infusions; Preprocedure/Day Surgery"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="VTE Prophylaxis; Preprocedure/Day Surgery">
@@ -276,11 +298,11 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
-    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
     <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
     <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
