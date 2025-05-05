@@ -72,7 +72,15 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Ensure any required testing that could be impacted by transfusion (ie cytogenetic analysis, HPA-1 typing for alloimmune thrombocytopenia, hemoglobin electrophoresis for hemolytic anemia) is collected prior to transfusion.&lt;br&gt;&amp;nbsp;&lt;br&gt;Ensure Newborn Metabolic Screening (NMS) is drawn prior to transfusion and repeated 24 hours after transfusion if the transfusion occurs within 24 hours after birth.&lt;br&gt;&amp;nbsp;&lt;br&gt;Consider ordering &lt;strong&gt;coagulation labs&lt;/strong&gt; in case of active bleeding.&amp;nbsp;&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;s&gt;Ensure any required testing that could be impacted by transfusion (ie cytogenetic analysis, HPA-1 typing for alloimmune thrombocytopenia, hemoglobin electrophoresis for hemolytic anemia) is collected prior to transfusion.&lt;br&gt;&amp;nbsp;&lt;br&gt;Ensure Newborn Metabolic Screening (NMS) is drawn prior to transfusion and repeated 24 hours after transfusion if the transfusion occurs within 24 hours after birth.&lt;br&gt;&amp;nbsp;&lt;br&gt;Consider ordering &lt;strong&gt;coagulation labs&lt;/strong&gt; in case of active bleeding.&amp;nbsp;&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;If a blood transfusion is required within 24 hours of birth, draw the Newborn Screening before the blood transfusion begins and repeat the Newborn Screening 24 hrs. after the transfusion.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;CBC No Diff&amp;nbsp;is preferred if differential is not required.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;CBC, No Differential; PRE Transfusion&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: Once Routine&lt;/p&gt;&lt;p&gt;Specimen Type: Blood&lt;/p&gt;&lt;p&gt;Specimen Source: Blood&lt;/p&gt;&lt;p&gt;Comments: To be collected prior to initiating transfusion.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -126,7 +134,8 @@
   </annotations>
   <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Pre-Transfusion Labs">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] Order" max="1" path="/items" name="CBC and Differential; PRE Transfusion"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d58f0c7d-30da-4d27-a82a-b42c8fae7c23" concept_name="LAB CBC, No Differential [LAB294] Order" max="1" path="/items" name="CBC, No Differential; PRE Transfusion"/>
+    <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="f278091d-c5d3-4390-9efe-fb00aa4551a3" concept_name="LAB CBC and Differential [LAB293] AMB Order" max="1" path="/items" name="CBC and Differential; PRE Transfusion"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d23cd527-4cfe-4b97-89a5-d08cb98558ca" concept_name="LAB Reticulocyte Count [LAB296] Order" max="1" path="/items" name="Reticulocyte Count; PRE Transfusion"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ceab0680-290b-4f64-b99f-b4a4451f5e45" concept_name="LAB INR [LAB320] Order" max="1" path="/items" name="INR; PRE Transfusion"/>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="ff2afdee-52d5-4d32-a831-0765bcbf42a9" concept_name="LAB Partial Thromboplastin Time (PTT) [LAB325] Order" max="1" path="/items" name="Partial Thromboplastin Time (PTT); PRE Transfusion"/>
@@ -144,5 +153,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.service_request_information.v1">
     <digest id="MD5-CAM-1.0.1">230A8D964017E1FD7AC82EBDEE0202A6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.booleanorderquestion.v1">
+    <digest id="MD5-CAM-1.0.1">56B5A2F2979B94F83C97E66B46679692</digest>
   </integrity_checks>
 </template>
