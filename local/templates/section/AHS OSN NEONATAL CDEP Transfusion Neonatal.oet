@@ -84,7 +84,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;-Provincial Transfusion Medicine Website (hyperlink to:&amp;nbsp;https://www.albertahealthservices.ca/lab/Page3318.aspx)&lt;/p&gt;</value>
+        <value>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;strong&gt;-Provincial Transfusion Medicine Website &lt;/strong&gt;&lt;br&gt;(URL: https://ahsweb.ca/HEE/Transfusion_Medicine_AHS)&lt;br&gt;&lt;strong&gt;- Don&apos;t misuse my blood&amp;nbsp;&lt;/strong&gt;&lt;br&gt;(URL: https://ahsweb.ca/HEE/Dont_misuse_my_blood)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
       </item>
     </items>
   </annotations>
@@ -115,6 +115,10 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders&apos;]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Remove cryoprecipitate as it is no longer available&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Transform.Technical Notes</key>
         <value>&lt;p&gt;Restrictors/sub OSQs built to ensure products will only display in the order set if available at that site. Included here is the full list (for inpatient build)&amp;nbsp;&lt;/p&gt;</value>
       </item>
@@ -124,19 +128,27 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;&lt;strong&gt;Ordering in milliliters (mL) is intended for patients &amp;lt;25kg. If volumes in excess of 250mL are required, ordering should be in units rather than mL&lt;/strong&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;If you require blood products immediately a call to Transfusion Medicine is required. Also consider using the emergent blood products orders in this scenario.&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Downtime&lt;/u&gt;&amp;nbsp;&lt;br&gt;During a WellSky Downtime use the emergent transfusion orders as well and call blood bank to request products.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Prepare orders&lt;/u&gt;&amp;nbsp;&lt;br&gt;Prepare replaces ‘cross match’ and is the recommended order for patient with a greater than 10% likelihood of needing a transfusion. The transfuse order captures the nurses administration of the product/component. &amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Indications for Special Blood Product Processing&lt;/u&gt;&lt;br&gt;&lt;strong&gt;Irradiated cellular blood components:&lt;/strong&gt; (see link below for more information)&lt;br&gt;&lt;strong&gt;Washed cellular blood components:&lt;/strong&gt; Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&lt;strong&gt;Volume-reduced blood products: &lt;/strong&gt;Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&lt;strong&gt;Plasma reduction of platelets:&lt;/strong&gt; Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Irradiated cellular blood components (hyperlink to:&amp;nbsp;https://www.albertahealthservices.ca/assets/wf/lab/wf-lab-clin-tm-irradiated-use.pdf)&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;s&gt;&lt;strong&gt;Ordering in milliliters (mL) is intended for patients &amp;lt;25kg. If volumes in excess of 250mL are required, ordering should be in units rather than mL&lt;/strong&gt;.&amp;nbsp;&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;s&gt;&lt;strong&gt;&lt;u&gt;If you require blood products immediately a call to Transfusion Medicine is required. Also consider using the emergent blood products orders in this scenario.&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Downtime&lt;/u&gt;&amp;nbsp;&lt;br&gt;During a WellSky Downtime use the emergent transfusion orders as well and call blood bank to request products.&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Prepare orders&lt;/u&gt;&amp;nbsp;&lt;br&gt;Prepare replaces ‘cross match’ and is the recommended order for patient with a greater than 10% likelihood of needing a transfusion. The transfuse order captures the nurses administration of the product/component. &amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;u&gt;Indications for Special Blood Product Processing&lt;/u&gt;&lt;br&gt;&lt;strong&gt;Irradiated cellular blood components:&lt;/strong&gt; (see link below for more information)&lt;br&gt;&lt;strong&gt;Washed cellular blood components:&lt;/strong&gt; Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&lt;strong&gt;Volume-reduced blood products: &lt;/strong&gt;Consult Transfusion Medicine physician prior to ordering&lt;br&gt;&lt;strong&gt;Plasma reduction of platelets:&lt;/strong&gt; Consult Transfusion Medicine physician prior to ordering&lt;/s&gt;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Ordering in milliliters (mL) is intended for patients less than 25 kg. If volumes in excess of 200 mL (of platelets or plasma) or 250 mL (of red blood cells) are required, ordering should be in units rather than mL&quot;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Use this order set for routine blood product orders&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Prepare Order: sends the product request to Transfusion Medicine WellSky (Lab Information System)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Transfuse Order: allows for nursing to print a pick-up slip &amp;amp; document the blood administration&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Urgent blood orders &amp;amp; WellSky downtime orders are placed using the Transfusion Orders – Emergent&amp;nbsp; order&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Other special blood modifications: Consult Transfusion Medicine physician prior to ordering&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;strong&gt;- Irradiated cellular blood components&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;(URL: https://ahsweb.ca/HEE/Irradiated_Blood_Components_Reference)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]">
+    <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;&lt;span style=&quot;background-color:#f1c40f&quot;&gt;Remove&amp;nbsp;“Transfuse Emergent Cryoprecipitate&quot;&lt;/span&gt;&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;The emergent orders are intended for documentation of the transfusion and do not generate a transfusion medicine product request.&lt;br&gt;&amp;nbsp;&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;For Emergent or Urgent Transfusion Call the Blood Bank to Request Products.&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;During a WellSky Downtime use the emergent transfusion orders as well and call blood bank to request products.&lt;/p&gt;</value>
+        <value>&lt;p&gt;&lt;s&gt;The emergent orders are intended for documentation of the transfusion and do not generate a transfusion medicine product request.&lt;br&gt;&amp;nbsp;&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;For Emergent or Urgent Transfusion Call the Blood Bank to Request Products.&lt;br&gt;·&amp;nbsp;&amp;nbsp; &amp;nbsp;During a WellSky Downtime use the emergent transfusion orders as well and call blood bank to request products.&lt;/s&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A &lt;strong&gt;phone call&lt;/strong&gt; must be made to Transfusion Medicine to order components/products, this replaces the Prepare order&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The patient requires blood urgently or when WellSky (Lab Information System) is in downtime&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Unmatched units may be issued if required&lt;/p&gt;&lt;p&gt;These orders should not be used in the case of a Massive Hemorrhage – call Transfusion Medicine to initiate Massive Hemorrhage protocol&amp;nbsp;&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Red Blood Cells (in mL); STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Red Blood Cells (in mL); STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -144,7 +156,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Red Blood Cells; STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Red Blood Cells; STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -152,7 +164,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Reconstituted Whole Blood (in mL); STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Reconstituted Whole Blood (in mL); STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -160,7 +172,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Platelets (in mL); STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Platelets (in mL); STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -168,7 +180,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Platelets; STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Platelets; STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -176,7 +188,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Plasma (in mL); STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Plasma (in mL); STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -184,7 +196,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Plasma; STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Plasma; STAT&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -192,15 +204,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Cryoprecipitate; STAT&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Transfuse Emergent Cryoprecipitate; STAT&apos;]/activities[at0001]">
     <items>
+      <item>
+        <key>Transform.Technical Notes</key>
+        <value>&lt;p&gt;Remove this order&lt;/p&gt;</value>
+      </item>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Transfuse: *** units&lt;/p&gt;&lt;p&gt;Transfusion rate (ml/min): ASAP&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Fibrinogen; Routine&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Fibrinogen; Routine&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
@@ -208,11 +224,19 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prothrombin Complex; Routine&apos;]/activities[at0001]">
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Prothrombin Complex; Routine&apos;]/activities[at0001]">
     <items>
       <item>
         <key>CKT.Content Details</key>
         <value>&lt;p&gt;Dose: ***&lt;/p&gt;&lt;p&gt;Units: *** (mL/Units)&lt;/p&gt;&lt;p&gt;Route: intravenous&lt;/p&gt;&lt;p&gt;Frequency: once&lt;/p&gt;&lt;p&gt;Indication: *** (must choose from below):&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Reversal of warfarin or vitamin K deficiency&lt;/li&gt;&lt;li&gt;Patient is on DOFX inhibitor&lt;/li&gt;&lt;li&gt;Other&lt;ul&gt;&lt;li&gt;Specify: ***&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Medicine&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -245,7 +269,7 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="General"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Patient Care">
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="d208ee53-d012-4c6a-9626-6deda77efa56" concept_name="AHS OGR NEONATAL CDEP Transfusion Vitals and Monitoring" max="1" path="/items" name="Transfusion Vitals and Monitoring"/>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="387d8501-adf4-42dc-ae03-23397b5b81c3" concept_name="AHS OGR MULTI CDEP Vital Signs for Transfusion" max="1" path="/items" name="Vital Signs for Transfusion"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Notify">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3f7a5553-1129-4bba-b68e-b9e6ee0be16d" concept_name="NURCOM Nursing Communication [NUR185] Order" max="1" path="/items" name="Nursing Communication; Suspected Transfusion Reaction Management"/>
       </Item>
@@ -269,18 +293,21 @@
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="788718be-7cbc-43e8-86b2-2c2527662222" concept_name="AHS OGR MULTI CDEP Fibrinogen (Prepare and Transfuse)" max="1" path="/items" name="Fibrinogen (Prepare and Transfuse)"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="4d6ac587-8f51-4931-91e1-e8e81efc33a7" concept_name="AHS OGR MULTI CDEP Granulocytes (Prepare and Transfuse) Units" max="1" path="/items" name="Granulocytes (Prepare and Transfuse) - Units *Requires TM Approval Contact Blood Bank*"/>
       </Item>
-      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders - Emergent">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Orders - Emergent/WellSky (Lab Information System) Downtime">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d84ed99-6b15-4cee-8525-81ba22e13179" concept_name="TM Transfuse Emergent Red Blood Cells (in mL) [NUR653] IP Order" max="1" path="/items" name="Transfuse Emergent Red Blood Cells (in mL); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3a108db-52aa-4ee6-97cb-857b5a0ee16b" concept_name="TM Transfuse Emergent Red Blood Cells [NUR649] IP Order" max="1" path="/items" name="Transfuse Emergent Red Blood Cells; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d30f86ff-2654-4f14-b345-1f3f6bf679de" concept_name="TM Transfuse Emergent Reconstituted Whole Blood (in mL) [NUR30406] IP Order" max="1" path="/items" name="Transfuse Emergent Reconstituted Whole Blood (in mL); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="db8cf448-0833-4eb6-9225-8f537d09d48a" concept_name="TM Transfuse Emergent Platelets (in mL) [NUR30407] IP Order" max="1" path="/items" name="Transfuse Emergent Platelets (in mL); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="40439826-2acf-4b23-9cad-059c1fb2704e" concept_name="TM Transfuse Emergent Platelets [NUR30402] IP Order" max="1" path="/items" name="Transfuse Emergent Platelets; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68386f04-3121-45e4-ae58-cb6a3b8cd00a" concept_name="TM Transfuse Emergent Plasma (in mL) [NUR30408] IP Order" max="1" path="/items" name="Transfuse Emergent Plasma (in mL); STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5274a8f4-0acd-43a5-b3e6-c918cfd69f59" concept_name="TM Transfuse Emergent Plasma [NUR30403] IP Order" max="1" path="/items" name="Transfuse Emergent Plasma; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80a6acdb-f4a6-40f2-8d83-782c55ad930a" concept_name="TM Transfuse Emergent Cryoprecipitate [NUR30404] IP Order" max="1" path="/items" name="Transfuse Emergent Cryoprecipitate; STAT"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="37c84e19-370b-4354-b1a0-935a2a986490" concept_name="PHARM FIBRINOGEN [304000022] Order" max="1" path="/items" name="Fibrinogen; Routine"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4030bd45-eb31-4916-8420-cff551143e09" concept_name="PHARM PROTHROMBIN COMPLEX [304000028] Order" max="1" path="/items" name="Prothrombin Complex; Routine"/>
+        <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfuse Emergent Documentation">
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="3d84ed99-6b15-4cee-8525-81ba22e13179" concept_name="TM Transfuse Emergent Red Blood Cells (in mL) [NUR653] IP Order" max="1" path="/items" name="Transfuse Emergent Red Blood Cells (in mL); STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e3a108db-52aa-4ee6-97cb-857b5a0ee16b" concept_name="TM Transfuse Emergent Red Blood Cells [NUR649] IP Order" max="1" path="/items" name="Transfuse Emergent Red Blood Cells; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="d30f86ff-2654-4f14-b345-1f3f6bf679de" concept_name="TM Transfuse Emergent Reconstituted Whole Blood (in mL) [NUR30406] IP Order" max="1" path="/items" name="Transfuse Emergent Reconstituted Whole Blood (in mL); STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="db8cf448-0833-4eb6-9225-8f537d09d48a" concept_name="TM Transfuse Emergent Platelets (in mL) [NUR30407] IP Order" max="1" path="/items" name="Transfuse Emergent Platelets (in mL); STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="40439826-2acf-4b23-9cad-059c1fb2704e" concept_name="TM Transfuse Emergent Platelets [NUR30402] IP Order" max="1" path="/items" name="Transfuse Emergent Platelets; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="68386f04-3121-45e4-ae58-cb6a3b8cd00a" concept_name="TM Transfuse Emergent Plasma (in mL) [NUR30408] IP Order" max="1" path="/items" name="Transfuse Emergent Plasma (in mL); STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5274a8f4-0acd-43a5-b3e6-c918cfd69f59" concept_name="TM Transfuse Emergent Plasma [NUR30403] IP Order" max="1" path="/items" name="Transfuse Emergent Plasma; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="80a6acdb-f4a6-40f2-8d83-782c55ad930a" concept_name="TM Transfuse Emergent Cryoprecipitate [NUR30404] IP Order" max="1" path="/items" name="Transfuse Emergent Cryoprecipitate; STAT"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="37c84e19-370b-4354-b1a0-935a2a986490" concept_name="PHARM FIBRINOGEN [304000022] Order" max="1" path="/items" name="Fibrinogen; Routine"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4030bd45-eb31-4916-8420-cff551143e09" concept_name="PHARM PROTHROMBIN COMPLEX [304000028] Order" max="1" path="/items" name="Prothrombin Complex; Routine"/>
+          <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
+        </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Intravenous Immune Globulin (IVIG)">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" template_id="e9a5cef0-5ff1-4d48-b3d3-b1a6c610ca5c" concept_name="AHS OGN MULTI CDEP Intravenous Immune Globulin (Prepare and Transfuse)" max="1" path="/items" name="Intravenous Immune Globulin (Prepare and Transfuse)"/>
