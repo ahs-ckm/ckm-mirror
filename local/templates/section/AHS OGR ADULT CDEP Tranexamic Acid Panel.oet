@@ -60,11 +60,19 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>Technical.ﻩ Technical Traceability</key>
+        <value>{~AHSID~11bd25b6-86ca-4043-a8d8-3934cbbf5b7e~NAME~AHS OGR ADULT CDEP Tranexamic Acid Panel}</value>
+      </item>
+    </items>
+  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.clinical_guidance.v1]">
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;Tranexamic acid (TXA) is an anti-fibrinolytic drug and should be administered as soon as possible&amp;nbsp;in the settings of trauma and postpartum hemorrhage.&lt;/p&gt;&lt;p&gt;TXA does not reduce death from gastrointestinal (GI) bleeding and should not be used to treat upper or lower GI bleeding&lt;/p&gt;</value>
+        <value>&lt;p&gt;Do not use to treat GI Bleeding.&lt;br&gt;tranexamic acid should be administered as soon as possible in the setting of trauma and postpartum hemorrhage.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -124,23 +132,7 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;tranexamic acid IV - 2 g bolus over 20 minutes - suggested for centres transferring patient out&apos;]/items[openEHR-EHR-INSTRUCTION.service_request.v1]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;Y&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;tranexamic acid IV - 2 g bolus over 20 minutes - suggested for centres transferring patient out&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;NR&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]"><items><item><key>Technical.ﻩ Technical Traceability</key><value>{~AHSID~11bd25b6-86ca-4043-a8d8-3934cbbf5b7e~NAME~AHS OGR ADULT CDEP Tranexamic Acid Panel}</value></item></items></annotations><definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="tranexamic acid IV">
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="tranexamic acid IV">
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="tranexamic acid IV - 1 g bolus followed by second 1 g bolus 1 hour later">
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b74cff95-05bb-4a62-8649-0c9b2c31c07b" concept_name="PHARM TRANEXAMIC ACID 1,000 MG IN NACL 0.9 Percent 100 ML INJECTION BAG [6004736] Order" max="1" path="/items" name="tranexamic acid 1,000 mg in NaCl 0.9% 100 mL injection; 1,000 mg, intravenous, Administer over 10 Minutes, once"/>
@@ -152,10 +144,6 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b74cff95-05bb-4a62-8649-0c9b2c31c07b" concept_name="PHARM TRANEXAMIC ACID 1,000 MG IN NACL 0.9 Percent 100 ML INJECTION BAG [6004736] Order" max="1" path="/items" name="tranexamic acid 1,000 mg in NaCl 0.9% 100 mL injection; 1,000 mg, intravenous, Administer over 10 Minutes, once"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" max="1" path="/items" name="Followed by"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="cc111adb-e1f3-4c87-a380-7c51dd67de05" concept_name="PHARM TRANEXAMIC ACID 1,000 MG IN NACL 0.9 Percent 250 ML INJECTION BAG [6004737] Order" max="1" path="/items" name="tranexamic acid 1,000 mg in NaCl 0.9% 250 mL injection; 1,000 mg, intravenous, once, Infuse over 8 hours.  Start following bolus dose.  Give 2 doses total."/>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
-    </Item>
-    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="tranexamic acid IV - 2 g bolus over 20 minutes - suggested for centres transferring patient out">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="91eb0b65-e2aa-43d5-84bb-3e13ca6666b5" concept_name="PHARM TRANEXAMIC ACID IV ORDERABLE [4200216] Order" max="1" path="/items" name="tranexamic acid IV; 2,000 mg in NaCl 0.9% 100 mL injection; 2,000 mg, intravenous, Administer over 20 Minutes, once"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
     </Item>
     <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
