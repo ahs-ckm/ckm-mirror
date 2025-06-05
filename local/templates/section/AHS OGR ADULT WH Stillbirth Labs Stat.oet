@@ -114,6 +114,7 @@
       </Item>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Microbiology">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.orderable_section.v1" template_id="0f538df2-15d7-4385-844b-7fc2c7d3d6a9" concept_name="Blood Culture Panel Adult Order Group" max="1" path="/items" name="Blood Culture Panel - Adult x 2; STAT"/>
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="07472440-b47a-4d08-87ec-568caedc68cb" concept_name="LAB Prenatal Syphilis Rescreen [LAB3774] Order" max="1" path="/items" name="Prenatal Syphilis Rescreen; STAT"/>
     </Item>
   </definition>
@@ -137,5 +138,11 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.datetimeorderquestion.v1">
     <digest id="MD5-CAM-1.0.1">37AE50193A7EA542A4F219FF051EE95B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.orderable_section.v1">
+    <digest id="MD5-CAM-1.0.1">A89AC74BC8CAD3F0719579389C69006F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1">
+    <digest id="MD5-CAM-1.0.1">A7EC4E4C870D8C3431B29F6514353416</digest>
   </integrity_checks>
 </template>
