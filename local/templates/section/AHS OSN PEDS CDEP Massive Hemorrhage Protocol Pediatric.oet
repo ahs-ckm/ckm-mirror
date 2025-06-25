@@ -65,8 +65,12 @@
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]">
     <items>
       <item>
+        <key>Transform.Clinical Notes</key>
+        <value>&lt;p&gt;&lt;strong&gt;Order Set restricted to the following sites only:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;- Grande Prairie Regional Hospital&lt;/p&gt;&lt;p&gt;- Northern Lights Regional Hospital&lt;/p&gt;&lt;p&gt;- Sturgeon Community Hospital&lt;/p&gt;&lt;p&gt;- Royal Alexandra Hospital&lt;/p&gt;&lt;p&gt;- Misericordia Community Hospital&lt;/p&gt;&lt;p&gt;- Grey Nuns Community Hospital&lt;/p&gt;&lt;p&gt;- University of Alberta Hospital&lt;/p&gt;&lt;p&gt;- Stollery Children’s Hospital&lt;/p&gt;&lt;p&gt;- Red Deer Regional Hospital&lt;/p&gt;&lt;p&gt;- Peter Lougheed Hospital&lt;/p&gt;&lt;p&gt;- Alberta Children’s Hospital&lt;/p&gt;&lt;p&gt;- Foothills Medical Centre&lt;/p&gt;&lt;p&gt;- Rockyview General Hospital&lt;/p&gt;&lt;p&gt;- South Health Campus Hospital&lt;/p&gt;&lt;p&gt;- Chinook Regional Hospital&lt;/p&gt;&lt;p&gt;- Medicine Hat Regional Hospital&lt;/p&gt;</value>
+      </item>
+      <item>
         <key>Transform.Technical Notes</key>
-        <value>&lt;p&gt;Order Set Updates (INC001934948 - April 16/25):&lt;/p&gt;&lt;p&gt;- Update guidance text (remove underline, add link to MHP)&lt;/p&gt;&lt;p&gt;- Removal of preselects from supporting orders (Cardiac Monitoring, Apply Warmin Blanket, Nursing Communication - Transfusion Instructions for MHP, Initiate IV (both orders))&lt;/p&gt;&lt;p&gt;- Remove ability to personalize the lab sections and the Transfusion orders&lt;/p&gt;&lt;p&gt;- Add text to the Laboratory Investigations - STAT &amp;gt; Transfusion Medicine section&lt;/p&gt;&lt;p&gt;- Add unselected order for Calcium STAT to bottom of MHP Panel&lt;/p&gt;&lt;p&gt;- Remove Massive Hemorrhage Protocol Panel from the facility list (should only be available via the order sets)&lt;/p&gt;&lt;p&gt;- update tranexamic acid order group&lt;/p&gt;</value>
+        <value>&lt;p&gt;Order Set Updates (INC001934948 - April 16/25):&lt;/p&gt;&lt;p&gt;- Update guidance text (remove underline, add link to MHP)&lt;/p&gt;&lt;p&gt;- Removal of preselects from supporting orders (Cardiac Monitoring, Apply Warmin Blanket, Nursing Communication - Transfusion Instructions for MHP, Initiate IV (both orders))&lt;/p&gt;&lt;p&gt;- Remove ability to personalize the lab sections and the Transfusion orders&lt;/p&gt;&lt;p&gt;- Add text to the Laboratory Investigations - STAT &amp;gt; Transfusion Medicine section&lt;/p&gt;&lt;p&gt;- Move Direct Antiglobin Test lower in the panel&lt;/p&gt;&lt;p&gt;- Add unselected order for Calcium STAT to bottom of MHP Panel&lt;/p&gt;&lt;p&gt;- Remove Massive Hemorrhage Protocol Panel from the facility list (should only be available via the order sets)&lt;/p&gt;&lt;p&gt;- update tranexamic acid order group&lt;/p&gt;&lt;p&gt;- restrict order set to only facilities identified in the protocol&lt;/p&gt;</value>
       </item>
       <item>
         <key>Technical.ﻩ Technical Traceability</key>
@@ -138,22 +142,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Direct Antiglobulin Test&apos;]/activities[at0001]">
-    <items>
-      <item>
-        <key>CKT.Content Details</key>
-        <value>&lt;ul&gt;&lt;li&gt;Frequency: STAT&lt;/li&gt;&lt;li&gt;Specimen Type: Blood&lt;/li&gt;&lt;li&gt;Specimen Source: Blood&lt;/li&gt;&lt;li&gt;What is the clinical indication for testing?:&amp;nbsp;suspecting hemolysis as cause of anemia&lt;/li&gt;&lt;li&gt;Is hemolysis suspected?: Yes&lt;/li&gt;&lt;li&gt;Has the patient been transfused Blood Products or Blood Components outside Alberta in the last 90 days? *** (Yes/No)&lt;/li&gt;&lt;li&gt;Comments: Massive Hemorrhage Protocol Patient - Labs need to be processed ASAP&lt;/li&gt;&lt;/ul&gt;</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Direct Antiglobulin Test&apos;]/activities[at0156]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Type and Screen&apos;]/activities[at0001]">
     <items>
       <item>
@@ -203,6 +191,22 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Direct Antiglobulin Test&apos;]/activities[at0001]">
+    <items>
+      <item>
+        <key>CKT.Content Details</key>
+        <value>&lt;p&gt;Frequency: STAT&lt;/p&gt;&lt;p&gt;Specimen Type: Blood&lt;/p&gt;&lt;p&gt;Specimen Source: Blood&lt;/p&gt;&lt;p&gt;What is the clinical indication for testing (hard stop)? suspecting hemolysis as cause of anemia&lt;/p&gt;&lt;p&gt;Is hemolysis suspected (hard stop)? Yes&lt;/p&gt;&lt;p&gt;Has the patient been transfused Blood Products or Blood Components outside Alberta in the last 90 days (hard stop)? Yes/No&lt;/p&gt;&lt;p&gt;Comments: Massive Hemorrhage Protocol Patient - Labs need to be processed ASAP&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Laboratory Investigations - STAT&apos;]/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.service_request.v1 and name/value=&apos;Direct Antiglobulin Test&apos;]/activities[at0156]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -452,10 +456,10 @@
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Laboratory Investigations - STAT">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Transfusion Medicine">
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.clinical_guidance.v1" concept_name="Clinical Guidance" path="/items"/>
-        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbf4a251-314e-47f5-bf4d-d9fe30bea419" concept_name="LABBBT Direct Antiglobulin Test [LAB41779] Order" max="1" path="/items" name="Direct Antiglobulin Test"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="da347c4f-daf7-4b5f-9607-b370944a95d0" concept_name="LABBBT Type and Screen [LAB276] Order" max="1" path="/items" name="Type and Screen"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fc3db4a7-ea58-4514-9383-f5e434f3a069" concept_name="TM Massive Hemorrhage Protocol [NUR654] IP Order" max="1" path="/items" name="Massive Hemorrhage Protocol"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="bade7cc3-e66b-47c4-83bc-86efe6d0cce6" concept_name="LAB Activation Panel MHP [LAB44444] Order" max="1" path="/items" name="Activation Panel MHP"/>
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="fbf4a251-314e-47f5-bf4d-d9fe30bea419" concept_name="LABBBT Direct Antiglobulin Test [LAB41779] Order" max="1" path="/items" name="Direct Antiglobulin Test"/>
         <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Calcium - only for use if not available through blood gas testing">
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="5984e421-785d-4aaa-9502-9c5b46216d95" concept_name="LAB Calcium [LAB53] Order" max="1" path="/items" name="Calcium"/>
           <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
