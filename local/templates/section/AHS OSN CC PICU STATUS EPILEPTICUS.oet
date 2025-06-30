@@ -156,14 +156,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Phase 1 (15 minutes)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
-    <items>
-      <item>
-        <key>Transform.Preselected</key>
-        <value>&lt;p&gt;N&lt;/p&gt;</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Phase 1 (15 minutes)&apos;]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Hypoglycemia Management&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
     <items>
       <item>
@@ -192,7 +184,7 @@
     <items>
       <item>
         <key>CKT.Clinical Guidance</key>
-        <value>&lt;p&gt;Admin Instructions: If BG less than 2.6, initate D10W: 5 mL/kg/dose&lt;/p&gt;</value>
+        <value>&lt;p&gt;Administration Instructions:&lt;br&gt;Initiate D10W at 5 mL/kg per dose if:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;BG LESS THAN 3.5 mmol/L, or&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Patient is on a Ketogenic Diet and BG LESS THAN&amp;nbsp;2.6&amp;nbsp;mmol/L&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</value>
       </item>
       <item>
         <key>CKT.Content Details</key>
@@ -205,6 +197,14 @@
       <item>
         <key>Transform.Preselected</key>
         <value>&lt;p&gt;Y&lt;/p&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-SECTION.adhoc.v1 and name/value=&apos;Phase 1 (15 minutes)&apos;]/items[openEHR-EHR-INSTRUCTION.section_supporting_context.v1]">
+    <items>
+      <item>
+        <key>Transform.Preselected</key>
+        <value>&lt;p&gt;N&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -568,7 +568,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;If Poor/No&amp;nbsp;response to dosing GREATER THAN OR EQUAL To 800mg - Please contact Neuro Critical Care Team.&lt;/p&gt;</value>
+        <value>&lt;p&gt;If Poor/No&amp;nbsp;response to contnuous infusion dosing GREATER THAN OR EQUAL To 800mg - Please contact Neuro Critical Care Team.&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -624,7 +624,7 @@
     <items>
       <item>
         <key>CKT.Content Details</key>
-        <value>&lt;p&gt;0.15 - 0.5 mg/kg/dose Intravenous&amp;nbsp;Every 5 min As Needed&amp;nbsp;prior to each dose escalation in ketamine&amp;nbsp;infusion&lt;/p&gt;&lt;p&gt;Admin Instructions: Max Dose:&amp;nbsp;3600&amp;nbsp;mcg/kg/hr&lt;/p&gt;</value>
+        <value>&lt;p&gt;0.15 - 0.5 mg/kg/dose Intravenous&amp;nbsp;Every 5 min As Needed&amp;nbsp;prior to each dose escalation in ketamine&amp;nbsp;infusion&lt;/p&gt;&lt;p&gt;Admin Instructions: Max HOURLY Dose:&amp;nbsp;3600&amp;nbsp;mcg/kg/hr&lt;/p&gt;</value>
       </item>
     </items>
   </annotations>
@@ -785,12 +785,12 @@
       <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="4e79ae6f-5402-4d96-b79f-68e943d8a4d2" concept_name="NURCOM Notify Most Responsible Health Practitioner (MRHP) [NUR183] IP Order" max="1" path="/items" name="Notify Most Responsible Health Practitioner (MRHP)"/>
     </Item>
     <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Phase 1 (15 minutes)">
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Hypoglycemia Management">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="e8da34ee-6e55-438b-ba29-8a6c15655d40" concept_name="LABPOCT Glucose Meter POCT [POC117] Order" max="1" path="/items" name="Glucose Meter POCT"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="38385979-e2ab-4d77-aed7-a1b51519a42d" concept_name="PHARM DEXTROSE 10 Percent IN WATER (D10W) INTRAVENOUS SOLUTION [2357] Order" max="1" path="/items" name="D10W infusion bag"/>
       </Item>
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Without IV">
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.section_supporting_context.v1" concept_name="Section supporting context" path="/items"/>
         <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.service_request.v1" template_id="b58170c8-5c5c-4e59-a64d-886ed4c54b12" concept_name="PHARM MIDAZOLAM (PF) 1 MG ML INJECTION SOLUTION [135732] Order" max="1" path="/items" name="midazolam, preservative free injection 1 mg/mL"/>
